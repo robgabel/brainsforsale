@@ -1,778 +1,1330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explore: Scott Belsky's Brain</title>
-<style>
-  :root {
-    --bg: #0a0a0f;
-    --surface: #14141f;
-    --surface-2: #1c1c2e;
-    --border: #2a2a3e;
-    --text: #e8e8f0;
-    --text-dim: #8888a0;
-    --accent: #6366f1;
-    --accent-glow: rgba(99, 102, 241, 0.15);
-    --supports: #34d399;
-    --extends: #60a5fa;
-    --contradicts: #f87171;
-    --related: #a78bfa;
-    --high: #34d399;
-    --medium: #fbbf24;
-    --low: #8888a0;
-    --radius: 10px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainsForSale — Scott Belsky</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #14141f;
+      --surface-2: #1c1c2e;
+      --border: #2a2a3e;
+      --text: #e8e8f0;
+      --text-dim: #8888a0;
+      --accent: #6366f1;
+      --contradicts: #f87171;
+      --subtle: rgba(230, 230, 240, 0.05);
+    }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    min-height: 100vh;
-  }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      overflow: hidden;
+    }
 
-  /* Layout */
-  .app { display: flex; height: 100vh; overflow: hidden; }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
 
-  .sidebar {
-    width: 280px;
-    min-width: 280px;
-    background: var(--surface);
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 280px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
 
-  .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
+    .sidebar-header {
+      padding: 24px 20px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
 
-  /* Header */
-  .header {
-    padding: 20px 24px 16px;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
-  }
+    .sidebar-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
 
-  .header h1 {
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    margin-bottom: 2px;
-  }
+    .brain-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
 
-  .header .brain-name {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text);
-  }
+    .stats {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
 
-  .header .brain-name span { color: var(--accent); }
+    .search-box {
+      margin: 20px;
+      position: relative;
+    }
 
-  .stats {
-    display: flex;
-    gap: 16px;
-    margin-top: 10px;
-    font-size: 12px;
-    color: var(--text-dim);
-  }
+    .search-box input {
+      width: 100%;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
 
-  .stats b { color: var(--text); font-weight: 600; }
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: var(--surface-2);
+    }
 
-  /* Search */
-  .search-wrap {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-  }
+    .search-box input::placeholder {
+      color: var(--text-dim);
+    }
 
-  .search-wrap input {
-    width: 100%;
-    padding: 10px 14px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    color: var(--text);
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.2s;
-  }
+    .cluster-label {
+      padding: 0 20px;
+      margin-top: 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+    }
 
-  .search-wrap input:focus { border-color: var(--accent); }
-  .search-wrap input::placeholder { color: var(--text-dim); }
+    .clusters {
+      padding: 8px 12px;
+      flex: 1;
+      overflow-y: auto;
+    }
 
-  /* Cluster List */
-  .cluster-list {
-    flex: 1;
-    overflow-y: auto;
-    padding: 8px 0;
-  }
+    .cluster-item {
+      display: block;
+      padding: 8px 12px;
+      margin: 4px 0;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+      text-align: left;
+      width: 100%;
+    }
 
-  .cluster-item {
-    padding: 10px 16px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.15s;
-    border-left: 3px solid transparent;
-  }
+    .cluster-item:hover {
+      background: var(--surface-2);
+      border-color: var(--border);
+    }
 
-  .cluster-item:hover { background: var(--surface-2); }
+    .cluster-item.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
 
-  .cluster-item.active {
-    background: var(--accent-glow);
-    border-left-color: var(--accent);
-  }
+    .sidebar-hidden .search-box,
+    .sidebar-hidden .cluster-label,
+    .sidebar-hidden .clusters {
+      opacity: 0.3;
+      pointer-events: none;
+    }
 
-  .cluster-item .name {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text);
-  }
+    /* ===== MAIN AREA ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
 
-  .cluster-item .count {
-    font-size: 12px;
-    color: var(--text-dim);
-    background: var(--surface-2);
-    padding: 2px 8px;
-    border-radius: 12px;
-    min-width: 28px;
-    text-align: center;
-  }
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-shrink: 0;
+      height: 60px;
+    }
 
-  .cluster-item.active .count {
-    background: var(--accent);
-    color: white;
-  }
+    .tab-bar {
+      display: flex;
+      gap: 12px;
+      height: 100%;
+      align-items: center;
+    }
 
-  .cluster-item.all-item {
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 4px;
-    padding-bottom: 12px;
-  }
+    .tab {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
 
-  /* Top bar */
-  .topbar {
-    padding: 14px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
-  }
+    .tab:hover {
+      color: var(--text);
+      background: rgba(230, 230, 240, 0.05);
+    }
 
-  .topbar h2 {
-    font-size: 16px;
-    font-weight: 600;
-  }
+    .tab.active {
+      color: white;
+      background: var(--accent);
+    }
 
-  .sort-controls {
-    display: flex;
-    gap: 6px;
-  }
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px;
+      padding-right: 48px;
+    }
 
-  .sort-btn {
-    padding: 4px 10px;
-    font-size: 12px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: all 0.15s;
-  }
+    .tab-content {
+      display: none;
+    }
 
-  .sort-btn:hover { color: var(--text); border-color: var(--text-dim); }
-  .sort-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+    .tab-content.active {
+      display: block;
+    }
 
-  /* Atom List */
-  .atom-list {
-    flex: 1;
-    overflow-y: auto;
-    padding: 16px 24px;
-  }
+    /* ===== TAB 1: HOW BELSKY THINKS ===== */
+    .hero-section {
+      margin-bottom: 48px;
+    }
 
-  .atom-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    transition: all 0.2s;
-    position: relative;
-  }
+    .hero-title {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
 
-  .atom-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 0 20px var(--accent-glow);
-  }
+    .hero-tagline {
+      font-size: 20px;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+    }
 
-  .atom-card.expanded {
-    border-color: var(--accent);
-    box-shadow: 0 0 30px var(--accent-glow);
-  }
+    .hero-bio {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      margin-bottom: 24px;
+      max-width: 800px;
+    }
 
-  .atom-content {
-    font-size: 14px;
-    line-height: 1.65;
-    color: var(--text);
-  }
+    .hero-updated {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 32px;
+      padding: 12px 16px;
+      background: var(--subtle);
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+    }
 
-  .atom-meta {
-    display: flex;
-    gap: 12px;
-    margin-top: 12px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+    .stats-bar {
+      display: flex;
+      gap: 32px;
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
 
-  .confidence-score {
-    font-size: 11px;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    padding: 1px 6px;
-    border-radius: 4px;
-    letter-spacing: 0.3px;
-  }
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-  .confidence-score.high { background: rgba(52, 211, 153, 0.15); color: var(--high); }
-  .confidence-score.medium { background: rgba(251, 191, 36, 0.15); color: var(--medium); }
-  .confidence-score.low { background: rgba(136, 136, 160, 0.15); color: var(--low); }
+    .stat-value {
+      color: var(--accent);
+      font-weight: 600;
+    }
 
-  .atom-meta .tag {
-    font-size: 11px;
-    padding: 2px 8px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    color: var(--text-dim);
-  }
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 48px 0 24px 0;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
 
-  .atom-meta .date {
-    font-size: 11px;
-    color: var(--text-dim);
-    margin-left: auto;
-  }
+    .principles-grid {
+      display: grid;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
 
-  .atom-meta .source-link {
-    font-size: 11px;
-    color: var(--accent);
-    text-decoration: none;
-  }
+    .principle-card {
+      padding: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+      transition: all 0.2s;
+    }
 
-  .atom-meta .source-link:hover { text-decoration: underline; }
+    .principle-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+    }
 
-  /* Connections panel */
-  .connections-panel {
-    margin-top: 14px;
-    padding-top: 14px;
-    border-top: 1px solid var(--border);
-    display: none;
-  }
+    .principle-num {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
 
-  .atom-card.expanded .connections-panel { display: block; }
+    .principle-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: white;
+    }
 
-  .connections-panel h4 {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-  }
+    .principle-desc {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-  .conn-item {
-    padding: 10px 12px;
-    background: var(--surface-2);
-    border-radius: 6px;
-    margin-bottom: 6px;
-    font-size: 13px;
-    line-height: 1.5;
-    cursor: pointer;
-    transition: background 0.15s;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
+    .pattern-card {
+      padding: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      border-left: 4px solid #60a5fa;
+      margin-bottom: 16px;
+    }
 
-  .conn-item:hover { background: var(--border); }
+    .pattern-name {
+      font-weight: 700;
+      color: #60a5fa;
+      margin-bottom: 8px;
+    }
 
-  .conn-type {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
+    .pattern-desc {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-  .conn-type.supports { background: rgba(52, 211, 153, 0.15); color: var(--supports); }
-  .conn-type.extends { background: rgba(96, 165, 250, 0.15); color: var(--extends); }
-  .conn-type.contradicts { background: rgba(248, 113, 113, 0.15); color: var(--contradicts); }
-  .conn-type.related { background: rgba(167, 139, 250, 0.15); color: var(--related); }
+    .contrarian-card {
+      padding: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      border-left: 4px solid var(--contradicts);
+      margin-bottom: 16px;
+    }
 
-  .conn-text { color: var(--text-dim); }
+    .contrarian-title {
+      font-weight: 700;
+      color: var(--contradicts);
+      margin-bottom: 8px;
+    }
 
-  /* Topic cloud in atom */
-  .topic-cloud {
-    display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
+    .contrarian-desc {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-  .topic-chip {
-    font-size: 10px;
-    padding: 1px 6px;
-    background: transparent;
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: all 0.15s;
-  }
+    .belief-card {
+      padding: 20px;
+      background: rgba(136, 136, 160, 0.08);
+      border: 1px solid rgba(136, 136, 160, 0.2);
+      border-radius: 8px;
+      border-left: 4px solid var(--text-dim);
+      margin-bottom: 16px;
+      opacity: 0.85;
+    }
 
-  .topic-chip:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
+    .belief-title {
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
 
-  /* Empty state */
-  .empty-state {
-    text-align: center;
-    padding: 60px 24px;
-    color: var(--text-dim);
-  }
+    .belief-desc {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-  .empty-state .icon { font-size: 40px; margin-bottom: 12px; }
-  .empty-state h3 { font-size: 16px; margin-bottom: 6px; color: var(--text); }
-  .empty-state p { font-size: 13px; }
+    .timeline {
+      margin-bottom: 32px;
+    }
 
-  /* Scrollbar */
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+    .timeline-entry {
+      padding: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 16px;
+      padding-left: 32px;
+      position: relative;
+    }
 
-  /* Results count */
-  .results-count {
-    font-size: 12px;
-    color: var(--text-dim);
-  }
+    .timeline-entry::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 24px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      border: 2px solid var(--surface);
+    }
 
-  /* Search highlight */
-  mark {
-    background: rgba(99, 102, 241, 0.3);
-    color: var(--text);
-    border-radius: 2px;
-    padding: 0 1px;
-  }
+    .timeline-date {
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .sidebar { width: 220px; min-width: 220px; }
-    .atom-list { padding: 12px 16px; }
-  }
-</style>
+    .timeline-role {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .timeline-lesson {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===== TAB 2: ATOMS ===== */
+    .atoms-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .atom-card {
+      padding: 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .atom-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+    }
+
+    .atom-header {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .atom-cluster-tag {
+      display: inline-block;
+      background: var(--subtle);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      flex-shrink: 0;
+    }
+
+    .atom-content {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .atom-quote {
+      padding: 12px 16px;
+      margin: 12px 0;
+      border-left: 3px solid var(--accent);
+      background: rgba(99, 102, 241, 0.05);
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .atom-implication {
+      margin-top: 12px;
+      padding: 12px;
+      background: rgba(96, 165, 250, 0.05);
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .atom-implication-label {
+      font-weight: 600;
+      color: #60a5fa;
+      margin-bottom: 4px;
+    }
+
+    .atom-implication-text {
+      color: var(--text-dim);
+    }
+
+    .atom-footer {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .confidence-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .confidence-high {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+    }
+
+    .confidence-medium {
+      background: rgba(251, 146, 60, 0.15);
+      color: #fb923c;
+    }
+
+    .confidence-low {
+      background: rgba(168, 85, 247, 0.15);
+      color: #a855f7;
+    }
+
+    .topic-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .topic-chip {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .topic-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .no-results {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-dim);
+    }
+
+    /* ===== TAB 3: SKILLS ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .skill-card {
+      padding: 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .skill-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+    }
+
+    .skill-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-family: 'Monaco', 'Menlo', monospace;
+    }
+
+    .skill-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .skill-desc {
+      color: var(--text-dim);
+      font-size: 14px;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .skill-example {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 13px;
+      color: var(--accent);
+      overflow-x: auto;
+      line-height: 1.4;
+    }
+
+    .workflows-section {
+      margin-top: 48px;
+    }
+
+    .workflows-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .workflow-chain {
+      padding: 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .workflow-name {
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .workflow-path {
+      color: var(--text-dim);
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .workflow-arrow {
+      color: var(--accent);
+      margin: 0 8px;
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--text-dim);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1200px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        flex-direction: row;
+        padding: 16px;
+      }
+
+      .sidebar-header {
+        padding: 0;
+        border: none;
+        margin-right: 24px;
+      }
+
+      .search-box {
+        margin: 0;
+        flex: 1;
+      }
+
+      .topbar {
+        padding: 0 16px;
+      }
+
+      .content {
+        padding: 20px;
+        padding-right: 20px;
+      }
+
+      .hero-title {
+        font-size: 32px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-label">BrainsForSale</div>
+        <div class="brain-name">Scott Belsky</div>
+        <div class="stats" id="stats"></div>
+      </div>
 
-<div class="app">
-  <div class="sidebar">
-    <div class="header">
-      <h1>BrainsForSale</h1>
-      <div class="brain-name" id="brainName"><span>Scott</span> Belsky</div>
-      <div class="stats" id="stats"></div>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search atoms..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="cluster-label">Clusters</div>
+      <div class="clusters" id="clusters"></div>
     </div>
-    <div class="search-wrap">
-      <input type="text" id="search" placeholder="Search atoms..." autocomplete="off">
+
+    <!-- MAIN AREA -->
+    <div class="main">
+      <div class="topbar">
+        <div class="tab-bar">
+          <button class="tab active" data-tab="how-belsky-thinks">How Belsky Thinks</button>
+          <button class="tab" data-tab="atoms">Atoms</button>
+          <button class="tab" data-tab="skills">Skills</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- TAB 1: HOW BELSKY THINKS -->
+        <div class="tab-content active" id="how-belsky-thinks">
+          <div class="hero-section">
+            <div class="hero-title">Scott Belsky</div>
+            <div class="hero-tagline">Originals, agents, and organizational design</div>
+            <div class="hero-bio">Scott Belsky is a legendary entrepreneur and strategic thinker who has shaped product and organizational thinking across the tech industry. His 'Implications' newsletter is where he shares his latest thinking on originality, organizational design, AI, and the future of work.</div>
+            <div class="hero-updated">Enriched with 75 atoms from interviews (Tim Ferriss, Lenny's Podcast, First Round Review, NFX, a16z, Design Better), The Messy Middle book frameworks, investment portfolio analysis (263+ companies), and biographical timeline.</div>
+            <div class="stats-bar">
+              <div class="stat-item"><span class="stat-value">359</span> atoms</div>
+              <div class="stat-item"><span class="stat-value">161</span> connections</div>
+              <div class="stat-item"><span class="stat-value">16</span> clusters</div>
+              <div class="stat-item"><span class="stat-value">77</span> editions</div>
+              <div class="stat-item">May 2014–April 2026</div>
+            </div>
+          </div>
+
+          <div class="section-title">First Principles</div>
+          <div class="principles-grid">
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">1</div>
+                <div class="principle-title">Taste is the ultimate human moat.</div>
+              </div>
+              <div class="principle-desc">In a world where AI can make anything, the scarce resource is knowing what to make. Taste has three components: Inputs (what you seek out), Filters (what you block to preserve your unique lens), and Discernment (the choices you make). Every other Belsky idea flows downstream from this.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">2</div>
+                <div class="principle-title">Agency beats optimization.</div>
+              </div>
+              <div class="principle-desc">Humans win not by calculating better than machines, but by believing impossible things and acting on them anyway. The naive belief that anything is possible — often born of ignorance — has changed the world more than any algorithm. AI optimizes; humans defy.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">3</div>
+                <div class="principle-title">Craft survives abundance.</div>
+              </div>
+              <div class="principle-desc">When anything becomes ubiquitous, demand shifts to scarcity, craft, and meaning. Fast food didn't kill fine dining. AI slop won't kill originality. The market always re-prices toward what's hard to replicate.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">4</div>
+                <div class="principle-title">The messy middle is where everything real happens.</div>
+              </div>
+              <div class="principle-desc">The space between initial excitement and eventual outcome is nonlinear, volatile, and psychologically brutal. Most failures happen because people quit here, not because the idea was wrong. Endurance — not strategy — separates winners.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">5</div>
+                <div class="principle-title">Interface controls value.</div>
+              </div>
+              <div class="principle-desc">Whoever owns the interface layer captures the market, regardless of who built the underlying technology. This applies to products, platforms, and commerce. The interface is the moat.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">6</div>
+                <div class="principle-title">Small teams with AI > large teams without it.</div>
+              </div>
+              <div class="principle-desc">Revenue per employee is the new vanity metric. AI collapses the talent stack, making 10-person companies capable of what 500-person companies used to do. The future is STBB: Small Team, Big Business.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">7</div>
+                <div class="principle-title">The art of business is the things that don't scale.</div>
+              </div>
+              <div class="principle-desc">Technology handles what scales. Humans should spend their liberated time on curation, taste, storytelling, and relationships — the things that resist automation and create meaning.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">8</div>
+                <div class="principle-title">Personal frustration is a signal for creative opportunity.</div>
+              </div>
+              <div class="principle-desc">Behance was born from Belsky's frustration with the disorganized creative world. The best startups don't start with market analysis — they start with someone personally annoyed enough to build a solution. Frustration is the most reliable founder fuel.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">9</div>
+                <div class="principle-title">Resourcefulness is muscle; resources are carbs.</div>
+              </div>
+              <div class="principle-desc">Constraint breeds lasting capability. Teams that develop resourcefulness through scarcity outperform well-funded teams that throw money at problems. The best founders build in scarcity by choice.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">10</div>
+                <div class="principle-title">The first mile determines everything.</div>
+              </div>
+              <div class="principle-desc">More than 30% of product energy should be devoted to the first 30 seconds of user experience. In that window, users are lazy, vain, and selfish — they won't invest effort to understand, they care how they appear, and they want immediate personal return.</div>
+            </div>
+            <div class="principle-card">
+              <div style="display: flex; align-items: baseline;">
+                <div class="principle-num">11</div>
+                <div class="principle-title">Career is itself a messy middle.</div>
+              </div>
+              <div class="principle-desc">Goldman → Behance → Adobe → Benchmark (failed) → Adobe return → A24 — demonstrates that nonlinear paths, public missteps, and course corrections are features, not bugs.</div>
+            </div>
+          </div>
+
+          <div class="section-title">Thinking Patterns</div>
+          <div class="pattern-card">
+            <div class="pattern-name">Tension pairs</div>
+            <div class="pattern-desc">Belsky frames ideas as productive contradictions: human vs. machine, scarcity vs. abundance, craft vs. speed. He doesn't resolve these tensions — he holds them and explores both sides.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">Wave models</div>
+            <div class="pattern-desc">He structures technology adoption in sequential waves (three waves of agentic commerce, five stages of agent maturity). The opportunity is seeing which wave you're in and positioning for the next one.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">Physical-world analogies</div>
+            <div class="pattern-desc">He maps digital phenomena to physical economics: AI slop is fast food, interfaces are real estate, taste requires a 'nutritious diet' of original ideas.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">Implication chains</div>
+            <div class="pattern-desc">He reasons in cascading second-order effects: 'If AI makes code free → disposable software → deployment tools become more valuable → security surfaces expand.'</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">The humanity test</div>
+            <div class="pattern-desc">Every technology claim gets filtered through: 'Does this make humans more important or less?' Belsky consistently bets on 'more.'</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">The Do-Show-Explain hierarchy</div>
+            <div class="pattern-desc">Doing something proactively for the user beats showing them how, which beats explaining. Most products over-invest in explanation.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">Conviction over consensus</div>
+            <div class="pattern-desc">Consensus gravitates toward the lowest common denominator. Conviction-driven decisions enable bold outcomes at the cost of looking foolish initially.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">The Productivity-Creativity Inversion</div>
+            <div class="pattern-desc">Machines are now better investments for productivity gains than humans. Humanity is disproportionately rewarded for creativity.</div>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-name">Investment as thesis validation</div>
+            <div class="pattern-desc">Belsky's 263+ angel investments function as a live experiment validating his published beliefs. His money follows his writing.</div>
+          </div>
+
+          <div class="section-title">Contrarian Positions</div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Intermediaries were always overvalued.</div>
+            <div class="contrarian-desc">AI will disrupt intermediation faster than most people expect because we 'overestimated value of human relationships and endured unnecessary friction and fees for a human face.'</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Flaws are a feature, not a bug.</div>
+            <div class="contrarian-desc">In a world of AI-perfect content, deliberate imperfections become signals of authenticity. Proof of humanity becomes premium.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Volatility is the feature of great startups.</div>
+            <div class="contrarian-desc">Smoothing out the wild swings between despair and euphoria often kills what makes a company special.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Your best hires are the unpopular people.</div>
+            <div class="contrarian-desc">Promote the controversial risk-takers over the safe performers. People ahead of their time get punished in promotion discussions.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Malleable memory is good, actually.</div>
+            <div class="contrarian-desc">Perfect recall would be psychologically devastating. AI-powered memory should help us curate our past, not trap us in it.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Consumer AI has so far failed consumers.</div>
+            <div class="contrarian-desc">Despite all the hype, AI has been transformative for builders but only incrementally better for consumers.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Seat-based pricing is already dead.</div>
+            <div class="contrarian-desc">The entire SaaS model breaks when AI agents do the work. The future is outcome-based pricing.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Peace is overrated in organizations.</div>
+            <div class="contrarian-desc">Avoiding conflict creates organizational debt that compounds silently until it kills execution.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Process is a symptom, not a solution.</div>
+            <div class="contrarian-desc">Process accumulates when alignment breaks down. When a team is truly aligned, less process is needed.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">Don't MVP what defines you.</div>
+            <div class="contrarian-desc">Cutting corners on your core differentiator teaches the market nothing about your real conviction.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">The prompt era is ending; the controls era begins.</div>
+            <div class="contrarian-desc">The next phase gives creators direct manipulation controls that feel like natural extensions of existing workflows.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">The final mile is an entirely different sport.</div>
+            <div class="contrarian-desc">The skills that got you 90% of the way become liabilities in the final stretch.</div>
+          </div>
+          <div class="contrarian-card">
+            <div class="contrarian-title">You never have to burn bridges to build new ones.</div>
+            <div class="contrarian-desc">Belsky's career transitions always preserved relationships and optionality.</div>
+          </div>
+
+          <div class="section-title">What He Does NOT Believe</div>
+          <div class="belief-card">
+            <div class="belief-title">"AI will commoditize everything equally."</div>
+            <div class="belief-desc">He believes commoditization is uneven — it hits execution first, then data, then interfaces last. Taste and craft increase in value.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Bigger teams build better products."</div>
+            <div class="belief-desc">He actively argues the opposite. Revenue per employee matters more than revenue.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Technology adoption is purely rational."</div>
+            <div class="belief-desc">Unsaid motivations — ego, status, identity flex — drive product usage more than utility.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Perfect memory is always better."</div>
+            <div class="belief-desc">Malleable memory is a feature of human psychology, not a bug.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"The model is the moat."</div>
+            <div class="belief-desc">AI models are commodities. Data, graphs, behavioral context, and interface control are the real moats.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Disruption comes from better technology."</div>
+            <div class="belief-desc">Disruption comes from better interfaces and eliminating friction, not from superior tech.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"You need consensus to move forward."</div>
+            <div class="belief-desc">Avoiding conflict creates organizational debt that compounds silently.</div>
+          </div>
+
+          <div class="section-title">What This Brain Would NOT Say</div>
+          <div class="belief-card">
+            <div class="belief-title">"Move fast and break things" without caveating craft.</div>
+            <div class="belief-desc">He believes in speed but never at the expense of quality.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"AI will replace human creativity."</div>
+            <div class="belief-desc">This is the opposite of everything Belsky believes. AI makes human taste more valuable, not less.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Scale first, figure out the business later."</div>
+            <div class="belief-desc">He warns against 'rabbit companies' — hyper-growth with no sustainable economics.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Data doesn't matter, just build a better model."</div>
+            <div class="belief-desc">He's emphatic that proprietary data and behavioral graphs are the real moats.</div>
+          </div>
+          <div class="belief-card">
+            <div class="belief-title">"Optimize for engagement."</div>
+            <div class="belief-desc">Products should optimize for joyspan — the duration and depth of positive emotional experience.</div>
+          </div>
+
+          <div class="section-title">Biographical Pattern: The Lived Messy Middle</div>
+          <div class="timeline">
+            <div class="timeline-entry">
+              <div class="timeline-date">2002–2006</div>
+              <div class="timeline-role">Goldman Sachs</div>
+              <div class="timeline-lesson">Found the right role (org design) within the wrong context. Saved $18K to fund his leap.</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">2006–2012</div>
+              <div class="timeline-role">Behance</div>
+              <div class="timeline-lesson">Born from personal frustration. No paycheck for two years. Grew to 55M users. Sold to Adobe for $150M.</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">2012–2016</div>
+              <div class="timeline-role">Adobe VP</div>
+              <div class="timeline-lesson">Rare acquired founder who stayed and thrived in a large company.</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">2016</div>
+              <div class="timeline-role">Benchmark</div>
+              <div class="timeline-lesson">Public misstep. Discovered he's a builder, not an evaluator. Exited within months.</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">2017–2025</div>
+              <div class="timeline-role">Adobe CPO/CSO</div>
+              <div class="timeline-lesson">Returned to lead products. Drove Firefly, Creative Cloud evolution, AI strategy.</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">2025–Present</div>
+              <div class="timeline-role">A24 Partner</div>
+              <div class="timeline-lesson">Left enterprise software for indie filmmaking. Maintained Adobe advisory role — never burn bridges.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: ATOMS -->
+        <div class="tab-content" id="atoms">
+          <div class="atoms-grid" id="atomsGrid">
+            <!-- Loaded dynamically -->
+          </div>
+          <div class="no-results" id="noResults" style="display: none;">
+            No atoms match your search. Try a different query.
+          </div>
+        </div>
+
+        <!-- TAB 3: SKILLS -->
+        <div class="tab-content" id="skills">
+          <div class="skills-grid" id="skillsGrid">
+            <!-- Loaded dynamically -->
+          </div>
+
+          <div class="workflows-section">
+            <div class="workflows-title">Workflows</div>
+            <div class="workflow-chain">
+              <div class="workflow-name">Decide</div>
+              <div class="workflow-path">/advise <span class="workflow-arrow">→</span> /debate <span class="workflow-arrow">→</span> /apply</div>
+            </div>
+            <div class="workflow-chain">
+              <div class="workflow-name">Learn</div>
+              <div class="workflow-path">/teach <span class="workflow-arrow">→</span> /deep-dive <span class="workflow-arrow">→</span> /evolve</div>
+            </div>
+            <div class="workflow-chain">
+              <div class="workflow-name">Create</div>
+              <div class="workflow-path">/surprise <span class="workflow-arrow">→</span> /connect <span class="workflow-arrow">→</span> /mashup</div>
+            </div>
+            <div class="workflow-chain">
+              <div class="workflow-name">Research</div>
+              <div class="workflow-path">/deep-dive <span class="workflow-arrow">→</span> /mashup <span class="workflow-arrow">→</span> /brainfight</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="cluster-list" id="clusterList"></div>
   </div>
 
-  <div class="main">
-    <div class="topbar">
-      <div>
-        <h2 id="viewTitle">All Atoms</h2>
-        <span class="results-count" id="resultsCount"></span>
-      </div>
-      <div class="sort-controls">
-        <button class="sort-btn active" data-sort="date">Newest</button>
-        <button class="sort-btn" data-sort="confidence">Confidence</button>
-        <button class="sort-btn" data-sort="connections">Most Connected</button>
-      </div>
-    </div>
-    <div class="atom-list" id="atomList"></div>
-  </div>
-</div>
+  <script>
+    let atomsData = [];
+    let connectionsData = [];
+    let brainMeta = {};
+    let atomMap = {};
+    let clusters = new Set();
+    let filteredAtoms = [];
+    let currentCluster = null;
+    let currentSearch = '';
 
-<script>
-let DATA = null;
-let atomMap = {};
-let currentCluster = null;
-let currentSort = 'date';
-let searchQuery = '';
-let expandedAtomId = null;
+    // TAB SWITCHING
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        const tabName = e.target.dataset.tab;
 
-const CLUSTER_LABELS = {
-  ai_agents: 'AI Agents & Agentic Commerce',
-  product_design: 'Product Design & Strategy',
-  leadership: 'Leadership & Org Design',
-  craft_originality: 'Craft, Originality & Taste',
-  consumer_ai: 'Consumer AI & Social',
-  competitive_moats: 'Competitive Advantage & Moats',
-  platform_strategy: 'Platform Strategy & Networks',
-  creator_economy: 'Creator Economy & Brands',
-  memory_knowledge: 'Memory, Learning & Knowledge',
-  superhumanity: 'Superhumanity & Agency',
-  future_of_work: 'Future of Work & Talent',
-  commerce: 'Commerce & Economic Models',
-  vibe_coding: 'Vibe Coding & Software Abundance',
-  enterprise_ai: 'Enterprise AI & Internal Tools',
-  osint: 'OSINT & Info Warfare',
-  longevity: 'Longevity & Health'
-};
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        e.target.classList.add('active');
 
-async function init() {
-  // Try three loading strategies:
-  // 1. Inline data (injected by export pipeline as window.BRAIN_DATA)
-  // 2. Fetch from same directory (works on http://)
-  // 3. Script tag injection (fallback for file://)
-  if (window.BRAIN_DATA) {
-    DATA = window.BRAIN_DATA;
-  } else {
-    try {
-      const resp = await fetch('brain-atoms.json');
-      if (!resp.ok) throw new Error(resp.status);
-      DATA = await resp.json();
-    } catch (e) {
-      // Fallback: try loading via dynamic script tag (works on file://)
+        // Hide all content
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+
+        // Show selected content
+        document.getElementById(tabName).classList.add('active');
+
+        // Update sidebar visibility
+        const sidebar = document.getElementById('sidebar');
+        if (tabName === 'atoms') {
+          sidebar.classList.remove('sidebar-hidden');
+        } else {
+          sidebar.classList.add('sidebar-hidden');
+        }
+      });
+    });
+
+    // LOAD ATOMS DATA
+    async function loadAtoms() {
+      let raw;
       try {
-        DATA = await new Promise((resolve, reject) => {
-          const s = document.createElement('script');
-          s.src = 'brain-atoms.json';
-          // brain-atoms.json is pure JSON, so we read it as text and parse
+        const response = await fetch('brain-atoms.json');
+        raw = await response.json();
+      } catch (err) {
+        console.log('Fetch failed, trying XHR...');
+        raw = await new Promise((resolve, reject) => {
           const xhr = new XMLHttpRequest();
           xhr.open('GET', 'brain-atoms.json', true);
-          xhr.onload = () => {
-            if (xhr.status === 200 || xhr.status === 0) {
-              resolve(JSON.parse(xhr.responseText));
-            } else { reject(); }
-          };
+          xhr.onload = () => resolve(JSON.parse(xhr.responseText));
           xhr.onerror = reject;
           xhr.send();
         });
-      } catch (e2) {
-        document.getElementById('atomList').innerHTML =
-          '<div class="empty-state"><div class="icon">!</div><h3>Could not load brain-atoms.json</h3>' +
-          '<p>Make sure explore.html and brain-atoms.json are in the same folder, ' +
-          'or open via a local server: <code>python3 -m http.server</code></p></div>';
+      }
+      // brain-atoms.json has { brain, atoms, connections, topic_index }
+      brainMeta = raw.brain || {};
+      atomsData = raw.atoms || [];
+      connectionsData = raw.connections || [];
+      // Build atom lookup map for connection navigation
+      atomsData.forEach(a => { atomMap[a.id] = a; });
+      initializeAtoms();
+    }
+
+    function initializeAtoms() {
+      // Extract clusters
+      atomsData.forEach(atom => {
+        if (atom.cluster) clusters.add(atom.cluster);
+      });
+
+      // Render clusters
+      const clustersDiv = document.getElementById('clusters');
+      const sortedClusters = Array.from(clusters).sort();
+      sortedClusters.forEach(cluster => {
+        const btn = document.createElement('button');
+        btn.className = 'cluster-item';
+        btn.textContent = cluster;
+        btn.addEventListener('click', () => filterByCluster(cluster, btn));
+        clustersDiv.appendChild(btn);
+      });
+
+      // Initial render
+      renderAtoms(atomsData);
+
+      // Set stats from loaded data
+      const statsDiv = document.getElementById('stats');
+      statsDiv.innerHTML = `
+        <div><strong>${atomsData.length}</strong> atoms</div>
+        <div><strong>${connectionsData.length}</strong> connections</div>
+        <div><strong>${clusters.size}</strong> clusters</div>
+      `;
+    }
+
+    function filterByCluster(cluster, btn) {
+      // Toggle
+      if (currentCluster === cluster) {
+        currentCluster = null;
+        btn.classList.remove('active');
+      } else {
+        document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
+        currentCluster = cluster;
+        btn.classList.add('active');
+      }
+      applyFilters();
+    }
+
+    function applyFilters() {
+      filteredAtoms = atomsData.filter(atom => {
+        const matchesCluster = !currentCluster || atom.cluster === currentCluster;
+        const matchesSearch = !currentSearch ||
+          atom.content.toLowerCase().includes(currentSearch.toLowerCase()) ||
+          (atom.original_quote && atom.original_quote.toLowerCase().includes(currentSearch.toLowerCase())) ||
+          (atom.implication && atom.implication.toLowerCase().includes(currentSearch.toLowerCase())) ||
+          (atom.topics && atom.topics.some(t => t.toLowerCase().includes(currentSearch.toLowerCase())));
+        return matchesCluster && matchesSearch;
+      });
+      renderAtoms(filteredAtoms);
+    }
+
+    function renderAtoms(atoms) {
+      const grid = document.getElementById('atomsGrid');
+      const noResults = document.getElementById('noResults');
+
+      grid.innerHTML = '';
+
+      if (atoms.length === 0) {
+        noResults.style.display = 'block';
         return;
       }
-    }
-  }
 
-  // Build atom lookup
-  DATA.atoms.forEach(a => { atomMap[a.id] = a; });
+      noResults.style.display = 'none';
 
-  // Render stats
-  const b = DATA.brain;
-  document.getElementById('stats').innerHTML =
-    `<span><b>${b.atom_count}</b> atoms</span>` +
-    `<span><b>${b.connection_count}</b> connections</span>` +
-    `<span><b>${b.cluster_count}</b> clusters</span>`;
+      atoms.forEach((atom, idx) => {
+        const card = document.createElement('div');
+        card.className = 'atom-card';
 
-  // Set brain name from data
-  const parts = b.name.split(' ');
-  if (parts.length >= 2) {
-    document.getElementById('brainName').innerHTML =
-      `<span>${parts[0]}</span> ${parts.slice(1).join(' ')}`;
-  }
+        let html = `
+          <div class="atom-header">
+            <div class="atom-cluster-tag">${atom.cluster || 'uncategorized'}</div>
+          </div>
+          <div class="atom-content">${atom.content}</div>
+        `;
 
-  renderClusterList();
-  renderAtoms();
-  bindEvents();
-}
+        if (atom.original_quote) {
+          html += `<div class="atom-quote">"${atom.original_quote}"</div>`;
+        }
 
-function renderClusterList() {
-  const counts = {};
-  DATA.atoms.forEach(a => {
-    counts[a.cluster] = (counts[a.cluster] || 0) + 1;
-  });
+        if (atom.implication) {
+          html += `
+            <div class="atom-implication">
+              <div class="atom-implication-label">Implication:</div>
+              <div class="atom-implication-text">${atom.implication}</div>
+            </div>
+          `;
+        }
 
-  // Sort clusters by count descending
-  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+        html += '<div class="atom-footer">';
 
-  let html = `<div class="cluster-item all-item active" data-cluster="">
-    <span class="name">All Clusters</span>
-    <span class="count">${DATA.atoms.length}</span>
-  </div>`;
+        if (atom.confidence_tier) {
+          const tier = (atom.confidence_tier || 'medium').toUpperCase();
+          const tierClass = `confidence-${atom.confidence_tier ? atom.confidence_tier.toLowerCase() : 'medium'}`;
+          html += `<div class="confidence-badge ${tierClass}">${tier}</div>`;
+        }
 
-  sorted.forEach(([slug, count]) => {
-    const label = CLUSTER_LABELS[slug] || slug;
-    html += `<div class="cluster-item" data-cluster="${slug}">
-      <span class="name">${label}</span>
-      <span class="count">${count}</span>
-    </div>`;
-  });
+        if (atom.topics && atom.topics.length > 0) {
+          html += '<div class="topic-chips">';
+          atom.topics.forEach(topic => {
+            html += `<button class="topic-chip" onclick="searchTopic('${topic}')">${topic}</button>`;
+          });
+          html += '</div>';
+        }
 
-  document.getElementById('clusterList').innerHTML = html;
-}
+        html += '</div>';
 
-function getFilteredAtoms() {
-  let atoms = DATA.atoms;
-
-  // Filter by cluster
-  if (currentCluster) {
-    atoms = atoms.filter(a => a.cluster === currentCluster);
-  }
-
-  // Filter by search
-  if (searchQuery) {
-    const q = searchQuery.toLowerCase();
-    atoms = atoms.filter(a =>
-      a.content.toLowerCase().includes(q) ||
-      (a.topics && a.topics.some(t => t.toLowerCase().includes(q))) ||
-      (a.cluster && CLUSTER_LABELS[a.cluster] && CLUSTER_LABELS[a.cluster].toLowerCase().includes(q))
-    );
-  }
-
-  // Sort
-  if (currentSort === 'date') {
-    atoms.sort((a, b) => (b.source_date || '').localeCompare(a.source_date || ''));
-  } else if (currentSort === 'confidence') {
-    atoms.sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
-  } else if (currentSort === 'connections') {
-    atoms.sort((a, b) => (b.connections?.length || 0) - (a.connections?.length || 0));
-  }
-
-  return atoms;
-}
-
-function highlightText(text, query) {
-  if (!query) return escapeHtml(text);
-  const escaped = escapeHtml(text);
-  const q = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return escaped.replace(new RegExp(`(${q})`, 'gi'), '<mark>$1</mark>');
-}
-
-function escapeHtml(text) {
-  const d = document.createElement('div');
-  d.textContent = text;
-  return d.innerHTML;
-}
-
-function confidenceLabel(val) {
-  if (val >= 0.9) return 'high';
-  if (val >= 0.85) return 'medium';
-  return 'low';
-}
-
-function renderAtoms() {
-  const atoms = getFilteredAtoms();
-  const container = document.getElementById('atomList');
-
-  // Update title
-  const title = currentCluster ? (CLUSTER_LABELS[currentCluster] || currentCluster) : 'All Atoms';
-  document.getElementById('viewTitle').textContent = title;
-  document.getElementById('resultsCount').textContent =
-    searchQuery ? `${atoms.length} result${atoms.length !== 1 ? 's' : ''}` : `${atoms.length} atoms`;
-
-  if (atoms.length === 0) {
-    container.innerHTML = `<div class="empty-state">
-      <div class="icon">&#x1f50d;</div>
-      <h3>No atoms found</h3>
-      <p>${searchQuery ? 'Try a different search term.' : 'This cluster has no atoms.'}</p>
-    </div>`;
-    return;
-  }
-
-  let html = '';
-  atoms.forEach(atom => {
-    const isExpanded = expandedAtomId === atom.id;
-    const tier = confidenceLabel(atom.confidence);
-    const dateStr = atom.source_date ? new Date(atom.source_date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
-
-    html += `<div class="atom-card ${isExpanded ? 'expanded' : ''}" data-id="${atom.id}">
-      <div class="atom-content">${highlightText(atom.content, searchQuery)}</div>
-      <div class="topic-cloud">
-        ${(atom.topics || []).map(t =>
-          `<span class="topic-chip" data-topic="${escapeHtml(t)}">${escapeHtml(t)}</span>`
-        ).join('')}
-      </div>
-      <div class="atom-meta">
-        <span class="confidence-score ${tier}" title="Confidence: ${tier}">${atom.confidence ? atom.confidence.toFixed(2) : ''}</span>
-        <span class="tag">${CLUSTER_LABELS[atom.cluster] || atom.cluster}</span>
-        ${atom.source_ref ? `<a class="source-link" href="${escapeHtml(atom.source_ref)}" target="_blank" rel="noopener">Source</a>` : ''}
-        ${dateStr ? `<span class="date">${dateStr}</span>` : ''}
-      </div>
-      <div class="connections-panel">${isExpanded ? renderConnections(atom) : ''}</div>
-    </div>`;
-  });
-
-  container.innerHTML = html;
-}
-
-function renderConnections(atom) {
-  if (!atom.connections || atom.connections.length === 0) {
-    return '<h4>No Connections</h4><p style="font-size:12px;color:var(--text-dim)">This atom has no typed connections yet.</p>';
-  }
-
-  let html = `<h4>${atom.connections.length} Connection${atom.connections.length !== 1 ? 's' : ''}</h4>`;
-
-  atom.connections.forEach(conn => {
-    const target = atomMap[conn.target_id];
-    if (!target) return;
-
-    const rel = conn.relationship || 'related';
-    const snippet = target.content.length > 180
-      ? target.content.substring(0, 180) + '...'
-      : target.content;
-
-    html += `<div class="conn-item" data-target="${conn.target_id}">
-      <span class="conn-type ${rel}">${rel}</span>
-      <span class="conn-text">${escapeHtml(snippet)}</span>
-    </div>`;
-  });
-
-  return html;
-}
-
-function bindEvents() {
-  // Cluster selection
-  document.getElementById('clusterList').addEventListener('click', e => {
-    const item = e.target.closest('.cluster-item');
-    if (!item) return;
-
-    document.querySelectorAll('.cluster-item').forEach(el => el.classList.remove('active'));
-    item.classList.add('active');
-    currentCluster = item.dataset.cluster || null;
-    expandedAtomId = null;
-    renderAtoms();
-    document.getElementById('atomList').scrollTop = 0;
-  });
-
-  // Search
-  let searchTimeout;
-  document.getElementById('search').addEventListener('input', e => {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-      searchQuery = e.target.value.trim();
-      expandedAtomId = null;
-      renderAtoms();
-    }, 200);
-  });
-
-  // Sort buttons
-  document.querySelectorAll('.sort-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentSort = btn.dataset.sort;
-      renderAtoms();
-    });
-  });
-
-  // Atom card click (expand/collapse)
-  document.getElementById('atomList').addEventListener('click', e => {
-    // Connection click — navigate to that atom
-    const connItem = e.target.closest('.conn-item');
-    if (connItem) {
-      e.stopPropagation();
-      const targetId = connItem.dataset.target;
-      const targetAtom = atomMap[targetId];
-      if (targetAtom) {
-        // Switch to target's cluster
-        currentCluster = targetAtom.cluster;
-        expandedAtomId = targetId;
-        searchQuery = '';
-        document.getElementById('search').value = '';
-
-        // Update sidebar
-        document.querySelectorAll('.cluster-item').forEach(el => {
-          el.classList.toggle('active',
-            (el.dataset.cluster || null) === currentCluster
-          );
-        });
-
-        renderAtoms();
-
-        // Scroll to the expanded atom
-        setTimeout(() => {
-          const el = document.querySelector(`.atom-card[data-id="${targetId}"]`);
-          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 50);
-      }
-      return;
-    }
-
-    // Topic chip click — search for that topic
-    const topicChip = e.target.closest('.topic-chip');
-    if (topicChip) {
-      e.stopPropagation();
-      const topic = topicChip.dataset.topic;
-      searchQuery = topic;
-      document.getElementById('search').value = topic;
-      currentCluster = null;
-      expandedAtomId = null;
-      document.querySelectorAll('.cluster-item').forEach(el => {
-        el.classList.toggle('active', !el.dataset.cluster);
+        card.innerHTML = html;
+        grid.appendChild(card);
       });
-      renderAtoms();
-      return;
     }
 
-    // Atom card click — toggle expand
-    const card = e.target.closest('.atom-card');
-    if (!card) return;
-
-    const id = card.dataset.id;
-    if (expandedAtomId === id) {
-      expandedAtomId = null;
-    } else {
-      expandedAtomId = id;
+    function searchTopic(topic) {
+      document.getElementById('searchInput').value = topic;
+      currentSearch = topic;
+      currentCluster = null;
+      document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
+      applyFilters();
     }
-    renderAtoms();
 
-    // Keep scroll position near the clicked atom
-    if (expandedAtomId) {
-      setTimeout(() => {
-        const el = document.querySelector(`.atom-card[data-id="${id}"]`);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 50);
-    }
-  });
+    // SEARCH INPUT
+    document.getElementById('searchInput').addEventListener('keyup', (e) => {
+      currentSearch = e.target.value;
+      applyFilters();
+    });
 
-  // Keyboard shortcuts
-  document.addEventListener('keydown', e => {
-    if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
-      e.preventDefault();
-      document.getElementById('search').focus();
-    }
-    if (e.key === 'Escape') {
-      document.getElementById('search').value = '';
-      searchQuery = '';
-      expandedAtomId = null;
-      document.getElementById('search').blur();
-      renderAtoms();
-    }
-  });
-}
+    // KEYBOARD SHORTCUTS
+    document.addEventListener('keydown', (e) => {
+      // "/" to focus search (only if on atoms tab)
+      if (e.key === '/' && document.getElementById('atoms').classList.contains('active')) {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+      }
+      // Escape to clear search
+      if (e.key === 'Escape') {
+        document.getElementById('searchInput').value = '';
+        currentSearch = '';
+        applyFilters();
+      }
+    });
 
-init();
-</script>
+    // SKILLS GRID
+    const skillsData = [
+      { name: "advise", title: "Strategic Counsel", desc: "Get advice on decisions grounded in Scott's frameworks.", example: "/advise \"Should I raise my Series A or stay bootstrapped?\"" },
+      { name: "teach", title: "Learn Through Belsky's Lens", desc: "Explain a concept using Scott's actual vocabulary and mental models.", example: "/teach \"Explain agentic commerce to me.\"" },
+      { name: "debate", title: "Steel-Man Both Sides", desc: "Present a position; brain argues against it using real counterarguments.", example: "/debate \"Is remote work better for innovation?\"" },
+      { name: "connect", title: "The Serendipity Engine", desc: "Surface non-obvious connections between your topic and Belsky's thinking.", example: "/connect \"Connect originality to organizational structure.\"" },
+      { name: "evolve", title: "Intellectual Evolution", desc: "Trace how Scott's thinking on a topic developed over time.", example: "/evolve \"How does Scott's thinking on AI agents evolve?\"" },
+      { name: "apply", title: "Actionable Frameworks", desc: "Turn a framework into a step-by-step plan for your situation.", example: "/apply \"How do I apply the originality framework to my product?\"" },
+      { name: "mashup", title: "Synthesize & Combine", desc: "Combine multiple ideas into a genuinely new thesis.", example: "/mashup \"originality + AI agents + organizational design\"" },
+      { name: "brainfight", title: "Ideas in Conflict", desc: "Pit two ideas head-to-head. Find agreements, contradictions, conditional victories.", example: "/brainfight \"Longevity vs. urgency — which should win?\"" },
+      { name: "deep-dive", title: "Everything Belsky Knows", desc: "Exhaustive analysis — pull ALL atoms, map connections, synthesize.", example: "/deep-dive \"Scott's thinking on organizational design\"" },
+      { name: "surprise", title: "Show Me Something Unexpected", desc: "Random high-quality atom for daily inspiration.", example: "/surprise" }
+    ];
+
+    function renderSkills() {
+      const grid = document.getElementById('skillsGrid');
+      skillsData.forEach(skill => {
+        const card = document.createElement('div');
+        card.className = 'skill-card';
+        card.innerHTML = `
+          <div class="skill-name">/${skill.name}</div>
+          <div class="skill-title">${skill.title}</div>
+          <div class="skill-desc">${skill.desc}</div>
+          <div class="skill-example">${skill.example}</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // INIT
+    loadAtoms();
+    renderSkills();
+  </script>
 </body>
 </html>
