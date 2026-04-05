@@ -1,115 +1,52 @@
 ---
 name: debate
-description: "Stress-test your thinking from {{brain_last_name}}'s worldview. Provocative counterarguments grounded in his actual beliefs."
+description: "Stress-test your thinking from {{brain_name}}'s worldview. Counterarguments grounded in actual beliefs."
 ---
 
-# 🔥 /debate — Steel-Man Both Sides
+# /debate — Steel-Man Both Sides
 
-Present a position or belief, and {{brain_last_name}}'s brain will argue against it—not with generic objections, but with specific, provocative counterarguments grounded in his actual thinking.
+Present a position. {{brain_last_name}} argues against it using {{brain_possessive}} actual thinking — real counterarguments from atoms, not generic objections.
 
 ## How It Works
 
-When you invoke `/debate`, the skill will:
+1. Parse your position and identify the core claim
+2. Search for atoms that challenge, complicate, or contradict it
+3. Build a steel-manned counterargument using {{brain_first_name}}'s frameworks
+4. Surface where both sides have merit — the tension is the insight
 
-1. **Parse your position** — Understand the claim or belief you're testing
-2. **Find {{brain_last_name}}'s atoms that challenge it** — Search for contradictions, limitations, or alternative views in his thinking
-3. **Construct the counterargument** — Build a strong opposing position using his specific frameworks and evidence
-4. **Present both sides** — Show your reasoning AND his objection with equal force
-5. **Identify the tension** — Highlight what's at stake in this disagreement
-6. **Suggest resolution paths** — Point toward skills that help reconcile the tension (e.g., `/apply` to find nuance, `/brainfight` to explore deeper)
+## Context Loading
 
-## Best For
-
-- Challenging your own assumptions before major decisions
-- Understanding why a position might be wrong (or incomplete)
-- Finding blind spots in your thinking
-- Preparing for resistance or criticism
-- Sharpening your original thesis
-
-## Examples
-
-**Example 1: Challenge a Business Assumption**
-```
-/debate
-
-My strategy is to build a platform for creators. I think network effects and community
-lock-in will be my competitive advantage. How would {{brain_first_name}} disagree?
-```
-
-Expected output:
-- ✅ **Your Position:** [1-sentence summary]
-- 🔥 **{{brain_last_name}}'s Counterargument:** [2-3 sentences using his atoms about creator economy, meaning economy, authenticity]
-- 📌 **His Evidence:** [2-3 atoms that support this objection]
-- 🤔 **What's Actually True?** [The nuance—where you're both right]
-- 💡 **Try next:** `/apply` (to integrate the insight) or `/brainfight` (to explore deeper)
-
-**Example 2: Challenge a Leadership Approach**
-```
-/debate
-
-I believe that as a company scales, we need to implement formal processes and
-functional structure to stay organized. Is there anything in {{brain_first_name}}'s thinking
-that contradicts this?
-```
-
-Expected output:
-- ✅ **Your Position:** [summary]
-- 🔥 **{{brain_last_name}}'s Counterargument:** [his objection grounded in atoms about adaptability, organizational design, scaling]
-- 📌 **His Evidence:** [cite atoms about adaptive challenges, playbooks, and functional vs. project structure]
-- 🤔 **Where the Tension Lives:** [acknowledging both sides are partly right]
-- 💡 **Try next:** `/apply` (to find the right balance) or `/connect` (to find synthesis)
-
-**Example 3: Challenge a Market Belief**
-```
-/debate
-
-I think the future is about big companies with AI doing more with less people.
-{{brain_first_name}} seems optimistic about small, craft-focused businesses. How does he
-argue against my view?
-```
-
-Expected output:
-- ✅ **Your Position:** [summary]
-- 🔥 **{{brain_last_name}}'s Counterargument:** [atoms about authenticity, human craft, consumer demand, meaning economy]
-- 📌 **His Evidence:** [atoms about artisanal premium, scarcity, consumer trust]
-- 🤔 **The Real Picture:** [both trends are real—how do they coexist?]
-- 💡 **Try next:** `/brainfight` (to pit these ideas against each other) or `/deep-dive` (to explore fully)
+Load `clusters/manifest.json` → relevant cluster files. For broad positions, load `brain-context.md`.
 
 ## Output Format
 
-Always use this structure:
-
 ```
-✅ **Your Position**
-[1-2 sentence summary of what you believe]
+✅ **Your Position:** [1-2 sentence summary]
 
 🔥 **{{brain_last_name}}'s Counterargument**
-[2-3 sentences articulating the opposing view, using his language and frameworks]
+[2-3 sentences using original_quote language when available]
 
 📌 **His Evidence**
-1. "[Atom 1]" — *[Topic], [Source Date]*
-2. "[Atom 2]" — *[Topic], [Source Date]*
-3. "[Atom 3]" — *[Topic], [Source Date]*
+1. "[Original quote or content]" — *[Implication]* — *[Confidence tier]*
+2. "[Original quote or content]" — *[Implication]* — *[Confidence tier]*
 
-🤔 **What's Actually True?**
-[1-2 sentences acknowledging nuance—both views have merit under different conditions]
+🤔 **Where Both Sides Have Merit**
+[Where you're right AND where he complicates your thinking]
 
-⚡ **The Tension**
-[1 sentence naming the core disagreement or tradeoff]
+⚡ **The Tension:** [Name the core disagreement]
 
-💡 **Try next:** `/brainfight` (to explore the debate fully) or `/apply` (to find practical synthesis)
+💡 **Try next:** `/brainfight` (full head-to-head) or `/apply` (act on the nuance)
 ```
 
-## Rules for LLM Behavior
+## Rules
 
-1. **Use his atoms, not generic counterarguments** — The debate should feel specific to {{brain_last_name}}'s thinking, not a generic objection
-2. **Be provocative but fair** — Make the strongest case against the user's position without strawmanning them
-3. **Ground in his actual beliefs** — If atoms don't support a counterargument, don't invent one
-4. **Acknowledge nuance** — This isn't about proving the user wrong; it's about sharpening both sides
-5. **Flag when the brain is silent** — If {{brain_last_name}}'s thinking doesn't directly address this topic, say so
+1. **Steel-man the counterargument** — Make it genuinely challenging, not a strawman.
+2. **Voice first** — Use `original_quote` language. {{brain_first_name}}'s provocations are the product.
+3. **Acknowledge nuance** — Almost always both sides have merit under different conditions.
+4. **Thin topic** — If <5 atoms on the position's domain, say so and suggest `/connect`.
 
-## Data Source
+## Data
 
-- **atoms:** brain-atoms.json ({{atom_count}} total)
-- **context:** brain-context.md (topic clusters for cross-referencing)
-- **strategy:** Look for atoms tagged with opposing topics to find natural counterarguments
+- **atoms:** brain-atoms.json ({{atom_count}} atoms, {{connection_count}} connections)
+- **clusters:** clusters/manifest.json + individual cluster .md files
+- **shared rules:** See "LLM Usage Rules" in brain-context.md

@@ -7,9 +7,9 @@ Usage:
   python export-brain.py --brain belsky --from-files atoms.json connections.json
   python export-brain.py --brain belsky --supabase  (requires SUPABASE_URL + SUPABASE_SERVICE_KEY)
 
-Reads brain config from ../brains/{slug}.json
+Reads brain config from ../brains/{slug}/brain.json
 Reads templates from ../templates/
-Outputs to ../brainsforsale-{slug}/
+Outputs to ../brains/{slug}/pack/
 """
 
 import argparse
@@ -30,8 +30,8 @@ BRAINS_DIR = ROOT_DIR / "brains"
 
 
 def load_brain_config(slug: str) -> dict:
-    """Load brain config from brains/{slug}.json"""
-    config_path = BRAINS_DIR / f"{slug}.json"
+    """Load brain config from brains/{slug}/brain.json"""
+    config_path = BRAINS_DIR / slug / "brain.json"
     if not config_path.exists():
         print(f"ERROR: Brain config not found: {config_path}")
         sys.exit(1)
@@ -138,7 +138,12 @@ def export_atoms_json(atoms: list, connections: list, config: dict, output_dir: 
             "source_ref": atom.get("source_ref"),
             "source_date": (atom.get("source_date") or "")[:10] if atom.get("source_date") else None,
             "confidence": atom.get("confidence"),
+            "confidence_tier": atom.get("confidence_tier"),
         }
+        if atom.get("original_quote"):
+            entry["original_quote"] = atom["original_quote"]
+        if atom.get("implication"):
+            entry["implication"] = atom["implication"]
         if atom_conns:
             entry["connections"] = atom_conns
         output["atoms"].append(entry)
@@ -153,7 +158,126 @@ def export_atoms_json(atoms: list, connections: list, config: dict, output_dir: 
 
 
 def export_context_md(atoms: list, connections: list, config: dict, output_dir: Path):
-    """Generate brain-context.md"""
+    """Generate brain-context.md in clean paragraph format.
+
+    Format: synthesis sections (first principles, thinking patterns, contrarian
+    positions, would-not-say) followed by flowing paragraphs per cluster with
+    bold lead-in sentences, inline (source) links, and --- dividers.
+    Metadata (topics, confidence, connections) stays in brain-atoms.json only.
+    """
+    clusters_map = defaultdict(list)
+    for atom in atoms:
+        clusters_map[atom.get("cluster", "uncategorized")].append(atom)
+
+    cluster_order = config.get("cluster_order", sorted(clusters_map.keys()))
+    cluster_meta = config.get("clusters", {})
+    brain_name = config["brain_name"]
+    slug = config["brain_slug"]
+
+    lines = []
+    source_desc = config.get('brain_source_description', 'Insights')
+    # Avoid double-quoting if source description already has quotes
+    if source_desc.startswith('"') or source_desc.startswith("'"):
+        lines.append(f"# {brain_name}'s {source_desc} — Extracted Insights\n")
+    else:
+        lines.append(f"# {brain_name}'s \"{source_desc}\" — Extracted Insights\n")
+    lines.append(
+        f"{len(atoms)} atomic ideas extracted from {config.get('brain_source_detail', 'multiple sources')}. "
+        f"{config.get('brain_bio', '')}\n"
+    )
+    lines.append(
+        f"Extracted by Rob Gabel using a custom knowledge graph pipeline "
+        f"(Firecrawl + Supabase + pgvector). Each insight is self-contained and searchable.\n"
+    )
+    # Shared LLM rules header
+    lines.append("## LLM Usage Rules\n")
+    lines.append("When using this brain as context, follow these rules:\n")
+    lines.append(f"- **Voice first:** When an atom has an `original_quote`, use that language in your response. {brain_name}'s voice IS the product.")
+    lines.append(f"- **Cite atoms:** Every claim must trace to an actual atom. Never hallucinate {brain_name}'s thinking.")
+    lines.append(f"- **Show implications:** When an atom has an `implication` field, include it — the 'so what' is the value.")
+    lines.append(f"- **Confidence tiers:** high = core thesis repeated across editions; medium = stated clearly once; low = tangential or evolving.")
+    lines.append(f"- **Thin topics:** If fewer than 5 atoms exist on a topic, state this clearly and suggest exploring adjacent clusters.")
+    lines.append(f"- **Suggest next skill:** End responses with a recommended next skill (e.g., '/debate to stress-test, /apply to execute').\n")
+    lines.append("---\n")
+
+    # Inject synthesis sections if they exist for this brain
+    synthesis_path = BRAINS_DIR / slug / "synthesis.md"
+    if synthesis_path.exists():
+        with open(synthesis_path) as f:
+            synthesis_content = f.read().strip()
+        lines.append(f"{synthesis_content}\n")
+        lines.append("---\n")
+    else:
+        print(f"  NOTE: No synthesis file found at {synthesis_path} — skipping brain DNA sections")
+
+    for i, cluster_key in enumerate(cluster_order):
+        if cluster_key not in clusters_map:
+            continue
+        meta = cluster_meta.get(cluster_key, {})
+        name = meta.get("name", cluster_key)
+        cluster_atoms = sorted(
+            clusters_map[cluster_key],
+            key=lambda a: a.get("source_date") or "",
+            reverse=True
+        )
+
+        lines.append(f"## {name}\n")
+
+        for atom in cluster_atoms:
+            content = atom["content"]
+            source = atom.get("source_ref", "")
+
+            # Strip any existing markdown bold from atom content
+            content = content.replace("**", "")
+
+            # Extract bold lead-in. Atoms typically use "Title: description" format.
+            # Convert to "**Title.** Description (source)" to match preferred style.
+            colon_pos = content.find(": ")
+            first_period = content.find(". ")
+
+            if colon_pos > 0 and colon_pos < 100:
+                # Colon-separated title — use title as bold lead, rest as body
+                lead = content[:colon_pos] + "."
+                rest = content[colon_pos + 2:]
+            elif first_period > 0 and first_period < 120:
+                # Sentence-based lead-in
+                lead = content[:first_period + 1]
+                rest = content[first_period + 2:]
+            else:
+                # Entire atom is one chunk — bold the whole thing
+                lead = content
+                rest = ""
+
+            source_link = f" ([source]({source}))" if source else ""
+
+            if rest:
+                lines.append(f"**{lead}** {rest}{source_link}\n")
+            else:
+                lines.append(f"**{lead}**{source_link}\n")
+
+            # Voice fields: show original quote and implication when available
+            if atom.get("original_quote"):
+                lines.append(f"> *\"{atom['original_quote']}\"*\n")
+            if atom.get("implication"):
+                lines.append(f"**Implication:** {atom['implication']}\n")
+
+        lines.append("---\n")
+
+    # Footer stats
+    lines.append(
+        f"*{len(atoms)} atoms · {len(clusters_map)} clusters · "
+        f"{len(connections)} connections · "
+        f"Generated {datetime.utcnow().strftime('%Y-%m-%d')}*\n"
+    )
+
+    path = output_dir / "brain-context.md"
+    with open(path, "w") as f:
+        f.write("\n".join(lines))
+    print(f"  brain-context.md: {len(atoms)} atoms across {len(clusters_map)} clusters")
+
+
+def export_cluster_files(atoms: list, connections: list, config: dict, output_dir: Path):
+    """Generate individual cluster files in clusters/ subdirectory + manifest.json."""
     conn_map = build_connection_map(connections)
     clusters_map = defaultdict(list)
     for atom in atoms:
@@ -162,67 +286,81 @@ def export_context_md(atoms: list, connections: list, config: dict, output_dir: 
     cluster_order = config.get("cluster_order", sorted(clusters_map.keys()))
     cluster_meta = config.get("clusters", {})
     brain_name = config["brain_name"]
-    brain_first = config["brain_first_name"]
 
-    lines = []
-    lines.append(f"# {brain_name} Brain — Full Knowledge Base\n")
-    lines.append(f"> {len(atoms)} knowledge atoms extracted from {config.get('brain_source_detail', 'multiple sources')}.")
-    lines.append(f"> {len(connections)} typed connections between atoms (supports, contradicts, extends, related, inspired_by).")
-    lines.append(f"> Extracted from {config.get('brain_source_url', 'original sources')}. Designed to be loaded as LLM context for brain-informed thinking.\n")
-    lines.append("## How to Use This Brain\n")
-    lines.append("Each atom is self-contained, sourceable, confidence-scored, and connected to related atoms via typed relationships. Load this file as context, reference atoms by cluster and date, follow connections to build richer arguments, and cite source URLs.\n")
-    lines.append("---\n")
-    lines.append("## Topic Clusters\n")
+    clusters_dir = output_dir / "clusters"
+    clusters_dir.mkdir(exist_ok=True)
+
+    manifest = {"clusters": {}, "thin_clusters": []}
+    thin_threshold = 5
 
     for cluster_key in cluster_order:
         if cluster_key not in clusters_map:
             continue
+
         meta = cluster_meta.get(cluster_key, {})
         name = meta.get("name", cluster_key)
-        desc = meta.get("description", "")
-        cluster_atoms = sorted(clusters_map[cluster_key], key=lambda a: a.get("source_date") or "", reverse=True)
+        desc = meta.get("description", meta.get("desc", ""))
+        cluster_atoms = sorted(
+            clusters_map[cluster_key],
+            key=lambda a: a.get("source_date") or "",
+            reverse=True,
+        )
 
-        lines.append(f"### {name} ({len(cluster_atoms)} atoms)\n")
+        lines = []
+        lines.append(f"# {brain_name} — {name}\n")
+        lines.append(f"> {len(cluster_atoms)} atoms in this cluster.\n")
         if desc:
             lines.append(f"{desc}\n")
+        lines.append("---\n")
 
         for atom in cluster_atoms:
-            date = (atom.get("source_date") or "unknown")[:10]
-            lines.append(f"#### {date}\n")
-            lines.append(f"> {atom['content']}\n")
-
-            topics_str = ", ".join(atom.get("topics", []))
-            lines.append(f"**Topics:** {topics_str}  ")
-            lines.append(f"**Confidence:** {atom.get('confidence', 'N/A')}  ")
-
+            content = atom["content"].replace("**", "")
             source = atom.get("source_ref", "")
-            if source:
-                lines.append(f"**Source:** [{date}]({source})")
+            date = (atom.get("source_date") or "")[:10]
+            source_link = f" ([source]({source}))" if source else ""
+            tier = atom.get("confidence_tier", "medium")
 
+            lines.append(f"**{content[:content.find('. ') + 1] if '. ' in content else content}**")
+            rest = content[content.find('. ') + 2:] if '. ' in content else ""
+            if rest:
+                lines[-1] = f"**{content[:content.find('. ') + 1]}** {rest}{source_link}"
+            else:
+                lines[-1] += source_link
+            lines.append("")
+
+            if atom.get("original_quote"):
+                lines.append(f"> *\"{atom['original_quote']}\"*\n")
+            if atom.get("implication"):
+                lines.append(f"**Implication:** {atom['implication']}\n")
+
+            # Inline connections
             atom_conns = conn_map.get(atom["id"], [])
             if atom_conns:
                 conn_summary = defaultdict(int)
                 for c in atom_conns:
                     conn_summary[c["relationship"]] += 1
                 conn_str = ", ".join(f"{v} {k}" for k, v in sorted(conn_summary.items(), key=lambda x: -x[1]))
-                lines.append(f"**Connections:** {conn_str}")
+                lines.append(f"*Connections: {conn_str} | {tier}*\n")
 
-            lines.append("")
+        lines.append("---\n")
 
-    lines.append("---\n")
-    lines.append(f"## About {brain_name}\n")
-    lines.append(f"{config.get('brain_bio', '')}\n")
-    lines.append("## Stats\n")
-    lines.append(f"- **Total atoms:** {len(atoms)}")
-    lines.append(f"- **Total connections:** {len(connections)}")
-    lines.append(f"- **Clusters:** {len(clusters_map)}")
-    lines.append(f"- **Date range:** {config.get('date_range', 'N/A')}\n")
-    lines.append(f"**Generated:** {datetime.utcnow().strftime('%Y-%m-%d')}")
+        cluster_file = clusters_dir / f"{cluster_key}.md"
+        with open(cluster_file, "w") as f:
+            f.write("\n".join(lines))
 
-    path = output_dir / "brain-context.md"
-    with open(path, "w") as f:
-        f.write("\n".join(lines))
-    print(f"  brain-context.md: {len(atoms)} atoms across {len(clusters_map)} clusters")
+        manifest["clusters"][cluster_key] = {
+            "name": name,
+            "atom_count": len(cluster_atoms),
+            "file": f"{cluster_key}.md",
+        }
+        if len(cluster_atoms) < thin_threshold:
+            manifest["thin_clusters"].append(cluster_key)
+
+    # Write manifest
+    with open(clusters_dir / "manifest.json", "w") as f:
+        json.dump(manifest, f, indent=2)
+
+    print(f"  clusters/: {len(manifest['clusters'])} cluster files + manifest.json ({len(manifest['thin_clusters'])} thin)")
 
 
 def export_skill_files(config: dict, atom_count: int, connection_count: int, output_dir: Path):
@@ -246,23 +384,26 @@ def export_skill_files(config: dict, atom_count: int, connection_count: int, out
     # Render individual skills
     skills_template_dir = TEMPLATES_DIR / "skills"
     skills_output_dir = output_dir / "skills"
-    skills_output_dir.mkdir(exist_ok=True)
 
     if skills_template_dir.exists():
         for template_file in sorted(skills_template_dir.glob("*.template")):
             with open(template_file) as f:
                 rendered = render_template(f.read(), config, extra_vars)
-            output_name = template_file.stem  # e.g., "advise.md"
-            with open(skills_output_dir / output_name, "w") as f:
+            skill_name = template_file.stem  # e.g., "advise" from "advise.md"
+            skill_dir = skills_output_dir / skill_name
+            skill_dir.mkdir(parents=True, exist_ok=True)
+            output_file = skill_dir / "SKILL.md"
+            with open(output_file, "w") as f:
                 f.write(rendered)
-            print(f"  skills/{output_name} rendered")
+            print(f"  skills/{skill_name}/SKILL.md rendered")
 
     # Copy static files (skills/README.md doesn't need templating)
     skills_readme_dst = skills_output_dir / "README.md"
     if not skills_readme_dst.exists():
-        for existing_pack in ROOT_DIR.glob("brainsforsale-*/skills/README.md"):
+        for existing_pack in ROOT_DIR.glob("brains/*/pack/skills/README.md"):
             if existing_pack.resolve() != skills_readme_dst.resolve():
                 import shutil
+                skills_output_dir.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(existing_pack, skills_readme_dst)
                 print(f"  skills/README.md copied")
                 break
@@ -297,7 +438,7 @@ def load_atoms_from_file(filepath: str) -> list:
 
 def main():
     parser = argparse.ArgumentParser(description="Export a brain pack from Supabase or local files")
-    parser.add_argument("--brain", required=True, help="Brain slug (matches brains/{slug}.json)")
+    parser.add_argument("--brain", required=True, help="Brain slug (matches brains/{slug}/brain.json)")
     parser.add_argument("--from-files", nargs=2, metavar=("ATOMS_FILE", "CONNECTIONS_FILE"),
                         help="Load from local JSON files instead of Supabase")
     parser.add_argument("--atoms-file", help="Path to atoms JSON (alternative to --from-files)")
@@ -315,9 +456,8 @@ def main():
     if args.output_dir:
         output_dir = Path(args.output_dir)
     else:
-        output_dir = ROOT_DIR / f"brainsforsale-{slug}"
+        output_dir = ROOT_DIR / "brains" / slug / "pack"
     output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "skills").mkdir(exist_ok=True)
 
     # Load data
     if args.from_files:
@@ -348,6 +488,10 @@ def main():
 
     print("\nExporting brain-context.md...")
     export_context_md(atoms, connections, config, output_dir)
+
+    # NOTE: Cluster generation skipped in v2 — clusters are no longer exported
+    # print("\nExporting cluster files...")
+    # export_cluster_files(atoms, connections, config, output_dir)
 
     # Export skill files
     if not args.skip_skills:

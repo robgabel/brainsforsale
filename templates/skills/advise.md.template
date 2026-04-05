@@ -1,108 +1,51 @@
 ---
 name: advise
-description: "Strategic counsel from {{brain_name}}'s thinking. Pulls relevant atoms, synthesizes perspective, cites sources, and flags confidence level."
+description: "Strategic counsel from {{brain_name}}'s thinking. Pulls relevant atoms, synthesizes perspective, cites sources."
 ---
 
-# 🧠 /advise — Strategic Counsel
+# /advise — Strategic Counsel
 
-Get strategic advice on decisions grounded in {{brain_name}}'s frameworks, mental models, and worldview.
+Get strategic advice grounded in {{brain_name}}'s frameworks and worldview.
 
 ## How It Works
 
-When you invoke `/advise`, the skill will:
+1. Parse the decision — identify the core choice and tradeoffs
+2. Search brain atoms — pull the most relevant insights
+3. Synthesize what {{brain_first_name}} would likely recommend, citing specific atoms
+4. Flag confidence level and suggest next skills
 
-1. **Parse your decision** — Identify the core choice, stakeholders, and tradeoffs
-2. **Search brain atoms** — Pull the most relevant insights from {{brain_last_name}}'s thinking that apply
-3. **Synthesize perspective** — Articulate what {{brain_first_name}} would likely recommend based on his frameworks
-4. **Cite sources** — Reference specific atoms and their source dates so you can trace the thinking
-5. **Flag confidence** — Rate how strongly the brain supports this recommendation (high/medium/low)
-6. **Suggest next steps** — Recommend which skill to use next (e.g., `/debate` to stress-test, `/apply` to execute)
+## Context Loading
 
-## Best For
-
-- Career decisions (pivot, level up, change roles)
-- Company strategy (raise capital, enter market, product focus)
-- Organizational design (hiring, structure, culture)
-- Business model questions (pricing, platform vs. service, scaling approach)
-- Personal choices with strategic implications
-
-## Examples
-
-**Example 1: Capital Decision**
-```
-/advise
-
-I'm founder of a B2B SaaS company with $2M ARR. We have a clear path to profitability
-in 18 months, but a VC wants to lead a Series A at a 40M valuation. Should I raise or
-stay independent?
-```
-
-Expected output format:
-- 🧠 **{{brain_last_name}}'s Perspective:** [2-3 sentence synthesis of his likely stance]
-- 📌 **Supporting Atoms:** [2-3 atoms cited with content, source date, confidence]
-- 💪 **Confidence Level:** High / Medium / Low
-- 💡 **Try next:** `/debate` (to stress-test both paths) or `/apply` (to design your decision criteria)
-
-**Example 2: Organizational Design**
-```
-/advise
-
-My team is growing from 8 to 25 people. Should I build functional teams (eng, product, marketing)
-or keep it flat with project-based structure?
-```
-
-Expected output format:
-- 🧠 **{{brain_last_name}}'s Perspective:** [synthesis grounded in his thinking on organizational scaling]
-- 📌 **Supporting Atoms:** [cite 2-3 relevant atoms about structure, coordination, etc.]
-- 💪 **Confidence Level:** High / Medium / Low
-- 💡 **Try next:** `/apply` (to map this to your specific situation) or `/deep-dive` (to explore organizational design fully)
-
-**Example 3: Product Strategy**
-```
-/advise
-
-We built an AI tool for creators. Do we focus on the creator economy or pivot toward
-enterprise sales where there's more money?
-```
-
-Expected output format:
-- 🧠 **{{brain_last_name}}'s Perspective:** [his view on creator economy vs. enterprise, given the AI landscape]
-- 📌 **Supporting Atoms:** [atoms about creator economy, meaning economy, scaling, authenticity]
-- 💪 **Confidence Level:** High / Medium / Low
-- 💡 **Try next:** `/connect` (to find unexpected angles) or `/brainfight` (to debate creator vs. enterprise)
+Load `clusters/manifest.json` to find relevant clusters. Load only those cluster files. For broad decisions spanning 4+ clusters, load `brain-context.md` instead.
 
 ## Output Format
 
-Always use this structure:
-
 ```
-🧠 **{{brain_last_name}}'s Perspective on [your decision]**
-[2-3 sentences synthesizing what {{brain_first_name}} would likely think]
+🧠 **{{brain_last_name}}'s Perspective on [decision]**
+[2-3 sentences. Use original_quote language when available.]
 
 📌 **Key Atoms**
-1. "[Atom 1 content]" — *[Topic], [Source Date], Confidence: [0.X]*
-2. "[Atom 2 content]" — *[Topic], [Source Date], Confidence: [0.X]*
-3. "[Atom 3 content]" — *[Topic], [Source Date], Confidence: [0.X]*
+1. "[Original quote or content]" — *[Implication]* — *[Confidence tier], [Source Date]*
+2. "[Original quote or content]" — *[Implication]* — *[Confidence tier], [Source Date]*
 
-💪 **Confidence Level:** High / Medium / Low
-[1 sentence explaining why — is this a core theme in the brain, or more tangential?]
+💪 **Confidence:** High / Medium / Low — [1 sentence why]
 
 ⚡ **What This Means For You**
-[1-2 sentences translating to actionable implications]
+[1-2 actionable sentences]
 
-💡 **Try next:** `/debate` (to stress-test) or `/apply` (to execute)
+💡 **Try next:** `/debate` (stress-test) or `/apply` (execute)
 ```
 
-## Rules for LLM Behavior
+## Rules
 
-1. **Always cite atoms** — Never synthesize without grounding in actual brain content
-2. **Use {{brain_last_name}}'s actual vocabulary** — If atoms use "meaning economy," "adaptive leadership," "agentic commerce," use those terms (not "generic strategic thinking")
-3. **Flag uncertainty** — If the brain doesn't have strong atoms on a topic, say so. Don't hallucinate {{brain_first_name}}'s thinking.
-4. **Cross-reference frameworks** — Look for atoms that connect multiple dimensions of the decision (e.g., scaling + authenticity, AI + craft)
-5. **Suggest the next skill** — Always end with a "💡 Try next" to chain this skill to others
+1. **Voice first** — When atoms have `original_quote`, use that language. {{brain_first_name}}'s voice IS the product.
+2. **Always cite atoms** — Never synthesize without grounding. If brain is silent on topic, say so.
+3. **Use {{brain_last_name}}'s vocabulary** — "meaning economy," "agentic commerce," "scaling without growing" — not generic synonyms.
+4. **Show implications** — Include the atom's `implication` field when present.
+5. **Thin topic handling** — If fewer than 5 relevant atoms, state coverage is thin and suggest `/connect` for adjacent ideas.
 
-## Data Source
+## Data
 
-- **atoms:** brain-atoms.json ({{atom_count}} total)
-- **context:** brain-context.md (full knowledge base with topic clusters)
-- **scoring:** Use atom confidence field (0.0–1.0) to rank relevance and weight recommendations
+- **atoms:** brain-atoms.json ({{atom_count}} atoms, {{connection_count}} connections)
+- **clusters:** clusters/manifest.json + individual cluster .md files
+- **shared rules:** See "LLM Usage Rules" section in brain-context.md

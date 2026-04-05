@@ -1,0 +1,137 @@
+[
+  {
+    "content": "Belsky's career began at Goldman Sachs, where he quickly realized he wasn't cut out for finance — but rather than leaving immediately, he pivoted internally to an organizational design role in Goldman's executive office. This pattern of finding the right role within the wrong context, rather than abandoning ship entirely, reflects a key Belsky principle: the best move isn't always the obvious one. His Goldman organizational design work taught him that 70% of leadership development happens through experiential education, not formal training.",
+    "source_type": "biography",
+    "source_ref": "https://www.danielscrivner.com/30/",
+    "source_date": "2002-01-01",
+    "topics": ["career pivots", "organizational design", "leadership development", "Goldman Sachs"],
+    "cluster": "leadership",
+    "confidence": 0.92
+  },
+  {
+    "content": "Belsky saved $18,000 while at Goldman Sachs to fund his entrepreneurial leap — a deliberately modest sum that forced resourcefulness from day one. He didn't take a paycheck from Behance for the first two years. This wasn't accidental frugality but an intentional choice: he believes that constraint breeds creativity and that starting with limited resources forces founders to develop the 'muscle' of resourcefulness that well-funded competitors never build.",
+    "source_type": "biography",
+    "source_ref": "https://ca.finance.yahoo.com/news/messy-way-former-goldman-sachs-214300350.html",
+    "source_date": "2006-01-01",
+    "topics": ["bootstrapping", "resourcefulness", "entrepreneurial sacrifice", "constraint"],
+    "cluster": "leadership",
+    "confidence": 0.91
+  },
+  {
+    "content": "Behance was born from personal frustration — Belsky was frustrated by how disorganized the creative world was, with no online portfolio platform to help creative professionals organize and showcase their work. He identifies personal frustration as a reliable signal for collective frustration, and collective frustration as a signal for creative opportunity. The best startups don't start with market analysis — they start with someone who's personally annoyed enough to build a solution.",
+    "source_type": "biography",
+    "source_ref": "https://alumni.cornell.edu/profile/frustration-fuels-creation-for-design-industry-innovator-scott-belsky-02/",
+    "source_date": "2006-01-01",
+    "topics": ["founding story", "Behance", "frustration-driven innovation", "opportunity recognition"],
+    "cluster": "product_design",
+    "confidence": 0.93
+  },
+  {
+    "content": "Behance grew to over 55 million creative professionals before its acquisition by Adobe for $150 million in December 2012. The acquisition was strategic for Adobe's pivot from packaged software to cloud services — Behance was the community layer Adobe needed for its Creative Cloud vision. Belsky made a deliberate choice to turn half of his employees into millionaires from the sale, demonstrating his belief that shared success creates lasting loyalty and that founders who hoard wealth destroy their own legacy.",
+    "source_type": "biography",
+    "source_ref": "https://www.businessinsider.com/heres-why-adobe-just-bought-my-startup-for-150-million-2012-12",
+    "source_date": "2012-12-01",
+    "topics": ["acquisition", "Behance", "Adobe", "employee wealth creation", "strategic exits"],
+    "cluster": "leadership",
+    "confidence": 0.92
+  },
+  {
+    "content": "After the Adobe acquisition, Belsky became VP of Products, Mobile and Community — stepping from founder/CEO into a large-company executive role. This transition from builder to operator within someone else's organization is one of the hardest pivots in entrepreneurship. Most acquired founders leave within 18 months. Belsky stayed, adapted, and eventually rose to Chief Product Officer, demonstrating his own messy-middle thesis: endurance through uncomfortable transitions creates options that impatience destroys.",
+    "source_type": "biography",
+    "source_ref": "https://en.wikipedia.org/wiki/Scott_Belsky",
+    "source_date": "2013-01-01",
+    "topics": ["post-acquisition", "career transition", "endurance", "organizational adaptation"],
+    "cluster": "leadership",
+    "confidence": 0.90
+  },
+  {
+    "content": "In 2016, Belsky left Adobe to join Benchmark as their sixth general partner — a move that seemed like a natural progression for an accomplished founder-investor. By September 2016, he was no longer a full partner. Belsky has publicly acknowledged this mismatch, saying he took 'the risk of leaving product and business leadership to join a venture capital firm full-time,' and it turned out to be a bad match with his true interests. He had to learn this the hard way. The willingness to publicly own a wrong career bet is itself a Belsky principle.",
+    "source_type": "biography",
+    "source_ref": "https://fortune.com/2016/09/07/scott-belsky-is-no-longer-a-full-partner-with-benchmark/",
+    "source_date": "2016-09-01",
+    "topics": ["venture capital", "Benchmark", "career mistakes", "self-awareness", "course correction"],
+    "cluster": "leadership",
+    "confidence": 0.93
+  },
+  {
+    "content": "Belsky returned to Adobe as Chief Product Officer in December 2017 — going back to a company he'd left just a year earlier. This was a counterintuitive move: conventional career wisdom says you never go back. But Belsky recognized that his true interest was in building and leading products at scale, not making investment decisions. The return validated his belief that self-awareness about your actual strengths matters more than optimizing for prestige or perceived career progression.",
+    "source_type": "biography",
+    "source_ref": "https://en.wikipedia.org/wiki/Scott_Belsky",
+    "source_date": "2017-12-01",
+    "topics": ["career return", "Adobe", "self-awareness", "product leadership", "unconventional choices"],
+    "cluster": "leadership",
+    "confidence": 0.92
+  },
+  {
+    "content": "At Adobe, Belsky's role evolved from CPO to Chief Strategy Officer and EVP of Design & Emerging Products. His stated mission: 'In a world of increasing automation and commoditization of labor, creativity is the most critical skill for the future dignity of humanity. Design has become a form of literacy akin to reading and writing.' This framing — creativity as dignity, design as literacy — elevates his work from business strategy to something closer to a civilizational argument.",
+    "source_type": "biography",
+    "source_ref": "https://alumni.cornell.edu/profile/frustration-fuels-creation-for-design-industry-innovator-scott-belsky-02/",
+    "source_date": "2020-01-01",
+    "topics": ["Adobe mission", "creativity as dignity", "design literacy", "civilizational stakes"],
+    "cluster": "superhumanity",
+    "confidence": 0.91
+  },
+  {
+    "content": "In January 2025, Belsky left Adobe to join A24 as a Partner leading tech and innovation projects at the indie film studio. The move from enterprise software to filmmaking validated his own thesis that identity shouldn't be locked to a single domain. He'd written extensively about creators needing to let their old work die to stay vital — and then demonstrated it by leaving the CPO track to pursue a longtime passion for storytelling and filmmaking.",
+    "source_type": "biography",
+    "source_ref": "https://variety.com/2025/film/news/scott-belsky-a24-adobe-1236291763/",
+    "source_date": "2025-01-30",
+    "topics": ["A24", "career reinvention", "filmmaking", "identity", "creative passion"],
+    "cluster": "craft_originality",
+    "confidence": 0.92
+  },
+  {
+    "content": "Belsky's career arc — Goldman Sachs organizational design → Behance founder → Adobe VP → Benchmark partner → Adobe CPO/CSO → A24 partner — is itself a demonstration of the messy middle. It's nonlinear, includes a public misstep (Benchmark), a return to a previous employer, and a late-career pivot to an entirely different industry. Each transition required enduring discomfort, resisting the pull of identity lock-in, and trusting that conviction-driven decisions compound over time even when they look wrong in the moment.",
+    "source_type": "biography",
+    "source_ref": "https://en.wikipedia.org/wiki/Scott_Belsky",
+    "source_date": "2025-01-30",
+    "topics": ["career arc", "messy middle", "nonlinear paths", "career as venture"],
+    "cluster": "leadership",
+    "confidence": 0.94
+  },
+  {
+    "content": "Belsky's first book, 'Making Ideas Happen' (2010), was written while running Behance and focused on the gap between creative vision and execution. The core argument — that the world is full of brilliant ideas but starved of execution — laid the groundwork for everything that followed. It established his fundamental belief that creativity without organizational systems is just dreaming, and that the ability to ship is the most underrated creative skill.",
+    "source_type": "biography",
+    "source_ref": "https://en.wikipedia.org/wiki/Scott_Belsky",
+    "source_date": "2010-04-01",
+    "topics": ["Making Ideas Happen", "execution", "creative productivity", "writing"],
+    "cluster": "craft_originality",
+    "confidence": 0.90
+  },
+  {
+    "content": "Belsky's education — Cornell undergraduate, Harvard MBA — gave him both creative and business credentials, but he has publicly noted that his Cornell extracurricular activities and cross-disciplinary coursework mattered more than formal curriculum. He credits the ability to take classes outside his major and school with fueling his entrepreneurial confidence. This mirrors his hiring philosophy: the most valuable skills are developed through initiative and exploration, not through credentialed programs.",
+    "source_type": "biography",
+    "source_ref": "https://alumni.cornell.edu/profile/frustration-fuels-creation-for-design-industry-innovator-scott-belsky-02/",
+    "source_date": "2002-01-01",
+    "topics": ["education", "cross-disciplinary learning", "initiative", "Cornell", "Harvard"],
+    "cluster": "memory_knowledge",
+    "confidence": 0.86
+  },
+  {
+    "content": "Belsky was an active early-stage investor throughout his career — backing Uber, Pinterest, Warby Parker, Periscope, and Sweetgreen before they were obvious wins. His angel investing operated in parallel with his operator roles, not as a replacement for them. This dual identity (builder + investor) gave him pattern recognition from both sides of the table and informed his writing about what founders actually need versus what investors typically provide.",
+    "source_type": "biography",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2010-01-01",
+    "topics": ["angel investing", "dual identity", "pattern recognition", "founder empathy"],
+    "cluster": "commerce",
+    "confidence": 0.88
+  },
+  {
+    "content": "Belsky's move to A24 was accompanied by a statement that both companies were already discussing partnerships, and he would remain an advisor to Adobe. This pattern — maintaining bridges while making bold transitions — reflects his belief that you don't have to burn down the past to build the future. Professional relationships are assets that compound, and the most valuable career moves preserve optionality across networks rather than severing them.",
+    "source_type": "biography",
+    "source_ref": "https://variety.com/2025/film/news/scott-belsky-a24-adobe-1236291763/",
+    "source_date": "2025-01-30",
+    "topics": ["career transitions", "relationship capital", "optionality", "bridge-building"],
+    "cluster": "leadership",
+    "confidence": 0.87
+  },
+  {
+    "content": "The Benchmark episode is particularly instructive because Belsky treats it as a learning experience rather than a failure. He discovered that his core drive is building — being in the arena, making product decisions, leading teams — not evaluating other people's work from the sidelines. This self-knowledge, gained through a painful public experiment, became a core teaching: you often can't know your true preferences without trying the alternative, and the courage to course-correct quickly is more valuable than getting it right the first time.",
+    "source_type": "biography",
+    "source_ref": "https://fortune.com/2016/09/07/scott-belsky-is-no-longer-a-full-partner-with-benchmark/",
+    "source_date": "2016-09-01",
+    "topics": ["self-discovery", "career experimentation", "course correction", "builder identity"],
+    "cluster": "craft_originality",
+    "confidence": 0.91
+  }
+]

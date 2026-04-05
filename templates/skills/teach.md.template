@@ -1,120 +1,52 @@
 ---
 name: teach
-description: "Explain concepts using {{brain_name}}'s frameworks, language, and mental models. Learn through his lens."
+description: "Explain concepts using {{brain_name}}'s frameworks, language, and mental models."
 ---
 
-# 🧠 /teach — Explain Like I'm Learning
+# /teach — Learn Through {{brain_last_name}}'s Lens
 
-Get a clear, accessible explanation of a concept as {{brain_name}} would teach it, using his actual vocabulary, frameworks, and mental models.
+Explain a concept using {{brain_name}}'s actual language, frameworks, and mental models — not generic business wisdom.
 
 ## How It Works
 
-When you invoke `/teach`, the skill will:
+1. Parse the concept the user wants to understand
+2. Find atoms that define, explain, or contextualize this concept
+3. Build an explanation using {{brain_first_name}}'s own vocabulary and framing
+4. Show what makes {{brain_last_name}}'s angle unique vs. conventional wisdom
 
-1. **Parse the concept** — Understand what you want to learn about
-2. **Find {{brain_last_name}}'s frameworks** — Locate atoms that break down this concept using his thinking
-3. **Build explanation** — Structure a narrative that teaches the concept in his voice and language
-4. **Use his vocabulary** — Reference his actual terms (e.g., "meaning economy," "adaptive challenges," "scaling without growing")
-5. **Provide examples** — Show how he applies the concept to real situations
-6. **Signal next learning** — Suggest which skill deepens understanding (e.g., `/deep-dive` for exhaustive coverage, `/evolve` for how his thinking developed)
+## Context Loading
 
-## Best For
-
-- Learning {{brain_last_name}}'s core frameworks (originality, organizational design, AI agents, scaling)
-- Understanding new concepts through his mental models
-- Building intuition for how he thinks about a topic
-- Getting unstuck on an idea that confuses you
-- Teaching someone else using his language
-
-## Examples
-
-**Example 1: Explain a Framework**
-```
-/teach
-
-Explain "scaling without growing" the way {{brain_first_name}} talks about it.
-```
-
-Expected output:
-- 🧠 **What {{brain_first_name}} Means By "Scaling Without Growing"**
-  - Definition grounded in his atoms
-  - Why this distinction matters to him
-  - How it differs from traditional scaling
-- 📚 **His Key Insight**
-  - Core principle in 1-2 sentences
-- 🔍 **How He Applies It**
-  - 2-3 concrete examples from atoms showing application
-- 💡 **Try next:** `/deep-dive` (to explore all dimensions) or `/apply` (to use it in your situation)
-
-**Example 2: Explain a Concept in Context**
-```
-/teach
-
-Explain the "meaning economy" and why it matters in the age of AI.
-```
-
-Expected output:
-- 🧠 **What the Meaning Economy Is**
-  - Definition from {{brain_last_name}}'s perspective
-  - Why it's becoming more relevant (with AI context)
-- 📚 **Core Principle**
-  - His thesis in 1-2 sentences
-- 🔍 **Implications**
-  - 2-3 consequences or applications he identifies
-- 💡 **Try next:** `/apply` (to apply to your creator/business) or `/brainfight` (to debate meaning vs. content)
-
-**Example 3: Explain a Skill or Mindset**
-```
-/teach
-
-Explain what {{brain_first_name}} means by "adaptive leadership" and how it differs from strategic thinking.
-```
-
-Expected output:
-- 🧠 **Adaptive Leadership (In {{brain_last_name}}'s Words)**
-  - Definition and core distinction
-  - Why it matters during platform shifts
-- 📚 **The Key Difference**
-  - Strategic thinking vs. adaptive thinking (what he says)
-- 🔍 **How to Know You're Doing It Right**
-  - 2-3 behavioral signs from his atoms
-- 💡 **Try next:** `/debate` (to explore tradeoffs) or `/apply` (to practice it)
+Load `clusters/manifest.json` to find the relevant cluster(s). Load those cluster files. For cross-cutting concepts, load `brain-context.md`.
 
 ## Output Format
 
-Always use this structure:
-
 ```
 🧠 **[Concept] — In {{brain_last_name}}'s Words**
-[1-2 sentence definition or explanation as he would give it]
+[Definition as he would give it, using original_quote when available]
 
 📚 **The Core Principle**
-[His main insight, in 1-2 sentences, using his actual vocabulary]
+[1-2 sentences using his vocabulary — not a textbook definition]
 
 🔍 **How He Thinks About It**
-- Point 1: [Insight from atoms]
-- Point 2: [Insight from atoms]
-- Point 3: [Insight from atoms]
+1. [Key point from atoms — with his actual framing]
+2. [Key point from atoms]
+3. [Key point from atoms]
 
-💡 **Example From His Work**
-[1-2 sentence concrete application or story from atoms]
+💡 **Why This Matters**
+[Connection to broader themes + what makes his take unique]
 
-🎯 **Why This Matters**
-[Connection to broader themes in his thinking]
-
-💡 **Try next:** `/deep-dive` (comprehensive understanding) or `/apply` (put it to work)
+💡 **Try next:** `/deep-dive` (go deeper) or `/apply` (use the framework)
 ```
 
-## Rules for LLM Behavior
+## Rules
 
-1. **Use his language** — If he says "craft," don't say "quality." If he says "meaning economy," use that exact term.
-2. **Ground in atoms** — Every explanation should reference 1-2 atoms that contain the thinking you're explaining
-3. **Be accessible** — Explain in a way a non-expert could understand, but don't dumb it down
-4. **Show his unique angle** — What's different about how {{brain_last_name}} sees this vs. how everyone else talks about it?
-5. **Connect to broader themes** — Show how this concept sits in his larger worldview (originality, organizational design, AI, scaling, etc.)
+1. **Use his exact vocabulary** — "meaning economy," "proof of craft," "superhumanity" — his labels ARE the insight.
+2. **Voice first** — Prefer `original_quote` over distilled `content` when available.
+3. **Show his angle** — What makes {{brain_last_name}}'s take different from how everyone else talks about this.
+4. **Thin topic handling** — If fewer than 3 atoms, say so and suggest `/connect` to find related concepts.
 
-## Data Source
+## Data
 
-- **atoms:** brain-atoms.json ({{atom_count}} total)
-- **context:** brain-context.md (full knowledge base with topic clusters)
-- **topics:** Use topic tags to find related atoms (e.g., "craft," "originality," "organizational design")
+- **atoms:** brain-atoms.json ({{atom_count}} atoms, {{connection_count}} connections)
+- **clusters:** clusters/manifest.json + individual cluster .md files
+- **shared rules:** See "LLM Usage Rules" section in brain-context.md

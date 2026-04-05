@@ -20,5 +20,8 @@ test-*-output/
 # brain-atoms.json
 # brain-context.md
 
+# Enrichment review files (contain UUIDs, regenerate from scripts)
+brains/*/data/
+
 # Embeddings (too large for git, regenerate from Supabase)
-brainsforsale-*/embeddings/
+brains/*/pack/embeddings/

@@ -3,10 +3,10 @@
 Export Belsky Brain Pack from Supabase → flat files.
 
 Reads from: belsky_atoms, belsky_connections tables
-Writes to:  brainsforsale-belsky/brain-atoms.json
-            brainsforsale-belsky/brain-context.md
+Writes to:  brains/belsky/pack/brain-atoms.json
+            brains/belsky/pack/brain-context.md
 
-Run: python scripts/export-belsky-brain.py
+Run: python brains/belsky/source/export-direct.py
 
 Requires: SUPABASE_URL and SUPABASE_SERVICE_KEY env vars
           pip install supabase
@@ -27,8 +27,8 @@ except ImportError:
 
 try:
     from dotenv import load_dotenv
-    # Walk up from scripts/ to find .env at rob-ai root
-    _root = Path(__file__).resolve().parents[2]  # brainsforsale/../ = rob-ai/
+    # Walk up from brains/belsky/source/ to find .env at rob-ai root
+    _root = Path(__file__).resolve().parents[4]  # source/ → belsky/ → brains/ → brainsforsale/ → rob-ai/
     load_dotenv(_root / ".env")
 except ImportError:
     pass  # dotenv not installed — fall back to env vars
@@ -36,7 +36,7 @@ except ImportError:
 # --- Config ---
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://uzediwokyshjbsymevtp.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "brainsforsale-belsky")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "pack")
 
 # Cluster display names and descriptions
 CLUSTER_META = {
@@ -119,7 +119,7 @@ def fetch_data(supabase):
     """Fetch all Belsky atoms and connections from Supabase."""
     # Atoms
     atoms_resp = supabase.table("belsky_atoms").select(
-        "id, content, source_type, source_ref, source_date, topics, cluster, confidence"
+        "id, content, source_type, source_ref, source_date, topics, cluster, confidence, confidence_tier, original_quote, implication"
     ).order("source_date", desc=True).execute()
     atoms = atoms_resp.data
 
@@ -197,7 +197,7 @@ def export_json(atoms, connections, output_path):
 
     for atom in atoms:
         atom_connections = conn_map.get(atom["id"], [])
-        output["atoms"].append({
+        entry = {
             "id": atom["id"],
             "content": atom["content"],
             "cluster": atom["cluster"],
@@ -205,13 +205,15 @@ def export_json(atoms, connections, output_path):
             "source_ref": atom.get("source_ref"),
             "source_date": atom.get("source_date", "")[:10] if atom.get("source_date") else None,
             "confidence": atom.get("confidence"),
-            "connections": atom_connections if atom_connections else None
-        })
-
-    # Remove None connections to save space
-    for a in output["atoms"]:
-        if a["connections"] is None:
-            del a["connections"]
+            "confidence_tier": atom.get("confidence_tier"),
+        }
+        if atom.get("original_quote"):
+            entry["original_quote"] = atom["original_quote"]
+        if atom.get("implication"):
+            entry["implication"] = atom["implication"]
+        if atom_connections:
+            entry["connections"] = atom_connections
+        output["atoms"].append(entry)
 
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)

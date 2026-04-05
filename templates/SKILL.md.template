@@ -25,7 +25,7 @@ This brain is designed to augment YOUR thinking — not replace it. Use it for s
 Your {{brain_last_name}} Brain Pack folder should contain:
 
 ```
-brainsforsale-{{brain_slug}}/
+pack/
   ├── SKILL.md                 ← you are here
   ├── brain-context.md         ← full knowledge base + usage guide
   ├── brain-atoms.json         ← structured atoms ({{atom_count}} insights)

@@ -23,22 +23,11 @@ You should get a response that cites specific atoms, synthesizes {{brain_first_n
 ## What's Inside
 
 ```
-brainsforsale-{{brain_slug}}/
+pack/
   ├── SKILL.md              ← Setup guide + skill reference (start here)
   ├── brain-context.md      ← Full knowledge base (load this as context)
   ├── brain-atoms.json      ← Structured data ({{atom_count}} atoms, {{connection_count}} connections)
-  ├── README.md             ← You are here
-  └── skills/
-      ├── advise.md         ← Strategic counsel
-      ├── teach.md          ← Learn concepts in {{brain_first_name}}'s voice
-      ├── debate.md         ← Steel-man counterarguments
-      ├── connect.md        ← Find unexpected bridges
-      ├── evolve.md         ← Trace how ideas developed
-      ├── apply.md          ← Turn frameworks into action
-      ├── mashup.md         ← Synthesize ideas into new theses
-      ├── brainfight.md     ← Pit ideas head-to-head
-      ├── deep-dive.md      ← Exhaustive topic analysis
-      └── surprise.md       ← Random high-quality insight
+  └── README.md             ← You are here
 ```
 
 ## The Knowledge Graph
@@ -86,7 +75,6 @@ Install multiple brain packs and they auto-discover each other:
 ## Support
 
 - Full setup guide: `SKILL.md`
-- Skill reference: `skills/README.md`
 - Website: [brainsforsale.com](https://brainsforsale.com)
 
 ---

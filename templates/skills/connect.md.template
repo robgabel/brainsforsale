@@ -1,120 +1,53 @@
 ---
 name: connect
-description: "Semantic search for unexpected connections. The serendipity engine—surface non-obvious links between your topic and {{brain_last_name}}'s ideas."
+description: "Semantic search for unexpected connections between your topic and {{brain_name}}'s ideas."
 ---
 
-# 🔗 /connect — Bridge Ideas
+# /connect — The Serendipity Engine
 
-Find unexpected connections between your topic and {{brain_last_name}}'s thinking. The serendipity engine that surfaces insights you wouldn't think to ask for.
+Surface non-obvious links between what you're working on and {{brain_last_name}}'s thinking. The goal: connections you wouldn't have made yourself.
 
 ## How It Works
 
-When you invoke `/connect`, the skill will:
+1. Parse your topic or current challenge
+2. Search across ALL clusters for atoms with semantic overlap — not just keyword matches
+3. Prioritize non-obvious connections over direct hits
+4. Show why the bridge matters and what it enables
 
-1. **Parse your topic** — Understand what you're exploring
-2. **Semantic search atoms** — Find atoms that connect to your topic through meaning, not just keywords
-3. **Identify bridges** — Surface non-obvious connections between your ideas and his frameworks
-4. **Highlight why they matter** — Explain what the connection reveals or enables
-5. **Spark new questions** — Show how this connection might change your thinking
-6. **Chain skills** — Suggest `/deep-dive` to explore the connection fully or `/mashup` to synthesize
+## Context Loading
 
-## Best For
-
-- Creative breakthroughs and original thinking
-- Finding unexpected angles on a problem
-- Synthesizing across domains (e.g., "How does organizational design inform creativity?")
-- Discovering blind spots or unexplored territory
-- Building thesis or narrative that surprises people
-
-## Examples
-
-**Example 1: Cross-Domain Connection**
-```
-/connect
-
-I'm thinking about how to build a community around my product. What does
-{{brain_last_name}}'s thinking say that I wouldn't normally connect to community?
-```
-
-Expected output:
-- 🔗 **Unexpected Connection:** [e.g., authenticity + scarcity + meaning economy as community moat]
-- 📌 **The Bridge Atoms:**
-  1. [Atom about authenticity/craft]
-  2. [Atom about consumer demand]
-  3. [Atom about meaning economy]
-- 💡 **Why This Matters:** [1-2 sentences on what this connection enables]
-- 🎯 **New Question:** [Provocative question this raises]
-- 💡 **Try next:** `/apply` (to use this in your community strategy) or `/deep-dive` (to explore fully)
-
-**Example 2: Thematic Connection**
-```
-/connect
-
-I'm building an AI tool. What unusual insights from {{brain_last_name}} could apply to
-how I think about AI, craft, and human value?
-```
-
-Expected output:
-- 🔗 **Unexpected Connection:** [e.g., AI enabling flow + need for human meaning-making as differentiation]
-- 📌 **The Bridge Atoms:**
-  1. [Atom about AI and creative flow]
-  2. [Atom about craft/authenticity in an AI world]
-  3. [Atom about meaning economy]
-- 💡 **Why This Matters:** [connection as strategic insight]
-- 🎯 **New Question:** [question this provokes]
-- 💡 **Try next:** `/mashup` (to synthesize into a thesis) or `/brainfight` (to test it)
-
-**Example 3: Challenge Your Assumptions**
-```
-/connect
-
-I want to understand the relationship between organizational structure and creativity.
-What does {{brain_last_name}}'s thinking suggest?
-```
-
-Expected output:
-- 🔗 **Unexpected Connection:** [e.g., flatter structures enable adaptive thinking → more originality]
-- 📌 **The Bridge Atoms:**
-  1. [Atom about organizational adaptability]
-  2. [Atom about originality and constraints]
-  3. [Atom about the art of business (things that don't scale)]
-- 💡 **Why This Matters:** [how this rethinks org design]
-- 🎯 **New Question:** [challenge to conventional thinking]
-- 💡 **Try next:** `/apply` (to test this in your org) or `/teach` (to understand the frameworks)
+Load `brain-context.md` (full context needed for cross-cluster search). Or load `clusters/manifest.json` and scan multiple cluster files.
 
 ## Output Format
 
-Always use this structure:
-
 ```
 🔗 **Unexpected Connection: [Your Topic] ↔ [{{brain_last_name}}'s Framework]**
-[2-3 sentences describing why these ideas connect and what the relationship reveals]
+[2-3 sentences on why these connect — the insight should surprise]
 
 📌 **The Bridge Atoms**
-1. "[Atom 1]" — *[Why this bridges]*
-2. "[Atom 2]" — *[Why this bridges]*
-3. "[Atom 3]" — *[Why this bridges]*
+1. "[Original quote or content]" — *[Implication]* — *[Cluster], [Confidence tier]*
+2. "[Original quote or content]" — *[Implication]* — *[Cluster], [Confidence tier]*
+3. "[Original quote or content]" — *[Cluster], [Confidence tier]*
 
 💡 **Why This Matters**
-[1-2 sentences on the insight or opportunity this connection creates]
+[The insight or opportunity this connection creates]
 
-🎯 **Questions This Raises**
-- [Provocative question 1]
-- [Provocative question 2]
+🤔 **Questions This Raises**
+1. [Provocative question]
+2. [Provocative question]
 
-💡 **Try next:** `/deep-dive` (explore the connection exhaustively) or `/apply` (use it immediately)
+💡 **Try next:** `/deep-dive` (explore the connected topic) or `/apply` (use the insight)
 ```
 
-## Rules for LLM Behavior
+## Rules
 
-1. **Find semantic, not keyword matches** — "Community" might connect to "authenticity" (not "engagement"), for example
-2. **Prioritize non-obvious** — Surface unexpected connections, not obvious ones
-3. **Explain the bridge clearly** — The user should understand WHY these ideas connect
-4. **Cite atoms** — Always ground connections in actual brain content
-5. **Be provocative** — Great connections should make users think "I wouldn't have made that leap"
+1. **Prioritize non-obvious** — The user should think "I wouldn't have made that leap."
+2. **Cross-cluster connections are gold** — The best connects bridge different domains of {{brain_first_name}}'s thinking.
+3. **Voice first** — Use `original_quote` when available.
+4. **If nothing connects** — Say so honestly. Not every topic maps to {{brain_last_name}}'s thinking.
 
-## Data Source
+## Data
 
-- **atoms:** brain-atoms.json ({{atom_count}} total)
-- **context:** brain-context.md (topic clusters)
-- **method:** Use embeddings/topics to find semantic proximity, not just keyword overlap
+- **atoms:** brain-atoms.json ({{atom_count}} atoms, {{connection_count}} connections)
+- **clusters:** clusters/manifest.json + individual cluster .md files
+- **shared rules:** See "LLM Usage Rules" in brain-context.md

@@ -1,0 +1,110 @@
+[
+  {
+    "content": "Belsky's investment thesis centers on 'transformation by interface' — the conviction that whoever owns the interface layer captures the market, regardless of who built the underlying technology. His portfolio reflects this belief: Pinterest (visual discovery interface), Uber (mobility interface), Warby Parker (eyewear buying interface), and Sweetgreen (healthy food ordering interface) all won by creating superior interfaces to existing capabilities, not by inventing new technology.",
+    "source_type": "investment",
+    "source_ref": "https://www.scottbelsky.com/investing-backup",
+    "source_date": "2024-01-01",
+    "topics": ["interface design", "competitive moats", "investment thesis", "value capture"],
+    "cluster": "competitive_moats",
+    "confidence": 0.93
+  },
+  {
+    "content": "Belsky invests in mission-driven teams that value design and exceptional product experiences. His screening criteria prioritize teams 'parlaying forces already underway to their favor' — founders who identify existing structural shifts (behavioral, technological, regulatory) and build products that ride those waves rather than trying to create demand from scratch. The best founders are optimistic about the future but pessimistic about execution.",
+    "source_type": "investment",
+    "source_ref": "https://www.scottbelsky.com/investing-backup",
+    "source_date": "2024-01-01",
+    "topics": ["founder selection", "investment criteria", "design-driven teams", "structural shifts"],
+    "cluster": "product_design",
+    "confidence": 0.91
+  },
+  {
+    "content": "Belsky's portfolio reveals a consistent bet on the collapse of intermediation. Pinterest disintermediated visual inspiration, Uber disintermediated transportation, Warby Parker disintermediated eyewear retail, Ramp disintermediated corporate expense management. Each investment validates his stated belief that intermediaries existed because of information asymmetry, not real value — and that technology eliminates them faster than people expect.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["disintermediation", "market structure", "value chain", "technology adoption"],
+    "cluster": "commerce",
+    "confidence": 0.90
+  },
+  {
+    "content": "Belsky's investment in NewLimit (longevity tech) and Whoop (fitness wearables) reflects his published conviction that health data and preventative monitoring will give humans materially more insight into their own biology. These aren't random bets — they validate his stated belief that AI health coaches and continuous biological monitoring represent a new category of human agency over personal health outcomes.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["longevity", "health tech", "wearables", "personal agency"],
+    "cluster": "longevity",
+    "confidence": 0.88
+  },
+  {
+    "content": "Belsky's investments in Supabase, Replit, and Bubble validate his 'vibe coding' thesis that code generation is no longer constrained by human hours. These are all platforms that dramatically lower the barrier to software creation — enabling the 'disposable software' and 'bespoke solutions' he writes about in Implications. His money follows his thesis that the 10-person AI-native company will outperform the 500-person legacy org.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["vibe coding", "software abundance", "developer tools", "small teams"],
+    "cluster": "vibe_coding",
+    "confidence": 0.89
+  },
+  {
+    "content": "Belsky's investment in The Browser Company (Arc) reflects his conviction that the browser is the most important interface in computing, and that incumbents (Chrome, Safari) have stagnated. Interface control is Belsky's primary investment lens — he consistently bets that capturing the interface layer is more valuable than owning the underlying infrastructure. Arc represents a bet on reimagining the primary digital interface.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["browser", "interface control", "platform strategy", "user experience"],
+    "cluster": "platform_strategy",
+    "confidence": 0.87
+  },
+  {
+    "content": "Belsky's investments in CharacterAI and Suno (AI music generation) reflect his bet on consumer AI applications that are fundamentally about personalization and private experience — not chatbots. He writes that consumer AI has so far failed consumers, and that the killer consumer AI app will probably be about personalization and private data. CharacterAI and Suno both create deeply personal, individualized AI experiences.",
+    "source_type": "investment",
+    "source_ref": "https://www.scottbelsky.com/investing-backup",
+    "source_date": "2024-01-01",
+    "topics": ["consumer AI", "personalization", "entertainment", "AI applications"],
+    "cluster": "consumer_ai",
+    "confidence": 0.86
+  },
+  {
+    "content": "Belsky's portfolio of 263+ investments reveals a distinctive pattern: he bets early and across a wide surface area rather than concentrating capital. His typical check ($50K-$500K, sweet spot $100K) allows him to back many companies that align with his thesis clusters without requiring high conviction on any single outcome. This mirrors his published belief that diversified experimentation beats concentrated bets in periods of high uncertainty.",
+    "source_type": "investment",
+    "source_ref": "https://signal.nfx.com/investors/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["portfolio strategy", "diversification", "angel investing", "uncertainty"],
+    "cluster": "commerce",
+    "confidence": 0.85
+  },
+  {
+    "content": "Belsky's investments in Ramp, Mercury, and Carta collectively represent a bet that the financial infrastructure serving startups is ripe for interface-driven disruption. Traditional banking, expense management, and cap table management all suffered from terrible interfaces built for compliance rather than users. Each of these companies won by making financial tools that founders actually want to use — validating Belsky's core thesis that interface quality determines market capture.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["fintech", "interface design", "startup infrastructure", "user experience"],
+    "cluster": "product_design",
+    "confidence": 0.88
+  },
+  {
+    "content": "Belsky's advisory involvement adds value in five specific domains he's refined over his career: crafting first-mile UX, building design-driven teams, optimizing go-to-market narratives, developing beta audience strategies, and maintaining bias-toward-action execution culture. His advisory model reflects his published belief that product sense is the highest-leverage skill a founder can develop — and that it's transferable through mentorship.",
+    "source_type": "investment",
+    "source_ref": "https://www.scottbelsky.com/investing-backup",
+    "source_date": "2024-01-01",
+    "topics": ["advisory", "mentorship", "product sense", "founder development"],
+    "cluster": "product_design",
+    "confidence": 0.87
+  },
+  {
+    "content": "Belsky sits on the boards of Atlassian and the Museum of Modern Art — positions that reflect his dual identity as technology strategist and design/taste advocate. His board choices mirror his thesis that taste is the ultimate human moat: MoMA represents the highest expression of curated human creativity, while Atlassian represents the infrastructure that enables creative teams to execute. Both validate his belief that craft and organizational design are inseparable.",
+    "source_type": "investment",
+    "source_ref": "https://en.wikipedia.org/wiki/Scott_Belsky",
+    "source_date": "2024-07-01",
+    "topics": ["board membership", "taste", "design", "organizational strategy"],
+    "cluster": "craft_originality",
+    "confidence": 0.85
+  },
+  {
+    "content": "Belsky's investments in Liquid Death, Blank Street Coffee, and Sanzo represent a bet on brand taste as competitive moat in consumer products. None of these companies invented a new product category — they reimagined existing categories (water, coffee, sparkling water) through superior branding, design, and cultural positioning. This validates his thesis that in a world of commodity products, taste and brand become the primary differentiators.",
+    "source_type": "investment",
+    "source_ref": "https://www.crunchbase.com/person/scott-belsky",
+    "source_date": "2024-01-01",
+    "topics": ["brand strategy", "consumer products", "taste", "differentiation"],
+    "cluster": "craft_originality",
+    "confidence": 0.87
+  }
+]

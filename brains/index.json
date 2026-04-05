@@ -1,0 +1,13 @@
+{
+  "brains": [
+    {
+      "slug": "scott-belsky",
+      "name": "Scott Belsky",
+      "source": "Implications newsletter",
+      "atom_count": 359,
+      "connection_count": 161,
+      "status": "live",
+      "pack_path": "brains/scott-belsky/pack/"
+    }
+  ]
+}
