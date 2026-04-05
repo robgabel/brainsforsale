@@ -141,11 +141,148 @@
       color: white;
     }
 
-    .sidebar-hidden .search-box,
-    .sidebar-hidden .cluster-label,
-    .sidebar-hidden .clusters {
-      opacity: 0.3;
-      pointer-events: none;
+    /* Sidebar modes per tab */
+    .sidebar .atoms-nav { display: none; }
+    .sidebar .section-nav { display: none; }
+    .sidebar.mode-atoms .atoms-nav { display: contents; }
+    .sidebar.mode-synthesis .section-nav { display: flex; flex-direction: column; flex: 1; overflow-y: auto; }
+    .sidebar.mode-skills .atoms-nav { display: none; }
+    .sidebar.mode-skills .section-nav { display: none; }
+
+    .cluster-count {
+      margin-left: auto;
+      background: var(--surface-2);
+      color: var(--text-dim);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .cluster-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cluster-item.active .cluster-count {
+      background: rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    /* Section nav for synthesis tab */
+    .section-nav {
+      padding: 8px 12px;
+    }
+
+    .section-nav-label {
+      padding: 0 12px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+    }
+
+    .section-nav-item {
+      display: block;
+      padding: 10px 12px;
+      margin: 2px 0;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+      text-align: left;
+      width: 100%;
+      line-height: 1.4;
+    }
+
+    .section-nav-item:hover {
+      background: var(--surface-2);
+      border-color: var(--border);
+    }
+
+    .section-nav-item.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    /* Expandable atom cards */
+    .atom-card {
+      cursor: pointer;
+    }
+
+    .atom-card.expanded {
+      border-color: var(--accent);
+      box-shadow: 0 0 24px rgba(99, 102, 241, 0.15);
+    }
+
+    .connections-panel {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .connections-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .connection-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .connection-item:hover {
+      border-color: var(--accent);
+      background: rgba(99, 102, 241, 0.05);
+    }
+
+    .conn-type {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .conn-type.supports { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+    .conn-type.extends { background: rgba(96, 165, 250, 0.15); color: #60a5fa; }
+    .conn-type.contradicts { background: rgba(248, 113, 113, 0.15); color: #f87171; }
+    .conn-type.related { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+    .conn-type.inspired_by { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+
+    .conn-text {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    .no-connections {
+      font-size: 13px;
+      color: var(--text-dim);
+      font-style: italic;
+      padding: 8px 0;
     }
 
     /* ===== MAIN AREA ===== */
@@ -747,17 +884,24 @@
         <div class="stats" id="stats"></div>
       </div>
 
-      <div class="search-box">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search atoms..."
-          autocomplete="off"
-        >
+      <!-- ATOMS NAV -->
+      <div class="atoms-nav">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search atoms..."
+            autocomplete="off"
+          >
+        </div>
+        <div class="cluster-label">Clusters</div>
+        <div class="clusters" id="clusters"></div>
       </div>
 
-      <div class="cluster-label">Clusters</div>
-      <div class="clusters" id="clusters"></div>
+      <!-- SECTION NAV (synthesis tab) -->
+      <div class="section-nav" id="sectionNav">
+        <div class="section-nav-label">Navigate</div>
+      </div>
     </div>
 
     <!-- MAIN AREA -->
@@ -787,7 +931,7 @@
             </div>
           </div>
 
-          <div class="section-title">First Principles</div>
+          <div class="section-title" id="sec-first-principles">First Principles</div>
           <div class="principles-grid">
             <div class="principle-card">
               <div style="display: flex; align-items: baseline;">
@@ -868,7 +1012,7 @@
             </div>
           </div>
 
-          <div class="section-title">Thinking Patterns</div>
+          <div class="section-title" id="sec-thinking-patterns">Thinking Patterns</div>
           <div class="pattern-card">
             <div class="pattern-name">Tension pairs</div>
             <div class="pattern-desc">Belsky frames ideas as productive contradictions: human vs. machine, scarcity vs. abundance, craft vs. speed. He doesn't resolve these tensions — he holds them and explores both sides.</div>
@@ -906,7 +1050,7 @@
             <div class="pattern-desc">Belsky's 263+ angel investments function as a live experiment validating his published beliefs. His money follows his writing.</div>
           </div>
 
-          <div class="section-title">Contrarian Positions</div>
+          <div class="section-title" id="sec-contrarian">Contrarian Positions</div>
           <div class="contrarian-card">
             <div class="contrarian-title">Intermediaries were always overvalued.</div>
             <div class="contrarian-desc">AI will disrupt intermediation faster than most people expect because we 'overestimated value of human relationships and endured unnecessary friction and fees for a human face.'</div>
@@ -960,7 +1104,7 @@
             <div class="contrarian-desc">Belsky's career transitions always preserved relationships and optionality.</div>
           </div>
 
-          <div class="section-title">What He Does NOT Believe</div>
+          <div class="section-title" id="sec-not-believe">What He Does NOT Believe</div>
           <div class="belief-card">
             <div class="belief-title">"AI will commoditize everything equally."</div>
             <div class="belief-desc">He believes commoditization is uneven — it hits execution first, then data, then interfaces last. Taste and craft increase in value.</div>
@@ -990,7 +1134,7 @@
             <div class="belief-desc">Avoiding conflict creates organizational debt that compounds silently.</div>
           </div>
 
-          <div class="section-title">What This Brain Would NOT Say</div>
+          <div class="section-title" id="sec-would-not-say">What This Brain Would NOT Say</div>
           <div class="belief-card">
             <div class="belief-title">"Move fast and break things" without caveating craft.</div>
             <div class="belief-desc">He believes in speed but never at the expense of quality.</div>
@@ -1012,7 +1156,7 @@
             <div class="belief-desc">Products should optimize for joyspan — the duration and depth of positive emotional experience.</div>
           </div>
 
-          <div class="section-title">Biographical Pattern: The Lived Messy Middle</div>
+          <div class="section-title" id="sec-biography">Biographical Pattern: The Lived Messy Middle</div>
           <div class="timeline">
             <div class="timeline-entry">
               <div class="timeline-date">2002–2006</div>
@@ -1096,30 +1240,83 @@
     let filteredAtoms = [];
     let currentCluster = null;
     let currentSearch = '';
+    let expandedAtomId = null;
+
+    // SIDEBAR MODE MANAGEMENT
+    function setSidebarMode(mode) {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.remove('mode-atoms', 'mode-synthesis', 'mode-skills');
+      sidebar.classList.add('mode-' + mode);
+    }
+
+    // SECTION NAV FOR SYNTHESIS TAB
+    const sections = [
+      { id: 'sec-first-principles', label: 'First Principles' },
+      { id: 'sec-thinking-patterns', label: 'Thinking Patterns' },
+      { id: 'sec-contrarian', label: 'Contrarian Positions' },
+      { id: 'sec-not-believe', label: 'Does NOT Believe' },
+      { id: 'sec-would-not-say', label: 'Would NOT Say' },
+      { id: 'sec-biography', label: 'Biography' }
+    ];
+
+    function buildSectionNav() {
+      const nav = document.getElementById('sectionNav');
+      sections.forEach(sec => {
+        const btn = document.createElement('button');
+        btn.className = 'section-nav-item';
+        btn.textContent = sec.label;
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.section-nav-item').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const target = document.getElementById(sec.id);
+          if (target) {
+            const content = document.querySelector('.content');
+            const offset = target.offsetTop - content.offsetTop - 20;
+            content.scrollTo({ top: offset, behavior: 'smooth' });
+          }
+        });
+        nav.appendChild(btn);
+      });
+    }
+
+    // Track scroll position to highlight current section
+    function setupScrollSpy() {
+      const content = document.querySelector('.content');
+      content.addEventListener('scroll', () => {
+        if (!document.getElementById('how-belsky-thinks').classList.contains('active')) return;
+        const scrollTop = content.scrollTop + content.offsetTop + 60;
+        let activeIdx = 0;
+        sections.forEach((sec, i) => {
+          const el = document.getElementById(sec.id);
+          if (el && el.offsetTop <= scrollTop) activeIdx = i;
+        });
+        document.querySelectorAll('.section-nav-item').forEach((btn, i) => {
+          btn.classList.toggle('active', i === activeIdx);
+        });
+      });
+    }
 
     // TAB SWITCHING
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', (e) => {
         const tabName = e.target.dataset.tab;
 
-        // Remove active class from all tabs
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         e.target.classList.add('active');
 
-        // Hide all content
         document.querySelectorAll('.tab-content').forEach(content => {
           content.classList.remove('active');
         });
 
-        // Show selected content
         document.getElementById(tabName).classList.add('active');
 
-        // Update sidebar visibility
-        const sidebar = document.getElementById('sidebar');
+        // Set sidebar mode based on tab
         if (tabName === 'atoms') {
-          sidebar.classList.remove('sidebar-hidden');
+          setSidebarMode('atoms');
+        } else if (tabName === 'how-belsky-thinks') {
+          setSidebarMode('synthesis');
         } else {
-          sidebar.classList.add('sidebar-hidden');
+          setSidebarMode('skills');
         }
       });
     });
@@ -1140,28 +1337,44 @@
           xhr.send();
         });
       }
-      // brain-atoms.json has { brain, atoms, connections, topic_index }
       brainMeta = raw.brain || {};
       atomsData = raw.atoms || [];
       connectionsData = raw.connections || [];
-      // Build atom lookup map for connection navigation
       atomsData.forEach(a => { atomMap[a.id] = a; });
       initializeAtoms();
     }
 
     function initializeAtoms() {
-      // Extract clusters
+      // Count atoms per cluster
+      const clusterCounts = {};
       atomsData.forEach(atom => {
-        if (atom.cluster) clusters.add(atom.cluster);
+        if (atom.cluster) {
+          clusters.add(atom.cluster);
+          clusterCounts[atom.cluster] = (clusterCounts[atom.cluster] || 0) + 1;
+        }
       });
 
-      // Render clusters
+      // Sort clusters by count descending
+      const sortedClusters = Array.from(clusters).sort((a, b) => (clusterCounts[b] || 0) - (clusterCounts[a] || 0));
+
+      // Render cluster list with "All Clusters" at top
       const clustersDiv = document.getElementById('clusters');
-      const sortedClusters = Array.from(clusters).sort();
+
+      const allBtn = document.createElement('button');
+      allBtn.className = 'cluster-item active';
+      allBtn.innerHTML = `<span>All Clusters</span><span class="cluster-count">${atomsData.length}</span>`;
+      allBtn.addEventListener('click', () => {
+        currentCluster = null;
+        document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
+        allBtn.classList.add('active');
+        applyFilters();
+      });
+      clustersDiv.appendChild(allBtn);
+
       sortedClusters.forEach(cluster => {
         const btn = document.createElement('button');
         btn.className = 'cluster-item';
-        btn.textContent = cluster;
+        btn.innerHTML = `<span>${cluster}</span><span class="cluster-count">${clusterCounts[cluster]}</span>`;
         btn.addEventListener('click', () => filterByCluster(cluster, btn));
         clustersDiv.appendChild(btn);
       });
@@ -1169,7 +1382,7 @@
       // Initial render
       renderAtoms(atomsData);
 
-      // Set stats from loaded data
+      // Set stats
       const statsDiv = document.getElementById('stats');
       statsDiv.innerHTML = `
         <div><strong>${atomsData.length}</strong> atoms</div>
@@ -1179,10 +1392,10 @@
     }
 
     function filterByCluster(cluster, btn) {
-      // Toggle
       if (currentCluster === cluster) {
         currentCluster = null;
-        btn.classList.remove('active');
+        document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
+        document.querySelector('.cluster-item').classList.add('active'); // "All" button
       } else {
         document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
         currentCluster = cluster;
@@ -1204,6 +1417,108 @@
       renderAtoms(filteredAtoms);
     }
 
+    function getAtomConnections(atom) {
+      // Connections from atom.connections array (embedded in brain-atoms.json)
+      const conns = [];
+      if (atom.connections && atom.connections.length > 0) {
+        atom.connections.forEach(c => {
+          const targetAtom = atomMap[c.target_id];
+          if (targetAtom) {
+            conns.push({ type: c.type, atom: targetAtom });
+          }
+        });
+      }
+      // Also check global connections for this atom as source
+      connectionsData.forEach(c => {
+        if (c.source_id === atom.id) {
+          const targetAtom = atomMap[c.target_id];
+          if (targetAtom && !conns.find(x => x.atom.id === targetAtom.id)) {
+            conns.push({ type: c.type, atom: targetAtom });
+          }
+        }
+        // Bidirectional: also show connections where this atom is target
+        if (c.target_id === atom.id) {
+          const sourceAtom = atomMap[c.source_id];
+          if (sourceAtom && !conns.find(x => x.atom.id === sourceAtom.id)) {
+            conns.push({ type: c.type, atom: sourceAtom });
+          }
+        }
+      });
+      return conns;
+    }
+
+    function renderConnections(atom) {
+      const conns = getAtomConnections(atom);
+      if (conns.length === 0) {
+        return '<div class="no-connections">No connections mapped for this atom.</div>';
+      }
+
+      let html = '';
+      // Group by type
+      const grouped = {};
+      conns.forEach(c => {
+        const t = c.type || 'related';
+        if (!grouped[t]) grouped[t] = [];
+        grouped[t].push(c);
+      });
+
+      const typeOrder = ['supports', 'extends', 'contradicts', 'related', 'inspired_by'];
+      typeOrder.forEach(type => {
+        if (!grouped[type]) return;
+        grouped[type].forEach(c => {
+          const preview = c.atom.content.length > 120 ? c.atom.content.slice(0, 120) + '...' : c.atom.content;
+          html += `
+            <div class="connection-item" onclick="navigateToAtom('${c.atom.id}')">
+              <span class="conn-type ${type}">${type.replace('_', ' ')}</span>
+              <span class="conn-text">${preview}</span>
+            </div>
+          `;
+        });
+      });
+
+      return html;
+    }
+
+    function navigateToAtom(atomId) {
+      const atom = atomMap[atomId];
+      if (!atom) return;
+
+      // Switch to atoms tab if not there
+      const atomsTab = document.querySelector('.tab[data-tab="atoms"]');
+      if (!document.getElementById('atoms').classList.contains('active')) {
+        atomsTab.click();
+      }
+
+      // Set cluster filter to target atom's cluster
+      if (atom.cluster && atom.cluster !== currentCluster) {
+        currentCluster = atom.cluster;
+        document.querySelectorAll('.cluster-item').forEach(b => {
+          b.classList.remove('active');
+          if (b.querySelector('span') && b.querySelector('span').textContent === atom.cluster) {
+            b.classList.add('active');
+          }
+        });
+        applyFilters();
+      }
+
+      // Expand the target atom
+      expandedAtomId = atomId;
+      renderAtoms(filteredAtoms);
+
+      // Scroll to it
+      setTimeout(() => {
+        const card = document.getElementById('atom-' + atomId);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+
+    function toggleAtom(atomId) {
+      expandedAtomId = expandedAtomId === atomId ? null : atomId;
+      renderAtoms(filteredAtoms.length > 0 || currentCluster || currentSearch ? filteredAtoms : atomsData);
+    }
+
     function renderAtoms(atoms) {
       const grid = document.getElementById('atomsGrid');
       const noResults = document.getElementById('noResults');
@@ -1217,15 +1532,17 @@
 
       noResults.style.display = 'none';
 
-      atoms.forEach((atom, idx) => {
+      atoms.forEach((atom) => {
         const card = document.createElement('div');
-        card.className = 'atom-card';
+        const isExpanded = expandedAtomId === atom.id;
+        card.className = 'atom-card' + (isExpanded ? ' expanded' : '');
+        card.id = 'atom-' + atom.id;
 
         let html = `
-          <div class="atom-header">
+          <div class="atom-header" onclick="toggleAtom('${atom.id}')">
             <div class="atom-cluster-tag">${atom.cluster || 'uncategorized'}</div>
           </div>
-          <div class="atom-content">${atom.content}</div>
+          <div class="atom-content" onclick="toggleAtom('${atom.id}')">${atom.content}</div>
         `;
 
         if (atom.original_quote) {
@@ -1245,19 +1562,30 @@
 
         if (atom.confidence_tier) {
           const tier = (atom.confidence_tier || 'medium').toUpperCase();
-          const tierClass = `confidence-${atom.confidence_tier ? atom.confidence_tier.toLowerCase() : 'medium'}`;
+          const tierClass = `confidence-${atom.confidence_tier.toLowerCase()}`;
           html += `<div class="confidence-badge ${tierClass}">${tier}</div>`;
         }
 
         if (atom.topics && atom.topics.length > 0) {
           html += '<div class="topic-chips">';
           atom.topics.forEach(topic => {
-            html += `<button class="topic-chip" onclick="searchTopic('${topic}')">${topic}</button>`;
+            html += `<button class="topic-chip" onclick="event.stopPropagation(); searchTopic('${topic.replace(/'/g, "\\'")}')">${topic}</button>`;
           });
           html += '</div>';
         }
 
         html += '</div>';
+
+        // Connections panel (visible when expanded)
+        if (isExpanded) {
+          const connCount = getAtomConnections(atom).length;
+          html += `
+            <div class="connections-panel">
+              <div class="connections-label">Connections (${connCount})</div>
+              ${renderConnections(atom)}
+            </div>
+          `;
+        }
 
         card.innerHTML = html;
         grid.appendChild(card);
@@ -1269,6 +1597,7 @@
       currentSearch = topic;
       currentCluster = null;
       document.querySelectorAll('.cluster-item').forEach(b => b.classList.remove('active'));
+      document.querySelector('.cluster-item').classList.add('active');
       applyFilters();
     }
 
@@ -1280,15 +1609,14 @@
 
     // KEYBOARD SHORTCUTS
     document.addEventListener('keydown', (e) => {
-      // "/" to focus search (only if on atoms tab)
       if (e.key === '/' && document.getElementById('atoms').classList.contains('active')) {
         e.preventDefault();
         document.getElementById('searchInput').focus();
       }
-      // Escape to clear search
       if (e.key === 'Escape') {
         document.getElementById('searchInput').value = '';
         currentSearch = '';
+        expandedAtomId = null;
         applyFilters();
       }
     });
@@ -1323,6 +1651,9 @@
     }
 
     // INIT
+    setSidebarMode('synthesis'); // Start on synthesis tab
+    buildSectionNav();
+    setupScrollSpy();
     loadAtoms();
     renderSkills();
   </script>
