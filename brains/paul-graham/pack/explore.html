@@ -345,6 +345,11 @@
       display: block;
     }
 
+    .tab-content#graph.active {
+      display: block;
+      overflow: hidden;
+    }
+
     /* ===== TAB 1: SYNTHESIS ===== */
     .hero-section {
       margin-bottom: 48px;
@@ -818,6 +823,276 @@
       background: var(--text-dim);
     }
 
+    /* ===== TAB 4: GRAPH ===== */
+    #graph-tab {
+      position: relative;
+      height: 100%;
+    }
+
+    #graph-canvas {
+      width: 100%;
+      height: calc(100vh - 60px);
+      display: block;
+    }
+
+    .graph-tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 12px 16px;
+      max-width: 340px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      z-index: 100;
+      display: none;
+    }
+
+    .graph-tooltip .tt-cluster {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .graph-tooltip .tt-content {
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .graph-tooltip .tt-quote {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 12px;
+      border-left: 2px solid var(--accent);
+      padding-left: 8px;
+    }
+
+    .graph-controls {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .graph-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .graph-btn:hover {
+      border-color: var(--accent);
+      background: var(--surface-2);
+    }
+
+    .graph-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .graph-legend {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 12px;
+      color: var(--text-dim);
+      z-index: 10;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .legend-line {
+      width: 20px;
+      height: 2px;
+    }
+
+    /* Surprise Me floating button */
+    .surprise-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 24px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 4px 24px rgba(99, 102, 241, 0.4);
+      transition: all 0.2s;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .surprise-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5);
+    }
+
+    .surprise-btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Surprise modal */
+    .surprise-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 10, 15, 0.85);
+      z-index: 300;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .surprise-overlay.visible {
+      display: flex;
+    }
+
+    .surprise-card {
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 16px 64px rgba(99, 102, 241, 0.3);
+      animation: surpriseIn 0.3s ease-out;
+    }
+
+    @keyframes surpriseIn {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .surprise-card .sc-cluster {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .surprise-card .sc-content {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .surprise-card .sc-quote {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 15px;
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      background: rgba(99, 102, 241, 0.05);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 16px;
+    }
+
+    .surprise-card .sc-connections {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .surprise-card .sc-conn-item {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      padding: 8px 0;
+      cursor: pointer;
+    }
+
+    .surprise-card .sc-conn-item:hover .conn-text {
+      color: var(--text);
+    }
+
+    .surprise-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .surprise-actions button {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .surprise-actions .btn-another {
+      background: var(--accent);
+      border: none;
+      color: white;
+    }
+
+    .surprise-actions .btn-another:hover {
+      background: #818cf8;
+    }
+
+    .surprise-actions .btn-close {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+    }
+
+    .surprise-actions .btn-close:hover {
+      border-color: var(--text-dim);
+      color: var(--text);
+    }
+
+    .surprise-actions .btn-explore {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .surprise-actions .btn-explore:hover {
+      background: var(--accent);
+      color: white;
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 1200px) {
       .skills-grid {
@@ -905,6 +1180,7 @@
       <div class="topbar">
         <div class="tab-bar">
           <button class="tab active" data-tab="synthesis">How They Think</button>
+          <button class="tab" data-tab="graph">Graph</button>
           <button class="tab" data-tab="atoms">Atoms</button>
           <button class="tab" data-tab="skills">Skills</button>
         </div>
@@ -914,7 +1190,25 @@
         <!-- TAB 1: SYNTHESIS (rendered dynamically from brain-atoms.json) -->
         <div class="tab-content active" id="synthesis"></div>
 
-        <!-- TAB 2: ATOMS -->
+        <!-- TAB 2: GRAPH -->
+        <div class="tab-content" id="graph" style="padding: 0; height: 100%; position: relative;">
+          <canvas id="graph-canvas"></canvas>
+          <div class="graph-tooltip" id="graphTooltip"></div>
+          <div class="graph-controls">
+            <button class="graph-btn active" onclick="setGraphFilter(null, this)">All</button>
+            <button class="graph-btn" onclick="setGraphFilter('supports', this)">Supports</button>
+            <button class="graph-btn" onclick="setGraphFilter('extends', this)">Extends</button>
+            <button class="graph-btn" onclick="setGraphFilter('related', this)">Related</button>
+          </div>
+          <div class="graph-legend">
+            <div class="legend-item"><div class="legend-dot" style="background: #6366f1;"></div> Supports</div>
+            <div class="legend-item"><div class="legend-dot" style="background: #60a5fa;"></div> Extends</div>
+            <div class="legend-item"><div class="legend-dot" style="background: #a855f7;"></div> Related</div>
+            <div class="legend-item"><div class="legend-dot" style="background: #f87171;"></div> Contradicts</div>
+          </div>
+        </div>
+
+        <!-- TAB 3: ATOMS -->
         <div class="tab-content" id="atoms">
           <div class="atoms-grid" id="atomsGrid"></div>
           <div class="no-results" id="noResults" style="display: none;">
@@ -922,7 +1216,7 @@
           </div>
         </div>
 
-        <!-- TAB 3: SKILLS -->
+        <!-- TAB 4: SKILLS -->
         <div class="tab-content" id="skills">
           <div class="skills-grid" id="skillsGrid"></div>
           <div class="workflows-section">
@@ -947,6 +1241,16 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Surprise Me button -->
+  <button class="surprise-btn" onclick="showSurprise()">
+    ✨ Surprise me
+  </button>
+
+  <!-- Surprise overlay -->
+  <div class="surprise-overlay" id="surpriseOverlay" onclick="if(event.target===this) closeSurprise()">
+    <div class="surprise-card" id="surpriseCard"></div>
   </div>
 
   <script>
@@ -1022,6 +1326,9 @@
           setSidebarMode('atoms');
         } else if (tabName === 'synthesis') {
           setSidebarMode('synthesis');
+        } else if (tabName === 'graph') {
+          setSidebarMode('skills'); // hide sidebar nav for graph
+          initGraph();
         } else {
           setSidebarMode('skills');
         }
@@ -1280,14 +1587,16 @@
         });
       }
       connectionsData.forEach(c => {
-        if (c.atom_id_1 === atom.id) {
-          const targetAtom = atomMap[c.atom_id_2];
+        const fromId = c.from || c.atom_id_1;
+        const toId = c.to || c.atom_id_2;
+        if (fromId === atom.id) {
+          const targetAtom = atomMap[toId];
           if (targetAtom && !conns.find(x => x.atom.id === targetAtom.id)) {
             conns.push({ type: c.relationship, atom: targetAtom });
           }
         }
-        if (c.atom_id_2 === atom.id) {
-          const sourceAtom = atomMap[c.atom_id_1];
+        if (toId === atom.id) {
+          const sourceAtom = atomMap[fromId];
           if (sourceAtom && !conns.find(x => x.atom.id === sourceAtom.id)) {
             conns.push({ type: c.relationship, atom: sourceAtom });
           }
@@ -1486,6 +1795,402 @@
         grid.appendChild(card);
       });
     }
+
+    // ===== FORCE-DIRECTED GRAPH =====
+    const CLUSTER_COLORS = {
+      'startups_founding': '#6366f1',
+      'ideas_creativity': '#ec4899',
+      'ambition_greatwork': '#d97706',
+      'wealth_economics': '#059669',
+      'programming_hackers': '#0ea5e9',
+      'design_taste': '#8b5cf6',
+      'philosophy_life': '#f87171',
+      'writing_thinking': '#60a5fa',
+      'growth_scale': '#34d399',
+      'silicon_valley': '#fbbf24',
+      'education_learning': '#a78bfa',
+      'fundraising_investors': '#fb923c',
+      // Belsky clusters
+      'ai_agents': '#0ea5e9',
+      'product_design': '#6366f1',
+      'leadership_org': '#d97706',
+      'creativity_taste': '#ec4899',
+      'business_models': '#059669',
+      'culture_teams': '#8b5cf6'
+    };
+
+    const EDGE_COLORS = {
+      'supports': '#6366f1',
+      'extends': '#60a5fa',
+      'related': '#a855f7',
+      'contradicts': '#f87171',
+      'inspired_by': '#fbbf24'
+    };
+
+    let graphNodes = [];
+    let graphEdges = [];
+    let graphFilter = null;
+    let graphCanvas, graphCtx;
+    let graphWidth, graphHeight;
+    let hoveredNode = null;
+    let selectedNode = null;
+    let graphAnimFrame = null;
+    let graphInited = false;
+    let graphDragNode = null;
+    let graphMouseX = 0, graphMouseY = 0;
+
+    function initGraph() {
+      if (graphInited) return;
+      graphInited = true;
+
+      graphCanvas = document.getElementById('graph-canvas');
+      graphCtx = graphCanvas.getContext('2d');
+
+      function resize() {
+        const rect = graphCanvas.parentElement.getBoundingClientRect();
+        graphWidth = rect.width;
+        graphHeight = rect.height;
+        graphCanvas.width = graphWidth * devicePixelRatio;
+        graphCanvas.height = graphHeight * devicePixelRatio;
+        graphCanvas.style.width = graphWidth + 'px';
+        graphCanvas.style.height = graphHeight + 'px';
+        graphCtx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      // Build nodes from atoms
+      const cx = graphWidth / 2;
+      const cy = graphHeight / 2;
+
+      graphNodes = atomsData.map((atom, i) => {
+        const angle = (i / atomsData.length) * Math.PI * 2;
+        const radius = 150 + Math.random() * 200;
+        return {
+          id: atom.id,
+          x: cx + Math.cos(angle) * radius + (Math.random() - 0.5) * 100,
+          y: cy + Math.sin(angle) * radius + (Math.random() - 0.5) * 100,
+          vx: 0,
+          vy: 0,
+          cluster: atom.cluster,
+          content: atom.content,
+          original_quote: atom.original_quote,
+          confidence: atom.confidence || 0.5,
+          radius: 4 + (atom.confidence || 0.5) * 6,
+          atom: atom
+        };
+      });
+
+      // Build edges from connections
+      const nodeMap = {};
+      graphNodes.forEach(n => { nodeMap[n.id] = n; });
+
+      connectionsData.forEach(c => {
+        const fromId = c.from || c.atom_id_1;
+        const toId = c.to || c.atom_id_2;
+        const source = nodeMap[fromId];
+        const target = nodeMap[toId];
+        if (source && target) {
+          graphEdges.push({
+            source,
+            target,
+            type: c.relationship || 'related',
+            confidence: c.confidence || 0.5
+          });
+        }
+      });
+
+      // Mouse interaction
+      graphCanvas.addEventListener('mousemove', (e) => {
+        const rect = graphCanvas.getBoundingClientRect();
+        graphMouseX = e.clientX - rect.left;
+        graphMouseY = e.clientY - rect.top;
+
+        if (graphDragNode) {
+          graphDragNode.x = graphMouseX;
+          graphDragNode.y = graphMouseY;
+          graphDragNode.vx = 0;
+          graphDragNode.vy = 0;
+          return;
+        }
+
+        // Hit test
+        hoveredNode = null;
+        for (const node of graphNodes) {
+          const dx = graphMouseX - node.x;
+          const dy = graphMouseY - node.y;
+          if (dx * dx + dy * dy < (node.radius + 4) * (node.radius + 4)) {
+            hoveredNode = node;
+            break;
+          }
+        }
+
+        graphCanvas.style.cursor = hoveredNode ? 'pointer' : 'default';
+
+        // Tooltip
+        const tt = document.getElementById('graphTooltip');
+        if (hoveredNode) {
+          const preview = hoveredNode.content.length > 200 ? hoveredNode.content.slice(0, 200) + '...' : hoveredNode.content;
+          let html = `<div class="tt-cluster">${hoveredNode.cluster}</div>`;
+          html += `<div class="tt-content">${esc(preview)}</div>`;
+          if (hoveredNode.original_quote) {
+            const q = hoveredNode.original_quote.length > 150 ? hoveredNode.original_quote.slice(0, 150) + '...' : hoveredNode.original_quote;
+            html += `<div class="tt-quote">"${esc(q)}"</div>`;
+          }
+          tt.innerHTML = html;
+          tt.style.display = 'block';
+          const tx = Math.min(graphMouseX + 16, graphWidth - 360);
+          const ty = Math.min(graphMouseY + 16, graphHeight - 200);
+          tt.style.left = tx + 'px';
+          tt.style.top = ty + 'px';
+        } else {
+          tt.style.display = 'none';
+        }
+      });
+
+      graphCanvas.addEventListener('mousedown', (e) => {
+        if (hoveredNode) {
+          graphDragNode = hoveredNode;
+          selectedNode = hoveredNode;
+        } else {
+          selectedNode = null;
+        }
+      });
+
+      graphCanvas.addEventListener('mouseup', () => {
+        graphDragNode = null;
+      });
+
+      graphCanvas.addEventListener('mouseleave', () => {
+        graphDragNode = null;
+        hoveredNode = null;
+        document.getElementById('graphTooltip').style.display = 'none';
+      });
+
+      graphCanvas.addEventListener('dblclick', () => {
+        if (hoveredNode) {
+          navigateToAtom(hoveredNode.id);
+        }
+      });
+
+      runGraphSimulation();
+    }
+
+    function runGraphSimulation() {
+      let alpha = 1;
+      const decay = 0.995;
+
+      function tick() {
+        alpha *= decay;
+        if (alpha < 0.001) alpha = 0.001;
+
+        // Center gravity
+        graphNodes.forEach(n => {
+          n.vx += (graphWidth / 2 - n.x) * 0.0003;
+          n.vy += (graphHeight / 2 - n.y) * 0.0003;
+        });
+
+        // Cluster gravity — pull nodes toward cluster center
+        const clusterCenters = {};
+        const clusterCount = {};
+        graphNodes.forEach(n => {
+          if (!clusterCenters[n.cluster]) { clusterCenters[n.cluster] = { x: 0, y: 0 }; clusterCount[n.cluster] = 0; }
+          clusterCenters[n.cluster].x += n.x;
+          clusterCenters[n.cluster].y += n.y;
+          clusterCount[n.cluster]++;
+        });
+        Object.keys(clusterCenters).forEach(c => {
+          clusterCenters[c].x /= clusterCount[c];
+          clusterCenters[c].y /= clusterCount[c];
+        });
+        graphNodes.forEach(n => {
+          const cc = clusterCenters[n.cluster];
+          if (cc) {
+            n.vx += (cc.x - n.x) * 0.001 * alpha;
+            n.vy += (cc.y - n.y) * 0.001 * alpha;
+          }
+        });
+
+        // Repulsion (Barnes-Hut would be better for perf, but N=182 is fine)
+        for (let i = 0; i < graphNodes.length; i++) {
+          for (let j = i + 1; j < graphNodes.length; j++) {
+            const a = graphNodes[i];
+            const b = graphNodes[j];
+            let dx = b.x - a.x;
+            let dy = b.y - a.y;
+            let dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            if (dist < 20) dist = 20;
+            const force = -200 * alpha / (dist * dist);
+            const fx = (dx / dist) * force;
+            const fy = (dy / dist) * force;
+            a.vx -= fx;
+            a.vy -= fy;
+            b.vx += fx;
+            b.vy += fy;
+          }
+        }
+
+        // Spring forces from edges
+        graphEdges.forEach(e => {
+          if (graphFilter && e.type !== graphFilter) return;
+          const dx = e.target.x - e.source.x;
+          const dy = e.target.y - e.source.y;
+          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+          const targetDist = e.type === 'extends' ? 60 : 120;
+          const force = (dist - targetDist) * 0.002 * alpha;
+          const fx = (dx / dist) * force;
+          const fy = (dy / dist) * force;
+          e.source.vx += fx;
+          e.source.vy += fy;
+          e.target.vx -= fx;
+          e.target.vy -= fy;
+        });
+
+        // Apply velocities
+        graphNodes.forEach(n => {
+          if (n === graphDragNode) return;
+          n.vx *= 0.85;
+          n.vy *= 0.85;
+          n.x += n.vx;
+          n.y += n.vy;
+          // Keep in bounds
+          n.x = Math.max(n.radius, Math.min(graphWidth - n.radius, n.x));
+          n.y = Math.max(n.radius, Math.min(graphHeight - n.radius, n.y));
+        });
+
+        drawGraph();
+        graphAnimFrame = requestAnimationFrame(tick);
+      }
+
+      tick();
+    }
+
+    function drawGraph() {
+      graphCtx.clearRect(0, 0, graphWidth, graphHeight);
+
+      // Determine highlighted connections
+      const highlightedNodes = new Set();
+      if (selectedNode || hoveredNode) {
+        const focusNode = selectedNode || hoveredNode;
+        highlightedNodes.add(focusNode.id);
+        graphEdges.forEach(e => {
+          if (graphFilter && e.type !== graphFilter) return;
+          if (e.source.id === focusNode.id) highlightedNodes.add(e.target.id);
+          if (e.target.id === focusNode.id) highlightedNodes.add(e.source.id);
+        });
+      }
+
+      const hasHighlight = highlightedNodes.size > 0;
+
+      // Draw edges
+      graphEdges.forEach(e => {
+        if (graphFilter && e.type !== graphFilter) return;
+        const isHighlighted = hasHighlight && (highlightedNodes.has(e.source.id) && highlightedNodes.has(e.target.id));
+        const alpha = hasHighlight ? (isHighlighted ? 0.6 : 0.03) : 0.12;
+        const color = EDGE_COLORS[e.type] || '#6366f1';
+
+        graphCtx.beginPath();
+        graphCtx.moveTo(e.source.x, e.source.y);
+        graphCtx.lineTo(e.target.x, e.target.y);
+        graphCtx.strokeStyle = color;
+        graphCtx.globalAlpha = alpha;
+        graphCtx.lineWidth = isHighlighted ? 2 : 1;
+        graphCtx.stroke();
+      });
+
+      graphCtx.globalAlpha = 1;
+
+      // Draw nodes
+      graphNodes.forEach(n => {
+        const color = CLUSTER_COLORS[n.cluster] || '#6366f1';
+        const isHighlighted = !hasHighlight || highlightedNodes.has(n.id);
+        const isFocus = (selectedNode && n.id === selectedNode.id) || (hoveredNode && n.id === hoveredNode.id);
+
+        graphCtx.beginPath();
+        graphCtx.arc(n.x, n.y, n.radius + (isFocus ? 3 : 0), 0, Math.PI * 2);
+        graphCtx.fillStyle = color;
+        graphCtx.globalAlpha = isHighlighted ? 1 : 0.12;
+        graphCtx.fill();
+
+        if (isFocus) {
+          graphCtx.globalAlpha = 0.5;
+          graphCtx.beginPath();
+          graphCtx.arc(n.x, n.y, n.radius + 8, 0, Math.PI * 2);
+          graphCtx.strokeStyle = color;
+          graphCtx.lineWidth = 2;
+          graphCtx.stroke();
+        }
+      });
+
+      graphCtx.globalAlpha = 1;
+    }
+
+    function setGraphFilter(filter, btn) {
+      graphFilter = filter;
+      document.querySelectorAll('.graph-controls .graph-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+    }
+
+    // ===== SURPRISE ME =====
+    let seenSurpriseIds = new Set();
+
+    function showSurprise() {
+      // Pick a random high-confidence atom we haven't shown yet
+      const highConf = atomsData.filter(a =>
+        (a.confidence || 0) >= 0.7 && !seenSurpriseIds.has(a.id)
+      );
+      // If we've seen them all, reset
+      const pool = highConf.length > 0 ? highConf : atomsData;
+      if (highConf.length === 0) seenSurpriseIds.clear();
+
+      const atom = pool[Math.floor(Math.random() * pool.length)];
+      seenSurpriseIds.add(atom.id);
+
+      const conns = getAtomConnections(atom).slice(0, 3);
+      const card = document.getElementById('surpriseCard');
+
+      let html = `<div class="sc-cluster">${esc(atom.cluster)}</div>`;
+      html += `<div class="sc-content">${esc(atom.content)}</div>`;
+
+      if (atom.original_quote) {
+        html += `<div class="sc-quote">"${esc(atom.original_quote)}"</div>`;
+      }
+
+      if (conns.length > 0) {
+        html += '<div class="sc-connections">';
+        html += `<div style="font-weight: 600; margin-bottom: 8px; color: var(--text);">Connected to:</div>`;
+        conns.forEach(c => {
+          const preview = c.atom.content.length > 100 ? c.atom.content.slice(0, 100) + '...' : c.atom.content;
+          html += `
+            <div class="sc-conn-item" onclick="closeSurprise(); navigateToAtom('${c.atom.id}')">
+              <span class="conn-type ${c.type}">${c.type.replace('_', ' ')}</span>
+              <span class="conn-text">${esc(preview)}</span>
+            </div>
+          `;
+        });
+        html += '</div>';
+      }
+
+      html += `
+        <div class="surprise-actions">
+          <button class="btn-another" onclick="showSurprise()">✨ Another</button>
+          <button class="btn-explore" onclick="closeSurprise(); navigateToAtom('${atom.id}')">Explore</button>
+          <button class="btn-close" onclick="closeSurprise()">Close</button>
+        </div>
+      `;
+
+      card.innerHTML = html;
+      document.getElementById('surpriseOverlay').classList.add('visible');
+    }
+
+    function closeSurprise() {
+      document.getElementById('surpriseOverlay').classList.remove('visible');
+    }
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSurprise();
+    });
 
     // ===== INIT =====
     setSidebarMode('synthesis');
