@@ -1,6 +1,7 @@
 import { BRAINS, SKILLS } from "@/lib/brains";
 import { BrainCard } from "@/components/BrainCard";
 import { InstallCommand } from "@/components/InstallCommand";
+import { RequestBrainForm } from "@/components/RequestBrainForm";
 import Link from "next/link";
 
 export default function Home() {
@@ -247,25 +248,8 @@ export default function Home() {
           <p className="mt-3 text-base text-body">
             Request a thinker. When a brain hits 50 requests, we build it.
           </p>
-          <div className="mt-8 flex gap-3">
-            <input
-              type="text"
-              placeholder="e.g. Naval Ravikant, Brene Brown, Ray Dalio..."
-              className="flex-1 rounded-lg border border-border-default bg-white px-4 py-3 text-sm text-deep-ink placeholder-muted outline-none transition-all focus:border-brain-indigo focus:ring-[3px] focus:ring-brain-indigo/20"
-            />
-            <button className="rounded-lg bg-brain-indigo px-5 py-3 text-sm font-semibold text-white shadow-brain-cta transition-all hover:bg-indigo-hover active:scale-[0.98]">
-              Request
-            </button>
-          </div>
-          <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {["Scott Galloway", "Naval Ravikant", "Marc Andreessen", "Brene Brown", "Malcolm Gladwell"].map((name) => (
-              <span
-                key={name}
-                className="rounded-full border border-border-default bg-cool-surface px-3 py-1 text-xs text-label"
-              >
-                {name}
-              </span>
-            ))}
+          <div className="mt-8">
+            <RequestBrainForm />
           </div>
         </div>
       </section>

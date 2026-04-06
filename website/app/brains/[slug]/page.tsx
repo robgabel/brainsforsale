@@ -1,5 +1,6 @@
 import { getBrain, BRAINS, SKILLS } from "@/lib/brains";
 import { InstallCommand } from "@/components/InstallCommand";
+import { GetBrainButton } from "@/components/GetBrainButton";
 import { SkillBadge } from "@/components/SkillBadge";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -85,9 +86,7 @@ export default async function BrainDetailPage({ params }: { params: Promise<{ sl
                 </span>
               </div>
 
-              <button className="w-full rounded-lg bg-brain-indigo py-3 text-[15px] font-semibold text-white shadow-brain-cta transition-all hover:bg-indigo-hover active:scale-[0.98]">
-                Get this brain
-              </button>
+              <GetBrainButton brainSlug={brain.slug} />
 
               {isLive && (
                 <div className="mt-4">
