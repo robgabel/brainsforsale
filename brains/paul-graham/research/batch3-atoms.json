@@ -1,0 +1,415 @@
+[
+  {
+    "essay_url": "https://paulgraham.com/superlinear.html",
+    "essay_title": "Superlinear Returns",
+    "essay_date": "October 2023",
+    "atoms": [
+      {
+        "content": "Performance in most important fields yields superlinear returns. As you get better at something, the rewards accelerate rather than growing proportionally. This is the hidden structure beneath careers, companies, and knowledge.",
+        "cluster": "ambition_greatwork",
+        "topics": ["compounding", "performance", "returns", "career"],
+        "confidence_tier": "high",
+        "original_quote": "If your product is only half as good as your competitor's, you don't get half as many customers. You get no customers."
+      },
+      {
+        "content": "There are two fundamental causes of superlinear returns: exponential growth and thresholds. Exponential growth compounds small advantages over time. Thresholds create winner-take-all dynamics where crossing a line unlocks disproportionate reward.",
+        "cluster": "growth_scale",
+        "topics": ["exponential growth", "thresholds", "compounding", "winner-take-all"],
+        "confidence_tier": "high",
+        "original_quote": "There are two causes of superlinear returns: exponential growth and thresholds."
+      },
+      {
+        "content": "Learning itself is a form of exponential growth. The more you know, the easier it is to learn new things. This makes early investment in learning disproportionately valuable over a lifetime.",
+        "cluster": "education_learning",
+        "topics": ["learning", "compounding", "knowledge", "exponential growth"],
+        "confidence_tier": "high",
+        "original_quote": "Learning is probably the single most important case of superlinear returns."
+      },
+      {
+        "content": "In a world of superlinear returns, ambition is not a luxury but a strategic necessity. The difference between doing good work and great work is not proportional -- great work yields disproportionately more. So you should be more ambitious, not less.",
+        "cluster": "ambition_greatwork",
+        "topics": ["ambition", "greatness", "strategy", "outliers"],
+        "confidence_tier": "high",
+        "original_quote": "In a world with superlinear returns, it's not enough to be good. You have to be great."
+      },
+      {
+        "content": "Seek work where performance compounds. Avoid fields where output is capped or linear. The best career strategy is to position yourself on exponential curves rather than linear ones, even if the linear path pays more initially.",
+        "cluster": "ambition_greatwork",
+        "topics": ["career strategy", "compounding", "exponential curves", "positioning"],
+        "confidence_tier": "high",
+        "original_quote": "Seek work that compounds."
+      },
+      {
+        "content": "Step functions (thresholds) create situations where being slightly above or below a bar produces wildly different outcomes. Venture capital, academic tenure, and bestseller lists all exhibit this pattern. Proximity to thresholds deserves disproportionate effort.",
+        "cluster": "growth_scale",
+        "topics": ["thresholds", "step functions", "nonlinear outcomes", "effort allocation"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/think.html",
+    "essay_title": "How to Think for Yourself",
+    "essay_date": "November 2020",
+    "atoms": [
+      {
+        "content": "Independent-mindedness has three components: fastidiousness about truth, resistance to being told what to think, and curiosity. These are distinct qualities that reinforce each other but can exist independently.",
+        "cluster": "writing_thinking",
+        "topics": ["independent thinking", "truth", "curiosity", "intellectual character"],
+        "confidence_tier": "high",
+        "original_quote": "There are some kinds of work that you can't do well without thinking differently from your peers."
+      },
+      {
+        "content": "There is a spectrum from conventional-minded to independent-minded. Schools, corporations, and most institutions systematically select for and reward conventional-mindedness. Startups and original research require the opposite.",
+        "cluster": "writing_thinking",
+        "topics": ["conventional thinking", "independent thinking", "institutions", "selection"],
+        "confidence_tier": "high",
+        "original_quote": "The conventional-minded say, as they always do, that they don't want to shut down the discussion of all ideas, just the bad ones."
+      },
+      {
+        "content": "Cultivate independent thinking by surrounding yourself with independent-minded people, reading history to see how ideas once considered heretical became accepted, and actively noticing when you're being pressured to agree with something.",
+        "cluster": "writing_thinking",
+        "topics": ["independent thinking", "intellectual habits", "peer effects", "contrarianism"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Curiosity is the most reliable driver of independent thinking. Curious people are less susceptible to conformity because they care more about what's true than what others think. Curiosity is the best shield against conventional thinking.",
+        "cluster": "ideas_creativity",
+        "topics": ["curiosity", "conformity", "truth-seeking", "independent thinking"],
+        "confidence_tier": "high",
+        "original_quote": "Curiosity is the best guide. Your curiosity never lies."
+      },
+      {
+        "content": "The aggressively conventional-minded are dangerous because they want to coerce others into agreeing with them. They're the enforcers of orthodoxy in every era. The independently-minded are their natural opponents.",
+        "cluster": "philosophy_life",
+        "topics": ["conformity", "orthodoxy", "intellectual freedom", "social pressure"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/useful.html",
+    "essay_title": "How to Write Usefully",
+    "essay_date": "February 2020",
+    "atoms": [
+      {
+        "content": "Useful writing is defined by the product of four factors: importance, novelty, correctness, and strength. A piece of writing that scores high on all four is maximally useful. Most writing fails on novelty -- it tells people what they already know.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "usefulness", "novelty", "importance"],
+        "confidence_tier": "high",
+        "original_quote": "Useful writing tells people something true and important that they didn't already know, and tells them as unequivocally as possible."
+      },
+      {
+        "content": "Bold writing that makes strong claims is more useful than hedged writing, even though it's riskier. Hedging reduces incorrectness but also reduces strength, and strength is multiplicative with the other factors. Err on the side of boldness.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "boldness", "hedging", "conviction"],
+        "confidence_tier": "high",
+        "original_quote": "It's more useful to say something strong and risk being wrong than to say something mealy-mouthed."
+      },
+      {
+        "content": "The way to get novelty in writing is to write about things you've thought about a lot, from your own experience. Anyone who has deep domain experience has novel things to say -- they just don't realize it because the knowledge feels obvious to them.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "novelty", "expertise", "domain knowledge"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "An essay should be the distillation of a surprise. If you're not surprised by what you're writing, the reader won't be either. Writing is thinking -- the act of writing helps you discover what you actually believe.",
+        "cluster": "writing_thinking",
+        "topics": ["essays", "surprise", "discovery", "writing as thinking"],
+        "confidence_tier": "high",
+        "original_quote": "Aim for the novelty and importance of what you say and not the quality of your writing."
+      },
+      {
+        "content": "Correctness matters but is overweighted by cautious writers. Making slightly wrong but interesting claims is more useful than making perfectly correct but boring ones. The goal is to maximize the product of all four factors, not any single one.",
+        "cluster": "writing_thinking",
+        "topics": ["correctness", "risk", "intellectual courage", "writing strategy"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/boss.html",
+    "essay_title": "You Weren't Meant to Have a Boss",
+    "essay_date": "March 2008",
+    "atoms": [
+      {
+        "content": "Humans are not evolved to work in large organizations with bosses. The natural human work group is a small team of 2-8 people working together on something they choose. Large company employment is a recent, unnatural invention that we tolerate because of economic efficiency.",
+        "cluster": "startups_founding",
+        "topics": ["organizational design", "human nature", "small teams", "employment"],
+        "confidence_tier": "high",
+        "original_quote": "Humans weren't meant to work in giant groups. Evidence suggests the maximum group size for humans is about 8."
+      },
+      {
+        "content": "Working in a large organization is like being an animal in a zoo -- you're fed and sheltered, but you're not living the life you were designed for. The constraints that make big companies manageable are the same ones that make them deadening.",
+        "cluster": "startups_founding",
+        "topics": ["big companies", "constraints", "autonomy", "organizational life"],
+        "confidence_tier": "high",
+        "original_quote": "A group of 10 people within a large organization is a kind of fake tribe."
+      },
+      {
+        "content": "Startups are more natural than big companies. A startup is a return to the small group of people working hard on something they care about. This is why startups produce disproportionate innovation -- the structure matches human psychology.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "small teams", "innovation", "natural work"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The key variable in productivity is not hours worked but the absence of constraints that prevent you from doing your best work. Big companies impose layers of constraint -- meetings, approvals, politics -- that have nothing to do with the actual work.",
+        "cluster": "startups_founding",
+        "topics": ["productivity", "constraints", "bureaucracy", "autonomy"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/die.html",
+    "essay_title": "How Not to Die",
+    "essay_date": "August 2007",
+    "atoms": [
+      {
+        "content": "The default state of a startup is dead. A startup survives only through continuous, deliberate effort. The single biggest thing that kills startups is not building something people want -- it's giving up. If you don't quit, your odds of success go way up.",
+        "cluster": "startups_founding",
+        "topics": ["startup survival", "persistence", "default dead", "quitting"],
+        "confidence_tier": "high",
+        "original_quote": "So I'll tell you now: bad shit is coming. It always is in a startup."
+      },
+      {
+        "content": "The most dangerous time for a startup is when the founders become demoralized. Technical problems are solvable; loss of morale is what actually kills companies. Keeping your spirits up is not soft advice -- it is survival strategy.",
+        "cluster": "startups_founding",
+        "topics": ["morale", "founder psychology", "startup death", "resilience"],
+        "confidence_tier": "high",
+        "original_quote": "You've now learned the most important lesson about fundraising: investors are sheep."
+      },
+      {
+        "content": "Don't let your startup die of inattention. The slow drift -- taking a consulting gig, spending too long on a feature, not talking to users -- is more lethal than any dramatic failure. Startups don't die in explosions; they die in whimpers.",
+        "cluster": "startups_founding",
+        "topics": ["focus", "inattention", "slow death", "startup discipline"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "If you can survive long enough, good things will happen. Startups that persist through the valley of despair often find that the market catches up to them, investors who rejected them come back, and problems that seemed fatal turn out to be solvable.",
+        "cluster": "startups_founding",
+        "topics": ["persistence", "survival", "time", "startup luck"],
+        "confidence_tier": "high",
+        "original_quote": "If you can just avoid dying, you get rich."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/fr.html",
+    "essay_title": "How to Raise Money",
+    "essay_date": "September 2013",
+    "atoms": [
+      {
+        "content": "Fundraising is not a milestone -- it is a necessary evil. The goal is to get it over with as fast as possible and get back to building. Founders who treat fundraising as validation are optimizing for the wrong metric.",
+        "cluster": "fundraising_investors",
+        "topics": ["fundraising", "focus", "building", "validation trap"],
+        "confidence_tier": "high",
+        "original_quote": "Don't raise money unless you want it and it wants you."
+      },
+      {
+        "content": "The best way to raise money is to have a company investors want to invest in. All fundraising advice is secondary to this. Traction, growth, and a compelling product are the real persuasion -- everything else is marginal optimization.",
+        "cluster": "fundraising_investors",
+        "topics": ["traction", "fundraising strategy", "growth", "product quality"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Fundraising has a dual nature: investors simultaneously evaluate whether you're a good investment and whether you need their money. Being too eager signals weakness. The paradox is that the less you need money, the easier it is to raise.",
+        "cluster": "fundraising_investors",
+        "topics": ["investor psychology", "negotiation", "leverage", "neediness"],
+        "confidence_tier": "high",
+        "original_quote": "The secret weapon of the most successful fundraisers is that they're genuinely not that eager to raise."
+      },
+      {
+        "content": "Never let fundraising drag on. Set a deadline, create urgency, and force decisions. A drawn-out fundraise is demoralizing, distracting, and signals to later investors that earlier ones passed. Speed is your friend.",
+        "cluster": "fundraising_investors",
+        "topics": ["fundraising timeline", "urgency", "momentum", "speed"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Investors are primarily driven by fear of missing out (FOMO), not analysis. The best fundraising position is one where multiple investors are competing for the deal. Social proof among investors is the single most powerful fundraising dynamic.",
+        "cluster": "fundraising_investors",
+        "topics": ["FOMO", "investor psychology", "social proof", "competition"],
+        "confidence_tier": "high",
+        "original_quote": "Investors are sheep."
+      },
+      {
+        "content": "Be upfront about what's going wrong. Investors who discover problems later feel deceived. Investors who hear about problems early and see you handling them feel confident. Transparency about weakness is paradoxically a strength signal.",
+        "cluster": "fundraising_investors",
+        "topics": ["transparency", "trust", "weakness", "investor relations"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/convince.html",
+    "essay_title": "How to Convince Investors",
+    "essay_date": "August 2013",
+    "atoms": [
+      {
+        "content": "To convince investors, you need to seem both formidable and forthright. Formidability means you look like you'll succeed whether they invest or not. Forthrightness means you're honest about what you know and don't know.",
+        "cluster": "fundraising_investors",
+        "topics": ["investor persuasion", "formidability", "honesty", "confidence"],
+        "confidence_tier": "high",
+        "original_quote": "To convince investors you should seem formidable, and also honest and forthright."
+      },
+      {
+        "content": "The most convincing evidence for investors is not a pitch deck but a product with real users showing real growth. If you have that, the pitch almost doesn't matter. If you don't, the best pitch in the world won't save you.",
+        "cluster": "fundraising_investors",
+        "topics": ["traction", "growth", "evidence", "pitch vs product"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Investors pattern-match against successful founders they've seen before. Looking like you know what you're doing, moving fast, and having deep domain expertise all trigger positive pattern-matching. Understanding the investor's mental model is key.",
+        "cluster": "fundraising_investors",
+        "topics": ["pattern matching", "investor psychology", "founder archetype", "domain expertise"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Don't try to seem like something you're not. The best founders convince investors by being genuinely impressive, not by performing impressiveness. Authenticity is detectable and its absence is a red flag for experienced investors.",
+        "cluster": "fundraising_investors",
+        "topics": ["authenticity", "investor trust", "founder identity", "performance vs substance"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/founders.html",
+    "essay_title": "What We Look for in Founders",
+    "essay_date": "October 2010",
+    "atoms": [
+      {
+        "content": "The most important quality in founders is determination, not intelligence. The startup world is full of smart people who quit and mediocre people who persisted and won. Determination is the single best predictor of startup success.",
+        "cluster": "startups_founding",
+        "topics": ["determination", "founder qualities", "persistence", "intelligence"],
+        "confidence_tier": "high",
+        "original_quote": "We thought when we started Y Combinator that the most important quality would be intelligence. But it turned out to be determination."
+      },
+      {
+        "content": "The best founders have a quality of flexible determination -- they're relentlessly committed to succeeding but flexible about how. They're like water flowing downhill: the destination is fixed but the path adapts to obstacles.",
+        "cluster": "startups_founding",
+        "topics": ["flexibility", "determination", "adaptability", "founder mindset"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Naughtiness is a surprisingly good predictor of founder success. The best founders have a pirate-like quality -- they're willing to break rules, ignore conventions, and do things that seem slightly crazy. Rule-followers rarely build transformative companies.",
+        "cluster": "startups_founding",
+        "topics": ["rule-breaking", "naughtiness", "founder character", "unconventional"],
+        "confidence_tier": "high",
+        "original_quote": "Naughtiness is almost a necessary quality in a startup founder."
+      },
+      {
+        "content": "Great founders are obsessed with their product and their users, not with being founders. The ones who love the identity of being a startup CEO but don't love the actual work tend to fail. Genuine curiosity about the problem domain matters more than startup ambition.",
+        "cluster": "startups_founding",
+        "topics": ["product obsession", "user focus", "founder identity", "intrinsic motivation"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Friendship between co-founders is an underrated predictor of startup success. Startups are so stressful that co-founders who don't genuinely like each other will crack under pressure. The relationship quality of the founding team matters enormously.",
+        "cluster": "startups_founding",
+        "topics": ["co-founders", "friendship", "team dynamics", "startup stress"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/avg.html",
+    "essay_title": "Beating the Averages",
+    "essay_date": "April 2001",
+    "atoms": [
+      {
+        "content": "Programming languages vary enormously in power, and using a more powerful language is a genuine competitive advantage. Most programmers are in denial about this because they've never used a truly powerful language. The Blub Paradox explains why.",
+        "cluster": "programming_hackers",
+        "topics": ["programming languages", "competitive advantage", "language power", "Blub paradox"],
+        "confidence_tier": "high",
+        "original_quote": "As long as our hypothetical Blub programmer is looking down the power continuum, he knows he's looking down."
+      },
+      {
+        "content": "The Blub Paradox: a programmer who only knows a medium-power language can look down at less powerful languages and see what they're missing, but can't look up at more powerful languages and see what they're missing. You can only see the limitations of your tools from above, never from where you stand.",
+        "cluster": "programming_hackers",
+        "topics": ["Blub paradox", "language blindness", "tool limitations", "perspective"],
+        "confidence_tier": "high",
+        "original_quote": "He's satisfied with whatever language he happens to use, because it dictates the way he thinks about programs."
+      },
+      {
+        "content": "Viaweb's secret weapon was using Lisp when competitors used C++ and Perl. The productivity advantage of a more expressive language let a tiny team outship larger competitors. Technology choices are business strategy decisions disguised as engineering ones.",
+        "cluster": "programming_hackers",
+        "topics": ["Lisp", "competitive advantage", "technology strategy", "startups"],
+        "confidence_tier": "high",
+        "original_quote": "Our secret weapon was Lisp."
+      },
+      {
+        "content": "Macros are the defining feature that separates the most powerful programming languages from the rest. The ability to write code that writes code -- to extend the language itself -- is a qualitative leap in expressiveness, not just a quantitative one.",
+        "cluster": "programming_hackers",
+        "topics": ["macros", "metaprogramming", "language power", "abstraction"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "In technology, startups should use the most powerful tools available, even if they're unconventional. Big companies are forced to use mainstream technology because they need to hire average programmers. Startups can choose superior tools because their small teams can handle the learning curve.",
+        "cluster": "startups_founding",
+        "topics": ["technology choice", "startups vs incumbents", "unconventional tools", "small teams"],
+        "confidence_tier": "high",
+        "original_quote": "If you ever have a chance to choose between two languages, use the more powerful one."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/top.html",
+    "essay_title": "Being Popular",
+    "essay_date": "May 2001",
+    "atoms": [
+      {
+        "content": "Programming languages succeed not by being the best designed but by being the best suited for a particular use case that lots of people have. Popularity in languages is driven by practical utility in a specific domain, not by theoretical elegance.",
+        "cluster": "programming_hackers",
+        "topics": ["language adoption", "popularity", "practical utility", "design vs adoption"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Good design is about making things simple, not making them complex. The best programming languages, like the best writing, achieve power through economy of expression. Adding features does not make a language more powerful -- removing unnecessary ones does.",
+        "cluster": "design_taste",
+        "topics": ["simplicity", "design", "language design", "economy"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "A programming language is a tool for thinking, not just for instructing computers. The best languages shape how programmers think about problems. This is why language choice matters far beyond mere syntax -- it determines the solution space you can see.",
+        "cluster": "programming_hackers",
+        "topics": ["programming languages", "thinking tools", "problem solving", "cognitive framing"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Hackability -- the ability to build things quickly and iterate -- is more important for a language's success than formal correctness or theoretical purity. Languages that let you prototype fast win because they match the actual rhythm of creation.",
+        "cluster": "programming_hackers",
+        "topics": ["hackability", "prototyping", "iteration", "language design"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Libraries and ecosystem matter more than language features for adoption. A mediocre language with great libraries will beat a great language with no libraries every time. The network effects of an ecosystem create a moat around established languages.",
+        "cluster": "programming_hackers",
+        "topics": ["libraries", "ecosystem", "network effects", "language adoption"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  }
+]

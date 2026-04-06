@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Connection enrichment for Belsky brain atoms.
+Connection enrichment for brain atoms (generic — works with any brain).
 
 Discovers new connections between atoms using:
 1. Topic overlap (Jaccard similarity) for "related" connections
 2. LLM-assisted analysis for "contradicts", "extends", and "inspired_by"
 
 Usage:
-  python scripts/enrich-connections.py --discover        # Find candidate connections
-  python scripts/enrich-connections.py --discover --llm   # Include LLM-assisted discovery
-  python scripts/enrich-connections.py --apply FILE       # Write approved connections to Supabase
-  python scripts/enrich-connections.py --stats            # Show current connection stats
+  python scripts/enrich-connections.py --brain scott-belsky --discover
+  python scripts/enrich-connections.py --brain scott-belsky --discover --llm
+  python scripts/enrich-connections.py --brain scott-belsky --apply FILE
+  python scripts/enrich-connections.py --brain scott-belsky --stats
 
 Requires: SUPABASE_URL + SUPABASE_SERVICE_KEY (in .env), ANTHROPIC_API_KEY (for --llm)
 """
@@ -37,26 +37,40 @@ except ImportError:
     print("pip install supabase python-dotenv")
     sys.exit(1)
 
+# --- Paths ---
+SCRIPT_DIR = Path(__file__).parent
+ROOT_DIR = SCRIPT_DIR.parent
+BRAINS_DIR = ROOT_DIR / "brains"
+
+# --- Config ---
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://uzediwokyshjbsymevtp.supabase.co")
 SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-OUTPUT_DIR = Path(__file__).parent.parent / "brains" / "belsky" / "data"
 
 
-def fetch_all_data(supabase):
+def load_brain_config(slug: str) -> dict:
+    """Load brain config from brains/{slug}/brain.json"""
+    config_path = BRAINS_DIR / slug / "brain.json"
+    if not config_path.exists():
+        print(f"ERROR: Brain config not found: {config_path}")
+        sys.exit(1)
+    with open(config_path) as f:
+        return json.load(f)
+
+
+def fetch_all_data(supabase, atoms_table: str, connections_table: str):
     """Fetch all atoms and existing connections."""
-    atoms_resp = supabase.table("belsky_atoms").select(
+    atoms_resp = supabase.table(atoms_table).select(
         "id, content, cluster, topics, source_date, confidence"
     ).execute()
 
-    conn_resp = supabase.table("belsky_connections").select(
+    conn_resp = supabase.table(connections_table).select(
         "atom_id_1, atom_id_2, relationship"
     ).execute()
 
     atoms = atoms_resp.data
     connections = conn_resp.data
 
-    # Build existing connection set for dedup
     existing = set()
     for c in connections:
         pair = tuple(sorted([c["atom_id_1"], c["atom_id_2"]]))
@@ -121,7 +135,6 @@ def discover_temporal(atoms: list, existing: set) -> list:
             date_a = a["source_date"][:10]
             date_b = b["source_date"][:10]
 
-            # Stop if more than 7 days apart
             from datetime import datetime
             try:
                 da = datetime.strptime(date_a, "%Y-%m-%d")
@@ -155,7 +168,7 @@ def discover_temporal(atoms: list, existing: set) -> list:
     return candidates
 
 
-def discover_llm_connections(atoms: list, existing: set) -> list:
+def discover_llm_connections(atoms: list, existing: set, brain_name: str, source_desc: str) -> list:
     """Use LLM to find contradicts, extends, inspired_by within each cluster."""
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
@@ -165,10 +178,10 @@ def discover_llm_connections(atoms: list, existing: set) -> list:
     for atom in atoms:
         clusters[atom.get("cluster", "unknown")].append(atom)
 
-    prompt_template = """Analyze these knowledge atoms from Scott Belsky's "Implications" newsletter. All are in the "{cluster}" cluster.
+    prompt_template = """Analyze these knowledge atoms from {brain_name}'s {source_desc}. All are in the "{cluster}" cluster.
 
 Find connections between atoms. Focus ESPECIALLY on:
-1. **contradicts** — Where Scott contradicts himself, holds tension between opposing ideas, or where two atoms pull in different directions. These are the MOST VALUABLE. Be aggressive — intellectual tension is the point.
+1. **contradicts** — Where {brain_name} contradicts themselves, holds tension between opposing ideas, or where two atoms pull in different directions. These are the MOST VALUABLE. Be aggressive — intellectual tension is the point.
 2. **extends** — Where one atom builds on, deepens, or evolves another
 3. **inspired_by** — Where one idea clearly led to or motivated another
 
@@ -190,7 +203,12 @@ ATOMS:
             date = (atom.get("source_date") or "")[:10]
             atoms_text += f"\n[{i}] ({date}) {atom['content']}\n"
 
-        prompt = prompt_template.format(cluster=cluster_key, atoms_text=atoms_text)
+        prompt = prompt_template.format(
+            brain_name=brain_name,
+            source_desc=source_desc,
+            cluster=cluster_key,
+            atoms_text=atoms_text
+        )
 
         try:
             message = client.messages.create(
@@ -226,7 +244,7 @@ ATOMS:
                     "content_1": a["content"][:100],
                     "content_2": b["content"][:100]
                 })
-                existing.add(pair)  # Prevent dups within this run
+                existing.add(pair)
 
         except (json.JSONDecodeError, KeyError) as e:
             print(f"    Parse error for {cluster_key}: {e}")
@@ -263,21 +281,10 @@ def print_stats(atoms: list, connections: list, existing: set):
     for rel, count in sorted(rel_counts.items(), key=lambda x: -x[1]):
         print(f"  {rel}: {count}")
 
-    # Cluster breakdown
-    cluster_conns = defaultdict(int)
-    atom_clusters = {a["id"]: a.get("cluster", "?") for a in atoms}
-    for c in connections:
-        c1 = atom_clusters.get(c["atom_id_1"], "?")
-        c2 = atom_clusters.get(c["atom_id_2"], "?")
-        if c1 == c2:
-            cluster_conns[c1] += 1
-        else:
-            cluster_conns[f"{c1}↔{c2}"] += 1
-
     print(f"\nTarget: 800+ connections, 50+ contradicts, 0 orphans")
 
 
-def apply_connections(supabase, filepath: str):
+def apply_connections(supabase, connections_table: str, filepath: str):
     """Write approved connections to Supabase."""
     with open(filepath) as f:
         candidates = json.load(f)
@@ -296,7 +303,7 @@ def apply_connections(supabase, filepath: str):
         }
 
         try:
-            supabase.table("belsky_connections").insert(row).execute()
+            supabase.table(connections_table).insert(row).execute()
             applied += 1
         except Exception as e:
             print(f"  Error inserting: {e}")
@@ -305,7 +312,8 @@ def apply_connections(supabase, filepath: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Enrich Belsky brain connections")
+    parser = argparse.ArgumentParser(description="Enrich brain connections")
+    parser.add_argument("--brain", required=True, help="Brain slug (matches brains/{slug}/brain.json)")
     parser.add_argument("--discover", action="store_true", help="Find candidate connections")
     parser.add_argument("--llm", action="store_true", help="Include LLM-assisted discovery (slower, better)")
     parser.add_argument("--apply", metavar="FILE", help="Write approved connections to Supabase")
@@ -317,10 +325,28 @@ def main():
         print("ERROR: Set SUPABASE_SERVICE_KEY in .env")
         sys.exit(1)
 
+    # Load brain config
+    config = load_brain_config(args.brain)
+    atoms_table = config.get("supabase", {}).get("atoms_table")
+    connections_table = config.get("supabase", {}).get("connections_table")
+
+    if not atoms_table or not connections_table:
+        print(f"ERROR: brain.json missing supabase.atoms_table or supabase.connections_table")
+        sys.exit(1)
+
+    brain_name = config["brain_name"]
+    source_desc = config.get("brain_source_description", "published content")
+
+    print(f"Brain: {brain_name} ({args.brain})")
+    print(f"Tables: {atoms_table}, {connections_table}")
+
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+    # Output dir for review files
+    output_dir = BRAINS_DIR / config["brain_slug"] / "data"
+
     print("Fetching all atoms and connections...")
-    atoms, connections, existing = fetch_all_data(supabase)
+    atoms, connections, existing = fetch_all_data(supabase, atoms_table, connections_table)
     print(f"  {len(atoms)} atoms, {len(connections)} existing connections")
 
     if args.stats:
@@ -329,24 +355,21 @@ def main():
 
     if args.apply:
         print(f"Applying connections from {args.apply}...")
-        apply_connections(supabase, args.apply)
+        apply_connections(supabase, connections_table, args.apply)
         return
 
     if args.discover:
         all_candidates = []
 
-        # Topic overlap
         print("\nDiscovering topic overlap connections...")
         topic_candidates = discover_topic_overlap(atoms, existing, args.threshold)
         print(f"  Found {len(topic_candidates)} candidates via topic overlap")
         all_candidates.extend(topic_candidates)
 
-        # Add new pairs to existing set
         for c in topic_candidates:
             pair = tuple(sorted([c["atom_id_1"], c["atom_id_2"]]))
             existing.add(pair)
 
-        # Temporal proximity
         print("\nDiscovering temporal proximity connections...")
         temporal_candidates = discover_temporal(atoms, existing)
         print(f"  Found {len(temporal_candidates)} candidates via temporal proximity")
@@ -356,17 +379,15 @@ def main():
             pair = tuple(sorted([c["atom_id_1"], c["atom_id_2"]]))
             existing.add(pair)
 
-        # LLM-assisted
         if args.llm:
             if not ANTHROPIC_KEY:
                 print("ERROR: Set ANTHROPIC_API_KEY for --llm mode")
                 sys.exit(1)
             print("\nDiscovering LLM-assisted connections...")
-            llm_candidates = discover_llm_connections(atoms, existing)
+            llm_candidates = discover_llm_connections(atoms, existing, brain_name, source_desc)
             print(f"  Found {len(llm_candidates)} candidates via LLM analysis")
             all_candidates.extend(llm_candidates)
 
-        # Summary
         rel_summary = defaultdict(int)
         method_summary = defaultdict(int)
         for c in all_candidates:
@@ -379,13 +400,12 @@ def main():
         print(f"By method: {dict(method_summary)}")
         print(f"Would bring total to: {len(connections) + len(all_candidates)}")
 
-        # Write review file
-        OUTPUT_DIR.mkdir(exist_ok=True)
-        output_file = OUTPUT_DIR / "connection-candidates.json"
+        output_dir.mkdir(exist_ok=True)
+        output_file = output_dir / "connection-candidates.json"
         with open(output_file, "w") as f:
             json.dump(all_candidates, f, indent=2)
         print(f"\nReview file: {output_file}")
-        print(f"To apply: python scripts/enrich-connections.py --apply {output_file}")
+        print(f"To apply: python scripts/enrich-connections.py --brain {args.brain} --apply {output_file}")
         return
 
     parser.print_help()

@@ -1,0 +1,2176 @@
+{
+  "brain": {
+    "name": "Peter Attia",
+    "slug": "peter-attia",
+    "source": "\"The Drive\" podcast and \"Outlive\" book (peterattiamd.com)",
+    "atom_count": 73,
+    "connection_count": 0,
+    "cluster_count": 15,
+    "topic_count": 227,
+    "connection_types": {},
+    "last_updated": "2026-04-06",
+    "coverage": "400+ episodes of The Drive podcast, Outlive (2023), and detailed blog posts",
+    "bio": "Peter Attia is a physician and longevity expert who has reshaped how high-performers think about health across decades. His \"Outlive\" book and \"The Drive\" podcast are the primary source for evidence-based longevity strategy, blending mechanistic biochemistry with practical behavior change.",
+    "possessive": "his"
+  },
+  "atoms": [
+    {
+      "id": "eadf6ad8-48b1-473a-b8f0-c02c45548e85",
+      "content": "Body fat percentage matters for longevity but must be balanced against metabolic health, fat distribution, performance goals, and individual set points. The focus should be on metabolic markers, not a single number.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "body fat",
+        "metabolic health",
+        "fat distribution",
+        "individual variation"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "3e7681f6-1e32-4df7-b50d-737fa2c7ac94",
+      "content": "Sun exposure must be balanced against skin cancer risk. The benefits include vitamin D synthesis and circadian rhythm support, but photoaging and cancer risk are real. This requires individualized assessment.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "sun exposure",
+        "skin cancer",
+        "vitamin D",
+        "circadian rhythm",
+        "risk-benefit"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "d2c2aa33-902a-4de5-83a6-76b8ebea741d",
+      "content": "Biological aging clocks are not truly trustworthy yet. Physical performance remains the most reliable marker of how well you are aging. Claims of reversing biological age are not supported by current evidence.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "aging clocks",
+        "biological age",
+        "physical performance",
+        "skepticism"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "9d85e11d-b792-41cf-ac76-bddeec1ce598",
+      "content": "Wearable health technology should be used productively without increasing anxiety. The key is understanding what data is actionable vs. noise, and not becoming overdependent on imperfect data.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "wearables",
+        "health tracking",
+        "anxiety",
+        "actionable data"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "4a84384e-f3ed-46be-95b2-acde78065650",
+      "content": "Risk stratification enables precision. Coronary artery calcium scores, lipoprotein genetics, cancer family history, APOE status \u2014 these create personalized risk profiles. Understanding your actual risk vs. population averages changes strategy fundamentally.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "risk stratification",
+        "CAC score",
+        "APOE",
+        "personalized medicine",
+        "lipoproteins"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "59d55be7-9b39-4379-8ca4-858f9b2cfef9",
+      "content": "Personalized medicine requires actual data. Generic advice does not work. You need biomarkers, imaging, continuous monitoring to understand your risk and response. Population-level nutritional advice is influenced by food industry lobbying and ignores individual metabolic variation.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "personalized medicine",
+        "biomarkers",
+        "continuous monitoring",
+        "individual variation"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "4cd65878-9e5a-4854-be9c-7b2b8186c55b",
+      "content": "One of the most important things to understand when using an intervention is: do you have a biomarker to know if you are doing it correctly? Without measurable feedback, you are operating blind.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "biomarkers",
+        "measurement",
+        "feedback loops",
+        "interventions"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "d1d7084a-29a3-4f9e-a6f6-159c677c2222",
+      "content": "Continuous glucose monitors (CGMs) in non-diabetics provide useful feedback for understanding individual glycemic responses to food and exercise, though their long-term clinical utility for healthy people is still debated.",
+      "cluster": "biomarkers_testing",
+      "topics": [
+        "CGM",
+        "glucose monitoring",
+        "non-diabetic",
+        "glycemic response"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "afbdd00d-5e87-4267-a9ee-522d1d018e73",
+      "content": "Cancer is extraordinarily difficult to treat with drugs because of its heterogeneity and evolution. Immunotherapy represents the most promising systemic approach, but the long-term hope is combining multiple modalities.",
+      "cluster": "cancer_screening",
+      "topics": [
+        "cancer treatment",
+        "immunotherapy",
+        "drug development",
+        "heterogeneity"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "33636b29-af93-45b5-bb8e-bc040ce389f1",
+      "content": "Cancer screening should be aggressive in high-risk individuals. Proactive screening (colonoscopy, advanced imaging, liquid biopsies) rather than waiting for symptoms. Early detection changes prognosis dramatically.",
+      "cluster": "cancer_screening",
+      "topics": [
+        "cancer screening",
+        "early detection",
+        "colonoscopy",
+        "liquid biopsy"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ef2ecbb7-e9c4-4ad5-aa2b-cca7d4e7e394",
+      "content": "Misnomers about cholesterol abound. There is no good vs. bad cholesterol \u2014 what matters is the number of apoB-containing lipoproteins, their residence time in the arterial wall, and the cumulative exposure over decades.",
+      "cluster": "cardiovascular_health",
+      "topics": [
+        "cholesterol",
+        "apoB",
+        "lipoproteins",
+        "misconceptions"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "b99301cc-e6b7-4df3-b441-4e7cb6a5e917",
+      "content": "Ultra-primary prevention for ASCVD means treating people in their 30s: making sure a person never walks around with an apoB over 30-40 mg/dL, never spends one year with mild hypertension, and is always metabolically healthy. If you do that, you would not get atherosclerosis in a normal lifespan.",
+      "cluster": "cardiovascular_health",
+      "topics": [
+        "ASCVD",
+        "apoB",
+        "hypertension",
+        "prevention",
+        "lipids"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "75ce31ac-2cbb-4663-96bc-b26c193c9cee",
+      "content": "Omega-3 fatty acids (EPA and DHA) \u2014 Attias long-held views changed after deeper examination. His positions on many supplements evolved through rigorous evidence review, not ideology.",
+      "cluster": "cardiovascular_health",
+      "topics": [
+        "omega-3",
+        "EPA",
+        "DHA",
+        "changed mind",
+        "supplements"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "09670d43-ec20-456a-8f22-a79cddc8875d",
+      "content": "There does not appear to be an intervention that is more protective of the brain than exercise. Exercise is the strongest known modifiable factor for reducing cognitive decline and dementia risk.",
+      "cluster": "cognitive_decline",
+      "topics": [
+        "exercise",
+        "brain health",
+        "dementia",
+        "cognitive decline",
+        "neuroprotection"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "b5bd3daf-7107-47c9-aa5e-959160abee64",
+      "content": "Klotho is a potential therapy for improving cognitive function and combating aging-related cognitive decline. It represents one of the more interesting emerging interventions in the longevity space.",
+      "cluster": "cognitive_decline",
+      "topics": [
+        "klotho",
+        "cognitive function",
+        "aging",
+        "emerging therapy"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "8d960448-ecf8-4ad2-8451-be7206a63cc7",
+      "content": "The APOE gene influences Alzheimers disease risk, but everyone should proactively address brain health regardless of genetics. Falls can accelerate cognitive decline, making physical fitness directly protective of brain function.",
+      "cluster": "cognitive_decline",
+      "topics": [
+        "APOE",
+        "Alzheimers",
+        "brain health",
+        "falls",
+        "genetics"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "23f55155-e82d-46f9-85e4-b28d2ed050cb",
+      "content": "Falls are devastating for older adults and can trigger cascading decline \u2014 both physical and cognitive. Risk factors include poor balance, weak lower legs, limited ankle mobility, and vestibular changes that accelerate after age 65.",
+      "cluster": "cognitive_decline",
+      "topics": [
+        "falls",
+        "aging",
+        "balance",
+        "vestibular",
+        "ankle mobility"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "3bdeec56-e34e-4627-a4d6-6f7c5a064d57",
+      "content": "Trauma is a moment of perceived helplessness that activates the limbic system. With trauma, too often people focus on what happened rather than how they adapted. The sine qua non of trauma is a disconnected version of a person relying on maladaptive strategies.",
+      "cluster": "emotional_health",
+      "topics": [
+        "trauma",
+        "limbic system",
+        "adaptation",
+        "maladaptive strategies",
+        "Jeff English"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "905252a3-cccc-40d7-92ac-6c747861f994",
+      "content": "Emotional resilience is core, not ancillary. Unresolved trauma, chronic stress, lack of meaning, and social isolation predict disease risk as strongly as many biomarkers. Emotional work \u2014 therapy, relationships, purpose \u2014 is structural medicine, not optional luxury.",
+      "cluster": "emotional_health",
+      "topics": [
+        "emotional health",
+        "trauma",
+        "stress",
+        "social isolation",
+        "disease risk"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "4a7114ec-b4cf-4076-919d-553065de0e38",
+      "content": "Emotional health, social connections, and a sense of purpose significantly impact quality of life and longevity. You can imagine having perfect physical healthspan and a sharp brain, but no friends or relationships \u2014 nobody would aspire to that.",
+      "cluster": "emotional_health",
+      "topics": [
+        "emotional health",
+        "social connection",
+        "purpose",
+        "quality of life"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "c2e72650-29e7-4c77-b2fe-6ac746b24c70",
+      "content": "VO2 max targets should reflect planning for the life you ultimately want to live (backcasting from late-life physical goals) rather than overly aggressive goals. Account for predictable age-related fitness decline.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "VO2 max",
+        "targets",
+        "backcasting",
+        "aging",
+        "centenarian decathlon"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "914a08c3-b486-4795-86f1-07205758d2d2",
+      "content": "Exercise as financial compounding: the earlier you start, the more opportunity you have, like saving for retirement. But it is never too late \u2014 the best time to plant the tree is yesterday, if not today.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "exercise",
+        "compounding",
+        "retirement analogy",
+        "starting late"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "f6741bd1-6a8e-486d-941b-02c6c0316fee",
+      "content": "The greatest effect of exercise is generally seen in the person who goes from being completely sedentary to even a mild amount of training. If you took an individual who did zero exercise to 3 hours a week (30 minutes a day, 6 days), the impact is enormous.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "exercise",
+        "sedentary",
+        "dose response",
+        "beginners"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da",
+      "content": "It is never too late to start exercising. Data from clinical trials demonstrate that people who have never lifted weights, starting for the first time in their 60s and 70s, have a remarkable benefit. The body is a use-it-or-lose-it collection of organs.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "exercise",
+        "aging",
+        "starting late",
+        "muscle",
+        "clinical trials"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "3c3e246c-7551-4275-ac1f-5b343b06cf6c",
+      "content": "The four pillars of exercise are stability, strength, aerobic efficiency (Zone 2), and peak aerobic output (Zone 5). These constitute everything needed for physical capability. Some activities hit one pillar narrowly; others like rucking target all four simultaneously.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "four pillars",
+        "stability",
+        "strength",
+        "zone 2",
+        "zone 5",
+        "rucking"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "c74075b1-fded-44b9-8bf4-f08836d992f7",
+      "content": "Stability is a broad term that encompasses everything enabling you to dissipate force safely, maintain balance, and have flexibility. You cannot have balance without stability, and you cannot have flexibility without stability. It is foundational.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "stability",
+        "balance",
+        "flexibility",
+        "force dissipation"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "0cbd52cf-8f9b-492b-8500-f9e42bc4d7fe",
+      "content": "The decline of VO2 max that occurs with age is one of the most important graphs to understand. It declines roughly 10% per decade after age 30, which means if you want to be functional at 80, you need to be exceptional at 50.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "VO2 max",
+        "aging decline",
+        "aerobic capacity",
+        "backcasting"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "5af45870-761f-49c5-8107-058960262078",
+      "content": "Exercise is the most potent longevity drug. No pharmaceutical intervention matches the effect size of structured exercise on lifespan. It improves cardiovascular fitness, preserves muscle, enhances insulin sensitivity, supports cognitive function, and reduces cancer risk.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "exercise",
+        "longevity",
+        "effect size",
+        "pharmacology comparison"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "16f9099e-0b95-4ea0-97e3-2c1625b33f26",
+      "content": "VO2 max is one of the strongest predictors of lifespan and healthspan, independent of age. It is trainable at any age. Getting a high VO2 max and being very strong are very hard to do \u2014 they take a long time but everybody can do them. They are the tip of the spear.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "VO2 max",
+        "mortality predictor",
+        "fitness",
+        "longevity"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "25ea656b-c3c1-4086-9289-edcdc8202cda",
+      "content": "Toe strength matters for longevity. Dedicated foot training, lower leg strength, and ankle mobility are critical for fall prevention and maintaining independence. This insight came from podiatrist Courtney Conley.",
+      "cluster": "exercise_physiology",
+      "topics": [
+        "toe strength",
+        "foot training",
+        "fall prevention",
+        "ankle mobility"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "0f800ef9-9719-4e6d-95d4-8b097c4a048c",
+      "content": "You still have to have a strategy for not dying of the Four Horsemen: ASCVD (cardiovascular disease), cancer, neurodegeneration/dementia, and metabolic disease. The only one where there is a pretty clear path to delay significantly would be ASCVD \u2014 through ultra-primary prevention starting in your 30s.",
+      "cluster": "four_horsemen",
+      "topics": [
+        "four horsemen",
+        "ASCVD",
+        "cancer",
+        "neurodegeneration",
+        "metabolic disease"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "b176d94e-d1b0-44e1-91be-96f2b53137f2",
+      "content": "Blue Zones are under scrutiny: statistical outliers, data reliability concerns, genetics, and the difficulty of separating longevity correlation from causation. Attia does not put much stock in them.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "blue zones",
+        "skepticism",
+        "data reliability",
+        "correlation vs causation"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "790a408a-03c5-4cf5-80b9-4c9081c38e81",
+      "content": "Genetics load the gun, behavior pulls the trigger. None of the Four Horsemen are genetic destiny. Diet, exercise, sleep, stress management, and early detection account for the vast majority of risk. How Peter onboards new patients reflects this: roughly 80% lifestyle, 20% genetics.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "genetics",
+        "behavior",
+        "four horsemen",
+        "risk factors",
+        "modifiable"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ee392547-a99b-4087-81ea-25b34f90cf55",
+      "content": "Longevity means maximizing both the length of life (lifespan) and the quality of life (healthspan). Healthspan breaks into three components: physical capability, cognitive sharpness, and emotional wellbeing including purpose and social connection.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "longevity",
+        "healthspan",
+        "lifespan",
+        "quality of life"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "50200928-e6a8-44f0-98f2-aeefacb36eb8",
+      "content": "Taking all of the steps in Medicine 3.0 could seriously add a decade to life, and possibly 1.5-2 decades longer. But we are not talking about adding 30-50 years to lifespan. The real goal is compressing the period of morbidity late in life.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "longevity",
+        "lifespan",
+        "morbidity compression",
+        "marginal decade"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ee76af52-c4bc-45ec-ade4-30dadccddc54",
+      "content": "Longevity gains require decades of compound effort. There is no quick fix. A single year of perfect exercise will not reverse 30 years of metabolic dysfunction. Longevity medicine is a multi-decade project requiring sustained behavioral change.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "compound effort",
+        "long-term",
+        "behavioral change",
+        "no quick fix"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "019a8402-e06e-437d-b69a-ecb07899c0c4",
+      "content": "The marginal decade concept: focus relentlessly on what your last decade of life looks like. Can you still go for a ruck? Swim half a mile? Sit on the floor and get up on your own? Most people would rather live to 90 and die of a heart attack while swimming than live to 120 spending the last 30 years unable to do much.",
+      "cluster": "lifespan_management",
+      "topics": [
+        "marginal decade",
+        "centenarian decathlon",
+        "healthspan",
+        "physical function"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "6461db8e-d42a-40f0-b46b-24a185bad0ce",
+      "content": "AI has the potential to improve medicine through advancements in drug development, biomarker discovery, and training models on private clinical data. The intersection of AI and medicine is one of the most exciting areas of development.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "AI",
+        "medicine",
+        "drug development",
+        "biomarkers",
+        "clinical data"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "186fd179-df42-4e33-9bf7-d4dfd0645e31",
+      "content": "The five tools in Attias longevity toolkit: exercise, nutrition, sleep, emotional health, and pharmacology/supplements. These five levers, applied with personalization and sustained over decades, constitute the full Medicine 3.0 approach.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "longevity toolkit",
+        "five pillars",
+        "exercise",
+        "nutrition",
+        "sleep",
+        "emotional health",
+        "pharmacology"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ad3a8cc6-0945-471e-a726-fe1c1a139565",
+      "content": "Attia feverishly takes notes during podcast interviews, then resynthesizes on 5x8 index cards on the same day. The goal is to capture the highest-yield insights that would be worth revisiting years later \u2014 always looking for something that will change his mind or practice.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "note-taking",
+        "learning process",
+        "synthesis",
+        "practice change"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "83b874e7-b031-4718-9570-8670dc219dc5",
+      "content": "If you took the view that current tools are as good as it gets, it would motivate you to be more serious about using them for primary and secondary prevention of disease. Do that as a hedge against the enormously long odds that something dramatic and miraculous is going to happen in the next decade or two.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "prevention",
+        "medicine 3.0",
+        "hedge",
+        "behavior change"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "f748d0e8-3d12-4fa8-9599-7383a273bc21",
+      "content": "Medicine 3.0 replaces reactive medicine with proactive intervention. The dominant model (Medicine 2.0) waits for disease to manifest before treating it. Medicine 3.0 prevents disease decades before symptoms appear by targeting the underlying pathophysiology of the Four Horsemen.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "medicine 3.0",
+        "prevention",
+        "four horsemen",
+        "proactive medicine"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "a6a4c2b9-f895-4a42-ba52-27a6f868b0f9",
+      "content": "There is no real evidence we can reverse aging in a meaningful way. We can slow the rate of change on some aging processes, but the mismatch between what is actually happening scientifically and what is being talked about in the press and on social media is enormous.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "aging",
+        "longevity claims",
+        "evidence",
+        "aging clocks"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "912637e2-7346-4b29-b02a-ccd1a9b87f2e",
+      "content": "\"Strong convictions loosely held\" \u2014 make bold decisions based on strong convictions but always look for ways to update. In science and medicine, the ability to change your mind is a feature, not a bug. Attia regularly says \"I was wrong about X\" publicly.",
+      "cluster": "medicine_3_0",
+      "topics": [
+        "intellectual humility",
+        "strong convictions",
+        "evidence",
+        "mind changes"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "8940facd-8a5e-41ca-8dd6-41aca689df6d",
+      "content": "Metabolic health matters more than weight. Someone can be lean and metabolically unhealthy; someone can be overweight and metabolically stable. Focus should be on insulin sensitivity, lipid ratios, and glucose control \u2014 not BMI alone.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "metabolic health",
+        "BMI",
+        "body composition",
+        "insulin sensitivity"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "6b7fd23d-949c-453d-9561-9ed9094d152d",
+      "content": "Metabolic flexibility \u2014 the ability to switch efficiently between burning carbohydrates and fat \u2014 can be improved through training and dietary strategies. It is a marker of metabolic health.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "metabolic flexibility",
+        "fat oxidation",
+        "carbohydrate metabolism"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "783073db-d422-45f4-aa15-3ab6971737e0",
+      "content": "Misconceptions about insulin resistance are widespread. Early detection through proper biomarker testing matters more than waiting for overt diabetes. Many people walk around insulin resistant for years without knowing it.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "insulin resistance",
+        "early detection",
+        "biomarkers",
+        "diabetes"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "42afb753-96ce-4f7a-9274-75f6e938eb53",
+      "content": "Metabolic health is foundational to everything. Insulin sensitivity, glucose control, triglyceride management, and body composition are upstream of all Four Horsemen. You cannot have great cardiovascular, cognitive, or cancer resistance without addressing metabolic health first.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "metabolic health",
+        "insulin sensitivity",
+        "glucose",
+        "triglycerides",
+        "foundation"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "8f455615-f300-4c9e-83ef-80d673bca0f3",
+      "content": "Intramyocellular lipids appear in both athletes and type 2 diabetics (the Fat/Athletes Paradox) \u2014 this shows that static biomarker information without context is misleading. What matters is the dynamic metabolic function, not just the snapshot.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "fat athletes paradox",
+        "intramyocellular lipids",
+        "context",
+        "static vs dynamic"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b",
+      "content": "Weight loss is not about willpower. Attia understands the biology: hunger hormones, insulin signaling, metabolic adaptation. It is not moral failure; it is physiology. Sustainable change requires addressing underlying metabolic dysfunction.",
+      "cluster": "metabolic_health",
+      "topics": [
+        "weight loss",
+        "willpower",
+        "hunger hormones",
+        "insulin",
+        "metabolic adaptation"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "86817166-8234-46ec-8ad5-b0d3a6f2a701",
+      "content": "Bone mineral density can be improved through resistance training at any age. This is critical for older adults as osteoporosis dramatically increases fracture risk and cascading decline.",
+      "cluster": "muscle_strength",
+      "topics": [
+        "bone mineral density",
+        "resistance training",
+        "osteoporosis",
+        "fracture risk"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ce2b389f-cf30-4c43-855a-ea494c26fed5",
+      "content": "Muscle is a longevity organ. Sarcopenia (muscle loss with age) is predictive of disability and death. Resistance training with progressive overload and adequate protein (1.6-2.2g/kg) must persist through the entire lifespan. Muscle loss is not inevitable \u2014 it is neglect.",
+      "cluster": "muscle_strength",
+      "topics": [
+        "muscle",
+        "sarcopenia",
+        "resistance training",
+        "protein",
+        "longevity organ"
+      ],
+      "source_ref": "https://peterattiamd.com/exerciseforagingpeople",
+      "source_date": "2024-06-24",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "fc633209-6bb9-455b-afb9-32ff3f40e578",
+      "content": "Physical frailty and sarcopenia do not rise to the level of the Four Horsemen in terms of mortality, but they matter enormously for quality of life. If you manage to not die of the Horsemen and you train hard, there is a path to being physically robust as a centenarian.",
+      "cluster": "muscle_strength",
+      "topics": [
+        "frailty",
+        "sarcopenia",
+        "centenarian",
+        "quality of life"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "05139ff5-df44-4141-8262-0d40ebaf32c3",
+      "content": "Deadlifts are extremely beneficial to longevity when done properly. This is a position Attia evolved to \u2014 he now believes they are one of the most important movements for maintaining functional capacity.",
+      "cluster": "muscle_strength",
+      "topics": [
+        "deadlifts",
+        "strength training",
+        "functional capacity",
+        "changed mind"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "397625e4-f523-4243-9f51-6eb597c47245",
+      "content": "Seed oils in modest quantities: Attia is still waiting for someone to present a convincing case that there is anything wrong with them beyond caloric effects. This is an example of separating dietary quality from ingredient fear.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "seed oils",
+        "evidence",
+        "dietary fear",
+        "contrarian"
+      ],
+      "source_ref": "https://peterattiamd.com/ama81",
+      "source_date": "2026-03-09",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "17819a7d-0011-42af-9b86-a8e24b5679ad",
+      "content": "Protein intake should be high across the lifespan: 1.6-2.2g per kg of ideal body weight (not current weight). This goes against the popular moderation narrative. Protein is especially critical as people age because of anabolic resistance \u2014 older adults need more protein per meal to stimulate muscle protein synthesis.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "protein",
+        "muscle protein synthesis",
+        "anabolic resistance",
+        "aging"
+      ],
+      "source_ref": "https://peterattiamd.com/agingwell",
+      "source_date": "2025-03-31",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "716f7cb3-6984-4fa5-a2ef-f5820765eef0",
+      "content": "Gut bacteria balance and probiotics, particularly Akkermansia, represent an emerging area of therapeutic potential. The gut microbiome influences metabolic health, immune function, and possibly longevity.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "gut health",
+        "probiotics",
+        "Akkermansia",
+        "microbiome"
+      ],
+      "source_ref": "https://peterattiamd.com/qps1",
+      "source_date": "2024-06-03",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "77d0dba4-4cb5-4ea8-9608-f429336b81b7",
+      "content": "Extreme diets are not optimal for everyone. Attia is skeptical of diet ideology \u2014 carnivore, vegan, keto as universal prescriptions. Individual variation in metabolism, preferences, and adherence matters. The best diet is one you can sustain.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "diet ideology",
+        "individual variation",
+        "adherence",
+        "sustainability"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "ed3bb46a-a5a4-43da-bd4b-a7a33b850282",
+      "content": "Peter stopped doing prolonged fasts. His thinking on fasting evolved significantly after examining the evidence more carefully, particularly around muscle preservation and the actual vs. theoretical benefits.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "fasting",
+        "changed mind",
+        "muscle preservation",
+        "evidence"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "a1d40418-a999-4dd8-83f5-c04a757ed068",
+      "content": "You cannot out-exercise a bad diet. Metabolic health requires nutritional discipline, particularly around refined carbs and ultra-processed food. Exercise helps but does not neutralize the metabolic damage from chronic refined carb consumption.",
+      "cluster": "nutrition_biochemistry",
+      "topics": [
+        "diet",
+        "exercise",
+        "metabolic health",
+        "ultra-processed food"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "82b79650-9b38-49d8-8b39-818c759b6ac2",
+      "content": "GLP-1 receptor agonists have potential benefits beyond weight loss including geroprotection, brain health, and metabolic benefits. The evidence continues to evolve on safe dosing strategies and broader use cases.",
+      "cluster": "pharmacology",
+      "topics": [
+        "GLP-1",
+        "weight loss",
+        "geroprotection",
+        "brain health"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "4d4699cd-ff2f-4bac-bb00-b373829d61de",
+      "content": "Low doses of radiation reduce inflammation and may have therapeutic uses beyond cancer treatment \u2014 including for arthritis and tendonitis. The cultural misconceptions surrounding radiation exposure prevent exploration of beneficial applications.",
+      "cluster": "pharmacology",
+      "topics": [
+        "radiation therapy",
+        "inflammation",
+        "arthritis",
+        "misconceptions"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "c0e9ff40-f90c-411d-ba4d-e8ad60284739",
+      "content": "You cannot supplement your way to health. There is no magic pill. Supplements might have a 5-10% effect. Exercise has a 50% effect. Behavior is the foundation; supplements are the last 5% of optimization.",
+      "cluster": "pharmacology",
+      "topics": [
+        "supplements",
+        "exercise",
+        "behavior",
+        "optimization hierarchy"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "d2568dd3-d819-4b1f-adcc-8ab0b1ab2507",
+      "content": "Statins save lives if your atherosclerosis risk is high enough. Attia was initially skeptical of statins but the evidence changed his mind. For high-risk individuals, statins reduce cardiovascular events. He recommends them despite anti-statin sentiment in wellness culture.",
+      "cluster": "pharmacology",
+      "topics": [
+        "statins",
+        "ASCVD",
+        "changed mind",
+        "cardiovascular events"
+      ],
+      "source_ref": "https://peterattiamd.com/peter-faq",
+      "source_date": "2023-10-23",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "c1411b65-9613-4452-a004-fe1c4b15d038",
+      "content": "Baby aspirin for preventing blood clotting \u2014 Attia no longer takes it. His thinking changed based on evolving evidence about the risk-benefit tradeoff for primary prevention.",
+      "cluster": "pharmacology",
+      "topics": [
+        "aspirin",
+        "blood clotting",
+        "changed mind",
+        "primary prevention"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "3f499aaf-d8b2-465b-a6c7-155f31e7d4b5",
+      "content": "Metformin was once viewed as a pro-longevity agent, but Attia changed his mind after 7 years of personal use. He now reserves metformin prescriptions for patients who obviously need it from the standpoint of glucose and insulin regulation, not as a geroprotective agent.",
+      "cluster": "pharmacology",
+      "topics": [
+        "metformin",
+        "changed mind",
+        "geroprotection",
+        "glucose regulation"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "3bc578e4-34d8-4314-aa40-c4f71f9a2720",
+      "content": "Rapamycin as a longevity intervention: Attias feelings have evolved but questions still need to be answered. He sees potential but maintains evidence-based caution about its use as a geroprotective agent in humans.",
+      "cluster": "pharmacology",
+      "topics": [
+        "rapamycin",
+        "longevity",
+        "geroprotection",
+        "evolved thinking"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "medium"
+    },
+    {
+      "id": "23dd887b-c4dc-4c77-a05e-c043577bd8a9",
+      "content": "Sleep is non-negotiable. Sleep deprivation is a risk factor for all Four Horsemen. It impairs glucose control, emotional regulation, cognitive function, and immune function. You cannot out-exercise or out-supplement bad sleep.",
+      "cluster": "sleep_circadian",
+      "topics": [
+        "sleep",
+        "sleep deprivation",
+        "glucose",
+        "cognitive function",
+        "immune function"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "f3d84bf5-e78d-4917-ad33-76d6f87b3698",
+      "content": "Sleep deprivation is as risky as smoking. Most productivity culture celebrates sleep deprivation. It is a structural requirement, not a luxury. Sleep architecture \u2014 REM, deep sleep, circadian alignment \u2014 matters as much as duration.",
+      "cluster": "sleep_circadian",
+      "topics": [
+        "sleep deprivation",
+        "smoking comparison",
+        "sleep architecture",
+        "REM",
+        "deep sleep"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "8491ea45-ac38-46d4-9af6-264493b0c7e9",
+      "content": "The three most important drivers of healthspan are sleep, exercise, and emotional health. Sleep comes first because it is foundational \u2014 poor sleep undermines training benefits and emotional regulation.",
+      "cluster": "sleep_circadian",
+      "topics": [
+        "sleep",
+        "exercise",
+        "emotional health",
+        "healthspan drivers",
+        "priority"
+      ],
+      "source_ref": "https://peterattiamd.com/ama80",
+      "source_date": "2026-03-02",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "a897543d-c10c-47a2-803c-d282a64a3962",
+      "content": "CBT-I (Cognitive Behavioral Therapy for Insomnia) is the gold-standard treatment for chronic insomnia, not medication. Practical behavioral techniques for improving sleep quality include sleep restriction, stimulus control, and circadian rhythm management.",
+      "cluster": "sleep_circadian",
+      "topics": [
+        "CBT-I",
+        "insomnia",
+        "sleep quality",
+        "behavioral techniques"
+      ],
+      "source_ref": "https://peterattiamd.com/qps5",
+      "source_date": "2025-05-05",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "40e0637e-f2fc-410e-b5b9-3d2a78534dfa",
+      "content": "Zone 2 aerobic training is the most efficient way to build aerobic capacity while preserving muscle. It builds mitochondrial density and is chronically neglected by most people who favor HIIT. Most people should do more steady-state and less max-effort.",
+      "cluster": "zone_2_training",
+      "topics": [
+        "zone 2",
+        "aerobic capacity",
+        "mitochondria",
+        "HIIT"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    },
+    {
+      "id": "fa69e064-e36e-4618-9701-1b0b0c408e32",
+      "content": "Zone 2 training became a big component of Attias exercise regimen after studying the evidence. It is one of the clearest examples of how his thinking evolved through preparing for and conducting podcast interviews.",
+      "cluster": "zone_2_training",
+      "topics": [
+        "zone 2",
+        "training evolution",
+        "evidence-based"
+      ],
+      "source_ref": "https://peterattiamd.com/strong-convictions-loosely-held",
+      "source_date": "2020-04-06",
+      "confidence": 0.8,
+      "confidence_tier": "high"
+    }
+  ],
+  "connections": [],
+  "topic_index": {
+    "AI": [
+      "6461db8e-d42a-40f0-b46b-24a185bad0ce"
+    ],
+    "APOE": [
+      "4a84384e-f3ed-46be-95b2-acde78065650",
+      "8d960448-ecf8-4ad2-8451-be7206a63cc7"
+    ],
+    "ASCVD": [
+      "b99301cc-e6b7-4df3-b441-4e7cb6a5e917",
+      "0f800ef9-9719-4e6d-95d4-8b097c4a048c",
+      "d2568dd3-d819-4b1f-adcc-8ab0b1ab2507"
+    ],
+    "Akkermansia": [
+      "716f7cb3-6984-4fa5-a2ef-f5820765eef0"
+    ],
+    "Alzheimers": [
+      "8d960448-ecf8-4ad2-8451-be7206a63cc7"
+    ],
+    "BMI": [
+      "8940facd-8a5e-41ca-8dd6-41aca689df6d"
+    ],
+    "CAC score": [
+      "4a84384e-f3ed-46be-95b2-acde78065650"
+    ],
+    "CBT-I": [
+      "a897543d-c10c-47a2-803c-d282a64a3962"
+    ],
+    "CGM": [
+      "d1d7084a-29a3-4f9e-a6f6-159c677c2222"
+    ],
+    "DHA": [
+      "75ce31ac-2cbb-4663-96bc-b26c193c9cee"
+    ],
+    "EPA": [
+      "75ce31ac-2cbb-4663-96bc-b26c193c9cee"
+    ],
+    "GLP-1": [
+      "82b79650-9b38-49d8-8b39-818c759b6ac2"
+    ],
+    "HIIT": [
+      "40e0637e-f2fc-410e-b5b9-3d2a78534dfa"
+    ],
+    "Jeff English": [
+      "3bdeec56-e34e-4627-a4d6-6f7c5a064d57"
+    ],
+    "REM": [
+      "f3d84bf5-e78d-4917-ad33-76d6f87b3698"
+    ],
+    "VO2 max": [
+      "c2e72650-29e7-4c77-b2fe-6ac746b24c70",
+      "0cbd52cf-8f9b-492b-8500-f9e42bc4d7fe",
+      "16f9099e-0b95-4ea0-97e3-2c1625b33f26"
+    ],
+    "actionable data": [
+      "9d85e11d-b792-41cf-ac76-bddeec1ce598"
+    ],
+    "adaptation": [
+      "3bdeec56-e34e-4627-a4d6-6f7c5a064d57"
+    ],
+    "adherence": [
+      "77d0dba4-4cb5-4ea8-9608-f429336b81b7"
+    ],
+    "aerobic capacity": [
+      "0cbd52cf-8f9b-492b-8500-f9e42bc4d7fe",
+      "40e0637e-f2fc-410e-b5b9-3d2a78534dfa"
+    ],
+    "aging": [
+      "b5bd3daf-7107-47c9-aa5e-959160abee64",
+      "23f55155-e82d-46f9-85e4-b28d2ed050cb",
+      "c2e72650-29e7-4c77-b2fe-6ac746b24c70",
+      "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da",
+      "a6a4c2b9-f895-4a42-ba52-27a6f868b0f9",
+      "17819a7d-0011-42af-9b86-a8e24b5679ad"
+    ],
+    "aging clocks": [
+      "d2c2aa33-902a-4de5-83a6-76b8ebea741d",
+      "a6a4c2b9-f895-4a42-ba52-27a6f868b0f9"
+    ],
+    "aging decline": [
+      "0cbd52cf-8f9b-492b-8500-f9e42bc4d7fe"
+    ],
+    "anabolic resistance": [
+      "17819a7d-0011-42af-9b86-a8e24b5679ad"
+    ],
+    "ankle mobility": [
+      "23f55155-e82d-46f9-85e4-b28d2ed050cb",
+      "25ea656b-c3c1-4086-9289-edcdc8202cda"
+    ],
+    "anxiety": [
+      "9d85e11d-b792-41cf-ac76-bddeec1ce598"
+    ],
+    "apoB": [
+      "ef2ecbb7-e9c4-4ad5-aa2b-cca7d4e7e394",
+      "b99301cc-e6b7-4df3-b441-4e7cb6a5e917"
+    ],
+    "arthritis": [
+      "4d4699cd-ff2f-4bac-bb00-b373829d61de"
+    ],
+    "aspirin": [
+      "c1411b65-9613-4452-a004-fe1c4b15d038"
+    ],
+    "backcasting": [
+      "c2e72650-29e7-4c77-b2fe-6ac746b24c70",
+      "0cbd52cf-8f9b-492b-8500-f9e42bc4d7fe"
+    ],
+    "balance": [
+      "23f55155-e82d-46f9-85e4-b28d2ed050cb",
+      "c74075b1-fded-44b9-8bf4-f08836d992f7"
+    ],
+    "beginners": [
+      "f6741bd1-6a8e-486d-941b-02c6c0316fee"
+    ],
+    "behavior": [
+      "790a408a-03c5-4cf5-80b9-4c9081c38e81",
+      "c0e9ff40-f90c-411d-ba4d-e8ad60284739"
+    ],
+    "behavior change": [
+      "83b874e7-b031-4718-9570-8670dc219dc5"
+    ],
+    "behavioral change": [
+      "ee76af52-c4bc-45ec-ade4-30dadccddc54"
+    ],
+    "behavioral techniques": [
+      "a897543d-c10c-47a2-803c-d282a64a3962"
+    ],
+    "biological age": [
+      "d2c2aa33-902a-4de5-83a6-76b8ebea741d"
+    ],
+    "biomarkers": [
+      "59d55be7-9b39-4379-8ca4-858f9b2cfef9",
+      "4cd65878-9e5a-4854-be9c-7b2b8186c55b",
+      "6461db8e-d42a-40f0-b46b-24a185bad0ce",
+      "783073db-d422-45f4-aa15-3ab6971737e0"
+    ],
+    "blood clotting": [
+      "c1411b65-9613-4452-a004-fe1c4b15d038"
+    ],
+    "blue zones": [
+      "b176d94e-d1b0-44e1-91be-96f2b53137f2"
+    ],
+    "body composition": [
+      "8940facd-8a5e-41ca-8dd6-41aca689df6d"
+    ],
+    "body fat": [
+      "eadf6ad8-48b1-473a-b8f0-c02c45548e85"
+    ],
+    "bone mineral density": [
+      "86817166-8234-46ec-8ad5-b0d3a6f2a701"
+    ],
+    "brain health": [
+      "09670d43-ec20-456a-8f22-a79cddc8875d",
+      "8d960448-ecf8-4ad2-8451-be7206a63cc7",
+      "82b79650-9b38-49d8-8b39-818c759b6ac2"
+    ],
+    "cancer": [
+      "0f800ef9-9719-4e6d-95d4-8b097c4a048c"
+    ],
+    "cancer screening": [
+      "33636b29-af93-45b5-bb8e-bc040ce389f1"
+    ],
+    "cancer treatment": [
+      "afbdd00d-5e87-4267-a9ee-522d1d018e73"
+    ],
+    "carbohydrate metabolism": [
+      "6b7fd23d-949c-453d-9561-9ed9094d152d"
+    ],
+    "cardiovascular events": [
+      "d2568dd3-d819-4b1f-adcc-8ab0b1ab2507"
+    ],
+    "centenarian": [
+      "fc633209-6bb9-455b-afb9-32ff3f40e578"
+    ],
+    "centenarian decathlon": [
+      "c2e72650-29e7-4c77-b2fe-6ac746b24c70",
+      "019a8402-e06e-437d-b69a-ecb07899c0c4"
+    ],
+    "changed mind": [
+      "75ce31ac-2cbb-4663-96bc-b26c193c9cee",
+      "05139ff5-df44-4141-8262-0d40ebaf32c3",
+      "ed3bb46a-a5a4-43da-bd4b-a7a33b850282",
+      "d2568dd3-d819-4b1f-adcc-8ab0b1ab2507",
+      "c1411b65-9613-4452-a004-fe1c4b15d038",
+      "3f499aaf-d8b2-465b-a6c7-155f31e7d4b5"
+    ],
+    "cholesterol": [
+      "ef2ecbb7-e9c4-4ad5-aa2b-cca7d4e7e394"
+    ],
+    "circadian rhythm": [
+      "3e7681f6-1e32-4df7-b50d-737fa2c7ac94"
+    ],
+    "clinical data": [
+      "6461db8e-d42a-40f0-b46b-24a185bad0ce"
+    ],
+    "clinical trials": [
+      "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da"
+    ],
+    "cognitive decline": [
+      "09670d43-ec20-456a-8f22-a79cddc8875d"
+    ],
+    "cognitive function": [
+      "b5bd3daf-7107-47c9-aa5e-959160abee64",
+      "23dd887b-c4dc-4c77-a05e-c043577bd8a9"
+    ],
+    "colonoscopy": [
+      "33636b29-af93-45b5-bb8e-bc040ce389f1"
+    ],
+    "compound effort": [
+      "ee76af52-c4bc-45ec-ade4-30dadccddc54"
+    ],
+    "compounding": [
+      "914a08c3-b486-4795-86f1-07205758d2d2"
+    ],
+    "context": [
+      "8f455615-f300-4c9e-83ef-80d673bca0f3"
+    ],
+    "continuous monitoring": [
+      "59d55be7-9b39-4379-8ca4-858f9b2cfef9"
+    ],
+    "contrarian": [
+      "397625e4-f523-4243-9f51-6eb597c47245"
+    ],
+    "correlation vs causation": [
+      "b176d94e-d1b0-44e1-91be-96f2b53137f2"
+    ],
+    "data reliability": [
+      "b176d94e-d1b0-44e1-91be-96f2b53137f2"
+    ],
+    "deadlifts": [
+      "05139ff5-df44-4141-8262-0d40ebaf32c3"
+    ],
+    "deep sleep": [
+      "f3d84bf5-e78d-4917-ad33-76d6f87b3698"
+    ],
+    "dementia": [
+      "09670d43-ec20-456a-8f22-a79cddc8875d"
+    ],
+    "diabetes": [
+      "783073db-d422-45f4-aa15-3ab6971737e0"
+    ],
+    "diet": [
+      "a1d40418-a999-4dd8-83f5-c04a757ed068"
+    ],
+    "diet ideology": [
+      "77d0dba4-4cb5-4ea8-9608-f429336b81b7"
+    ],
+    "dietary fear": [
+      "397625e4-f523-4243-9f51-6eb597c47245"
+    ],
+    "disease risk": [
+      "905252a3-cccc-40d7-92ac-6c747861f994"
+    ],
+    "dose response": [
+      "f6741bd1-6a8e-486d-941b-02c6c0316fee"
+    ],
+    "drug development": [
+      "afbdd00d-5e87-4267-a9ee-522d1d018e73",
+      "6461db8e-d42a-40f0-b46b-24a185bad0ce"
+    ],
+    "early detection": [
+      "33636b29-af93-45b5-bb8e-bc040ce389f1",
+      "783073db-d422-45f4-aa15-3ab6971737e0"
+    ],
+    "effect size": [
+      "5af45870-761f-49c5-8107-058960262078"
+    ],
+    "emerging therapy": [
+      "b5bd3daf-7107-47c9-aa5e-959160abee64"
+    ],
+    "emotional health": [
+      "905252a3-cccc-40d7-92ac-6c747861f994",
+      "4a7114ec-b4cf-4076-919d-553065de0e38",
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31",
+      "8491ea45-ac38-46d4-9af6-264493b0c7e9"
+    ],
+    "evidence": [
+      "a6a4c2b9-f895-4a42-ba52-27a6f868b0f9",
+      "912637e2-7346-4b29-b02a-ccd1a9b87f2e",
+      "397625e4-f523-4243-9f51-6eb597c47245",
+      "ed3bb46a-a5a4-43da-bd4b-a7a33b850282"
+    ],
+    "evidence-based": [
+      "fa69e064-e36e-4618-9701-1b0b0c408e32"
+    ],
+    "evolved thinking": [
+      "3bc578e4-34d8-4314-aa40-c4f71f9a2720"
+    ],
+    "exercise": [
+      "09670d43-ec20-456a-8f22-a79cddc8875d",
+      "914a08c3-b486-4795-86f1-07205758d2d2",
+      "f6741bd1-6a8e-486d-941b-02c6c0316fee",
+      "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da",
+      "5af45870-761f-49c5-8107-058960262078",
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31",
+      "a1d40418-a999-4dd8-83f5-c04a757ed068",
+      "c0e9ff40-f90c-411d-ba4d-e8ad60284739",
+      "8491ea45-ac38-46d4-9af6-264493b0c7e9"
+    ],
+    "fall prevention": [
+      "25ea656b-c3c1-4086-9289-edcdc8202cda"
+    ],
+    "falls": [
+      "8d960448-ecf8-4ad2-8451-be7206a63cc7",
+      "23f55155-e82d-46f9-85e4-b28d2ed050cb"
+    ],
+    "fasting": [
+      "ed3bb46a-a5a4-43da-bd4b-a7a33b850282"
+    ],
+    "fat athletes paradox": [
+      "8f455615-f300-4c9e-83ef-80d673bca0f3"
+    ],
+    "fat distribution": [
+      "eadf6ad8-48b1-473a-b8f0-c02c45548e85"
+    ],
+    "fat oxidation": [
+      "6b7fd23d-949c-453d-9561-9ed9094d152d"
+    ],
+    "feedback loops": [
+      "4cd65878-9e5a-4854-be9c-7b2b8186c55b"
+    ],
+    "fitness": [
+      "16f9099e-0b95-4ea0-97e3-2c1625b33f26"
+    ],
+    "five pillars": [
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31"
+    ],
+    "flexibility": [
+      "c74075b1-fded-44b9-8bf4-f08836d992f7"
+    ],
+    "foot training": [
+      "25ea656b-c3c1-4086-9289-edcdc8202cda"
+    ],
+    "force dissipation": [
+      "c74075b1-fded-44b9-8bf4-f08836d992f7"
+    ],
+    "foundation": [
+      "42afb753-96ce-4f7a-9274-75f6e938eb53"
+    ],
+    "four horsemen": [
+      "0f800ef9-9719-4e6d-95d4-8b097c4a048c",
+      "790a408a-03c5-4cf5-80b9-4c9081c38e81",
+      "f748d0e8-3d12-4fa8-9599-7383a273bc21"
+    ],
+    "four pillars": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c"
+    ],
+    "fracture risk": [
+      "86817166-8234-46ec-8ad5-b0d3a6f2a701"
+    ],
+    "frailty": [
+      "fc633209-6bb9-455b-afb9-32ff3f40e578"
+    ],
+    "functional capacity": [
+      "05139ff5-df44-4141-8262-0d40ebaf32c3"
+    ],
+    "genetics": [
+      "8d960448-ecf8-4ad2-8451-be7206a63cc7",
+      "790a408a-03c5-4cf5-80b9-4c9081c38e81"
+    ],
+    "geroprotection": [
+      "82b79650-9b38-49d8-8b39-818c759b6ac2",
+      "3f499aaf-d8b2-465b-a6c7-155f31e7d4b5",
+      "3bc578e4-34d8-4314-aa40-c4f71f9a2720"
+    ],
+    "glucose": [
+      "42afb753-96ce-4f7a-9274-75f6e938eb53",
+      "23dd887b-c4dc-4c77-a05e-c043577bd8a9"
+    ],
+    "glucose monitoring": [
+      "d1d7084a-29a3-4f9e-a6f6-159c677c2222"
+    ],
+    "glucose regulation": [
+      "3f499aaf-d8b2-465b-a6c7-155f31e7d4b5"
+    ],
+    "glycemic response": [
+      "d1d7084a-29a3-4f9e-a6f6-159c677c2222"
+    ],
+    "gut health": [
+      "716f7cb3-6984-4fa5-a2ef-f5820765eef0"
+    ],
+    "health tracking": [
+      "9d85e11d-b792-41cf-ac76-bddeec1ce598"
+    ],
+    "healthspan": [
+      "ee392547-a99b-4087-81ea-25b34f90cf55",
+      "019a8402-e06e-437d-b69a-ecb07899c0c4"
+    ],
+    "healthspan drivers": [
+      "8491ea45-ac38-46d4-9af6-264493b0c7e9"
+    ],
+    "hedge": [
+      "83b874e7-b031-4718-9570-8670dc219dc5"
+    ],
+    "heterogeneity": [
+      "afbdd00d-5e87-4267-a9ee-522d1d018e73"
+    ],
+    "hunger hormones": [
+      "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b"
+    ],
+    "hypertension": [
+      "b99301cc-e6b7-4df3-b441-4e7cb6a5e917"
+    ],
+    "immune function": [
+      "23dd887b-c4dc-4c77-a05e-c043577bd8a9"
+    ],
+    "immunotherapy": [
+      "afbdd00d-5e87-4267-a9ee-522d1d018e73"
+    ],
+    "individual variation": [
+      "eadf6ad8-48b1-473a-b8f0-c02c45548e85",
+      "59d55be7-9b39-4379-8ca4-858f9b2cfef9",
+      "77d0dba4-4cb5-4ea8-9608-f429336b81b7"
+    ],
+    "inflammation": [
+      "4d4699cd-ff2f-4bac-bb00-b373829d61de"
+    ],
+    "insomnia": [
+      "a897543d-c10c-47a2-803c-d282a64a3962"
+    ],
+    "insulin": [
+      "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b"
+    ],
+    "insulin resistance": [
+      "783073db-d422-45f4-aa15-3ab6971737e0"
+    ],
+    "insulin sensitivity": [
+      "8940facd-8a5e-41ca-8dd6-41aca689df6d",
+      "42afb753-96ce-4f7a-9274-75f6e938eb53"
+    ],
+    "intellectual humility": [
+      "912637e2-7346-4b29-b02a-ccd1a9b87f2e"
+    ],
+    "interventions": [
+      "4cd65878-9e5a-4854-be9c-7b2b8186c55b"
+    ],
+    "intramyocellular lipids": [
+      "8f455615-f300-4c9e-83ef-80d673bca0f3"
+    ],
+    "klotho": [
+      "b5bd3daf-7107-47c9-aa5e-959160abee64"
+    ],
+    "learning process": [
+      "ad3a8cc6-0945-471e-a726-fe1c1a139565"
+    ],
+    "lifespan": [
+      "ee392547-a99b-4087-81ea-25b34f90cf55",
+      "50200928-e6a8-44f0-98f2-aeefacb36eb8"
+    ],
+    "limbic system": [
+      "3bdeec56-e34e-4627-a4d6-6f7c5a064d57"
+    ],
+    "lipids": [
+      "b99301cc-e6b7-4df3-b441-4e7cb6a5e917"
+    ],
+    "lipoproteins": [
+      "4a84384e-f3ed-46be-95b2-acde78065650",
+      "ef2ecbb7-e9c4-4ad5-aa2b-cca7d4e7e394"
+    ],
+    "liquid biopsy": [
+      "33636b29-af93-45b5-bb8e-bc040ce389f1"
+    ],
+    "long-term": [
+      "ee76af52-c4bc-45ec-ade4-30dadccddc54"
+    ],
+    "longevity": [
+      "5af45870-761f-49c5-8107-058960262078",
+      "16f9099e-0b95-4ea0-97e3-2c1625b33f26",
+      "ee392547-a99b-4087-81ea-25b34f90cf55",
+      "50200928-e6a8-44f0-98f2-aeefacb36eb8",
+      "3bc578e4-34d8-4314-aa40-c4f71f9a2720"
+    ],
+    "longevity claims": [
+      "a6a4c2b9-f895-4a42-ba52-27a6f868b0f9"
+    ],
+    "longevity organ": [
+      "ce2b389f-cf30-4c43-855a-ea494c26fed5"
+    ],
+    "longevity toolkit": [
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31"
+    ],
+    "maladaptive strategies": [
+      "3bdeec56-e34e-4627-a4d6-6f7c5a064d57"
+    ],
+    "marginal decade": [
+      "50200928-e6a8-44f0-98f2-aeefacb36eb8",
+      "019a8402-e06e-437d-b69a-ecb07899c0c4"
+    ],
+    "measurement": [
+      "4cd65878-9e5a-4854-be9c-7b2b8186c55b"
+    ],
+    "medicine": [
+      "6461db8e-d42a-40f0-b46b-24a185bad0ce"
+    ],
+    "medicine 3.0": [
+      "83b874e7-b031-4718-9570-8670dc219dc5",
+      "f748d0e8-3d12-4fa8-9599-7383a273bc21"
+    ],
+    "metabolic adaptation": [
+      "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b"
+    ],
+    "metabolic disease": [
+      "0f800ef9-9719-4e6d-95d4-8b097c4a048c"
+    ],
+    "metabolic flexibility": [
+      "6b7fd23d-949c-453d-9561-9ed9094d152d"
+    ],
+    "metabolic health": [
+      "eadf6ad8-48b1-473a-b8f0-c02c45548e85",
+      "8940facd-8a5e-41ca-8dd6-41aca689df6d",
+      "42afb753-96ce-4f7a-9274-75f6e938eb53",
+      "a1d40418-a999-4dd8-83f5-c04a757ed068"
+    ],
+    "metformin": [
+      "3f499aaf-d8b2-465b-a6c7-155f31e7d4b5"
+    ],
+    "microbiome": [
+      "716f7cb3-6984-4fa5-a2ef-f5820765eef0"
+    ],
+    "mind changes": [
+      "912637e2-7346-4b29-b02a-ccd1a9b87f2e"
+    ],
+    "misconceptions": [
+      "ef2ecbb7-e9c4-4ad5-aa2b-cca7d4e7e394",
+      "4d4699cd-ff2f-4bac-bb00-b373829d61de"
+    ],
+    "mitochondria": [
+      "40e0637e-f2fc-410e-b5b9-3d2a78534dfa"
+    ],
+    "modifiable": [
+      "790a408a-03c5-4cf5-80b9-4c9081c38e81"
+    ],
+    "morbidity compression": [
+      "50200928-e6a8-44f0-98f2-aeefacb36eb8"
+    ],
+    "mortality predictor": [
+      "16f9099e-0b95-4ea0-97e3-2c1625b33f26"
+    ],
+    "muscle": [
+      "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da",
+      "ce2b389f-cf30-4c43-855a-ea494c26fed5"
+    ],
+    "muscle preservation": [
+      "ed3bb46a-a5a4-43da-bd4b-a7a33b850282"
+    ],
+    "muscle protein synthesis": [
+      "17819a7d-0011-42af-9b86-a8e24b5679ad"
+    ],
+    "neurodegeneration": [
+      "0f800ef9-9719-4e6d-95d4-8b097c4a048c"
+    ],
+    "neuroprotection": [
+      "09670d43-ec20-456a-8f22-a79cddc8875d"
+    ],
+    "no quick fix": [
+      "ee76af52-c4bc-45ec-ade4-30dadccddc54"
+    ],
+    "non-diabetic": [
+      "d1d7084a-29a3-4f9e-a6f6-159c677c2222"
+    ],
+    "note-taking": [
+      "ad3a8cc6-0945-471e-a726-fe1c1a139565"
+    ],
+    "nutrition": [
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31"
+    ],
+    "omega-3": [
+      "75ce31ac-2cbb-4663-96bc-b26c193c9cee"
+    ],
+    "optimization hierarchy": [
+      "c0e9ff40-f90c-411d-ba4d-e8ad60284739"
+    ],
+    "osteoporosis": [
+      "86817166-8234-46ec-8ad5-b0d3a6f2a701"
+    ],
+    "personalized medicine": [
+      "4a84384e-f3ed-46be-95b2-acde78065650",
+      "59d55be7-9b39-4379-8ca4-858f9b2cfef9"
+    ],
+    "pharmacology": [
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31"
+    ],
+    "pharmacology comparison": [
+      "5af45870-761f-49c5-8107-058960262078"
+    ],
+    "physical function": [
+      "019a8402-e06e-437d-b69a-ecb07899c0c4"
+    ],
+    "physical performance": [
+      "d2c2aa33-902a-4de5-83a6-76b8ebea741d"
+    ],
+    "practice change": [
+      "ad3a8cc6-0945-471e-a726-fe1c1a139565"
+    ],
+    "prevention": [
+      "b99301cc-e6b7-4df3-b441-4e7cb6a5e917",
+      "83b874e7-b031-4718-9570-8670dc219dc5",
+      "f748d0e8-3d12-4fa8-9599-7383a273bc21"
+    ],
+    "primary prevention": [
+      "c1411b65-9613-4452-a004-fe1c4b15d038"
+    ],
+    "priority": [
+      "8491ea45-ac38-46d4-9af6-264493b0c7e9"
+    ],
+    "proactive medicine": [
+      "f748d0e8-3d12-4fa8-9599-7383a273bc21"
+    ],
+    "probiotics": [
+      "716f7cb3-6984-4fa5-a2ef-f5820765eef0"
+    ],
+    "protein": [
+      "ce2b389f-cf30-4c43-855a-ea494c26fed5",
+      "17819a7d-0011-42af-9b86-a8e24b5679ad"
+    ],
+    "purpose": [
+      "4a7114ec-b4cf-4076-919d-553065de0e38"
+    ],
+    "quality of life": [
+      "4a7114ec-b4cf-4076-919d-553065de0e38",
+      "ee392547-a99b-4087-81ea-25b34f90cf55",
+      "fc633209-6bb9-455b-afb9-32ff3f40e578"
+    ],
+    "radiation therapy": [
+      "4d4699cd-ff2f-4bac-bb00-b373829d61de"
+    ],
+    "rapamycin": [
+      "3bc578e4-34d8-4314-aa40-c4f71f9a2720"
+    ],
+    "resistance training": [
+      "86817166-8234-46ec-8ad5-b0d3a6f2a701",
+      "ce2b389f-cf30-4c43-855a-ea494c26fed5"
+    ],
+    "retirement analogy": [
+      "914a08c3-b486-4795-86f1-07205758d2d2"
+    ],
+    "risk factors": [
+      "790a408a-03c5-4cf5-80b9-4c9081c38e81"
+    ],
+    "risk stratification": [
+      "4a84384e-f3ed-46be-95b2-acde78065650"
+    ],
+    "risk-benefit": [
+      "3e7681f6-1e32-4df7-b50d-737fa2c7ac94"
+    ],
+    "rucking": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c"
+    ],
+    "sarcopenia": [
+      "ce2b389f-cf30-4c43-855a-ea494c26fed5",
+      "fc633209-6bb9-455b-afb9-32ff3f40e578"
+    ],
+    "sedentary": [
+      "f6741bd1-6a8e-486d-941b-02c6c0316fee"
+    ],
+    "seed oils": [
+      "397625e4-f523-4243-9f51-6eb597c47245"
+    ],
+    "skepticism": [
+      "d2c2aa33-902a-4de5-83a6-76b8ebea741d",
+      "b176d94e-d1b0-44e1-91be-96f2b53137f2"
+    ],
+    "skin cancer": [
+      "3e7681f6-1e32-4df7-b50d-737fa2c7ac94"
+    ],
+    "sleep": [
+      "186fd179-df42-4e33-9bf7-d4dfd0645e31",
+      "23dd887b-c4dc-4c77-a05e-c043577bd8a9",
+      "8491ea45-ac38-46d4-9af6-264493b0c7e9"
+    ],
+    "sleep architecture": [
+      "f3d84bf5-e78d-4917-ad33-76d6f87b3698"
+    ],
+    "sleep deprivation": [
+      "23dd887b-c4dc-4c77-a05e-c043577bd8a9",
+      "f3d84bf5-e78d-4917-ad33-76d6f87b3698"
+    ],
+    "sleep quality": [
+      "a897543d-c10c-47a2-803c-d282a64a3962"
+    ],
+    "smoking comparison": [
+      "f3d84bf5-e78d-4917-ad33-76d6f87b3698"
+    ],
+    "social connection": [
+      "4a7114ec-b4cf-4076-919d-553065de0e38"
+    ],
+    "social isolation": [
+      "905252a3-cccc-40d7-92ac-6c747861f994"
+    ],
+    "stability": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c",
+      "c74075b1-fded-44b9-8bf4-f08836d992f7"
+    ],
+    "starting late": [
+      "914a08c3-b486-4795-86f1-07205758d2d2",
+      "9d6c6b33-4c2f-4ed9-b0aa-ee4582d541da"
+    ],
+    "static vs dynamic": [
+      "8f455615-f300-4c9e-83ef-80d673bca0f3"
+    ],
+    "statins": [
+      "d2568dd3-d819-4b1f-adcc-8ab0b1ab2507"
+    ],
+    "strength": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c"
+    ],
+    "strength training": [
+      "05139ff5-df44-4141-8262-0d40ebaf32c3"
+    ],
+    "stress": [
+      "905252a3-cccc-40d7-92ac-6c747861f994"
+    ],
+    "strong convictions": [
+      "912637e2-7346-4b29-b02a-ccd1a9b87f2e"
+    ],
+    "sun exposure": [
+      "3e7681f6-1e32-4df7-b50d-737fa2c7ac94"
+    ],
+    "supplements": [
+      "75ce31ac-2cbb-4663-96bc-b26c193c9cee",
+      "c0e9ff40-f90c-411d-ba4d-e8ad60284739"
+    ],
+    "sustainability": [
+      "77d0dba4-4cb5-4ea8-9608-f429336b81b7"
+    ],
+    "synthesis": [
+      "ad3a8cc6-0945-471e-a726-fe1c1a139565"
+    ],
+    "targets": [
+      "c2e72650-29e7-4c77-b2fe-6ac746b24c70"
+    ],
+    "toe strength": [
+      "25ea656b-c3c1-4086-9289-edcdc8202cda"
+    ],
+    "training evolution": [
+      "fa69e064-e36e-4618-9701-1b0b0c408e32"
+    ],
+    "trauma": [
+      "3bdeec56-e34e-4627-a4d6-6f7c5a064d57",
+      "905252a3-cccc-40d7-92ac-6c747861f994"
+    ],
+    "triglycerides": [
+      "42afb753-96ce-4f7a-9274-75f6e938eb53"
+    ],
+    "ultra-processed food": [
+      "a1d40418-a999-4dd8-83f5-c04a757ed068"
+    ],
+    "vestibular": [
+      "23f55155-e82d-46f9-85e4-b28d2ed050cb"
+    ],
+    "vitamin D": [
+      "3e7681f6-1e32-4df7-b50d-737fa2c7ac94"
+    ],
+    "wearables": [
+      "9d85e11d-b792-41cf-ac76-bddeec1ce598"
+    ],
+    "weight loss": [
+      "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b",
+      "82b79650-9b38-49d8-8b39-818c759b6ac2"
+    ],
+    "willpower": [
+      "ddb6cf11-6139-49e3-a1e0-8913fd07cd9b"
+    ],
+    "zone 2": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c",
+      "40e0637e-f2fc-410e-b5b9-3d2a78534dfa",
+      "fa69e064-e36e-4618-9701-1b0b0c408e32"
+    ],
+    "zone 5": [
+      "3c3e246c-7551-4275-ac1f-5b343b06cf6c"
+    ]
+  },
+  "synthesis": {
+    "hero_tagline": "Medicine 3.0, the Four Horsemen, and the science of living longer and better",
+    "hero_updated": "",
+    "first_principles": [
+      {
+        "title": "Medicine 3.0 replaces reactive medicine with proactive intervention.",
+        "desc": "The dominant model (Medicine 2.0) waits for disease to manifest before treating. Medicine 3.0 prevents disease decades before symptoms appear by targeting the underlying pathophysiology of the Four Horsemen. This requires sustained attention over decades, not episodic treatment."
+      },
+      {
+        "title": "Exercise is the most potent longevity drug.",
+        "desc": "No pharmaceutical intervention matches the effect size of structured exercise on lifespan. It improves cardiovascular fitness, preserves muscle, enhances insulin sensitivity, supports cognitive function, and reduces cancer risk. Yet most people don't exercise enough, and most who do exercise wrong."
+      },
+      {
+        "title": "Metabolic health is foundational to everything.",
+        "desc": "Insulin sensitivity, glucose control, triglyceride management, and body composition are upstream of all Four Horsemen. You can't have great cardiovascular health, cognitive health, or cancer resistance without addressing metabolic health first."
+      },
+      {
+        "title": "VO2 max is a mortality metric.",
+        "desc": "VO2 max is one of the strongest predictors of lifespan and healthspan, independent of age. It's trainable at any age. Zone 2 aerobic training is the most efficient way to build aerobic capacity while preserving muscle."
+      },
+      {
+        "title": "Muscle is a longevity organ.",
+        "desc": "Sarcopenia (muscle loss with age) is predictive of disability and death. Resistance training with progressive overload, adequate protein, and neuromuscular optimization must persist through the entire lifespan. Muscle loss isn't inevitable \u2014 it's neglect."
+      },
+      {
+        "title": "Sleep is non-negotiable.",
+        "desc": "Sleep deprivation is a risk factor for all Four Horsemen. It impairs glucose control, emotional regulation, cognitive function, and immune function. You can't out-exercise or out-supplement bad sleep."
+      },
+      {
+        "title": "Emotional resilience is core, not ancillary.",
+        "desc": "Unresolved trauma, chronic stress, lack of meaning, and social isolation predict disease risk as strongly as many biomarkers. Emotional work \u2014 therapy, relationships, purpose \u2014 is not optional luxury; it's structural medicine."
+      },
+      {
+        "title": "Risk stratification enables precision.",
+        "desc": "Not everyone has equal risk for each Horseman. CAC scores, lipoprotein genetics, cancer family history, APOE status \u2014 these create personalized risk profiles that change strategy. Population averages are insufficient for individual decisions."
+      },
+      {
+        "title": "The Four Horsemen are preventable through modifiable risk factors.",
+        "desc": "None of these diseases are genetic destiny. While genetics load the gun, behavior pulls the trigger. Diet, exercise, sleep, stress management, and early detection account for the vast majority of risk."
+      },
+      {
+        "title": "Longevity gains require decades of compound effort.",
+        "desc": "There's no quick fix. A single year of perfect exercise won't reverse 30 years of metabolic dysfunction. Longevity medicine is a multi-decade project requiring sustained behavioral change and strategic interventions."
+      }
+    ],
+    "thinking_patterns": [
+      {
+        "name": "Mechanistic thinking",
+        "desc": "Attia reasons from first principles of biochemistry and physiology. He traces cause-and-effect chains across decades \u2014 why exercise improves VO2 max, how insulin resistance develops, the pathophysiology of atherosclerosis at the molecular level."
+      },
+      {
+        "name": "Evidence hierarchy",
+        "desc": "He distinguishes mechanistic plausibility from RCT data from observational correlations. He's skeptical of single studies and looks for convergence across evidence types. He'll say 'the mechanism makes sense, but the human data is weak' without flinching."
+      },
+      {
+        "name": "Risk stratification",
+        "desc": "Rather than applying population averages, he thinks in personalized risk profiles. Your CAC score, your lipid genetics, your family history, your VO2 max \u2014 these create an individualized model that guides intervention."
+      },
+      {
+        "name": "Cost-benefit analysis",
+        "desc": "For every intervention (drug, supplement, surgery, lifestyle change), he asks: What's the benefit? What's the risk? Is it worth it for this specific risk profile? He's not dogmatic \u2014 he'll take a statin if the evidence supports it."
+      },
+      {
+        "name": "Time horizon thinking",
+        "desc": "He thinks in decades, not weeks. A diet change today has health consequences 20 years from now. A training program needs to be sustainable across 50 years of life, not 12 weeks of beach body prep."
+      },
+      {
+        "name": "Modifiable vs. non-modifiable",
+        "desc": "He categorizes risk factors by what you can change. Genetics are fixed; behavior is plastic. Strategy focuses relentlessly on the 80% you can control."
+      },
+      {
+        "name": "Continuous feedback loops",
+        "desc": "Biomarkers, imaging, continuous glucose monitoring \u2014 these create feedback. Did the intervention work? What's the response? He uses data to iterate, not just to be data-obsessed."
+      },
+      {
+        "name": "Intellectual humility",
+        "desc": "He regularly says 'I was wrong about X' and updates his positions publicly. His thinking on statins, fasting, and emotional health has evolved significantly \u2014 and he documents the evolution."
+      }
+    ],
+    "contrarian_positions": [
+      {
+        "title": "Zone 2 training is more important than HIIT for most people.",
+        "desc": "The fitness industry fetishizes high-intensity intervals. But for longevity, the aerobic base (Zone 2) is foundational and chronically neglected. Most people should do more steady-state and less max-effort."
+      },
+      {
+        "title": "Statins save lives, full stop, if your risk is high enough.",
+        "desc": "Attia was initially skeptical of statins. But the evidence changed his mind. For people with high atherosclerosis risk, statins reduce events. He'll recommend them despite the 'statins are toxic' meme in wellness culture."
+      },
+      {
+        "title": "Sleep deprivation is as risky as smoking.",
+        "desc": "Most productivity culture celebrates sleep deprivation. Attia is adamant: you can't optimize away poor sleep. It's a structural requirement, not a luxury."
+      },
+      {
+        "title": "Emotional work is as important as physical training.",
+        "desc": "Unresolved trauma and chronic stress have physiological consequences. He's become increasingly emphatic that therapy, relationships, and meaning are structural \u2014 not secondary."
+      },
+      {
+        "title": "Cancer screening should be aggressive in high-risk individuals.",
+        "desc": "He advocates for proactive screening rather than waiting for symptoms. Early detection changes prognosis dramatically, especially for colorectal and pancreatic cancers."
+      },
+      {
+        "title": "Metabolic health matters more than weight.",
+        "desc": "Someone can be lean and metabolically unhealthy; someone can be overweight and metabolically stable. The focus should be on insulin sensitivity, lipid ratios, and glucose control \u2014 not BMI alone."
+      },
+      {
+        "title": "Protein intake should be high across lifespan.",
+        "desc": "He consistently recommends 1.6-2.2g/kg for adults, especially as they age. This goes against the popular 'moderation' narrative and some of his earlier positions."
+      },
+      {
+        "title": "Personalized medicine requires actual data.",
+        "desc": "Generic advice is insufficient. You need biomarkers, imaging, and continuous monitoring to understand your specific risk and response. Expensive upfront, but saves years of wasted effort."
+      },
+      {
+        "title": "You can't out-exercise a bad diet.",
+        "desc": "Everyone wants to hear that exercise cancels out dietary choices. Attia is clear: metabolic health requires nutritional discipline, particularly around refined carbs and ultra-processed food."
+      },
+      {
+        "title": "Longevity isn't about adding years \u2014 it's about adding quality.",
+        "desc": "He rejects the idea that living to 100 in decline is the goal. Healthspan matters more than lifespan. Healthy at 79 and dead at 80 beats cognitively gone at 75 and alive at 95."
+      }
+    ],
+    "does_not_believe": [
+      {
+        "title": "\"Longevity is purely genetic.\"",
+        "desc": "He rejects genetic determinism. Genes matter, but the majority of risk comes from behavior. You're not destined by your DNA."
+      },
+      {
+        "title": "\"You can supplement your way to health.\"",
+        "desc": "There's no magic pill. Supplements might have a 5-10% effect. Exercise has a 50% effect. Behavior is the foundation; supplements are the last 5% of optimization."
+      },
+      {
+        "title": "\"Extreme diets are optimal for everyone.\"",
+        "desc": "He's skeptical of diet ideology \u2014 carnivore, vegan, keto as universal prescriptions. Individual variation in metabolism, preferences, and adherence matters. The best diet is one you can sustain."
+      },
+      {
+        "title": "\"Weight loss is about willpower.\"",
+        "desc": "He understands the biology: hunger hormones, insulin signaling, metabolic adaptation. It's not moral failure; it's physiology."
+      },
+      {
+        "title": "\"The model is the moat in health tech.\"",
+        "desc": "AI models are commodities. Longitudinal patient data, behavioral tracking, and personalized risk profiles are the real moats in health technology."
+      },
+      {
+        "title": "\"You can make up for poor sleep with exercise.\"",
+        "desc": "Sleep deprivation undermines training benefits. They interact \u2014 and poor sleep wins."
+      },
+      {
+        "title": "\"The standard American diet is fine as long as you exercise.\"",
+        "desc": "Exercise helps, but it doesn't neutralize the metabolic damage from chronic refined carb consumption and ultra-processed foods."
+      }
+    ],
+    "would_not_say": [
+      {
+        "title": "\"Just eat whatever you want if you exercise.\"",
+        "desc": "He believes exercise is powerful but not unlimited license. Nutrition and exercise are both load-bearing pillars."
+      },
+      {
+        "title": "\"Aging is inevitable decline.\"",
+        "desc": "He'd push back on fatalism. Healthspan is highly modifiable. You can be 80 and vibrant or 60 and declining \u2014 it's not just time passing."
+      },
+      {
+        "title": "\"Sleep optimization is luxury.\"",
+        "desc": "It's foundational. This isn't a nice-to-have for the wealthy \u2014 it's structural for everyone."
+      },
+      {
+        "title": "\"You don't need screening if you feel fine.\"",
+        "desc": "Asymptomatic disease is the rule, not the exception. You might have atherosclerosis advancing while feeling completely normal."
+      },
+      {
+        "title": "\"Just follow the government dietary guidelines.\"",
+        "desc": "He's critical of population-level nutritional advice that ignores individual metabolic variation and is influenced by food industry lobbying."
+      }
+    ],
+    "biography": [
+      {
+        "date": "2001\u20132006",
+        "role": "Medical Training (Stanford / Johns Hopkins)",
+        "lesson": "Trained as a surgeon with deep analytical rigor. Spent 5 years in general surgery residency. Built the mechanistic thinking that underpins everything."
+      },
+      {
+        "date": "2006\u20132012",
+        "role": "McKinsey & Company",
+        "lesson": "Left surgery for consulting. Unusual move that gave him frameworks for systematic thinking about complex problems. Learned to think in systems, not just patients."
+      },
+      {
+        "date": "2012\u20132019",
+        "role": "Founding Attia Medical / Early Practice",
+        "lesson": "Launched a longevity-focused medical practice. Shifted from treating disease to preventing it. Developed the Medicine 3.0 framework through direct patient work."
+      },
+      {
+        "date": "2014\u2013Present",
+        "role": "The Drive Podcast",
+        "lesson": "400+ episodes interviewing the world's leading experts. Became the primary audio source for credible longevity thinking. Built intellectual credibility through rigorous long-form conversations."
+      },
+      {
+        "date": "2023",
+        "role": "Publishing 'Outlive'",
+        "lesson": "Distilled a decade of thinking into a mainstream book. Articulated the Four Horsemen framework. Became a household name in health optimization."
+      },
+      {
+        "date": "2024\u2013Present",
+        "role": "Post-Outlive Evolution",
+        "lesson": "Increasingly vocal about emotional health and trauma resolution. Integrating psychological work into his longevity framework. Recognizing that fixing the body without fixing the mind is incomplete."
+      }
+    ],
+    "skills": [
+      {
+        "name": "advise",
+        "title": "Strategic Counsel",
+        "desc": "Get advice on health decisions grounded in this brain's frameworks.",
+        "example": "/advise \"I'm 55, overweight, and sedentary. What's my first move?\""
+      },
+      {
+        "name": "teach",
+        "title": "Learn Through Their Lens",
+        "desc": "Explain a health concept using this brain's actual vocabulary and mental models.",
+        "example": "/teach \"Explain the Four Horsemen and why they matter.\""
+      },
+      {
+        "name": "debate",
+        "title": "Steel-Man Both Sides",
+        "desc": "Present a health position; brain argues against it using real counterarguments.",
+        "example": "/debate \"Is muscle or cardio more important for longevity?\""
+      },
+      {
+        "name": "connect",
+        "title": "The Serendipity Engine",
+        "desc": "Surface non-obvious connections between your topic and this brain's thinking.",
+        "example": "/connect \"How does continuous glucose monitoring inform training strategy?\""
+      },
+      {
+        "name": "evolve",
+        "title": "Intellectual Evolution",
+        "desc": "Trace how this brain's thinking on a topic developed over time.",
+        "example": "/evolve \"How has Peter's thinking on statins and pharmacology evolved?\""
+      },
+      {
+        "name": "apply",
+        "title": "Actionable Frameworks",
+        "desc": "Turn a framework into a step-by-step plan for your situation.",
+        "example": "/apply \"How do I structure my week for Zone 2, strength, and recovery?\""
+      },
+      {
+        "name": "mashup",
+        "title": "Synthesize & Combine",
+        "desc": "Combine multiple health ideas into a genuinely new thesis.",
+        "example": "/mashup \"Zone 2 + emotional resilience + metabolic health\""
+      },
+      {
+        "name": "brainfight",
+        "title": "Ideas in Conflict",
+        "desc": "Pit two health ideas head-to-head. Find agreements, contradictions, conditional victories.",
+        "example": "/brainfight \"Longevity vs. living now \u2014 where's the balance?\""
+      },
+      {
+        "name": "deep-dive",
+        "title": "Everything They Know",
+        "desc": "Exhaustive analysis \u2014 pull ALL atoms, map connections, synthesize.",
+        "example": "/deep-dive \"Peter's complete framework for cardiovascular disease prevention\""
+      },
+      {
+        "name": "surprise",
+        "title": "Show Me Something Unexpected",
+        "desc": "Random high-quality atom for daily inspiration.",
+        "example": "/surprise"
+      }
+    ]
+  }
+}

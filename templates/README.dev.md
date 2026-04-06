@@ -1,202 +1,322 @@
-# Brain Pack Template System — Developer Guide
+# Brain Pack Developer Guide
 
-## Architecture
+How to build a new brain pack from scratch using the BrainsForSale pipeline.
+
+*Last updated: 2026-04-05*
+
+---
+
+## Architecture Overview
 
 ```
-brainsforsale/
-  brains/                    ← Brain configs (one per thinker)
-    belsky.json
-    {slug}.json
-  templates/                 ← Shared templates (never edit per-brain)
-    SKILL.md.template
-    README.md.template
-    skills/
-      advise.md.template
-      teach.md.template
-      ... (10 total)
-  scripts/
-    export-brain.py          ← Generic export pipeline
-  brainsforsale-{slug}/      ← Rendered output (ships to customers)
+brain.json (config + synthesis) + Supabase (atoms + connections) + synthesis.md (LLM narrative)
+  → export-brain.py --brain {slug}
+    → complete customer-facing pack (zero hardcoded content)
 ```
 
-## How It Works
+The system is **config-driven**. `brain.json` is the single source of truth. Templates, export pipeline, enrichment scripts, and explore.html all read from it. Adding a brain is a content problem, not an engineering problem.
 
-1. Brain config (`brains/{slug}.json`) provides all per-brain values
-2. Supabase stores atoms + connections + brain metadata
-3. `export-brain.py` reads data + config → renders templates → outputs a complete brain pack
+### Two Audiences, Two Paths
 
-One command, any brain:
+- **LLMs** load `brain-context.md` — synthesis narrative + LLM rules + all atoms
+- **Humans** open `explore.html` — data-driven UI that reads `brain-atoms.json` (including synthesis)
+
+---
+
+## Step-by-Step: Building a New Brain
+
+### Phase 1: Setup (~30 min)
+
+#### 1. Create the directory structure
 
 ```bash
-python scripts/export-brain.py --brain belsky --from-files atoms.json connections.json
+mkdir -p brains/{slug}/{source,research,data,pack}
 ```
 
-## Template Variables
+#### 2. Create Supabase tables
+
+```bash
+sed 's/{{SLUG}}/{slug}/g; s/{{NAME}}/{Full Name}/g' templates/create-brain-tables.sql | psql $DATABASE_URL
+```
+
+This creates:
+- `{slug}_atoms` — atoms with content, original_quote, implication, cluster, topics, embedding, confidence
+- `{slug}_connections` — typed relationships (supports, contradicts, extends, related, inspired_by)
+- Proper indexes, RLS policies, and a `brain_metadata` registry entry
+
+#### 3. Fill brain.json
+
+Copy from an existing brain as a starting point:
+
+```bash
+cp brains/scott-belsky/brain.json brains/{slug}/brain.json
+```
+
+Replace ALL values. Required fields:
+
+**Basic identity:**
+- `brain_name`, `brain_first_name`, `brain_last_name`, `brain_slug`
+- `brain_possessive` ("his", "her", "their")
+- `brain_bio` (2-3 sentences), `brain_tagline` (one-liner)
+
+**Source material:**
+- `brain_source_description` (e.g., "\"The Drive\" podcast and \"Outlive\" book")
+- `brain_source_url`, `brain_source_detail`, `edition_count`, `date_range`
+
+**Topic taxonomy:**
+- `clusters` — 12-16 topic clusters, each with `name` and `description`
+- `cluster_order` — display order array
+
+**Skill examples:**
+- `skill_examples.{advise,debate,apply,teach,deep_dive,connect,brainfight,mashup,evolve}` — one-liner per skill
+- `workflow_examples.{learning,research}` — workflow narratives
+- `quick_start_prompt`, `example_topic`, `topic_examples`
+
+**Supabase config:**
+- `supabase.project_id`, `supabase.atoms_table`, `supabase.connections_table`
+
+**Synthesis section** (renders the "How They Think" tab in explore.html):
+- `synthesis.hero_tagline`, `synthesis.hero_updated`
+- `synthesis.first_principles` — array of `{title, desc}` (8-12 items)
+- `synthesis.thinking_patterns` — array of `{name, desc}` (6-10 items)
+- `synthesis.contrarian_positions` — array of `{title, desc}` (8-12 items)
+- `synthesis.does_not_believe` — array of `{title, desc}` (5-7 items)
+- `synthesis.would_not_say` — array of `{title, desc}` (4-6 items)
+- `synthesis.biography` — array of `{date, role, lesson}` (4-6 entries)
+- `synthesis.skills` — array of `{name, title, desc, example}` (10 items)
+
+#### 4. Write synthesis.md
+
+The narrative "How They Think" document that gets embedded into `brain-context.md` for LLMs. Format:
+
+```markdown
+## How {Name} Thinks
+
+### First Principles
+**1. [Title].** [Explanation]
+...
+
+### Thinking Patterns
+**[Pattern name].** [Explanation]
+...
+
+### Contrarian Positions
+**[Position].** [Explanation]
+...
+
+### What {Name} Does NOT Believe
+**"[Claim]".** [Counter-explanation]
+...
+
+### What This Brain Would NOT Say
+**"[Claim]".** [Explanation]
+...
+
+### Biographical Pattern
+[Career timeline narrative]
+```
+
+This is the intellectual heavy lift — requires reading/watching the person's work and distilling their mental models (4-8 hours of research + writing).
+
+---
+
+### Phase 2: Ingest Content (~2-8 hours)
+
+#### 5. Gather source material
+
+Brain-specific. Examples:
+- **Belsky**: 77 Implications newsletter editions (scraped via Firecrawl)
+- **Attia**: Outlive chapters, Drive podcast transcripts, blog posts
+
+Store raw inputs in `brains/{slug}/source/`.
+
+#### 6. Extract atoms
+
+Decompose each piece of content into atomic insights. An atom is one discrete idea, belief, framework, or principle.
+
+Each atom needs:
+- `content` (required) — the insight itself
+- `cluster` — which topic cluster it belongs to
+- `topics[]` — topic tags for cross-cluster search
+- `source_ref` — URL to original source
+- `source_date` — publication date
+- `confidence_tier` — high / medium / low
+
+#### 7. Load atoms into Supabase
+
+Insert into `{slug}_atoms`. Target: **100+ atoms minimum** for a brain to feel worth it. 200-300 is ideal.
+
+---
+
+### Phase 3: Enrich (~1-2 hours compute + review)
+
+#### 8. Voice enrichment
+
+```bash
+python scripts/enrich-voice.py --brain {slug}
+python scripts/enrich-voice.py --brain {slug} --limit 20    # smaller batch
+python scripts/enrich-voice.py --brain {slug} --dry-run      # preview
+```
+
+What it does:
+- Fetches original source URLs for each atom
+- Uses Haiku to extract the thinker's **actual language** (`original_quote`) and the "so what" (`implication`)
+- Outputs `brains/{slug}/data/voice-enrichment-review.json` for human QA
+
+To apply after review:
+```bash
+python scripts/enrich-voice.py --brain {slug} --apply brains/{slug}/data/voice-enrichment-review.json
+```
+
+#### 9. Connection discovery
+
+```bash
+python scripts/enrich-connections.py --brain {slug} --discover         # topic + temporal
+python scripts/enrich-connections.py --brain {slug} --discover --llm   # + LLM analysis
+python scripts/enrich-connections.py --brain {slug} --stats            # check progress
+```
+
+Three discovery methods:
+1. **Topic overlap** — Jaccard similarity between atoms' topic tags within same cluster → `related`
+2. **Temporal proximity** — Atoms published within 7 days with 2+ shared topics → `extends`
+3. **LLM analysis** — Haiku analyzes each cluster for `contradicts`, `extends`, `inspired_by` (highest value)
+
+To apply after review:
+```bash
+python scripts/enrich-connections.py --brain {slug} --apply brains/{slug}/data/connection-candidates.json
+```
+
+#### 10. Generate embeddings (optional for v1)
+
+1536-dim vectors via OpenAI `text-embedding-3-large` for semantic search. Required for API-backed search; optional for flat-file delivery.
+
+---
+
+### Phase 4: Export & Ship (~5 min)
+
+#### 11. Run the export pipeline
+
+```bash
+python scripts/export-brain.py --brain {slug} --from-files atoms.json connections.json
+```
+
+One command generates the entire customer-facing pack in `brains/{slug}/pack/`:
+
+| File | Purpose | Source |
+|------|---------|--------|
+| `brain-atoms.json` | All atoms, connections, topic index, metadata, synthesis data | Supabase data + brain.json |
+| `brain-context.md` | THE LLM file (synthesis + rules + all atoms) | Supabase data + synthesis.md |
+| `explore.html` | THE human file (data-driven UI) | Shared template (reads brain-atoms.json) |
+| `SKILL.md` | Brain setup skill | Template + brain.json |
+| `README.md` | Quick start guide | Template + brain.json |
+| `skills/*/SKILL.md` | 10 thinking skills | Templates + brain.json |
+
+#### 12. Register in index.json
+
+Add an entry to `brains/index.json`:
+
+```json
+{
+  "slug": "{slug}",
+  "name": "{Full Name}",
+  "source": "{Source description}",
+  "atom_count": 0,
+  "connection_count": 0,
+  "status": "scaffolded",
+  "pack_path": "brains/{slug}/pack/"
+}
+```
+
+Update `atom_count` and `connection_count` after export, change `status` to `live` when ready.
+
+#### 13. Verify
+
+- Open `pack/explore.html` in a browser
+- Check: synthesis tab renders all sections, atoms load and are searchable, skills display correctly
+- Grep for `{{` in all pack files — no unresolved template variables
+- Spot-check atom count matches Supabase
+
+---
+
+## Template Variables Reference
 
 Templates use `{{variable}}` syntax. Nested keys use dots: `{{skill_examples.advise}}`.
 
-### Core Variables
-
-| Variable | Example (Belsky) | Used In |
-|----------|-------------------|---------|
-| `brain_name` | Scott Belsky | All files |
-| `brain_first_name` | Scott | All files |
-| `brain_last_name` | Belsky | All skill files |
-| `brain_slug` | belsky | SKILL.md, README.md |
-| `brain_possessive` | his | SKILL.md |
-| `brain_source_description` | "Implications" newsletter | SKILL.md |
-| `brain_source_url` | implications.com | brain-context.md |
-| `brain_source_detail` | 77 editions of the Implications newsletter | SKILL.md, README.md |
+| Variable | Example | Used In |
+|----------|---------|---------|
+| `brain_name` | Peter Attia | All files |
+| `brain_first_name` | Peter | All skill files |
+| `brain_last_name` | Attia | Tab labels |
+| `brain_slug` | peter-attia | SKILL.md, README.md |
+| `brain_possessive` | his | SKILL.md, explore.html |
+| `brain_source_description` | "The Drive" podcast | SKILL.md, brain-context.md |
+| `brain_source_url` | peterattiamd.com | README.md |
+| `brain_source_detail` | 400+ episodes... | SKILL.md, README.md |
 | `brain_tagline` | a curated collection of... | SKILL.md |
-| `brain_bio` | Full bio paragraph | SKILL.md, README.md |
-| `atom_count` | 284 | All files |
-| `connection_count` | 161 | SKILL.md, README.md |
-| `topic_examples` | Superhumanity, originality, AI agents... | SKILL.md, README.md |
-| `example_topic` | emergence | SKILL.md |
-| `date_range` | May 2014 — April 2026 | README.md, brain-context.md |
-| `quick_start_prompt` | I'm thinking about whether to... | SKILL.md |
+| `brain_bio` | Full bio paragraph | SKILL.md, README.md, explore.html |
+| `atom_count` | 284 | All files (injected at export) |
+| `connection_count` | 430 | All files (injected at export) |
+| `topic_examples` | Zone 2, VO2 max, ... | SKILL.md, README.md |
+| `example_topic` | VO2 max | SKILL.md |
+| `date_range` | 2013 — April 2026 | README.md |
+| `quick_start_prompt` | I'm 45 and want to... | SKILL.md |
+| `skill_examples.*` | One-liner per skill | SKILL.md |
+| `workflow_examples.*` | Workflow narrative | SKILL.md |
 
-### Skill Examples (per-skill one-liner)
+---
 
-| Variable | Used In |
-|----------|---------|
-| `skill_examples.advise` | SKILL.md |
-| `skill_examples.debate` | SKILL.md |
-| `skill_examples.apply` | SKILL.md |
-| `skill_examples.teach` | SKILL.md |
-| `skill_examples.deep_dive` | SKILL.md |
-| `skill_examples.connect` | SKILL.md |
-| `skill_examples.brainfight` | SKILL.md |
-| `skill_examples.mashup` | SKILL.md |
-| `skill_examples.evolve` | SKILL.md |
+## Directory Structure
 
-### Workflow Examples
+```
+brainsforsale/
+  CLAUDE.md                          ← project instructions
+  IMPROVEMENTS.md                    ← backlog
 
-| Variable | Used In |
-|----------|---------|
-| `workflow_examples.learning` | SKILL.md |
-| `workflow_examples.research` | SKILL.md |
+  scripts/                           ← SHARED pipeline (brain-agnostic)
+    export-brain.py                  ← generic: --brain {slug}
+    enrich-voice.py                  ← generic: --brain {slug}
+    enrich-connections.py            ← generic: --brain {slug}
 
-### Cluster Config
+  templates/                         ← SHARED templates
+    SKILL.md.template                ← brain-setup template
+    README.md.template               ← quick start template
+    README.dev.md                    ← THIS FILE
+    explore.html.template            ← data-driven human UI
+    create-brain-tables.sql          ← Supabase table template
+    skills/                          ← 10 skill templates
+      advise.md.template, teach.md.template, etc.
 
-`clusters` — JSON object mapping cluster keys to `{name, description}`. Used by export script to generate brain-context.md and brain-atoms.json.
-
-`cluster_order` — JSON array of cluster keys in display order.
-
-## Adding a New Brain
-
-### 1. Create brain config
-
-Copy `brains/belsky.json` as a starting point:
-
-```bash
-cp brains/belsky.json brains/{newslug}.json
+  brains/
+    index.json                       ← registry of all brains
+    scott-belsky/                    ← brain #1
+      brain.json, synthesis.md, source/, research/, data/, pack/
+    peter-attia/                     ← brain #2
+      brain.json, synthesis.md, source/, research/, data/, pack/
 ```
 
-Edit all values. The key authoring work is:
-- `brain_bio` — 2-3 sentence bio
-- `brain_tagline` — One-line description of the source material
-- `skill_examples.*` — One-liner examples using this thinker's frameworks
-- `workflow_examples.*` — Workflow narratives for this thinker's domains
-- `quick_start_prompt` — A prompt that tests the brain's core thinking
-- `clusters` — Topic taxonomy for this brain's atoms
-- `cluster_order` — Display order
+---
 
-### 2. Create Supabase tables
+## Quality Targets per Brain
 
-```sql
--- Atoms table (same schema as belsky_atoms)
-CREATE TABLE {slug}_atoms (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  content text NOT NULL,
-  source_type text,
-  source_ref text,
-  source_date timestamptz,
-  confidence float,
-  topics text[],
-  cluster text,
-  embedding vector(1536),
-  created_at timestamptz DEFAULT now()
-);
+| Metric | Minimum | Good | Great |
+|--------|---------|------|-------|
+| Atoms | 100 | 200 | 300+ |
+| Connections | 50 | 200 | 400+ |
+| Voice enriched (%) | 0% | 30% | 80%+ |
+| Contradicts connections | 5 | 15 | 30+ |
+| Orphan atoms | <20% | <10% | 0 |
+| Clusters | 8 | 12 | 16 |
 
--- Connections table
-CREATE TABLE {slug}_connections (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  atom_id_1 uuid REFERENCES {slug}_atoms(id),
-  atom_id_2 uuid REFERENCES {slug}_atoms(id),
-  relationship text CHECK (relationship IN ('supports','contradicts','extends','related','inspired_by')),
-  confidence float,
-  created_at timestamptz DEFAULT now()
-);
-
--- Brain metadata row
-INSERT INTO brain_metadata (slug, name, ..., atoms_table, connections_table, status)
-VALUES ('{slug}', '{Name}', ..., '{slug}_atoms', '{slug}_connections', 'draft');
-```
-
-### 3. Ingest atoms
-
-Load the source material, extract atoms, assign clusters, generate embeddings, create connections. (Ingestion pipeline is brain-specific — see individual brain build notes.)
-
-### 4. Export
-
-```bash
-# From local files
-python scripts/export-brain.py --brain {slug} --from-files atoms.json connections.json
-
-# Output appears in brainsforsale-{slug}/
-```
-
-### 5. Verify
-
-- `brain-atoms.json` — correct atom/connection counts, all clusters assigned, connections inline
-- `brain-context.md` — all clusters present, atoms organized by date
-- `SKILL.md` — all template vars rendered, no `{{}}` remaining
-- `skills/*.md` — name references match, atom counts correct
+---
 
 ## Supabase Schema
 
-### brain_metadata
+### Per-brain tables
 
-Stores one row per brain. All config values from `brains/{slug}.json` are mirrored here. The flat file is used for local exports; Supabase is source of truth.
+- `{slug}_atoms` — content, original_quote, implication, cluster, topics[], source_ref, source_date, confidence, confidence_tier, embedding(1536)
+- `{slug}_connections` — atom_id_1, atom_id_2, relationship, confidence
 
-Key fields:
-- `slug` (unique) — Brain identifier
-- `atoms_table` — Name of the Supabase table holding this brain's atoms
-- `connections_table` — Name of the connections table
-- `status` — `draft` | `active` | `archived`
-- `clusters` (jsonb) — Full cluster metadata
-- `skill_examples` (jsonb) — Per-skill example prompts
+### Shared tables
 
-### {slug}_atoms
-
-One row per knowledge atom. Schema matches `knowledge_atoms` but separated per brain.
-
-### {slug}_connections
-
-Typed relationships between atoms within this brain.
-
-### cross_connections
-
-Cross-brain connections (e.g., Rob's atoms linked to Belsky's). Uses atom IDs from different brain tables.
-
-## Pipeline Flow
-
-```
-Source Material (newsletter, book, podcast, etc.)
-  ↓
-Ingestion (extract atoms, assign topics, generate embeddings)
-  ↓
-Supabase ({slug}_atoms + {slug}_connections)
-  ↓
-export-brain.py --brain {slug}
-  ↓
-brainsforsale-{slug}/
-  ├── brain-atoms.json      (from Supabase data)
-  ├── brain-context.md      (from Supabase data)
-  ├── SKILL.md              (from template + config)
-  ├── README.md             (from template + config)
-  └── skills/*.md           (from templates + config)
-  ↓
-npx skills add brainsforsale-{slug}
-```
+- `brain_metadata` — one row per brain (slug, name, tables, status, config)
+- `cross_connections` — cross-brain relationships (future)

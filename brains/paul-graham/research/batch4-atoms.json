@@ -1,0 +1,415 @@
+[
+  {
+    "essay_url": "https://paulgraham.com/selfindulgence.html",
+    "essay_title": "How to Lose Time and Money",
+    "essay_date": "July 2010",
+    "atoms": [
+      {
+        "content": "The most dangerous way to lose time is not through spending it on fun, but through activities that feel like work but aren't actually productive. The worst time sinks are things that seem virtuous or important.",
+        "cluster": "philosophy_life",
+        "topics": ["time management", "productivity", "self-deception"],
+        "confidence_tier": "high",
+        "original_quote": "The most dangerous way to lose time is not to spend it having fun, but to spend it doing fake work."
+      },
+      {
+        "content": "The default response to losing money is to try not to spend it, but the more dangerous way to lose money is through bad investments, not expenditures. Similarly, the default way to lose time is not through leisure but through tasks that feel productive but aren't.",
+        "cluster": "wealth_economics",
+        "topics": ["money", "investing", "time management"],
+        "confidence_tier": "high",
+        "original_quote": "The most dangerous way to lose money is not to spend it but to invest it poorly."
+      },
+      {
+        "content": "Compounding works in both directions. Small, unnoticed losses of time accumulate just like small, unnoticed losses of money. The insidiousness is that each individual loss seems trivial.",
+        "cluster": "philosophy_life",
+        "topics": ["compounding", "time", "awareness"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "People's instinct to avoid spending leads them to hold onto depreciating assets or time-wasting commitments. The sunk cost fallacy applies to time just as it does to money.",
+        "cluster": "philosophy_life",
+        "topics": ["sunk cost", "decision making", "time"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/kids.html",
+    "essay_title": "Having Kids",
+    "essay_date": "December 2019",
+    "atoms": [
+      {
+        "content": "Having kids is like a shift in the baseline of existence. The happiness they provide is not the ecstatic kind but something deeper and more pervasive, like moving to a place with better weather. You don't notice it moment by moment, but your whole life is better.",
+        "cluster": "philosophy_life",
+        "topics": ["parenting", "happiness", "life decisions"],
+        "confidence_tier": "high",
+        "original_quote": "It's like taking a vacation to somewhere with a delightful climate. You feel better the whole time."
+      },
+      {
+        "content": "The reason people who don't have kids can't understand what it's like is that there's no frame of reference available before you have them. It's not that having kids is better or worse than expected — it's that the experience is qualitatively different from anything else.",
+        "cluster": "philosophy_life",
+        "topics": ["parenting", "experience", "knowledge"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Having kids makes you more empathetic and less selfish, not through moral effort but through forced exposure. You simply can't remain as self-centered when another human is completely dependent on you.",
+        "cluster": "philosophy_life",
+        "topics": ["parenting", "empathy", "personal growth"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "One of the biggest surprises of having kids is how much you like them as people. The love isn't just biological obligation — you genuinely enjoy their company and find them interesting.",
+        "cluster": "philosophy_life",
+        "topics": ["parenting", "relationships", "surprise"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "The fear that kids will destroy your productivity is overblown. Having kids forces you to be more efficient with the time you do have. The constraint on your time actually increases your output per hour.",
+        "cluster": "philosophy_life",
+        "topics": ["parenting", "productivity", "constraints"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/goodwriting.html",
+    "essay_title": "Write Like You Talk",
+    "essay_date": "October 2015",
+    "atoms": [
+      {
+        "content": "The test of good writing is simple: read it aloud, and if it sounds like something you'd never actually say, rewrite it. Written language should be informal enough that you could imagine speaking it.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "clarity", "communication"],
+        "confidence_tier": "high",
+        "original_quote": "Here's a simple trick for getting more people to read what you write: write in spoken language."
+      },
+      {
+        "content": "Most bad writing comes from trying to sound impressive rather than trying to be clear. Academic and corporate prose is terrible because the writers are optimizing for status, not communication.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "status", "clarity"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Written language diverged from spoken language because of historical accident — the printing press froze conventions that spoken language kept evolving past. The gap between written and spoken English is artificial, not necessary.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "language", "history"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "The most persuasive writing feels like a conversation with a smart friend. The reader feels they're being talked to, not lectured at. Conversational tone is not dumbing down — it's the highest form of clarity.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "persuasion", "tone"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/do.html",
+    "essay_title": "The Right Kind of Stubborn",
+    "essay_date": "November 2024",
+    "atoms": [
+      {
+        "content": "There are two kinds of stubbornness: persistent and obstinate. Persistent people keep working toward a goal but stay flexible about how to get there. Obstinate people keep doing the same thing regardless of whether it's working. The distinction is critical for founders.",
+        "cluster": "ambition_greatwork",
+        "topics": ["persistence", "stubbornness", "founders", "flexibility"],
+        "confidence_tier": "high",
+        "original_quote": "Persistent people are attached to the goal. Obstinate people are attached to their ideas about how to reach it."
+      },
+      {
+        "content": "The best founders combine determination with flexibility — they're persistent about the destination but constantly adapting the route. The worst founders are obstinate: they confuse changing tactics with giving up.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "persistence", "pivoting", "determination"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Obstinacy is often disguised as conviction. From the outside, a persistent person and an obstinate one can look identical — both refuse to quit. The difference only becomes visible in how they respond to new information.",
+        "cluster": "ambition_greatwork",
+        "topics": ["conviction", "stubbornness", "self-awareness"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "You can detect obstinacy in yourself by examining whether your continued pursuit of a strategy is based on evidence or on ego. If you'd be embarrassed to change course, that's a sign you're being obstinate rather than persistent.",
+        "cluster": "philosophy_life",
+        "topics": ["self-awareness", "ego", "decision making"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "The best test of whether you're being persistent or obstinate is to ask: am I solving the same problem or pursuing the same solution? Persistence means you keep attacking the problem from new angles. Obstinacy means you keep trying the same approach that isn't working.",
+        "cluster": "ambition_greatwork",
+        "topics": ["persistence", "problem solving", "iteration"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/heresy.html",
+    "essay_title": "Heresy",
+    "essay_date": "April 2022",
+    "atoms": [
+      {
+        "content": "In every era, there are opinions that are considered heretical — not wrong in the sense of being provably false, but simply unacceptable to state. The set of heresies changes over time, which proves they're more about social consensus than truth.",
+        "cluster": "philosophy_life",
+        "topics": ["heresy", "conformism", "intellectual freedom", "social pressure"],
+        "confidence_tier": "high",
+        "original_quote": "Every era has its heresies, and if you don't get in trouble for any of them, you're probably not thinking very carefully."
+      },
+      {
+        "content": "The test for whether you're an independent thinker is not whether you hold contrarian views, but whether you'd be willing to express them in public even when there are social consequences for doing so.",
+        "cluster": "philosophy_life",
+        "topics": ["independent thinking", "courage", "conformism"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The most important heresies are the ones where the orthodox position is not merely wrong but where the taboo against questioning it actively prevents important truths from being discovered or discussed.",
+        "cluster": "philosophy_life",
+        "topics": ["heresy", "truth", "taboo", "epistemology"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "You can map the intellectual freedom of a society by counting its heresies. A society with many heresies — many things you can't say — is one where independent thinking is constrained. The healthiest intellectual cultures minimize the number of forbidden questions.",
+        "cluster": "philosophy_life",
+        "topics": ["intellectual freedom", "society", "culture"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "Heresy and courage are linked. The reason most people don't think independently isn't that they can't — it's that they don't want to deal with the social consequences. Independent thinking is more a matter of character than intelligence.",
+        "cluster": "philosophy_life",
+        "topics": ["courage", "independent thinking", "character"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/newcity.html",
+    "essay_title": "How to Make Pittsburgh a Startup Hub",
+    "essay_date": "April 2016",
+    "atoms": [
+      {
+        "content": "The key ingredient for a startup hub is not money, office space, or tax incentives — it's a critical mass of ambitious, technical people who want to start companies. Everything else follows from having the right people concentrated in one place.",
+        "cluster": "silicon_valley",
+        "topics": ["startup hubs", "talent", "cities", "concentration"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Universities are the most reliable seed for startup hubs because they concentrate young, technically ambitious people. The path to building a startup hub runs through making the local university a magnet for top CS talent.",
+        "cluster": "silicon_valley",
+        "topics": ["universities", "startup hubs", "talent pipeline"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "What kills most aspiring startup hubs is that the graduates of their good universities leave. The problem isn't producing talent — it's retaining it. You need to make the city a place where ambitious 25-year-olds actually want to live.",
+        "cluster": "silicon_valley",
+        "topics": ["talent retention", "cities", "startup hubs", "lifestyle"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Government attempts to create startup hubs through top-down programs almost always fail because they optimize for the wrong things. Startups don't need grants and incubators — they need cheap rent, good coffee shops, and other founders to talk to.",
+        "cluster": "silicon_valley",
+        "topics": ["government", "startup hubs", "organic growth"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "A city's startup scene grows organically from the bottom up. You need a few successful startups that serve as role models, attract talent, and create alumni who start the next generation of companies. It's a flywheel, not a program.",
+        "cluster": "silicon_valley",
+        "topics": ["startup ecosystem", "flywheel", "role models"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/noob.html",
+    "essay_title": "Being a Noob",
+    "essay_date": "January 2020",
+    "atoms": [
+      {
+        "content": "Being a noob — a beginner — is uncomfortable but it's actually one of the most valuable states to be in. Noobs see things that experts have become blind to. The discomfort of being a beginner is the feeling of potential learning.",
+        "cluster": "philosophy_life",
+        "topics": ["learning", "beginner mindset", "expertise", "discomfort"],
+        "confidence_tier": "high",
+        "original_quote": "The feeling of being a noob is inversely correlated with actual danger."
+      },
+      {
+        "content": "The advantages of being a noob: you see things with fresh eyes, you ask questions experts stopped asking, you're not constrained by conventions, and your ignorance lets you try approaches that experts know 'don't work' but occasionally do.",
+        "cluster": "ideas_creativity",
+        "topics": ["beginner mindset", "fresh perspective", "innovation"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Many people organize their entire lives to avoid being a noob. They stick with what they know, avoid new domains, and optimize for competence over learning. This is a recipe for stagnation — the most interesting things happen when you're a beginner.",
+        "cluster": "philosophy_life",
+        "topics": ["comfort zone", "growth", "stagnation", "learning"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "If you're not occasionally feeling like a noob, you're probably not learning enough. The willingness to feel stupid is a prerequisite for growth. People who refuse to feel like beginners have implicitly decided to stop growing.",
+        "cluster": "ambition_greatwork",
+        "topics": ["growth", "learning", "vulnerability", "ambition"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/own.html",
+    "essay_title": "How People Get Rich Now",
+    "essay_date": "April 2021",
+    "atoms": [
+      {
+        "content": "The nature of wealth creation has fundamentally changed. In 1960, the richest people were mostly executives of large companies or heirs. Now they're mostly founders who created something new. Wealth increasingly comes from building, not managing or inheriting.",
+        "cluster": "wealth_economics",
+        "topics": ["wealth creation", "founders", "economic change"],
+        "confidence_tier": "high",
+        "original_quote": "In 1960, most of the people who were rich had inherited their wealth. Now most rich people made it."
+      },
+      {
+        "content": "The shift from inherited/executive wealth to founder wealth is driven by technology making it possible to build things that scale to millions of users with small teams. Software is the ultimate leverage for wealth creation.",
+        "cluster": "wealth_economics",
+        "topics": ["technology", "leverage", "software", "scale"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The new rich are younger because technology companies can grow to enormous scale in just a few years. The old model — climb a corporate ladder for decades — is being replaced by: build something, grow it fast, capture the value.",
+        "cluster": "wealth_economics",
+        "topics": ["wealth", "speed", "startups", "youth"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The concentration of wealth among founders is not a sign that the economy is broken — it's a sign that the economy increasingly rewards creation over extraction. Founders who create a billion dollars of value and keep 10% are creating 10x more than they capture.",
+        "cluster": "wealth_economics",
+        "topics": ["wealth creation", "inequality", "value creation"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Venture capital and startup funding have become the primary mechanism for turning ideas into wealth. The entire funding ecosystem — angels, VCs, accelerators — exists to identify people who can create new wealth and give them the resources to do it.",
+        "cluster": "fundraising_investors",
+        "topics": ["venture capital", "wealth creation", "startup ecosystem"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/early.html",
+    "essay_title": "Early Work",
+    "essay_date": "October 2020",
+    "atoms": [
+      {
+        "content": "The reason people don't do great work is not that they can't, but that they're afraid of producing something bad in the early stages. The willingness to be bad at first is the prerequisite for eventually being great. Early work is necessarily imperfect.",
+        "cluster": "ambition_greatwork",
+        "topics": ["early work", "fear", "perfectionism", "creative process"],
+        "confidence_tier": "high",
+        "original_quote": "One of the biggest things holding people back from doing great work is the fear of making something lame."
+      },
+      {
+        "content": "Early work needs to be treated differently from finished work. Judging early-stage work by the standards of mature work kills it. The key is to lower the bar for getting started and raise it gradually as the work develops.",
+        "cluster": "ambition_greatwork",
+        "topics": ["creative process", "iteration", "standards", "getting started"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The best creators have a two-track mind: one part that generates ideas freely without judgment, and another that evaluates critically. The mistake is letting the critical part dominate too early, which prevents anything from being created in the first place.",
+        "cluster": "ideas_creativity",
+        "topics": ["creativity", "judgment", "generation", "inner critic"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Many people who could do great work never start because they compare their imagined first attempt to other people's finished work. The comparison is wildly unfair — you're comparing your Chapter 1 to someone else's Chapter 20.",
+        "cluster": "ambition_greatwork",
+        "topics": ["comparison", "getting started", "creative process"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      },
+      {
+        "content": "The secret that experienced creators know is that ALL early work is bad. The difference between someone who does great work and someone who doesn't is not the quality of their early work — it's their willingness to push through the bad early stage.",
+        "cluster": "ambition_greatwork",
+        "topics": ["persistence", "early work", "creative process"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Treating early work as too precious — refusing to share it, refusing to get feedback, refusing to let it be imperfect — is a form of procrastination disguised as quality control. Ship early, iterate often.",
+        "cluster": "startups_founding",
+        "topics": ["shipping", "feedback", "iteration", "perfectionism"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/lesson.html",
+    "essay_title": "The Lesson to Unlearn",
+    "essay_date": "December 2019",
+    "atoms": [
+      {
+        "content": "The most damaging thing school teaches is to hack tests rather than actually learn the material. Students optimize for grades, not understanding, and this pattern of gaming metrics rather than pursuing substance persists throughout adult life.",
+        "cluster": "education_learning",
+        "topics": ["education", "testing", "gaming metrics", "learning"],
+        "confidence_tier": "high",
+        "original_quote": "The most damaging thing you learned in school wasn't something you learned in any specific class. It was learning to get good grades."
+      },
+      {
+        "content": "The skill of figuring out what the teacher wants and giving it to them is actively harmful in the real world. In school, there's always someone defining what success looks like. In life, you have to figure that out yourself.",
+        "cluster": "education_learning",
+        "topics": ["education", "autonomy", "real world", "self-direction"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Tests measure a narrow form of ability — the ability to perform under artificial constraints on someone else's schedule. Real-world success requires self-directed exploration, which is almost the opposite of what tests reward.",
+        "cluster": "education_learning",
+        "topics": ["testing", "self-direction", "artificial constraints"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "The lesson to unlearn is that the way to succeed is to figure out the system and game it. In the real world, the people who do the best work are the ones who focus on the work itself rather than on how they'll be evaluated.",
+        "cluster": "education_learning",
+        "topics": ["intrinsic motivation", "gaming systems", "great work"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Curiosity is the antidote to the test-hacking mindset. Curious people learn because they want to understand, not because they'll be tested. The transition from extrinsic to intrinsic motivation is the most important intellectual transition a person can make.",
+        "cluster": "education_learning",
+        "topics": ["curiosity", "intrinsic motivation", "learning", "intellectual growth"],
+        "confidence_tier": "high",
+        "original_quote": ""
+      },
+      {
+        "content": "Many adults are still unconsciously hacking tests — seeking external validation, optimizing for metrics that don't matter, doing what looks impressive rather than what's actually valuable. Recognizing this pattern is the first step to breaking it.",
+        "cluster": "philosophy_life",
+        "topics": ["self-awareness", "external validation", "metrics", "authenticity"],
+        "confidence_tier": "medium",
+        "original_quote": ""
+      }
+    ]
+  }
+]

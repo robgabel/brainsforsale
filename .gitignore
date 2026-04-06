@@ -25,3 +25,12 @@ brains/*/data/
 
 # Embeddings (too large for git, regenerate from Supabase)
 brains/*/pack/embeddings/
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+
+# Claude Code local settings
+.claude/settings.local.json

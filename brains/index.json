@@ -8,6 +8,24 @@
       "connection_count": 430,
       "status": "live",
       "pack_path": "brains/scott-belsky/pack/"
+    },
+    {
+      "slug": "peter-attia",
+      "name": "Peter Attia",
+      "source": "The Drive podcast + Outlive",
+      "atom_count": 73,
+      "connection_count": 0,
+      "status": "ingesting",
+      "pack_path": "brains/peter-attia/pack/"
+    },
+    {
+      "slug": "paul-graham",
+      "name": "Paul Graham",
+      "source": "paulgraham.com essays (220+)",
+      "atom_count": 182,
+      "connection_count": 0,
+      "status": "live",
+      "pack_path": "brains/paul-graham/pack/"
     }
   ]
 }

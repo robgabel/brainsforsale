@@ -1,0 +1,436 @@
+[
+  {
+    "essay_url": "https://paulgraham.com/ds.html",
+    "essay_title": "Do Things that Don't Scale",
+    "essay_date": "July 2013",
+    "atoms": [
+      {
+        "content": "The most common unscalable thing founders have to do at the start is recruit users manually. You can't wait for users to come to you. You have to go out and get them.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "growth", "manual-effort", "early-stage"],
+        "confidence_tier": "high",
+        "original_quote": "The most common unscalable thing founders have to do at the start is recruit users manually."
+      },
+      {
+        "content": "Startups take off because the founders make them take off. There's no magical growth engine that kicks in once you build the product. The initial push is always manual, always hard, and feels embarrassingly unscalable.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "growth", "hustle", "founding"],
+        "confidence_tier": "high",
+        "original_quote": "Startups take off because the founders make them take off."
+      },
+      {
+        "content": "The big danger of doing things that don't scale is not that you'll waste effort but that you won't. Many startup founders skip the unscalable work because it feels beneath them or because they're focused prematurely on scale.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "premature-scaling", "founder-psychology"],
+        "confidence_tier": "high",
+        "original_quote": "The big danger is not that you'll waste effort on unscalable things but that you won't bother to do them."
+      },
+      {
+        "content": "You should take extraordinary measures to make your early users happy. Delight them individually. The service you provide should be so insanely good at the start that users can't help but tell others. This is the Collison brothers' approach at Stripe: they'd physically install it for you.",
+        "cluster": "startups_founding",
+        "topics": ["customer-delight", "startups", "user-acquisition", "stripe"],
+        "confidence_tier": "high",
+        "original_quote": "Your first users should feel that signing up with you was one of the best choices they ever made."
+      },
+      {
+        "content": "There's a distinction between consulting (doing things manually for individual users) and a startup (building scalable technology). But in the earliest days, the line between them should blur. The manual things you do will teach you what to automate.",
+        "cluster": "startups_founding",
+        "topics": ["consulting", "automation", "learning", "product-development"],
+        "confidence_tier": "medium",
+        "original_quote": "Sometimes the unscalable trick is to do things manually that you plan to automate later."
+      },
+      {
+        "content": "The feedback loop from manual, unscalable engagement with users is the most valuable thing a startup has in its early days. It tells you what to build. Founders who skip this step end up building products nobody wants.",
+        "cluster": "startups_founding",
+        "topics": ["feedback", "product-market-fit", "user-research"],
+        "confidence_tier": "high",
+        "original_quote": "Your attention to users will be rewarded with a product that exactly meets their needs."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/startupideas.html",
+    "essay_title": "How to Get Startup Ideas",
+    "essay_date": "November 2012",
+    "atoms": [
+      {
+        "content": "The best startup ideas come from noticing problems you have yourself, not from sitting down and trying to think of startup ideas. The verb should be 'notice' not 'think of.' The best ideas are already there, waiting to be noticed by someone living at the intersection of the problem and the capability.",
+        "cluster": "ideas_creativity",
+        "topics": ["startup-ideas", "observation", "problem-finding"],
+        "confidence_tier": "high",
+        "original_quote": "The verb you want to use with startup ideas is not 'think up' but 'notice.'"
+      },
+      {
+        "content": "The most dangerous mistake is building something nobody wants. The way to avoid that is to make something you yourself want. You're at least one data point of demand.",
+        "cluster": "startups_founding",
+        "topics": ["product-market-fit", "self-use", "demand-validation"],
+        "confidence_tier": "high",
+        "original_quote": "Why do so many founders build things no one wants? Because they begin by trying to think of startup ideas."
+      },
+      {
+        "content": "Live in the future, then build what's missing. The best founders see what the world will need before the world knows it needs it, because they're already living in that future through their work or expertise.",
+        "cluster": "ideas_creativity",
+        "topics": ["future-thinking", "innovation", "startup-ideas"],
+        "confidence_tier": "high",
+        "original_quote": "Live in the future, then build what's missing."
+      },
+      {
+        "content": "The best ideas look like bad ideas to most people. If an idea is obviously good, someone else would have already done it. The sweet spot is an idea that sounds bad but is actually good — this is what keeps big companies from competing with you.",
+        "cluster": "ideas_creativity",
+        "topics": ["contrarian-thinking", "competition", "startup-ideas"],
+        "confidence_tier": "high",
+        "original_quote": "The best startup ideas tend to have three things in common: they're something the founders themselves want, that they themselves can build, and that few others realize are worth doing."
+      },
+      {
+        "content": "It's better to start with something a small number of people want a large amount than something a large number of people want a small amount. The former is the seed for real growth. Breadth of demand is easy to expand; depth of need is hard to create.",
+        "cluster": "startups_founding",
+        "topics": ["demand", "niche", "product-strategy", "growth"],
+        "confidence_tier": "high",
+        "original_quote": "It's better to have a hundred people who love you than a million who sort of like you."
+      },
+      {
+        "content": "Organic startup ideas require two things: being at the leading edge of some field, and working on something that interests you. The intersection of expertise and curiosity is where real ideas live.",
+        "cluster": "ideas_creativity",
+        "topics": ["expertise", "curiosity", "leading-edge", "startup-ideas"],
+        "confidence_tier": "medium",
+        "original_quote": "If you're at the leading edge of a rapidly changing field, you don't have to look for ideas. They find you."
+      },
+      {
+        "content": "Schlep blindness is one of the most common reasons good startup ideas go unnoticed. People instinctively shy away from ideas that involve tedious, complex, or unpleasant work, even when that's where the real value is.",
+        "cluster": "startups_founding",
+        "topics": ["schlep-blindness", "psychology", "undervalued-ideas"],
+        "confidence_tier": "high",
+        "original_quote": "Schlep blindness: unconsciously flinching away from problems that involve messy, tedious work."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/greatwork.html",
+    "essay_title": "How to Do Great Work",
+    "essay_date": "July 2023",
+    "atoms": [
+      {
+        "content": "Great work happens at the intersection of aptitude, deep interest, and opportunity. The recipe is: find a field that matches your natural abilities, develop deep enough interest to keep going, and have the circumstance to work on it. All three must be present.",
+        "cluster": "ambition_greatwork",
+        "topics": ["greatness", "career", "aptitude", "interest"],
+        "confidence_tier": "high",
+        "original_quote": "The work you choose needs to have three qualities: it has to be something you have a natural aptitude for, that you have a deep interest in, and that offers scope for great work."
+      },
+      {
+        "content": "Curiosity is the most undervalued driver of great work. It's not discipline or ambition that sustains decades of effort — it's genuine curiosity about the problem itself. Curiosity turns work into play.",
+        "cluster": "ambition_greatwork",
+        "topics": ["curiosity", "motivation", "intrinsic-drive"],
+        "confidence_tier": "high",
+        "original_quote": "The three most powerful motives are curiosity, delight, and the desire to do something impressive."
+      },
+      {
+        "content": "Most people who do great work are not prodigies who knew from the start what they wanted. They backed into it through exploration and iteration. The path to great work is usually not a straight line but a winding one where you try many things and gradually converge.",
+        "cluster": "ambition_greatwork",
+        "topics": ["exploration", "career-path", "iteration"],
+        "confidence_tier": "high",
+        "original_quote": "What are you excessively curious about — curious to a degree that would bore most other people?"
+      },
+      {
+        "content": "Doing great work requires working on your own projects, not just executing someone else's plan. The best work comes from following your own curiosity. People doing great work are rarely doing what someone told them to do.",
+        "cluster": "ambition_greatwork",
+        "topics": ["autonomy", "projects", "independence"],
+        "confidence_tier": "high",
+        "original_quote": "For most people who do great work, the work and the interest grow together."
+      },
+      {
+        "content": "Avoid pretentiousness and fashion in choosing what to work on. Pretentiousness means working on things because they seem impressive rather than because they're genuinely interesting. Fashion means working on what's popular rather than what matters.",
+        "cluster": "ambition_greatwork",
+        "topics": ["pretentiousness", "fashion", "authenticity", "taste"],
+        "confidence_tier": "medium",
+        "original_quote": "Pretentiousness is your guide away from good work."
+      },
+      {
+        "content": "The most important quality in doing great work is earnestness — being genuinely engaged with and caring about the problem rather than performing engagement. Earnestness is underrated because it's hard to fake and impossible to systematize.",
+        "cluster": "ambition_greatwork",
+        "topics": ["earnestness", "authenticity", "character"],
+        "confidence_tier": "high",
+        "original_quote": "Earnestness is essential for doing great work."
+      },
+      {
+        "content": "Great work often starts as something that seems small or unpromising. The trick is to be willing to start small and not need everything to look impressive from the beginning. Many of the most impactful projects started as side projects or toys.",
+        "cluster": "ambition_greatwork",
+        "topics": ["starting-small", "humility", "side-projects"],
+        "confidence_tier": "high",
+        "original_quote": "If you do anything well enough, you'll make it prestigious."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/wealth.html",
+    "essay_title": "How to Make Wealth",
+    "essay_date": "May 2004",
+    "atoms": [
+      {
+        "content": "Wealth is not the same as money. Wealth is stuff people want — goods, services, experiences. Money is just a way of moving wealth around. You can create wealth without creating money, and the creation of wealth is not zero-sum.",
+        "cluster": "wealth_economics",
+        "topics": ["wealth", "money", "economics", "value-creation"],
+        "confidence_tier": "high",
+        "original_quote": "Wealth is not money. Wealth is stuff — the goods and services we buy."
+      },
+      {
+        "content": "The key to making wealth is to create things people want. A startup is essentially a way to compress your working life into a few intense years where you create enormous amounts of value. You trade the safety of a salary for the leverage of equity.",
+        "cluster": "wealth_economics",
+        "topics": ["startups", "value-creation", "leverage", "compression"],
+        "confidence_tier": "high",
+        "original_quote": "Startups allow you to compress your whole working life into a few years."
+      },
+      {
+        "content": "Measurement and leverage are the two components of creating wealth. You need to be in a position where what you do can be measured, and where your decisions have outsized impact. Small groups working on hard problems provide both.",
+        "cluster": "wealth_economics",
+        "topics": ["measurement", "leverage", "small-teams", "impact"],
+        "confidence_tier": "high",
+        "original_quote": "To get rich you need to get yourself in a situation with two things, measurement and leverage."
+      },
+      {
+        "content": "In a large organization, your individual contribution is averaged out across everyone else. The output of the whole group matters, not yours specifically. Startups fix this by making every person's contribution visible and directly tied to outcomes.",
+        "cluster": "wealth_economics",
+        "topics": ["organizations", "incentives", "individual-contribution"],
+        "confidence_tier": "high",
+        "original_quote": "In a big company, you can only work at the average speed."
+      },
+      {
+        "content": "Technology is the great enabler of wealth creation because it provides leverage — one programmer can create something used by millions. The pie is not fixed; technology grows the pie. This is the most commonly misunderstood thing about economics.",
+        "cluster": "wealth_economics",
+        "topics": ["technology", "leverage", "economics", "pie-growing"],
+        "confidence_tier": "high",
+        "original_quote": "Technology should increase the pie. Everyone in a startup is working on making the pie bigger."
+      },
+      {
+        "content": "The best way to create wealth is to work on things that are hard in the right way — hard because they're intellectually demanding, not because they're tedious. Craftspeople and hackers have always known this: doing difficult things well is the path to value.",
+        "cluster": "wealth_economics",
+        "topics": ["difficulty", "craftsmanship", "value", "hard-problems"],
+        "confidence_tier": "medium",
+        "original_quote": "Use difficulty as a guide not just in selecting the overall aim of your company, but also at decision points along the way."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/hp.html",
+    "essay_title": "Hackers and Painters",
+    "essay_date": "May 2003",
+    "atoms": [
+      {
+        "content": "Hacking and painting are more alike than hacking and computer science. Both are makers — they create things. Computer science is to hacking what art history is to painting. The academic study of the field is different from the practice of making things in it.",
+        "cluster": "programming_hackers",
+        "topics": ["hacking", "making", "painting", "computer-science", "craft"],
+        "confidence_tier": "high",
+        "original_quote": "Hackers and painters are among the most alike of all the different types of makers."
+      },
+      {
+        "content": "Great software, like great paintings, is made through a process of successive refinement. You don't plan out a masterpiece in advance and then execute. You sketch, iterate, and discover the work as you make it. The best hackers work like painters, not architects.",
+        "cluster": "programming_hackers",
+        "topics": ["iteration", "refinement", "process", "discovery"],
+        "confidence_tier": "high",
+        "original_quote": "You don't build things by making a complete spec and then implementing it. You should figure out the program as you're writing it."
+      },
+      {
+        "content": "Empathy is the core skill of a great hacker — the ability to see problems from the user's perspective. This is the same skill that makes someone a good novelist: the capacity to model another person's experience and anticipate what they need.",
+        "cluster": "programming_hackers",
+        "topics": ["empathy", "user-experience", "design", "skill"],
+        "confidence_tier": "high",
+        "original_quote": "In most fields, the appearance of ease seems to come with practice."
+      },
+      {
+        "content": "The best work in any creative field has an element of provocation. Good design, like good art, must be bold. Hackers, like painters, should be willing to have opinions about what is ugly and what is beautiful in their medium.",
+        "cluster": "design_taste",
+        "topics": ["taste", "design", "boldness", "aesthetics"],
+        "confidence_tier": "medium",
+        "original_quote": "Hackers need to understand the theory of computation as much as painters need to understand paint chemistry."
+      },
+      {
+        "content": "The way to get good at anything is to do it a lot and look at what you've done. Study the work of masters, but also produce volume. Programming, like painting, is a skill you develop through practice more than through study.",
+        "cluster": "programming_hackers",
+        "topics": ["practice", "mastery", "volume", "learning"],
+        "confidence_tier": "medium",
+        "original_quote": "The way to learn to paint is to paint."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/identity.html",
+    "essay_title": "Keep Your Identity Small",
+    "essay_date": "February 2009",
+    "atoms": [
+      {
+        "content": "People can never have productive discussions about topics that are part of their identity. The moment something becomes part of how you define yourself, you lose the ability to think clearly about it. Identity makes you stupid about the things you identify with most strongly.",
+        "cluster": "philosophy_life",
+        "topics": ["identity", "thinking", "rationality", "bias"],
+        "confidence_tier": "high",
+        "original_quote": "People can never have a fruitful argument about something that's part of their identity."
+      },
+      {
+        "content": "The solution is to keep your identity small — to let as few things as possible into the category of 'things that define who you are.' The fewer labels you attach to yourself, the more clearly you can think about more topics.",
+        "cluster": "philosophy_life",
+        "topics": ["identity", "clear-thinking", "labels", "self-definition"],
+        "confidence_tier": "high",
+        "original_quote": "The more labels you have for yourself, the dumber they make you."
+      },
+      {
+        "content": "Religion and politics are the classic examples of identity-driven irrationality, but the same dynamic shows up everywhere — in programming language wars, sports fandom, brand loyalty, and professional identity. The mechanism is universal: anything that becomes 'who you are' becomes something you can't reason about.",
+        "cluster": "philosophy_life",
+        "topics": ["religion", "politics", "tribalism", "rationality"],
+        "confidence_tier": "high",
+        "original_quote": "Which topics engage people's identity depends on the people, not the topic."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/essay.html",
+    "essay_title": "The Age of the Essay",
+    "essay_date": "September 2004",
+    "atoms": [
+      {
+        "content": "An essay is not a persuasive argument with a predetermined conclusion. It's an exploration — the French word 'essai' means 'attempt.' The best essays are attempts to figure things out, and the writer genuinely doesn't know the conclusion when they start.",
+        "cluster": "writing_thinking",
+        "topics": ["essay", "writing", "exploration", "thinking"],
+        "confidence_tier": "high",
+        "original_quote": "An essay is something you write to try to figure something out."
+      },
+      {
+        "content": "School teaches people that writing is about proving a predetermined thesis with supporting arguments. This is the opposite of what good writing actually is. Real essays start with questions, not answers, and follow the trail of thought wherever it leads.",
+        "cluster": "writing_thinking",
+        "topics": ["education", "writing", "thesis-driven", "curiosity"],
+        "confidence_tier": "high",
+        "original_quote": "In a real essay you don't take a position and defend it. You notice a door that's ajar, and you open it and walk in to see what's inside."
+      },
+      {
+        "content": "The most important thing in writing is to have something worth saying. If you can produce new ideas, you can write as badly as you want and people will still read you. The inverse is not true: beautiful prose with no ideas is worthless.",
+        "cluster": "writing_thinking",
+        "topics": ["writing", "ideas", "substance", "style-vs-substance"],
+        "confidence_tier": "high",
+        "original_quote": "If you can say something new, you can write as sloppily as you want and people will still read it."
+      },
+      {
+        "content": "Writing is a way of thinking, not just a way of communicating thoughts you've already had. The act of putting ideas into words forces you to think more precisely. Many of your best ideas will come during the writing process itself.",
+        "cluster": "writing_thinking",
+        "topics": ["writing-as-thinking", "clarity", "idea-generation"],
+        "confidence_tier": "high",
+        "original_quote": "The essay is a tool for thinking."
+      },
+      {
+        "content": "The essay as a form is far more powerful than most people realize because it combines two things: the freedom to explore any topic and the discipline of making your thoughts precise enough to write down. It's the ideal form for discovering new ideas.",
+        "cluster": "writing_thinking",
+        "topics": ["essay", "freedom", "discipline", "idea-discovery"],
+        "confidence_tier": "medium",
+        "original_quote": "Essayer means 'to try' — an essay is an attempt."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/determination.html",
+    "essay_title": "The Anatomy of Determination",
+    "essay_date": "September 2009",
+    "atoms": [
+      {
+        "content": "Determination is made up of three components: willfulness, discipline, and ambition. You need all three. Willfulness alone makes you stubborn. Discipline alone makes you a drone. Ambition alone makes you a dreamer. The combination is what makes founders effective.",
+        "cluster": "ambition_greatwork",
+        "topics": ["determination", "willfulness", "discipline", "ambition"],
+        "confidence_tier": "high",
+        "original_quote": "Determination implies your willfulness is balanced by discipline and ambition."
+      },
+      {
+        "content": "Determination matters more than intelligence in startup success. Being smart helps, but the people who succeed at hard things are almost always the ones who simply refused to give up. YC has consistently found that determination is the single best predictor of success.",
+        "cluster": "startups_founding",
+        "topics": ["determination", "intelligence", "success-prediction", "yc"],
+        "confidence_tier": "high",
+        "original_quote": "We learned quickly that the most important quality in startup founders is determination."
+      },
+      {
+        "content": "Willfulness is not the same as being stubborn. Willful people have a strong desire to get what they want, but they're flexible about how to get it. Stubborn people insist on a particular approach. Willful + flexible is the winning combination.",
+        "cluster": "ambition_greatwork",
+        "topics": ["willfulness", "flexibility", "stubbornness", "adaptability"],
+        "confidence_tier": "high",
+        "original_quote": "Willful and stubborn are not the same thing. Being willful means you want to get what you want; being stubborn means you insist on a particular approach."
+      },
+      {
+        "content": "Ambition can be innate or cultivated, but the best form is specific ambition directed at a concrete goal rather than vague ambition to be successful. Having a clear picture of what you want to achieve focuses your determination.",
+        "cluster": "ambition_greatwork",
+        "topics": ["ambition", "specificity", "goal-setting", "focus"],
+        "confidence_tier": "medium",
+        "original_quote": "The most productive form of ambition is not the desire to be very successful, but the desire to do or build a specific thing."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/growth.html",
+    "essay_title": "Startup = Growth",
+    "essay_date": "September 2012",
+    "atoms": [
+      {
+        "content": "A startup is a company designed to grow fast. That's the only essential difference between a startup and a regular business. The defining characteristic is not being new, or technology-based, or venture-funded. It's the growth rate.",
+        "cluster": "growth_scale",
+        "topics": ["startups", "growth", "definition", "growth-rate"],
+        "confidence_tier": "high",
+        "original_quote": "A startup is a company designed to grow fast. Being newly founded does not in itself make a company a startup."
+      },
+      {
+        "content": "Growth rate is the compass that guides everything in a startup. If you're growing at the right rate, everything else falls into place. If you're not, nothing else saves you. A good growth rate for a startup at YC is 5-7% per week.",
+        "cluster": "growth_scale",
+        "topics": ["growth-rate", "metrics", "focus", "yc-benchmarks"],
+        "confidence_tier": "high",
+        "original_quote": "A good growth rate during YC is 5-7% a week."
+      },
+      {
+        "content": "The constraint that defines startups — the need for rapid growth — means startups can only be built on ideas that have a large market. You need an idea that can reach a lot of people and that scales with technology rather than headcount.",
+        "cluster": "growth_scale",
+        "topics": ["market-size", "scalability", "technology", "constraints"],
+        "confidence_tier": "high",
+        "original_quote": "For a company to grow really big, it must make something lots of people want, and reach and serve all those people."
+      },
+      {
+        "content": "Startups exist because there are ideas of a certain size that can only be developed with a certain kind of effort — fast, focused, high-risk. Big companies can't pursue these ideas because the risk profile doesn't match their structure. Small businesses won't because the ambition level is wrong.",
+        "cluster": "growth_scale",
+        "topics": ["startups", "big-companies", "risk", "opportunity"],
+        "confidence_tier": "high",
+        "original_quote": "The reason there are so many startups is that they fill a gap in the economy."
+      },
+      {
+        "content": "For founders, optimizing for growth rate produces better decisions than optimizing for absolute revenue. If you focus on hitting your weekly growth target, you naturally make the right tradeoffs about what to build, who to hire, and how to spend your time.",
+        "cluster": "growth_scale",
+        "topics": ["growth-rate", "decision-making", "focus", "metrics"],
+        "confidence_tier": "high",
+        "original_quote": "If you're going to optimize for anything, optimize for growth rate."
+      },
+      {
+        "content": "Startup growth follows an S-curve: slow at first as you find product-market fit, then steep as you scale, then flattening as you saturate the market. The key transition is from the slow initial phase to the steep phase — that's the hardest part.",
+        "cluster": "growth_scale",
+        "topics": ["s-curve", "product-market-fit", "scaling", "trajectory"],
+        "confidence_tier": "medium",
+        "original_quote": "Growth drives everything in a startup."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/relres.html",
+    "essay_title": "Be Relentlessly Resourceful",
+    "essay_date": "March 2009",
+    "atoms": [
+      {
+        "content": "The best one-word description of what makes a good startup founder is 'relentless.' But relentless alone isn't enough — you also need to be resourceful. The combination is 'relentlessly resourceful': you never give up AND you're creative about finding solutions.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "relentlessness", "resourcefulness", "character"],
+        "confidence_tier": "high",
+        "original_quote": "I finally got being a good startup founder down to two words: relentlessly resourceful."
+      },
+      {
+        "content": "The opposite of relentlessly resourceful is hapless — someone to whom things just happen, who is passive in the face of obstacles. Hapless people give up or wait for someone else to solve their problems. Great founders treat every obstacle as a puzzle to solve.",
+        "cluster": "startups_founding",
+        "topics": ["haplessness", "agency", "problem-solving", "founders"],
+        "confidence_tier": "high",
+        "original_quote": "The opposite of relentlessly resourceful is hapless."
+      },
+      {
+        "content": "Relentlessly resourceful is a useful filter for evaluating both yourself as a founder and the people you hire. It captures the most important quality better than any list of traits. Would you describe this person as relentlessly resourceful? If not, they're not a good fit for a startup.",
+        "cluster": "startups_founding",
+        "topics": ["hiring", "evaluation", "character-assessment", "startups"],
+        "confidence_tier": "medium",
+        "original_quote": "That's the single best description of what makes a good startup founder."
+      }
+    ]
+  }
+]

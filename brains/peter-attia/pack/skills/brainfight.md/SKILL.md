@@ -1,0 +1,56 @@
+---
+name: brainfight
+description: "Head-to-head comparison. Pit two ideas against each other — find agreements, contradictions, and conditional victories."
+---
+
+# /brainfight — Ideas in Conflict
+
+Pit two ideas, frameworks, or brains head-to-head. Find where they agree, where they genuinely conflict, and under what conditions each wins.
+
+## How It Works
+
+1. Parse the two sides (topics, frameworks, or brain names)
+2. Find the strongest atoms supporting each position
+3. Identify genuine agreements and contradictions
+4. Determine conditional victory — when does each approach win?
+
+## Context Loading
+
+Load relevant cluster files for both sides. For cross-brain fights, load both brains' `brain-context.md`.
+
+## Output Format
+
+```
+⚔️ **Brainfight: "[Idea A]" vs. "[Idea B]"**
+
+📌 **Team A:** [Thesis + 1-2 atom citations with original_quote]
+📌 **Team B:** [Thesis + 1-2 atom citations with original_quote]
+
+🤝 **Where They Agree**
+[Common ground — often surprising]
+
+💥 **Where They Conflict**
+[Genuine tradeoffs, not just different angles]
+
+🏆 **Who Wins?**
+[Conditional: "A wins when [X], B wins when [Y]"]
+
+🧠 **The Actual Truth**
+[Nuance — how both are right under different conditions]
+
+💡 **Try next:** `/mashup` (synthesize both) or `/apply` (use the winner)
+```
+
+## Rules
+
+1. **Steel-man BOTH sides equally** — No favoritism.
+2. **Voice first** — Use `original_quote` for maximum impact.
+3. **Find REAL tensions** — Not just different angles, but genuine tradeoffs.
+4. **Conditional victories** — Almost always both are right under different conditions. Name the conditions.
+5. **Thin topic** — If either side has <3 atoms, note it's a lopsided fight.
+
+## Data
+
+- **atoms:** brain-atoms.json (73 atoms, 0 connections)
+- **clusters:** clusters/manifest.json + individual cluster .md files
+- **shared rules:** See "LLM Usage Rules" in brain-context.md

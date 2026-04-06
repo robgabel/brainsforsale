@@ -1,0 +1,296 @@
+[
+  {
+    "essay_url": "https://paulgraham.com/schlep.html",
+    "essay_title": "Schlep Blindness",
+    "essay_date": "January 2012",
+    "atoms": [
+      {
+        "content": "The best startup ideas are often hidden behind tedious, unglamorous work that smart people unconsciously avoid. Your unconscious mind filters out ideas that involve painful schleps before you even consider them.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "ideas", "schlep", "blindness"],
+        "confidence_tier": "high",
+        "original_quote": "The most dangerous thing about our dislike of schleps is that much of it is unconscious. Your unconscious won't even let you see ideas that involve painful schleps."
+      },
+      {
+        "content": "Stripe is the canonical example of schlep blindness. For over a decade, every hacker knew payments were broken, but they built recipe sites instead because their unconscious minds shrank from the complications of dealing with banks, fraud, and regulations.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "stripe", "schlep", "payments"],
+        "confidence_tier": "high",
+        "original_quote": "Thousands of people must have known about this problem. And yet when they started startups, they decided to build recipe sites, or aggregators for local events."
+      },
+      {
+        "content": "Ambitious ideas are doubly valuable because they're like undervalued stocks — there's less competition because everyone else has been frightened off by the challenges involved.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "ambition", "competition", "ideas"],
+        "confidence_tier": "high",
+        "original_quote": "That scariness makes ambitious ideas doubly valuable. In addition to their intrinsic value, they're like undervalued stocks in the sense that there's less demand for them among founders."
+      },
+      {
+        "content": "The best antidote to schlep blindness is to ask 'what problem do I wish someone else would solve for me?' instead of 'what problem should I solve?' This reframe bypasses your unconscious filters.",
+        "cluster": "ideas_creativity",
+        "topics": ["startups", "ideas", "schlep", "reframing"],
+        "confidence_tier": "high",
+        "original_quote": "Instead of asking 'what problem should I solve?' ask 'what problem do I wish someone else would solve for me?'"
+      },
+      {
+        "content": "Ignorance is paradoxically an advantage for young founders. They make two mistakes that cancel each other out: they don't know how much they can grow, but they also don't know how much they'll need to.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "youth", "ignorance", "growth"],
+        "confidence_tier": "medium",
+        "original_quote": "They don't know how much they can grow, but they also don't know how much they'll need to. Older founders only make the first mistake."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/before.html",
+    "essay_title": "Before the Startup",
+    "essay_date": "October 2014",
+    "atoms": [
+      {
+        "content": "Startups are deeply counterintuitive. Your instincts will be wrong about most things. The first step is knowing this, so you can at least pause before making mistakes.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "counterintuitive", "instincts"],
+        "confidence_tier": "high",
+        "original_quote": "Startups are so weird that if you trust your instincts, you'll make a lot of mistakes."
+      },
+      {
+        "content": "You can trust your instincts about people even when you can't trust them about ideas. If someone seems slippery or bogus, trust your gut — one of the most common mistakes young founders make is ignoring personal misgivings about impressive-seeming people.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "people", "instinct", "cofounders"],
+        "confidence_tier": "high",
+        "original_quote": "If someone seems slippery, or bogus, or a jerk, don't ignore it."
+      },
+      {
+        "content": "Starting a startup is where gaming the system stops working. There is no boss to trick, only users, and all users care about is whether your product does what they want. Startups are as impersonal as physics.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "meritocracy", "users", "gaming"],
+        "confidence_tier": "high",
+        "original_quote": "There is no boss to trick, only users, and all users care about is whether your product does what they want. Startups are as impersonal as physics."
+      },
+      {
+        "content": "The way to get startup ideas is not to try to think of startup ideas. Turn your mind into the type that startup ideas form in without conscious effort. The best startups started as side projects — Apple, Yahoo, Google, Facebook were none of them meant to be companies at first.",
+        "cluster": "ideas_creativity",
+        "topics": ["ideas", "startups", "side-projects", "organic"],
+        "confidence_tier": "high",
+        "original_quote": "If you make a conscious effort to think of startup ideas, the ideas you come up with will not merely be bad, but bad and plausible-sounding."
+      },
+      {
+        "content": "Don't start a startup in college. Age 20 is not the optimal time. Starting a startup is like a brutally fast depth-first search. Most people should still be searching breadth-first at 20.",
+        "cluster": "startups_founding",
+        "topics": ["startups", "timing", "college", "youth"],
+        "confidence_tier": "medium",
+        "original_quote": "Starting a startup is like a brutally fast depth-first search. Most people should still be searching breadth-first at 20."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/mean.html",
+    "essay_title": "Mean People Fail",
+    "essay_date": "November 2014",
+    "atoms": [
+      {
+        "content": "Meanness and startup success are inversely correlated. Being mean makes you stupid because fights are not sufficiently general — your brain goes fast but you get nowhere, like a car spinning its wheels.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "meanness", "character", "success"],
+        "confidence_tier": "medium",
+        "original_quote": "Being mean makes you stupid. That's why I hate fights. You never do your best work in a fight, because fights are not sufficiently general."
+      },
+      {
+        "content": "Startups win by transcending, not by attacking. Mean founders can't attract the best people, and the best people have other options. The founders who keep going past acquisition offers are driven by wanting to improve the world, not by money.",
+        "cluster": "startups_founding",
+        "topics": ["founders", "character", "competition", "benevolence"],
+        "confidence_tier": "medium",
+        "original_quote": "Startups don't win by attacking. They win by transcending."
+      },
+      {
+        "content": "The world is shifting from zero-sum games (where meanness was an advantage) to positive-sum games (where new ideas and building new things win). The games played by intellectuals are leaking into the real world.",
+        "cluster": "philosophy_life",
+        "topics": ["zero-sum", "positive-sum", "progress", "ideas"],
+        "confidence_tier": "medium",
+        "original_quote": "Increasingly you win not by fighting to get control of a scarce resource, but by having new ideas and building new things."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/disagree.html",
+    "essay_title": "How to Disagree",
+    "essay_date": "March 2008",
+    "atoms": [
+      {
+        "content": "There is a hierarchy of disagreement with 7 levels, from name-calling (DH0) to refuting the central point (DH6). Most online disagreement operates at the lowest levels. Moving up the hierarchy makes you both more effective and less mean.",
+        "cluster": "writing_thinking",
+        "topics": ["disagreement", "reasoning", "hierarchy", "argument"],
+        "confidence_tier": "high",
+        "original_quote": "The most convincing form of disagreement is refutation. It's also the rarest, because it's the most work."
+      },
+      {
+        "content": "If a statement is false, that's the worst thing you can say about it. You don't need to call it heretical. And if it isn't false, it shouldn't be suppressed. Labels like 'offensive' or 'divisive' are used to attack statements without arguing they're wrong.",
+        "cluster": "writing_thinking",
+        "topics": ["argument", "labels", "censorship", "truth"],
+        "confidence_tier": "medium",
+        "original_quote": "If a statement is false, that's the worst thing you can say about it. You don't need to say that it's heretical."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/taste.html",
+    "essay_title": "Taste for Makers",
+    "essay_date": "February 2002",
+    "atoms": [
+      {
+        "content": "Good design has universal principles that apply across math, painting, architecture, writing, and programming: simplicity, timelessness, solving the right problem, suggestion, humor, difficulty, ease of appearance, symmetry, resemblance to nature, iteration, willingness to copy, strangeness, clustering, and daring.",
+        "cluster": "design_taste",
+        "topics": ["design", "taste", "beauty", "principles"],
+        "confidence_tier": "high",
+        "original_quote": "Once you start to examine the question, it's surprising how much different fields' ideas of beauty have in common."
+      },
+      {
+        "content": "Taste is not merely subjective. If you design things, your tastes improve over time, which means your old tastes were not merely different but worse. This disproves the axiom that taste can't be wrong.",
+        "cluster": "design_taste",
+        "topics": ["taste", "subjectivity", "improvement", "design"],
+        "confidence_tier": "high",
+        "original_quote": "If so, your old tastes were not merely different, but worse. Poof goes the axiom that taste can't be wrong."
+      },
+      {
+        "content": "When you're forced to be simple, you're forced to face the real problem. Ornament and complexity are evasion — underneath the long words or expressive brush strokes, there is not much going on.",
+        "cluster": "design_taste",
+        "topics": ["simplicity", "design", "substance", "honesty"],
+        "confidence_tier": "high",
+        "original_quote": "When you're forced to be simple, you're forced to face the real problem. When you can't deliver ornament, you have to deliver substance."
+      },
+      {
+        "content": "Good design is redesign. It's rare to get things right the first time. Experts expect to throw away early work. Cultivate dissatisfaction rather than convincing yourself that imperfect work is good enough.",
+        "cluster": "design_taste",
+        "topics": ["design", "iteration", "revision", "craft"],
+        "confidence_tier": "high",
+        "original_quote": "Dangerous territory, that; if anything you should cultivate dissatisfaction."
+      },
+      {
+        "content": "Great work happens in clusters — fifteenth century Florence, the Bauhaus, the Manhattan Project, Xerox PARC. Nothing is more powerful than a community of talented people working on related problems. Genes count for little by comparison.",
+        "cluster": "silicon_valley",
+        "topics": ["clusters", "talent", "environment", "Florence"],
+        "confidence_tier": "high",
+        "original_quote": "Nothing is more powerful than a community of talented people working on related problems. Genes count for little by comparison."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/say.html",
+    "essay_title": "What You Can't Say",
+    "essay_date": "January 2004",
+    "atoms": [
+      {
+        "content": "Every era has moral fashions — beliefs that feel like truth but are actually arbitrary. If you believe everything you're supposed to, you probably didn't arrive at those beliefs independently. The conformist test: if you have no opinions you'd be reluctant to share, you're probably just thinking what you're told.",
+        "cluster": "philosophy_life",
+        "topics": ["conformity", "heresy", "moral-fashion", "thinking"],
+        "confidence_tier": "high",
+        "original_quote": "Almost certainly, there is something wrong with you if you don't think things you don't dare say out loud."
+      },
+      {
+        "content": "Training yourself to think unthinkable thoughts is valuable beyond the thoughts themselves — it's like stretching before running. If you can think things so outside the box that they'd make people's hair stand on end, you'll have no trouble with small trips outside the box that people call innovative.",
+        "cluster": "philosophy_life",
+        "topics": ["thinking", "heresy", "innovation", "independence"],
+        "confidence_tier": "high",
+        "original_quote": "If you can think things so outside the box that they'd make people's hair stand on end, you'll have no trouble with the small trips outside the box that people call innovative."
+      },
+      {
+        "content": "The most important thing is to be able to think what you want, not to say what you want. Draw a sharp line between your thoughts and your speech. Inside your head, anything should be allowed.",
+        "cluster": "philosophy_life",
+        "topics": ["thinking", "speech", "freedom", "independence"],
+        "confidence_tier": "medium",
+        "original_quote": "The most important thing is to be able to think what you want, not to say what you want."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/cities.html",
+    "essay_title": "Cities and Ambition",
+    "essay_date": "May 2008",
+    "atoms": [
+      {
+        "content": "Great cities send messages about what kind of ambition matters. New York says 'make more money.' Silicon Valley says 'be more powerful' (meaning: have more effect on the world). Cambridge says 'be smarter.' The city you live in shapes your ambitions whether you realize it or not.",
+        "cluster": "silicon_valley",
+        "topics": ["cities", "ambition", "environment", "culture"],
+        "confidence_tier": "high",
+        "original_quote": "In a hundred subtle ways, the city sends you a message: you could do more; you should try harder."
+      },
+      {
+        "content": "If even someone with Leonardo's natural ability couldn't overcome the force of environment (being born in Milan instead of Florence), you probably can't either. Don't fight this force — use it. Choose your city deliberately.",
+        "cluster": "silicon_valley",
+        "topics": ["cities", "environment", "talent", "Florence"],
+        "confidence_tier": "high",
+        "original_quote": "If even someone with the same natural ability as Leonardo couldn't beat the force of environment, do you suppose you can?"
+      },
+      {
+        "content": "The critical years for being in a great city are the early and middle ones of your career. You don't need to grow up there or retire there, but during the years when you're finding peers and establishing your work, the larger intake mechanism of a great city matters enormously.",
+        "cluster": "silicon_valley",
+        "topics": ["cities", "career", "peers", "timing"],
+        "confidence_tier": "medium",
+        "original_quote": "The Impressionists show the typical pattern: they were born all over France and died all over France, but what defined them were the years they spent together in Paris."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/work.html",
+    "essay_title": "What Doesn't Seem Like Work?",
+    "essay_date": "January 2015",
+    "atoms": [
+      {
+        "content": "The best career heuristic: if something that seems like work to other people doesn't seem like work to you, that's something you're well suited for. The stranger your tastes seem to other people, the stronger evidence they are of what you should do.",
+        "cluster": "ambition_greatwork",
+        "topics": ["career", "calling", "work", "interest"],
+        "confidence_tier": "high",
+        "original_quote": "If something that seems like work to other people doesn't seem like work to you, that's something you're well suited for."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/vb.html",
+    "essay_title": "Life is Short",
+    "essay_date": "January 2016",
+    "atoms": [
+      {
+        "content": "Life is actually short, not just finite. Having kids proves this by converting the continuous quantity of time into discrete quantities: you only get 52 weekends with your 2-year-old. Eight is not a lot of something.",
+        "cluster": "philosophy_life",
+        "topics": ["life", "time", "mortality", "kids"],
+        "confidence_tier": "high",
+        "original_quote": "You only get 52 weekends with your 2 year old. If Christmas-as-magic lasts from say ages 3 to 10, you only get to watch your child experience it 8 times."
+      },
+      {
+        "content": "Relentlessly prune bullshit, don't wait to do things that matter, and savor the time you have. Bullshit is the junk food of experience — it has a distinctive fakeness. Cultivate a habit of impatience about the things you most want to do.",
+        "cluster": "philosophy_life",
+        "topics": ["life", "bullshit", "priorities", "time"],
+        "confidence_tier": "high",
+        "original_quote": "Relentlessly prune bullshit, don't wait to do things that matter, and savor the time you have. That's what you do when life is short."
+      }
+    ]
+  },
+  {
+    "essay_url": "https://paulgraham.com/ambitious.html",
+    "essay_title": "Frighteningly Ambitious Startup Ideas",
+    "essay_date": "March 2012",
+    "atoms": [
+      {
+        "content": "The biggest startup ideas are terrifying — they seem to threaten your identity. This means they're invisible to most people who try to think of startup ideas, because their subconscious filters them out. Even the most ambitious people are probably best off approaching them obliquely.",
+        "cluster": "startups_founding",
+        "topics": ["ambition", "ideas", "fear", "startups"],
+        "confidence_tier": "high",
+        "original_quote": "The biggest ideas seem to threaten your identity: you wonder if you'd have enough ambition to carry them through."
+      },
+      {
+        "content": "The way to do really big things is to start with deceptively small things. Want to dominate microcomputer software? Start by writing a Basic interpreter. Want to make the universal web site? Start by building a site for Harvard undergrads to stalk one another.",
+        "cluster": "growth_scale",
+        "topics": ["ambition", "startups", "small-beginnings", "scale"],
+        "confidence_tier": "high",
+        "original_quote": "Empirically, the way to do really big things seems to be to start with deceptively small things."
+      },
+      {
+        "content": "The popular image of the visionary is someone with a clear view of the future, but empirically it may be better to have a blurry one. Don't try to construct the future like a building. Start with something you know works, and expand westward like Columbus.",
+        "cluster": "startups_founding",
+        "topics": ["vision", "strategy", "direction", "ambiguity"],
+        "confidence_tier": "high",
+        "original_quote": "The popular image of the visionary is someone with a clear view of the future, but empirically it may be better to have a blurry one."
+      }
+    ]
+  }
+]

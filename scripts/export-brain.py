@@ -148,6 +148,13 @@ def export_atoms_json(atoms: list, connections: list, config: dict, output_dir: 
             entry["connections"] = atom_conns
         output["atoms"].append(entry)
 
+    # Include synthesis data if present in config
+    if "synthesis" in config:
+        output["synthesis"] = config["synthesis"]
+        # Also include brain bio and possessive for the UI
+        output["brain"]["bio"] = config.get("brain_bio", "")
+        output["brain"]["possessive"] = config.get("brain_possessive", "his")
+
     path = output_dir / "brain-atoms.json"
     with open(path, "w") as f:
         json.dump(output, f, indent=2)
@@ -497,6 +504,13 @@ def main():
     if not args.skip_skills:
         print("\nRendering skill templates...")
         export_skill_files(config, atom_count, connection_count, output_dir)
+
+    # Copy explore.html template
+    explore_template = TEMPLATES_DIR / "explore.html.template"
+    if explore_template.exists():
+        import shutil
+        shutil.copy2(explore_template, output_dir / "explore.html")
+        print(f"\n  explore.html copied from template")
 
     print(f"\nDone! Output in: {output_dir}")
 

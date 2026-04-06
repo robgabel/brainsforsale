@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainsForSale — Load a genius into your AI</title>
+<meta name="description" content="Knowledge graphs of the world's best thinkers, packaged as AI skills. Start with Paul Graham's 182 atoms from 220+ essays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --white: #ffffff;
+    --warm-paper: #f8f7f4;
+    --deep-ink: #0f172a;
+    --label: #334155;
+    --body: #64748b;
+    --muted: #94a3b8;
+    --border: #e2e8f0;
+    --border-whisper: rgba(0, 0, 0, 0.06);
+    --indigo: #6366f1;
+    --indigo-hover: #4f46e5;
+    --indigo-deep: #3730a3;
+    --indigo-light: #818cf8;
+    --indigo-mist: #e0e7ff;
+    --indigo-soft: #c7d2fe;
+    --brand-night: #1e1b4b;
+    --brand-deep: #312e81;
+    --gold: #d97706;
+    --gold-light: #fef3c7;
+    --success: #059669;
+    --shadow-indigo: rgba(99, 102, 241, 0.15);
+    --shadow-deep: rgba(30, 27, 75, 0.12);
+    --shadow-neutral: rgba(0, 0, 0, 0.06);
+    --shadow-soft: rgba(0, 0, 0, 0.04);
+    --cool-surface: #f1f5f9;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    background: var(--white);
+    color: var(--deep-ink);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* --- NAV --- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 40px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-whisper);
+  }
+
+  .nav-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--deep-ink);
+    text-decoration: none;
+  }
+  .nav-logo .dot-com { color: var(--indigo); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--body);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover { color: var(--deep-ink); }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--indigo);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.15s;
+    box-shadow: rgba(99, 102, 241, 0.25) 0px 4px 12px;
+  }
+  .btn-primary:hover { background: var(--indigo-hover); }
+  .btn-primary:active { transform: scale(0.98); background: var(--indigo-deep); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--indigo);
+    border: 1.5px solid var(--indigo-soft);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .btn-ghost:hover { background: rgba(99, 102, 241, 0.05); border-color: var(--indigo); }
+
+  /* --- HERO --- */
+  .hero {
+    padding: 80px 40px 64px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--indigo-mist);
+    color: var(--indigo-deep);
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 56px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    color: var(--deep-ink);
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--body);
+    max-width: 580px;
+    margin: 0 auto 36px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* --- INSTALL COMMAND --- */
+  .install-section {
+    max-width: 600px;
+    margin: 0 auto 0;
+    padding: 0 40px 80px;
+    text-align: center;
+  }
+
+  .install-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    background: var(--deep-ink);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    position: relative;
+  }
+  .install-block:hover {
+    box-shadow: rgba(99, 102, 241, 0.2) 0px 8px 24px;
+  }
+
+  .install-block code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #e2e8f0;
+    line-height: 1.7;
+  }
+  .install-block code .kw { color: var(--indigo-light); }
+  .install-block code .str { color: #34d399; }
+
+  .install-block .copy-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.15s;
+    display: flex;
+  }
+  .install-block .copy-btn:hover { color: rgba(255, 255, 255, 0.9); }
+
+  .install-hint {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 12px;
+  }
+
+  /* --- DEMO SECTION --- */
+  .demo-section {
+    background: var(--warm-paper);
+    padding: 80px 40px;
+  }
+
+  .demo-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--indigo);
+    margin-bottom: 12px;
+  }
+
+  .section-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+    line-height: 1.15;
+    color: var(--deep-ink);
+    margin-bottom: 8px;
+  }
+
+  .section-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--body);
+    margin-bottom: 40px;
+    max-width: 560px;
+  }
+
+  .demo-terminal {
+    background: var(--deep-ink);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(30, 27, 75, 0.20) 0px 24px 48px -12px, rgba(0, 0, 0, 0.08) 0px 12px 24px -8px;
+  }
+
+  .demo-header {
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .demo-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .demo-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 8px;
+  }
+
+  .demo-body {
+    padding: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .demo-prompt {
+    color: #34d399;
+    margin-bottom: 24px;
+  }
+  .demo-prompt .cmd { color: var(--indigo-light); font-weight: 500; }
+
+  .demo-response { color: rgba(255, 255, 255, 0.7); }
+
+  .demo-brain-tag {
+    display: inline-block;
+    color: #fbbf24;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .demo-atom {
+    display: block;
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-left: 3px solid var(--indigo-light);
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background: rgba(99, 102, 241, 0.06);
+    border-radius: 0 6px 6px 0;
+  }
+  .demo-atom.counter {
+    border-left-color: #fbbf24;
+    background: rgba(251, 191, 36, 0.06);
+  }
+
+  .demo-sources {
+    margin-top: 20px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .demo-next {
+    margin-top: 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .demo-next .skill-ref { color: var(--indigo-light); }
+
+  /* --- WHAT YOU GET (SKILLS) --- */
+  .skills-section {
+    padding: 80px 40px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .skill-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .skill-card:hover {
+    box-shadow: rgba(99, 102, 241, 0.15) 0px 12px 32px -4px, rgba(0, 0, 0, 0.06) 0px 6px 16px -4px;
+    transform: translateY(-2px);
+  }
+
+  .skill-cmd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--indigo);
+    margin-bottom: 6px;
+  }
+
+  .skill-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--deep-ink);
+    margin-bottom: 4px;
+  }
+
+  .skill-desc {
+    font-size: 13px;
+    color: var(--body);
+    line-height: 1.5;
+  }
+
+  .workflows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .workflow-card {
+    background: var(--cool-surface);
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+
+  .workflow-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--label);
+    margin-bottom: 6px;
+  }
+
+  .workflow-chain {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .workflow-chain .sk { color: var(--indigo); }
+
+  /* --- SIDE-BY-SIDE --- */
+  .compare-section {
+    background: var(--warm-paper);
+    padding: 80px 40px;
+  }
+
+  .compare-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .compare-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: rgba(99, 102, 241, 0.08) 0px 8px 24px -4px, rgba(0, 0, 0, 0.04) 0px 4px 12px -4px;
+  }
+  .compare-card.brain {
+    border: 1.5px solid var(--indigo-soft);
+    border-top: 4px solid var(--indigo);
+  }
+
+  .compare-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .compare-label.without { color: var(--muted); }
+  .compare-label.with { color: var(--indigo); }
+
+  .compare-prompt {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--label);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .compare-response {
+    font-size: 15px;
+    color: var(--body);
+    line-height: 1.7;
+  }
+  .compare-response p { margin-bottom: 12px; }
+
+  .compare-atom-cite {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--label);
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-left: 3px solid var(--indigo);
+    background: var(--indigo-mist);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .compare-confidence {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px 10px;
+    background: var(--indigo-mist);
+    color: var(--indigo-deep);
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .compare-next-skill {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .compare-next-skill .sk { color: var(--indigo); font-weight: 500; }
+
+  /* --- STATS / SOCIAL PROOF --- */
+  .stats-section {
+    padding: 64px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
+
+  .stat-item .stat-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    color: var(--indigo);
+  }
+
+  .stat-item .stat-label {
+    font-size: 14px;
+    color: var(--body);
+    margin-top: 4px;
+  }
+
+  /* --- DARK CTA / BRAIN SHOWCASE --- */
+  .brain-showcase {
+    background: var(--brand-night);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .brain-showcase .section-eyebrow { color: var(--indigo-light); }
+
+  .brain-showcase h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  .brain-showcase .section-desc {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  .brain-showcase .install-block {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .brain-showcase .install-hint { color: rgba(255, 255, 255, 0.35); }
+
+  .brain-showcase .btn-dark-surface {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--white);
+    color: var(--deep-ink);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .brain-showcase .btn-dark-surface:hover { background: rgba(255, 255, 255, 0.9); }
+
+  .showcase-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+
+  .showcase-actions .btn-ghost {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .showcase-actions .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* --- BRAIN CARDS (mini catalog) --- */
+  .catalog-section {
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .catalog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: left;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .catalog-card:hover {
+    box-shadow: rgba(99, 102, 241, 0.15) 0px 12px 32px -4px, rgba(0, 0, 0, 0.06) 0px 6px 16px -4px;
+    transform: translateY(-2px);
+  }
+  .catalog-card.featured {
+    border: 1.5px solid var(--indigo-soft);
+    border-top: 4px solid var(--indigo);
+  }
+
+  .catalog-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .catalog-badge.live { background: rgba(5, 150, 105, 0.1); color: var(--success); }
+  .catalog-badge.soon { background: var(--indigo-mist); color: var(--indigo); }
+
+  .catalog-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: var(--deep-ink);
+    margin-bottom: 4px;
+  }
+
+  .catalog-role {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .catalog-stats {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--body);
+  }
+  .catalog-stats strong { color: var(--deep-ink); }
+
+  /* --- REQUEST SECTION --- */
+  .request-section {
+    background: var(--warm-paper);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .request-inner {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .request-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+    color: var(--deep-ink);
+    margin-bottom: 8px;
+  }
+
+  .request-section .section-desc {
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+
+  .request-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .request-input {
+    flex: 1;
+    padding: 12px 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: var(--deep-ink);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .request-input:focus {
+    border-color: var(--indigo);
+    box-shadow: rgba(99, 102, 241, 0.15) 0px 0px 0px 3px;
+  }
+  .request-input::placeholder { color: var(--muted); }
+
+  /* --- FOOTER --- */
+  footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--deep-ink);
+    margin-bottom: 12px;
+  }
+  .footer-logo .dot-com { color: var(--indigo); }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .footer-links a {
+    font-size: 14px;
+    color: var(--body);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover { color: var(--indigo); }
+
+  .footer-fine {
+    font-size: 13px;
+    color: var(--muted);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  /* --- RESPONSIVE --- */
+  @media (max-width: 1024px) {
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    .workflows { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+
+    .hero { padding: 48px 20px 40px; }
+    .hero h1 { font-size: 36px; letter-spacing: -0.75px; }
+    .hero-sub { font-size: 16px; }
+
+    .install-section { padding: 0 20px 48px; }
+    .install-block { padding: 12px 16px; }
+    .install-block code { font-size: 12px; }
+
+    .demo-section, .compare-section, .request-section { padding: 48px 20px; }
+    .brain-showcase { padding: 48px 20px; }
+    .brain-showcase h2 { font-size: 36px; }
+    .skills-section, .catalog-section { padding: 48px 20px; }
+
+    .section-heading { font-size: 28px; }
+
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .workflows { grid-template-columns: 1fr; }
+    .compare-grid { grid-template-columns: 1fr; }
+    .catalog-grid { grid-template-columns: 1fr; }
+    .stats-grid { gap: 32px; }
+    .stat-item .stat-num { font-size: 36px; }
+  }
+
+  /* --- ANIMATION --- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero { animation: fadeUp 0.6s ease-out; }
+  .install-section { animation: fadeUp 0.6s ease-out 0.1s both; }
+  .demo-section { animation: fadeUp 0.6s ease-out 0.2s both; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">brainsforsale<span class="dot-com">.com</span></a>
+  <div class="nav-links">
+    <a href="#demo">Demo</a>
+    <a href="#skills">Skills</a>
+    <a href="#compare">Compare</a>
+    <a href="#brains">Brains</a>
+    <a href="#cta" class="btn-primary">Get the brain</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Free while in beta &middot; Works with Claude, Cursor, ChatGPT, Gemini</div>
+  <h1>Load a genius<br>into your AI.</h1>
+  <p class="hero-sub">Knowledge graphs of the world's best thinkers, packaged as AI skills you actually use. 182 atoms. 12 clusters. 10 skills. Start with Paul Graham.</p>
+  <div class="hero-actions">
+    <a href="#cta" class="btn-primary">Get the Paul Graham brain</a>
+    <a href="#demo" class="btn-ghost">See it in action</a>
+  </div>
+</section>
+
+<!-- INSTALL COMMAND -->
+<section class="install-section">
+  <div class="install-block" onclick="navigator.clipboard.writeText('npx skills add brainsforsale/paul-graham'); this.querySelector('.copy-btn').innerHTML = '&#10003;'; setTimeout(() => this.querySelector('.copy-btn').innerHTML = '&#9112;', 2000)">
+    <code><span class="kw">$</span> npx skills add <span class="str">brainsforsale/paul-graham</span></code>
+    <button class="copy-btn" aria-label="Copy to clipboard">&#9112;</button>
+  </div>
+  <div class="install-hint">One command. Any AI tool. Instant expertise.</div>
+</section>
+
+<!-- LIVE DEMO -->
+<section class="demo-section" id="demo">
+  <div class="demo-inner">
+    <div class="section-eyebrow">Live demo</div>
+    <div class="section-heading">Ask Paul Graham anything.</div>
+    <p class="section-desc">Not a chatbot. Not a summary. Sourced, structured thinking from 220+ essays.</p>
+
+    <div class="demo-terminal">
+      <div class="demo-header">
+        <div class="demo-dot"></div>
+        <div class="demo-dot"></div>
+        <div class="demo-dot"></div>
+        <span class="demo-title">paul-graham brain &middot; /advise</span>
+      </div>
+      <div class="demo-body">
+        <div class="demo-prompt">
+          <span class="cmd">/advise</span> "I have a side project getting traction. Should I quit my job and go full-time?"
+        </div>
+        <div class="demo-response">
+          <span class="demo-brain-tag">Paul Graham Brain &middot; 4 relevant atoms &middot; confidence: high</span>
+
+          <span class="demo-atom">Graham would tell you to look at the growth rate, not the revenue. A startup is defined by growth. If your side project is growing week-over-week, that's the signal &mdash; not whether you can "afford" to quit. The risk of staying employed is that you never give it the intensity it needs.</span>
+
+          <span class="demo-atom">His "do things that don't scale" framework applies here: before quitting, spend every spare hour doing the unscalable things &mdash; recruiting users one at a time, doing manual work, being a personal concierge. If users love what you're building even when it's held together with tape, that's your answer.</span>
+
+          <span class="demo-atom counter">Counterpoint from his own writing: the most dangerous thing is a job that's comfortable enough to keep you from ever jumping. "The most dangerous kind of job is one that's tolerable but unsatisfying."</span>
+
+          <div class="demo-sources">Sources: "Do Things That Don't Scale" &middot; "How to Start a Startup" &middot; "Before the Startup" &middot; "How to Do Great Work" &mdash; paulgraham.com</div>
+          <div class="demo-next">Try <span class="skill-ref">/debate</span> to stress-test this &middot; <span class="skill-ref">/apply</span> "do things that don't scale" to your specific project</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">182</div>
+      <div class="stat-label">knowledge atoms</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12</div>
+      <div class="stat-label">topic clusters</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">10</div>
+      <div class="stat-label">thinking skills</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">220+</div>
+      <div class="stat-label">essays sourced</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="section-eyebrow">What you get</div>
+  <div class="section-heading">10 thinking skills per brain.</div>
+  <p class="section-desc">Not a chatbot. Not a PDF. A skill pack that turns a knowledge graph into a thinking partner. Skills chain together into workflows.</p>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-cmd">/advise</div>
+      <div class="skill-name">Advisor</div>
+      <div class="skill-desc">Strategic counsel grounded in PG's frameworks.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/teach</div>
+      <div class="skill-name">Teacher</div>
+      <div class="skill-desc">Explain concepts through PG's mental models.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/debate</div>
+      <div class="skill-name">Debater</div>
+      <div class="skill-desc">Stress-test ideas against PG's worldview.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/connect</div>
+      <div class="skill-name">Connector</div>
+      <div class="skill-desc">Find unexpected links in PG's thinking.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/evolve</div>
+      <div class="skill-name">Evolution</div>
+      <div class="skill-desc">Trace how PG's views changed over time.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/apply</div>
+      <div class="skill-name">Framework</div>
+      <div class="skill-desc">Apply a PG framework step-by-step.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/deep-dive</div>
+      <div class="skill-name">Deep Dive</div>
+      <div class="skill-desc">Everything PG thinks about a topic.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/surprise</div>
+      <div class="skill-name">Serendipity</div>
+      <div class="skill-desc">Surface an unexpected PG insight.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/mashup</div>
+      <div class="skill-name">Mashup</div>
+      <div class="skill-desc">Cross-brain synthesis with 2+ brains.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cmd">/brainfight</div>
+      <div class="skill-name">Brain Fight</div>
+      <div class="skill-desc">Head-to-head idea comparison.</div>
+    </div>
+  </div>
+
+  <div class="workflows">
+    <div class="workflow-card">
+      <div class="workflow-name">Decide</div>
+      <div class="workflow-chain"><span class="sk">/advise</span> &rarr; <span class="sk">/debate</span> &rarr; <span class="sk">/apply</span></div>
+    </div>
+    <div class="workflow-card">
+      <div class="workflow-name">Learn</div>
+      <div class="workflow-chain"><span class="sk">/teach</span> &rarr; <span class="sk">/deep-dive</span> &rarr; <span class="sk">/evolve</span></div>
+    </div>
+    <div class="workflow-card">
+      <div class="workflow-name">Create</div>
+      <div class="workflow-chain"><span class="sk">/surprise</span> &rarr; <span class="sk">/connect</span> &rarr; <span class="sk">/apply</span></div>
+    </div>
+    <div class="workflow-card">
+      <div class="workflow-name">Research</div>
+      <div class="workflow-chain"><span class="sk">/deep-dive</span> &rarr; <span class="sk">/mashup</span> &rarr; <span class="sk">/brainfight</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SIDE-BY-SIDE COMPARISON -->
+<section class="compare-section" id="compare">
+  <div class="compare-inner">
+    <div class="section-eyebrow">Why this is different</div>
+    <div class="section-heading">Claude without the brain vs. with it.</div>
+    <p class="section-desc">Same question. Fundamentally different output.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-label without">Without the brain</div>
+        <div class="compare-prompt">"What makes a good startup idea?"</div>
+        <div class="compare-response">
+          <p>A good startup idea typically involves solving a real problem that people have. You should look for large market opportunities, consider your competitive advantages, and validate demand before building.</p>
+          <p>Some key factors include market size, team-founder fit, timing, and having a unique value proposition. It's also important to consider scalability and unit economics.</p>
+          <p style="color: var(--muted); font-style: italic;">Generic. Hedging. Could be from any business textbook.</p>
+        </div>
+      </div>
+
+      <div class="compare-card brain">
+        <div class="compare-label with">With the Paul Graham brain</div>
+        <div class="compare-prompt">"What makes a good startup idea?"</div>
+        <div class="compare-response">
+          <p>Graham would push back on the question itself. You don't "come up with" good startup ideas &mdash; you <strong>notice</strong> them.</p>
+          <span class="compare-atom-cite">"The best startup ideas are the ones most people think are bad. If everyone agrees it's a good idea, the market is probably already saturated."</span>
+          <p>His framework: become the kind of person who notices problems. Live in the future and build what's missing. The best ideas seem obvious in <em>retrospect</em> because they were hiding in plain sight behind schlep blindness &mdash; the tedious work smart people unconsciously avoid.</p>
+          <span class="compare-atom-cite">"The willingness to embrace the schlep &mdash; the boring, hard, operational grind &mdash; IS the competitive advantage."</span>
+          <div class="compare-confidence">confidence: high &middot; 6 atoms</div>
+          <div class="compare-next-skill">Try <span class="sk">/apply</span> "schlep blindness" to your specific domain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DARK CTA / BRAIN SHOWCASE -->
+<section class="brain-showcase" id="cta">
+  <div class="section-eyebrow">The Paul Graham brain</div>
+  <h2>182 atoms from 220+ essays.<br>Free while in beta.</h2>
+  <p class="section-desc">One file. Any AI tool. 10 thinking skills that turn Paul Graham's 24 years of writing into a thinking partner you can actually use.</p>
+
+  <div class="install-block" onclick="navigator.clipboard.writeText('npx skills add brainsforsale/paul-graham')">
+    <code><span class="kw">$</span> npx skills add <span class="str">brainsforsale/paul-graham</span></code>
+    <button class="copy-btn" aria-label="Copy to clipboard">&#9112;</button>
+  </div>
+  <div class="install-hint">Works with Claude Code, Cursor, Windsurf, ChatGPT, Gemini</div>
+
+  <div class="showcase-actions">
+    <a href="#" class="btn-dark-surface">Get the brain</a>
+    <a href="#" class="btn-ghost">Explore the knowledge graph</a>
+  </div>
+</section>
+
+<!-- BRAIN CATALOG (MINI) -->
+<section class="catalog-section" id="brains">
+  <div class="section-eyebrow">The catalog</div>
+  <div class="section-heading">More brains coming.</div>
+  <p class="section-desc" style="margin: 0 auto;">Each brain is built from public content &mdash; essays, newsletters, podcasts, books, talks.</p>
+
+  <div class="catalog-grid">
+    <div class="catalog-card featured">
+      <div class="catalog-badge live">Live now</div>
+      <div class="catalog-name">Paul Graham</div>
+      <div class="catalog-role">YC co-founder &middot; paulgraham.com</div>
+      <div class="catalog-stats"><strong>182</strong> atoms &middot; <strong>12</strong> clusters &middot; <strong>10</strong> skills</div>
+    </div>
+    <div class="catalog-card">
+      <div class="catalog-badge soon">Building</div>
+      <div class="catalog-name">Scott Belsky</div>
+      <div class="catalog-role">Adobe CPO &middot; Implications newsletter</div>
+      <div class="catalog-stats"><strong>284</strong> atoms &middot; <strong>430</strong> connections</div>
+    </div>
+    <div class="catalog-card">
+      <div class="catalog-badge soon">Next</div>
+      <div class="catalog-name">Peter Attia</div>
+      <div class="catalog-role">The Drive podcast &middot; Outlive</div>
+      <div class="catalog-stats"><strong>73</strong> atoms &middot; ingesting</div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST A BRAIN -->
+<section class="request-section">
+  <div class="request-inner">
+    <div class="section-eyebrow">Don't see who you want?</div>
+    <h2>Request a brain.</h2>
+    <p class="section-desc">When a brain hits 50+ requests, we build it. Your vote shapes the catalog.</p>
+    <div class="request-row">
+      <input class="request-input" placeholder="Who should we build next? (e.g., Naval Ravikant)" />
+      <button class="btn-primary">Request</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">brainsforsale<span class="dot-com">.com</span></div>
+  <div class="footer-links">
+    <a href="#">Explore a brain</a>
+    <a href="#">How it works</a>
+    <a href="#">Claim your brain</a>
+  </div>
+  <p class="footer-fine">Knowledge graphs from public content. Not endorsed by brain subjects unless claimed. Built with structured thinking, not summaries.</p>
+</footer>
+
+</body>
+</html>
