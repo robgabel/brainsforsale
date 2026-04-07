@@ -1198,13 +1198,17 @@
             <button class="graph-btn active" onclick="setGraphFilter(null, this)">All</button>
             <button class="graph-btn" onclick="setGraphFilter('supports', this)">Supports</button>
             <button class="graph-btn" onclick="setGraphFilter('extends', this)">Extends</button>
+            <button class="graph-btn" onclick="setGraphFilter('contradicts', this)">Contradicts</button>
+            <button class="graph-btn" onclick="setGraphFilter('inspired_by', this)">Inspired By</button>
             <button class="graph-btn" onclick="setGraphFilter('related', this)">Related</button>
+            <button class="graph-btn" style="margin-left: 8px; background: var(--accent); border-color: var(--accent); color: white;" onclick="surpriseGraph()">✨ Surprise</button>
           </div>
           <div class="graph-legend">
             <div class="legend-item"><div class="legend-dot" style="background: #6366f1;"></div> Supports</div>
             <div class="legend-item"><div class="legend-dot" style="background: #60a5fa;"></div> Extends</div>
-            <div class="legend-item"><div class="legend-dot" style="background: #a855f7;"></div> Related</div>
             <div class="legend-item"><div class="legend-dot" style="background: #f87171;"></div> Contradicts</div>
+            <div class="legend-item"><div class="legend-dot" style="background: #fbbf24;"></div> Inspired By</div>
+            <div class="legend-item"><div class="legend-dot" style="background: #a855f7;"></div> Related</div>
           </div>
         </div>
 
@@ -2127,8 +2131,58 @@
 
     function setGraphFilter(filter, btn) {
       graphFilter = filter;
-      document.querySelectorAll('.graph-controls .graph-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.graph-controls .graph-btn').forEach(b => {
+        // Don't remove active from Surprise button
+        if (b.textContent.includes('Surprise')) return;
+        b.classList.remove('active');
+      });
       if (btn) btn.classList.add('active');
+    }
+
+    function surpriseGraph() {
+      // Zoom to a random high-confidence atom on the graph
+      const highConf = graphNodes.filter(n => n.confidence >= 0.7);
+      const pool = highConf.length > 0 ? highConf : graphNodes;
+      const node = pool[Math.floor(Math.random() * pool.length)];
+
+      // Select the node to highlight its connections
+      selectedNode = node;
+
+      // Smoothly animate to center on this node
+      const targetX = graphWidth / 2 - node.x;
+      const targetY = graphHeight / 2 - node.y;
+      const steps = 30;
+      let step = 0;
+
+      function animateToNode() {
+        step++;
+        const t = step / steps;
+        const ease = t * (2 - t); // ease-out
+        graphNodes.forEach(n => {
+          n.x += (targetX / steps) * ease * 0.5;
+          n.y += (targetY / steps) * ease * 0.5;
+        });
+        drawGraph();
+        if (step < steps) requestAnimationFrame(animateToNode);
+      }
+      animateToNode();
+
+      // Show tooltip for the surprised atom
+      const tt = document.getElementById('graphTooltip');
+      const preview = node.content.length > 200 ? node.content.slice(0, 200) + '...' : node.content;
+      let html = `<div class="tt-cluster">${esc(node.cluster)}</div>`;
+      html += `<div class="tt-content">${esc(preview)}</div>`;
+      if (node.original_quote) {
+        const q = node.original_quote.length > 150 ? node.original_quote.slice(0, 150) + '...' : node.original_quote;
+        html += `<div class="tt-quote">"${esc(q)}"</div>`;
+      }
+      // Show connection count
+      const connCount = graphEdges.filter(e => e.source.id === node.id || e.target.id === node.id).length;
+      html += `<div style="margin-top:8px;font-size:11px;color:var(--text-dim);">${connCount} connections · double-click to explore</div>`;
+      tt.innerHTML = html;
+      tt.style.display = 'block';
+      tt.style.left = (graphWidth / 2 + 20) + 'px';
+      tt.style.top = (graphHeight / 2 - 40) + 'px';
     }
 
     // ===== SURPRISE ME =====

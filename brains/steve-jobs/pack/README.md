@@ -1,6 +1,6 @@
 # Steve Jobs Brain Pack
 
-> **170 knowledge atoms** · **7 typed connections** · **10 thinking skills**
+> **170 knowledge atoms** · **32 typed connections** · **10 thinking skills**
 > From [brainsforsale.com](https://brainsforsale.com)
 
 ## What This Is
@@ -26,7 +26,7 @@ You should get a response that cites specific atoms, synthesizes Steve's perspec
 pack/
   ├── SKILL.md              ← Setup guide + skill reference (start here)
   ├── brain-context.md      ← Full knowledge base (load this as context)
-  ├── brain-atoms.json      ← Structured data (170 atoms, 7 connections)
+  ├── brain-atoms.json      ← Structured data (170 atoms, 32 connections)
   └── README.md             ← You are here
 ```
 
@@ -34,7 +34,7 @@ pack/
 
 **170 atoms** — Each atom is a self-contained insight with topic tags, source date, confidence score, and source URL.
 
-**7 connections** — Typed relationships between atoms: supports, contradicts, extends, related, inspired_by. These let skills trace reasoning chains and surface productive tensions.
+**32 connections** — Typed relationships between atoms: supports, contradicts, extends, related, inspired_by. These let skills trace reasoning chains and surface productive tensions.
 
 **16 topic clusters** — Simplicity, taste, product design, marketing, innovation, team building, focus, craftsmanship, the intersection of technology and liberal arts.
 

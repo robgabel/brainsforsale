@@ -10,7 +10,7 @@ Welcome to the **Jobs Brain Pack** from [brainsforsale.com](https://brainsforsal
 ## What You're Getting
 
 - **170 knowledge atoms** — Core insights, frameworks, and strategic principles from 50+ years of speeches, interviews, keynotes, and documented conversations (1976–2011)
-- **7 typed connections** — Relationships between ideas (supports, contradicts, extends, related, inspired_by)
+- **32 typed connections** — Relationships between ideas (supports, contradicts, extends, related, inspired_by)
 - **10 specialized thinking skills** — Each designed to activate different modes of reasoning
 - **Cross-referenced topics** — Simplicity, taste, product design, marketing, innovation, team building, focus, craftsmanship, the intersection of technology and liberal arts, and more
 

@@ -31,8 +31,8 @@
   },
   "supabase": {
     "project_id": "uzediwokyshjbsymevtp",
-    "atoms_table": "jobs_atoms",
-    "connections_table": "jobs_connections"
+    "atoms_table": "steve_jobs_atoms",
+    "connections_table": "steve_jobs_connections"
   },
   "clusters": {
     "product_design": {"name": "Product Design & Simplicity", "description": "Great products come from saying no to a thousand things. Simplicity is the ultimate sophistication — not the absence of complexity but its resolution."},

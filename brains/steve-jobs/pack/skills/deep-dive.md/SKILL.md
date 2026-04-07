@@ -68,6 +68,6 @@ Load relevant cluster file(s) from `clusters/`. For broad topics spanning 3+ clu
 
 ## Data
 
-- **atoms:** brain-atoms.json (170 atoms, 7 connections)
+- **atoms:** brain-atoms.json (170 atoms, 32 connections)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" in brain-context.md
