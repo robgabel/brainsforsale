@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const brain = getBrain(slug);
   if (!brain) return { title: "Brain not found" };
   return {
-    title: `${brain.name} Brain — BrainsForSale`,
+    title: `${brain.name} Brain — BrainsFor.Dev`,
     description: brain.tagline,
   };
 }
@@ -91,7 +91,7 @@ export default async function BrainDetailPage({ params }: { params: Promise<{ sl
               {isLive && (
                 <div className="mt-4">
                   <InstallCommand
-                    command={`npx skills add brainsforsale/${brain.slug}`}
+                    command={`npx skills add brainsfor/${brain.slug}`}
                     size="sm"
                   />
                 </div>
@@ -162,7 +162,7 @@ export default async function BrainDetailPage({ params }: { params: Promise<{ sl
           </h2>
 
           <div className="rounded-xl bg-deep-ink p-6 font-mono text-sm leading-loose text-[#e2e8f0]">
-            <div className="text-[#818cf8]">brainsforsale-{brain.slug}/</div>
+            <div className="text-[#818cf8]">brainsfor-{brain.slug}/</div>
             <div className="pl-4 text-[#e2e8f0]">SKILL.md <span className="text-[#64748b]">&larr; brain setup (one-time)</span></div>
             <div className="pl-4 text-[#e2e8f0]">brain-context.md <span className="text-[#64748b]">&larr; THE LLM file (full knowledge)</span></div>
             <div className="pl-4 text-[#e2e8f0]">brain-atoms.json <span className="text-[#64748b]">&larr; structured data + connections</span></div>
@@ -177,6 +177,23 @@ export default async function BrainDetailPage({ params }: { params: Promise<{ sl
         </div>
       </section>
 
+      {/* ─── Sources & Ethics ─── */}
+      <section className="px-6 py-12">
+        <div className="mx-auto max-w-[720px]">
+          <div className="rounded-xl border border-border-default bg-cool-surface p-6">
+            <h3 className="font-display text-lg font-normal tracking-tight text-deep-ink">
+              Built from public sources only
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-body">
+              This brain was derived exclusively from freely available, public resources &mdash; interviews,
+              podcasts, free newsletters, public talks, and blog posts. No transcripts from commercial works
+              or paywalled essays were used. Where book ideas appear, they come from public discourse:
+              reviews, author interviews, press coverage, and widely discussed concepts.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ─── Install ─── */}
       {isLive && (
         <section className="px-6 py-16">
@@ -187,8 +204,8 @@ export default async function BrainDetailPage({ params }: { params: Promise<{ sl
 
             <div className="space-y-4">
               {[
-                { tool: "Claude Code / Cowork", cmd: `npx skills add brainsforsale/${brain.slug}` },
-                { tool: "Cursor", cmd: `npx skills add brainsforsale/${brain.slug}` },
+                { tool: "Claude Code / Cowork", cmd: `npx skills add brainsfor/${brain.slug}` },
+                { tool: "Cursor", cmd: `npx skills add brainsfor/${brain.slug}` },
                 { tool: "Manual", cmd: "Download the pack and drop brain-context.md into your AI tool's project context." },
               ].map((item) => (
                 <div key={item.tool} className="rounded-lg border border-border-default bg-white p-4">

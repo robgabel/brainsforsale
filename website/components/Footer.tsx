@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <p className="font-display text-base font-semibold tracking-tight text-deep-ink">
-              brainsforsale<span className="text-brain-indigo">.com</span>
+              BrainsFor<span className="text-brain-indigo">.Dev</span>
             </p>
             <p className="mt-3 text-sm leading-relaxed text-body">
               Knowledge graphs of the world&apos;s best thinkers, packaged as AI skills.
@@ -45,7 +45,10 @@ export function Footer() {
 
         <div className="mt-12 border-t border-[var(--border-default)] pt-8 text-center">
           <p className="text-xs text-muted">
-            Built by Rob Gabel. &copy; {new Date().getFullYear()} BrainsForSale.
+            All brains built from freely available, public sources only. No commercial transcripts or paywalled content.
+          </p>
+          <p className="mt-2 text-xs text-muted">
+            Built by Rob Gabel. &copy; {new Date().getFullYear()} BrainsFor.Dev
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ export function Nav() {
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="font-display text-base font-semibold tracking-tight text-deep-ink">
-          brainsforsale<span className="text-brain-indigo">.com</span>
+          BrainsFor<span className="text-brain-indigo">.Dev</span>
         </Link>
 
         {/* Desktop links */}

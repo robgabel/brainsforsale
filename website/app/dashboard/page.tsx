@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { SignOutButton } from "@/components/SignOutButton";
 
 export const metadata = {
-  title: "Dashboard — BrainsForSale",
+  title: "Dashboard — BrainsFor.Dev",
 };
 
 export default async function DashboardPage() {
@@ -100,7 +100,7 @@ export default async function DashboardPage() {
                     )}
                     {brain.status === "live" && (
                       <div className="mt-3 rounded-lg bg-deep-ink px-3 py-2 font-mono text-xs text-success">
-                        $ npx skills add brainsforsale/{brain.slug}
+                        $ npx skills add brainsfor/{brain.slug}
                       </div>
                     )}
                     <Link
