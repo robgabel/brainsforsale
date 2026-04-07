@@ -1,0 +1,27 @@
+## Brain Selection
+
+This skill works across all installed brain packs. Specify which brain to consult.
+
+### Usage
+
+```
+/{{skill_name}} --scott-belsky "Your question here"
+/{{skill_name}} --paul-graham "Your question here"
+/{{skill_name}} --scott-belsky --paul-graham "Your question here"   # multi-brain
+/{{skill_name}} "Your question here"                                 # uses default brain
+```
+
+### How Brain Routing Works
+
+1. **Parse flags:** Extract `--brain-slug` flags from the user's input. Flags match brain directory names (e.g., `--scott-belsky` loads `brains/scott-belsky/pack/brain-context.md`).
+2. **Discover installed brains:** Scan for `brains/*/pack/brain-context.md` files. Each match is an available brain. Also check `brains/index.json` for the full registry.
+3. **Default behavior:**
+   - If only ONE brain is installed, use it automatically (no flag needed).
+   - If MULTIPLE brains are installed and no flag is given, list available brains and ask which to use.
+   - If `--all` is passed, run the skill against every installed brain and compare.
+4. **Load context:** For each selected brain, load its `brain-context.md` and `brain-atoms.json`.
+5. **Multi-brain mode:** When 2+ brains are selected, run the skill independently for each brain, then synthesize a combined perspective highlighting agreements and tensions.
+
+### Installed Brains
+
+Discover at runtime by scanning `brains/*/pack/brain-context.md`. Cross-reference with `brains/index.json` for metadata (name, slug, atom count, status). Only use brains with `"status": "live"`.

@@ -1,0 +1,97 @@
+---
+name: deep-dive
+description: "Exhaustive treatment of a topic from any brain. Use --brain-slug to choose whose knowledge to explore."
+---
+
+# /deep-dive — Everything a Thinker Knows About [Topic]
+
+Comprehensive, exhaustive treatment. Pulls ALL relevant atoms, maps relationships, clusters by theme, and synthesizes into a coherent narrative.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse the topic
+3. Find ALL atoms tagged with this topic or related topics — if 20 exist, show all 20
+4. Organize by theme: foundational → tactical → evolutionary
+5. Map connections between atoms
+6. Surface productive tensions and contradictions
+7. Synthesize into a coherent narrative
+8. **Multi-brain mode:** Deep-dive each brain separately, then cross-reference for agreements, tensions, and gaps
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md` and `brain-atoms.json` for full atom access.
+
+## Output Format — Single Brain, Full Coverage (5+ atoms)
+
+```
+📚 **Everything [Brain Name] Knows About "[Topic]"**
+
+🧠 **Foundational Principles**
+[Core atoms — highest confidence. Use original_quote when available.]
+
+🔨 **Tactical Implications**
+[Implementation atoms — what to do with these ideas]
+
+📈 **Evolution**
+[How thinking developed over time, with dates]
+
+🌐 **Connections to Other Ideas**
+[Cross-cluster links and bridges]
+
+⚠️ **Productive Tensions**
+[Where thinking contains useful contradictions — these are features, not bugs]
+
+📊 **Synthesis**
+[2-3 sentence coherent summary]
+
+💡 **Try next:** `/apply` (use it) or `/brainfight` (test it)
+```
+
+## Output Format — Single Brain, Thin Coverage (<5 atoms)
+
+```
+📚 **[Brain Name] on "[Topic]" — Limited Coverage ([N] atoms)**
+
+[List all available atoms with original_quote + implication]
+
+⚠️ This is a thin area of the brain. Consider:
+- `/connect [topic]` to find adjacent insights from richer clusters
+- `/deep-dive --other-brain [topic]` to check another brain's coverage
+```
+
+## Output Format — Multi-Brain
+
+```
+📚 **"[Topic]" — Cross-Brain Deep Dive**
+
+---
+**[Brain 1] ([N] atoms):**
+[Synthesis of their perspective with key atom citations]
+
+**[Brain 2] ([N] atoms):**
+[Synthesis of their perspective with key atom citations]
+---
+
+🤝 **Shared Ground**
+[Where the thinkers align on this topic]
+
+⚡ **Unique Contributions**
+[What each brain adds that the others don't cover]
+
+⚠️ **Productive Tensions**
+[Where the brains disagree — this is the most valuable part]
+
+💡 **Try next:** `/brainfight --brain-1 --brain-2 "[topic]"` or `/mashup` (synthesize perspectives)
+```
+
+## Rules
+
+1. **Pull ALL relevant atoms** — Don't cherry-pick. Organize and present everything.
+2. **Show connections** — Make relationships visible (supports, extends, contradicts).
+3. **Voice first** — Use `original_quote` throughout.
+4. **Flag tensions** — Contradictions are the most interesting content.
+5. **Thin topic degradation** — If <5 atoms, use the abbreviated format above.
+6. **Cross-brain coverage** — In multi-brain mode, note which brain has stronger coverage on which aspects.

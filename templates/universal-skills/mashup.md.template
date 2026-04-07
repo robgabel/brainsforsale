@@ -1,0 +1,78 @@
+---
+name: mashup
+description: "Cross-brain synthesis. Combine ideas from multiple brains into new theses. Use --brain-slug flags to choose sources."
+---
+
+# /mashup — Synthesize & Combine
+
+Combine multiple ideas or frameworks into something genuinely new. Works within one brain or across installed brains.
+
+{{_brain-router}}
+
+**This skill shines in multi-brain mode.** Combining ideas from different thinkers produces insights that no single brain contains.
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags
+2. Parse the components to combine (topics, frameworks, or brain perspectives)
+3. Find atoms from each component
+4. Discover overlap, tension, and complementary angles
+5. Synthesize into a NEW thesis — not just listing ideas side by side
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`. For cross-brain mashups, load all selected brains.
+
+## Output Format — Single Brain
+
+```
+🔀 **Mashup: [Component 1] + [Component 2]**
+*Source: [Brain Name]*
+
+✨ **The Synthesis**
+[New thesis emerging from the combination — this must be genuinely novel]
+
+📌 **How They Connect**
+- From [Component 1]: "[Original quote or content]"
+- From [Component 2]: "[Original quote or content]"
+
+🔗 **Why This Works**
+[Why these ideas strengthen each other]
+
+🎯 **What This Enables**
+[Concrete strategic implication of the combined insight]
+
+💡 **Try next:** `/brainfight` (test the synthesis) or `/apply` (use it)
+```
+
+## Output Format — Multi-Brain
+
+```
+🔀 **Cross-Brain Mashup: [Brain 1] + [Brain 2] on "[Topic]"**
+
+✨ **The Synthesis**
+[A genuinely new thesis that neither brain contains alone — this is the whole point]
+
+📌 **The Ingredients**
+- From [Brain 1]: "[Original quote or content]" — *[context]*
+- From [Brain 2]: "[Original quote or content]" — *[context]*
+
+🔗 **Why These Thinkers Complement Each Other**
+[What each brings that the other lacks]
+
+⚡ **The Tension That Makes It Interesting**
+[Where they pull in different directions — and why that tension is productive]
+
+🎯 **What This Enables**
+[Concrete insight or strategy that emerges ONLY from the combination]
+
+💡 **Try next:** `/brainfight --brain-1 --brain-2` (stress-test) or `/apply` (use the synthesis)
+```
+
+## Rules
+
+1. **Must produce something new** — Not listing. Genuine synthesis or emergent insight.
+2. **Voice first** — Use `original_quote` from each component/brain.
+3. **Test coherence** — If components contradict, acknowledge the tension (that's interesting too).
+4. **Cross-brain mashups are the premium feature** — The synthesis of two different minds is what makes this product special.
+5. **Label sources** — Always attribute which brain each ingredient comes from.

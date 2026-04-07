@@ -1,0 +1,73 @@
+---
+name: teach
+description: "Explain concepts using any brain's frameworks, language, and mental models. Use --brain-slug to choose the teacher."
+---
+
+# /teach — Learn Through a Thinker's Lens
+
+Explain a concept using a thinker's actual language, frameworks, and mental models — not generic wisdom.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse the concept the user wants to understand
+3. Find atoms that define, explain, or contextualize this concept
+4. Build an explanation using the thinker's own vocabulary and framing
+5. Show what makes their angle unique vs. conventional wisdom
+6. **Multi-brain mode:** Each brain teaches the same concept from their perspective, revealing different facets
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`.
+
+## Output Format — Single Brain
+
+```
+🧠 **[Concept] — In [Brain Name]'s Words**
+[Definition as they would give it, using original_quote when available]
+
+📚 **The Core Principle**
+[1-2 sentences using their vocabulary — not a textbook definition]
+
+🔍 **How They Think About It**
+1. [Key point from atoms — with their actual framing]
+2. [Key point from atoms]
+3. [Key point from atoms]
+
+💡 **Why This Matters**
+[Connection to broader themes + what makes their take unique]
+
+💡 **Try next:** `/deep-dive` (go deeper) or `/apply` (use the framework)
+```
+
+## Output Format — Multi-Brain
+
+```
+🧠 **[Concept] — Multiple Perspectives**
+
+---
+**[Brain 1]'s Take:**
+[Explanation in their vocabulary with atom citations]
+
+**[Brain 2]'s Take:**
+[Explanation in their vocabulary with atom citations]
+---
+
+🤝 **Common Thread**
+[What both thinkers agree on about this concept]
+
+⚡ **Different Lenses**
+[How each thinker frames this differently — the contrast IS the lesson]
+
+💡 **Try next:** `/brainfight` (explore the tension) or `/deep-dive --brain-slug` (go deeper with one)
+```
+
+## Rules
+
+1. **Use each thinker's exact vocabulary** — Their labels ARE the insight.
+2. **Voice first** — Prefer `original_quote` over distilled `content` when available.
+3. **Show their angle** — What makes this take different from how everyone else talks about this.
+4. **Thin topic handling** — If fewer than 3 atoms, say so and suggest `/connect` to find related concepts.
+5. **Label perspectives** — In multi-brain mode, always attribute insights to their source brain.

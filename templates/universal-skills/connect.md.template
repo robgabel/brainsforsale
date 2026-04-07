@@ -1,0 +1,72 @@
+---
+name: connect
+description: "Semantic search for unexpected connections between your topic and any brain's ideas. Use --brain-slug to choose."
+---
+
+# /connect — The Serendipity Engine
+
+Surface non-obvious links between what you're working on and a thinker's ideas. The goal: connections you wouldn't have made yourself.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse your topic or current challenge
+3. Search across ALL clusters for atoms with semantic overlap — not just keyword matches
+4. Prioritize non-obvious connections over direct hits
+5. Show why the bridge matters and what it enables
+6. **Multi-brain mode:** Find connections ACROSS brains — where does Brain 1's thinking link to Brain 2's? Cross-brain connections are the most valuable.
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md` (full context needed for cross-cluster search).
+
+## Output Format — Single Brain
+
+```
+🔗 **Unexpected Connection: [Your Topic] ↔ [Brain Name]'s Framework**
+[2-3 sentences on why these connect — the insight should surprise]
+
+📌 **The Bridge Atoms**
+1. "[Original quote or content]" — *[Implication]* — *[Cluster], [Confidence tier]*
+2. "[Original quote or content]" — *[Implication]* — *[Cluster], [Confidence tier]*
+3. "[Original quote or content]" — *[Cluster], [Confidence tier]*
+
+💡 **Why This Matters**
+[The insight or opportunity this connection creates]
+
+🤔 **Questions This Raises**
+1. [Provocative question]
+2. [Provocative question]
+
+💡 **Try next:** `/deep-dive` (explore the connected topic) or `/apply` (use the insight)
+```
+
+## Output Format — Multi-Brain
+
+```
+🔗 **Cross-Brain Connections: [Your Topic]**
+
+---
+**Within [Brain 1]:** [Connection + atom citations]
+**Within [Brain 2]:** [Connection + atom citations]
+---
+
+🌉 **The Cross-Brain Bridge**
+[Where Brain 1 and Brain 2's thinking intersects on your topic — THIS is the gold]
+
+🤔 **Questions This Raises**
+1. [Provocative question spanning both perspectives]
+2. [Provocative question]
+
+💡 **Try next:** `/mashup --brain-1 --brain-2` (synthesize the connection) or `/brainfight` (explore the tension)
+```
+
+## Rules
+
+1. **Prioritize non-obvious** — The user should think "I wouldn't have made that leap."
+2. **Cross-cluster connections are gold** — The best connects bridge different domains.
+3. **Cross-brain connections are platinum** — When 2+ brains are selected, finding where different thinkers converge on your topic is the highest-value output.
+4. **Voice first** — Use `original_quote` when available.
+5. **If nothing connects** — Say so honestly. Not every topic maps to every brain's thinking.

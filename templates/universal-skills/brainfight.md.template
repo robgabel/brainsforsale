@@ -1,0 +1,89 @@
+---
+name: brainfight
+description: "Head-to-head comparison. Pit ideas, frameworks, or entire brains against each other."
+---
+
+# /brainfight — Ideas in Conflict
+
+Pit two ideas, frameworks, or brains head-to-head. Find where they agree, where they genuinely conflict, and under what conditions each wins.
+
+{{_brain-router}}
+
+**Special multi-brain behavior:** This skill was BUILT for cross-brain battles. Use `--brain-1 --brain-2` to pit two thinkers directly against each other on any topic.
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags
+2. Parse the two sides (topics, frameworks, or brain perspectives)
+3. Find the strongest atoms supporting each position
+4. Identify genuine agreements and contradictions
+5. Determine conditional victory — when does each approach win?
+
+### Three Modes
+
+- **Idea vs. Idea (single brain):** `/brainfight --scott-belsky "remote work vs. in-office"` — Belsky's atoms on both sides
+- **Idea vs. Idea (multi-brain):** `/brainfight --scott-belsky --paul-graham "remote work vs. in-office"` — each brain takes a side based on their actual thinking
+- **Brain vs. Brain:** `/brainfight --scott-belsky --paul-graham "startups"` — how do their overall philosophies on a topic differ?
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`. For cross-brain fights, load both.
+
+## Output Format — Single Brain
+
+```
+⚔️ **Brainfight: "[Idea A]" vs. "[Idea B]"**
+*Referee: [Brain Name]*
+
+📌 **Team A:** [Thesis + 1-2 atom citations with original_quote]
+📌 **Team B:** [Thesis + 1-2 atom citations with original_quote]
+
+🤝 **Where They Agree**
+[Common ground — often surprising]
+
+💥 **Where They Conflict**
+[Genuine tradeoffs, not just different angles]
+
+🏆 **Who Wins?**
+[Conditional: "A wins when [X], B wins when [Y]"]
+
+🧠 **The Actual Truth**
+[Nuance — how both are right under different conditions]
+
+💡 **Try next:** `/mashup` (synthesize both) or `/apply` (use the winner)
+```
+
+## Output Format — Brain vs. Brain
+
+```
+⚔️ **Brainfight: [Brain 1] vs. [Brain 2] on "[Topic]"**
+
+📌 **[Brain 1]'s Position:**
+[Their thesis with original_quote citations]
+
+📌 **[Brain 2]'s Position:**
+[Their thesis with original_quote citations]
+
+🤝 **Surprising Agreement**
+[Where these different thinkers actually align]
+
+💥 **The Core Tension**
+[The fundamental difference in worldview or approach]
+
+🏆 **Who Wins?**
+[Conditional: "[Brain 1] wins when [X], [Brain 2] wins when [Y]"]
+
+🧠 **The Actual Truth**
+[What a thoughtful person would take from BOTH perspectives]
+
+💡 **Try next:** `/mashup --brain-1 --brain-2` (synthesize their best ideas) or `/apply --brain-slug` (commit to one approach)
+```
+
+## Rules
+
+1. **Steel-man BOTH sides equally** — No favoritism.
+2. **Voice first** — Use `original_quote` for maximum impact.
+3. **Find REAL tensions** — Not just different angles, but genuine tradeoffs.
+4. **Conditional victories** — Almost always both are right under different conditions. Name the conditions.
+5. **Thin topic** — If either side has <3 atoms, note it's a lopsided fight.
+6. **Cross-brain is the killer feature** — When two brains are pitted against each other, make the fight vivid and grounded in actual atoms from each brain.

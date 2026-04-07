@@ -75,45 +75,99 @@ Test your setup with the Quick Start prompt below. You should get a thoughtful r
 
 Each skill is a specialized reasoning mode. Use them in combination for more powerful thinking.
 
+**Multi-brain support:** If you have multiple brain packs installed, every skill accepts `--brain-slug` flags to choose whose thinking to consult. See [Multi-Brain Usage](#multi-brain-usage) below.
+
 ### 🧠 **1. /advise** — Strategic Counsel
-Ask for advice on decisions grounded in {{brain_first_name}}'s frameworks. Best for: career moves, company decisions, strategy choices.
+Ask for advice on decisions grounded in a thinker's frameworks. Best for: career moves, company decisions, strategy choices.
 *Example: "{{skill_examples.advise}}"*
+*Multi-brain: `/advise --scott-belsky --paul-graham "Should I raise my Series A?"`*
 
 ### 🔥 **2. /debate** — Steel-Man Both Sides
-Present a position; brain argues both for and against it. Best for: understanding tradeoffs, challenging assumptions.
+Present a position; a brain argues both for and against it. Best for: understanding tradeoffs, challenging assumptions.
 *Example: "{{skill_examples.debate}}"*
+*Multi-brain: `/debate --scott-belsky --paul-graham "Is remote work better for innovation?"`*
 
 ### 🎯 **3. /apply** — Actionable Frameworks
 Get concrete steps to apply an idea to your situation. Best for: implementation, execution, tactical work.
 *Example: "{{skill_examples.apply}}"*
+*Multi-brain: `/apply --scott-belsky --paul-graham "How should I structure my startup team?"`*
 
 ### 📚 **4. /teach** — Explain Like I'm Learning
-Get a clear explanation of a concept as {{brain_first_name}} sees it. Best for: understanding unfamiliar ideas, building mental models.
+Get a clear explanation of a concept from a thinker's perspective. Best for: understanding unfamiliar ideas, building mental models.
 *Example: "{{skill_examples.teach}}"*
+*Multi-brain: `/teach --scott-belsky --paul-graham "Explain product-market fit"`*
 
 ### 🔍 **5. /deep-dive** — Exhaustive Analysis
 Explore a topic across all connected atoms and frameworks. Best for: research, comprehensive understanding, thesis writing.
 *Example: "{{skill_examples.deep_dive}}"*
+*Multi-brain: `/deep-dive --scott-belsky --paul-graham "startups and taste"`*
 
 ### 🎨 **6. /surprise** — Unexpected Connections
 Get a random connection or counterintuitive insight you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration.
-*Example: No input needed — just run it.*
+*Example: No input needed — just run it. With multiple brains, picks randomly across all.*
 
 ### 🔗 **7. /connect** — Bridge Ideas
 Find unexpected connections between two concepts. Best for: synthesis, innovation, cross-domain thinking.
 *Example: "{{skill_examples.connect}}"*
+*Multi-brain: `/connect --scott-belsky --paul-graham "originality"` — finds cross-brain bridges*
 
 ### ⚔️ **8. /brainfight** — Ideas in Conflict
-Pit two ideas against each other. Best for: understanding nuance, avoiding false consensus, strategic clarity.
+Pit two ideas — or two brains — against each other. Best for: understanding nuance, avoiding false consensus, strategic clarity.
 *Example: "{{skill_examples.brainfight}}"*
+*Multi-brain: `/brainfight --scott-belsky --paul-graham "How to build a great company"` — the killer feature*
 
 ### 🔄 **9. /mashup** — Synthesize Atoms
-Combine multiple ideas into a new framework or thesis. Best for: original thinking, writing, strategy synthesis.
+Combine multiple ideas into a new framework or thesis. Works within one brain or across brains.
 *Example: "{{skill_examples.mashup}}"*
+*Multi-brain: `/mashup --scott-belsky --paul-graham "craft + startups"` — cross-brain synthesis*
 
 ### 📈 **10. /evolve** — How Ideas Build On Each Other
-Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
+Trace how a concept develops and changes over time. Best for: historical perspective, maturity models, trajectory thinking.
 *Example: "{{skill_examples.evolve}}"*
+*Multi-brain: `/evolve --scott-belsky --paul-graham "AI"` — parallel intellectual timelines*
+
+---
+
+## Multi-Brain Usage
+
+If you have multiple brain packs installed, you can target specific brains with any skill using `--brain-slug` flags.
+
+### Syntax
+
+```
+/skill-name --brain-slug "Your question"
+/skill-name --brain-1 --brain-2 "Your question"    # multi-brain mode
+/skill-name "Your question"                          # default brain (auto if only one installed)
+```
+
+### Examples
+
+```
+/advise --scott-belsky "Should I pivot to enterprise?"
+/advise --paul-graham "Should I pivot to enterprise?"
+/advise --scott-belsky --paul-graham "Should I pivot to enterprise?"
+/brainfight --scott-belsky --paul-graham "How to hire well"
+/mashup --scott-belsky --paul-graham "taste + startups"
+```
+
+### How It Works
+
+- **Single brain installed:** No flag needed — skills use the only brain available.
+- **Multiple brains, no flag:** Skills list available brains and ask which to use.
+- **One flag:** Skills consult that specific brain.
+- **Two+ flags:** Skills run against each brain independently, then synthesize perspectives showing agreements and tensions.
+
+### Skills That Shine in Multi-Brain Mode
+
+- **/brainfight** — Pit thinkers head-to-head on any topic. The killer feature.
+- **/mashup** — Cross-brain synthesis produces insights no single brain contains.
+- **/connect** — Cross-brain bridges are the highest-value connections.
+- **/debate** — Multiple challengers stress-test your thinking from different angles.
+- **/teach** — Same concept explained from different worldviews reveals hidden assumptions.
+
+### Universal Skills Location
+
+Universal skills (brain-agnostic) are at `pack/universal-skills/`. Per-brain skills remain in each brain's pack directory for backwards compatibility.
 
 ---
 

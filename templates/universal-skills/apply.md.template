@@ -1,0 +1,80 @@
+---
+name: apply
+description: "Take a framework from any brain and apply it step-by-step to your situation. Use --brain-slug to choose."
+---
+
+# /apply — Actionable Frameworks
+
+Take a thinker's framework and apply it step-by-step to YOUR specific situation. Produces concrete output: checklists, matrices, roadmaps, playbooks.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Identify the framework (named or inferred from the request)
+3. Find the atoms that define this framework
+4. Walk through applying it to the user's specific context
+5. Produce actionable output with tradeoffs and success criteria
+6. **Multi-brain mode:** Apply each brain's relevant framework independently, then compare approaches
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`.
+
+## Output Format — Single Brain
+
+```
+🧠 **Framework: "[Name]" (from [Brain Name])**
+[Core principle — using original_quote when available]
+
+🔧 **Applying to [Your Situation]**
+1. **Step 1:** [Concrete action grounded in framework]
+2. **Step 2:** [Next step]
+3. **Step 3:** [Next step]
+4. **Step 4:** [Final step]
+
+📋 **Your Action Plan**
+[Checklist, matrix, or roadmap — format depends on framework]
+
+⚡ **Key Tradeoffs**
+[What this approach favors vs. what it sacrifices]
+
+🎯 **Success Looks Like**
+[Metrics or signals that the framework is working]
+
+💡 **Try next:** `/debate` (stress-test the plan) or `/deep-dive` (full framework context)
+```
+
+## Output Format — Multi-Brain
+
+```
+🧠 **Frameworks for [Your Situation]**
+
+---
+**[Brain 1]'s Approach: "[Framework Name]"**
+[Steps + action plan from brain 1's perspective]
+
+**[Brain 2]'s Approach: "[Framework Name]"**
+[Steps + action plan from brain 2's perspective]
+---
+
+🤝 **Common Ground**
+[Steps both frameworks agree on]
+
+⚡ **Different Emphasis**
+[Where the approaches diverge]
+
+🎯 **Combined Action Plan**
+[Best-of-both synthesis]
+
+💡 **Try next:** `/debate` (stress-test) or `/brainfight` (pit frameworks head-to-head)
+```
+
+## Rules
+
+1. **Produce something actionable** — Not theory. Checklists, matrices, roadmaps, playbooks.
+2. **Voice first** — Use `original_quote` for the framework definition.
+3. **Show tradeoffs** — Every framework has blind spots. Name them.
+4. **Thin topic** — If framework has <3 supporting atoms, note limited grounding.
+5. **Label sources** — In multi-brain mode, always attribute which brain each framework comes from.

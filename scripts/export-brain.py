@@ -416,6 +416,68 @@ def export_skill_files(config: dict, atom_count: int, connection_count: int, out
                 break
 
 
+def export_universal_skills():
+    """Render universal (brain-agnostic) skills to pack/universal-skills/.
+
+    These skills accept --brain-slug flags and work across all installed brains.
+    They are generated once (not per-brain) from templates/universal-skills/.
+    """
+    universal_template_dir = TEMPLATES_DIR / "universal-skills"
+    if not universal_template_dir.exists():
+        print("  NOTE: No universal-skills templates found — skipping")
+        return
+
+    # Load the brain router template for inlining
+    router_path = universal_template_dir / "_brain-router.md.template"
+    router_content = ""
+    if router_path.exists():
+        with open(router_path) as f:
+            router_content = f.read()
+
+    # Output to pack/universal-skills/ at the project root
+    output_dir = ROOT_DIR / "pack" / "universal-skills"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Load index.json to inject available brains list into router
+    index_path = BRAINS_DIR / "index.json"
+    available_brains = []
+    if index_path.exists():
+        with open(index_path) as f:
+            index_data = json.load(f)
+        available_brains = [
+            b for b in index_data.get("brains", []) if b.get("status") == "live"
+        ]
+
+    # Build the brain list for the router
+    if available_brains:
+        brain_list_lines = "\n### Currently Available Brains\n\n"
+        for b in available_brains:
+            brain_list_lines += f"- `--{b['slug']}` — **{b['name']}** ({b['atom_count']} atoms from {b['source']})\n"
+        router_with_brains = router_content + brain_list_lines
+    else:
+        router_with_brains = router_content
+
+    for template_file in sorted(universal_template_dir.glob("*.template")):
+        if template_file.name.startswith("_"):
+            continue  # Skip partials like _brain-router
+
+        with open(template_file) as f:
+            content = f.read()
+
+        # Inline the brain router where {{_brain-router}} appears
+        content = content.replace("{{_brain-router}}", router_with_brains)
+
+        skill_name = template_file.stem  # e.g., "advise" from "advise.md"
+        skill_dir = output_dir / skill_name
+        skill_dir.mkdir(parents=True, exist_ok=True)
+        output_file = skill_dir / "SKILL.md"
+        with open(output_file, "w") as f:
+            f.write(content)
+        print(f"  universal-skills/{skill_name}/SKILL.md rendered")
+
+    print(f"  Universal skills output: {output_dir}")
+
+
 def load_atoms_from_file(filepath: str) -> list:
     """Load atoms from a JSON file (raw array or tool-result format)."""
     with open(filepath) as f:
@@ -500,10 +562,13 @@ def main():
     # print("\nExporting cluster files...")
     # export_cluster_files(atoms, connections, config, output_dir)
 
-    # Export skill files
+    # Export skill files (per-brain)
     if not args.skip_skills:
-        print("\nRendering skill templates...")
+        print("\nRendering per-brain skill templates...")
         export_skill_files(config, atom_count, connection_count, output_dir)
+
+        print("\nRendering universal skill templates...")
+        export_universal_skills()
 
     # Copy explore.html template
     explore_template = TEMPLATES_DIR / "explore.html.template"

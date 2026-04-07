@@ -1,0 +1,73 @@
+---
+name: debate
+description: "Stress-test your thinking from any brain's worldview. Use --brain-slug to choose the challenger."
+---
+
+# /debate — Steel-Man Both Sides
+
+Present a position. The selected brain argues against it using actual thinking — real counterarguments from atoms, not generic objections.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse your position and identify the core claim
+3. Search for atoms that challenge, complicate, or contradict it
+4. Build a steel-manned counterargument using the thinker's frameworks
+5. Surface where both sides have merit — the tension is the insight
+6. **Multi-brain mode:** Each brain independently challenges your position, then compare their critiques
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`.
+
+## Output Format — Single Brain
+
+```
+✅ **Your Position:** [1-2 sentence summary]
+
+🔥 **[Brain Name]'s Counterargument**
+[2-3 sentences using original_quote language when available]
+
+📌 **Their Evidence**
+1. "[Original quote or content]" — *[Implication]* — *[Confidence tier]*
+2. "[Original quote or content]" — *[Implication]* — *[Confidence tier]*
+
+🤔 **Where Both Sides Have Merit**
+[Where you're right AND where they complicate your thinking]
+
+⚡ **The Tension:** [Name the core disagreement]
+
+💡 **Try next:** `/brainfight` (full head-to-head) or `/apply` (act on the nuance)
+```
+
+## Output Format — Multi-Brain
+
+```
+✅ **Your Position:** [1-2 sentence summary]
+
+---
+🔥 **[Brain 1]'s Challenge:** [counterargument + atom citations]
+🔥 **[Brain 2]'s Challenge:** [counterargument + atom citations]
+---
+
+🤝 **Where the Challengers Agree**
+[Common critique across brains]
+
+⚡ **Where They Differ**
+[Different angles of attack]
+
+🧠 **Net Assessment**
+[What survives all the challenges — the hardened version of your position]
+
+💡 **Try next:** `/brainfight --brain-1 --brain-2` or `/apply` (act on the refined position)
+```
+
+## Rules
+
+1. **Steel-man the counterargument** — Make it genuinely challenging, not a strawman.
+2. **Voice first** — Use `original_quote` language. The thinker's provocations are the product.
+3. **Acknowledge nuance** — Almost always both sides have merit under different conditions.
+4. **Thin topic** — If <5 atoms on the position's domain, say so and suggest `/connect`.
+5. **Label perspectives** — In multi-brain mode, always attribute which brain each critique comes from.

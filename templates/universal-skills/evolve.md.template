@@ -1,0 +1,75 @@
+---
+name: evolve
+description: "Trace how any thinker's ideas on a topic evolved over time. Use --brain-slug to choose."
+---
+
+# /evolve — Intellectual Evolution
+
+Trace how a thinker's ideas on a topic developed over time. Shows the arc: early position → refinements → current stance. The evolution IS the insight.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse the topic
+3. Find all atoms on this topic, sorted by source_date
+4. Identify inflection points where thinking shifted
+5. Distinguish "expanded an idea" from "changed their mind"
+6. **Multi-brain mode:** Compare how different thinkers' thinking evolved on the same topic — parallel intellectual timelines
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`. Source dates are critical.
+
+## Output Format — Single Brain
+
+```
+📈 **Evolution of "[Brain Name] on [Topic]"**
+
+🔄 **The Arc**
+- **Early ([YYYY]):** [thinking — with original_quote if available]
+- **Shift ([YYYY]):** [what changed and why]
+- **Current ([YYYY]):** [latest position]
+
+🔀 **Key Inflection Points**
+[Why their thinking shifted — market changes, new evidence, experience]
+
+✨ **What This Shows**
+[What the intellectual journey reveals about the topic]
+
+💡 **Try next:** `/deep-dive` (full picture) or `/debate` (challenge current position)
+```
+
+## Output Format — Multi-Brain
+
+```
+📈 **Evolution of "[Topic]" — Parallel Timelines**
+
+---
+**[Brain 1]'s Arc:**
+- Early ([YYYY]): [position]
+- Current ([YYYY]): [position]
+
+**[Brain 2]'s Arc:**
+- Early ([YYYY]): [position]
+- Current ([YYYY]): [position]
+---
+
+🔄 **Converging or Diverging?**
+[Are these thinkers moving toward the same conclusion or apart?]
+
+✨ **What the Parallel Tracks Reveal**
+[What you learn from seeing two intellectual evolutions side by side]
+
+💡 **Try next:** `/brainfight` (current positions head-to-head) or `/mashup` (synthesize evolved positions)
+```
+
+## Rules
+
+1. **Use source_date rigorously** — Dates are the spine of evolution analysis.
+2. **Distinguish expansion from reversal** — "They expanded" ≠ "they were wrong before."
+3. **Show tension without hiding it** — If they contradict their earlier self, that's interesting, not embarrassing.
+4. **Voice first** — Use `original_quote` to show how framing itself evolved.
+5. **Thin topic** — If <3 dated atoms, state coverage is thin for evolution tracking.
+6. **Parallel timelines** — In multi-brain mode, aligning dates across thinkers reveals whether shifts were driven by the same external forces.

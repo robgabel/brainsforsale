@@ -1,0 +1,76 @@
+---
+name: advise
+description: "Strategic counsel from any installed brain. Use --brain-slug to choose whose thinking to consult."
+---
+
+# /advise — Strategic Counsel
+
+Get strategic advice grounded in a thinker's frameworks and worldview.
+
+{{_brain-router}}
+
+## How It Works
+
+1. **Select brain(s)** via `--brain-slug` flags (see Brain Selection above)
+2. Parse the decision — identify the core choice and tradeoffs
+3. Search the selected brain's atoms — pull the most relevant insights
+4. Synthesize what the thinker would likely recommend, citing specific atoms
+5. Flag confidence level and suggest next skills
+6. **Multi-brain mode:** If 2+ brains selected, show each perspective separately, then a synthesis highlighting where they agree and diverge
+
+## Context Loading
+
+For each selected brain, load its `brain-context.md`. Use `brain-atoms.json` for structured atom lookup.
+
+## Output Format — Single Brain
+
+```
+🧠 **[Brain Name]'s Perspective on [decision]**
+[2-3 sentences. Use original_quote language when available.]
+
+📌 **Key Atoms**
+1. "[Original quote or content]" — *[Implication]* — *[Confidence tier], [Source Date]*
+2. "[Original quote or content]" — *[Implication]* — *[Confidence tier], [Source Date]*
+
+💪 **Confidence:** High / Medium / Low — [1 sentence why]
+
+⚡ **What This Means For You**
+[1-2 actionable sentences]
+
+💡 **Try next:** `/debate` (stress-test) or `/apply` (execute)
+```
+
+## Output Format — Multi-Brain
+
+```
+🧠 **Advisory Panel on [decision]**
+
+---
+**[Brain 1 Name]'s Take:**
+[2-3 sentences with original_quote language + atom citations]
+
+**[Brain 2 Name]'s Take:**
+[2-3 sentences with original_quote language + atom citations]
+
+---
+
+🤝 **Where They Agree**
+[Common ground between the perspectives]
+
+⚡ **Where They Diverge**
+[Key differences in approach or emphasis]
+
+🎯 **Synthesis**
+[Combined recommendation acknowledging both perspectives]
+
+💡 **Try next:** `/brainfight --brain-1 --brain-2` (pit them head-to-head) or `/apply --brain-slug` (execute one perspective)
+```
+
+## Rules
+
+1. **Voice first** — When atoms have `original_quote`, use that language. The thinker's voice IS the product.
+2. **Always cite atoms** — Never synthesize without grounding. If a brain is silent on topic, say so.
+3. **Use each thinker's vocabulary** — Don't genericize their language.
+4. **Show implications** — Include the atom's `implication` field when present.
+5. **Thin topic handling** — If fewer than 5 relevant atoms, state coverage is thin and suggest `/connect` for adjacent ideas.
+6. **Label perspectives** — In multi-brain mode, always attribute which brain each insight comes from.
