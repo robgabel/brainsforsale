@@ -5,10 +5,6 @@ import { RequestBrainForm } from "@/components/RequestBrainForm";
 import Link from "next/link";
 
 export default function Home() {
-  const totalAtoms = BRAINS.reduce((sum, b) => sum + b.atomCount, 0);
-  const totalConnections = BRAINS.reduce((sum, b) => sum + b.connectionCount, 0);
-  const totalBrains = BRAINS.filter((b) => b.status === "live").length;
-
   return (
     <>
       {/* ─── Hero ─── */}
@@ -193,25 +189,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ─── Stats ─── */}
-      <section className="bg-warm-paper px-6 py-16">
-        <div className="mx-auto flex max-w-[900px] flex-wrap items-center justify-center gap-12 text-center">
-          {[
-            { value: String(totalBrains), label: "Live brains" },
-            { value: totalAtoms.toLocaleString(), label: "Knowledge atoms" },
-            { value: totalConnections.toLocaleString(), label: "Typed connections" },
-            { value: "8", label: "AI skills per brain" },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <div className="font-display text-3xl font-light tracking-tight text-deep-ink md:text-4xl">
-                {stat.value}
-              </div>
-              <div className="mt-1 text-xs font-medium text-muted">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </section>
 
