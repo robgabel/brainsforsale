@@ -20,7 +20,6 @@ export function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-wider text-muted">Product</h4>
             <ul className="mt-4 space-y-3">
               <li><Link href="/brains" className="text-sm text-body hover:text-deep-ink transition-colors">Brains</Link></li>
-              <li><Link href="/pricing" className="text-sm text-body hover:text-deep-ink transition-colors">Pricing</Link></li>
             </ul>
           </div>
 

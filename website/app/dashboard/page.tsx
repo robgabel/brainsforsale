@@ -132,8 +132,7 @@ export default async function DashboardPage() {
                 >
                   <h3 className="font-display text-lg font-normal text-deep-ink">{brain.name}</h3>
                   <p className="mt-1 text-xs text-body">{brain.tagline}</p>
-                  <div className="mt-3 flex items-center gap-2">
-                    <span className="text-sm text-muted line-through">${brain.price}</span>
+                  <div className="mt-3">
                     <span className="rounded-full bg-indigo-mist px-2 py-0.5 text-[10px] font-semibold text-indigo-deep">
                       Free in Beta
                     </span>

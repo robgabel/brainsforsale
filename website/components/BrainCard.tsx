@@ -22,12 +22,9 @@ export function BrainCard({ brain }: { brain: Brain }) {
           >
             {isLive ? "Live" : "Building"}
           </span>
-          <div className="text-right">
-            <span className="text-sm text-muted line-through">${brain.price}</span>
-            <span className="ml-2 rounded-full bg-indigo-mist px-2 py-0.5 text-xs font-semibold text-indigo-deep">
-              Free in Beta
-            </span>
-          </div>
+          <span className="rounded-full bg-indigo-mist px-2 py-0.5 text-xs font-semibold text-indigo-deep">
+            Free in Beta
+          </span>
         </div>
 
         {/* Name + source */}

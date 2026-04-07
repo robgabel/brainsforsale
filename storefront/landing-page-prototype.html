@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrainsForSale — Load a genius into your AI</title>
+<title>BrainsFor — Load a genius into your AI</title>
 <meta name="description" content="Knowledge graphs of the world's best thinkers, packaged as 8 AI skills you actually use. Think better in seconds.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -788,11 +788,11 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">brainsforsale<span class="dot-com">.com</span></a>
+  <a href="#" class="nav-logo">brainsfor<span class="dot-com">.com</span></a>
   <div class="nav-links">
     <a href="#brains">Brains</a>
     <a href="#skills">Skills</a>
-    <a href="#pricing">Pricing</a>
+    <!-- Pricing link hidden during beta -->
     <a href="#" class="btn-primary">Browse Brains</a>
   </div>
 </nav>
@@ -802,8 +802,8 @@
   <div class="hero-badge">Beta &mdash; All brains free</div>
   <h1>Load a genius into your AI.</h1>
   <p class="hero-sub">Knowledge graphs of the world's best thinkers. 8 AI skills per brain. Install in seconds.</p>
-  <div class="install-block" onclick="navigator.clipboard.writeText('npx skills add brainsforsale/paul-graham'); this.querySelector('.copy-label').textContent = 'Copied!'; setTimeout(() => this.querySelector('.copy-label').textContent = 'Copy', 2000)">
-    <code><span class="dollar">$</span> npx skills add brainsforsale/paul-graham</code>
+  <div class="install-block" onclick="navigator.clipboard.writeText('npx skills add brainsfor/paul-graham'); this.querySelector('.copy-label').textContent = 'Copied!'; setTimeout(() => this.querySelector('.copy-label').textContent = 'Copy', 2000)">
+    <code><span class="dollar">$</span> npx skills add brainsfor/paul-graham</code>
     <span class="copy-label">Copy</span>
   </div>
   <div class="install-hint">Works with Claude Code, Cursor, Gemini CLI, and more</div>
@@ -848,7 +848,6 @@
       <div class="brain-card-header">
         <div class="brain-status">Live</div>
         <div class="brain-price-tag">
-          <span class="struck">$29</span>
           <span class="free">Free in Beta</span>
         </div>
       </div>
@@ -873,7 +872,6 @@
       <div class="brain-card-header">
         <div class="brain-status">Live</div>
         <div class="brain-price-tag">
-          <span class="struck">$29</span>
           <span class="free">Free in Beta</span>
         </div>
       </div>
@@ -898,7 +896,6 @@
       <div class="brain-card-header">
         <div class="brain-status">Live</div>
         <div class="brain-price-tag">
-          <span class="struck">$29</span>
           <span class="free">Free in Beta</span>
         </div>
       </div>
@@ -923,7 +920,6 @@
       <div class="brain-card-header">
         <div class="brain-status">Live</div>
         <div class="brain-price-tag">
-          <span class="struck">$29</span>
           <span class="free">Free in Beta</span>
         </div>
       </div>
@@ -961,7 +957,7 @@
         <div class="how-step">02</div>
         <div class="how-title">Install with one command</div>
         <div class="how-desc">One line in your terminal. Works with Claude Code, Cursor, Gemini CLI, and any AI tool that supports skills.</div>
-        <div class="how-code">$ npx skills add brainsforsale/belsky</div>
+        <div class="how-code">$ npx skills add brainsfor/belsky</div>
       </div>
       <div class="how-card">
         <div class="how-step">03</div>
@@ -1071,11 +1067,23 @@
   </div>
 </section>
 
+<!-- SOURCES & ETHICS -->
+<section style="padding: 48px 24px; text-align: center;">
+  <div style="max-width: 680px; margin: 0 auto; border: 1px solid var(--border); border-radius: 12px; padding: 32px; background: var(--cool-surface, #f1f5f9);">
+    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 400; color: var(--deep-ink); margin-bottom: 12px;">Built from public sources only</h3>
+    <p style="font-size: 14px; line-height: 1.6; color: var(--body); max-width: 540px; margin: 0 auto;">
+      Every brain is derived exclusively from freely available, public resources &mdash; interviews, podcasts,
+      free newsletters, talks, and blog posts. No commercial transcripts or paywalled content.
+      Where book ideas appear, they come from public discourse: reviews, author interviews, and press coverage.
+    </p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">brainsforsale<span class="dot-com">.com</span></div>
+      <div class="footer-brand">brainsfor<span class="dot-com">.com</span></div>
       <div class="footer-desc">Knowledge graphs of the world's best thinkers, packaged as AI skills.</div>
     </div>
     <div class="footer-col">
@@ -1101,7 +1109,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    Built by Rob Gabel. &copy; 2026 BrainsForSale.
+    Built by Rob Gabel. &copy; 2026 BrainsFor.
   </div>
 </footer>
 

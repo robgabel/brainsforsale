@@ -33,10 +33,6 @@ export function Nav() {
           <Link href="/brains" className="text-[15px] font-medium text-body hover:text-deep-ink transition-colors">
             Brains
           </Link>
-          <Link href="/pricing" className="text-[15px] font-medium text-body hover:text-deep-ink transition-colors">
-            Pricing
-          </Link>
-
           {user ? (
             <Link
               href="/dashboard"
@@ -81,9 +77,6 @@ export function Nav() {
           <div className="flex flex-col gap-4">
             <Link href="/brains" className="text-[15px] font-medium text-body" onClick={() => setMobileOpen(false)}>
               Brains
-            </Link>
-            <Link href="/pricing" className="text-[15px] font-medium text-body" onClick={() => setMobileOpen(false)}>
-              Pricing
             </Link>
             {user ? (
               <Link
