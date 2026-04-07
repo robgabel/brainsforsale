@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-YouTube transcript extraction for BrainsForSale.
+Video & web transcript extraction for BrainsForSale.
 
-Extracts transcripts from YouTube videos and saves them as source material
-for atom generation. Works with the generic brain pipeline.
+Extracts transcripts from YouTube videos or web pages (via Firecrawl) and
+saves them as source material for atom generation. Works with the generic
+brain pipeline.
 
 Usage:
-    # Extract transcript from a single video
+    # Extract transcript from a single YouTube video
     python scripts/ingest-youtube.py --brain steve-jobs --url "https://youtube.com/watch?v=..."
 
     # Extract from a URL list file (one URL per line)
@@ -14,6 +15,12 @@ Usage:
 
     # Extract from all sources in sources.json that have youtube_id set
     python scripts/ingest-youtube.py --brain steve-jobs --from-sources
+
+    # Fetch transcript/article text via Firecrawl (for web pages with transcripts)
+    python scripts/ingest-youtube.py --brain steve-jobs --firecrawl --url "https://example.com/transcript"
+
+    # Fetch all sources via Firecrawl using transcript_url from sources.json
+    python scripts/ingest-youtube.py --brain steve-jobs --firecrawl --from-sources
 
     # Decompose transcripts into atoms using Claude
     python scripts/ingest-youtube.py --brain steve-jobs --decompose
@@ -42,6 +49,12 @@ try:
     HAS_ANTHROPIC = True
 except ImportError:
     HAS_ANTHROPIC = False
+
+try:
+    import httpx
+    HAS_HTTPX = True
+except ImportError:
+    HAS_HTTPX = False
 
 
 def extract_video_id(url_or_id: str) -> str:
@@ -114,6 +127,72 @@ def fetch_transcript(video_id: str) -> dict:
 
     except Exception as e:
         return {"video_id": video_id, "error": str(e)}
+
+
+def fetch_via_firecrawl(url: str, firecrawl_key: str = None, supabase_url: str = None) -> dict:
+    """Fetch page content via Firecrawl API or Supabase edge function.
+
+    Supports two modes:
+    1. Direct Firecrawl API (requires FIRECRAWL_API_KEY)
+    2. Supabase edge function proxy (requires SUPABASE_URL + SUPABASE_SERVICE_KEY)
+    """
+    if not HAS_HTTPX:
+        print("ERROR: httpx not installed. Run: pip install httpx")
+        sys.exit(1)
+
+    firecrawl_key = firecrawl_key or os.environ.get("FIRECRAWL_API_KEY")
+    supabase_url = supabase_url or os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_SERVICE_KEY")
+
+    try:
+        if firecrawl_key:
+            # Direct Firecrawl API
+            resp = httpx.post(
+                "https://api.firecrawl.dev/v1/scrape",
+                headers={"Authorization": f"Bearer {firecrawl_key}"},
+                json={"url": url, "formats": ["markdown"]},
+                timeout=60,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            markdown = data.get("data", {}).get("markdown", "")
+            metadata = data.get("data", {}).get("metadata", {})
+        elif supabase_url and supabase_key:
+            # Supabase edge function proxy
+            resp = httpx.post(
+                f"{supabase_url}/functions/v1/firecrawl-scrape",
+                headers={
+                    "Authorization": f"Bearer {supabase_key}",
+                    "Content-Type": "application/json",
+                },
+                json={"url": url},
+                timeout=60,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            markdown = data.get("markdown", data.get("data", {}).get("markdown", ""))
+            metadata = data.get("metadata", {})
+        else:
+            return {"error": "No Firecrawl API key or Supabase edge function configured. "
+                    "Set FIRECRAWL_API_KEY or both SUPABASE_URL + SUPABASE_SERVICE_KEY."}
+
+        if not markdown:
+            return {"error": f"No content extracted from {url}"}
+
+        return {
+            "video_id": None,
+            "source_url": url,
+            "language": metadata.get("language", "en"),
+            "is_generated": False,
+            "segment_count": len(markdown.split("\n\n")),
+            "duration_seconds": 0,
+            "full_text": markdown,
+            "segments": [],
+            "metadata": metadata,
+        }
+
+    except Exception as e:
+        return {"error": str(e)}
 
 
 def slugify(text: str) -> str:
@@ -233,6 +312,8 @@ def main():
     parser.add_argument("--from-sources", action="store_true",
                         help="Extract from all sources in sources.json that have youtube_id")
     parser.add_argument("--title", help="Title for the video (with --url)")
+    parser.add_argument("--firecrawl", action="store_true",
+                        help="Use Firecrawl to fetch web page content (for transcript pages)")
     parser.add_argument("--decompose", action="store_true",
                         help="Decompose transcripts into atoms using Claude")
     parser.add_argument("--file", help="Specific transcript file to decompose (with --decompose)")
@@ -253,7 +334,20 @@ def main():
         brain_json = json.load(f)
 
     # --- TRANSCRIPT EXTRACTION ---
-    if args.url:
+    if args.url and args.firecrawl:
+        # Firecrawl mode: fetch web page content
+        title = args.title or f"firecrawl-page"
+        print(f"Fetching via Firecrawl: {args.url}")
+        if not args.dry_run:
+            data = fetch_via_firecrawl(args.url)
+            if "error" in data:
+                print(f"  ERROR: {data['error']}")
+                sys.exit(1)
+            save_transcript(args.brain, title, data, {"date": "unknown", "url": args.url})
+        else:
+            print(f"  [DRY RUN] Would fetch via Firecrawl: {args.url}")
+
+    elif args.url:
         video_id = extract_video_id(args.url)
         title = args.title or f"video-{video_id}"
         print(f"Fetching transcript for: {video_id}")
@@ -302,25 +396,49 @@ def main():
         with open(sources_path) as f:
             sources = json.load(f)
 
-        videos = [s for s in sources["sources"] if s.get("youtube_id")]
-        print(f"Found {len(videos)} sources with youtube_id set")
-        for i, source in enumerate(videos):
-            vid = source["youtube_id"]
-            title = source["title"]
-            print(f"[{i+1}/{len(videos)}] {title}")
-            if not args.dry_run:
-                data = fetch_transcript(vid)
-                if "error" in data:
-                    print(f"  ERROR: {data['error']}")
-                    continue
-                save_transcript(args.brain, title, data, {
-                    "date": source.get("date", "unknown"),
-                    "type": source.get("type", "video"),
-                    "priority": source.get("priority", "medium"),
-                    "key_topics": source.get("key_topics", []),
-                })
-            else:
-                print(f"  [DRY RUN] Would fetch {vid}")
+        if args.firecrawl:
+            # Firecrawl mode: fetch sources with transcript_url
+            pages = [s for s in sources["sources"] if s.get("transcript_url")]
+            print(f"Found {len(pages)} sources with transcript_url set")
+            for i, source in enumerate(pages):
+                url = source["transcript_url"]
+                title = source["title"]
+                print(f"[{i+1}/{len(pages)}] {title}")
+                if not args.dry_run:
+                    data = fetch_via_firecrawl(url)
+                    if "error" in data:
+                        print(f"  ERROR: {data['error']}")
+                        continue
+                    save_transcript(args.brain, title, data, {
+                        "date": source.get("date", "unknown"),
+                        "type": source.get("type", "video"),
+                        "priority": source.get("priority", "medium"),
+                        "key_topics": source.get("key_topics", []),
+                        "url": url,
+                    })
+                else:
+                    print(f"  [DRY RUN] Would fetch via Firecrawl: {url}")
+        else:
+            # YouTube mode: fetch sources with youtube_id
+            videos = [s for s in sources["sources"] if s.get("youtube_id")]
+            print(f"Found {len(videos)} sources with youtube_id set")
+            for i, source in enumerate(videos):
+                vid = source["youtube_id"]
+                title = source["title"]
+                print(f"[{i+1}/{len(videos)}] {title}")
+                if not args.dry_run:
+                    data = fetch_transcript(vid)
+                    if "error" in data:
+                        print(f"  ERROR: {data['error']}")
+                        continue
+                    save_transcript(args.brain, title, data, {
+                        "date": source.get("date", "unknown"),
+                        "type": source.get("type", "video"),
+                        "priority": source.get("priority", "medium"),
+                        "key_topics": source.get("key_topics", []),
+                    })
+                else:
+                    print(f"  [DRY RUN] Would fetch {vid}")
 
     # --- ATOM DECOMPOSITION ---
     if args.decompose:

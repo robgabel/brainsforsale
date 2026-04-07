@@ -1,0 +1,134 @@
+[
+  {
+    "content": "Steve Jobs possessed an almost preternatural ability to convince people — including himself — that impossible things were possible. This 'reality distortion field,' named by Apple engineer Bud Tribble after a Star Trek episode, was not mere charisma but a systematic reframing of constraints as choices. When confronted with hard limits, Jobs would simply assert they didn't apply, and engineers would find ways to prove him right.",
+    "original_quote": "The people who are crazy enough to think they can change the world are the ones who do.",
+    "implication": "Leaders who set audacious, 'impossible' goals often get closer to them than leaders who set conservative, 'achievable' ones — the constraint is frequently psychological, not physical. Before accepting a limitation, ask whether it's truly fixed or just conventional thinking.",
+    "cluster": "reality_distortion",
+    "topics": ["leadership", "vision", "persuasion", "culture", "impossibility"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple Think Different campaign narration, 1997",
+    "source_date": "1997"
+  },
+  {
+    "content": "When Apple needed John Sculley to leave Pepsi and become CEO, Jobs used a single devastating reframe rather than logic or compensation packages. The question wasn't about salary or equity — it was about legacy and meaning. The challenge landed because it exposed a gap between where Sculley was and where he could be.",
+    "original_quote": "Do you want to sell sugar water for the rest of your life, or do you want to come with me and change the world?",
+    "implication": "The most powerful recruitment pitch is not a compensation offer but a meaning offer — show someone the gap between their current work and the work they could be doing. Legacy-level decisions respond to legacy-level framing.",
+    "cluster": "reality_distortion",
+    "topics": ["recruitment", "persuasion", "meaning", "leadership", "vision"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011; confirmed by John Sculley in multiple interviews",
+    "source_date": "1983"
+  },
+  {
+    "content": "Jobs insisted the original Mac had to ship in 90 days when engineers said it would take much longer. They shipped it — not because the deadline was reasonable, but because Jobs created a psychological environment where shipping on time felt more real than missing it. The team worked with an urgency that redefined what was possible.",
+    "original_quote": "We're going to make a dent in the universe. Otherwise why else even be here?",
+    "implication": "Deadlines that feel outrageous often produce outcomes that reasonable deadlines never would — the gap between 'expected' and 'demanded' becomes creative fuel. Set timelines from vision, not from bottom-up engineering estimates alone.",
+    "cluster": "reality_distortion",
+    "topics": ["product-development", "deadlines", "culture", "urgency", "teams"],
+    "confidence": 0.95,
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_type": "interview",
+    "source_date": "1984"
+  },
+  {
+    "content": "Jobs treated keynote presentations not as information delivery but as theatrical experiences — product reveals staged as narrative climaxes, with weeks of rehearsal for every transition and pause. He understood that how you introduce something to the world shapes how the world receives and values it. The presentation was itself a product.",
+    "original_quote": "I've looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?'",
+    "implication": "How you present your work is inseparable from the work itself — a great product announced carelessly is a lesser product in the market's mind. Invest in the ceremony of launch as seriously as the engineering of the thing launched.",
+    "cluster": "reality_distortion",
+    "topics": ["presentation", "storytelling", "product-launch", "theater", "branding"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "The original Macintosh team wore pirate flag T-shirts and believed, genuinely, that they were changing the world. Jobs cultivated this shared mythology deliberately — the team's belief in its own mission made them capable of feats that a normal product team would have declared impossible. Shared narrative is a force multiplier on talent.",
+    "original_quote": "It's better to be a pirate than to join the navy.",
+    "implication": "Teams that believe they are making history actually make more of it — mission isn't just culture decoration, it's a performance enhancer. The story the team tells itself about its work directly determines the quality of the work it produces.",
+    "cluster": "reality_distortion",
+    "topics": ["culture", "teams", "mission", "motivation", "mythology"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Odyssey: Pepsi to Apple, John Sculley memoir, 1987; widely corroborated",
+    "source_date": "1984"
+  },
+  {
+    "content": "Jobs believed that great vision is inherently persuasive — not through argument but through the vividness and internal consistency of the picture being painted. He didn't convince people by marshaling data; he convinced them by making the future feel real, inevitable, and exciting. The RDF was less about manipulation than about genuine conviction.",
+    "original_quote": "Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently.",
+    "implication": "Conviction, when it is real and specific, is more persuasive than any slide deck — leaders who have truly internalized where they are going transfer that certainty to others. Vague ambition inspires no one; vivid, specific futures pull people in.",
+    "cluster": "reality_distortion",
+    "topics": ["vision", "persuasion", "leadership", "conviction", "storytelling"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple Think Different campaign narration, 1997",
+    "source_date": "1997"
+  },
+  {
+    "content": "When Jobs returned to Apple in 1997, the company had 90 days of cash left. Rather than managing the crisis with caution, he made the company feel, internally and externally, like it was winning — firing products, simplifying the line, and announcing the Think Different campaign before the turnaround was real. Narrative preceded the reality it created.",
+    "original_quote": "If you act like you can do something, then it will work.",
+    "implication": "In a turnaround, the story you tell the market and your team is not spin — it is strategy. Projecting confidence and clarity before you have achieved either can make both more likely to arrive.",
+    "cluster": "reality_distortion",
+    "topics": ["turnaround", "leadership", "narrative", "strategy", "confidence"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs routinely told engineers that something was 'a piece of shit' and demanded it be rebuilt from scratch — only to have the rebuilt version be celebrated as revolutionary. The pattern was consistent: his refusal to accept the first or second answer forced iterations that looked impossible until they existed. Aesthetic rejection was a creative forcing function.",
+    "original_quote": "Real artists ship.",
+    "implication": "Demanding the redesign of something that 'works' is not perfectionism — it is the mechanism by which good becomes great. The willingness to call something insufficient before you know what sufficient looks like is what produces breakthroughs.",
+    "cluster": "reality_distortion",
+    "topics": ["design", "iteration", "standards", "product-development", "perfectionism"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "1984"
+  },
+  {
+    "content": "Jobs had a binary classification system — things were either 'insanely great' or 'shit.' There was no middle ground. This forced everyone around him to constantly push for the insanely great bucket, because landing in the other category was psychologically intolerable. The binary made excellence feel like the minimum viable bar.",
+    "original_quote": "We want to make great products, not be the biggest.",
+    "implication": "Leaders who tolerate mediocrity by calling it 'good enough' create cultures of good enough. Leaders whose standards are binary — excellent or unacceptable — create cultures that trend toward excellence. The bar itself is a cultural artifact.",
+    "cluster": "reality_distortion",
+    "topics": ["standards", "culture", "excellence", "leadership", "product-quality"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs understood that the impossible becomes possible when you refuse to begin the negotiation about whether it is possible. By never engaging with the premise that something couldn't be done, he preserved the psychological space in which it could be done. The reality distortion field was partly the absence of permission to doubt.",
+    "original_quote": "I want to put a ding in the universe.",
+    "implication": "The first concession in any creative challenge is rarely about resources — it is about permission. Once a team silently decides that something is impossible, the engineering follows the belief. Protect the assumption of possibility as long as you can.",
+    "cluster": "reality_distortion",
+    "topics": ["innovation", "culture", "belief", "possibility", "leadership"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Playboy Interview with Steve Jobs, February 1985",
+    "source_date": "1985-02"
+  },
+  {
+    "content": "Jobs approached press and analyst skepticism with a form of pre-emptive irreverence — dismissing conventional wisdom before it could anchor the conversation. When launching the iPhone, he said they were five years ahead of everyone else and that competitors wouldn't be able to catch up. The confidence shaped the initial reception before any review was written.",
+    "original_quote": "Every once in a while a revolutionary product comes along that changes everything. And Apple has been very fortunate — it's been able to introduce a few of these into the world.",
+    "implication": "How you frame your own announcement shapes the frame journalists and analysts use to evaluate it — enter every launch by defining the category and the standard of comparison yourself. Letting the market set the terms before you do is a strategic concession.",
+    "cluster": "reality_distortion",
+    "topics": ["marketing", "launch", "press", "narrative", "iPhone"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Macworld Keynote, San Francisco, January 9, 2007",
+    "source_date": "2007-01-09"
+  },
+  {
+    "content": "The reality distortion field had a dark side Jobs acknowledged obliquely: it could lead to cruelty, impatience, and a dismissal of contributors whose work wasn't yet at the level he envisioned. The same force that pushed people to greatness also burned out many who encountered it. Extraordinary standards and human cost are not always separable.",
+    "original_quote": "I'm sorry — I don't have time to be nice.",
+    "implication": "The highest-performing creative environments often carry real human cost — understanding the mechanism doesn't require celebrating the cruelty. Leaders can borrow the forcing function of high standards without adopting the interpersonal ruthlessness that often accompanied it in Jobs' case.",
+    "cluster": "reality_distortion",
+    "topics": ["leadership", "culture", "cost", "standards", "management"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011; multiple former Apple employees",
+    "source_date": "2011"
+  }
+]

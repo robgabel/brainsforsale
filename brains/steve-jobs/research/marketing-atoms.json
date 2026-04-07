@@ -1,0 +1,167 @@
+[
+  {
+    "content": "Jobs believed great marketing is never about products — it's about values. When Apple came back from near-death in 1997, he deliberately avoided talking about speed or RAM and instead asked what Apple stands for. The answer became the 'Think Different' campaign. Marketing that endures connects a brand to a worldview, not a feature set.",
+    "original_quote": "Marketing is about values. This is a very complicated world, it's a very noisy world, and we're not going to get a chance to get people to remember much about us. No company is. So we have to be really clear on what we want them to know about us.",
+    "implication": "Before you write a word of copy, answer: what does your company believe? Features become obsolete; values compound. Build your brand on a position, not a product.",
+    "cluster": "marketing_brand",
+    "topics": ["brand values", "messaging", "positioning", "Think Different", "marketing strategy"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Internal Apple 'Think Different' strategy meeting, 1997",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs used Nike as the gold standard for values-based marketing. Nike never talks about their shoes — they honor great athletes and athletic achievement. That emotional positioning is what makes Nike feel essential rather than merely useful. Jobs applied this same logic to Apple: honor the people who think differently, not the computers they use.",
+    "original_quote": "Nike sells a commodity. They sell shoes. And yet when you think of Nike, you feel something different than a shoe company. In their ads, they don't ever talk about the product. They don't ever tell you about their air soles and why they're technically superior. What does Nike do in their advertising? They honor great athletes.",
+    "implication": "Your product is not your brand. Find the human aspiration your product serves and make that the center of your marketing. Customers buy identity as much as utility.",
+    "cluster": "marketing_brand",
+    "topics": ["brand identity", "Nike analogy", "emotional marketing", "aspiration", "positioning"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Internal Apple 'Think Different' strategy meeting, 1997",
+    "source_date": "1997"
+  },
+  {
+    "content": "'The crazy ones' manifesto was Jobs articulating Apple's core customer — not demographics but a psychological type. The people who believe they can change the world actually do. By honoring misfits and rebels, Apple told its ideal customer 'you belong here' without ever mentioning a single spec. This is segmentation through worldview, not age bracket.",
+    "original_quote": "Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes — the ones who see things differently. They're not fond of rules. You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them, because they change things.",
+    "implication": "The most powerful targeting is ideological, not demographic. Define the mindset of your ideal customer — the worldview they hold — and speak directly to that identity.",
+    "cluster": "marketing_brand",
+    "topics": ["Think Different", "customer identity", "brand manifesto", "targeting", "storytelling"],
+    "confidence": 0.95,
+    "source_type": "video",
+    "source_ref": "Think Different campaign narration, Apple Inc., 1997",
+    "source_date": "1997-09"
+  },
+  {
+    "content": "The 1984 Super Bowl ad was a bet that marketing itself could be a product launch event — something people would talk about for decades regardless of what it sold. Directed by Ridley Scott, it ran once nationally and became one of the most studied ads in history. Jobs understood that audacity in presentation could generate attention no media budget alone could buy.",
+    "original_quote": "It was a great ad. It was a piece of American culture.",
+    "implication": "A single audacious creative act can outperform years of conventional advertising spend. Ask whether your launch moment is remarkable enough that people will describe it to someone who wasn't there.",
+    "cluster": "marketing_brand",
+    "topics": ["1984 ad", "launch events", "cultural marketing", "Super Bowl", "audacity"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Various retrospective interviews, Jobs on the 1984 ad, 1990s",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs insisted Apple's messaging be ruthlessly simple — one idea per ad, one headline, no clutter. He killed campaigns that had too much copy or tried to explain too much. In his view, if you can't distill your message to something a person can hold in one thought, you don't understand your own product well enough to sell it.",
+    "original_quote": "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.",
+    "implication": "Complexity in your message signals confusion in your strategy. If your tagline requires a footnote, keep editing. Simplicity is the result of discipline, not laziness.",
+    "cluster": "marketing_brand",
+    "topics": ["simplicity", "messaging", "clarity", "copywriting", "communication"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek interview, 1998",
+    "source_date": "1998-05-25"
+  },
+  {
+    "content": "When Jobs returned to Apple in 1997, the product line had ballooned to dozens of confusing SKUs. He slashed it to four products on a two-by-two grid: consumer/pro, desktop/laptop. This product simplification was itself a marketing act — it made Apple's story tellable again. Clarity of offering is a prerequisite for clarity of message.",
+    "original_quote": "What are the ten things that Apple should focus on going forward? And they went through them. And I said, we're not doing nine of them. We're going to do one.",
+    "implication": "Before you fix your marketing, fix your portfolio. A brand cannot communicate clearly if the company behind it cannot. Ruthless product focus creates the conditions for memorable marketing.",
+    "cluster": "marketing_brand",
+    "topics": ["product simplification", "focus", "brand clarity", "portfolio strategy", "Apple turnaround"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011 (quoting 1997-era meetings)",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs treated the Apple Store not as retail but as the world's most permanent advertisement. Every design decision — the Genius Bar, the open tables, the glass staircases — was about communicating Apple's values through spatial experience. The store was a three-dimensional expression of the brand before a customer ever touched a product.",
+    "original_quote": "We want to be the best at helping customers learn how to use the product, and we want to do that in a distinctive Apple way. The stores will become the most important real estate we've built.",
+    "implication": "Every touchpoint is a brand communication. Your physical or digital environment should express what you believe before a single word is spoken. Design the experience, not just the message.",
+    "cluster": "marketing_brand",
+    "topics": ["Apple Store", "retail experience", "brand touchpoints", "experiential marketing", "spatial design"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Fortune, 'Apple's Retail Gamble', 2001",
+    "source_date": "2001-05"
+  },
+  {
+    "content": "Jobs was obsessed with the unboxing experience as a brand moment. He believed the packaging was the first physical touch a customer has with the product, and it should build anticipation and signal quality before anything is seen or used. Apple spent months on box design — the pace at which the lid lifts, the feel of the cardboard — treating packaging as marketing collateral.",
+    "original_quote": "Steve would spend weeks on the box. He knew that people judge a book by its cover and that the whole experience of opening the package for the first time communicates something about the product.",
+    "implication": "The unboxing moment is your first product review. Design it with the same care as the product itself — it sets expectations and mood for everything that follows.",
+    "cluster": "marketing_brand",
+    "topics": ["packaging design", "unboxing", "first impressions", "brand experience", "attention to detail"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Ken Segall, 'Insanely Simple', 2012 (recounting Jobs-era Apple creative process)",
+    "source_date": "2012"
+  },
+  {
+    "content": "Jobs rejected the conventional wisdom that market research should drive marketing. He believed customers could not articulate what they wanted before they'd experienced it — so asking them was futile. Instead, he led with taste and conviction, then used marketing to help people understand why they wanted what he'd already built.",
+    "original_quote": "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
+    "implication": "Market research is a rearview mirror, not a windshield. Use it to understand past behavior, not to predict what should exist. The job of marketing is to help people recognize a desire they didn't know they had.",
+    "cluster": "marketing_brand",
+    "topics": ["market research", "product vision", "customer insight", "intuition", "innovation"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, May 25, 1998",
+    "source_date": "1998-05-25"
+  },
+  {
+    "content": "Jobs understood the power of scarcity and the launch event as ritual. Apple product announcements under Jobs became cultural events watched by millions who had no intention of buying — they were theater. He used the keynote format to generate media coverage worth hundreds of millions in advertising value, treating press coverage as an extension of Apple's marketing.",
+    "original_quote": "Every once in a while a revolutionary product comes along that changes everything. And Apple has been very fortunate — it's been able to introduce a few of these into the world.",
+    "implication": "A great launch event is unpaid advertising that scales globally. Invest in the ritual of announcement — the pacing, the surprise, the one-more-thing — and the media amplification follows.",
+    "cluster": "marketing_brand",
+    "topics": ["product launches", "keynotes", "media strategy", "earned media", "event marketing"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "iPhone introduction keynote, Macworld San Francisco, January 9, 2007",
+    "source_date": "2007-01-09"
+  },
+  {
+    "content": "Jobs believed Apple's brand had to be a singular, coherent voice — which is why he centralized all major marketing decisions. When he returned in 1997, he immediately consolidated Apple's dozens of ad agencies into one (TBWA\\Chiat\\Day) and insisted on reviewing every major campaign himself. Brand consistency requires a single point of taste.",
+    "original_quote": "One of the things that made Apple great was that, in the early days, it was built around a small group of people who had an exceptional amount of passion for what they were doing.",
+    "implication": "Brand dilutes when too many voices contribute to it. Designate a single owner of brand taste — someone with the authority and conviction to say no — and protect that role fiercely.",
+    "cluster": "marketing_brand",
+    "topics": ["brand governance", "creative control", "agency management", "brand consistency", "leadership"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "1997"
+  },
+  {
+    "content": "The iMac G3's marketing was a masterclass in making technology approachable. Instead of technical specs, Apple led with color and personality — five translucent shades named after flavors. The message: computers can be joyful. By rejecting the beige-box aesthetic and leading with emotional language, Apple captured mainstream attention in a way no spec sheet ever could.",
+    "original_quote": "The back of our computers looks better than the front of anyone else's.",
+    "implication": "Emotion is a market segment. If every competitor is selling on performance, the open position is joy, beauty, or identity. Occupying an emotional dimension is a defensible moat.",
+    "cluster": "marketing_brand",
+    "topics": ["iMac", "product personality", "color marketing", "emotional positioning", "differentiation"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "iMac G3 launch press coverage, 1998; Walter Isaacson biography, 2011",
+    "source_date": "1998-08"
+  },
+  {
+    "content": "Jobs believed that a brand is a promise kept consistently over time — and that every inconsistency erodes trust. He was therefore hostile to licensing Apple's brand for products he didn't control, and deeply resistant to letting quality slip in any customer-facing element. The brand was only as strong as its weakest customer experience.",
+    "original_quote": "You've got to start with the customer experience and work backwards to the technology. You can't start with the technology and try to figure out where you're going to try to sell it.",
+    "implication": "Brand equity is built in the details customers touch and destroyed in the details they don't expect. Audit every customer touchpoint for brand consistency — support calls, packaging, software onboarding — not just advertising.",
+    "cluster": "marketing_brand",
+    "topics": ["brand promise", "customer experience", "brand consistency", "quality control", "trust"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "WWDC Keynote, 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Jobs used the 'Silhouette' iPod campaign — black figures against bright color backgrounds, white earbuds — to make the iPod feel culturally ubiquitous before it actually was. The visual shorthand of white earbuds became a status signal visible across subway cars and campuses. This turned a consumer product into a cultural membership badge.",
+    "original_quote": "The iPod is an analog of what Apple is. Apple is not just a computer company anymore.",
+    "implication": "The best product marketing creates social signals — visible cues that broadcast membership to others. Design your brand identity to be recognizable in the wild, not just on your website.",
+    "cluster": "marketing_brand",
+    "topics": ["iPod", "silhouette campaign", "cultural marketing", "status signaling", "visual identity"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Various, iPod campaign retrospectives and Isaacson biography, 2011",
+    "source_date": "2001"
+  },
+  {
+    "content": "Jobs saw storytelling as the highest-leverage skill in business. He structured product reveals as hero journeys: here is the enemy (complexity, ugliness, the status quo), here is what we believe, here is the thing we made. This narrative arc made product launches feel meaningful rather than transactional — and primed audiences to see Apple products as solutions to a villain, not just consumer electronics.",
+    "original_quote": "The most powerful person in the world is the storyteller. The storyteller sets the vision, values, and agenda of an entire generation that is to come.",
+    "implication": "Every launch needs a villain — a problem worth defeating — before it needs a hero. Frame your product as the resolution to a conflict your customer already feels, and the sale becomes a matter of alignment, not persuasion.",
+    "cluster": "marketing_brand",
+    "topics": ["storytelling", "narrative structure", "product reveals", "presentations", "hero journey"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Widely documented Jobs quote; cited across multiple biographies and journalist accounts",
+    "source_date": "1994"
+  }
+]

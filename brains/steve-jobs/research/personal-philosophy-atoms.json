@@ -1,0 +1,134 @@
+[
+  {
+    "content": "In his 2005 Stanford commencement address, Jobs structured his life wisdom around three personal stories rather than principles — a rhetorical choice that made abstract ideas about mortality, failure, and calling feel viscerally immediate. The speech has been watched more than any other commencement address in history, not because of its ideas alone but because of how personally he inhabited them.",
+    "original_quote": "You can't connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future.",
+    "implication": "The most durable lessons are taught through specific, personal narrative — not framework or abstraction. When you want people to internalize something, give them a story they can map their own life onto, not a principle they have to translate.",
+    "cluster": "personal_philosophy",
+    "topics": ["storytelling", "wisdom", "career", "retrospection", "trust"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs described death as life's greatest invention — the mechanism that clears the old to make room for the new, and the fact that makes every day count. This wasn't morbid; it was motivational. His daily mirror ritual — asking whether he was living the day he would want to live — was a direct consequence of this philosophy.",
+    "original_quote": "Death is very likely the single best invention of Life. It is Life's change agent. It clears out the old to make way for the new.",
+    "implication": "Treating mortality as background rather than foreground tends to produce comfortable, deferral-heavy decisions. Using it as a daily filter — would I do this if today were the last? — tends to produce bolder, more aligned choices. Urgency is a form of clarity.",
+    "cluster": "personal_philosophy",
+    "topics": ["mortality", "urgency", "decision-making", "clarity", "life-philosophy"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs told the Stanford graduates that their time is limited and should not be wasted living someone else's life. He was drawing on a specific experience — being pushed out of Apple, being told his values weren't right for a company he founded — to warn against the slow surrender of authenticity to social expectation. The caution was earned, not theoretical.",
+    "original_quote": "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking.",
+    "implication": "The most common form of wasted potential isn't laziness — it's conforming to a script that fits someone else's life. The pressure to follow conventional career paths, social norms, and others' definitions of success is real and continuous; resisting it requires active, recurring choice.",
+    "cluster": "personal_philosophy",
+    "topics": ["authenticity", "life-philosophy", "career", "conformity", "independence"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "After his cancer diagnosis in 2003 and the subsequent surgery, Jobs spoke publicly about how the proximity of death sharpened rather than clouded his thinking. He described the fear of death as a 'clutter remover' — when you face it, all the things you thought mattered stop mattering and the things that actually matter become obvious. He used this clarity as a cognitive tool.",
+    "original_quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.",
+    "implication": "Radical clarity is often unavailable until the stakes are raised to existential — but you can simulate that clarity deliberately, before a crisis forces it. Asking 'what would I do if I only had one year?' is not morbid; it is one of the most efficient ways to cut through social and professional noise.",
+    "cluster": "personal_philosophy",
+    "topics": ["mortality", "cancer", "clarity", "decision-making", "priorities"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs closed his Stanford speech with the phrase 'Stay Hungry. Stay Foolish.' — borrowed from the final issue of the Whole Earth Catalog, a counterculture publication he had loved as a young man in the 1970s. The phrase captured his core belief that achievement comes from maintaining a beginner's appetite and a refusal to be constrained by what experts say is impossible.",
+    "original_quote": "Stay Hungry. Stay Foolish.",
+    "implication": "The experts who dominate an industry are also the ones most likely to be wrong about what the industry can become — maintaining the posture of an outsider, even after you succeed, is what allows you to keep disrupting. Hunger is an asset that comfort destroys.",
+    "cluster": "personal_philosophy",
+    "topics": ["curiosity", "beginner-mind", "hunger", "disruption", "life-philosophy"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs was adopted, dropped out of Reed College after one semester, slept on floors, returned Coke bottles for food money, and walked seven miles to the Hare Krishna temple for a free meal. These early experiences of poverty and precarity — rather than producing conservatism — produced a willingness to risk, because he had already survived having nothing. The baseline was freedom.",
+    "original_quote": "I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned Coke bottles for the five-cent deposits to buy food with, and I would walk the seven miles across town every Sunday night to get one good meal a week at the Hare Krishna temple.",
+    "implication": "Early experiences of scarcity can produce either paralysis or liberation — Jobs used his as evidence that he could survive the worst, which made every future risk feel bounded. The fear of failure shrinks when you have already experienced financial bottom and kept going.",
+    "cluster": "personal_philosophy",
+    "topics": ["early-life", "risk", "resilience", "foundation", "biography"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs spent 18 months studying Zen Buddhism with Kobun Chino Otogawa in the 1970s and came within weeks of moving to Japan to enter a monastery. He ultimately chose Apple, but the Zen practice left permanent marks: an obsession with simplicity, a comfort with negative space, and a conviction that what you omit matters as much as what you include. His aesthetic was inseparable from his spiritual practice.",
+    "original_quote": "Zen has been a deep influence in my life ever since. One thing I have always found is that you have to not be afraid of where an idea leads.",
+    "implication": "Aesthetic philosophy is not decoration — it is a decision-making framework. Jobs' Zen background gave him a coherent, pre-verbal criterion for judging products: does this have the quality of simplicity that arises from removing everything unnecessary? Builders benefit from having an underlying philosophy that unifies their aesthetic choices.",
+    "cluster": "personal_philosophy",
+    "topics": ["Zen", "simplicity", "aesthetics", "spirituality", "influence"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Being fired from Apple in 1985 was, by Jobs' own account, the most important professional event of his life — it freed him to start NeXT and Pixar, both of which became transformative, and it forced him to reconnect with why he loved building things in the first place. The exile was the education. When he returned to Apple 12 years later, he brought everything he had learned.",
+    "original_quote": "Getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again, less sure about everything. It freed me to enter one of the most creative periods of my life.",
+    "implication": "Professional failure that feels catastrophic in the moment often provides the conditions — forced reflection, new starting points, reduced fear of further loss — that produce the next, better chapter. The pattern doesn't make failure desirable, but it does make it survivable and potentially generative.",
+    "cluster": "personal_philosophy",
+    "topics": ["failure", "resilience", "reinvention", "creativity", "biography"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Jobs was a committed vegetarian from his early twenties, influenced by his reading of Mucusless Diet Healing System and his countercultural milieu at Reed College. He extended this aesthetic of restriction and purity to his work: just as he refused to eat anything he considered contaminated, he refused to ship products he considered aesthetically impure. Personal and professional asceticism were the same impulse.",
+    "original_quote": "I will never build a product that I'm not proud to own.",
+    "implication": "The disciplines and constraints a leader applies to their personal life often reflect the same values they apply to their professional decisions — they are not separate. Understanding a leader's personal philosophy gives you predictive access to their product philosophy.",
+    "cluster": "personal_philosophy",
+    "topics": ["values", "simplicity", "discipline", "aesthetics", "consistency"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs believed deeply that the liberal arts were as important to great technology as engineering. He read Shakespeare, listened to Bob Dylan obsessively, and considered Picasso and Lennon as much his intellectual ancestors as Wozniak. This synthesis — left brain and right brain in the same person — was what he thought Apple uniquely provided and what competitors could never replicate.",
+    "original_quote": "I always thought of myself as a humanities person as a kid, but I liked electronics. Then I read something that one of my heroes, Edwin Land of Polaroid, said about the importance of people who could stand at the intersection of humanities and sciences, and I decided that's what I wanted to do.",
+    "implication": "The competitive advantage that is hardest to replicate is genuine synthesis across domains — an engineer who thinks like a poet, or a designer who thinks like an economist. Hiring only for depth in one discipline produces competent but rarely transcendent work.",
+    "cluster": "personal_philosophy",
+    "topics": ["liberal-arts", "synthesis", "creativity", "humanities", "technology"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs maintained a daily meditation practice throughout his adult life. He described it as the thing that trained him to focus — to hold a question or a problem in his mind long enough to see through the noise to what was essential. The emptying quality of meditation was the complement to the intense, acquisitive quality of his curiosity. He needed both.",
+    "original_quote": "If you just sit and observe, you will see how restless your mind is. If you try to calm it, it only makes it worse, but over time it does calm, and when it does, there's room to hear more subtle things — that's when your intuition starts to blossom.",
+    "implication": "High-performance creative work requires both intense engagement and the capacity to clear the mind — the insight rarely arrives during the sprint, but during the rest that follows it. Building a practice that creates mental space is not a lifestyle choice; it is a capability investment.",
+    "cluster": "personal_philosophy",
+    "topics": ["meditation", "focus", "intuition", "mindfulness", "creativity"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs used the mirror test every morning — asking himself whether he would choose to do what he was about to do if today were the last day of his life. When the answer was 'no' too many days in a row, he took it as a signal that something needed to change. This ritualized confrontation with mortality was not melancholy but practical: it was a daily alignment check between stated values and actual choices.",
+    "original_quote": "For the past 33 years, I have looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?' And whenever the answer has been 'No' for too many days in a row, I know I need to change something.",
+    "implication": "Most misalignment between values and choices accumulates gradually and invisibly — a daily reflection practice surfaces drift before it becomes permanent. The power of the mirror test is not the single answer on any given day, but the pattern revealed across many days.",
+    "cluster": "personal_philosophy",
+    "topics": ["self-reflection", "values", "alignment", "mortality", "daily-practice"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  }
+]

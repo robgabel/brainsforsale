@@ -1,0 +1,167 @@
+[
+  {
+    "content": "Creativity is fundamentally a connective act, not an originating one. Jobs believed that creative people are distinguished by their ability to synthesize experiences across domains — art, technology, poetry, history — into something new. People who have had fewer varied experiences have less to connect. The wider and stranger your range of inputs, the richer the synthesis you can produce.",
+    "original_quote": "Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while.",
+    "implication": "Hire for breadth of experience alongside depth of skill. Build teams that span disciplines and reward intellectual curiosity beyond the job description.",
+    "cluster": "innovation",
+    "topics": ["creativity", "synthesis", "cross-disciplinary thinking", "hiring", "experience"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Wired, 'The Next Insanely Great Thing', Gary Wolf interview, February 1996",
+    "source_date": "1996-02"
+  },
+  {
+    "content": "Great artists steal — they appropriate the best ideas they encounter and make them entirely their own. Jobs was unapologetic about learning from, borrowing from, and internalizing the work of others. The visit to Xerox PARC in 1979, where Apple engineers saw the graphical user interface and mouse, is the canonical example: Jobs didn't simply copy what he saw, he synthesized it into something far beyond what Xerox had imagined or built.",
+    "original_quote": "Picasso had a saying — 'good artists copy, great artists steal' — and we have always been shameless about stealing great ideas.",
+    "implication": "Expose your team to the best work being done anywhere in the world, including outside your industry. Competitive advantage comes from synthesizing what others have created, not from working in a self-referential silo.",
+    "cluster": "innovation",
+    "topics": ["borrowing ideas", "synthesis", "Xerox PARC", "competitive intelligence", "inspiration"],
+    "confidence": 0.95,
+    "source_type": "video",
+    "source_ref": "Triumph of the Nerds, PBS documentary, 1996",
+    "source_date": "1996-06"
+  },
+  {
+    "content": "The computer is a bicycle for the mind — a tool that amplifies human cognitive capability far beyond what unaided evolution provided. Jobs saw technology not as an end in itself but as a prosthetic that enables humans to solve problems, create things, and achieve more than they could alone. This framing kept Apple focused on the human experience rather than the technology stack as the primary object of design.",
+    "original_quote": "I think one of the things that really separates us from the high primates is that we're tool builders. I read a study that measured the efficiency of locomotion for various species on the planet... A human on a bicycle blew the condor away. And that's what a computer is to me.",
+    "implication": "Evaluate every product decision against whether it genuinely extends human capability. Tools that don't make users meaningfully more powerful are features in search of a purpose.",
+    "cluster": "innovation",
+    "topics": ["tools", "human amplification", "product philosophy", "technology purpose", "cognition"],
+    "confidence": 0.95,
+    "source_type": "video",
+    "source_ref": "Memory & Imagination: New Pathways to the Library of Congress, PBS documentary, 1990",
+    "source_date": "1990-01"
+  },
+  {
+    "content": "Innovation is defined as much by what you say no to as by what you build. Jobs returned to Apple in 1997 and within a year cut the product line from over 350 SKUs to just four. He believed most companies dilute their impact by chasing every opportunity, spreading resources thin across dozens of mediocre products rather than concentrating force on the few things that could be genuinely great.",
+    "original_quote": "People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully.",
+    "implication": "A prioritization framework that only adds is broken. Every new initiative should force a corresponding subtraction. Organizational focus is a function of what leadership is willing to kill.",
+    "cluster": "innovation",
+    "topics": ["focus", "product strategy", "saying no", "prioritization", "simplification"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple Worldwide Developers Conference (WWDC), 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Anticipating where the market is going — not where it is today — is the defining skill of innovative leadership. Jobs consistently built products for a future customer, not the current one. He drew on hockey player Wayne Gretzky's logic: skate to where the puck is going to be, not where it has been. This requires the discipline to resist present-tense market data in favor of a reasoned bet on future behavior.",
+    "original_quote": "There's an old Wayne Gretzky quote that I love. 'I skate to where the puck is going to be, not where it has been.' And we've always tried to do that at Apple.",
+    "implication": "Market research tells you what customers want today; anticipating where their needs are going requires a different kind of analysis. Build for the person your customer is becoming, not who they are right now.",
+    "cluster": "innovation",
+    "topics": ["market anticipation", "vision", "product strategy", "future thinking", "competitive advantage"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Macworld Expo Keynote, San Francisco, January 9, 2007",
+    "source_date": "2007-01-09"
+  },
+  {
+    "content": "Staying hungry and foolish — maintaining the appetite of someone with nothing and the openness of someone who doesn't know the rules — is a prerequisite for sustained innovation. Jobs attributed much of his creative drive to never feeling fully satisfied and to his willingness to remain a beginner in domains where expertise might have made him complacent. Comfort and certainty are the enemies of originality.",
+    "original_quote": "Stay hungry. Stay foolish.",
+    "implication": "Cultivate institutional discomfort. Teams that feel they have figured it out stop innovating. Leaders should model intellectual humility and a restless dissatisfaction with good-enough.",
+    "cluster": "innovation",
+    "topics": ["hunger", "curiosity", "beginner's mind", "complacency", "motivation"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "You cannot connect the dots looking forward — only looking backward. Jobs made a series of decisions that seemed directionless or even foolish at the time — dropping out of Reed, auditing calligraphy, going to India, founding NeXT — but which turned out to be essential inputs to his most important innovations. Trusting in a future coherence that is not yet visible requires a kind of faith that most organizations are structurally unable to permit.",
+    "original_quote": "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever.",
+    "implication": "Not all learning has an immediate ROI. Invest in experiences — travel, art, education, failure — whose value will only become apparent years later. Organizations that demand immediate justification for every input starve their own future creativity.",
+    "cluster": "innovation",
+    "topics": ["connecting dots", "retrospective insight", "trust", "non-linear paths", "serendipity"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Dropping out of Reed College and auditing calligraphy classes was an accidental education that directly shaped the Mac's typography — and by extension all of modern personal computing. Jobs had no immediate use for calligraphy; it was curiosity for its own sake. But ten years later, when designing the Macintosh, he built proportionally spaced fonts and multiple typefaces because he had been trained to see and value them. Useless knowledge became foundational innovation.",
+    "original_quote": "If I had never dropped in on that single calligraphy course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts.",
+    "implication": "Permit and fund exploration that has no stated business case. The inputs that matter most to innovation often arrive through curiosity, not strategy. Create slack in your organization for people to follow interesting things that seem irrelevant.",
+    "cluster": "innovation",
+    "topics": ["calligraphy", "serendipity", "liberal arts", "typography", "non-linear education"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Innovation distinguishes leaders from followers — and Jobs used this not as motivational rhetoric but as a strategic imperative. Companies that follow competitors' product decisions will always be trailing. True leadership in a market means making bets that competitors are not making, based on a clearer vision of what customers will want before they can articulate it themselves.",
+    "original_quote": "Innovation distinguishes between a leader and a follower.",
+    "implication": "Before approving any major product or strategy decision, ask whether it is a genuine bet on the future or a reaction to what a competitor has already done. The latter is a reliable path to perpetual second place.",
+    "cluster": "innovation",
+    "topics": ["leadership", "market leadership", "product strategy", "differentiation", "vision"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs: The Exclusive Interview, BusinessWeek, October 12, 2004",
+    "source_date": "2004-10-12"
+  },
+  {
+    "content": "Design is not surface decoration applied to a finished product — it is the fundamental nature of the product itself. Jobs insisted that design decisions at Apple began with how a product should feel to use, then worked backward to engineering. Most companies do the opposite: they engineer a product and hand it to designers to make it look good. This inversion explains why Apple products feel inevitable rather than assembled.",
+    "original_quote": "Design is not just what it looks like and feels like. Design is how it works.",
+    "implication": "If design is not present at the earliest stages of product conception, you are using design as a veneer rather than a foundation. Hire designers who can influence strategy, not just visual style.",
+    "cluster": "innovation",
+    "topics": ["design", "product philosophy", "user experience", "engineering process", "Apple process"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "New York Times Magazine, 'The Guts of a New Machine', November 30, 2003",
+    "source_date": "2003-11-30"
+  },
+  {
+    "content": "The people crazy enough to think they can change the world are the ones who do. Jobs believed that institutional sanity — operating within accepted norms, respecting conventional limits, working incrementally — is the single biggest barrier to transformational innovation. The products and companies that change everything are almost always created by people who were considered naive, deluded, or unrealistic at the outset.",
+    "original_quote": "Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently... the ones who are crazy enough to think they can change the world are the ones who do.",
+    "implication": "In hiring, promotion, and culture-building, reward the people who challenge assumptions rather than confirm them. The institutional impulse to normalize and moderate is also an impulse to mediocrity.",
+    "cluster": "innovation",
+    "topics": ["contrarian thinking", "misfits", "unconventional thinkers", "culture", "Think Different"],
+    "confidence": 0.95,
+    "source_type": "video",
+    "source_ref": "Apple 'Think Different' campaign narration, 1997",
+    "source_date": "1997-09-23"
+  },
+  {
+    "content": "Being fired from Apple was the most important thing that ever happened to Steve Jobs. Freed from the weight of his own success, he could experiment at NeXT, invest in Pixar, and rediscover what he loved about building things. The loss of his beginner's mind — which success had begun to erode — was restored by the humiliation of failure. He returned to Apple a decade later able to build things he could not have built without that period of forced reinvention.",
+    "original_quote": "I didn't see it then, but it turned out that getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again.",
+    "implication": "Failure and removal from power can be generative forces, not just losses. Build a culture where leaders are expected to take risks that could fail, and where recovery from failure is treated as an asset rather than a permanent mark against someone.",
+    "cluster": "innovation",
+    "topics": ["failure", "reinvention", "beginner's mind", "NeXT", "resilience"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address, June 12, 2005",
+    "source_date": "2005-06-12"
+  },
+  {
+    "content": "Simplicity is the ultimate sophistication — and the hardest engineering problem. Jobs consistently pushed teams to remove features, not add them. The iPod had one button where every competitor had dozens. The iPhone had no physical keyboard. These weren't resource constraints; they were deliberate acts of discipline rooted in the conviction that the right product does a few things extraordinarily well rather than many things adequately.",
+    "original_quote": "Simple can be harder than complex. You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.",
+    "implication": "Track the number of decisions your product makes for the user versus the number it forces on the user. Every feature that requires a choice is a small tax on the person you are trying to serve. Simplification is engineering work, not an aesthetic preference.",
+    "cluster": "innovation",
+    "topics": ["simplicity", "product design", "subtraction", "user experience", "engineering discipline"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, 'Apple's One-Dollar-a-Year Man', January 25, 2000",
+    "source_date": "2000-01-25"
+  },
+  {
+    "content": "Real artists ship. Jobs learned from NeXT that obsessive perfectionism divorced from market reality produces beautiful, irrelevant products. The NeXT workstation was technically extraordinary and commercially catastrophic. This experience hardened his conviction that the discipline of actually getting a product to customers is itself a creative act — and that innovation which never reaches people is indistinguishable from no innovation at all.",
+    "original_quote": "Real artists ship.",
+    "implication": "Set deadlines that force decisions. The discipline of shipping on time is itself an innovation capability that must be deliberately cultivated — perfectionism without a ship date is just expensive delay.",
+    "cluster": "innovation",
+    "topics": ["shipping", "perfectionism", "product management", "execution", "discipline"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Folklore.org, 'Real Artists Ship', Andy Hertzfeld account, January 1984",
+    "source_date": "1984-01"
+  },
+  {
+    "content": "Taste is a competitive advantage that cannot be copied. Jobs developed his aesthetic sensibility through years of consuming great work in design, architecture, music, and film alongside technology. This accumulated education was what allowed him to recognize when a product was not yet good enough, even when he could not immediately articulate why. Organizations without cultivated taste produce technically functional things that feel wrong.",
+    "original_quote": "The only problem with Microsoft is they just have no taste. They have absolutely no taste. And I don't mean that in a small way, I mean that in a big way, in the sense that they don't think of original ideas, and they don't bring much culture into their products.",
+    "implication": "Invest in your team's exposure to excellence across fields — great architecture, film, music, literature — because this is what builds the internal standard against which mediocre work is correctly identified and rejected before it ships.",
+    "cluster": "innovation",
+    "topics": ["taste", "aesthetic judgment", "culture", "excellence", "quality standards"],
+    "confidence": 0.95,
+    "source_type": "video",
+    "source_ref": "Triumph of the Nerds, PBS documentary, 1996",
+    "source_date": "1996-06"
+  }
+]

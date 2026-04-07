@@ -1,0 +1,167 @@
+[
+  {
+    "content": "Jobs believed talent is not evenly distributed and that elite teams require obsessive hiring standards. He described the phenomenon as 'A-players hire A-players, B-players hire C-players' — meaning a single compromise on quality triggers a cascading mediocrity spiral. This made every hire existential in his view, not just a resource decision. He personally interviewed candidates for roles well below CEO-level to enforce this standard.",
+    "original_quote": "A-players hire A-players, B-players hire C-players. So if you let in one B-player, it starts a cancer that can kill the whole company.",
+    "implication": "Treat every hire as a forcing function for your company's ceiling — one concession on talent doesn't stay contained, it multiplies. The hiring bar IS the quality bar.",
+    "cluster": "leadership_teams",
+    "topics": ["hiring", "talent density", "standards", "team quality", "A-players"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs: The Lost Interview (1995)",
+    "source_date": "1995"
+  },
+  {
+    "content": "Jobs was a fierce advocate for small, focused teams and believed headcount growth was often a symptom of managerial insecurity rather than organizational need. He famously kept the original Mac team under 100 people, treating it as a point of pride. His reasoning: small teams communicate faster, ownership is clear, and every person can see the impact of their work. Bureaucracy, in his view, was what happened when companies forgot that people — not processes — created great things.",
+    "original_quote": "It's not about the money. It's about the people you have, how you're led, and how much you get it.",
+    "implication": "Resist headcount as a proxy for progress. A small team with clear ownership and urgent purpose will outmaneuver a large team coordinating across layers.",
+    "cluster": "leadership_teams",
+    "topics": ["small teams", "team size", "ownership", "bureaucracy", "organizational design"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Fortune, 'Apple's One-Dollar-a-Year Man' (2000)",
+    "source_date": "2000"
+  },
+  {
+    "content": "The original Macintosh team flew a pirate flag above their building — a deliberate act of identity separation from Apple's main campus. Jobs cultivated this outlaw mentality intentionally, telling the team 'it's better to be a pirate than join the navy.' The flag symbolized that the Mac team operated by different rules: faster, more radical, willing to cannibalize existing Apple products. Cultural symbols, Jobs understood, shape behavior more reliably than org charts.",
+    "original_quote": "It's better to be a pirate than to join the Navy.",
+    "implication": "Skunkworks teams need symbolic separation, not just physical space. Give your most important internal moonshots a distinct identity — it signals to the team and the rest of the org that different rules apply.",
+    "cluster": "leadership_teams",
+    "topics": ["culture", "skunkworks", "identity", "Macintosh", "innovation teams"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Odyssey: Pepsi to Apple (1987) / multiple documented accounts",
+    "source_date": "1983"
+  },
+  {
+    "content": "After returning to Apple in 1997, Jobs instituted a 'Top 100' annual retreat — a list he personally curated of the 100 people inside Apple he believed were most critical to the company's future, regardless of title. Attendees weren't necessarily the most senior executives; they were the most impactful contributors. The retreat was a strategic planning session, a loyalty signal, and a talent identification exercise simultaneously. It told people what Jobs actually valued: impact, not rank.",
+    "original_quote": "I look at myself as someone who is keeping a great American icon alive.",
+    "implication": "Identify your real 100 — the people whose departure would genuinely hurt the company — and invest in them disproportionately. Title-based hierarchies often mismap to where leverage actually lives.",
+    "cluster": "leadership_teams",
+    "topics": ["talent management", "leadership rituals", "impact over rank", "key contributors", "Apple"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, 'Steve Jobs' biography (2011)",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs did not soften feedback. He famously told people their work was 'shit' before often coming back weeks later with the same idea reframed as his own — a pattern his colleagues called 'the reality distortion field in reverse.' But beneath the harshness was a genuine belief: talented people could handle truth, and sanitizing feedback was actually disrespectful to them. He expected the same directness in return and reportedly valued the few people willing to push back.",
+    "original_quote": "I don't think I run roughshod over people, but if something sucks, I tell people to their face. It's my job to be honest.",
+    "implication": "Diplomatic dishonesty is not kindness — it's a slow tax on quality. Build a culture where people say what they see, including upward, and your calibration will compound over time.",
+    "cluster": "leadership_teams",
+    "topics": ["feedback culture", "radical candor", "honesty", "leadership style", "psychological safety"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "60 Minutes, CBS (2003)",
+    "source_date": "2003"
+  },
+  {
+    "content": "Jobs hired for passion and intrinsic drive, not credentials. He was famously indifferent to traditional resumes and cared far more about whether a candidate lit up when talking about their craft. He believed people who loved what they did would push through obstacles that would stop credential-chasers. His own path — dropping out of Reed College, crashing calligraphy classes, starting Apple in a garage — informed his conviction that the 'crazy ones' rarely had conventional backgrounds.",
+    "original_quote": "The people who are crazy enough to think they can change the world are the ones who do.",
+    "implication": "Screen for obsession, not pedigree. Ask candidates what they have built for the love of it, what they have read or made outside of work — the answers reveal whether they are driven or merely accomplished.",
+    "cluster": "leadership_teams",
+    "topics": ["hiring", "passion", "intrinsic motivation", "talent identification", "unconventional backgrounds"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple 'Think Different' campaign / Stanford Commencement Address (2005)",
+    "source_date": "2005"
+  },
+  {
+    "content": "Jobs was a proponent of fast, decisive exits when someone wasn't working out. He believed that slow dismissals were cruel to the individual (prolonging false hope) and costly to the team (signaling that leadership tolerated underperformance). He reportedly made termination decisions quickly after forming a judgment, sometimes startlingly so. His view: great teams watch what leaders do about performance problems far more carefully than what they say.",
+    "original_quote": "When you find somebody that's really good, you don't let them go. And when you find that somebody isn't working out, you let them go fast.",
+    "implication": "Tolerating a bad fit does not protect the individual — it damages the team's trust in leadership. Act decisively when the signal is clear, and be honest about the reason.",
+    "cluster": "leadership_teams",
+    "topics": ["performance management", "firing", "team standards", "leadership decisiveness", "accountability"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Smithsonian Institution Oral History Interview (1995)",
+    "source_date": "1995"
+  },
+  {
+    "content": "One of Jobs' most quoted management convictions was that smart people do not need to be managed toward correct answers — they need to be given the problem and trusted to find the answer. He believed over-direction was both an insult to intelligence and a waste of the leverage great talent provides. This principle shaped Apple's product development culture: small, expert teams given clear problems and radical ownership over the solution.",
+    "original_quote": "It doesn't make sense to hire smart people and then tell them what to do; we hire smart people so they can tell us what to do.",
+    "implication": "Your job as a leader is problem framing, not solution prescribing. Set the what and the why with precision; let the people you hired own the how.",
+    "cluster": "leadership_teams",
+    "topics": ["autonomy", "delegation", "management philosophy", "talent leverage", "direction vs. trust"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Multiple documented sources; widely attributed in management literature",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs spoke at length in his 1995 'Lost Interview' about his experience managing the original Mac team and how it shaped his leadership philosophy for decades. He described the Mac project as the best work of his life not because of the product but because of the team — a group of 'A-players' who challenged each other, argued constantly, and cared intensely about every detail. He believed that experience validated his entire worldview about small, elite teams over large, mediocre ones.",
+    "original_quote": "The Macintosh team was what is commonly known as intoxicating: the feeling that you were all part of something insanely great.",
+    "implication": "The goal of team building is not harmony — it is shared intensity around a problem worth solving. High-friction, high-trust teams outperform low-friction, low-trust ones every time.",
+    "cluster": "leadership_teams",
+    "topics": ["Macintosh", "team dynamics", "founding teams", "intensity", "collaborative culture"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs: The Lost Interview (1995)",
+    "source_date": "1995"
+  },
+  {
+    "content": "Jobs ran Apple with a direct-responsibility model: for every major decision and every major product, there was a single named person accountable — not a committee, not a consensus. He called this the 'DRI' (Directly Responsible Individual) and enforced it at every meeting. If he could not get a clear name for who owned a decision, it was a signal that the org structure had failed. This made accountability legible and removed the diffusion of responsibility that kills execution.",
+    "original_quote": "There's no committee that runs Apple. It's one vision, and that's mine.",
+    "implication": "For every critical initiative, name one person who wins or loses based on the outcome. Committees produce consensus; named owners produce results.",
+    "cluster": "leadership_teams",
+    "topics": ["accountability", "DRI", "organizational structure", "decision-making", "ownership"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, 'Steve Jobs' biography (2011); DRI culture documented in Adam Lashinsky 'Inside Apple' (2012)",
+    "source_date": "2000"
+  },
+  {
+    "content": "Jobs insisted on deep collaboration between design and engineering, rejecting the typical handoff model where designers threw specs over a wall to engineers. At Apple, Jony Ive's design team worked in physical proximity to the engineering teams and Jobs personally mediated disputes. He believed that hardware, software, and industrial design had to be conceived together — and that the best products came from people who understood all three domains well enough to make tradeoffs intelligently.",
+    "original_quote": "Design is not just what it looks like and feels like. Design is how it works.",
+    "implication": "Siloed specialization produces optimization within lanes, not innovation across them. The breakthrough products come from people who understand adjacent disciplines deeply enough to violate the conventional boundaries between them.",
+    "cluster": "leadership_teams",
+    "topics": ["design and engineering", "cross-functional collaboration", "interdisciplinary", "product development", "Jony Ive"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "New York Times Magazine (2003)",
+    "source_date": "2003"
+  },
+  {
+    "content": "Jobs believed that great managers were almost always people who had been great individual contributors first — who loved the craft itself, not the management of people doing the craft. He was openly skeptical of professional managers who had never built anything. This shaped Apple's leadership model: the person running hardware engineering had to be the best hardware engineer in the room, not just the best politician. Expertise commanded respect in a way that title alone never could.",
+    "original_quote": "We want to be run by people who make the product. The reason Apple is a great company is that we're a bunch of people who love the products and the people we work with.",
+    "implication": "Promote the best builders into leadership, then protect their connection to the craft. Leaders who no longer do the work eventually lose the judgment that made them worth following.",
+    "cluster": "leadership_teams",
+    "topics": ["technical leadership", "player-coach", "management philosophy", "expertise", "Apple culture"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Fortune, interview with Betsy Morris (2008)",
+    "source_date": "2008"
+  },
+  {
+    "content": "Jobs had an acute sensitivity to who was in the room during key creative and strategic sessions and he actively managed attendance. He believed that adding the wrong person to a conversation — someone who was not operating at the required level or who lacked the relevant ownership — degraded the quality of thinking. He was known to ask people to leave meetings when he felt their presence was not additive. This ruthlessness about room composition was part of his broader theory that quality is contaminated, not elevated, by dilution.",
+    "original_quote": "I have a rule that every meeting at Apple has one person responsible for every item on the agenda, and that person can't delegate to somebody.",
+    "implication": "Optimize your meeting rooms the way you optimize your org charts. The wrong person in a high-stakes discussion is not a neutral addition — they shift the center of gravity toward the safe and the average.",
+    "cluster": "leadership_teams",
+    "topics": ["meeting culture", "room composition", "decision quality", "leadership rituals", "focus"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, 'Steve Jobs' biography (2011)",
+    "source_date": "2000"
+  },
+  {
+    "content": "Jobs believed that talent acquisition was not an HR function — it was a CEO function. He personally spent significant time recruiting individuals he wanted, sometimes pursuing them for months or years. When he wanted someone, he would show up unannounced, call repeatedly, or take them on long walks to make his case. His pitch was never about compensation; it was always about the magnitude of the work and the quality of the team. He was selling meaning, not money.",
+    "original_quote": "Great things in business are never done by one person. They're done by a team of people.",
+    "implication": "The founders and executives who treat recruiting as a strategic obsession — not an HR process — build fundamentally different companies. The best people are not browsing job boards; they need to be found and convinced.",
+    "cluster": "leadership_teams",
+    "topics": ["recruiting", "talent acquisition", "CEO role", "mission-driven hiring", "persuasion"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, 'Steve Jobs' biography (2011)",
+    "source_date": "1997"
+  },
+  {
+    "content": "Jobs spoke often about how his early firing from Apple in 1985 — painful as it was — ultimately made him a better leader. During his years away, at NeXT and Pixar, he learned to build teams from scratch without the institutional gravity of Apple, to give people real equity in outcomes, and to tolerate a longer time horizon on culture-building. He returned to Apple in 1997 a fundamentally different manager: more patient with process, more deliberate about culture, though no less demanding about results.",
+    "original_quote": "Getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again, less sure about everything. It freed me to enter one of the most creative periods of my life.",
+    "implication": "Failure and exile have a specific leadership value that success cannot provide: they force a reckoning with what you actually believe versus what the institution trained you to believe. Some leaders need to be fired before they're ready to lead.",
+    "cluster": "leadership_teams",
+    "topics": ["failure", "leadership growth", "NeXT", "Pixar", "reinvention"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Stanford University Commencement Address (2005)",
+    "source_date": "2005-06-12"
+  }
+]

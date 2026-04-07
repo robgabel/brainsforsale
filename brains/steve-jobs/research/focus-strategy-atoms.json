@@ -1,0 +1,167 @@
+[
+  {
+    "content": "When Jobs returned to Apple in 1997, he found a company selling dozens of products across overlapping categories with no clear identity. His first strategic move was to kill roughly 70% of the product line. He described the resulting clarity as liberating: the remaining team could focus entirely on making a small number of things great rather than keeping many things barely alive. The purge was not a cost-cutting measure — it was a philosophical reset about what Apple was for.",
+    "original_quote": "Deciding what not to do is as important as deciding what to do. That's true for companies, and it's true for products.",
+    "implication": "When a company or product feels stuck, the answer is almost never addition — it is subtraction. Identify the 30% that would matter if everything else disappeared, then eliminate the rest with conviction.",
+    "cluster": "focus_strategy",
+    "topics": ["product line simplification", "Apple turnaround", "focus", "saying no", "strategy"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs by Walter Isaacson",
+    "source_date": "2011"
+  },
+  {
+    "content": "To make the 1997 product strategy legible to the entire company, Jobs drew a simple 2×2 grid on a whiteboard: Consumer and Pro on one axis, Desktop and Portable on the other. Apple would build exactly four products — one for each quadrant. Everything else would be cancelled. The grid was not just a prioritization tool; it was a communication device that made the strategy impossible to misunderstand and impossible to quietly subvert with scope creep.",
+    "original_quote": "Here's what we're doing. We're going to make four great products, one for each of these four quadrants. And we're going to put all of our energy into making those four products incredible.",
+    "implication": "Great strategy is simple enough to fit on one slide and clear enough that anyone in the company can use it to make a decision — if your strategy requires a 40-page document, it isn't a strategy, it's a wish list.",
+    "cluster": "focus_strategy",
+    "topics": ["2x2 grid", "product strategy", "Apple turnaround", "simplification", "communication"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs by Walter Isaacson",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs' most famous statement on focus — 'focus is about saying no' — came from a 1997 WWDC Q&A where he was pressed on Apple's decision to kill several popular developer projects. He distinguished between the common understanding of focus (choosing what to work on) and his own (actively and repeatedly refusing the good things that would crowd out the great ones). He believed most companies failed at focus not because they were indecisive, but because they lacked the discipline to say no to genuinely good opportunities.",
+    "original_quote": "People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done.",
+    "implication": "Build a saying-no muscle as deliberately as you build a saying-yes one. Every good idea you accept is capacity you cannot use for the great idea — the discipline of refusal is the discipline of excellence.",
+    "cluster": "focus_strategy",
+    "topics": ["focus", "saying no", "opportunity cost", "discipline", "product philosophy"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple Worldwide Developers Conference (WWDC), 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Newton was one of Apple's most ambitious and technically sophisticated products when Jobs killed it in 1998. It had a devoted user base, years of R&D behind it, and a genuine market. Jobs killed it anyway — not because it had failed, but because it was a distraction from the four-product strategy and because he personally believed stylus-based computing was the wrong direction. The Newton's cancellation signaled more clearly than any announcement that Jobs' Apple was serious about focus.",
+    "original_quote": "If you see a stylus, they blew it.",
+    "implication": "Killing beloved, profitable products requires more courage than launching new ones — but it is often the move that separates focused companies from sprawling ones. The Newton's death made the iPhone possible.",
+    "cluster": "focus_strategy",
+    "topics": ["Newton", "product cancellation", "focus", "portfolio pruning", "strategic courage"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs by Walter Isaacson",
+    "source_date": "2011"
+  },
+  {
+    "content": "OpenDoc and Cyberdog were Apple's attempts to build component software and internet tools respectively — both technically interesting, both representing significant engineering investment, and both cancelled by Jobs within months of his return. The engineering teams were devastated. Jobs' reasoning was blunt: these projects, however technically impressive, were not core to Apple's survival or identity. Investment in anything outside the core was investment away from the core, and Apple could not afford divided attention.",
+    "original_quote": "I know some of you spent a lot of time on Cyberdog, and I'm sorry. But Apple has to focus. We have to choose.",
+    "implication": "Technical elegance and engineering investment are not sufficient reasons to continue a project — the only question is whether it is core to the mission. Letting go of good work is how you protect great work.",
+    "cluster": "focus_strategy",
+    "topics": ["OpenDoc", "Cyberdog", "product cancellation", "Apple turnaround", "strategic focus"],
+    "confidence": 0.85,
+    "source_type": "speech",
+    "source_ref": "Apple Worldwide Developers Conference (WWDC), 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Jobs was equally proud of what Apple did not build as what it did. He held this as a genuine strategic principle, not a rationalization for missed opportunities. The iPod had no removable storage, no radio, no extra ports — each of those was a deliberate omission. The original iPhone had no third-party apps, no MMS, no copy-paste at launch. These were not oversights; they were the price of a product coherent enough to be great rather than comprehensive enough to be average.",
+    "original_quote": "I'm as proud of many of the things we haven't done as the things we have done.",
+    "implication": "The features you exclude shape the product as powerfully as the features you include. Define your product by what it refuses to do, and the result will be more coherent, more learnable, and more defensible.",
+    "cluster": "focus_strategy",
+    "topics": ["product design", "omission", "coherence", "feature discipline", "simplicity"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, 'The Seed of Apple's Innovation' (2004)",
+    "source_date": "2004-10"
+  },
+  {
+    "content": "Feature creep was Jobs' consistent enemy throughout his product career. He believed most products became ugly and confusing not through dramatic strategic failures but through thousands of small accumulations: a checkbox here, a menu item there, a new pane added to satisfy a stakeholder. The iPhone's original home screen had one button. The original Mac had no fan, no expansion slots, no menu bar on the window. Every addition was a fight won or lost in the conference room before the customer ever saw it.",
+    "original_quote": "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.",
+    "implication": "Feature creep is a leadership problem disguised as a product problem — each addition was approved by someone. Build a cultural and structural reflex that treats every addition as a cost, not a benefit, until proven otherwise.",
+    "cluster": "focus_strategy",
+    "topics": ["feature creep", "simplicity", "product discipline", "complexity", "design philosophy"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, Steve Jobs interview",
+    "source_date": "1998-05"
+  },
+  {
+    "content": "Jobs' return to Apple in 1997 required him to kill not just products but entire strategic directions that had defined the company for years. Gil Amelio's Apple had been pursuing licensing, clones, enterprise software, and diversification into consumer electronics. Jobs reversed all of it within 18 months. Each reversal was painful and drew criticism from the press and investors. But each reversal was also a clarifying act: this is what Apple is not, so you can understand what Apple is.",
+    "original_quote": "One of the things I did when I got back to Apple was to try to remember what made Apple, Apple. And it was that Apple stood for something.",
+    "implication": "Turnarounds are not built on additions — they are built on subtractions. The hardest work is deciding what the company is not, because every 'not' disappoints someone with a stake in the status quo.",
+    "cluster": "focus_strategy",
+    "topics": ["Apple turnaround", "strategic clarity", "identity", "subtraction", "Gil Amelio era"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs by Walter Isaacson",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs applied the same focus discipline to Apple's retail strategy that he applied to the product line. When Apple launched its retail stores in 2001, industry analysts widely predicted failure — Gateway Country stores had just folded. Jobs ignored the conventional wisdom. He designed stores around a tiny number of products, arranged spaciously, with no clutter and no sale items. The visual simplicity of the store was a direct expression of the focus of the product line: fewer things, each extraordinary.",
+    "original_quote": "We want to be very clear that when you come into our stores, we're not trying to sell you something. We're here to help you get the most out of your Apple products.",
+    "implication": "Retail space, like product design, communicates strategy — a cluttered store signals a cluttered company. Your physical and digital environments should make your focus visible before a word is spoken.",
+    "cluster": "focus_strategy",
+    "topics": ["Apple retail", "simplicity", "product presentation", "focus", "store design"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Fortune, 'Apple's Retail Gamble' (2001)",
+    "source_date": "2001"
+  },
+  {
+    "content": "Jobs believed that the danger of success was that it created pressure to expand into every adjacent opportunity. Successful companies were constantly being pulled toward more products, more markets, more revenue streams. He saw this expansion pressure as an existential threat to quality, not a sign of health. Apple, he argued, should be a $10 billion company making a small number of extraordinary things, not a $100 billion company making a large number of acceptable things.",
+    "original_quote": "Apple is not the biggest, not the most dominant, not the most powerful — and that's fine. We just want to make the best products in the world.",
+    "implication": "Revenue growth from expansion is not the same as value creation from focus — be deliberate about which type of growth you are pursuing, because the organizational habits they require are incompatible.",
+    "cluster": "focus_strategy",
+    "topics": ["growth discipline", "expansion temptation", "product focus", "success trap", "mission clarity"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Steve Jobs by Walter Isaacson",
+    "source_date": "2011"
+  },
+  {
+    "content": "When Jobs developed the product roadmap for what became the iMac in 1998, he made a series of aggressive exclusions: no floppy drive (at a time when every consumer PC had one), no legacy ports, a single USB connection. Each cut was internally controversial and publicly mocked. Jobs' logic was simple: each port you add is complexity for the user and distraction for the engineering team. The iMac's design clarity was not achieved despite these exclusions — it was achieved through them.",
+    "original_quote": "The floppy is going away. It is a dead technology. I know that is controversial, but we have to lead, not follow.",
+    "implication": "Removing a familiar feature forces users to adopt better alternatives and forces engineers to commit to a direction. The discipline of removal is often more innovative than the addition of new capabilities.",
+    "cluster": "focus_strategy",
+    "topics": ["iMac", "product simplification", "legacy removal", "design courage", "user experience"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Time Magazine, Steve Jobs interview (1999)",
+    "source_date": "1999-10"
+  },
+  {
+    "content": "Jobs described the annual Apple product line review he instituted after 1997 as an exercise in ruthless curation. He would walk through every product in the pipeline and ask the same question: is this the best it can possibly be, and does it have a clear, specific reason to exist? Products that could not answer both questions were cancelled, even deep in development. He believed most companies accumulated products passively, through inertia, and that active curation required the same discipline as active creation.",
+    "original_quote": "When you think about focusing, you think, 'well, focusing is about saying yes.' No! Focusing is about saying no, and saying no to really good ideas in order to keep focused on the really great ideas.",
+    "implication": "Build an annual ritual for reviewing and culling your product portfolio with the same rigor you apply to launching new products — what you stop doing is as important as what you start.",
+    "cluster": "focus_strategy",
+    "topics": ["portfolio review", "product curation", "discipline", "roadmap", "annual planning"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple Worldwide Developers Conference (WWDC), 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Jobs consistently applied focus at the interface level as well as the product level. The original Mac had a single mouse button when every industry expert said two or three were necessary for power users. The iPhone had a single home button. The iPod had a single scroll wheel as the primary input. These decisions enraged reviewers and delighted users. Jobs believed that every interaction mode you add fragments the user's mental model, and that the constraint of a single primary input forces better design at every level below it.",
+    "original_quote": "That's been one of my mantras — focus and simplicity. Simple can be harder than complex. But it's worth it in the end because once you get there, you can move mountains.",
+    "implication": "Constrain the interaction model before you constrain anything else — a single dominant input mechanism forces coherent design, while multiple inputs let designers avoid making the hard choices about priority.",
+    "cluster": "focus_strategy",
+    "topics": ["interface design", "simplicity", "user experience", "input design", "design constraints"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, Steve Jobs interview",
+    "source_date": "1998-05"
+  },
+  {
+    "content": "Jobs was deeply skeptical of market research as a tool for strategic decision-making, not because he thought customer input was irrelevant but because he believed customers could only tell you what they wanted from the world they currently knew. Focus groups could not have invented the iPhone; the iPhone expanded what people thought was possible. He used focus to drive toward something customers could not yet articulate, not to optimize for what they had already imagined.",
+    "original_quote": "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
+    "implication": "Research tells you about the present; strategy requires a theory about the future. Use customer feedback to validate and refine, but use your own judgment and taste to define the direction — that is irreplaceable.",
+    "cluster": "focus_strategy",
+    "topics": ["market research", "product vision", "customer insight", "innovation strategy", "taste"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, Steve Jobs interview",
+    "source_date": "1998-05"
+  },
+  {
+    "content": "The strategy behind the original iPod was a focused bet: not a general-purpose device, not a platform, not a multifunctional gadget — just the best music player ever made. Jobs resisted pressure to add features that would make it more like a PDA or a phone. The focused product strategy made the iPod's design possible and its marketing legible: 1,000 songs in your pocket. That single sentence was possible because the product was singular. Feature sprawl would have made that sentence impossible.",
+    "original_quote": "An iPod, a phone, an internet mobile communicator... these are not three separate devices! And we are calling it iPhone.",
+    "implication": "A product simple enough to describe in one sentence is usually simple enough to be excellent — if you cannot write the one sentence, the product is not focused enough yet.",
+    "cluster": "focus_strategy",
+    "topics": ["iPod", "product positioning", "focus", "messaging", "product definition"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Macworld San Francisco Keynote (iPhone announcement)",
+    "source_date": "2007-01-09"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "content": "At the WWDC 1997 keynote — just weeks after returning to Apple — Jobs articulated what would become the company's governing design philosophy: start with the customer experience and work backwards to the technology. He contrasted this with what he described as Apple's recent failure, which was starting with technology and then figuring out how to sell it. The restatement of this principle reorganized everything that followed.",
+    "original_quote": "You've got to start with the customer experience and work backwards to the technology. You can't start with the technology and try to figure out where you're going to try to sell it.",
+    "implication": "The sequence of design decisions is as important as the decisions themselves — starting with what the user feels versus starting with what the engineer has built leads to categorically different outcomes, even when the same people make both products. The starting point determines the end point.",
+    "cluster": "user_experience",
+    "topics": ["design-process", "customer-first", "strategy", "philosophy", "Apple"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Apple WWDC Keynote, May 1997",
+    "source_date": "1997-05"
+  },
+  {
+    "content": "Jobs made the controversial claim that customers don't know what they want until you show them — citing Sony's Walkman as an example of a product no one asked for, as well as the Mac itself. He was not dismissing customer feedback but arguing against relying exclusively on what customers articulate, because the articulation is constrained by the customer's experience of existing products.",
+    "original_quote": "It's not the consumers' job to know what they want.",
+    "implication": "Customer research is a tool for understanding problems and frustrations, not for generating solutions — solutions require imagination about what doesn't yet exist. Use customers to validate pain, use design to imagine relief. Asking users to describe the product they want produces incrementalism, not breakthroughs.",
+    "cluster": "user_experience",
+    "topics": ["customer-research", "innovation", "design", "product-development", "insight"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "BusinessWeek, May 25, 1998",
+    "source_date": "1998-05-25"
+  },
+  {
+    "content": "Apple's unboxing experience was designed with as much care as the product itself. Jobs believed that the moment of opening the box was the first sensory impression of the product — and first impressions are disproportionately sticky. The tissue, the reveal sequence, the weight of the lid, the placement of the cable — each was a deliberate choice designed to create anticipation and then satisfaction.",
+    "original_quote": "We spend time on the packaging because we know that the experience of opening the box is important. It sets the tone.",
+    "implication": "Every touchpoint before, during, and after the core product interaction is part of the product experience — unboxing, onboarding, support, and even the receipt are opportunities to reinforce or undermine the promise the product makes. Designing only the thing and not the system around the thing leaves quality on the table.",
+    "cluster": "user_experience",
+    "topics": ["packaging", "first-impression", "unboxing", "experience-design", "detail"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "The iPhone launched without a stylus — the opposite of every other touchscreen device of the era. Jobs' argument was simple: you already have ten styluses, and they're always with you. The stylus was not a feature he had forgotten; it was a feature he had consciously rejected as a symptom of designers who hadn't thought hard enough about the human body.",
+    "original_quote": "Who wants a stylus? You have to get 'em and put 'em away, and you lose 'em. Yuck! Nobody wants a stylus.",
+    "implication": "Every feature a product adds is an implicit claim that the user needs it — and features that require accessories, adapters, or extra steps are claims that the designer didn't finish their job. The absence of a stylus on the iPhone was a design statement: we solved the problem a different way, a better way.",
+    "cluster": "user_experience",
+    "topics": ["iPhone", "input", "design-philosophy", "simplicity", "human-factors"],
+    "confidence": 0.95,
+    "source_type": "speech",
+    "source_ref": "Macworld Keynote, San Francisco, January 9, 2007",
+    "source_date": "2007-01-09"
+  },
+  {
+    "content": "The Apple Store Genius Bar was a Jobs invention: a physical, non-transactional service desk where customers could get help without feeling like they were being upsold. It was modeled on the hotel concierge — someone whose job was to make your stay better, not to sell you something. The Genius Bar recognized that post-purchase experience is brand equity, not a cost center.",
+    "original_quote": "I've always wanted to own and control the primary technology in everything we do. My model for business is the Beatles. They were four guys who kept each other's kind of negative tendencies in check. They balanced each other, and the total was greater than the sum of the parts.",
+    "implication": "Customer service is product — how users feel when something goes wrong shapes their long-term relationship with the brand as much as how they feel when everything works. Building world-class support into the product experience, rather than outsourcing it, is a strategic choice with compounding returns.",
+    "cluster": "user_experience",
+    "topics": ["Apple-Store", "Genius-Bar", "customer-service", "retail", "brand"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2001"
+  },
+  {
+    "content": "The original Macintosh mouse had one button. Competitors mocked this as a limitation — Xerox's PARC mouse had three, and most serious computers had keyboards with dozens of modifiers. Jobs' argument was the opposite of limitation: every additional button is a decision pushed onto the user. One button meant the designer had made the decision, not the user.",
+    "original_quote": "Simple can be harder than complex. You have to work hard to get your thinking clean to make it simple.",
+    "implication": "Every option you expose to users is a cognitive cost you are charging them — simplicity is not the absence of features but the disciplined removal of decisions from the user's path. The measure of design quality is not how many things a product can do but how few things the user has to think about while using it.",
+    "cluster": "user_experience",
+    "topics": ["simplicity", "mouse", "interface", "decision-reduction", "Macintosh"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "1984"
+  },
+  {
+    "content": "Jobs insisted that technology should be invisible to the user — the goal of good design was not to demonstrate the technology's sophistication but to remove the technology from the foreground of the user's awareness entirely. A great product lets you forget you are using software or hardware and think only about the task at hand. Presence of technology is a design failure.",
+    "original_quote": "Design is not just what it looks like and feels like. Design is how it works.",
+    "implication": "The best interface is no interface — the goal is to make the technology so transparent that users are not aware of it, only of what they are trying to accomplish. This is a higher bar than making the technology visible and impressive; it requires understanding the user's intent deeply enough to get out of its way.",
+    "cluster": "user_experience",
+    "topics": ["invisible-technology", "interface", "design-philosophy", "UX", "transparency"],
+    "confidence": 0.95,
+    "source_type": "interview",
+    "source_ref": "Fortune Magazine interview with Steve Jobs, November 9, 1998",
+    "source_date": "1998-11-09"
+  },
+  {
+    "content": "Jobs made accessibility for non-technical users a first-class design requirement — not a feature for novices but the standard against which all Apple products were measured. He frequently cited his parents as his test case: if they couldn't use it without instruction, it wasn't done. This kept Apple's design process grounded in the actual experience of the least practiced user.",
+    "original_quote": "We made the buttons on the screen look so good you'll want to lick them.",
+    "implication": "Designing for the most sophisticated user and then simplifying for others produces a different product than designing for the least practiced user first and ensuring sophisticated users aren't blocked. The sequence matters: start with the hardest user to serve, not the easiest.",
+    "cluster": "user_experience",
+    "topics": ["accessibility", "non-technical-users", "design-standard", "simplicity", "inclusive-design"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs obsessed over what happened when a user first turned on the computer — the out-of-box experience. He insisted that the Mac boot without requiring a manual, that the first screen be welcoming rather than interrogative, and that the user be productive within minutes without having read anything. The onboarding was the first chapter of the product story.",
+    "original_quote": "The first time you see it, you want it. The first time you use it, you love it.",
+    "implication": "The out-of-box experience is the product's first impression and its strongest retention tool — users who feel lost in the first ten minutes rarely stay to discover the depth. Invest in the first-use path at least as much as in the product's mature capabilities.",
+    "cluster": "user_experience",
+    "topics": ["onboarding", "first-use", "setup", "experience-design", "retention"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "1984"
+  },
+  {
+    "content": "Jobs walked the aisles of the original Apple Stores himself and observed how customers moved through the space — where they stopped, what they picked up, when they hesitated. He used these observations to iterate the layout until the store flowed the way a well-designed product flowed: intuitively, with natural progression from discovery to engagement to purchase to support.",
+    "original_quote": "We're going to give our customers a buying experience unlike any they've ever had before.",
+    "implication": "Physical spaces are user interfaces — the same design principles that apply to digital products apply to retail environments, offices, and any space where users make decisions. Observing how people actually move through a space (not how you intended them to) is as informative as observing how they actually use a product.",
+    "cluster": "user_experience",
+    "topics": ["Apple-Store", "retail-design", "physical-UX", "space", "observation"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2001"
+  },
+  {
+    "content": "Jobs eliminated every unnecessary step between the user and their goal. The number of clicks to accomplish any common task in Apple products was routinely lower than in competing products — not by accident but by rigorous counting and elimination. He reportedly had a rule that no common task should take more than three steps. The metric was concrete: count the steps.",
+    "original_quote": "It takes a lot of hard work to make something simple, to truly understand the underlying challenges and come up with elegant solutions.",
+    "implication": "Counting the steps between user intent and user accomplishment is one of the most concrete and actionable design quality metrics available. Most products add steps through successive feature additions; reducing steps requires deliberate and often politically costly subtraction. Fewer steps is a harder goal than more features.",
+    "cluster": "user_experience",
+    "topics": ["friction-reduction", "task-design", "simplicity", "UX-metrics", "steps"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  },
+  {
+    "content": "Jobs believed that great user experience required genuine empathy — not the simulated empathy of focus groups and personas but the actual experience of being a confused, impatient, non-technical user. He would deliberately approach products as a first-time user, refusing to read instructions, and use his frustration as design data. The designer's job was to feel what the user felt.",
+    "original_quote": "Our goal is to make the best devices in the world, not to be the biggest.",
+    "implication": "Empathy for users is a practice, not an attitude — it requires engineers and designers to regularly experience their own products as novices do, without the expertise that makes everything obvious to the builders. Structuring time for this kind of deliberate naivete is as important as structuring time for technical depth.",
+    "cluster": "user_experience",
+    "topics": ["empathy", "user-testing", "design-practice", "beginner-mind", "observation"],
+    "confidence": 0.85,
+    "source_type": "interview",
+    "source_ref": "Walter Isaacson, Steve Jobs biography, 2011",
+    "source_date": "2011"
+  }
+]
