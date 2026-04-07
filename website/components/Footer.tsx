@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <p className="font-display text-base font-semibold tracking-tight text-deep-ink">
-              BrainsFor<span className="text-brain-indigo">.Dev</span>
+              brainsfor<span className="text-brain-indigo">.dev</span>
             </p>
             <p className="mt-3 text-sm leading-relaxed text-body">
               Knowledge graphs of the world&apos;s best thinkers, packaged as AI skills.
