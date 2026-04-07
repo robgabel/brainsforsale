@@ -108,24 +108,68 @@ This data is exported into brain-atoms.json's `synthesis` key and rendered by ex
 | source_ref | text | URL to original newsletter edition |
 | source_date | timestamp | Publication date |
 
-### Export Pipeline
+### Environment Setup
+
+```bash
+# Add to ~/rob-ai/.env (one time):
+export ANTHROPIC_API_KEY=sk-ant-...       # Required for atom generation, connections, voice enrichment
+export SUPABASE_SERVICE_KEY=eyJ...        # Required for Supabase operations
+export SUPABASE_URL=https://uzediwokyshjbsymevtp.supabase.co
+export FIRECRAWL_API_KEY=fc-...           # Optional, for web scraping fallback
+
+# Source before any pipeline work:
+source ~/rob-ai/.env
+
+# Python deps:
+pip install anthropic youtube-transcript-api httpx
+```
+
+### Build Pipeline (one command)
+
+```bash
+# Build a brain from scratch (generates atoms, merges, exports, everything):
+source ~/rob-ai/.env && python scripts/build-brain.py --brain {slug}
+
+# With YouTube transcripts + connection enrichment:
+source ~/rob-ai/.env && python scripts/build-brain.py --brain {slug} --all
+
+# Rebuild pack from existing atoms (skip generation):
+source ~/rob-ai/.env && python scripts/build-brain.py --brain {slug} --skip-generate --connections
+
+# Dry run — preview what would happen:
+python scripts/build-brain.py --brain {slug} --dry-run
+```
+
+**Stages:** `generate → youtube → merge → synthesis → connections → export → index`
+
+### Adding a New Brain (3 steps)
+
+```bash
+# 1. Scaffold directory + copy brain.json template
+mkdir -p brains/{slug}/{source,research,data,pack}
+cp brains/steve-jobs/brain.json brains/{slug}/brain.json
+
+# 2. Edit brain.json — replace ALL values
+#    (name, bio, clusters, synthesis, skill examples — this is the creative work, ~1-2 hours)
+
+# 3. Build everything
+source ~/rob-ai/.env && python scripts/build-brain.py --brain {slug} --connections
+```
+
+That's it. The pipeline generates atoms, creates synthesis.md, discovers connections, exports the full pack, and updates the registry.
+
+For **living figures** with YouTube content: add `source/sources.json` with youtube_id entries, then use `--all`.
+For **deceased/pre-blogging figures**: deep-research generation handles it (no YouTube needed).
+
+### Individual Scripts (for manual control)
 
 ```
-brains/{slug}/brain.json (config) + Supabase data
-  → scripts/export-brain.py --brain {slug}
-    → brains/{slug}/pack/brain-atoms.json (structured data + synthesis)
-    → brains/{slug}/pack/brain-context.md (full narrative + skills)
-    → brains/{slug}/pack/explore.html (copied from templates/, reads brain-atoms.json)
-    → brains/{slug}/pack/skills/{name}/SKILL.md (thin reasoning modes)
-    → brains/{slug}/pack/SKILL.md, README.md (from templates)
-```
-
-### Enrichment Scripts (generic — all accept `--brain {slug}`)
-
-```
-scripts/enrich-voice.py --brain {slug}            # Extract original voice from source URLs
-scripts/enrich-connections.py --brain {slug} --discover  # Topic overlap + temporal connections
-scripts/enrich-connections.py --brain {slug} --discover --llm  # + LLM-assisted connections
+scripts/build-brain.py                   ← ONE-COMMAND BUILD (chains all below)
+scripts/generate-atoms-research.py       ← deep-research atom generation via Claude
+scripts/ingest-youtube.py                ← YouTube transcript extraction + decomposition
+scripts/export-brain.py                  ← generic pack export: --brain {slug}
+scripts/enrich-voice.py                  ← extract original voice from source URLs
+scripts/enrich-connections.py            ← topic overlap + temporal + LLM connections
 ```
 
 ### SQL Table Template
@@ -141,20 +185,6 @@ templates/create-brain-tables.sql   # sed 's/{{SLUG}}/peter_attia/g' | psql
 - Skill instructions also inline at bottom of `brain-context.md` for LLMs that load that file
 - All skills: voice-first (original_quote), thin-topic graceful degradation, suggest next skill
 - Template variables: `{{brain_name}}`, `{{brain_first_name}}`, `{{atom_count}}`, etc.
-
-### Adding Brain #2 (Checklist)
-
-1. **Create directory:** `brains/{slug}/` with `brain.json`, `synthesis.md`, `source/`, `research/`, `data/`, `pack/`
-2. **Create Supabase tables:** `sed 's/{{SLUG}}/{slug}/g; s/{{NAME}}/{Name}/g' templates/create-brain-tables.sql | psql`
-3. **Fill brain.json:** Copy from scott-belsky, replace all values (name, source, clusters, skill examples, synthesis)
-4. **Write synthesis.md:** First principles, thinking patterns, contrarian positions (manual research, 4-8 hours)
-5. **Ingest atoms:** Load source content into `{slug}_atoms` table
-6. **Run enrichment:** `python scripts/enrich-voice.py --brain {slug}` and `python scripts/enrich-connections.py --brain {slug} --discover --llm`
-7. **Export pack:** `python scripts/export-brain.py --brain {slug} --from-files atoms.json connections.json`
-8. **Register:** Add entry to `brains/index.json`
-9. **Verify:** Open `pack/explore.html` in browser, check all tabs render correctly
-
-Zero structural decisions. Same pipeline, same templates, different config.
 
 ## Design System
 
