@@ -11,7 +11,7 @@ export function Footer() {
               brainsfor<span className="text-brain-indigo">.dev</span>
             </p>
             <p className="mt-3 text-sm leading-relaxed text-body">
-              Knowledge graphs of the world&apos;s best thinkers, packaged as AI skills.
+              Knowledge graphs of the world&apos;s best thinkers, packaged as 8 AI skills. Installs in seconds.
             </p>
           </div>
 

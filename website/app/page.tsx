@@ -17,8 +17,7 @@ export default function Home() {
             Load a genius into your AI.
           </h1>
           <p className="mx-auto mt-5 max-w-[620px] text-lg leading-relaxed text-body">
-            Knowledge graphs of the world&apos;s best thinkers. 8 AI skills per brain.
-            Install in seconds.
+            Knowledge graphs of the world&apos;s best thinkers, packaged as 8 AI skills. Installs in seconds.
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4">
