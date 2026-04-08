@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import type { SkillDemo } from "@/lib/skill-demos";
 
 interface BrainOption {
@@ -24,6 +24,9 @@ interface SkillsPlaygroundProps {
   defaultSkill: string;
 }
 
+const DEMO_LIMIT = process.env.NODE_ENV === "development" ? 999 : 10;
+const STORAGE_KEY = "bf-demo-count";
+
 export function SkillsPlayground({
   brains,
   skills,
@@ -34,10 +37,160 @@ export function SkillsPlayground({
   const [selectedBrain, setSelectedBrain] = useState(defaultBrain);
   const [selectedSkill, setSelectedSkill] = useState(defaultSkill);
 
+  // Interactive query state
+  const [query, setQuery] = useState("");
+  const [genericText, setGenericText] = useState("");
+  const [enhancedText, setEnhancedText] = useState("");
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [showResult, setShowResult] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [demoCount, setDemoCount] = useState(0);
+  const abortRef = useRef<AbortController | null>(null);
+
+  // Read demo count from localStorage on mount
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) setDemoCount(parseInt(stored, 10) || 0);
+    } catch {
+      // SSR or storage unavailable
+    }
+  }, []);
+
+  const cancelStream = useCallback(() => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
+    setIsStreaming(false);
+  }, []);
+
+  // Clean up on unmount
+  useEffect(() => {
+    return () => {
+      abortRef.current?.abort();
+    };
+  }, []);
+
+  // Cancel stream + hide result when brain or skill changes
+  const handleBrainChange = (slug: string) => {
+    cancelStream();
+    setShowResult(false);
+    setGenericText("");
+    setEnhancedText("");
+    setError(null);
+    setSelectedBrain(slug);
+  };
+
+  const handleSkillChange = (name: string) => {
+    cancelStream();
+    setShowResult(false);
+    setGenericText("");
+    setEnhancedText("");
+    setError(null);
+    setSelectedSkill(name);
+  };
+
+  const handleRun = async () => {
+    if (!query.trim() || demoCount >= DEMO_LIMIT || isStreaming) return;
+
+    cancelStream();
+    setGenericText("");
+    setEnhancedText("");
+    setError(null);
+    setShowResult(true);
+    setIsStreaming(true);
+
+    const newCount = demoCount + 1;
+    setDemoCount(newCount);
+    try {
+      localStorage.setItem(STORAGE_KEY, String(newCount));
+    } catch {
+      // storage unavailable
+    }
+
+    const controller = new AbortController();
+    abortRef.current = controller;
+
+    try {
+      const res = await fetch("/api/skill", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          brain: selectedBrain,
+          skill: selectedSkill,
+          query: query.trim(),
+        }),
+        signal: controller.signal,
+      });
+
+      if (res.status === 429) {
+        setError("Demo limit reached — install a brain for unlimited use.");
+        setIsStreaming(false);
+        return;
+      }
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error || "Something went wrong");
+        setIsStreaming(false);
+        return;
+      }
+
+      const reader = res.body!.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop()!;
+
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          try {
+            const msg = JSON.parse(line);
+            if (msg.type === "generic") {
+              setGenericText((prev) => prev + msg.delta);
+            } else if (msg.type === "enhanced") {
+              setEnhancedText((prev) => prev + msg.delta);
+            } else if (msg.type === "meta" && msg.remaining !== undefined) {
+              setDemoCount(DEMO_LIMIT - msg.remaining);
+              try {
+                localStorage.setItem(
+                  STORAGE_KEY,
+                  String(DEMO_LIMIT - msg.remaining),
+                );
+              } catch {
+                // ignore
+              }
+            } else if (msg.type === "error") {
+              setError(msg.message || "LLM call failed");
+            }
+          } catch {
+            // skip malformed lines
+          }
+        }
+      }
+    } catch (e) {
+      if ((e as Error).name !== "AbortError") {
+        setError("Connection failed — please try again.");
+      }
+    } finally {
+      setIsStreaming(false);
+      abortRef.current = null;
+    }
+  };
+
   const brainName =
     brains.find((b) => b.slug === selectedBrain)?.name ?? selectedBrain;
   const skillMeta = skills.find((s) => s.name === selectedSkill);
   const demo = demos[`${selectedBrain}:${selectedSkill}`] ?? null;
+  const remaining = DEMO_LIMIT - demoCount;
+  const canRun =
+    query.trim().length > 0 && !isStreaming && demoCount < DEMO_LIMIT;
 
   return (
     <div className="mx-auto max-w-[1140px] px-6">
@@ -52,7 +205,7 @@ export function SkillsPlayground({
           {brains.map((brain) => (
             <button
               key={brain.slug}
-              onClick={() => setSelectedBrain(brain.slug)}
+              onClick={() => handleBrainChange(brain.slug)}
               className={`rounded-lg border px-4 py-2 text-[14px] font-medium transition-all ${
                 selectedBrain === brain.slug
                   ? "border-brain-indigo bg-brain-indigo/5 text-brain-indigo shadow-sm"
@@ -67,7 +220,7 @@ export function SkillsPlayground({
         {/* Mobile: native select */}
         <select
           value={selectedBrain}
-          onChange={(e) => setSelectedBrain(e.target.value)}
+          onChange={(e) => handleBrainChange(e.target.value)}
           className="block w-full rounded-lg border border-border-default bg-white px-3 py-2.5 text-[15px] font-medium text-deep-ink focus:border-brain-indigo focus:outline-none focus:ring-2 focus:ring-brain-indigo/20 sm:hidden"
         >
           {brains.map((brain) => (
@@ -79,24 +232,21 @@ export function SkillsPlayground({
       </div>
 
       {/* ─── Skill Selector ─── */}
-      <div className="mb-10">
+      <div className="mb-8">
         <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted">
           Choose a skill
         </label>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill) => {
             const active = selectedSkill === skill.name;
-            const available = !!demos[`${selectedBrain}:${skill.name}`];
             return (
               <button
                 key={skill.name}
-                onClick={() => setSelectedSkill(skill.name)}
+                onClick={() => handleSkillChange(skill.name)}
                 className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 font-mono text-[13px] font-medium transition-all ${
                   active
                     ? "bg-brain-indigo text-white shadow-sm"
-                    : available
-                      ? "bg-cool-surface text-label hover:bg-brain-indigo/10 hover:text-brain-indigo"
-                      : "bg-cool-surface/50 text-muted"
+                    : "bg-cool-surface text-label hover:bg-brain-indigo/10 hover:text-brain-indigo"
                 }`}
               >
                 <span>{skill.icon}</span>
@@ -107,8 +257,133 @@ export function SkillsPlayground({
         </div>
       </div>
 
-      {/* ─── Split-Screen Panels ─── */}
-      {demo ? (
+      {/* ─── Interactive Query Section ─── */}
+      <div className="mb-8">
+        <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted">
+          Ask a question
+        </label>
+        <textarea
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey && canRun) {
+              e.preventDefault();
+              handleRun();
+            }
+          }}
+          placeholder={`Ask ${brainName} anything using /${selectedSkill}...`}
+          rows={2}
+          className="w-full resize-none rounded-lg border border-border-default bg-white px-4 py-3 text-[15px] text-deep-ink placeholder:text-muted/60 focus:border-brain-indigo focus:outline-none focus:ring-2 focus:ring-brain-indigo/20"
+          disabled={demoCount >= DEMO_LIMIT}
+        />
+        <div className="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+          <button
+            onClick={handleRun}
+            disabled={!canRun}
+            className="rounded-lg bg-brain-indigo px-6 py-3 font-mono text-[14px] font-semibold text-white shadow-brain-cta transition-all hover:bg-indigo-hover active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+          >
+            {isStreaming ? (
+              <span className="flex items-center gap-2">
+                <span className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+                Streaming...
+              </span>
+            ) : (
+              <>Run /{selectedSkill}</>
+            )}
+          </button>
+          <span className="text-xs text-muted">
+            {demoCount >= DEMO_LIMIT ? (
+              <span className="text-amber-600">
+                Demo limit reached (6/6) — install a brain for unlimited use
+              </span>
+            ) : (
+              <>
+                {remaining} of {DEMO_LIMIT} demos remaining
+              </>
+            )}
+          </span>
+        </div>
+      </div>
+
+      {/* ─── Error Display ─── */}
+      {error && (
+        <div className="mb-8 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </div>
+      )}
+
+      {/* ─── Live Result (replaces static demos) OR Static Demo Gallery ─── */}
+      {showResult ? (
+        <div
+          key="live-result"
+          className="grid gap-6 md:grid-cols-2 animate-in fade-in duration-300"
+        >
+          {/* Left: Generic AI (no brain) */}
+          <div className="rounded-xl bg-deep-ink p-6">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-[#94a3b8]" />
+              <span className="font-mono text-xs text-[#94a3b8]">
+                Claude Sonnet — no brain
+              </span>
+            </div>
+            <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
+              <span className="text-[#64748b]">&gt;</span>{" "}
+              {query.trim()}
+            </p>
+            <div className="mt-4 font-mono text-sm leading-relaxed text-[#64748b]">
+              {genericText || (
+                <span className="animate-pulse text-[#475569]">
+                  Generating...
+                </span>
+              )}
+              {isStreaming && genericText && (
+                <span className="ml-0.5 inline-block animate-pulse text-[#94a3b8]">
+                  |
+                </span>
+              )}
+            </div>
+            {!isStreaming && genericText && (
+              <p className="mt-4 font-mono text-xs text-[#475569]">
+                Claude Sonnet — no brain loaded. Generic. No frameworks.
+              </p>
+            )}
+          </div>
+
+          {/* Right: With Brain */}
+          <div className="rounded-xl border border-border-indigo bg-[#0f0b1e] p-6">
+            <div className="mb-4 flex items-center gap-2">
+              <span
+                className={`h-2.5 w-2.5 rounded-full ${isStreaming && !enhancedText ? "animate-pulse bg-amber-400" : "bg-success"}`}
+              />
+              <span className="font-mono text-xs text-success">
+                Claude Sonnet + {brainName} brain loaded
+              </span>
+            </div>
+            <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
+              <span className="text-[#6366f1]">&gt;</span> /{selectedSkill}{" "}
+              --{brainName} {query.trim()}
+            </p>
+            <div className="mt-4 font-mono text-sm leading-relaxed text-[#c7d2fe]">
+              {enhancedText || (
+                <span className="animate-pulse text-[#818cf8]">
+                  Loading brain context...
+                </span>
+              )}
+              {isStreaming && enhancedText && (
+                <span className="ml-0.5 inline-block animate-pulse text-brain-indigo">
+                  |
+                </span>
+              )}
+            </div>
+            {!isStreaming && enhancedText && (
+              <p className="mt-4 font-mono text-xs text-[#6366f1]">
+                Claude Sonnet + {brainName}&apos;s knowledge atoms
+              </p>
+            )}
+          </div>
+        </div>
+      ) : demo ? (
+        /* ─── Static Demo Gallery (shown when no live query has been run) ─── */
         <div
           key={`${selectedBrain}:${selectedSkill}`}
           className="grid gap-6 md:grid-cols-2 animate-in fade-in duration-300"
@@ -118,28 +393,25 @@ export function SkillsPlayground({
             <div className="mb-4 flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-[#94a3b8]" />
               <span className="font-mono text-xs text-[#94a3b8]">
-                Without a brain
+                Claude Sonnet — no brain
               </span>
             </div>
             <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
-              <span className="text-[#64748b]">&gt;</span> You are {brainName},{" "}
+              <span className="text-[#64748b]">&gt;</span>{" "}
               {selectedSkill === "surprise"
-                ? "show me something interesting..."
-                : `${selectedSkill} me on: `}
-              {selectedSkill !== "surprise" && (
-                <span className="text-[#94a3b8]">{demo.prompt}</span>
-              )}
+                ? "Show me something interesting..."
+                : demo.prompt}
             </p>
             <div className="mt-4 font-mono text-sm leading-relaxed text-[#64748b]">
               {demo.generic}
             </div>
             <p className="mt-4 font-mono text-xs text-[#475569]">
-              Generic. No frameworks. No evidence.
+              Claude Sonnet — no brain loaded. Generic. No frameworks.
             </p>
           </div>
 
           {/* Right: With BrainsFor */}
-          <div className="rounded-xl border border-border-indigo bg-deep-ink p-6">
+          <div className="rounded-xl border border-border-indigo bg-[#0f0b1e] p-6">
             <div className="mb-4 flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-success" />
               <span className="font-mono text-xs text-success">
@@ -149,15 +421,15 @@ export function SkillsPlayground({
             </div>
             <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
               <span className="text-[#6366f1]">&gt;</span> /{selectedSkill}{" "}
-              {selectedSkill !== "surprise" && (
-                <span>&quot;{demo.prompt}&quot;</span>
-              )}
+              --{brainName}{" "}
+              {selectedSkill !== "surprise" && demo.prompt}
             </p>
             <div className="mt-4 font-mono text-sm leading-relaxed text-[#c7d2fe]">
               {demo.enhanced.response}
             </div>
             <div className="mt-3 font-mono text-xs text-[#818cf8]">
-              Sources: {demo.enhanced.atoms.map((a, i) => (
+              Sources:{" "}
+              {demo.enhanced.atoms.map((a, i) => (
                 <span key={a}>
                   {i > 0 && ", "}
                   &quot;{a}&quot;
@@ -184,11 +456,9 @@ export function SkillsPlayground({
             <span className="font-semibold text-deep-ink">{brainName}</span>
           </p>
           <p className="mt-3 text-sm text-body">
-            Demo coming soon. Install the brain to try this skill live:
+            Type a question above and click Run to see the difference a brain
+            makes.
           </p>
-          <div className="mx-auto mt-4 max-w-[400px] rounded-lg bg-deep-ink px-4 py-3 font-mono text-xs text-success">
-            $ npx skills add brainsfor/{selectedBrain}
-          </div>
           {skillMeta && (
             <p className="mt-4 text-xs text-muted">
               {skillMeta.icon} {skillMeta.title} &mdash; {skillMeta.desc}

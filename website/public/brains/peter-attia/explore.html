@@ -1798,10 +1798,16 @@
             metaHtml += `<div class="atom-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${dateStr}</div>`;
           }
           if (atom.source_ref) {
-            const url = atom.source_ref;
+            const ref = atom.source_ref;
+            let isUrl = false;
             let domain = '';
-            try { domain = new URL(url).hostname.replace('www.', ''); } catch(e) { domain = url; }
-            metaHtml += `<div class="atom-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> <a href="${esc(url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(domain)}</a></div>`;
+            try { domain = new URL(ref).hostname.replace('www.', ''); isUrl = true; } catch(e) {}
+            const sourceIcon = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
+            if (isUrl) {
+              metaHtml += `<div class="atom-meta-item">${sourceIcon} <a href="${esc(ref)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(domain)}</a></div>`;
+            } else {
+              metaHtml += `<div class="atom-meta-item">${sourceIcon} ${esc(ref)}</div>`;
+            }
           }
           if (metaHtml) {
             html += `<div class="connections-panel"><div class="atom-meta">${metaHtml}</div>`;
