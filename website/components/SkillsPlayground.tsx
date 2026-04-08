@@ -327,10 +327,10 @@ export function SkillsPlayground({
               </span>
             </div>
             <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
-              <span className="text-[#64748b]">&gt;</span>{" "}
-              {query.trim()}
+              <span className="text-[#94a3b8]">&gt;</span> You are{" "}
+              {brainName}, {selectedSkill} me: {query.trim()}
             </p>
-            <div className="mt-4 font-mono text-sm leading-relaxed text-[#64748b]">
+            <div className="mt-4 font-mono text-sm leading-relaxed text-[#cbd5e1]">
               {genericText || (
                 <span className="animate-pulse text-[#475569]">
                   Generating...
@@ -397,12 +397,13 @@ export function SkillsPlayground({
               </span>
             </div>
             <p className="font-mono text-sm leading-relaxed text-[#e2e8f0]">
-              <span className="text-[#64748b]">&gt;</span>{" "}
+              <span className="text-[#94a3b8]">&gt;</span> You are{" "}
+              {brainName}, {selectedSkill} me:{" "}
               {selectedSkill === "surprise"
                 ? "Show me something interesting..."
                 : demo.prompt}
             </p>
-            <div className="mt-4 font-mono text-sm leading-relaxed text-[#64748b]">
+            <div className="mt-4 font-mono text-sm leading-relaxed text-[#cbd5e1]">
               {demo.generic}
             </div>
             <p className="mt-4 font-mono text-xs text-[#475569]">
