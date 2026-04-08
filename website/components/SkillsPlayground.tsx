@@ -88,6 +88,8 @@ export function SkillsPlayground({
   const [demoCount, setDemoCount] = useState(0);
   const [beastMode, setBeastMode] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
+  const genericScrollRef = useRef<HTMLDivElement | null>(null);
+  const enhancedScrollRef = useRef<HTMLDivElement | null>(null);
 
   const DEMO_LIMIT = beastMode ? 999 : DEFAULT_DEMO_LIMIT;
 
@@ -110,6 +112,14 @@ export function SkillsPlayground({
     }
     setIsStreaming(false);
   }, []);
+
+  // Auto-scroll response panels to bottom during streaming
+  useEffect(() => {
+    if (isStreaming) {
+      genericScrollRef.current?.scrollTo({ top: genericScrollRef.current.scrollHeight });
+      enhancedScrollRef.current?.scrollTo({ top: enhancedScrollRef.current.scrollHeight });
+    }
+  }, [isStreaming, genericText, enhancedText]);
 
   // Clean up on unmount
   useEffect(() => {
@@ -379,16 +389,14 @@ export function SkillsPlayground({
               <span className="text-[#94a3b8]">&gt;</span> You are{" "}
               {brainName}, {selectedSkill} me: {query.trim()}
             </p>
-            <div className="mt-4 font-mono text-sm leading-relaxed text-[#cbd5e1]">
+            <div ref={genericScrollRef} className="mt-4 max-h-[400px] overflow-y-auto font-mono text-sm leading-relaxed text-[#cbd5e1]">
               {genericText ? (
-                isStreaming ? (
-                  <>
-                    {genericText}
-                    <span className="ml-0.5 inline-block animate-pulse text-[#94a3b8]">|</span>
-                  </>
-                ) : (
+                <>
                   <SentenceParagraphs text={genericText} />
-                )
+                  {isStreaming && (
+                    <span className="ml-0.5 inline-block animate-pulse text-[#94a3b8]">|</span>
+                  )}
+                </>
               ) : (
                 <span className="animate-pulse text-[#475569]">
                   Generating...
@@ -416,16 +424,14 @@ export function SkillsPlayground({
               <span className="text-[#6366f1]">&gt;</span> /{selectedSkill}{" "}
               --{brainName} {query.trim()}
             </p>
-            <div className="mt-4 font-mono text-sm leading-relaxed text-[#c7d2fe]">
+            <div ref={enhancedScrollRef} className="mt-4 max-h-[400px] overflow-y-auto font-mono text-sm leading-relaxed text-[#c7d2fe]">
               {enhancedText ? (
-                isStreaming ? (
-                  <>
-                    {enhancedText}
-                    <span className="ml-0.5 inline-block animate-pulse text-brain-indigo">|</span>
-                  </>
-                ) : (
+                <>
                   <SentenceParagraphs text={enhancedText} />
-                )
+                  {isStreaming && (
+                    <span className="ml-0.5 inline-block animate-pulse text-brain-indigo">|</span>
+                  )}
+                </>
               ) : (
                 <span className="animate-pulse text-[#818cf8]">
                   Loading brain context...
