@@ -48,6 +48,6 @@ Load `brain-context.md` (full context needed for cross-cluster search). Or load 
 
 ## Data
 
-- **atoms:** brain-atoms.json (182 atoms, 498 connections)
+- **atoms:** brain-atoms.json (213 atoms, 409 connections)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" in brain-context.md

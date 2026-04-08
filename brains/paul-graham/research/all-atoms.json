@@ -1,0 +1,3574 @@
+[
+  {
+    "id": "a612c376-5054-4750-9343-b8610c99b8d0",
+    "content": "Superlinear returns mean small differences in performance yield enormous differences in outcome.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "superlinear",
+      "performance",
+      "returns",
+      "effort"
+    ],
+    "source_ref": "https://paulgraham.com/superlinear.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "In a world with superlinear returns, it's not enough to be good.",
+    "implication": null
+  },
+  {
+    "id": "34aac1f2-8734-4d27-8b99-10173af0a7ed",
+    "content": "If you're not occasionally feeling like a noob, you're probably not learning enough. The willingness to feel stupid is a prerequisite for growth. People who refuse to feel like beginners have implicitly decided to stop growing.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "growth",
+      "learning",
+      "vulnerability",
+      "ambition"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "If it doesn't hurt a little to be a noob at something, you're probably not learning fast enough.",
+    "implication": "Embrace the discomfort of not knowing what you're doing - it's a sign you're pushing into new territory where innovation happens. If you're always confident and comfortable, you're probably not taking big enough risks or learning fast enough."
+  },
+  {
+    "id": "6969e875-76ef-4152-b3cf-c7103fe41fdc",
+    "content": "Obstinacy is often disguised as conviction. From the outside, a persistent person and an obstinate one can look identical \u2014 both refuse to quit. The difference only becomes visible in how they respond to new information.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "conviction",
+      "stubbornness",
+      "self-awareness"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The persistent and the obstinate will both tell you they never give up. The difference is what they never give up on.",
+    "implication": "Stay committed to solving the problem, not to your current solution. Pivot when data demands it, but don't abandon the mission. Investors and customers can sense the difference between principled persistence and stubborn denial."
+  },
+  {
+    "id": "4deefdbb-bedd-4166-bf11-9302359bdc0d",
+    "content": "The best test of stubbornness is whether you can tell the difference between obstacles and dead ends.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "persistence",
+      "judgment",
+      "pivoting",
+      "obstacles"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Good stubbornness means knowing when to persist and when to pivot.",
+    "implication": null
+  },
+  {
+    "id": "103c1c2e-d80e-406b-9948-68630ae794fe",
+    "content": "Persistence on goals with flexibility on methods is the recipe for achievement.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "persistence",
+      "flexibility",
+      "goals",
+      "methods"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Be persistent about your goals but flexible about how to achieve them.",
+    "implication": null
+  },
+  {
+    "id": "97c3bb52-4837-468e-a8c8-d0f67268dfab",
+    "content": "Willfulness is not stubbornness \u2014 willful people are flexible about methods.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "willfulness",
+      "flexibility",
+      "stubbornness",
+      "adaptability"
+    ],
+    "source_ref": "https://paulgraham.com/determination.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Willful and stubborn are not the same thing.",
+    "implication": null
+  },
+  {
+    "id": "20c18159-ce57-4e96-a6c3-88bd177d0a60",
+    "content": "Don't optimize for the wrong things \u2014 working hard on the wrong problem is still failure.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "focus",
+      "priorities",
+      "choosing-problems",
+      "effort"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "It matters not just how hard you try but what you try hard at.",
+    "implication": null
+  },
+  {
+    "id": "a8db5659-c861-4aef-a90b-8cb7a3a19776",
+    "content": "Tolerance for bad early work is essential \u2014 perfectionism kills beginnings.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "perfectionism",
+      "beginnings",
+      "tolerance",
+      "craft"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most important kind of tolerance is tolerance for early work being bad.",
+    "implication": null
+  },
+  {
+    "id": "65e3ec89-5869-489d-a3f8-676067c38bee",
+    "content": "Early work is supposed to be bad \u2014 the key is to push through the initial crap.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "early-work",
+      "quality",
+      "persistence",
+      "craft"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You can't be sure what's going to work and what isn't.",
+    "implication": null
+  },
+  {
+    "id": "8287b66e-8c96-4df7-9c05-c0e603e8dbeb",
+    "content": "Being a noob gives you a superpower: you ask questions experts have stopped asking.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "beginners-mind",
+      "learning",
+      "questions",
+      "advantage"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Being a noob is an advantage if you use it right.",
+    "implication": null
+  },
+  {
+    "id": "7a8c284c-6ed0-4e70-89a1-7026e3f9e650",
+    "content": "The right kind of stubborn is persistent about goals but flexible about methods.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "persistence",
+      "flexibility",
+      "goals",
+      "stubbornness"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The right kind of stubborn is obstinate about goals but flexible about how to achieve them.",
+    "implication": null
+  },
+  {
+    "id": "526c152f-f957-4765-8a0b-22360b7ba0a8",
+    "content": "Exponential growth plus a threshold creates superlinear returns \u2014 learning compounds.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "compounding",
+      "learning",
+      "growth",
+      "returns"
+    ],
+    "source_ref": "https://paulgraham.com/superlinear.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The key to superlinear returns is to do work that compounds.",
+    "implication": null
+  },
+  {
+    "id": "0f2b7a30-1b19-4e5e-8eba-4d8928227af6",
+    "content": "If something that seems like work to others doesn't seem like work to you, that's your calling.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "career",
+      "calling",
+      "work",
+      "interest"
+    ],
+    "source_ref": "https://paulgraham.com/work.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If something that seems like work to other people doesn't seem like work to you, that's something you're well suited for.",
+    "implication": null
+  },
+  {
+    "id": "5f8701c7-8b0d-42f5-a48a-b0985f253299",
+    "content": "The secret that experienced creators know is that ALL early work is bad. The difference between someone who does great work and someone who doesn't is not the quality of their early work \u2014 it's their willingness to push through the bad early stage.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "persistence",
+      "early work",
+      "creative process"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The secret every successful person knows is that their early work was terrible. The difference is they kept going.",
+    "implication": "Expect your early attempts to be bad and plan accordingly. Success isn't about avoiding failure - it's about failing fast, learning quickly, and persisting through the inevitable rough early stages. Your willingness to ship terrible first versions predicts your eventual success."
+  },
+  {
+    "id": "28b20cd8-1cf1-4293-8924-4ddda6c0aaad",
+    "content": "Many people who could do great work never start because they compare their imagined first attempt to other people's finished work. The comparison is wildly unfair \u2014 you're comparing your Chapter 1 to someone else's Chapter 20.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "comparison",
+      "getting started",
+      "creative process"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The reason so many people never get started is that they compare their inside with other people's outside. They see other people's finished work and think: I could never do that.",
+    "implication": "Don't let polished competitors intimidate you into not starting. Everyone's first version was terrible - you're just not seeing it. Focus on getting started and improving rapidly rather than achieving perfection before you ship."
+  },
+  {
+    "id": "b4939b40-9dca-4874-9a56-43ef55e9e355",
+    "content": "Early work needs to be treated differently from finished work. Judging early-stage work by the standards of mature work kills it. The key is to lower the bar for getting started and raise it gradually as the work develops.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "creative process",
+      "iteration",
+      "standards",
+      "getting started"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "You can't judge a startup by looking at their first version any more than you can judge a sculptor by looking at a block of marble.",
+    "implication": "Launch early and iterate based on feedback rather than trying to build the perfect product in stealth. Your first version is raw material, not a final statement. The real work happens after launch when you start learning from users."
+  },
+  {
+    "id": "fdbe00b0-8be4-4392-ade8-3713a5b712a2",
+    "content": "Great work happens at the intersection of aptitude, deep interest, and opportunity.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "greatness",
+      "career",
+      "aptitude",
+      "interest"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The work you choose needs to have three qualities.",
+    "implication": null
+  },
+  {
+    "id": "f86dd270-cdda-48f4-bd74-5ca7512f611f",
+    "content": "Curiosity is the most undervalued driver of great work.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "curiosity",
+      "motivation",
+      "intrinsic-drive"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The three most powerful motives are curiosity, delight, and the desire to do something impressive.",
+    "implication": null
+  },
+  {
+    "id": "f8aeddbb-f3ad-4fd9-becd-800d7ef7bd79",
+    "content": "The most important quality in doing great work is earnestness.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "earnestness",
+      "authenticity",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Earnestness is essential for doing great work.",
+    "implication": null
+  },
+  {
+    "id": "05f7583b-4cc7-4c89-946d-2af5f641d9c7",
+    "content": "The best test of whether you're being persistent or obstinate is to ask: am I solving the same problem or pursuing the same solution? Persistence means you keep attacking the problem from new angles. Obstinacy means you keep trying the same approach that isn't working.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "persistence",
+      "problem solving",
+      "iteration"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "If you're determined to succeed at something, you don't give up. But you give up on particular tactics. You change strategies but not destinations.",
+    "implication": "Build hypothesis-testing into your DNA. Be ruthless about killing features, strategies, or approaches that aren't working, but maintain unwavering commitment to the core problem you're solving. Flexibility in tactics, rigidity in vision."
+  },
+  {
+    "id": "51c49a13-ead7-4a9f-80e7-182fb2a9448b",
+    "content": "The best test of whether something is worth doing: would you do it for free?",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "motivation",
+      "passion",
+      "work",
+      "calling"
+    ],
+    "source_ref": "https://paulgraham.com/work.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "If you wouldn't do it for free, it might not be worth doing at all.",
+    "implication": null
+  },
+  {
+    "id": "407383d4-fbf0-48c8-b966-dc7300ee9acd",
+    "content": "The most important thing in science is to work on important problems.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "problem-selection",
+      "importance",
+      "focus",
+      "science"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you're working on the wrong problem, no amount of effort will save you.",
+    "implication": null
+  },
+  {
+    "id": "dee05877-4534-4b35-a1ff-95de5beb4e74",
+    "content": "Great work often starts as play \u2014 follow your curiosity, not a plan.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "play",
+      "curiosity",
+      "serendipity",
+      "planning"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Great work usually starts with curiosity about something, not a plan to produce it.",
+    "implication": null
+  },
+  {
+    "id": "d323496a-e0a9-46d8-a215-83527a658bf6",
+    "content": "Avoid pretentiousness \u2014 it guides you away from good work.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "pretentiousness",
+      "authenticity",
+      "work",
+      "taste"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Pretentiousness is your guide away from good work.",
+    "implication": null
+  },
+  {
+    "id": "550e294b-bc9e-4fdf-84d4-c1dea4348fe2",
+    "content": "Two sources of superlinear returns: exponential growth and thresholds.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "superlinear",
+      "growth",
+      "thresholds",
+      "mechanics"
+    ],
+    "source_ref": "https://paulgraham.com/superlinear.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Superlinear returns come from two forces: exponential growth and thresholds.",
+    "implication": null
+  },
+  {
+    "id": "475c0e4e-1934-41aa-ac1e-ee28cb6c57be",
+    "content": "Superlinear returns reward compounding effort \u2014 small early advantages snowball.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "superlinear",
+      "compounding",
+      "advantage",
+      "returns"
+    ],
+    "source_ref": "https://paulgraham.com/superlinear.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "In fields with superlinear returns, being even slightly better can be much more rewarding.",
+    "implication": null
+  },
+  {
+    "id": "1675221b-c9df-4847-b5e5-682531d62ee0",
+    "content": "The worst thing you can do with early work is judge it too harshly.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "early-work",
+      "judgment",
+      "perfectionism",
+      "courage"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "People who do great things often began with what seemed like foolish ideas.",
+    "implication": null
+  },
+  {
+    "id": "6cab0cf7-b37e-4c9d-8d79-9e7b934d2574",
+    "content": "Early work needs to be judged by different standards \u2014 you're searching, not executing.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "early-work",
+      "judgment",
+      "momentum",
+      "potential"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Judge early work by momentum and potential, not quality.",
+    "implication": null
+  },
+  {
+    "id": "9c8d73bf-b0bd-406e-ba9b-baef2a5e74c1",
+    "content": "Experts stop seeing what's obvious because familiarity breeds blindness.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "expertise",
+      "blindness",
+      "assumptions",
+      "perspective"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Experts have internalized so many assumptions that they can't see them.",
+    "implication": null
+  },
+  {
+    "id": "052e41cd-dd7d-4cf9-8b73-b296793efb98",
+    "content": "Being a beginner gives you fresh eyes \u2014 use them before they close.",
+    "cluster": "ambition_greatwork",
+    "topics": [
+      "beginners-mind",
+      "fresh-perspective",
+      "questions"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The main advantage of being a noob is that you ask questions.",
+    "implication": null
+  },
+  {
+    "id": "363b1c79-7d30-415a-864f-a82c337ad88b",
+    "content": "Good design is about making things simple, not making them complex. The best programming languages, like the best writing, achieve power through economy of expression. Adding features does not make a language more powerful -- removing unnecessary ones does.",
+    "cluster": "design_taste",
+    "topics": [
+      "simplicity",
+      "design",
+      "language design",
+      "economy"
+    ],
+    "source_ref": "https://paulgraham.com/top.html",
+    "source_date": "2001-05-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "I think the way to create wealth is to make things people want. If you want to create wealth, it will help to understand what it is. Wealth is not the same thing as money.",
+    "implication": "Simplicity is power, whether in code, design, or communication. The goal isn't to show off how much you can do\u2014it's to accomplish your objective with the minimum necessary complexity. Constraints force elegance and often reveal better solutions."
+  },
+  {
+    "id": "b63962c8-502e-4917-9365-de6946c60166",
+    "content": "Wild animals are beautiful because they have hard lives \u2014 form follows function under pressure.",
+    "cluster": "design_taste",
+    "topics": [
+      "design",
+      "beauty",
+      "constraint",
+      "function"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Wild animals are beautiful because they have hard lives.",
+    "implication": null
+  },
+  {
+    "id": "d4ce3fb6-58e6-4786-a5bc-2be05d58ef8a",
+    "content": "The idea that taste is subjective prevents people from getting better at design.",
+    "cluster": "design_taste",
+    "topics": [
+      "taste",
+      "objectivity",
+      "improvement",
+      "design"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Saying taste is subjective is a good way to prevent disputes. The trouble is, it's not true.",
+    "implication": null
+  },
+  {
+    "id": "b7fce1bf-094c-4993-a005-c5b456bbec73",
+    "content": "When you're forced to be simple, you're forced to face the real problem.",
+    "cluster": "design_taste",
+    "topics": [
+      "simplicity",
+      "design",
+      "substance",
+      "honesty"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "When you can't deliver ornament, you have to deliver substance.",
+    "implication": null
+  },
+  {
+    "id": "d2e0ceae-b3ee-4fd5-97b8-099e270bab2c",
+    "content": "Design is not just how it looks \u2014 it's how it works.",
+    "cluster": "design_taste",
+    "topics": [
+      "design",
+      "function",
+      "aesthetics",
+      "simplicity"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Simplicity is the ultimate sophistication.",
+    "implication": null
+  },
+  {
+    "id": "903a441c-d079-4cc6-9905-765e19f54b61",
+    "content": "Good design is redesign \u2014 it's rare to get things right the first time.",
+    "cluster": "design_taste",
+    "topics": [
+      "design",
+      "iteration",
+      "revision",
+      "craft"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Cultivate dissatisfaction.",
+    "implication": null
+  },
+  {
+    "id": "4ccec213-031c-450d-b212-8b5252a496b1",
+    "content": "Good design has universal principles across all fields.",
+    "cluster": "design_taste",
+    "topics": [
+      "design",
+      "taste",
+      "beauty",
+      "principles"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "It's surprising how much different fields ideas of beauty have in common.",
+    "implication": null
+  },
+  {
+    "id": "6548fd65-a68d-4a12-b36e-6524ab645567",
+    "content": "Taste is not merely subjective \u2014 your tastes improve over time.",
+    "cluster": "design_taste",
+    "topics": [
+      "taste",
+      "subjectivity",
+      "improvement",
+      "design"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Poof goes the axiom that taste can't be wrong.",
+    "implication": null
+  },
+  {
+    "id": "dd39997b-77e5-4383-a3c2-765c3bc31c57",
+    "content": "The only style worth having is the one you can't help \u2014 don't try to be original.",
+    "cluster": "design_taste",
+    "topics": [
+      "style",
+      "originality",
+      "authenticity",
+      "craft"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The only style worth having is the one you can't help.",
+    "implication": null
+  },
+  {
+    "id": "9891580b-01b2-4c57-a5ce-6f922ed4a0c5",
+    "content": "Good design is often slightly funny \u2014 humor is related to strength.",
+    "cluster": "design_taste",
+    "topics": [
+      "design",
+      "humor",
+      "strength",
+      "lightness"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "I think humor is related to strength.",
+    "implication": null
+  },
+  {
+    "id": "f94d86b8-a6df-4120-a5f6-6ca20e0e9b0f",
+    "content": "The skill of figuring out what the teacher wants and giving it to them is actively harmful in the real world. In school, there's always someone defining what success looks like. In life, you have to figure that out yourself.",
+    "cluster": "education_learning",
+    "topics": [
+      "education",
+      "autonomy",
+      "real world",
+      "self-direction"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The test-taking mentality is the enemy of real learning. Instead of trying to figure out what the teacher wants, try to figure out what's true.",
+    "implication": "Stop optimizing for external validation and start optimizing for truth and value creation. In the real world, there's no teacher with predetermined answers. Success comes from solving actual problems, not from figuring out what evaluators want to hear."
+  },
+  {
+    "id": "e3d381ce-f532-443e-8912-7c97585a68e2",
+    "content": "School teaches you that the way to do well is to hack the test.",
+    "cluster": "education_learning",
+    "topics": [
+      "education",
+      "testing",
+      "learning",
+      "school"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The lesson school teaches is how to do well on tests.",
+    "implication": null
+  },
+  {
+    "id": "696c14c1-f0fa-49a1-a298-43d8e0a987f5",
+    "content": "The real lesson to unlearn from school is that the way to succeed is to game the system.",
+    "cluster": "education_learning",
+    "topics": [
+      "school",
+      "gaming",
+      "unlearning",
+      "meritocracy"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The lesson to unlearn is that the way to succeed is to learn what the test will be and study for that.",
+    "implication": null
+  },
+  {
+    "id": "8aa8f24f-9fbd-4cad-a108-d929a08db7a0",
+    "content": "School kills the desire to learn by making it compulsory and bureaucratic.",
+    "cluster": "education_learning",
+    "topics": [
+      "school",
+      "learning",
+      "curiosity",
+      "bureaucracy"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "School is mostly babysitting.",
+    "implication": null
+  },
+  {
+    "id": "e02fb798-9d6a-4750-b038-86f8b901b30a",
+    "content": "The education system selects for compliance, not intelligence or creativity.",
+    "cluster": "education_learning",
+    "topics": [
+      "education",
+      "compliance",
+      "selection",
+      "creativity"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Tests measure a combination of intelligence and obedience.",
+    "implication": null
+  },
+  {
+    "id": "f78f3e6c-d1f3-492b-9df6-671ceca40f16",
+    "content": "Real learning happens when you're genuinely curious, not when you're forced.",
+    "cluster": "education_learning",
+    "topics": [
+      "learning",
+      "curiosity",
+      "motivation",
+      "self-directed"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most important thing is to be genuinely curious.",
+    "implication": null
+  },
+  {
+    "id": "d560b2be-eaa1-459d-a911-98e5c3128056",
+    "content": "Tests measure a narrow form of ability \u2014 the ability to perform under artificial constraints on someone else's schedule. Real-world success requires self-directed exploration, which is almost the opposite of what tests reward.",
+    "cluster": "education_learning",
+    "topics": [
+      "testing",
+      "self-direction",
+      "artificial constraints"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Tests are a particularly bad way to measure aptitude for anything that matters, because they're always artificial. What you're really measuring is how well someone does at taking tests.",
+    "implication": "When hiring, focus on what candidates have actually built and how they think about problems rather than credentials or test performance. The skills that matter for startups - creativity, persistence, real-world problem-solving - aren't captured by traditional assessments."
+  },
+  {
+    "id": "cdf7eaad-bc89-4a47-991b-e005074111b3",
+    "content": "Curiosity is the antidote to the test-hacking mindset. Curious people learn because they want to understand, not because they'll be tested. The transition from extrinsic to intrinsic motivation is the most important intellectual transition a person can make.",
+    "cluster": "education_learning",
+    "topics": [
+      "curiosity",
+      "intrinsic motivation",
+      "learning",
+      "intellectual growth"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Curiosity is the best defense against the kind of fake work that passes for education. If you're genuinely curious about something, you'll learn it better than any test could measure.",
+    "implication": "Hire curious people and stay curious yourself. Intrinsic motivation beats external pressure for sustained performance. Build a culture where people learn because they want to understand, not because they're required to know."
+  },
+  {
+    "id": "b872162b-4426-4e16-b765-5cd0edb13c88",
+    "content": "The lesson to unlearn is that the way to succeed is to figure out the system and game it. In the real world, the people who do the best work are the ones who focus on the work itself rather than on how they'll be evaluated.",
+    "cluster": "education_learning",
+    "topics": [
+      "intrinsic motivation",
+      "gaming systems",
+      "great work"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The biggest lesson to unlearn from school is that the way to succeed is to hack the system rather than do good work.",
+    "implication": "Focus on building something genuinely valuable rather than gaming metrics or optimizing for superficial success markers. Users and markets can't be hacked the way school systems can - they reward real value creation over clever gaming."
+  },
+  {
+    "id": "a8208ac1-0255-4986-8a95-fcda655abf75",
+    "content": "Venture capital and startup funding have become the primary mechanism for turning ideas into wealth. The entire funding ecosystem \u2014 angels, VCs, accelerators \u2014 exists to identify people who can create new wealth and give them the resources to do it.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "venture capital",
+      "wealth creation",
+      "startup ecosystem"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": "2021-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Venture capital is the bridge between ideas and companies. Without it, most of the technology we use daily wouldn't exist.",
+    "implication": "Understand that fundraising is a tool for accelerating growth, not validation of your idea. The entire funding ecosystem exists to identify and resource people who can create new value at scale. Use it strategically to build faster, not to feel successful."
+  },
+  {
+    "id": "9e57c90c-4603-4a66-a685-ad37b25c3e5e",
+    "content": "The most important investors are the ones who say yes first \u2014 they set the pace.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "momentum",
+      "first-mover",
+      "investors"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Get the first yes and momentum follows.",
+    "implication": null
+  },
+  {
+    "id": "6022b114-4392-487b-a57b-0ecd8635629f",
+    "content": "Fundraising is a distraction \u2014 minimize time spent on it.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "distraction",
+      "focus"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Fundraising is not what will make your company successful. Building a great product is.",
+    "implication": null
+  },
+  {
+    "id": "6307ccd2-b286-44d6-b590-4b2638937116",
+    "content": "The best way to raise money is to have a company investors want to invest in. All fundraising advice is secondary to this. Traction, growth, and a compelling product are the real persuasion -- everything else is marginal optimization.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "traction",
+      "fundraising strategy",
+      "growth",
+      "product quality"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The best way to convince investors is to make a good company. Then the pitch becomes just a way of describing what you've made.",
+    "implication": "Focus on building something great first, fundraising second. Traction and growth speak louder than any pitch deck. All the fundraising tactics in the world can't substitute for having a company that investors actually want to bet on."
+  },
+  {
+    "id": "1facb70b-669a-4a35-aef8-89f2b63ee2ae",
+    "content": "Investors decide in the first few minutes \u2014 make your opening count.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "pitching",
+      "first-impressions",
+      "investors"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Investors decide quickly. Lead with your strongest point.",
+    "implication": null
+  },
+  {
+    "id": "3af31a73-4339-4b9c-b8a7-eb1786c53c0b",
+    "content": "Raising money is not a sign of success \u2014 it's a sign of needing money.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "vanity-metrics",
+      "success"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Don't treat fundraising as a win. It's not revenue.",
+    "implication": null
+  },
+  {
+    "id": "b2a74d23-733c-4847-bfa7-95d2792014fd",
+    "content": "Be upfront about what's going wrong. Investors who discover problems later feel deceived. Investors who hear about problems early and see you handling them feel confident. Transparency about weakness is paradoxically a strength signal.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "transparency",
+      "trust",
+      "weakness",
+      "investor relations"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "If you seem like you're trying to hide something, that sets off the investor's alarms. The way not to seem like you're hiding something is not to hide anything.",
+    "implication": "Transparency about problems paradoxically makes investors more confident, not less. When you openly discuss challenges and your plans to address them, you demonstrate self-awareness and honesty. Investors expect problems\u2014they just want to know you understand them."
+  },
+  {
+    "id": "f01f537e-04f8-460a-8df2-cb28f8c472d8",
+    "content": "Investors pattern-match against successful founders they've seen before. Looking like you know what you're doing, moving fast, and having deep domain expertise all trigger positive pattern-matching. Understanding the investor's mental model is key.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "pattern matching",
+      "investor psychology",
+      "founder archetype",
+      "domain expertise"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Investors are looking for startups that remind them of ones that succeeded. So if you can make your startup look like one that succeeded, you'll be more likely to get funded.",
+    "implication": "Understanding investor psychology is crucial. They pattern-match against successful companies they've seen before. Looking competent, moving fast, and demonstrating deep domain expertise all trigger positive associations. Study what successful founders in your space looked like at your stage."
+  },
+  {
+    "id": "4b9ff02e-5738-4f2e-84e4-46c5afdefcde",
+    "content": "Fundraising is a process of momentum \u2014 early yeses create later yeses.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "momentum",
+      "dynamics",
+      "timing"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Fundraising is driven by momentum.",
+    "implication": null
+  },
+  {
+    "id": "07ad3a2e-9094-4867-8597-fefccd3e4da9",
+    "content": "Don't try to seem like something you're not. The best founders convince investors by being genuinely impressive, not by performing impressiveness. Authenticity is detectable and its absence is a red flag for experienced investors.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "authenticity",
+      "investor trust",
+      "founder identity",
+      "performance vs substance"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Don't try to seem impressive. You can't fool investors for long on this point. If you don't seem impressive, the problem is not your pitch. The problem is that you're not actually impressive yet. Fix that.",
+    "implication": "Authenticity is detectable and its absence is a red flag. Instead of trying to seem more impressive than you are, focus on actually becoming more impressive. Experienced investors can spot performance versus substance, and substance always wins in the long run."
+  },
+  {
+    "id": "008d1707-3e4c-46b1-871f-c48abb072ec5",
+    "content": "How to convince investors: don't try to seem impressive \u2014 be impressive.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "investors",
+      "authenticity",
+      "conviction",
+      "pitching"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The way to convince investors is to be the sort of person who succeeds.",
+    "implication": null
+  },
+  {
+    "id": "de40d17f-7699-4c42-a889-e25e9fc638bf",
+    "content": "Never let fundraising drag on. Set a deadline, create urgency, and force decisions. A drawn-out fundraise is demoralizing, distracting, and signals to later investors that earlier ones passed. Speed is your friend.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising timeline",
+      "urgency",
+      "momentum",
+      "speed"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Don't take too long raising money. Some startups could raise money in a day if they wanted to; if it takes you several months, that's not a good sign. The right way to do it is to get a deal done fast.",
+    "implication": "Time kills deals and momentum. Set artificial deadlines, create urgency, and force investor decisions. A prolonged fundraise sends negative signals to the market and distracts you from building your actual business. Speed in fundraising is a competitive advantage."
+  },
+  {
+    "id": "ab4f0d00-8528-4dbd-9d21-29352313a4cb",
+    "content": "A demo is worth a thousand words \u2014 show investors your product working.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "demo",
+      "pitching",
+      "show-dont-tell",
+      "investors"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Show, don't tell. A working demo is worth more than any pitch deck.",
+    "implication": null
+  },
+  {
+    "id": "c2f2b80c-7ec2-4a68-b472-f3944b08fd9f",
+    "content": "The most convincing evidence for investors is not a pitch deck but a product with real users showing real growth. If you have that, the pitch almost doesn't matter. If you don't, the best pitch in the world won't save you.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "traction",
+      "growth",
+      "evidence",
+      "pitch vs product"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The most convincing thing you can do is show them the thing you've made. The second most convincing thing you can do is to show them impressed users.",
+    "implication": "Demo beats deck every time. Real users showing genuine enthusiasm is worth more than the most polished presentation. If you don't have compelling product traction yet, focus on building that before you focus on fundraising."
+  },
+  {
+    "id": "e1d89860-84d4-4546-b72a-fae22e2c1260",
+    "content": "Investors are convinced by growth, not by pitches.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "investors",
+      "growth",
+      "traction",
+      "conviction"
+    ],
+    "source_ref": "https://paulgraham.com/convince.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The way to convince investors is to make something users want.",
+    "implication": null
+  },
+  {
+    "id": "3dde8cc1-903e-4c58-b4d8-b90a5596c2e4",
+    "content": "Raise money when you can, not when you need to.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "timing",
+      "strategy"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Raise money when you can, not when you need to.",
+    "implication": null
+  },
+  {
+    "id": "407f0543-229b-42a9-8266-93af6873975c",
+    "content": "Don't raise too much \u2014 it changes your psychology and your spending.",
+    "cluster": "fundraising_investors",
+    "topics": [
+      "fundraising",
+      "psychology",
+      "spending"
+    ],
+    "source_ref": "https://paulgraham.com/fr.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Raising too much can be almost as bad as raising too little.",
+    "implication": null
+  },
+  {
+    "id": "50bb6b4a-987a-494a-896f-b595eef33080",
+    "content": "Growth rate is the compass \u2014 5-7% per week at YC.",
+    "cluster": "growth_scale",
+    "topics": [
+      "growth-rate",
+      "metrics",
+      "focus",
+      "yc-benchmarks"
+    ],
+    "source_ref": "https://paulgraham.com/growth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "A good growth rate during YC is 5-7% a week.",
+    "implication": null
+  },
+  {
+    "id": "e4967723-8449-4db8-a9e0-222c96f340b7",
+    "content": "Optimize for growth rate, not absolute revenue.",
+    "cluster": "growth_scale",
+    "topics": [
+      "growth-rate",
+      "decision-making",
+      "focus",
+      "metrics"
+    ],
+    "source_ref": "https://paulgraham.com/growth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you're going to optimize for anything, optimize for growth rate.",
+    "implication": null
+  },
+  {
+    "id": "249fd681-9f65-4138-9cda-518adf28f31f",
+    "content": "Step functions (thresholds) create situations where being slightly above or below a bar produces wildly different outcomes. Venture capital, academic tenure, and bestseller lists all exhibit this pattern. Proximity to thresholds deserves disproportionate effort.",
+    "cluster": "growth_scale",
+    "topics": [
+      "thresholds",
+      "step functions",
+      "nonlinear outcomes",
+      "effort allocation"
+    ],
+    "source_ref": "https://paulgraham.com/superlinear.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "One of the most important things I learned about dilution is that it isn't linear. If the difference between 1% and 2% market share means the difference between tenth place and first place, then the effort you put into getting that extra 1% should be more than double what you put into getting the first 1%.",
+    "implication": "When you're close to a threshold that matters\u2014whether it's getting into YC, raising a Series A, or hitting product-market fit\u2014you should invest disproportionately more effort. The difference between 'almost there' and 'there' can be exponential in outcomes."
+  },
+  {
+    "id": "0e36cd1e-fcc3-4f54-8de1-59052123929f",
+    "content": "A startup is a company designed to grow fast.",
+    "cluster": "growth_scale",
+    "topics": [
+      "startups",
+      "growth",
+      "definition",
+      "growth-rate"
+    ],
+    "source_ref": "https://paulgraham.com/growth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "A startup is a company designed to grow fast.",
+    "implication": null
+  },
+  {
+    "id": "697280b4-a7c0-49ab-a447-231136a5a6ef",
+    "content": "The way to do really big things is to start with deceptively small things.",
+    "cluster": "growth_scale",
+    "topics": [
+      "ambition",
+      "startups",
+      "small-beginnings",
+      "scale"
+    ],
+    "source_ref": "https://paulgraham.com/ambitious.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Empirically, the way to do really big things seems to be to start with deceptively small things.",
+    "implication": null
+  },
+  {
+    "id": "6bc55ca0-1fcd-4f3b-a1ba-4d7cd3f47f1a",
+    "content": "Startups can only be built on ideas with large markets.",
+    "cluster": "growth_scale",
+    "topics": [
+      "market-size",
+      "scalability",
+      "technology",
+      "constraints"
+    ],
+    "source_ref": "https://paulgraham.com/growth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "For a company to grow really big, it must make something lots of people want.",
+    "implication": null
+  },
+  {
+    "id": "35b37261-1216-4374-9672-ef29823fcb49",
+    "content": "The best creators have a two-track mind: one part that generates ideas freely without judgment, and another that evaluates critically. The mistake is letting the critical part dominate too early, which prevents anything from being created in the first place.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "creativity",
+      "judgment",
+      "generation",
+      "inner critic"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "When you're generating ideas, you want to turn down the editor in your head. When you're evaluating them, you want to turn it back up. Most people get this backwards.",
+    "implication": "Separate your creative and critical thinking processes. When brainstorming solutions or features, suspend judgment to explore broadly. When it's time to prioritize and ship, be ruthlessly critical. Don't let premature criticism kill potentially great ideas."
+  },
+  {
+    "id": "6752ff17-dc49-4f2d-be29-3e0ea0f74b5a",
+    "content": "The advantages of being a noob: you see things with fresh eyes, you ask questions experts stopped asking, you're not constrained by conventions, and your ignorance lets you try approaches that experts know 'don't work' but occasionally do.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "beginner mindset",
+      "fresh perspective",
+      "innovation"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The advantage of being new at something is that you don't know what's supposed to be hard. Sometimes that's more important than experience.",
+    "implication": "Don't be afraid to enter industries where you lack deep experience. Your outsider perspective might reveal solutions that experts have been conditioned to overlook. Some of the best startups come from founders who didn't know their ideas were 'impossible.'"
+  },
+  {
+    "id": "d6261d68-eae6-4532-9cf9-6f85cd30a298",
+    "content": "You can't tell in advance which ideas will be big \u2014 just follow what's interesting.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "ideas",
+      "uncertainty",
+      "exploration",
+      "curiosity"
+    ],
+    "source_ref": "https://paulgraham.com/greatwork.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You can't tell in advance which ideas will turn out to be important.",
+    "implication": null
+  },
+  {
+    "id": "cf0e8a09-704f-4937-b7f1-c412327162ec",
+    "content": "Don't try to think of startup ideas \u2014 turn your mind into the type that ideas form in.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "ideas",
+      "startups",
+      "side-projects",
+      "organic"
+    ],
+    "source_ref": "https://paulgraham.com/before.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you make a conscious effort to think of startup ideas, the ideas you come up with will not merely be bad, but bad and plausible-sounding.",
+    "implication": null
+  },
+  {
+    "id": "4d623be3-4cc5-4b26-ae4c-b15ded5f4f6a",
+    "content": "The best ideas look like bad ideas to most people.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "contrarian-thinking",
+      "competition",
+      "startup-ideas"
+    ],
+    "source_ref": "https://paulgraham.com/startupideas.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The best startup ideas tend to have three things in common.",
+    "implication": null
+  },
+  {
+    "id": "d1c84037-0f3b-41e5-96ae-abea9f21722e",
+    "content": "Ask what problem do I wish someone else would solve for me.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "startups",
+      "ideas",
+      "schlep",
+      "reframing"
+    ],
+    "source_ref": "https://paulgraham.com/schlep.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Instead of asking what problem should I solve, ask what problem do I wish someone else would solve.",
+    "implication": null
+  },
+  {
+    "id": "172524f0-b6f6-4886-8377-07ab6c232494",
+    "content": "The best startup ideas come from noticing problems you have yourself.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "startup-ideas",
+      "observation",
+      "problem-finding"
+    ],
+    "source_ref": "https://paulgraham.com/startupideas.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The verb you want to use with startup ideas is not think up but notice.",
+    "implication": null
+  },
+  {
+    "id": "175503dc-44d0-439c-956b-9a87f542fc50",
+    "content": "The most reliable way to have good ideas is to have many ideas and filter.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "ideas",
+      "volume",
+      "filtering",
+      "creativity"
+    ],
+    "source_ref": "https://paulgraham.com/startupideas.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The way to get good ideas is to get lots of ideas and throw the bad ones away.",
+    "implication": null
+  },
+  {
+    "id": "2a9bdf15-a104-4a45-ab54-602266621e1b",
+    "content": "Live in the future, then build what's missing.",
+    "cluster": "ideas_creativity",
+    "topics": [
+      "future-thinking",
+      "innovation",
+      "startup-ideas"
+    ],
+    "source_ref": "https://paulgraham.com/startupideas.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Live in the future, then build what's missing.",
+    "implication": null
+  },
+  {
+    "id": "1a76345a-ee4e-4a00-a1dc-7fc081a4677c",
+    "content": "Compounding works in both directions. Small, unnoticed losses of time accumulate just like small, unnoticed losses of money. The insidiousness is that each individual loss seems trivial.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "compounding",
+      "time",
+      "awareness"
+    ],
+    "source_ref": "https://paulgraham.com/selfindulgence.html",
+    "source_date": "2010-07-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "There are two ways to be rich: to get everything you want, or to want everything you have. The latter seems easier.",
+    "implication": "Small time-wasters compound just like small financial leaks. Each individual distraction or inefficiency seems harmless, but together they create massive drag on your productivity and progress. Audit your time as carefully as you would audit your finances."
+  },
+  {
+    "id": "0b0435d7-3320-41d0-ac22-257b8f2e6608",
+    "content": "People's instinct to avoid spending leads them to hold onto depreciating assets or time-wasting commitments. The sunk cost fallacy applies to time just as it does to money.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "sunk cost",
+      "decision making",
+      "time"
+    ],
+    "source_ref": "https://paulgraham.com/selfindulgence.html",
+    "source_date": "2010-07-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The reason I don't spend money on stuff is that I don't want stuff. And the reason I don't want stuff is that it would make my life more complicated.",
+    "implication": "Apply the sunk cost fallacy to time as rigorously as you do to money. Just because you've already invested time in something doesn't mean you should continue. Cut your losses quickly when something isn't working, whether it's a project, relationship, or commitment."
+  },
+  {
+    "id": "e8ad3fb7-dbc6-4aaf-abc6-d9fb397e39d8",
+    "content": "You can map the intellectual freedom of a society by counting its heresies. A society with many heresies \u2014 many things you can't say \u2014 is one where independent thinking is constrained. The healthiest intellectual cultures minimize the number of forbidden questions.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "intellectual freedom",
+      "society",
+      "culture"
+    ],
+    "source_ref": "https://paulgraham.com/heresy.html",
+    "source_date": "2022-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The most important thing is to be able to think what you want, not to say what you want. And if you feel you have to say everything you think, it may inhibit you from thinking improper thoughts.",
+    "implication": "Intellectual freedom can be measured by counting forbidden topics. Societies or organizations with many things you 'can't say' are environments where innovation and creative thinking will be constrained. Seek out and create contexts that minimize intellectual taboos."
+  },
+  {
+    "id": "abcfffa3-30c5-49a6-ba01-b90d7060a0d4",
+    "content": "The most important heresies are the ones where the orthodox position is not merely wrong but where the taboo against questioning it actively prevents important truths from being discovered or discussed.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "heresy",
+      "truth",
+      "taboo",
+      "epistemology"
+    ],
+    "source_ref": "https://paulgraham.com/heresy.html",
+    "source_date": "2022-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The statements that make people mad are the ones they worry might be true. The really dangerous ideas are the ones that challenge not just beliefs but the whole framework for evaluating beliefs.",
+    "implication": "The biggest startup opportunities often lie in areas where conventional wisdom is not just wrong but actively defended. Look for domains where asking obvious questions makes experts uncomfortable - that's where breakthrough innovations hide."
+  },
+  {
+    "id": "c55e84e5-05fd-4348-952e-7af515b58080",
+    "content": "Heresy and courage are linked. The reason most people don't think independently isn't that they can't \u2014 it's that they don't want to deal with the social consequences. Independent thinking is more a matter of character than intelligence.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "courage",
+      "independent thinking",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/heresy.html",
+    "source_date": "2022-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The problem with not thinking for yourself isn't just that you'll be wrong, but that you'll be timid. When you let other people do your thinking, you also let them do your choosing.",
+    "implication": "Independent thinking isn't just an intellectual luxury - it's a competitive advantage. Founders who can't think past conventional wisdom will only build conventional companies. The biggest returns come from being right when everyone else is wrong."
+  },
+  {
+    "id": "b2e667a8-3abb-4a74-b279-29529e69f5de",
+    "content": "The test for whether you're an independent thinker is not whether you hold contrarian views, but whether you'd be willing to express them in public even when there are social consequences for doing so.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "independent thinking",
+      "courage",
+      "conformism"
+    ],
+    "source_ref": "https://paulgraham.com/heresy.html",
+    "source_date": "2022-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The statements that make people maddest are those they worry might be believed. I suspect the statements that make people maddest are those they worry might be true.",
+    "implication": "Real independent thinking requires courage, not just contrarian opinions. It's easy to hold unpopular views privately; it's hard to express them when there are social or professional consequences. The willingness to speak up when it matters is what separates true independent thinkers from mere contrarians."
+  },
+  {
+    "id": "4ef31f4a-4fb7-44ab-b7bf-965adf9d9fa7",
+    "content": "Learn something from every person you meet \u2014 everyone knows something you don't.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "learning",
+      "humility",
+      "curiosity",
+      "people"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Everyone has something to teach you if you pay attention.",
+    "implication": null
+  },
+  {
+    "id": "93995f15-ea37-4b00-834b-ec751597161e",
+    "content": "Fake work is more dangerous than no work \u2014 it gives you the illusion of productivity.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "fake-work",
+      "time",
+      "productivity",
+      "illusion"
+    ],
+    "source_ref": "https://paulgraham.com/selfindulgence.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most dangerous way to lose time is not to spend it having fun, but to spend it doing fake work.",
+    "implication": null
+  },
+  {
+    "id": "d10e39c0-5094-4962-924a-9a9e2fda70c8",
+    "content": "Keep your identity small \u2014 fewer labels means clearer thinking.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "identity",
+      "clear-thinking",
+      "labels",
+      "self-definition"
+    ],
+    "source_ref": "https://paulgraham.com/identity.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The more labels you have for yourself, the dumber they make you.",
+    "implication": null
+  },
+  {
+    "id": "0f8a3b81-b2fd-4768-b4ba-75ef06bad58d",
+    "content": "The world is shifting from zero-sum to positive-sum games.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "zero-sum",
+      "positive-sum",
+      "progress",
+      "ideas"
+    ],
+    "source_ref": "https://paulgraham.com/mean.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Increasingly you win not by fighting but by having new ideas and building new things.",
+    "implication": null
+  },
+  {
+    "id": "186c18d4-b60c-4cb0-9c62-b3b94e4215ef",
+    "content": "Life is actually short \u2014 52 weekends with your 2-year-old.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "life",
+      "time",
+      "mortality",
+      "kids"
+    ],
+    "source_ref": "https://paulgraham.com/vb.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You only get 52 weekends with your 2 year old.",
+    "implication": null
+  },
+  {
+    "id": "a9c69ead-96ad-4b24-8025-4a2c37b11564",
+    "content": "Independent-mindedness has three components: fastidiousness about truth, resistance to being told what to think, and curiosity.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "independent-thinking",
+      "truth",
+      "curiosity",
+      "resistance"
+    ],
+    "source_ref": "https://paulgraham.com/think.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The three components of independent-mindedness work in concert.",
+    "implication": null
+  },
+  {
+    "id": "ff17de1a-5518-4c19-bfe2-34016801cee1",
+    "content": "Conventional-minded people follow the herd; independent-minded people follow truth.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "conformity",
+      "independent-thinking",
+      "truth",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/think.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The independent-minded are not merely smarter \u2014 they have a different relationship with ideas.",
+    "implication": null
+  },
+  {
+    "id": "3d7698c9-dfc5-4519-a368-65f144db70ef",
+    "content": "Every era has moral fashions \u2014 beliefs that feel like truth but are arbitrary.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "conformity",
+      "heresy",
+      "moral-fashion",
+      "thinking"
+    ],
+    "source_ref": "https://paulgraham.com/say.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Almost certainly, there is something wrong with you if you don't think things you don't dare say out loud.",
+    "implication": null
+  },
+  {
+    "id": "d690194e-bd6b-49fe-8e29-37f900e37642",
+    "content": "The most important thing is to be able to think what you want, not to say what you want.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "thinking",
+      "speech",
+      "freedom",
+      "independence"
+    ],
+    "source_ref": "https://paulgraham.com/say.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The most important thing is to be able to think what you want, not to say what you want.",
+    "implication": null
+  },
+  {
+    "id": "4783b0fe-1a1a-4249-9617-62a33440a7a0",
+    "content": "Training yourself to think unthinkable thoughts is valuable \u2014 like stretching before running.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "thinking",
+      "heresy",
+      "innovation",
+      "independence"
+    ],
+    "source_ref": "https://paulgraham.com/say.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you can think things so outside the box that they'd make people's hair stand on end, you'll have no trouble with small trips outside the box.",
+    "implication": null
+  },
+  {
+    "id": "d8849e3e-1e95-40e6-b0dd-1ecdcfe6088f",
+    "content": "The reason people who don't have kids can't understand what it's like is that there's no frame of reference available before you have them. It's not that having kids is better or worse than expected \u2014 it's that the experience is qualitatively different from anything else.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "parenting",
+      "experience",
+      "knowledge"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Before you have kids, you're like someone trying to understand the color blue by having it described in words.",
+    "implication": "Some experiences can't be understood intellectually - they must be lived. Founders often face similar discontinuities when scaling from 10 to 100 to 1000 employees. Stop trying to plan for experiences you can't imagine and focus on being adaptable when they arrive."
+  },
+  {
+    "id": "9ca64b6b-4bf1-4657-b1c7-cef240402169",
+    "content": "How to lose time: be tricked by activities that feel like work but aren't productive.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "time",
+      "productivity",
+      "fake-work",
+      "distraction"
+    ],
+    "source_ref": "https://paulgraham.com/selfindulgence.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most dangerous way to lose time is not to spend it having fun, but to spend it doing fake work.",
+    "implication": null
+  },
+  {
+    "id": "baeb0ae2-9f31-44e8-ae51-e0d9196e898e",
+    "content": "Having kids restructures your priorities \u2014 they push out less important things.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "kids",
+      "priorities",
+      "time",
+      "meaning"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Having kids changes how you think about time.",
+    "implication": null
+  },
+  {
+    "id": "0fe5421e-7447-45e0-b9fa-9d90d7821bb3",
+    "content": "You can detect obstinacy in yourself by examining whether your continued pursuit of a strategy is based on evidence or on ego. If you'd be embarrassed to change course, that's a sign you're being obstinate rather than persistent.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "self-awareness",
+      "ego",
+      "decision making"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The way to distinguish determination from obstinacy is that the determined person is driven by commitment to a goal and flexible about tactics. The obstinate person is driven by a commitment to a particular tactic.",
+    "implication": "Check your motivations regularly: are you continuing because the evidence supports it, or because changing course would be embarrassing? Ego-driven persistence is different from evidence-driven persistence. Be honest about which one is driving your decisions."
+  },
+  {
+    "id": "8bf2692d-2179-4ca8-b0d5-2cba2eb06e07",
+    "content": "Having kids makes you more empathetic and less selfish, not through moral effort but through forced exposure. You simply can't remain as self-centered when another human is completely dependent on you.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "parenting",
+      "empathy",
+      "personal growth"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Having kids showed me a way of helping people I hadn't seen before. Not just the specific things you do for your own children, but the fact that having kids makes you stop being completely self-centered.",
+    "implication": "Parenthood naturally develops empathy and perspective-taking skills that benefit all areas of life. The forced consideration of another person's needs and viewpoint makes you a better leader, teammate, and human. It's leadership training through necessity."
+  },
+  {
+    "id": "528be2e6-d1eb-4b8b-8802-64e51101002c",
+    "content": "Many adults are still unconsciously hacking tests \u2014 seeking external validation, optimizing for metrics that don't matter, doing what looks impressive rather than what's actually valuable. Recognizing this pattern is the first step to breaking it.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "self-awareness",
+      "external validation",
+      "metrics",
+      "authenticity"
+    ],
+    "source_ref": "https://paulgraham.com/lesson.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Most people never realize they're still optimizing for the wrong thing. They keep trying to get good grades from a teacher who doesn't exist.",
+    "implication": "Regularly audit what you're actually optimizing for. Are you building features users want or features that look impressive to investors? Are you solving real problems or problems that sound important? The market is the only teacher that matters."
+  },
+  {
+    "id": "c2950144-e42c-468c-80f0-c38009fbec85",
+    "content": "Many people organize their entire lives to avoid being a noob. They stick with what they know, avoid new domains, and optimize for competence over learning. This is a recipe for stagnation \u2014 the most interesting things happen when you're a beginner.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "comfort zone",
+      "growth",
+      "stagnation",
+      "learning"
+    ],
+    "source_ref": "https://paulgraham.com/noob.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Most adults avoid being beginners. But the price of never being a noob is never learning anything new. And in our time especially, that's dangerous.",
+    "implication": "Stay curious and willing to start from zero in new domains. The founders who thrive long-term are those who can repeatedly become beginners as technology and markets evolve. Competence in yesterday's game won't win tomorrow's."
+  },
+  {
+    "id": "8c684ec1-a9e1-4269-a9f5-99f432fc63e7",
+    "content": "Having kids gives you unconditional love and grounds you in what matters.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "kids",
+      "love",
+      "meaning",
+      "grounding"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The love you get from having kids is unconditional.",
+    "implication": null
+  },
+  {
+    "id": "fa43085a-8f7f-4084-a09a-3e766fa3104e",
+    "content": "Kids make you more aware of time passing \u2014 in a good way.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "kids",
+      "time",
+      "mortality",
+      "awareness"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Having kids makes you take time more seriously.",
+    "implication": null
+  },
+  {
+    "id": "625f7326-dcc0-4acc-a2fb-f3a634614489",
+    "content": "The cost of having kids is not as high as people think.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "kids",
+      "cost",
+      "misconceptions",
+      "priorities"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Having kids is not as expensive or as disruptive as you think.",
+    "implication": null
+  },
+  {
+    "id": "5abe2399-a86b-4c36-8aac-2bb50578edb3",
+    "content": "One of the biggest surprises of having kids is how much you like them as people. The love isn't just biological obligation \u2014 you genuinely enjoy their company and find them interesting.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "parenting",
+      "relationships",
+      "surprise"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "It turns out the biggest surprise about having kids is liking them. I mean, you expect to love them. Love is involuntary. But liking them is not, and yet you do, a lot.",
+    "implication": "Genuine relationships - with co-founders, employees, even users - go beyond duty or biological/economic obligation. The best teams are built on people who actually enjoy working together, not just people who are professionally compatible."
+  },
+  {
+    "id": "dea44fd6-7a1a-42a5-b811-4faac58f7969",
+    "content": "Heresy is often a sign you're onto something true that others aren't ready to accept.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "heresy",
+      "truth",
+      "controversy",
+      "independence"
+    ],
+    "source_ref": "https://paulgraham.com/say.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "When people get mad at you for saying something, that's a sign it might be true.",
+    "implication": null
+  },
+  {
+    "id": "80f1ba03-4356-4626-9b61-50d89b5f20b3",
+    "content": "Scientists are more willing to look under rocks than scholars in other fields.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "science",
+      "curiosity",
+      "conventional-wisdom"
+    ],
+    "source_ref": "https://paulgraham.com/say.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Scientists go looking for trouble.",
+    "implication": null
+  },
+  {
+    "id": "0f4f4da5-1811-486a-9ccc-820ca3cf239c",
+    "content": "The fear that kids will destroy your productivity is overblown. Having kids forces you to be more efficient with the time you do have. The constraint on your time actually increases your output per hour.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "parenting",
+      "productivity",
+      "constraints"
+    ],
+    "source_ref": "https://paulgraham.com/kids.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Having kids may slow you down, but which would you rather be: a fast 25 year old or a smart 35 year old? I'd take the 35 year old.",
+    "implication": "Constraints often force efficiency and better prioritization. When your time becomes more limited, you naturally focus on what matters most and eliminate low-value activities. Sometimes artificial constraints can improve your productivity even without kids."
+  },
+  {
+    "id": "c1955dc7-4be9-4409-812a-f824c369a0e7",
+    "content": "The aggressively conventional-minded are dangerous because they want to coerce others into agreeing with them. They're the enforcers of orthodoxy in every era. The independently-minded are their natural opponents.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "conformity",
+      "orthodoxy",
+      "intellectual freedom",
+      "social pressure"
+    ],
+    "source_ref": "https://paulgraham.com/think.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The aggressively conventional-minded are the enforcers of orthodoxy. At any given time we're probably mistaken about something we take for granted. And anyone who has the audacity to correct a large, existing mistake is going to seem arrogant at best.",
+    "implication": "Expect resistance when you challenge established thinking. The people most threatened by new ideas will fight hardest against them. This resistance is often a signal that you're onto something important\u2014orthodoxy doesn't defend itself so aggressively against trivial challenges."
+  },
+  {
+    "id": "be401729-1817-4d03-b404-74ea54dd7f47",
+    "content": "People can never have productive discussions about topics that are part of their identity.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "identity",
+      "thinking",
+      "rationality",
+      "bias"
+    ],
+    "source_ref": "https://paulgraham.com/identity.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "People can never have a fruitful argument about something that's part of their identity.",
+    "implication": null
+  },
+  {
+    "id": "6796e40e-7d5b-448c-8cb8-2ea9d1f6898d",
+    "content": "Relentlessly prune bullshit, don't wait to do things that matter, and savor the time you have.",
+    "cluster": "philosophy_life",
+    "topics": [
+      "life",
+      "bullshit",
+      "priorities",
+      "time"
+    ],
+    "source_ref": "https://paulgraham.com/vb.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Relentlessly prune bullshit, don't wait to do things that matter, and savor the time you have.",
+    "implication": null
+  },
+  {
+    "id": "494c545b-e16a-4118-83f4-cdd287e51e42",
+    "content": "Macros are the defining feature that separates the most powerful programming languages from the rest. The ability to write code that writes code -- to extend the language itself -- is a qualitative leap in expressiveness, not just a quantitative one.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "macros",
+      "metaprogramming",
+      "language power",
+      "abstraction"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": "2001-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "So if Lisp is so great, why doesn't everyone use it? I think the answer is that programming languages are not just technologies, but habits of thought. And it's hard to get people to change their habits of thought.",
+    "implication": "The ability to extend and modify your tools at the fundamental level\u2014whether programming languages or business processes\u2014gives you a qualitative advantage over those using fixed tools. Look for opportunities to build 'meta-capabilities' that let you adapt faster than competitors."
+  },
+  {
+    "id": "c70d8dff-631b-4403-add7-67aa14175278",
+    "content": "Hackability -- the ability to build things quickly and iterate -- is more important for a language's success than formal correctness or theoretical purity. Languages that let you prototype fast win because they match the actual rhythm of creation.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "hackability",
+      "prototyping",
+      "iteration",
+      "language design"
+    ],
+    "source_ref": "https://paulgraham.com/top.html",
+    "source_date": "2001-05-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "In programming languages, as in so many other areas, the popular choice is not always the best choice. But it's not always the worst choice either. Sometimes popularity is a sign of merit.",
+    "implication": "Optimize your tools for rapid iteration and experimentation rather than formal correctness or theoretical elegance. The ability to build, test, and modify quickly often matters more than getting it perfectly right the first time. Match your tools to your actual creative process."
+  },
+  {
+    "id": "a090f27a-607c-4c7c-a336-2a81f403f2a7",
+    "content": "A programming language is a tool for thinking, not just for instructing computers. The best languages shape how programmers think about problems. This is why language choice matters far beyond mere syntax -- it determines the solution space you can see.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "programming languages",
+      "thinking tools",
+      "problem solving",
+      "cognitive framing"
+    ],
+    "source_ref": "https://paulgraham.com/top.html",
+    "source_date": "2001-05-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Languages less powerful than Blub are obviously less powerful, because they're missing some feature he's used to. But when our hypothetical Blub programmer looks in the other direction, up the power continuum, he doesn't realize he's looking up.",
+    "implication": "Your choice of tools shapes what solutions you can conceive. This applies beyond programming\u2014the frameworks you use for thinking about problems determine what kinds of solutions you'll discover. Choose tools that expand rather than constrain your solution space."
+  },
+  {
+    "id": "142fa570-0995-4070-9511-3bddd755a57f",
+    "content": "Libraries and ecosystem matter more than language features for adoption. A mediocre language with great libraries will beat a great language with no libraries every time. The network effects of an ecosystem create a moat around established languages.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "libraries",
+      "ecosystem",
+      "network effects",
+      "language adoption"
+    ],
+    "source_ref": "https://paulgraham.com/top.html",
+    "source_date": "2001-05-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "So the language probably has to be designed by a single person, or a very small group, and it has to be something developed for their own use. That may not be how languages are supposed to be designed, but it seems to be how the good ones actually get designed.",
+    "implication": "Ecosystem and network effects matter more than pure technical merit. When choosing technologies, consider not just the tool itself but the community, libraries, and resources around it. A mediocre tool with great support often beats a great tool in isolation."
+  },
+  {
+    "id": "1e8ba189-5357-4da2-b146-633126702ffb",
+    "content": "Programming languages succeed not by being the best designed but by being the best suited for a particular use case that lots of people have. Popularity in languages is driven by practical utility in a specific domain, not by theoretical elegance.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "language adoption",
+      "popularity",
+      "practical utility",
+      "design vs adoption"
+    ],
+    "source_ref": "https://paulgraham.com/top.html",
+    "source_date": "2001-05-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "A programming language is for thinking of programs, not for expressing programs you've already thought of. It should be a pencil, not a pen.",
+    "implication": "Language adoption is driven by practical utility in solving real problems, not by theoretical elegance. If you're designing tools (whether programming languages or products), optimize for the use cases that matter most to your users, not for abstract perfection."
+  },
+  {
+    "id": "ecd9fd14-3466-42c2-9a7f-4e9f81c8833e",
+    "content": "Lisp is worth learning for the profound enlightenment you will get.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "lisp",
+      "enlightenment",
+      "languages",
+      "learning"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Lisp is worth learning for the profound enlightenment experience you will get.",
+    "implication": null
+  },
+  {
+    "id": "56392bd7-ac12-4f49-91fe-8758f07d1fd1",
+    "content": "Great software is made through successive refinement, not upfront planning.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "iteration",
+      "refinement",
+      "process",
+      "discovery"
+    ],
+    "source_ref": "https://paulgraham.com/hp.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You should figure out the program as you're writing it.",
+    "implication": null
+  },
+  {
+    "id": "1ef58077-4ea7-4e66-90b3-4abe9f3430d5",
+    "content": "The Blub paradox: programmers can't see the power of languages above their current one.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "blub-paradox",
+      "languages",
+      "perspective",
+      "limitations"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The Blub paradox is that you can only see downward.",
+    "implication": null
+  },
+  {
+    "id": "dfafc339-0c37-4cf5-9da1-5ab05974dedc",
+    "content": "Popular languages converge toward Lisp features over time.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "lisp",
+      "language-evolution",
+      "convergence"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Popular languages are converging toward Lisp.",
+    "implication": null
+  },
+  {
+    "id": "dba9c0c7-c392-4831-a75e-f24ca4f51f99",
+    "content": "Using a more powerful programming language lets a small team outperform a large one.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "languages",
+      "leverage",
+      "small-teams",
+      "productivity"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "A small team writing in Lisp could outperform a large team of Java developers.",
+    "implication": null
+  },
+  {
+    "id": "640d257c-b8a9-448e-8a2c-1fc13559a880",
+    "content": "The Blub paradox: programmers stuck in an average language can only look down, not up.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "blub-paradox",
+      "perspective",
+      "limitations"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You can only see downward from the Blub programmer perspective.",
+    "implication": null
+  },
+  {
+    "id": "b649435d-1652-4786-a923-6c8fef7087e6",
+    "content": "Languages vary in power \u2014 this is the most controversial idea in programming.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "languages",
+      "power",
+      "controversy",
+      "tools"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Programmers get very attached to their favorite languages.",
+    "implication": null
+  },
+  {
+    "id": "366baf74-addd-4b63-9c47-67440548eb6a",
+    "content": "Programmer time is more valuable than computer time \u2014 optimize for humans, not machines.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "optimization",
+      "human-time",
+      "efficiency",
+      "priorities"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Programmer time is more valuable than computer time.",
+    "implication": null
+  },
+  {
+    "id": "d02029a2-ab92-4834-986b-34a4a494a234",
+    "content": "Hacking and painting are more alike than hacking and computer science.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "hacking",
+      "making",
+      "painting",
+      "computer-science"
+    ],
+    "source_ref": "https://paulgraham.com/hp.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Hackers and painters are among the most alike of all the different types of makers.",
+    "implication": null
+  },
+  {
+    "id": "c550f4b3-f2b4-4787-8e67-17d59ed77120",
+    "content": "Lisp gave Viaweb a genuine competitive advantage because most competitors couldn't match its power.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "lisp",
+      "competitive-advantage",
+      "languages"
+    ],
+    "source_ref": "https://paulgraham.com/avg.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Our secret weapon was Lisp.",
+    "implication": null
+  },
+  {
+    "id": "c1f95a2c-86f9-4f99-b482-b2bece3b0a9b",
+    "content": "Practice matters more than theory for makers.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "practice",
+      "mastery",
+      "volume",
+      "learning"
+    ],
+    "source_ref": "https://paulgraham.com/hp.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The way to learn to paint is to paint.",
+    "implication": null
+  },
+  {
+    "id": "ae5e19a6-e8d1-45d0-954f-096e93a08583",
+    "content": "Hackers are like artists \u2014 they should work from the bottom up, not from specs.",
+    "cluster": "programming_hackers",
+    "topics": [
+      "hacking",
+      "bottom-up",
+      "creativity",
+      "art"
+    ],
+    "source_ref": "https://paulgraham.com/hp.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Hackers should be like painters, not like engineers.",
+    "implication": null
+  },
+  {
+    "id": "cec58484-3ab7-4278-a9ba-0b24e2ea6745",
+    "content": "Universities are the most reliable seed for startup hubs because they concentrate young, technically ambitious people. The path to building a startup hub runs through making the local university a magnet for top CS talent.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "universities",
+      "startup hubs",
+      "talent pipeline"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": "2016-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Universities are to startup hubs what rivers were to cities in medieval times. You can't have a hub without one, but having one doesn't guarantee you'll have a hub.",
+    "implication": "If you're choosing where to build your startup, proximity to top technical talent matters more than government incentives or flashy innovation districts. Go where the smart people are learning and graduating, not where politicians are promising startup-friendly policies."
+  },
+  {
+    "id": "334b5c03-aefa-4dd1-b1dd-76c8bdec6b83",
+    "content": "What kills most aspiring startup hubs is that the graduates of their good universities leave. The problem isn't producing talent \u2014 it's retaining it. You need to make the city a place where ambitious 25-year-olds actually want to live.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "talent retention",
+      "cities",
+      "startup hubs",
+      "lifestyle"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": "2016-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The first requirement for a flourishing startup hub is a large population of technical people. So the first thing a city needs is a good university. Preferably a good research university.",
+    "implication": "Brain drain kills startup ecosystems before they can form. It's not enough to educate talented people\u2014you need to give them compelling reasons to stay local. This means creating an environment where ambitious young people want to build their careers and lives."
+  },
+  {
+    "id": "47f0ba45-a7c8-4c7d-b879-824b19dea4ab",
+    "content": "The key ingredient for a startup hub is not money, office space, or tax incentives \u2014 it's a critical mass of ambitious, technical people who want to start companies. Everything else follows from having the right people concentrated in one place.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "startup hubs",
+      "talent",
+      "cities",
+      "concentration"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": "2016-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "You can't reproduce Silicon Valley, because you can't reproduce something you don't understand, and the very quality that would make you able to reproduce Silicon Valley would prevent you from enjoying the fruits of your efforts.",
+    "implication": "Focus on attracting the right people rather than building infrastructure or offering incentives. Startup ecosystems are ultimately about human networks and culture, not facilities or tax breaks. The people create the ecosystem, not the other way around."
+  },
+  {
+    "id": "8675214c-26ba-4447-95ae-cf6602f907f5",
+    "content": "A city's startup scene grows organically from the bottom up. You need a few successful startups that serve as role models, attract talent, and create alumni who start the next generation of companies. It's a flywheel, not a program.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "startup ecosystem",
+      "flywheel",
+      "role models"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": "2016-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The reason there aren't more Googles is the same reason there aren't more Berninis. You can't make a Bernini by assigning a committee to sculpt a sculpture that would be better than Michelangelo's David. And you can't make a Google by bringing together people from different departments.",
+    "implication": "Startup ecosystems grow organically through success stories and network effects, not through top-down planning. You need early wins to create role models, attract talent, and generate the next generation of founders. It's a flywheel effect that can't be artificially manufactured."
+  },
+  {
+    "id": "01b7cc3f-391c-4aed-8e7d-88d543d16acb",
+    "content": "Government attempts to create startup hubs through top-down programs almost always fail because they optimize for the wrong things. Startups don't need grants and incubators \u2014 they need cheap rent, good coffee shops, and other founders to talk to.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "government",
+      "startup hubs",
+      "organic growth"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": "2016-04-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "Governments trying to create startup hubs is like trying to create a youth hostel for backpackers by building a luxury hotel. They optimize for the wrong thing.",
+    "implication": "Focus on what actually helps startups thrive: affordable workspace, density of other founders, access to talent, and organic community. Avoid locations that prioritize bureaucratic approval over founder needs, even if they offer more official 'support.'"
+  },
+  {
+    "id": "e7543bdc-9269-4c30-a110-ae9a61cf1ba0",
+    "content": "Great work in clusters \u2014 Florence, Bauhaus, Manhattan Project, Xerox PARC.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "clusters",
+      "talent",
+      "environment",
+      "Florence"
+    ],
+    "source_ref": "https://paulgraham.com/taste.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Nothing is more powerful than a community of talented people working on related problems.",
+    "implication": null
+  },
+  {
+    "id": "51fe5a97-d63d-4be4-be13-b120eaede301",
+    "content": "Startup hubs form because talent clusters and the ambient message of the city matters.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "startup-hubs",
+      "talent",
+      "clustering",
+      "environment"
+    ],
+    "source_ref": "https://paulgraham.com/newcity.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "You need the encouragement of feeling that people around you care about the kind of work you do.",
+    "implication": null
+  },
+  {
+    "id": "b7b413bc-667a-4a31-9644-99fea6e08b09",
+    "content": "Great cities attract ambitious people \u2014 the effect compounds.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "cities",
+      "ambition",
+      "attraction",
+      "compounding"
+    ],
+    "source_ref": "https://paulgraham.com/cities.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Great cities attract ambitious people. You can sense it when you walk around one.",
+    "implication": null
+  },
+  {
+    "id": "bafeee15-dcf5-44f8-a572-f24fe4978f55",
+    "content": "Cities send messages about what kind of ambition matters.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "cities",
+      "ambition",
+      "environment",
+      "culture"
+    ],
+    "source_ref": "https://paulgraham.com/cities.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "In a hundred subtle ways, the city sends you a message.",
+    "implication": null
+  },
+  {
+    "id": "80e8172f-ee89-4974-8c2f-4898009c23dc",
+    "content": "If even Leonardo couldn't overcome environment, you probably can't either.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "cities",
+      "environment",
+      "talent",
+      "Florence"
+    ],
+    "source_ref": "https://paulgraham.com/cities.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If even someone with the same natural ability as Leonardo couldn't beat the force of environment, do you suppose you can?",
+    "implication": null
+  },
+  {
+    "id": "b45d24be-4838-4fb5-aab0-3a48baa76922",
+    "content": "The critical years for being in a great city are the early and middle ones of your career.",
+    "cluster": "silicon_valley",
+    "topics": [
+      "cities",
+      "career",
+      "peers",
+      "timing"
+    ],
+    "source_ref": "https://paulgraham.com/cities.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The Impressionists were born all over France but what defined them were the years they spent together in Paris.",
+    "implication": null
+  },
+  {
+    "id": "a7c82f13-02c4-4bfd-8a8d-2f1a1e79810b",
+    "content": "The key variable in productivity is not hours worked but the absence of constraints that prevent you from doing your best work. Big companies impose layers of constraint -- meetings, approvals, politics -- that have nothing to do with the actual work.",
+    "cluster": "startups_founding",
+    "topics": [
+      "productivity",
+      "constraints",
+      "bureaucracy",
+      "autonomy"
+    ],
+    "source_ref": "https://paulgraham.com/boss.html",
+    "source_date": "2008-03-01",
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The world has become more addictive. And unless the forms of technological progress that produced these things are subject to different laws than technological progress in general, the world will get more addictive in the next 40 years than it did in the last 40.",
+    "implication": "Productivity isn't about working more hours\u2014it's about removing obstacles to doing your best work. Big companies are productivity killers because they layer constraint upon constraint. Focus on eliminating friction, not adding hours."
+  },
+  {
+    "id": "8e9fcdb1-3c5d-4894-b902-24f869273740",
+    "content": "Startups are more natural than big companies. A startup is a return to the small group of people working hard on something they care about. This is why startups produce disproportionate innovation -- the structure matches human psychology.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "small teams",
+      "innovation",
+      "natural work"
+    ],
+    "source_ref": "https://paulgraham.com/boss.html",
+    "source_date": "2008-03-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "A startup is just a small company trying to grow fast. But implicitly it's also a company trying to do something hard. Which means the sort of company meant to be a startup has to have a quality that doesn't just fit the pattern abc, but transcends it.",
+    "implication": "The startup structure isn't an artificial invention\u2014it's a return to humans' natural working state. Small teams working intensely on something they care about is how humans have always done their best work. This explains why startups consistently out-innovate large organizations."
+  },
+  {
+    "id": "091ed6f6-3fa6-48d7-80c2-a6841ef31789",
+    "content": "Stripe is the canonical example of schlep blindness.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "stripe",
+      "schlep",
+      "payments"
+    ],
+    "source_ref": "https://paulgraham.com/schlep.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Thousands of people must have known about this problem.",
+    "implication": null
+  },
+  {
+    "id": "fe1c97d8-5286-451c-842b-baa626d2473b",
+    "content": "Ambitious ideas are undervalued stocks \u2014 less competition.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "ambition",
+      "competition",
+      "ideas"
+    ],
+    "source_ref": "https://paulgraham.com/schlep.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "That scariness makes ambitious ideas doubly valuable.",
+    "implication": null
+  },
+  {
+    "id": "a9f1344d-3c00-4842-a05b-061ebd4cada2",
+    "content": "The biggest ideas seem to threaten your identity.",
+    "cluster": "startups_founding",
+    "topics": [
+      "ambition",
+      "identity",
+      "fear",
+      "ideas"
+    ],
+    "source_ref": "https://paulgraham.com/ambitious.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "You wonder if you'd have enough ambition to carry them through.",
+    "implication": null
+  },
+  {
+    "id": "b92d9494-1d95-4b09-af23-031dc3c7ae2a",
+    "content": "Great founders are obsessed with their product and their users, not with being founders. The ones who love the identity of being a startup CEO but don't love the actual work tend to fail. Genuine curiosity about the problem domain matters more than startup ambition.",
+    "cluster": "startups_founding",
+    "topics": [
+      "product obsession",
+      "user focus",
+      "founder identity",
+      "intrinsic motivation"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The founders who are most successful are usually those who care most about what they're building. This is not a coincidence.",
+    "implication": "Genuine passion for solving a problem beats generic startup ambition. If you love the identity of being a 'founder' more than you love the actual work of building something useful, you'll struggle. Deep curiosity about your domain matters more than entrepreneurial credentials."
+  },
+  {
+    "id": "19dc6391-7be6-458c-b15f-dc20639b1558",
+    "content": "The feedback loop from manual engagement with users is the most valuable thing a startup has in its early days.",
+    "cluster": "startups_founding",
+    "topics": [
+      "feedback",
+      "product-market-fit",
+      "user-research"
+    ],
+    "source_ref": "https://paulgraham.com/ds.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Your attention to users will be rewarded with a product that exactly meets their needs.",
+    "implication": null
+  },
+  {
+    "id": "ae171761-c756-4d74-ac4a-015ba994b058",
+    "content": "The best founders have a quality of flexible determination -- they're relentlessly committed to succeeding but flexible about how. They're like water flowing downhill: the destination is fixed but the path adapts to obstacles.",
+    "cluster": "startups_founding",
+    "topics": [
+      "flexibility",
+      "determination",
+      "adaptability",
+      "founder mindset"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "You need three things to create a successful startup: to start with good people, to make something customers actually want, and to spend as little money as possible. Most startups that fail do it because they fail at one of these. A startup that does all three will probably succeed.",
+    "implication": "Great founders are like water flowing downhill\u2014absolutely determined about the destination but completely flexible about the path. Rigid adherence to a specific plan is different from unwavering commitment to success. Adapt your tactics while holding firm to your vision."
+  },
+  {
+    "id": "319d7fe7-6638-4c4b-93d4-e4e300a1b2c7",
+    "content": "Don't die \u2014 most startup failures could have been avoided by simply not giving up.",
+    "cluster": "startups_founding",
+    "topics": [
+      "survival",
+      "persistence",
+      "failure",
+      "startups"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "So many startups fail for easily preventable reasons.",
+    "implication": null
+  },
+  {
+    "id": "0bd34b54-2ddd-494a-b779-4b559d8b6e02",
+    "content": "Don't let your startup die of inattention. The slow drift -- taking a consulting gig, spending too long on a feature, not talking to users -- is more lethal than any dramatic failure. Startups don't die in explosions; they die in whimpers.",
+    "cluster": "startups_founding",
+    "topics": [
+      "focus",
+      "inattention",
+      "slow death",
+      "startup discipline"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The number one thing not to do is other things. If you find yourself saying a sentence that ends with 'but we're going to keep working on the startup,' you are in big trouble. Bob's going to graduate school, but we're going to keep working on the startup. We're moving back to Minnesota, but we're going to keep working on the startup. We're taking on some consulting projects, but we're going to keep working on the startup.",
+    "implication": "Startups rarely die from dramatic failures\u2014they die from slow drift and divided attention. Guard against the gradual erosion of focus. Every 'but we're going to keep working on the startup' sentence is a warning sign that you're letting your company die by a thousand cuts."
+  },
+  {
+    "id": "a6cf5207-9033-409b-b268-7d84d5992117",
+    "content": "Cofounders who are friends work better than cofounders who are just business partners.",
+    "cluster": "startups_founding",
+    "topics": [
+      "cofounders",
+      "friendship",
+      "trust",
+      "relationships"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The best cofounder relationships are those that started as friendships.",
+    "implication": null
+  },
+  {
+    "id": "aa687c4b-9f4e-4e04-8663-02ee6a4fa788",
+    "content": "Imagination in founders means seeing possibilities others miss.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "imagination",
+      "vision",
+      "creativity"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Imagination: the ability to see beyond what exists to what could exist.",
+    "implication": null
+  },
+  {
+    "id": "5138cbaf-0ef2-429b-8e2c-0b36e0f80445",
+    "content": "Friendship between co-founders is an underrated predictor of startup success. Startups are so stressful that co-founders who don't genuinely like each other will crack under pressure. The relationship quality of the founding team matters enormously.",
+    "cluster": "startups_founding",
+    "topics": [
+      "co-founders",
+      "friendship",
+      "team dynamics",
+      "startup stress"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The advantage of having good relationships among the founders is that it makes everything easier. And since a startup is hard enough already, you really want to avoid the kind of problems that come from founder disputes.",
+    "implication": "Co-founder relationships are stress-tested under extreme pressure. Choose co-founders you genuinely like and respect, not just people with complementary skills. When the inevitable crises hit, personal affection and trust will be what holds the team together."
+  },
+  {
+    "id": "9b153916-6e0d-4ab3-9ee7-aaa67b5743b3",
+    "content": "Flexibility in founders is crucial \u2014 the ability to pivot when evidence demands it.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "flexibility",
+      "pivoting",
+      "adaptability"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Flexibility is important because it's hard to know in advance which startup ideas will succeed.",
+    "implication": null
+  },
+  {
+    "id": "8119206c-fe57-4b46-9176-1d62c76ffb8f",
+    "content": "The best founders are slightly naughty \u2014 willing to break rules.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "naughtiness",
+      "rule-breaking",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Naughty: willing to break rules, to question authority, to take risks others won't.",
+    "implication": null
+  },
+  {
+    "id": "d3d17372-5f70-4218-8997-de912ca1f808",
+    "content": "Relentlessly resourceful is the best description of a good founder.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "relentlessness",
+      "resourcefulness",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/relres.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "I finally got being a good startup founder down to two words: relentlessly resourceful.",
+    "implication": null
+  },
+  {
+    "id": "a39a1279-58cc-49b5-b47b-89f61e010cc1",
+    "content": "The best founders combine determination with flexibility \u2014 they're persistent about the destination but constantly adapting the route. The worst founders are obstinate: they confuse changing tactics with giving up.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "persistence",
+      "pivoting",
+      "determination"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "If you're determined to live in San Francisco, that also solves the problem of choosing the right startups to join. You automatically filter for startups that have done well enough to afford to pay people to live in San Francisco.",
+    "implication": "True determination combines persistence with adaptability. Be stubborn about your goals but flexible about your methods. The founders who succeed are those who treat obstacles as puzzles to solve rather than walls to break through with force."
+  },
+  {
+    "id": "c4a36e48-70ff-4234-a2de-6f375ce12e0f",
+    "content": "Startups are counterintuitive \u2014 your instincts will be wrong.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "counterintuitive",
+      "instincts"
+    ],
+    "source_ref": "https://paulgraham.com/before.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Startups are so weird that if you trust your instincts, you'll make a lot of mistakes.",
+    "implication": null
+  },
+  {
+    "id": "d33a62f0-5842-4871-9e83-b1895e1afa5d",
+    "content": "Starting a startup is where gaming the system stops working.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "meritocracy",
+      "users",
+      "gaming"
+    ],
+    "source_ref": "https://paulgraham.com/before.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "There is no boss to trick, only users. Startups are as impersonal as physics.",
+    "implication": null
+  },
+  {
+    "id": "1edf914f-33d9-4d07-b828-6785d45a553a",
+    "content": "Meanness and startup success are inversely correlated.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "meanness",
+      "character",
+      "success"
+    ],
+    "source_ref": "https://paulgraham.com/mean.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Being mean makes you stupid.",
+    "implication": null
+  },
+  {
+    "id": "8b0a06d6-0275-4d09-9e1f-a565d122c54e",
+    "content": "Startups win by transcending, not by attacking.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "character",
+      "competition",
+      "benevolence"
+    ],
+    "source_ref": "https://paulgraham.com/mean.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Startups don't win by attacking. They win by transcending.",
+    "implication": null
+  },
+  {
+    "id": "14163ae8-c3ec-441b-8666-060a69b2d7bd",
+    "content": "Don't start a startup in college \u2014 breadth-first search at 20.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "timing",
+      "college",
+      "youth"
+    ],
+    "source_ref": "https://paulgraham.com/before.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Starting a startup is like a brutally fast depth-first search.",
+    "implication": null
+  },
+  {
+    "id": "e9881019-1f46-42d2-95d4-94727a8f5afb",
+    "content": "The biggest startup ideas are terrifying \u2014 they threaten your identity.",
+    "cluster": "startups_founding",
+    "topics": [
+      "ambition",
+      "ideas",
+      "fear",
+      "startups"
+    ],
+    "source_ref": "https://paulgraham.com/ambitious.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The biggest ideas seem to threaten your identity.",
+    "implication": null
+  },
+  {
+    "id": "ddff82bd-f9e0-40ff-b719-3be74f94eea8",
+    "content": "Schlep blindness hides the best startup ideas behind tedious work.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "ideas",
+      "schlep",
+      "blindness"
+    ],
+    "source_ref": "https://paulgraham.com/schlep.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Your unconscious won't even let you see ideas that involve painful schleps.",
+    "implication": null
+  },
+  {
+    "id": "9f2e05b8-4973-44db-bfdc-90bf01f36fe9",
+    "content": "Humans weren't meant to work for large organizations \u2014 small groups are our natural scale.",
+    "cluster": "startups_founding",
+    "topics": [
+      "organizations",
+      "human-nature",
+      "small-teams",
+      "autonomy"
+    ],
+    "source_ref": "https://paulgraham.com/boss.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The average person feels unease working for a large company because humans were not designed for it.",
+    "implication": null
+  },
+  {
+    "id": "c69d8879-b6b4-43cd-b034-b595eb7e54db",
+    "content": "The popular image of a visionary has a clear view of the future \u2014 but a blurry one may be better.",
+    "cluster": "startups_founding",
+    "topics": [
+      "vision",
+      "strategy",
+      "direction",
+      "ambiguity"
+    ],
+    "source_ref": "https://paulgraham.com/ambitious.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The popular image of the visionary is someone with a clear view of the future, but empirically it may be better to have a blurry one.",
+    "implication": null
+  },
+  {
+    "id": "e046b713-9edc-43fe-ab61-abdd9d16d108",
+    "content": "The most dangerous thing about not being profitable is that it puts you at the mercy of investors.",
+    "cluster": "startups_founding",
+    "topics": [
+      "survival",
+      "profitability",
+      "funding",
+      "startups"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The number one thing not to do is run out of money.",
+    "implication": null
+  },
+  {
+    "id": "03321b96-d7ee-4b59-8813-7724b8ffe3a5",
+    "content": "What YC looks for: determination, flexibility, imagination, naughtiness, friendship.",
+    "cluster": "startups_founding",
+    "topics": [
+      "yc",
+      "founders",
+      "determination",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/founders.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "What we look for above all is determination.",
+    "implication": null
+  },
+  {
+    "id": "384b25d7-994b-427b-97f0-82b9a59a2e2f",
+    "content": "Launch fast \u2014 the sooner you launch, the sooner you learn what users actually want.",
+    "cluster": "startups_founding",
+    "topics": [
+      "launching",
+      "speed",
+      "learning",
+      "iteration"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you haven't launched yet, launch now.",
+    "implication": null
+  },
+  {
+    "id": "be149e12-f7b5-474c-9ad2-804adc8b480d",
+    "content": "Determination matters more than intelligence in startup success.",
+    "cluster": "startups_founding",
+    "topics": [
+      "determination",
+      "intelligence",
+      "success-prediction",
+      "yc"
+    ],
+    "source_ref": "https://paulgraham.com/determination.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "We learned quickly that the most important quality in startup founders is determination.",
+    "implication": null
+  },
+  {
+    "id": "0c805093-7c5d-4a53-9ae4-b37999dc059c",
+    "content": "Doing things that don't scale teaches you what to build at scale.",
+    "cluster": "startups_founding",
+    "topics": [
+      "learning",
+      "manual-work",
+      "automation",
+      "product-development"
+    ],
+    "source_ref": "https://paulgraham.com/ds.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The manual things you do will teach you what to automate.",
+    "implication": null
+  },
+  {
+    "id": "d35d5a5a-8f84-44d2-856e-d4e0af3c244c",
+    "content": "Ignorance is an advantage for young founders \u2014 two mistakes cancel out.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "youth",
+      "ignorance",
+      "growth"
+    ],
+    "source_ref": "https://paulgraham.com/schlep.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "They don't know how much they can grow, but also don't know how much they'll need to.",
+    "implication": null
+  },
+  {
+    "id": "571d1ba1-b4b7-477e-bbfa-2b6161734cd2",
+    "content": "A startup is just a small company solving a hard technical problem.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "definition",
+      "hard-problems"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "A startup is a small company that takes on a hard technical problem.",
+    "implication": null
+  },
+  {
+    "id": "ad3af8dc-dfcd-4e11-8e33-7ff84539ae2b",
+    "content": "The most common unscalable thing founders have to do at the start is recruit users manually. You can't wait for users to come to you. You have to go out and get them.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "growth",
+      "manual-effort",
+      "early-stage"
+    ],
+    "source_ref": "https://paulgraham.com/ds.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most common unscalable thing founders have to do at the start is recruit users manually.",
+    "implication": null
+  },
+  {
+    "id": "bfc6660a-3fe3-4e25-b555-3927929e527f",
+    "content": "It's better to start with something a small number of people want a large amount.",
+    "cluster": "startups_founding",
+    "topics": [
+      "demand",
+      "niche",
+      "product-strategy",
+      "growth"
+    ],
+    "source_ref": "https://paulgraham.com/startupideas.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "It's better to have a hundred people who love you than a million who sort of like you.",
+    "implication": null
+  },
+  {
+    "id": "7c693e84-eb16-4259-8cec-877bcc1a0549",
+    "content": "Morale is everything in the early days \u2014 if founders lose hope, the company dies.",
+    "cluster": "startups_founding",
+    "topics": [
+      "morale",
+      "founders",
+      "psychology",
+      "survival"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most important predictor of whether a startup will survive is the morale of the founders.",
+    "implication": null
+  },
+  {
+    "id": "3ecb8d67-2588-48f2-82a6-b74bcf04bf1b",
+    "content": "Treating early work as too precious \u2014 refusing to share it, refusing to get feedback, refusing to let it be imperfect \u2014 is a form of procrastination disguised as quality control. Ship early, iterate often.",
+    "cluster": "startups_founding",
+    "topics": [
+      "shipping",
+      "feedback",
+      "iteration",
+      "perfectionism"
+    ],
+    "source_ref": "https://paulgraham.com/early.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "One way to protect early-stage work is not to show it to anyone. But that's like protecting a plant by not giving it any water.",
+    "implication": "Get user feedback early and often, even when your product feels embarrassingly rough. Users are the water that helps early-stage products grow. Perfectionism disguised as quality control will kill your startup faster than critical feedback ever will."
+  },
+  {
+    "id": "c72d7b36-f189-462a-a459-33842e89b36b",
+    "content": "Speed of iteration is the key advantage small companies have over large ones.",
+    "cluster": "startups_founding",
+    "topics": [
+      "speed",
+      "iteration",
+      "competitive-advantage"
+    ],
+    "source_ref": "https://paulgraham.com/die.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "The key advantage startups have is speed.",
+    "implication": null
+  },
+  {
+    "id": "83523f97-2dfa-420c-afe6-4c3dfadc8782",
+    "content": "Startups take off because the founders make them take off.",
+    "cluster": "startups_founding",
+    "topics": [
+      "startups",
+      "growth",
+      "hustle",
+      "founding"
+    ],
+    "source_ref": "https://paulgraham.com/ds.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Startups take off because the founders make them take off.",
+    "implication": null
+  },
+  {
+    "id": "d3adb081-1e83-4c3c-9011-dfce052038c4",
+    "content": "Earnest stubbornness beats strategic stubbornness.",
+    "cluster": "startups_founding",
+    "topics": [
+      "earnestness",
+      "determination",
+      "founders",
+      "character"
+    ],
+    "source_ref": "https://paulgraham.com/do.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The best founders are earnestly stubborn.",
+    "implication": null
+  },
+  {
+    "id": "3c9f0ef3-0fe1-4a3c-9f09-3efc46904618",
+    "content": "Trust your instincts about people even when you can't trust them about ideas.",
+    "cluster": "startups_founding",
+    "topics": [
+      "founders",
+      "people",
+      "instinct",
+      "cofounders"
+    ],
+    "source_ref": "https://paulgraham.com/before.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If someone seems slippery, or bogus, or a jerk, don't ignore it.",
+    "implication": null
+  },
+  {
+    "id": "b8b804c8-6317-420c-b93a-06cf37028f34",
+    "content": "The shift from inherited/executive wealth to founder wealth is driven by technology making it possible to build things that scale to millions of users with small teams. Software is the ultimate leverage for wealth creation.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "technology",
+      "leverage",
+      "software",
+      "scale"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": "2021-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Technology has made it possible for a small number of people to create something used by millions. That's why founders are getting rich at the expense of executives.",
+    "implication": "We're living through a fundamental shift in how wealth is created. Focus on building products that can scale massively with small teams rather than trying to climb traditional corporate hierarchies. The biggest opportunities are in creation, not management."
+  },
+  {
+    "id": "df674d55-a99f-41f2-a032-d332ceb4fc26",
+    "content": "The concentration of wealth among founders is not a sign that the economy is broken \u2014 it's a sign that the economy increasingly rewards creation over extraction. Founders who create a billion dollars of value and keep 10% are creating 10x more than they capture.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth creation",
+      "inequality",
+      "value creation"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": "2021-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "When people complain about economic inequality, they're usually complaining about wealth created rather than wealth stolen. That's a good problem to have.",
+    "implication": "Don't feel guilty about building something valuable and capturing a portion of that value. Focus on creating genuine value for users - if you're solving real problems at scale, the wealth you capture is typically a small fraction of the value you create."
+  },
+  {
+    "id": "a446d9f8-6f80-4d46-beed-daffe9bdeddf",
+    "content": "The new rich are younger because technology companies can grow to enormous scale in just a few years. The old model \u2014 climb a corporate ladder for decades \u2014 is being replaced by: build something, grow it fast, capture the value.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth",
+      "speed",
+      "startups",
+      "youth"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": "2021-04-01",
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The new rich get that way by creating wealth, not by playing zero-sum games. And they do it young because technology companies can grow exponentially.",
+    "implication": "Focus on building something that creates genuine value rather than extracting value from existing systems. The age of grinding your way up corporate ladders is being replaced by the age of building exponentially scalable solutions to real problems."
+  },
+  {
+    "id": "a09655aa-b257-4093-a338-3eada49092c8",
+    "content": "Startups compress your working life into a few intense years.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "startups",
+      "value-creation",
+      "leverage",
+      "compression"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Startups allow you to compress your whole working life into a few years.",
+    "implication": null
+  },
+  {
+    "id": "b04186af-522a-4f96-a074-9e4f89e39521",
+    "content": "The way to get rich is to create technology, not to manage it.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "technology",
+      "wealth-creation",
+      "making"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Wealth can be created, and creating it is what tech companies do.",
+    "implication": null
+  },
+  {
+    "id": "5523a3a7-31ef-4323-8db4-da664fd89fb0",
+    "content": "Technology provides leverage \u2014 one programmer can create something used by millions.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "technology",
+      "leverage",
+      "economics",
+      "pie-growing"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Technology should increase the pie.",
+    "implication": null
+  },
+  {
+    "id": "84e46afc-2ae4-45cd-83c1-9794b4181f1a",
+    "content": "Measurement and leverage are the two components of creating wealth.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "measurement",
+      "leverage",
+      "small-teams",
+      "impact"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "To get rich you need measurement and leverage.",
+    "implication": null
+  },
+  {
+    "id": "f964f315-d795-4a59-81f3-36e88327064a",
+    "content": "Wealth is not the same as money. Wealth is stuff people want.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth",
+      "money",
+      "economics",
+      "value-creation"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Wealth is not money. Wealth is stuff.",
+    "implication": null
+  },
+  {
+    "id": "10db3d76-b65a-4835-84b2-d3a044a7c405",
+    "content": "The way rich people get rich has changed fundamentally \u2014 it's now through creating value.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth",
+      "value-creation",
+      "entrepreneurship"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Rich people have gone from exploiting economies to creating new ones.",
+    "implication": null
+  },
+  {
+    "id": "c8ab3ce3-9814-48c8-a4eb-8c0afdec46a4",
+    "content": "Technology has democratized wealth creation \u2014 you don't need capital to start.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "technology",
+      "democratization",
+      "startups",
+      "capital"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "It's easier than ever to start a company, and you don't need as much money.",
+    "implication": null
+  },
+  {
+    "id": "8dc14dc2-2ac8-4def-b499-0695f479efc8",
+    "content": "The biggest source of new fortunes is starting companies.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth",
+      "startups",
+      "founders",
+      "economics"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "In the past, to get rich you had to inherit or exploit. Now you start a company.",
+    "implication": null
+  },
+  {
+    "id": "e5ef95d0-7879-4835-94d6-3fda81ec10d5",
+    "content": "Wealth creation is not zero-sum \u2014 one person getting richer doesn't make another poorer.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "zero-sum",
+      "wealth-creation",
+      "economics"
+    ],
+    "source_ref": "https://paulgraham.com/wealth.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "If you want to create wealth, you have to understand it's not a zero-sum game.",
+    "implication": null
+  },
+  {
+    "id": "26d93759-3d47-4aeb-b302-41dfba8ea5b4",
+    "content": "How people get rich now: by starting companies, not by inheriting or climbing.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "wealth",
+      "startups",
+      "founders",
+      "economics"
+    ],
+    "source_ref": "https://paulgraham.com/own.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The biggest source of new fortunes now is starting companies.",
+    "implication": null
+  },
+  {
+    "id": "93c73451-4fa5-48b7-a528-9ad49b5aad67",
+    "content": "How to lose money: spend on things that feel like investments but are actually indulgences.",
+    "cluster": "wealth_economics",
+    "topics": [
+      "money",
+      "spending",
+      "psychology",
+      "discipline"
+    ],
+    "source_ref": "https://paulgraham.com/selfindulgence.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Spending money is dangerous because it tends to change the way you think.",
+    "implication": null
+  },
+  {
+    "id": "03284ffa-35b2-4939-abb1-c7d338184205",
+    "content": "The way to get novelty in writing is to write about things you've thought about a lot, from your own experience. Anyone who has deep domain experience has novel things to say -- they just don't realize it because the knowledge feels obvious to them.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "novelty",
+      "expertise",
+      "domain knowledge"
+    ],
+    "source_ref": "https://paulgraham.com/useful.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The way to get novelty is to write about things you've thought about. Especially things you've thought about a lot. Then you're not just describing events, but the ideas that events triggered in someone with a lot of experience in this domain.",
+    "implication": "Your deep domain knowledge contains insights that seem obvious to you but are novel to others. Don't dismiss your expertise as 'common knowledge'\u2014what feels trivial to an expert is often profound to everyone else. Mine your own experience for writing material."
+  },
+  {
+    "id": "ae6f3d9e-0621-49f6-9a6d-cb13548a35fd",
+    "content": "Written language diverged from spoken language because of historical accident \u2014 the printing press froze conventions that spoken language kept evolving past. The gap between written and spoken English is artificial, not necessary.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "language",
+      "history"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "I think the reason I've become a better writer is that I've become a better person. And the reason I've become a better person is that I've paid closer attention to what I think and why I think it.",
+    "implication": "Written language doesn't need to be stuffy and formal\u2014that's just historical accident. Writing that sounds like natural speech is often more clear and engaging. Don't artificially elevate your language; focus on communicating ideas clearly and directly."
+  },
+  {
+    "id": "608aaaaf-76f6-451c-8240-8651979546a0",
+    "content": "Cultivate independent thinking by surrounding yourself with independent-minded people, reading history to see how ideas once considered heretical became accepted, and actively noticing when you're being pressured to agree with something.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "independent thinking",
+      "intellectual habits",
+      "peer effects",
+      "contrarianism"
+    ],
+    "source_ref": "https://paulgraham.com/think.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "The way to get a big idea to appear in your head is not to hunt for big ideas, but to put in a lot of time on work that interests you, and in the process keep your eyes open for weird anomalies. Work on hard problems, driven mainly by curiosity, but have a second self watching over your shoulder, taking note of gaps and anomalies.",
+    "implication": "Independent thinking isn't about contrarianism for its own sake\u2014it's about genuinely curious investigation. Study history to see how yesterday's heresies became today's orthodoxies, surround yourself with other independent thinkers, and trust your own observations over social pressure."
+  },
+  {
+    "id": "b210b3a7-b7c9-4761-b23a-9bf62c923c72",
+    "content": "Write like you talk \u2014 if you wouldn't say it in conversation, don't write it.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "simplicity",
+      "voice",
+      "authenticity"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Write like you talk.",
+    "implication": null
+  },
+  {
+    "id": "78741c2f-6343-4564-a4ef-4e33ef4919ea",
+    "content": "Writing is a way of thinking, not just communicating.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing-as-thinking",
+      "clarity",
+      "idea-generation"
+    ],
+    "source_ref": "https://paulgraham.com/essay.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The essay is a tool for thinking.",
+    "implication": null
+  },
+  {
+    "id": "dd24befb-b361-4891-b918-256dc143e70c",
+    "content": "Written language should be conversational \u2014 formality is a disease.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "voice",
+      "conversational",
+      "formality"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Write like you talk. Or rather, the best version of how you talk.",
+    "implication": null
+  },
+  {
+    "id": "57288272-10c2-4faf-93b4-ec0e75fdfb71",
+    "content": "If a sentence sounds wrong when read aloud, rewrite it.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "editing",
+      "voice",
+      "craft"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Read your writing aloud and fix anything that sounds wrong.",
+    "implication": null
+  },
+  {
+    "id": "e5f75681-f566-4644-bbe4-d11537b5bb82",
+    "content": "Most bad writing comes from trying to sound impressive rather than trying to be clear. Academic and corporate prose is terrible because the writers are optimizing for status, not communication.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "status",
+      "clarity"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.9,
+    "confidence_tier": "high",
+    "original_quote": "Write like you talk. Most writers' first mistake is trying to sound important. The result is pretentious prose that's hard to read and harder to understand.",
+    "implication": "Clear communication beats impressive-sounding communication every time. This applies to pitches, product descriptions, and team communication. If users or investors can't understand what you're saying, nothing else matters."
+  },
+  {
+    "id": "53c3662b-3851-4a13-bc05-a65a9967e5fe",
+    "content": "The most persuasive writing feels like a conversation with a smart friend. The reader feels they're being talked to, not lectured at. Conversational tone is not dumbing down \u2014 it's the highest form of clarity.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "persuasion",
+      "tone"
+    ],
+    "source_ref": "https://paulgraham.com/goodwriting.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "The best writing seems effortless, but because the thoughts are so clearly expressed it's obvious that a lot of work has gone into them. You don't see the writer at all. You just see the ideas.",
+    "implication": "Great communication disappears into its message. When explaining your startup, users should remember the value proposition, not how cleverly you explained it. Remove yourself from the equation and let the ideas speak."
+  },
+  {
+    "id": "2f9dd305-bb99-4814-9bd2-fb04340b8a4f",
+    "content": "Novelty is the most valuable ingredient in useful writing \u2014 say something new.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "novelty",
+      "ideas",
+      "originality"
+    ],
+    "source_ref": "https://paulgraham.com/useful.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Of the four components of useful writing, novelty is the most important.",
+    "implication": null
+  },
+  {
+    "id": "80f01994-b7af-4f2a-b7c5-58e646c17e78",
+    "content": "Useful writing tells people something true and important that they didn't already know, stated unambiguously.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "writing",
+      "usefulness",
+      "truth",
+      "clarity"
+    ],
+    "source_ref": "https://paulgraham.com/useful.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "Useful writing tells people something true and important that they didn't already know, and tells them as unambiguously as possible.",
+    "implication": null
+  },
+  {
+    "id": "16ebe0d1-d814-4cd5-b48b-36137d26e22e",
+    "content": "There is a hierarchy of disagreement from name-calling to refuting the central point.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "disagreement",
+      "reasoning",
+      "hierarchy",
+      "argument"
+    ],
+    "source_ref": "https://paulgraham.com/disagree.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "The most convincing form of disagreement is refutation.",
+    "implication": null
+  },
+  {
+    "id": "da40f8e8-4935-479a-94b0-dad35f79df37",
+    "content": "Moving up the disagreement hierarchy makes you both more effective and happier.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "disagreement",
+      "effectiveness",
+      "civility"
+    ],
+    "source_ref": "https://paulgraham.com/disagree.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "You don't have to be mean when you have a real point to make.",
+    "implication": null
+  },
+  {
+    "id": "28e8af04-18fe-4ada-a655-619fd1b39b54",
+    "content": "An essay is an exploration, not a persuasive argument.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "essay",
+      "writing",
+      "exploration",
+      "thinking"
+    ],
+    "source_ref": "https://paulgraham.com/essay.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "high",
+    "original_quote": "An essay is something you write to try to figure something out.",
+    "implication": null
+  },
+  {
+    "id": "b6db5277-f81d-485b-a4a6-d8a5c3e40c2e",
+    "content": "Correctness matters but is overweighted by cautious writers. Making slightly wrong but interesting claims is more useful than making perfectly correct but boring ones. The goal is to maximize the product of all four factors, not any single one.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "correctness",
+      "risk",
+      "intellectual courage",
+      "writing strategy"
+    ],
+    "source_ref": "https://paulgraham.com/useful.html",
+    "source_date": null,
+    "confidence": 0.7,
+    "confidence_tier": "medium",
+    "original_quote": "I think it's better to err on the side of making the writing useful. A lot of writers seem to think the opposite: that it's better to say nothing than to say something that might turn out to be wrong. But that's not right. The goal is to say things that are useful, not just correct.",
+    "implication": "Perfect accuracy isn't the goal\u2014useful insight is. It's better to be roughly right and provocative than precisely correct and boring. Aim to maximize the overall usefulness of your ideas, not just their technical accuracy. Take intellectual risks."
+  },
+  {
+    "id": "3e5b8a20-2551-4605-aa30-0b2b0ddd3ee8",
+    "content": "Arguments from authority are weak \u2014 the question is whether the statement is true.",
+    "cluster": "writing_thinking",
+    "topics": [
+      "authority",
+      "argument",
+      "truth",
+      "meritocracy"
+    ],
+    "source_ref": "https://paulgraham.com/disagree.html",
+    "source_date": null,
+    "confidence": 0.8,
+    "confidence_tier": "medium",
+    "original_quote": "Saying that an author lacks the authority to write about a topic is a variant of ad hominem.",
+    "implication": null
+  }
+]

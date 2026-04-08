@@ -1,6 +1,6 @@
 # Paul Graham Brain Pack
 
-> **182 knowledge atoms** · **498 typed connections** · **8 thinking skills**
+> **213 knowledge atoms** · **409 typed connections** · **8 thinking skills**
 > From [brainsfor.dev](https://brainsfor.dev)
 
 ## What This Is
@@ -26,15 +26,15 @@ You should get a response that cites specific atoms, synthesizes Paul's perspect
 pack/
   ├── SKILL.md              ← Setup guide + skill reference (start here)
   ├── brain-context.md      ← Full knowledge base (load this as context)
-  ├── brain-atoms.json      ← Structured data (182 atoms, 498 connections)
+  ├── brain-atoms.json      ← Structured data (213 atoms, 409 connections)
   └── README.md             ← You are here
 ```
 
 ## The Knowledge Graph
 
-**182 atoms** — Each atom is a self-contained insight with topic tags, source date, confidence score, and source URL.
+**213 atoms** — Each atom is a self-contained insight with topic tags, source date, confidence score, and source URL.
 
-**498 connections** — Typed relationships between atoms: supports, contradicts, extends, related, inspired_by. These let skills trace reasoning chains and surface productive tensions.
+**409 connections** — Typed relationships between atoms: supports, contradicts, extends, related, inspired_by. These let skills trace reasoning chains and surface productive tensions.
 
 **16 topic clusters** — startups, programming, writing, wealth, taste, ambition, fundraising, hackers, ideas, growth, education, design.
 
@@ -74,9 +74,9 @@ Paul Graham is a programmer, essayist, and co-founder of Y Combinator — the mo
 
 ## Sources & Ethics
 
-This brain pack was built exclusively from **freely available, public sources** — Paul's free essays on paulgraham.com, public interviews, conference talks, podcasts, and tweets. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
+This brain pack was built exclusively from **freely available, public sources** — interviews, podcasts, public talks, blog posts, free newsletters, YouTube videos, and publicly shared excerpts. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
 
-Where book ideas appear in the knowledge graph (e.g., from *Hackers & Painters*), they are represented as they exist in the public discourse: book reviews, author interviews, and concepts Paul has shared freely in his essays and public appearances.
+Where a thinker's book ideas appear in the knowledge graph, they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, conference talks, and LLM-generated summaries of widely discussed concepts. Authors typically share their core ideas through extensive public appearances and media — those public representations are what this brain captures.
 
 ## Support
 

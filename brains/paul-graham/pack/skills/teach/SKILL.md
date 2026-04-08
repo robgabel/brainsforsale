@@ -40,13 +40,13 @@ Load `clusters/manifest.json` to find the relevant cluster(s). Load those cluste
 
 ## Rules
 
-1. **Use his exact vocabulary** — "meaning economy," "proof of craft," "superhumanity" — his labels ARE the insight.
+1. **Use his exact vocabulary** — his specific terms, frameworks, and labels ARE the insight. Don't substitute generic synonyms.
 2. **Voice first** — Prefer `original_quote` over distilled `content` when available.
 3. **Show his angle** — What makes Graham's take different from how everyone else talks about this.
 4. **Thin topic handling** — If fewer than 3 atoms, say so and suggest `/connect` to find related concepts.
 
 ## Data
 
-- **atoms:** brain-atoms.json (182 atoms, 498 connections)
+- **atoms:** brain-atoms.json (213 atoms, 409 connections)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" section in brain-context.md

@@ -53,5 +53,5 @@ _Grounded in:_ "[atom quote or content]"
 
 ## Data
 
-- **atoms:** brain-atoms.json (182 atoms, 498 connections)
+- **atoms:** brain-atoms.json (213 atoms, 409 connections)
 - **shared rules:** See "LLM Usage Rules" section in brain-context.md

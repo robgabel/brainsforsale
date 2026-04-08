@@ -40,12 +40,12 @@ Load `clusters/manifest.json` to find relevant clusters. Load only those cluster
 
 1. **Voice first** — When atoms have `original_quote`, use that language. Paul's voice IS the product.
 2. **Always cite atoms** — Never synthesize without grounding. If brain is silent on topic, say so.
-3. **Use Graham's vocabulary** — "meaning economy," "agentic commerce," "scaling without growing" — not generic synonyms.
+3. **Use Graham's vocabulary** — use his specific terms, frameworks, and labels rather than generic synonyms. The original language IS the insight.
 4. **Show implications** — Include the atom's `implication` field when present.
 5. **Thin topic handling** — If fewer than 5 relevant atoms, state coverage is thin and suggest `/connect` for adjacent ideas.
 
 ## Data
 
-- **atoms:** brain-atoms.json (182 atoms, 498 connections)
+- **atoms:** brain-atoms.json (213 atoms, 409 connections)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" section in brain-context.md

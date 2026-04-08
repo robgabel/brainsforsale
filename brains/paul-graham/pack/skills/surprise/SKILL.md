@@ -49,6 +49,6 @@ Load `brain-context.md` or a random cluster file for variety.
 
 ## Data
 
-- **atoms:** brain-atoms.json (182 atoms, filter to high/medium confidence_tier)
+- **atoms:** brain-atoms.json (213 atoms, filter to high/medium confidence_tier)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" in brain-context.md

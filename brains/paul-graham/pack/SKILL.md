@@ -9,8 +9,8 @@ Welcome to the **Graham Brain Pack** from [brainsfor.dev](https://brainsfor.dev)
 
 ## What You're Getting
 
-- **182 knowledge atoms** — Core insights, frameworks, and strategic principles from 220+ essays spanning 2001-2025, plus interviews, talks, and tweets
-- **498 typed connections** — Relationships between ideas (supports, contradicts, extends, related, inspired_by)
+- **213 knowledge atoms** — Core insights, frameworks, and strategic principles from 220+ essays spanning 2001-2025, plus interviews, talks, and tweets
+- **409 typed connections** — Relationships between ideas (supports, contradicts, extends, related, inspired_by)
 - **8 specialized thinking skills** — Each a distinct reasoning mode with a unique output type
 - **Cross-referenced topics** — startups, programming, writing, wealth, taste, ambition, fundraising, hackers, ideas, growth, education, design, and more
 
@@ -28,7 +28,7 @@ Your Graham Brain Pack folder should contain:
 pack/
   ├── SKILL.md                 ← you are here
   ├── brain-context.md         ← full knowledge base + usage guide
-  ├── brain-atoms.json         ← structured atoms (182 insights)
+  ├── brain-atoms.json         ← structured atoms (213 insights)
   └── README.md                ← quick reference
 ```
 
@@ -49,7 +49,7 @@ This brain works across multiple AI tools. Identify which one you're using:
 The brain operates in three layers:
 
 1. **Layer 1 — Quick Reference** (brain-atoms.json)
-   - JSON structure of 182 atoms with titles, summaries, connections
+   - JSON structure of 213 atoms with titles, summaries, connections
    - Ideal for: Rapid lookups, programmatic access, integrations
    - Use when: You need structured data for routing or filtering
 
@@ -189,9 +189,9 @@ This brain pack extracts and structures his core ideas so you can activate his m
 
 ## Sources & Ethics
 
-This brain was built exclusively from **freely available, public sources** — Paul's free essays on paulgraham.com, public interviews, conference talks, podcasts, and tweets. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
+This brain was built exclusively from **freely available, public sources** — Paul's freely published essays on paulgraham.com, public talks, interviews, and widely discussed quotes from press coverage. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
 
-Where book ideas appear in the knowledge graph (e.g., from *Hackers & Painters*), they are represented as they exist in the public discourse: book reviews, author interviews, and concepts Paul has shared freely in his essays and public appearances.
+Where a thinker's book ideas appear in the knowledge graph, they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, conference talks, and widely discussed concepts. Authors typically share their core ideas through extensive public appearances — those public representations are what this brain captures.
 
 ## Support & Feedback
 
