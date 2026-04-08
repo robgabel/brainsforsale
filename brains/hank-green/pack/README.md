@@ -15,7 +15,7 @@ This isn't a chatbot or a persona. It's a **thinking partner** grounded in Hank'
 2. Run any of the 8 thinking skills:
 
 ```
-/advise "Should I start a YouTube channel or a TikTok to build an audience for my science startup?"
+/advise "{{skill_examples.advise}}"
 ```
 
 You should get a response that cites specific atoms, synthesizes Hank's perspective, and recommends what to do next.

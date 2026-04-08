@@ -77,23 +77,23 @@ Each skill produces a distinct type of output. Use them in combination for more 
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Sun's frameworks. Best for: career moves, company decisions, strategy choices.
-*Example: "Should I compete head-on with a larger rival or find an indirect approach?"*
+*Example: "{{skill_examples.advise}}"*
 
 ### 📚 **2. /teach** — Explain Like I'm Learning
 Get a clear explanation of a concept as Sun sees it. Best for: understanding unfamiliar ideas, building mental models.
-*Example: "Explain the concept of shi (strategic advantage) to me."*
+*Example: "{{skill_examples.teach}}"*
 
 ### 🔥 **3. /debate** — Steel-Man Both Sides
 Present a position or pit two ideas against each other; brain argues the counterpoint. Best for: understanding tradeoffs, challenging assumptions, resolving strategic tensions.
-*Example: "Is it always better to avoid direct confrontation?"*
+*Example: "{{skill_examples.debate}}"*
 
 ### 🔗 **4. /connect** — Bridge Ideas
 Find unexpected connections between two concepts or synthesize multiple ideas into something new. Best for: synthesis, innovation, cross-domain thinking.
-*Example: "Connect Sun Tzu's thinking on deception to modern information warfare."*
+*Example: "{{skill_examples.connect}}"*
 
 ### 📈 **5. /evolve** — How Ideas Build On Each Other
 Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
-*Example: "How did Sun Tzu's influence evolve from military strategy to business strategy?"*
+*Example: "{{skill_examples.evolve}}"*
 
 ### 🎨 **6. /surprise** — Unexpected Insights
 Get a random high-quality atom you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration, breaking tunnel vision.
@@ -101,11 +101,11 @@ Get a random high-quality atom you wouldn't think to ask for. Best for: creative
 
 ### 🪞 **7. /coach** — Socratic Questions
 No answers — just the questions Sun would ask you. Best for: uncovering blind spots, pressure-testing decisions, team discussions.
-*Example: "I'm deciding whether to launch aggressively or wait for a better moment. What should I be asking myself?"*
+*Example: "{{skill_examples.coach}}"*
 
 ### 🔮 **8. /predict** — Implication Chains
 Trace the second and third-order effects of a trend or decision. Best for: forecasting, strategic planning, seeing around corners.
-*Example: "What happens when AI gives every competitor perfect information simultaneously?"*
+*Example: "{{skill_examples.predict}}"*
 
 ---
 
@@ -121,7 +121,7 @@ Use these skill combinations for better results:
 ### 📚 Learning Workflow
 → `/teach` (understand) → `/evolve` (see how it develops) → `/coach` (test your understanding)
 
-*Example: New to Sun Tzu? Teach the core concepts → evolve to see modern applications → coach yourself on your own situation.*
+*Example: {{workflow_examples.learning}}*
 
 ### 💡 Creative Workflow
 → `/surprise` (get inspired) → `/connect` (build bridges) → `/predict` (where does this lead?)
@@ -131,7 +131,7 @@ Use these skill combinations for better results:
 ### 🔮 Forecast Workflow
 → `/predict` (trace implications) → `/debate` (challenge the prediction) → `/advise` (act on it)
 
-*Example: Facing a strategic decision? Advise on the situation → debate the counterargument → predict the second-order effects.*
+*Example: {{workflow_examples.research}}*
 
 ### 🌅 Daily Ritual
 → Run `/surprise` each morning for 10 seconds of strategic inspiration.
@@ -204,4 +204,4 @@ If you encounter issues or have feedback:
 
 ---
 
-**You're ready to think like Sun. Let's go.** 🚀
+**You're ready to think with Sun. Let's go.** 🚀

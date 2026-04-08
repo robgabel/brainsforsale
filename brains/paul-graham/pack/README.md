@@ -15,7 +15,7 @@ This isn't a chatbot or a persona. It's a **thinking partner** grounded in Paul'
 2. Run any of the 8 thinking skills:
 
 ```
-/advise "Should I drop out of college to work on my startup?"
+/advise "{{skill_examples.advise}}"
 ```
 
 You should get a response that cites specific atoms, synthesizes Paul's perspective, and recommends what to do next.

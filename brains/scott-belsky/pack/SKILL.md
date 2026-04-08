@@ -77,23 +77,23 @@ Each skill produces a distinct type of output. Use them in combination for more 
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Scott's frameworks. Best for: career moves, company decisions, strategy choices.
-*Example: "Should I raise my Series A or stay bootstrapped?"*
+*Example: "{{skill_examples.advise}}"*
 
 ### 📚 **2. /teach** — Explain Like I'm Learning
 Get a clear explanation of a concept as Scott sees it. Best for: understanding unfamiliar ideas, building mental models.
-*Example: "Explain agentic commerce to me."*
+*Example: "{{skill_examples.teach}}"*
 
 ### 🔥 **3. /debate** — Steel-Man Both Sides
 Present a position or pit two ideas against each other; brain argues the counterpoint. Best for: understanding tradeoffs, challenging assumptions, resolving strategic tensions.
-*Example: "Is remote work better for innovation?"*
+*Example: "{{skill_examples.debate}}"*
 
 ### 🔗 **4. /connect** — Bridge Ideas
 Find unexpected connections between two concepts or synthesize multiple ideas into something new. Best for: synthesis, innovation, cross-domain thinking.
-*Example: "Connect originality to organizational structure."*
+*Example: "{{skill_examples.connect}}"*
 
 ### 📈 **5. /evolve** — How Ideas Build On Each Other
 Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
-*Example: "How does Scott's thinking on AI agents evolve?"*
+*Example: "{{skill_examples.evolve}}"*
 
 ### 🎨 **6. /surprise** — Unexpected Insights
 Get a random high-quality atom you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration, breaking tunnel vision.
@@ -101,11 +101,11 @@ Get a random high-quality atom you wouldn't think to ask for. Best for: creative
 
 ### 🪞 **7. /coach** — Socratic Questions
 No answers — just the questions Scott would ask you. Best for: uncovering blind spots, pressure-testing decisions, team discussions.
-*Example: "I'm deciding whether to pivot my product. What should I be asking myself?"*
+*Example: "{{skill_examples.coach}}"*
 
 ### 🔮 **8. /predict** — Implication Chains
 Trace the second and third-order effects of a trend or decision. Best for: forecasting, strategic planning, seeing around corners.
-*Example: "What happens to SaaS if AI agents do most of the work?"*
+*Example: "{{skill_examples.predict}}"*
 
 ---
 
@@ -121,7 +121,7 @@ Use these skill combinations for better results:
 ### 📚 Learning Workflow
 → `/teach` (understand) → `/evolve` (see how it develops) → `/coach` (test your understanding)
 
-*Example: New to originality? Teach → evolve → coach to build deep understanding.*
+*Example: {{workflow_examples.learning}}*
 
 ### 💡 Creative Workflow
 → `/surprise` (get inspired) → `/connect` (build bridges) → `/predict` (where does this lead?)
@@ -131,7 +131,7 @@ Use these skill combinations for better results:
 ### 🔮 Forecast Workflow
 → `/predict` (trace implications) → `/debate` (challenge the prediction) → `/advise` (act on it)
 
-*Example: Writing about AI agents? Predict the implications → debate the forecast → advise on action.*
+*Example: {{workflow_examples.research}}*
 
 ### 🌅 Daily Ritual
 → Run `/surprise` each morning for 10 seconds of strategic inspiration.
@@ -189,9 +189,9 @@ This brain pack extracts and structures his core ideas so you can activate his m
 
 ## Sources & Ethics
 
-This brain was built exclusively from **freely available, public sources** — Scott's free Implications newsletter, public interviews, conference talks, podcasts, and blog posts. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
+This brain was built exclusively from **freely available, public sources** — {{brain_source_ethics}}. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
 
-Where book ideas appear in the knowledge graph (e.g., from *The Messy Middle*), they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, and widely discussed concepts that Scott has shared publicly.
+Where a thinker's book ideas appear in the knowledge graph, they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, conference talks, and widely discussed concepts. Authors typically share their core ideas through extensive public appearances — those public representations are what this brain captures.
 
 ## Support & Feedback
 
@@ -204,4 +204,4 @@ If you encounter issues or have feedback:
 
 ---
 
-**You're ready to think like Scott. Let's go.** 🚀
+**You're ready to think with Scott. Let's go.** 🚀

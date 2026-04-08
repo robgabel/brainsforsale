@@ -77,23 +77,23 @@ Each skill produces a distinct type of output. Use them in combination for more 
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Steve's frameworks. Best for: career moves, company decisions, strategy choices.
-*Example: "Should I add more features or strip my product down to its essence?"*
+*Example: "{{skill_examples.advise}}"*
 
 ### 📚 **2. /teach** — Explain Like I'm Learning
 Get a clear explanation of a concept as Steve sees it. Best for: understanding unfamiliar ideas, building mental models.
-*Example: "Explain the intersection of technology and liberal arts."*
+*Example: "{{skill_examples.teach}}"*
 
 ### 🔥 **3. /debate** — Steel-Man Both Sides
 Present a position or pit two ideas against each other; brain argues the counterpoint. Best for: understanding tradeoffs, challenging assumptions, resolving strategic tensions.
-*Example: "Is design more important than engineering?"*
+*Example: "{{skill_examples.debate}}"*
 
 ### 🔗 **4. /connect** — Bridge Ideas
 Find unexpected connections between two concepts or synthesize multiple ideas into something new. Best for: synthesis, innovation, cross-domain thinking.
-*Example: "Connect taste to hiring to product quality."*
+*Example: "{{skill_examples.connect}}"*
 
 ### 📈 **5. /evolve** — How Ideas Build On Each Other
 Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
-*Example: "How did Steve's thinking on design evolve from Apple to NeXT to Apple's return?"*
+*Example: "{{skill_examples.evolve}}"*
 
 ### 🎨 **6. /surprise** — Unexpected Insights
 Get a random high-quality atom you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration, breaking tunnel vision.
@@ -101,11 +101,11 @@ Get a random high-quality atom you wouldn't think to ask for. Best for: creative
 
 ### 🪞 **7. /coach** — Socratic Questions
 No answers — just the questions Steve would ask you. Best for: uncovering blind spots, pressure-testing decisions, team discussions.
-*Example: "I'm launching a new product and can't decide what to cut. What should I be asking myself?"*
+*Example: "{{skill_examples.coach}}"*
 
 ### 🔮 **8. /predict** — Implication Chains
 Trace the second and third-order effects of a trend or decision. Best for: forecasting, strategic planning, seeing around corners.
-*Example: "What happens to product design as AI generates interfaces on the fly?"*
+*Example: "{{skill_examples.predict}}"*
 
 ---
 
@@ -121,7 +121,7 @@ Use these skill combinations for better results:
 ### 📚 Learning Workflow
 → `/teach` (understand) → `/evolve` (see how it develops) → `/coach` (test your understanding)
 
-*Example: New to Jobs' philosophy? Teach → evolve → coach to internalize the full arc.*
+*Example: {{workflow_examples.learning}}*
 
 ### 💡 Creative Workflow
 → `/surprise` (get inspired) → `/connect` (build bridges) → `/predict` (where does this lead?)
@@ -131,7 +131,7 @@ Use these skill combinations for better results:
 ### 🔮 Forecast Workflow
 → `/predict` (trace implications) → `/debate` (challenge the prediction) → `/advise` (act on it)
 
-*Example: Building a product? Predict where your market is heading → debate your assumptions → advise on strategy.*
+*Example: {{workflow_examples.research}}*
 
 ### 🌅 Daily Ritual
 → Run `/surprise` each morning for 10 seconds of strategic inspiration.
@@ -189,9 +189,9 @@ This brain pack extracts and structures his core ideas so you can activate his m
 
 ## Sources & Ethics
 
-This brain was built exclusively from **freely available, public sources** — keynote presentations, public interviews, commencement speeches, press conferences, product launches, and documented conversations. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled content were used to derive this brain.
+This brain was built exclusively from **freely available, public sources** — {{brain_source_ethics}}. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
 
-Where book ideas appear in the knowledge graph (e.g., from Walter Isaacson's biography), they are represented as they exist in the public discourse: book reviews, widely reported excerpts, press coverage, and publicly discussed anecdotes.
+Where a thinker's book ideas appear in the knowledge graph, they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, conference talks, and widely discussed concepts. Authors typically share their core ideas through extensive public appearances — those public representations are what this brain captures.
 
 ## Support & Feedback
 
@@ -204,4 +204,4 @@ If you encounter issues or have feedback:
 
 ---
 
-**You're ready to think like Steve. Let's go.** 🚀
+**You're ready to think with Steve. Let's go.** 🚀

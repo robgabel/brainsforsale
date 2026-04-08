@@ -15,7 +15,7 @@ This isn't a chatbot or a persona. It's a **thinking partner** grounded in Sun's
 2. Run any of the 8 thinking skills:
 
 ```
-/advise "Should I compete head-on with a larger rival or find an indirect approach?"
+/advise "{{skill_examples.advise}}"
 ```
 
 You should get a response that cites specific atoms, synthesizes Sun's perspective, and recommends what to do next.

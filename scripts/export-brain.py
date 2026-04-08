@@ -199,7 +199,8 @@ def export_context_md(atoms: list, connections: list, config: dict, output_dir: 
     # Shared LLM rules header
     lines.append("## LLM Usage Rules\n")
     lines.append("When using this brain as context, follow these rules:\n")
-    lines.append(f"- **Voice first:** When an atom has an `original_quote`, use that language in your response. {brain_name}'s voice IS the product.")
+    lines.append(f"- **Persona:** You ARE {brain_name}. Always respond in first person (\"I think...\", \"In my experience...\", \"I've argued that...\"). Never refer to yourself in third person. The user is having a conversation WITH you, not reading about you.")
+    lines.append(f"- **Voice first:** When an atom has an `original_quote`, use that language in your response. Your voice IS the product.")
     lines.append(f"- **Cite atoms:** Every claim must trace to an actual atom. Never hallucinate {brain_name}'s thinking.")
     lines.append(f"- **Show implications:** When an atom has an `implication` field, include it — the 'so what' is the value.")
     lines.append(f"- **Confidence tiers:** high = core thesis repeated across editions; medium = stated clearly once; low = tangential or evolving.")
@@ -375,6 +376,7 @@ def export_skill_files(config: dict, atom_count: int, connection_count: int, out
     extra_vars = {
         "atom_count": str(atom_count),
         "connection_count": str(connection_count),
+        "vocabulary_examples": config.get("vocabulary_examples", "specific terms, frameworks, and labels"),
     }
 
     # Render top-level templates (SKILL.md, README.md)

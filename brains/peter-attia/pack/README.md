@@ -15,7 +15,7 @@ This isn't a chatbot or a persona. It's a **thinking partner** grounded in Peter
 2. Run any of the 8 thinking skills:
 
 ```
-/advise "I'm 55, overweight, and sedentary. What's my first move?"
+/advise "{{skill_examples.advise}}"
 ```
 
 You should get a response that cites specific atoms, synthesizes Peter's perspective, and recommends what to do next.
@@ -74,9 +74,9 @@ Peter Attia is a physician and longevity expert who has reshaped how high-perfor
 
 ## Sources & Ethics
 
-This brain pack was built exclusively from **freely available, public sources** — free podcast episodes of The Drive, public blog posts, interviews, conference talks, and publicly shared excerpts. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
+This brain pack was built exclusively from **freely available, public sources** — interviews, podcasts, public talks, blog posts, free newsletters, YouTube videos, and publicly shared excerpts. No transcripts from commercial works (e.g., audiobooks, paid courses) or paywalled essays were used to derive this brain.
 
-Where book ideas appear in the knowledge graph (e.g., from *Outlive*), they are represented as they exist in the public discourse: book reviews, author interviews, press tour appearances, and widely discussed concepts that Peter has shared publicly.
+Where a thinker's book ideas appear in the knowledge graph, they are represented as they exist in the public discourse: book reviews, author interviews, press coverage, conference talks, and LLM-generated summaries of widely discussed concepts. Authors typically share their core ideas through extensive public appearances and media — those public representations are what this brain captures.
 
 ## Support
 
