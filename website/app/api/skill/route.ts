@@ -30,14 +30,19 @@ function checkRateLimit(ip: string): {
 }
 
 // --- System prompts ---
-const BREVITY = `ABSOLUTELY CRITICAL — THIS IS A HARD CONSTRAINT:
-You MUST respond in EXACTLY 3-4 sentences. Not 5, not 6. Count your sentences.
-No bullet points. No headers. No bold. No italic. No markdown of any kind. No "Try next" suggestions. Plain prose only.`;
+const BREVITY_GENERIC = `HARD CONSTRAINT: Respond in exactly 4-5 sentences of plain prose. No markdown, no bold, no headers, no bullet points. Plain text only.`;
 
-const GENERIC_SYSTEM = `You are a helpful AI assistant. Answer the following question directly.\n\n${BREVITY}`;
+const BREVITY_ENHANCED = `HARD CONSTRAINTS:
+- Respond in exactly 4-5 sentences of plain prose. No markdown, no bold, no headers, no bullet points. Plain text only.
+- OPEN with a direct quote from the thinker (use their original_quote verbatim if available). Format: "quote" — then your insight.
+- Name the specific framework, principle, or concept by name (e.g., "The Messy Middle", "First Principles Thinking", "Via Negativa").
+- Be opinionated and specific, not hedging. This thinker has strong views — channel them.
+- Every sentence must reference specific knowledge from the brain context. No generic filler.`;
+
+const GENERIC_SYSTEM = `You are a helpful AI assistant. Answer the following question directly.\n\n${BREVITY_GENERIC}`;
 
 function buildEnhancedSystem(brainContext: string, skillPrompt: string): string {
-  return `${brainContext}\n\n---\n\n${skillPrompt}\n\n---\n\n${BREVITY}\nGround every sentence in specific atoms from the brain context. Use the thinker's actual voice, vocabulary, and original quotes.`;
+  return `${brainContext}\n\n---\n\n${skillPrompt}\n\n---\n\n${BREVITY_ENHANCED}`;
 }
 
 // --- POST handler ---
@@ -118,11 +123,11 @@ export async function POST(request: NextRequest) {
         try {
           const userMessage =
             type === "enhanced"
-              ? `[DEMO MODE: Reply in exactly 3-4 sentences of plain prose. No markdown, no bold, no headers, no bullet points, no "Try next" suggestions. Just plain text.]\n\n${query}`
+              ? `[DEMO MODE: Open with a direct quote from the thinker, then give 3-4 sentences of specific, opinionated insight grounded in their frameworks. Plain prose only — no markdown, no bold, no headers, no bullet points.]\n\n${query}`
               : `You are ${brainName}, ${skill} me: ${query}`;
           const messageStream = client.messages.stream({
             model: "claude-sonnet-4-20250514",
-            max_tokens: 200,
+            max_tokens: 350,
             system: systemPrompt,
             messages: [{ role: "user", content: userMessage }],
           });
