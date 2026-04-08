@@ -352,14 +352,14 @@ export function SkillsPlayground({
             </p>
             <div className="mt-4 font-mono text-sm leading-relaxed text-[#cbd5e1]">
               {genericText ? (
-                <>
+                isStreaming ? (
+                  <>
+                    {genericText}
+                    <span className="ml-0.5 inline-block animate-pulse text-[#94a3b8]">|</span>
+                  </>
+                ) : (
                   <SentenceParagraphs text={genericText} />
-                  {isStreaming && (
-                    <span className="ml-0.5 inline-block animate-pulse text-[#94a3b8]">
-                      |
-                    </span>
-                  )}
-                </>
+                )
               ) : (
                 <span className="animate-pulse text-[#475569]">
                   Generating...
@@ -389,14 +389,14 @@ export function SkillsPlayground({
             </p>
             <div className="mt-4 font-mono text-sm leading-relaxed text-[#c7d2fe]">
               {enhancedText ? (
-                <>
+                isStreaming ? (
+                  <>
+                    {enhancedText}
+                    <span className="ml-0.5 inline-block animate-pulse text-brain-indigo">|</span>
+                  </>
+                ) : (
                   <SentenceParagraphs text={enhancedText} />
-                  {isStreaming && (
-                    <span className="ml-0.5 inline-block animate-pulse text-brain-indigo">
-                      |
-                    </span>
-                  )}
-                </>
+                )
               ) : (
                 <span className="animate-pulse text-[#818cf8]">
                   Loading brain context...
