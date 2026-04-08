@@ -24,7 +24,7 @@ interface SkillsPlaygroundProps {
   defaultSkill: string;
 }
 
-const DEMO_LIMIT = process.env.NODE_ENV === "development" ? 999 : 10;
+const DEFAULT_DEMO_LIMIT = process.env.NODE_ENV === "development" ? 999 : 10;
 const STORAGE_KEY = "bf-demo-count";
 
 export function SkillsPlayground({
@@ -45,11 +45,16 @@ export function SkillsPlayground({
   const [showResult, setShowResult] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [demoCount, setDemoCount] = useState(0);
+  const [beastMode, setBeastMode] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
 
-  // Read demo count from localStorage on mount
+  const DEMO_LIMIT = beastMode ? 999 : DEFAULT_DEMO_LIMIT;
+
+  // Read demo count + check beast mode from URL on mount
   useEffect(() => {
     try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("mode") === "beast") setBeastMode(true);
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) setDemoCount(parseInt(stored, 10) || 0);
     } catch {
@@ -115,7 +120,10 @@ export function SkillsPlayground({
     try {
       const res = await fetch("/api/skill", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(beastMode ? { "x-beast-mode": "1" } : {}),
+        },
         body: JSON.stringify({
           brain: selectedBrain,
           skill: selectedSkill,

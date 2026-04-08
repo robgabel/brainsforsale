@@ -69,10 +69,13 @@ export async function POST(request: NextRequest) {
     return Response.json({ error: "Invalid skill" }, { status: 400 });
   }
 
-  // Rate limit
+  // Rate limit (bypass with beast mode header)
+  const isBeast = request.headers.get("x-beast-mode") === "1";
   const ip =
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
-  const { allowed, remaining } = checkRateLimit(ip);
+  const { allowed, remaining } = isBeast
+    ? { allowed: true, remaining: 999 }
+    : checkRateLimit(ip);
   if (!allowed) {
     return Response.json(
       { error: "limit", remaining: 0 },
