@@ -1,0 +1,274 @@
+[
+  {
+    "content": "Shi is the potential energy of a drawn crossbow or a boulder poised on a cliff edge \u2014 accumulated force waiting for release. The skilled general creates this stored energy through positioning, preparation, and patience, then releases it at the precise moment of maximum effect. Victory comes not from constant action but from building irresistible momentum and unleashing it at the critical juncture.",
+    "original_quote": "The strategic configuration of power is like drawing a crossbow; the decision to release is like pulling the trigger.",
+    "implication": "Builders should focus on accumulating advantages \u2014 team talent, market position, capital efficiency \u2014 rather than constant execution. The key is recognizing when your accumulated advantages can be released for maximum impact.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "strategic timing",
+      "force multiplication",
+      "competitive advantage",
+      "execution"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5: Strategic Military Power",
+    "source_date": "-500"
+  },
+  {
+    "content": "Speed is the essence of war because it prevents the enemy from adapting to your strategy. When you move faster than your opponent's decision cycle, their superior resources become irrelevant. The window of opportunity is always temporary \u2014 delay allows competitors to copy, customers to reconsider, and circumstances to shift against you.",
+    "original_quote": "Rapidity is the essence of war: take advantage of the enemy's unreadiness, make your way by unexpected routes, and attack unguarded spots.",
+    "implication": "In fast-moving markets, execution speed trumps perfect planning. Companies that can compress their decision-to-action cycle will consistently outmaneuver larger, slower competitors even with fewer resources.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "execution speed",
+      "competitive dynamics",
+      "decision-making",
+      "market timing"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 11: The Nine Situations",
+    "source_date": "-500"
+  },
+  {
+    "content": "The expert in battle moves the enemy, and is not moved by him. Creating momentum means controlling the tempo and forcing your opponent to react to your timeline rather than executing their own strategy. Once you have the initiative, every enemy response is defensive and therefore suboptimal.",
+    "original_quote": "The clever combatant looks to the effect of combined energy, and does not require too much from individuals.",
+    "implication": "Leaders should focus on setting the agenda rather than responding to others. In negotiations, product launches, or competitive battles, the side that controls timing and forces reactions has a fundamental advantage.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "initiative",
+      "strategic control",
+      "tempo",
+      "competitive dynamics"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5: Strategic Military Power",
+    "source_date": "-500"
+  },
+  {
+    "content": "Overwhelming force at the decisive point is achieved not through raw resources but through concentration. The art is identifying which battles matter most and marshaling all available energy for those moments. Most conflicts are won by superior focus, not superior strength.",
+    "original_quote": "In war, the way is to avoid what is strong and to strike at what is weak.",
+    "implication": "Startups beat incumbents by concentrating all resources on the competitor's weakest point rather than competing across all dimensions. Pick the battlefield where your limited resources can achieve local superiority.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "resource concentration",
+      "competitive strategy",
+      "force multiplication",
+      "strategic focus"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "The height of tactical skill is to use the enemy's energy against him \u2014 like water flowing downhill, following the path of least resistance while building irresistible momentum. Fighting against natural forces is exhausting; aligning with them makes victory inevitable.",
+    "original_quote": "Water shapes its course according to the nature of the ground; the soldier works out his victory in relation to the foe he is facing.",
+    "implication": "Smart leaders identify market trends, customer behaviors, and competitive weaknesses that create natural momentum, then align their strategy to amplify these forces rather than fighting against them.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "natural momentum",
+      "market forces",
+      "strategic alignment",
+      "efficiency"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "Creating shi requires making yourself unpredictable while making the enemy predictable. When opponents cannot anticipate your moves but you can forecast theirs, you control the strategic options. Momentum comes from having multiple paths forward while limiting theirs.",
+    "original_quote": "If I am able to determine the enemy's dispositions while at the same time I conceal my own, then I can concentrate and he must divide.",
+    "implication": "Successful companies maintain strategic optionality \u2014 multiple product lines, markets, or business models \u2014 while forcing competitors into predictable responses to their moves.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "strategic optionality",
+      "unpredictability",
+      "information asymmetry",
+      "competitive advantage"
+    ],
+    "confidence": 0.92,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "The moment of decision in battle is like releasing an arrow \u2014 all the power comes from the preparation, and once released, the outcome is determined. Great generals spend most of their time building potential energy and very little time in actual combat.",
+    "original_quote": "The energy developed by good fighting men is as the momentum of a round stone rolled down a mountain thousands of feet in height.",
+    "implication": "Entrepreneurs should think like army generals: spend 80% of time on positioning, preparation, and building advantages, then execute with overwhelming force when the moment is right. Most 'overnight successes' reflect years of preparation.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "preparation",
+      "strategic positioning",
+      "execution",
+      "accumulated advantage"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5: Strategic Military Power",
+    "source_date": "-500"
+  },
+  {
+    "content": "True strategic power comes from having many options when the enemy has few. The master of shi creates situations where any enemy response plays into his advantage. This requires thinking several moves ahead and preparing multiple contingencies.",
+    "original_quote": "The general who is skilled in defense hides in the most secret recesses of the earth; he who is skilled in attack flashes forth from the topmost heights of heaven.",
+    "implication": "Leaders must build multiple strategic options while systematically limiting their competitors' choices. Platform strategies work because they create optionality for the platform owner while constraining partners and competitors.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "strategic options",
+      "contingency planning",
+      "platform strategy",
+      "competitive constraint"
+    ],
+    "confidence": 0.88,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "Energy conservation is fundamental to sustained momentum. Fighting only when you have overwhelming advantage means you win decisively while preserving resources for the next battle. Continuous small victories compound into strategic dominance.",
+    "original_quote": "He who is prudent and lies in wait for an enemy who is not, will be victorious.",
+    "implication": "Successful companies pick their battles carefully, engaging only where they have sustainable advantages. This patient approach builds reputation and resources while competitors exhaust themselves in unwinnable fights.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "energy conservation",
+      "selective engagement",
+      "sustainable advantage",
+      "resource management"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "Recognizing the decisive moment requires deep understanding of the competitive landscape and enemy psychology. Most people see opportunities only in retrospect; the strategist identifies them before they become obvious to others.",
+    "original_quote": "To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself.",
+    "implication": "Market leaders must constantly scan for inflection points \u2014 technology shifts, regulatory changes, customer behavior evolution \u2014 that create windows for decisive action before competitors recognize the opportunity.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "market timing",
+      "opportunity recognition",
+      "competitive intelligence",
+      "strategic foresight"
+    ],
+    "confidence": 0.92,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "The supreme skill is making victory appear inevitable to both your forces and the enemy. When everyone believes the outcome is predetermined, resistance collapses and actual fighting becomes unnecessary. Perception of momentum is often more powerful than momentum itself.",
+    "original_quote": "Supreme excellence consists of breaking the enemy's resistance without fighting.",
+    "implication": "Companies can dominate markets by creating the perception of inevitable success through strategic communications, high-profile partnerships, and demonstration of overwhelming resources, causing competitors to concede rather than compete.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "perception management",
+      "psychological warfare",
+      "market dominance",
+      "competitive deterrence"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  },
+  {
+    "content": "Timing the market requires understanding cycles and positioning before the peak becomes obvious. The wise general attacks when the enemy is unprepared and appears where they are not expected, but this requires patience to wait for the right conditions.",
+    "original_quote": "All warfare is based on deception. When able to attack, we must seem unable; when using our forces, we must seem inactive.",
+    "implication": "Successful market entry often looks like overnight success but reflects careful timing of technology adoption curves, regulatory changes, and competitive complacency. The best opportunities appear when others aren't looking.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "market cycles",
+      "stealth strategy",
+      "competitive surprise",
+      "technology adoption"
+    ],
+    "confidence": 0.88,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "Building unstoppable momentum requires coordinating multiple forces to peak simultaneously. Like arrows released in a volley, individual elements may be modest, but their combined impact at the same moment creates overwhelming force that no defense can withstand.",
+    "original_quote": "The onset of troops is like the rush of a torrent which will even roll stones along in its course.",
+    "implication": "Product launches, funding rounds, and market expansion work best when all elements \u2014 product readiness, team scaling, marketing campaigns, strategic partnerships \u2014 reach readiness simultaneously rather than sequentially.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "coordination",
+      "product launches",
+      "force multiplication",
+      "strategic alignment"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5: Strategic Military Power",
+    "source_date": "-500"
+  },
+  {
+    "content": "The transition from defense to offense must be sudden and complete. Gradual escalation allows the enemy to adapt; overwhelming escalation breaks their decision-making process. The key is building defensive strength until you can attack with such force that resistance becomes futile.",
+    "original_quote": "Invincibility lies in the defense; the possibility of victory in the attack.",
+    "implication": "Startups should build strong defensive positions \u2014 customer loyalty, unique capabilities, financial reserves \u2014 then transition to aggressive expansion only when they can overwhelm competitors before they can respond effectively.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "strategic transitions",
+      "defense to offense",
+      "overwhelming force",
+      "competitive timing"
+    ],
+    "confidence": 0.92,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "Creating multiple simultaneous pressures prevents the enemy from responding effectively to any single threat. When forced to defend on many fronts, they cannot concentrate sufficient resources to stop your main advance. Coordination of diverse attacks amplifies the effect of each.",
+    "original_quote": "He wins his battles by making no mistakes. Making no mistakes is what establishes the certainty of victory, for it means conquering an enemy that is already defeated.",
+    "implication": "Market leaders can accelerate competitor decline by attacking multiple fronts \u2014 price, features, distribution, talent acquisition \u2014 simultaneously, preventing effective response and accelerating market consolidation.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "multi-front strategy",
+      "resource dispersion",
+      "coordinated attacks",
+      "competitive pressure"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "Understanding the enemy's timeline is as important as perfecting your own. When you know their resource constraints, decision cycles, and strategic commitments, you can time your moves to exploit their weakest moments and avoid their strongest.",
+    "original_quote": "If you know the enemy and know yourself, you need not fear the result of a hundred battles.",
+    "implication": "Competitive intelligence should focus on understanding rivals' cash burn rates, product development cycles, and strategic priorities. Time major moves to coincide with their moments of maximum vulnerability or distraction.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "competitive intelligence",
+      "strategic timing",
+      "vulnerability analysis",
+      "resource constraints"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  },
+  {
+    "content": "The highest form of strategic power is making your success inevitable while making enemy success impossible. This requires controlling the variables that determine outcomes \u2014 information, resources, timing, options \u2014 before the visible competition begins.",
+    "original_quote": "The victorious strategist only seeks battle after the victory has been won, whereas he who is destined to defeat first fights and afterwards looks for victory.",
+    "implication": "Great entrepreneurs win in the preparation phase through superior market research, team building, technology development, and strategic positioning, making the competitive battle itself almost anticlimactic.",
+    "cluster": "momentum_timing",
+    "topics": [
+      "strategic preparation",
+      "inevitable victory",
+      "pre-competition advantage",
+      "outcome control"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  }
+]

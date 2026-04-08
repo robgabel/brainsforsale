@@ -1,0 +1,274 @@
+[
+  {
+    "content": "Strategic victory is determined through calculation before any engagement begins. The general who wins makes many calculations in his temple before the battle is fought, while the general who loses makes but few calculations beforehand. Through pre-battle analysis, victory and defeat are already apparent before the first move is made.",
+    "original_quote": "Now the general who wins a battle makes many calculations in his temple ere the battle is fought. The general who loses a battle makes but few calculations beforehand. Thus do many calculations lead to victory, and few calculations to defeat: how much more no calculation at all! It is by attention to this point that I can foresee who is likely to win or lose.",
+    "implication": "Modern leaders must invest heavily in planning, scenario analysis, and strategic assessment before launching products, entering markets, or making major decisions. The quality of pre-decision analysis determines outcomes more than execution heroics.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "calculation",
+      "planning",
+      "pre-battle analysis",
+      "strategic preparation"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "Self-knowledge and understanding your opponent creates strategic invincibility. When you know both yourself and your enemy completely, you will never be in peril across hundreds of engagements. Partial knowledge creates partial vulnerability, while ignorance of both guarantees defeat.",
+    "original_quote": "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.",
+    "implication": "Organizations must conduct rigorous competitive intelligence and brutal self-assessment. Understanding your capabilities, limitations, and competitive landscape is foundational to strategic success. Most failures stem from self-deception or ignorance about competition.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "self-knowledge",
+      "competitive intelligence",
+      "strategic assessment",
+      "risk management"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  },
+  {
+    "content": "Strategic assessment must evaluate five fundamental factors that determine victory or defeat: moral influence, weather, terrain, command, and doctrine. The commander who masters these elements before engaging will triumph, while those who neglect this comprehensive analysis will fail regardless of tactical skill.",
+    "original_quote": "These five heads should be familiar to every general: he who knows them will be victorious; he who knows them not will fail. Therefore, in your deliberations, when seeking to determine the military conditions, let them be made the basis of a comparison, in this wise: Which of the two sovereigns is imbued with the Moral law? Which of the two generals has most ability? With whom lie the advantages derived from Heaven and Earth? On which side is discipline most rigorously enforced? Which army is stronger? On which side are officers and men more highly trained? In which army is there the greater constancy both in reward and punishment?",
+    "implication": "Business strategy requires systematic evaluation across multiple dimensions: cultural alignment, market timing, competitive positioning, leadership capability, and operational excellence. Success comes from comprehensive assessment, not single-factor optimization.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "five factors",
+      "systematic analysis",
+      "strategic framework",
+      "comprehensive assessment"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "The highest form of strategic planning involves disrupting the enemy's plans before they can be executed, rather than responding to their completed preparations. Attack their strategy, not their strength. Prevention through superior planning eliminates the need for costly direct confrontation.",
+    "original_quote": "In the practical art of war, the best thing of all is to take the enemy's country whole and intact; to shatter and destroy it is not so good. So, too, it is better to recapture an army entire than to destroy it, to capture a regiment, a detachment or a company entire than to destroy them. Hence to fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy's resistance without fighting.",
+    "implication": "The most effective competitive strategy focuses on making competition irrelevant through superior positioning, rather than engaging in direct battles. Disrupt competitors' business models and strategic plans, don't just try to out-execute them in existing markets.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "strategic disruption",
+      "competitive strategy",
+      "prevention",
+      "indirect approach"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  },
+  {
+    "content": "Speed in warfare is essential because prolonged campaigns drain resources and create vulnerability. No nation has ever benefited from extended military operations. Quick decisive action preserves strength, while drawn-out conflicts exhaust even superior forces and invite external complications.",
+    "original_quote": "In war, the way is to avoid what is strong and to strike at what is weak. Now the reason the enlightened prince and the wise general conquer the enemy whenever they move and their achievements surpass those of ordinary men is foreknowledge.",
+    "implication": "In business, prolonged competitive battles, extended product development cycles, and drawn-out negotiations are strategically destructive. Speed and decisive action preserve resources and maintain initiative. Plan for quick wins, not prolonged campaigns.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "speed",
+      "resource conservation",
+      "decisive action",
+      "time-based strategy"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 2: Waging War",
+    "source_date": "-500"
+  },
+  {
+    "content": "Invincibility lies in the defense; the possibility of victory lies in the attack. One defends when strength is inadequate; one attacks when strength is abundant. The skillful strategist first makes himself invincible, then waits for the enemy to become vulnerable.",
+    "original_quote": "The clever combatant looks to the effect of combined energy, and does not require too much from individuals. Hence his ability to pick out the right men and utilize combined energy. When he utilizes combined energy, his fighting men become as it were like unto rolling logs or stones.",
+    "implication": "Build defensive moats and sustainable advantages before pursuing aggressive growth. Ensure your core business is unassailable, then identify moments when competitors are vulnerable. Defense creates the foundation for successful offense.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "defense",
+      "invincibility",
+      "strategic patience",
+      "vulnerability timing"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "Victory becomes inevitable when you can accurately measure the space, estimate quantities, calculate numbers, make comparisons, and assess chances of victory. Each step builds upon the previous one, creating a systematic approach to strategic certainty.",
+    "original_quote": "The Moral Law causes the people to be in complete accord with their ruler, so that they will follow him regardless of their lives, undismayed by any danger. Heaven signifies night and day, cold and heat, times and seasons. Earth comprises distances, great and small; danger and security; open ground and narrow passes; the chances of life and death.",
+    "implication": "Strategic planning must be quantitative and systematic. Measure market size, calculate resource requirements, compare competitive positions, and assess probability of success through rigorous analysis. Intuition without calculation is gambling.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "measurement",
+      "calculation",
+      "systematic analysis",
+      "quantitative strategy"
+    ],
+    "confidence": 0.8,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "The general who is skilled in defense hides in the most secret recesses of the earth; he who is skilled in attack flashes forth from the topmost heights of heaven. Strategic positioning involves knowing when to be invisible and when to be overwhelming.",
+    "original_quote": "To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself. Hence the saying: One may know how to conquer without being able to do it.",
+    "implication": "Effective strategy alternates between stealth mode and decisive visibility. Build capabilities quietly, then strike overwhelmingly when conditions are optimal. Control the timing of when you reveal your true intentions and capabilities.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "strategic positioning",
+      "stealth strategy",
+      "timing",
+      "controlled revelation"
+    ],
+    "confidence": 0.8,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4: Tactical Dispositions",
+    "source_date": "-500"
+  },
+  {
+    "content": "All warfare is based on deception, but strategic deception must be systematic and layered. Appear weak when you are strong, and strong when you are weak. Control what your opponent believes about your capabilities, intentions, and constraints.",
+    "original_quote": "All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near.",
+    "implication": "Strategic communication and positioning should obscure your true capabilities and intentions from competitors. Signal strength in areas where you're building, signal weakness where you're already strong. Information asymmetry is a competitive advantage.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "deception",
+      "information warfare",
+      "strategic signaling",
+      "misdirection"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1: Laying Plans",
+    "source_date": "-500"
+  },
+  {
+    "content": "The supreme excellence in strategic assessment is breaking the enemy's resistance without fighting. This requires understanding their decision-making process, their constraints, and their alternatives well enough to make resistance appear futile or counterproductive.",
+    "original_quote": "Therefore the skillful leader subdues the enemy's troops without any fighting; he captures their cities without laying siege to them; he overthrows their kingdom without lengthy operations in the field.",
+    "implication": "The highest form of competitive strategy makes direct competition unnecessary. Structure deals, partnerships, and market positioning so that competitors choose not to compete rather than being defeated through direct confrontation.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "victory without battle",
+      "strategic positioning",
+      "competitive deterrence",
+      "indirect strategy"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  },
+  {
+    "content": "In strategic assessment, consider the six calamities that lead to defeat: flight, insubordination, collapse, ruin, disorganization, and rout. Each stems from faults in leadership and planning, not external circumstances. Most strategic failures are self-inflicted through poor assessment and preparation.",
+    "original_quote": "There are six ways of courting defeat, which must be carefully noted by the general who has attained a responsible post. They are: Flight; insubordination; collapse; ruin; disorganization; rout.",
+    "implication": "Strategic planning must focus heavily on failure modes and internal weaknesses. Most business failures come from predictable internal problems\u2014poor team dynamics, inadequate resources, unclear authority, loss of morale\u2014rather than external competition.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "failure analysis",
+      "risk assessment",
+      "internal weaknesses",
+      "systematic vulnerabilities"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 10: Terrain",
+    "source_date": "-500"
+  },
+  {
+    "content": "Strategic timing requires understanding when conditions favor action versus patience. There are moments when the enemy presents opportunities, and moments when no opportunity exists. The wise general creates conditions for opportunity while waiting for the optimal moment to act.",
+    "original_quote": "Rapidity is the essence of war: take advantage of the enemy's unreadiness, make your way by unexpected routes, and attack unguarded spots.",
+    "implication": "In competitive markets, timing beats perfection. Move quickly when competitors are unprepared, customers are underserved, or market conditions create temporary advantages. Speed of decision-making and execution is often more valuable than elaborate planning.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "strategic timing",
+      "opportunity recognition",
+      "market conditions",
+      "decisive action"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 11: The Nine Situations",
+    "source_date": "-500"
+  },
+  {
+    "content": "Water shapes itself to the ground and flows around obstacles to reach its destination. Strategic assessment must be similarly adaptive\u2014no fixed form, no predictable patterns, always responding to the specific terrain and opposition encountered.",
+    "original_quote": "Therefore, just as water retains no constant shape, so in warfare there are no constant conditions. He who can modify his tactics in relation to his opponent and thereby succeed in winning, may be called a heaven-born captain.",
+    "implication": "Strategic plans must be frameworks for decision-making, not rigid scripts. The best strategies are adaptive systems that respond to changing conditions while maintaining core objectives. Flexibility in approach, consistency in purpose.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "adaptability",
+      "strategic flexibility",
+      "responsive planning",
+      "formlessness"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "In strategic assessment, the clever combatant imposes his will on the enemy but does not allow the enemy's will to be imposed on him. Control the initiative, force opponents to respond to your moves rather than executing their preferred strategy.",
+    "original_quote": "The clever combatant imposes his will on the enemy, but does not allow the enemy's will to be imposed on him.",
+    "implication": "Maintain strategic initiative by forcing competitors to react to your product launches, market moves, and strategic decisions rather than allowing them to execute their preferred timeline and approach. Control the pace and terms of competition.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "strategic initiative",
+      "competitive control",
+      "will imposition",
+      "reactive positioning"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "The five dangerous faults of a general that lead to strategic failure are: recklessness leading to destruction, cowardice leading to capture, quick temper leading to provocation, delicacy of honor leading to shame, and over-solicitude for men leading to worry. Each fault creates predictable vulnerabilities that enemies can exploit.",
+    "original_quote": "There are five dangerous faults which may affect a general: Recklessness, which leads to destruction; cowardice, which leads to capture; a hasty temper, which can be provoked by insults; a delicacy of honor which is sensitive to shame; over-solicitude for his men, which exposes him to worry and trouble.",
+    "implication": "Leadership effectiveness in high-stakes situations requires emotional regulation and balanced judgment. Most strategic failures come from predictable leadership flaws: taking excessive risks, avoiding necessary risks, making decisions while angry, prioritizing ego over outcomes, or letting concern for popularity override difficult decisions.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "leadership faults",
+      "emotional regulation",
+      "strategic judgment",
+      "predictable failures"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 8: Variation in Tactics",
+    "source_date": "-500"
+  },
+  {
+    "content": "Strategic assessment requires understanding that local superiority matters more than overall strength. Concentrate forces at the point of decision while keeping the enemy dispersed. Numerical advantage at the critical moment determines outcomes, not total resources.",
+    "original_quote": "If I am able to determine the enemy's dispositions while at the same time I conceal my own, then I can concentrate and he must divide. And if I concentrate while he divides, I can use my entire strength to attack a fraction of his.",
+    "implication": "Focus resources on winnable battles rather than spreading efforts across multiple fronts. Identify the decisive competitive battles\u2014key customers, critical product features, essential partnerships\u2014and achieve overwhelming superiority at those points while opponents remain dispersed.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "concentration of force",
+      "local superiority",
+      "resource allocation",
+      "decisive points"
+    ],
+    "confidence": 0.9,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 6: Weak Points and Strong",
+    "source_date": "-500"
+  },
+  {
+    "content": "The ultimate strategic assessment involves foreknowledge\u2014understanding the enemy's plans, capabilities, and likely actions before they occur. This knowledge comes through systematic intelligence gathering, not divine inspiration or lucky guesses.",
+    "original_quote": "Now the reason the enlightened prince and the wise general conquer the enemy whenever they move and their achievements surpass those of ordinary men is foreknowledge. What is called 'foreknowledge' cannot be elicited from spirits; it cannot be obtained inductively from experience, nor by any deductive calculation. Knowledge of the enemy's dispositions can only be obtained from other men.",
+    "implication": "Competitive advantage comes from superior information about market trends, customer needs, and competitor intentions. Invest systematically in customer research, competitive intelligence, and industry analysis. Strategic decisions based on better information beat strategic decisions based on better analysis of the same information.",
+    "cluster": "strategic_assessment",
+    "topics": [
+      "foreknowledge",
+      "competitive intelligence",
+      "information advantage",
+      "systematic research"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: The Use of Spies",
+    "source_date": "-500"
+  }
+]

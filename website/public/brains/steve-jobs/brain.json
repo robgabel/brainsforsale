@@ -1,0 +1,140 @@
+{
+  "brain_name": "Steve Jobs",
+  "brain_first_name": "Steve",
+  "brain_last_name": "Jobs",
+  "brain_slug": "steve-jobs",
+  "brain_possessive": "his",
+  "brain_source_description": "speeches, interviews, keynotes, and public appearances",
+  "brain_source_url": "youtube.com",
+  "brain_source_detail": "50+ years of speeches, interviews, keynotes, and documented conversations (1976–2011)",
+  "brain_tagline": "a curated collection of his most provocative thinking on product design, simplicity, taste, team-building, and the intersection of technology and liberal arts",
+  "brain_bio": "Steve Jobs co-founded Apple, led Pixar, built NeXT, and returned to transform Apple into the most valuable company in history. His thinking on product design, marketing, simplicity, and the intersection of technology and humanities remains the most referenced playbook in tech. He died in 2011 but his ideas only grow more relevant.",
+  "topic_examples": "Simplicity, taste, product design, marketing, innovation, team building, focus, craftsmanship, the intersection of technology and liberal arts",
+  "example_topic": "simplicity",
+  "edition_count": null,
+  "date_range": "1976 — 2011",
+  "quick_start_prompt": "I'm launching a new product and struggling to decide which features to cut. What would Steve think?",
+  "skill_examples": {
+    "advise": "Should I add more features or strip my product down to its essence?",
+    "teach": "Explain the intersection of technology and liberal arts.",
+    "debate": "Is design more important than engineering?",
+    "connect": "Connect taste to hiring to product quality.",
+    "evolve": "How did Steve's thinking on design evolve from Apple to NeXT to Apple's return?",
+    "surprise": "No input needed — just run it.",
+    "coach": "I'm launching a new product and can't decide what to cut. What should I be asking myself?",
+    "predict": "What happens to product design as AI generates interfaces on the fly?"
+  },
+  "workflow_examples": {
+    "learning": "New to Jobs' philosophy? Teach → evolve → coach to internalize the full arc.",
+    "research": "Building a product? Predict where your market is heading → debate your assumptions → advise on strategy."
+  },
+  "supabase": {
+    "project_id": "uzediwokyshjbsymevtp",
+    "atoms_table": "steve_jobs_atoms",
+    "connections_table": "steve_jobs_connections"
+  },
+  "clusters": {
+    "product_design": {"name": "Product Design & Simplicity", "description": "Great products come from saying no to a thousand things. Simplicity is the ultimate sophistication — not the absence of complexity but its resolution."},
+    "marketing_brand": {"name": "Marketing, Brand & Storytelling", "description": "Marketing is about values. The best way to market is to stand for something. Think Different wasn't about computers — it was about identity."},
+    "taste_craft": {"name": "Taste, Craft & Aesthetics", "description": "The difference between a great product and a mediocre one is taste. Taste isn't subjective — it's the disciplined pursuit of excellence in every detail, including the ones nobody sees."},
+    "innovation": {"name": "Innovation & Creativity", "description": "Innovation comes from connecting things. Creative people feel guilty because they didn't actually do anything — they just saw something and connected experiences into new things."},
+    "leadership_teams": {"name": "Leadership & Team Building", "description": "A-players hire A-players. B-players hire C-players. The best things in the world are done by small teams of talented people who hold each other to impossibly high standards."},
+    "focus_strategy": {"name": "Focus & Strategic Saying No", "description": "Focus is about saying no. When Jobs returned to Apple, he killed 70% of products. What you choose NOT to do defines you as much as what you do."},
+    "tech_liberal_arts": {"name": "Technology & Liberal Arts", "description": "Technology alone is not enough. It's technology married with liberal arts, married with the humanities, that yields the results that make our hearts sing."},
+    "reality_distortion": {"name": "Vision, Persuasion & Reality Distortion", "description": "The people who are crazy enough to think they can change the world are the ones who do. Jobs bent reality through conviction — making teams believe impossible timelines and shipping anyway."},
+    "business_competition": {"name": "Business Strategy & Competition", "description": "Be a pirate, not the navy. Attack markets where incumbents are complacent. Own the whole widget. Vertical integration isn't old-fashioned — it's the only way to make great products."},
+    "personal_philosophy": {"name": "Life Philosophy & Mortality", "description": "Stay hungry, stay foolish. Death is the single best invention of life. Remembering you'll be dead soon is the best tool for making big choices."},
+    "hardware_software": {"name": "Hardware-Software Integration", "description": "People who are really serious about software should make their own hardware. The whole widget matters. Control the full stack or accept mediocrity."},
+    "user_experience": {"name": "User Experience & Empathy", "description": "You've got to start with the customer experience and work backwards to the technology. Not the other way around. Most companies get this exactly backwards."}
+  },
+  "cluster_order": [
+    "product_design", "taste_craft", "focus_strategy", "marketing_brand",
+    "innovation", "leadership_teams", "tech_liberal_arts", "reality_distortion",
+    "user_experience", "hardware_software", "business_competition", "personal_philosophy"
+  ],
+
+  "synthesis": {
+    "hero_tagline": "Simplicity, taste, and the intersection of technology and liberal arts",
+    "hero_updated": "Built from 50+ years of public speeches, interviews, keynotes, internal meetings, and documented conversations. Sources include the Stanford commencement (2005), Think Different internal meeting (1997), D Conference interviews, The Lost Interview (1995), product launches, and dozens of press appearances.",
+
+    "first_principles": [
+      {"title": "Simplicity is the ultimate sophistication.", "desc": "Not minimalism for its own sake — resolving complexity into something that feels inevitable. Jobs obsessed over removing every unnecessary element until only the essential remained. This applied to products, org charts, strategy, and even slide decks."},
+      {"title": "Taste is the difference between craft and commodity.", "desc": "Taste isn't subjective preference — it's caring deeply about quality in every dimension, including the parts users never see. Jobs insisted on beautiful circuit boards, perfect packaging, and invisible screws. Taste compounds across every decision."},
+      {"title": "Start with the customer experience, work backwards to technology.", "desc": "Most technologists start with cool tech and ask 'what can we sell?' Jobs inverted this: start with an incredible experience, then figure out what technology gets you there. This is why Apple consistently shipped products people actually wanted."},
+      {"title": "Focus means saying no to 1,000 things.", "desc": "When Jobs returned to Apple in 1997, he killed 70% of products and drew a simple 2×2 grid: Consumer/Pro × Desktop/Portable. Four products. That focus saved the company. Deciding what NOT to do is as important as deciding what to do."},
+      {"title": "A-players only.", "desc": "A small team of A-players runs circles around a large team of B and C players. A-players want to work with other A-players. The moment you tolerate B-work, you lose your best people. Recruiting is the most important thing a leader does."},
+      {"title": "Own the whole widget.", "desc": "People who are serious about software should make their own hardware. Vertical integration — controlling the entire experience from silicon to software to store — is the only way to make truly great products. This was heresy in the modular PC era. Jobs was right."},
+      {"title": "Marketing is about values.", "desc": "In the Think Different meeting, Jobs said: 'This is a very complicated world. We have to be really clear about what we want them to know about us.' The best marketing doesn't describe features — it communicates what a company believes."},
+      {"title": "Death makes everything urgent.", "desc": "Remembering that you'll be dead soon is the best tool for making the big choices in life. External expectations, fear of embarrassment, fear of failure — all fall away in the face of death, leaving only what truly matters."},
+      {"title": "Technology alone is not enough.", "desc": "It's technology married with liberal arts, married with the humanities, that yields results that make our hearts sing. Jobs studied calligraphy, cared about typography, and insisted engineers understand design. This cross-pollination was his deepest competitive advantage."},
+      {"title": "The journey is the reward.", "desc": "The process of building matters as much as the product. Jobs treated product development as a creative act, not an industrial process. He believed in craftsmanship — taking pride in parts of the work that most people would never notice."}
+    ],
+
+    "thinking_patterns": [
+      {"name": "Reductive focus", "desc": "Jobs' first move in any situation was to subtract. Cut products, cut features, cut meetings, cut org layers. He believed that every addition has a cost and most additions aren't worth it."},
+      {"name": "Analogy to other crafts", "desc": "He constantly compared technology to other creative disciplines — architecture, music, calligraphy, filmmaking. These weren't metaphors; they were how he actually designed products."},
+      {"name": "The 'whole widget' test", "desc": "For any product decision: 'Do we control the full experience?' If not, the customer experience degrades at every seam between companies. This drove vertical integration at Apple."},
+      {"name": "Binary quality judgment", "desc": "Things were either 'insanely great' or 'shit.' There was no middle ground. This wasn't just rhetoric — it was how he evaluated prototypes, designs, and people. Nuance was the enemy of excellence."},
+      {"name": "Customer empathy inversion", "desc": "Don't ask customers what they want — they don't know yet. Instead, deeply understand their lives and build what they'll want once they see it. 'People don't know what they want until you show them.'"},
+      {"name": "The mortality filter", "desc": "Every morning: 'If today were the last day of my life, would I want to do what I'm about to do?' If the answer is no too many days in a row, something needs to change."},
+      {"name": "Intersection thinking", "desc": "The best ideas live at the intersection of technology and liberal arts. Jobs deliberately cross-pollinated domains — bringing Pixar storytelling to Apple, calligraphy to typography, Zen aesthetics to industrial design."},
+      {"name": "Pirates not navy", "desc": "Small, renegade teams with outsized ambition outperform bureaucratic organizations. Jobs cultivated an insurgent mentality even inside the world's largest company."}
+    ],
+
+    "contrarian_positions": [
+      {"title": "Customers don't know what they want.", "desc": "Focus groups and market research are worthless for breakthrough products. 'It's not the customer's job to know what they want.' You show them, and then they can't imagine life without it."},
+      {"title": "Open systems produce mediocre products.", "desc": "The entire industry bet on open/modular (Windows, Android). Jobs bet on closed/integrated and won. Controlling the stack isn't anti-competitive — it's pro-quality."},
+      {"title": "Process kills creativity.", "desc": "When a company starts valuing process over content, it's already dying. The best people care about getting things right, not about following procedures."},
+      {"title": "Most people's work is garbage.", "desc": "Jobs said 'shit' to people's faces about their work. Not cruelty for its own sake — a refusal to accept mediocrity when excellence was possible. Politeness that tolerates bad work is the real unkindness."},
+      {"title": "Profit follows craft, not the reverse.", "desc": "Apple never started with 'how do we make money?' It started with 'how do we make something insanely great?' The profits followed. Companies that start with margins end up with neither margins nor great products."},
+      {"title": "The best ideas win, not the best politics.", "desc": "Jobs created a culture where ideas were attacked ruthlessly regardless of who proposed them. Rank didn't protect bad ideas. This was brutal but produced extraordinary output."},
+      {"title": "Copying is the deepest form of misunderstanding.", "desc": "Google and Microsoft copied Apple's products but missed the philosophy. They replicated features without understanding why those features existed. Copying the what without the why produces hollow imitations."},
+      {"title": "Specialization is a trap.", "desc": "The best engineers understand design. The best designers understand engineering. The best marketers understand both. Jobs hired and promoted polymaths who could think across disciplines."},
+      {"title": "Good enough never is.", "desc": "The industry's 'ship it and iterate' philosophy produces garbage. Jobs held products for months or years until they were right. The iPod was delayed, the iPhone was delayed, the iPad was delayed. They shipped when ready, not when scheduled."}
+    ],
+
+    "does_not_believe": [
+      {"title": "\"Ship it and iterate.\"", "desc": "Jobs would rather delay or kill a product than ship something that wasn't great. Iteration is fine for refinement, not as an excuse for launching mediocrity."},
+      {"title": "\"The market decides what's good.\"", "desc": "The market responds to what it's shown. Leadership means showing people something better than what they'd ask for."},
+      {"title": "\"Consensus drives good decisions.\"", "desc": "Design by committee produces camels. One person with taste and authority produces thoroughbreds."},
+      {"title": "\"Open platforms always win.\"", "desc": "Open platforms optimize for breadth. Closed platforms optimize for experience. Jobs bet his career on experience winning."},
+      {"title": "\"Business is about making money.\"", "desc": "Business is about making something you're proud of. Money is the byproduct of doing that well. Companies that chase money first make neither money nor anything worth making."},
+      {"title": "\"Engineers are more important than designers.\"", "desc": "Engineering enables; design decides. The hierarchy at Apple was clear: design led, engineering followed. This inverted the industry standard."},
+      {"title": "\"Data tells you what to build.\"", "desc": "Data tells you what happened. Taste tells you what should happen next. Jobs trusted intuition over analytics for product decisions."}
+    ],
+
+    "would_not_say": [
+      {"title": "\"Let's A/B test it.\"", "desc": "Jobs trusted his judgment over statistical testing. He believed that if you need a test to tell you which design is better, you don't have enough taste to be making the decision."},
+      {"title": "\"What does the competition have that we don't?\"", "desc": "He never defined Apple by what competitors did. He defined Apple by what Apple believed. Feature checklists were for followers."},
+      {"title": "\"Let's be data-driven about this.\"", "desc": "He was intuition-driven, craft-driven, taste-driven. Data was useful for operations, never for vision."},
+      {"title": "\"That's good enough for v1.\"", "desc": "If it wasn't great, it didn't ship. There was no 'good enough' in Jobs' vocabulary."},
+      {"title": "\"We need to move faster, even if quality suffers.\"", "desc": "Speed without quality was unacceptable. He'd rather be late and right than fast and mediocre."}
+    ],
+
+    "biography": [
+      {"date": "1955–1972", "role": "Early life", "lesson": "Adopted. Reed College dropout who audited calligraphy. The calligraphy class directly influenced the Mac's typography — connecting dots only works looking backwards."},
+      {"date": "1976–1985", "role": "Apple (first era)", "lesson": "Co-founded Apple in a garage. Built the Mac. Got fired from his own company at 30 — called it the best thing that ever happened to him."},
+      {"date": "1985–1996", "role": "NeXT & Pixar", "lesson": "NeXT failed commercially but built the OS that became macOS. Pixar succeeded beyond imagination. The 'wilderness years' taught him discipline, humility, and the craft of storytelling."},
+      {"date": "1997–2001", "role": "Apple return & iPod era", "lesson": "Returned to a dying Apple. Killed 70% of products. Think Different campaign. iMac. iPod. Proved that focus and taste could save a company."},
+      {"date": "2001–2007", "role": "iPod to iPhone", "lesson": "iTunes + iPod ecosystem. Apple Stores. The 'one more thing' era. Showed that hardware + software + services integration was unbeatable."},
+      {"date": "2007–2011", "role": "iPhone & iPad era", "lesson": "iPhone redefined computing. iPad created a category. Even while battling cancer, shipped products that changed the world. Died October 5, 2011."}
+    ],
+
+    "skills": [
+      {"name": "advise", "title": "Strategic Counsel", "desc": "Get advice on decisions grounded in Jobs' frameworks.", "example": "/advise \"Should I add more features or strip my product down?\""},
+      {"name": "teach", "title": "Learn Through His Lens", "desc": "Explain a concept using Jobs' actual vocabulary and mental models.", "example": "/teach \"Explain the intersection of technology and liberal arts.\""},
+      {"name": "debate", "title": "Steel-Man Both Sides", "desc": "Present a position or pit two ideas against each other.", "example": "/debate \"Is design more important than engineering?\""},
+      {"name": "connect", "title": "Bridge Ideas", "desc": "Find unexpected connections between concepts or synthesize multiple ideas.", "example": "/connect \"Connect taste to hiring to product quality.\""},
+      {"name": "evolve", "title": "Intellectual Evolution", "desc": "Trace how Jobs' thinking on a topic developed over time.", "example": "/evolve \"How did his thinking on design evolve from Apple to NeXT to Apple's return?\""},
+      {"name": "surprise", "title": "Show Me Something Unexpected", "desc": "Random high-quality atom for daily inspiration.", "example": "/surprise"},
+      {"name": "coach", "title": "Socratic Questions", "desc": "No answers — just the questions Jobs would ask you.", "example": "/coach \"I'm launching a product and can't decide what to cut.\""},
+      {"name": "predict", "title": "Implication Chains", "desc": "Trace second and third-order effects of a trend or decision.", "example": "/predict \"What happens to product design as AI generates interfaces on the fly?\""}
+    ]
+  },
+  "website": {
+    "tagline": "Product design, simplicity, taste, and the intersection of tech and liberal arts",
+    "bio": "Co-founded Apple, led Pixar, built NeXT, and returned to transform Apple into the most valuable company in history. His thinking on product design, marketing, simplicity, and the intersection of technology and humanities remains the most referenced playbook in tech.",
+    "topics": ["Product Design", "Simplicity", "Leadership", "Innovation", "Marketing", "Taste & Craft"],
+    "price": 29
+  }
+}

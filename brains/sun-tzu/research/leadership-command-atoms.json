@@ -1,0 +1,322 @@
+[
+  {
+    "content": "A leader must embody five essential qualities in perfect balance: wisdom to understand the situation, sincerity to build trust, benevolence to care for followers, courage to make difficult decisions, and strictness to maintain discipline. None can be neglected without fatal consequences to command.",
+    "original_quote": "The commander stands for the virtues of wisdom, sincerity, benevolence, courage and strictness.",
+    "implication": "Modern leaders who focus only on being liked (benevolence) or only on results (strictness) fail because leadership requires mastering all five dimensions simultaneously. Technical competence without trust, or empathy without accountability, creates organizational dysfunction.",
+    "cluster": "leadership_command",
+    "topics": [
+      "leadership_qualities",
+      "command",
+      "balance",
+      "virtue"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1",
+    "source_date": "-500"
+  },
+  {
+    "content": "The general who wins makes extensive calculations before battle begins, while the general who loses makes few calculations beforehand. Victory and defeat are determined in the planning phase, not in the heat of combat.",
+    "original_quote": "The general who wins a battle makes many calculations in his temple before the battle is fought. The general who loses makes but few calculations beforehand.",
+    "implication": "Leaders who rely on charisma, intuition, or improvisation in critical moments have already lost. Success comes from rigorous scenario planning, understanding all variables, and working through contingencies before high-stakes decisions are required.",
+    "cluster": "leadership_command",
+    "topics": [
+      "preparation",
+      "strategy",
+      "calculation",
+      "planning"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1",
+    "source_date": "-500"
+  },
+  {
+    "content": "A commander must never engage in battle driven by anger or personal resentment. Emotional decision-making in high-stakes situations leads to catastrophic errors that rational analysis would avoid.",
+    "original_quote": "The sovereign may not, in anger, raise an army; neither may a general fight a battle in resentment.",
+    "implication": "CEO decisions made from competitive fury, investor pressure, or personal slights consistently destroy value. The best leaders institutionalize cooling-off periods and decision frameworks that prevent emotional reasoning from overriding strategic thinking during critical moments.",
+    "cluster": "leadership_command",
+    "topics": [
+      "emotional_control",
+      "decision_making",
+      "anger",
+      "rationality"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 12",
+    "source_date": "-500"
+  },
+  {
+    "content": "There are five dangerous faults that can destroy a general: recklessness leads to destruction, cowardice to capture, quick temper to humiliation, rigid honor to disgrace, and excessive compassion to harassment. Each virtue becomes a weakness when taken to extremes.",
+    "original_quote": "There are five dangerous faults which may affect a general: recklessness, which leads to destruction; cowardice, which leads to capture; a hasty temper, which can be provoked by insults; a delicacy of honor which is sensitive to shame; over-solicitude for his men, which exposes him to worry and trouble.",
+    "implication": "Leadership development requires understanding your primary virtue and its shadow side. The bold leader's recklessness, the caring leader's paralysis, the principled leader's rigidity\u2014each strength contains the seeds of failure when unbalanced by opposing qualities.",
+    "cluster": "leadership_command",
+    "topics": [
+      "leadership_flaws",
+      "balance",
+      "virtues",
+      "weakness"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 8",
+    "source_date": "-500"
+  },
+  {
+    "content": "The skillful general does not raise a second levy or transport provisions twice. He uses the enemy's resources to sustain his own forces, making the opponent finance his own defeat.",
+    "original_quote": "The skillful general does not raise a second levy, neither are his supply-wagons loaded more than twice. He feeds his army on the enemy.",
+    "implication": "The most efficient competitive strategy turns opponent strengths into your resources. Rather than matching competitor spending dollar-for-dollar, find ways to make their investments work for your advantage\u2014their marketing educates your market, their R&D validates your approach, their talent eventually joins your team.",
+    "cluster": "leadership_command",
+    "topics": [
+      "resource_efficiency",
+      "competition",
+      "leverage",
+      "sustainability"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 2",
+    "source_date": "-500"
+  },
+  {
+    "content": "When troops are disciplined, the brave cannot advance alone nor can the cowardly retreat alone. This is the art of handling large masses of men\u2014creating systems where individual variation cannot undermine collective effectiveness.",
+    "original_quote": "When the soldiers are disciplined, the brave cannot advance alone, nor can the coward retreat alone.",
+    "implication": "Organizational culture must constrain both rogue heroes and individual weakness. Systems that prevent both unauthorized heroics and individual failures create predictable execution at scale. The goal is collective competence, not individual brilliance.",
+    "cluster": "leadership_command",
+    "topics": [
+      "discipline",
+      "systems",
+      "collective_action",
+      "culture"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 11",
+    "source_date": "-500"
+  },
+  {
+    "content": "The supreme excellence of leadership is to subdue the enemy without fighting. Breaking the opponent's resistance through positioning, psychology, and preparation is infinitely superior to winning through direct confrontation.",
+    "original_quote": "Supreme excellence consists in breaking the enemy's resistance without fighting.",
+    "implication": "The best business leaders win market share, talent, and partnerships without destructive competition. They position so effectively\u2014through reputation, relationships, and strategic advantages\u2014that competitors choose not to fight rather than being defeated in battle.",
+    "cluster": "leadership_command",
+    "topics": [
+      "strategic_positioning",
+      "influence",
+      "competition",
+      "excellence"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3",
+    "source_date": "-500"
+  },
+  {
+    "content": "A general must be capable of enlightening his subordinates' intelligence and maintaining their ignorance simultaneously. He reveals what they need to know for their role while concealing broader strategic information that could compromise the mission.",
+    "original_quote": "The general must be able to enlighten his officers' intelligence; he must also be able to maintain their ignorance.",
+    "implication": "Information distribution is a core leadership competence. Effective leaders give teams the context needed for excellent local decisions while protecting them from information that would create paralysis, confusion, or security risks. Transparency has limits.",
+    "cluster": "leadership_command",
+    "topics": [
+      "information_management",
+      "delegation",
+      "security",
+      "communication"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 11",
+    "source_date": "-500"
+  },
+  {
+    "content": "The clever combatant looks to the effect of combined energy and does not require extraordinary efforts from individuals. He selects his men and they fight according to their natural advantages, like rolling logs and stones down a mountain.",
+    "original_quote": "The clever combatant looks to the effect of combined energy, and does not require too much from individuals. He takes his men as he finds them, but arranges them according to their capacities.",
+    "implication": "Great leaders create force multiplication through intelligent role design rather than demanding superhuman performance. Instead of trying to change people, they architect systems where individual strengths naturally combine into collective capability that exceeds the sum of its parts.",
+    "cluster": "leadership_command",
+    "topics": [
+      "team_composition",
+      "natural_advantages",
+      "systems_thinking",
+      "efficiency"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5",
+    "source_date": "-500"
+  },
+  {
+    "content": "When you surround an army, always leave a way out. Desperate men fight with the fury of cornered animals, but men with hope of escape can be conquered through psychology rather than force.",
+    "original_quote": "When you surround an army, leave an outlet free. Do not press a desperate foe too hard.",
+    "implication": "In negotiations, layoffs, or competitive situations, always give opponents a face-saving exit. People fight irrationally when they have no alternatives, but will often surrender advantageous positions if they can preserve dignity. Crushing complete victory often costs more than it's worth.",
+    "cluster": "leadership_command",
+    "topics": [
+      "negotiation",
+      "psychology",
+      "dignity",
+      "strategic_restraint"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 7",
+    "source_date": "-500"
+  },
+  {
+    "content": "The general who thoroughly understands the advantages that accompany variation of tactics knows how to handle his troops. Without this knowledge, even familiar terrain becomes useless to him.",
+    "original_quote": "The general who thoroughly understands the advantages that accompany variation of tactics knows how to handle his troops.",
+    "implication": "Leadership requires maintaining multiple playbooks and knowing when to switch between them. The manager who only knows how to motivate through inspiration fails when the team needs structure; the leader who only knows consensus-building fails when speed is essential.",
+    "cluster": "leadership_command",
+    "topics": [
+      "tactical_flexibility",
+      "situational_leadership",
+      "adaptability",
+      "management_style"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 8",
+    "source_date": "-500"
+  },
+  {
+    "content": "Leadership requires both the ability to concentrate forces decisively and the wisdom to know when concentration would be catastrophic. The art lies in reading situations correctly and matching organizational response to environmental demands.",
+    "original_quote": "He who knows when to fight and when not to fight will be victorious.",
+    "implication": "The most important leadership skill is decision timing\u2014knowing when to double down versus when to wait, when to commit all resources versus when to preserve optionality. Most leaders fail by applying the right strategy at the wrong time.",
+    "cluster": "leadership_command",
+    "topics": [
+      "timing",
+      "strategic_patience",
+      "resource_allocation",
+      "decision_making"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3",
+    "source_date": "-500"
+  },
+  {
+    "content": "The best generals win without their brilliance being recognized. Their victories appear so inevitable that observers credit favorable circumstances rather than exceptional leadership. True mastery makes success look effortless.",
+    "original_quote": "A victorious general makes no mistakes. He makes no mistakes because he wins with ease. He wins with ease because he is victorious before he fights.",
+    "implication": "The highest level of leadership is invisible to most observers. Markets, employees, and competitors should attribute your success to luck, timing, or obvious moves rather than recognizing the sophisticated preparation and positioning that made victory inevitable.",
+    "cluster": "leadership_command",
+    "topics": [
+      "invisible_leadership",
+      "preparation",
+      "inevitability",
+      "mastery"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 4",
+    "source_date": "-500"
+  },
+  {
+    "content": "What enables a wise sovereign and good general to strike, conquer, and achieve extraordinary success is foreknowledge. This intelligence cannot be obtained from ghosts or spirits, but must come from people who know the enemy's situation.",
+    "original_quote": "What enables the wise sovereign and the good general to strike and conquer, and achieve things beyond the reach of ordinary men, is foreknowledge.",
+    "implication": "Exceptional leadership outcomes depend on superior information, not superior charisma or work ethic. Leaders must build systematic intelligence capabilities\u2014customer insights, competitive intelligence, market signals\u2014that reveal opportunities and threats before they become obvious to competitors.",
+    "cluster": "leadership_command",
+    "topics": [
+      "intelligence",
+      "information_advantage",
+      "competitive_edge",
+      "preparation"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13",
+    "source_date": "-500"
+  },
+  {
+    "content": "A general who advances without seeking personal fame and retreats without fearing disgrace, whose sole purpose is protecting his people and serving his sovereign, is the jewel of the kingdom.",
+    "original_quote": "He who advances without coveting fame and retreats without fearing disgrace, whose only thought is to protect his country and do good service for his sovereign, is the jewel of the kingdom.",
+    "implication": "The most effective leaders optimize for mission success rather than personal recognition or reputation protection. They make unpopular decisions when necessary, share credit generously, and accept responsibility for failures\u2014building long-term trust that enables extraordinary collective performance.",
+    "cluster": "leadership_command",
+    "topics": [
+      "servant_leadership",
+      "ego_management",
+      "mission_focus",
+      "integrity"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 10",
+    "source_date": "-500"
+  },
+  {
+    "content": "Command must be unified and unambiguous. When multiple authorities issue conflicting orders, even elite troops become ineffective. Clear chains of command and decision rights are prerequisites for executing any complex strategy.",
+    "original_quote": "The army should act as a single man. When the strike of a hawk breaks the body of its prey, it is because of timing. When the torrent carries away boulders, it is because of momentum.",
+    "implication": "Organizational effectiveness collapses when decision-making authority is unclear or distributed across competing power centers. Leaders must architect clear accountability structures where everyone knows who makes which decisions, even when this requires difficult conversations about power and territory.",
+    "cluster": "leadership_command",
+    "topics": [
+      "organizational_structure",
+      "decision_rights",
+      "unity_of_command",
+      "clarity"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 5",
+    "source_date": "-500"
+  },
+  {
+    "content": "The general who exposes himself needlessly to danger is reckless and wastes the sovereign's investment. Leadership requires calculated risk-taking, not heroic self-sacrifice that leaves the organization without direction.",
+    "original_quote": "If reckless, he can be killed; if cowardly, captured; if quick-tempered, he can be provoked; if he has too delicate a sense of honor, he can be calloused with slander; if he is compassionate, he can be harassed.",
+    "implication": "Leaders must manage their own psychological vulnerabilities as strategic assets. The CEO who takes every competitive attack personally, the founder who cannot delegate key relationships, the executive who needs to be the hero\u2014these personal patterns become organizational liabilities at scale.",
+    "cluster": "leadership_command",
+    "topics": [
+      "risk_management",
+      "psychological_discipline",
+      "vulnerability",
+      "delegation"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 8",
+    "source_date": "-500"
+  },
+  {
+    "content": "Treat your soldiers as you would treat your beloved children, and they will follow you into the deepest valleys. But if you are indulgent and unable to enforce your authority, they become like spoiled children and cannot be used.",
+    "original_quote": "Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death. If, however, you are indulgent, but unable to make your authority felt; kind-hearted, but unable to enforce your commands, then your soldiers must be likened unto spoiled children; they are useless for any practical purpose.",
+    "implication": "High-performing teams require both care and accountability in precise balance. Leaders who provide support without standards create entitled, ineffective cultures. Those who demand performance without genuine care generate compliance without commitment. Both dimensions must be present and strong.",
+    "cluster": "leadership_command",
+    "topics": [
+      "team_management",
+      "accountability",
+      "care",
+      "authority"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 10",
+    "source_date": "-500"
+  },
+  {
+    "content": "The way to avoid what is strong is to strike what is weak. Concentrate your forces against the opponent's gaps and vulnerabilities rather than meeting their strength head-on.",
+    "original_quote": "All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near.",
+    "implication": "Competitive strategy requires finding asymmetric advantages where your concentrated strength meets opponent weakness. Rather than matching competitor moves directly, look for adjacent markets, undervalued talent pools, or technology shifts where you can establish dominant positions before they respond.",
+    "cluster": "leadership_command",
+    "topics": [
+      "asymmetric_strategy",
+      "concentration",
+      "competitive_advantage",
+      "positioning"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 1",
+    "source_date": "-500"
+  },
+  {
+    "content": "On desperate ground, fight. When soldiers understand they cannot retreat, they discover reserves of capability they never knew they possessed. Leaders must sometimes engineer situations where the only path forward is through excellence.",
+    "original_quote": "Throw your soldiers into positions whence there is no escape, and they will prefer death to flight.",
+    "implication": "Strategic necessity often motivates breakthrough performance better than inspiration alone. Leaders sometimes need to close off comfortable fallback options\u2014burning bridges, making public commitments, or creating irreversible consequences\u2014to unlock their organization's true potential.",
+    "cluster": "leadership_command",
+    "topics": [
+      "commitment",
+      "necessity",
+      "breakthrough_performance",
+      "strategic_constraints"
+    ],
+    "confidence": 0.85,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 11",
+    "source_date": "-500"
+  }
+]

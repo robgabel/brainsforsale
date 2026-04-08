@@ -18789,13 +18789,13 @@
       {
         "name": "debate",
         "title": "Steel-Man Both Sides",
-        "desc": "Present a position; Jobs argues against it using real counterarguments.",
+        "desc": "Present a position or pit two ideas against each other.",
         "example": "/debate \"Is design more important than engineering?\""
       },
       {
         "name": "connect",
-        "title": "The Serendipity Engine",
-        "desc": "Surface non-obvious connections between your topic and Jobs' thinking.",
+        "title": "Bridge Ideas",
+        "desc": "Find unexpected connections between concepts or synthesize multiple ideas.",
         "example": "/connect \"Connect taste to hiring to product quality.\""
       },
       {
@@ -18805,34 +18805,22 @@
         "example": "/evolve \"How did his thinking on design evolve from Apple to NeXT to Apple's return?\""
       },
       {
-        "name": "apply",
-        "title": "Actionable Frameworks",
-        "desc": "Turn a Jobs framework into a step-by-step plan for your situation.",
-        "example": "/apply \"How do I apply 'say no to 1,000 things' to my roadmap?\""
-      },
-      {
-        "name": "mashup",
-        "title": "Synthesize & Combine",
-        "desc": "Combine multiple Jobs ideas into a genuinely new thesis.",
-        "example": "/mashup \"simplicity + marketing + team building\""
-      },
-      {
-        "name": "brainfight",
-        "title": "Ideas in Conflict",
-        "desc": "Pit two ideas head-to-head. Find agreements, contradictions, conditional victories.",
-        "example": "/brainfight \"Perfection vs. shipping \u2014 which should win?\""
-      },
-      {
-        "name": "deep-dive",
-        "title": "Everything He Knew",
-        "desc": "Exhaustive analysis \u2014 pull ALL atoms, map connections, synthesize.",
-        "example": "/deep-dive \"His thinking on product simplicity\""
-      },
-      {
         "name": "surprise",
         "title": "Show Me Something Unexpected",
         "desc": "Random high-quality atom for daily inspiration.",
         "example": "/surprise"
+      },
+      {
+        "name": "coach",
+        "title": "Socratic Questions",
+        "desc": "No answers \u2014 just the questions Jobs would ask you.",
+        "example": "/coach \"I'm launching a product and can't decide what to cut.\""
+      },
+      {
+        "name": "predict",
+        "title": "Implication Chains",
+        "desc": "Trace second and third-order effects of a trend or decision.",
+        "example": "/predict \"What happens to product design as AI generates interfaces on the fly?\""
       }
     ]
   }

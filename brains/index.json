@@ -44,6 +44,15 @@
       "connection_count": 385,
       "status": "live",
       "pack_path": "brains/john-green/pack/"
+    },
+    {
+      "slug": "sun-tzu",
+      "name": "Sun Tzu",
+      "source": "13 chapters of The Art of War, plus centuries of military and strategic commentary attributed to Sun Tzu and his school of thought",
+      "pack_path": "brains/sun-tzu/pack/",
+      "atom_count": 207,
+      "connection_count": 377,
+      "status": "live"
     }
   ]
 }

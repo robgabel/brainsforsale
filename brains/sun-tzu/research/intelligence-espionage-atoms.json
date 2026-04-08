@@ -1,0 +1,241 @@
+[
+  {
+    "content": "Intelligence is the foundation of all strategic action \u2014 foreknowledge cannot come from supernatural sources but must be obtained from people who know the enemy's situation. The general who wins makes calculations based on real information, not assumptions or guesswork. Without accurate intelligence, even the best strategy becomes gambling.",
+    "original_quote": "Foreknowledge cannot be gotten from ghosts and spirits, cannot be had by analogy with past events, nor by calculations. It must be obtained from people, people who know the enemy's situation.",
+    "implication": "Modern leaders must invest heavily in market intelligence, competitive analysis, and human networks rather than relying on data models or past precedents. The quality of your decisions is capped by the quality of your information sources.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "intelligence",
+      "foreknowledge",
+      "strategic_planning",
+      "decision_making"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Sun Tzu identifies five types of spies: local spies (inhabitants of enemy territory), inside spies (enemy officials), double spies (enemy agents turned), dead spies (who carry false information), and living spies (who return with intelligence). The key is using all five simultaneously to create a comprehensive intelligence network that provides multiple verification sources.",
+    "original_quote": "There are five kinds of spies: local spies, inside spies, double spies, dead spies, and living spies. When all five kinds are used together, no one can discover the system. This is called the divine manipulation of threads.",
+    "implication": "Effective intelligence requires diversified sources \u2014 not just formal research but insider knowledge, converted competitors, controlled misinformation, and direct reconnaissance. Single-source intelligence is inherently unreliable.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "espionage_network",
+      "intelligence_sources",
+      "verification",
+      "information_gathering"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Spying is the most important business of the military and the foundation upon which the army relies for action. An enlightened ruler and wise general who use intelligent agents for espionage are certain to achieve great results. This is essential for warfare and what the army depends on to move.",
+    "original_quote": "Spying is the most important business of the military, the foundation that the army depends on to act.",
+    "implication": "Intelligence gathering should receive disproportionate resource allocation \u2014 it's not a support function but the primary determinant of strategic success. Companies that treat market intelligence as secondary will consistently make inferior strategic choices.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "intelligence_priority",
+      "resource_allocation",
+      "strategic_foundation"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "The best spies are those closest to the enemy leadership \u2014 inside spies who are officials in the enemy's service. These provide the most valuable intelligence because they have access to decision-making processes and strategic intentions, not just observable actions.",
+    "original_quote": "Inside spies are enemy officials whom we employ. Of all those in the army close to the commander, none is closer than spies.",
+    "implication": "The highest-value intelligence comes from people inside your competitors' organizations who understand their strategic thinking. Cultivating relationships with industry insiders provides exponentially better insights than external observation.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "inside_intelligence",
+      "strategic_access",
+      "human_networks",
+      "competitor_analysis"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Double agents \u2014 enemy spies who have been discovered and turned \u2014 are especially valuable because they can be used to feed false information back to the enemy while providing real intelligence about enemy plans. The enemy trusts them, making them perfect conduits for deception.",
+    "original_quote": "Double spies are enemy spies whom we employ. It is through double spies that we are able to acquire and employ local and inside spies.",
+    "implication": "Converting competitors' intelligence assets creates dual value: you gain access to their strategic thinking while controlling what information flows back to them. The most powerful position is knowing what your competitor believes about you while knowing the truth about them.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "double_agents",
+      "information_control",
+      "deception",
+      "competitive_advantage"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "No one in the army should be treated with more trust and intimacy than spies, no rewards should be more generous than those given to spies, and no business should be more secret than espionage. Only the most sagacious ruler can use spies effectively.",
+    "original_quote": "None in the army are treated with greater trust than spies, none receive richer rewards than spies, none are dealt with in greater secrecy than spies.",
+    "implication": "Intelligence assets require premium compensation, maximum trust, and absolute confidentiality. Organizations that treat their best sources of competitive intelligence as ordinary employees will lose them to competitors who understand their strategic value.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "agent_management",
+      "trust",
+      "compensation",
+      "secrecy"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "When you discover enemy spies, convert them rather than eliminate them. A turned enemy agent becomes your most valuable asset because the enemy continues to trust their reporting while you control the information flow.",
+    "original_quote": "When the enemy's spies come to spy on us, we must bribe them to serve us. Give them instructions and care for them. Thus double spies are recruited and used.",
+    "implication": "When you discover competitors gathering intelligence about your organization, the optimal response is recruitment rather than exclusion. Converted sources give you visibility into what competitors want to know and control over what they learn.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "counterintelligence",
+      "agent_recruitment",
+      "information_warfare",
+      "strategic_conversion"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Living spies are those who return alive with intelligence from enemy territory. They must be people of exceptional intelligence themselves \u2014 capable of reading situations, adapting to circumstances, and extracting information without arousing suspicion.",
+    "original_quote": "Living spies are those who return to report. Therefore, of all those in the army close to the commander, none should be more intimately trusted than spies.",
+    "implication": "Direct reconnaissance requires your highest-quality people, not expendable assets. Send your smartest, most adaptable team members to gather firsthand competitive intelligence \u2014 the insights they return with will be worth far more than their temporary absence from other work.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "reconnaissance",
+      "talent_allocation",
+      "firsthand_intelligence",
+      "adaptability"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Intelligence operations must be coordinated systematically \u2014 when all five types of spies operate simultaneously, the enemy cannot discover the system. This creates what Sun Tzu calls 'divine manipulation of threads,' where multiple information streams create an undetectable but comprehensive intelligence network.",
+    "original_quote": "When all five kinds of spies are active, none can discover the system. This is called 'divine manipulation of threads' and is the treasure of a sovereign.",
+    "implication": "Effective competitive intelligence requires multiple simultaneous channels \u2014 industry contacts, former employees, customers, partners, and direct observation. No single source is sufficient, but coordinated multi-source intelligence creates strategic omniscience.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "intelligence_coordination",
+      "systematic_espionage",
+      "information_synthesis",
+      "strategic_omniscience"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Rulers who do not use spies are not wise generals, and such generals are not good assistants to their sovereign. Victory through espionage is fundamental to successful warfare \u2014 those who neglect intelligence gathering will consistently lose to those who prioritize it.",
+    "original_quote": "An enlightened ruler and a wise general who are able to get intelligent agents as spies are sure to achieve great results. This is essential in warfare and what armies depend upon to move.",
+    "implication": "Leaders who underinvest in competitive intelligence are strategically negligent. In competitive markets, superior information is the primary sustainable advantage \u2014 everything else can be copied or countered.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "strategic_negligence",
+      "competitive_advantage",
+      "leadership_wisdom",
+      "intelligence_investment"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Local spies are inhabitants of enemy territory who can provide ongoing intelligence about conditions, resources, and movements. They understand the cultural context and have natural cover for their activities, making them ideal for long-term intelligence gathering.",
+    "original_quote": "Local spies are inhabitants of a district, people whom we employ.",
+    "implication": "The best market intelligence comes from people already embedded in your target segments \u2014 existing customers, local partners, or industry veterans who understand the cultural and operational context that outsiders miss.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "local_knowledge",
+      "cultural_intelligence",
+      "embedded_sources",
+      "market_understanding"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Dead spies are expendable agents who carry false information to the enemy, knowing they will likely be captured or killed. Their mission is to plant deceptive intelligence that misleads enemy planning, even at the cost of their own exposure.",
+    "original_quote": "Dead spies are agents we purposely let the enemy capture so they can report false information.",
+    "implication": "Sometimes the most valuable use of an intelligence asset is deliberate exposure while carrying disinformation. Leaked false product roadmaps, fake strategic plans, or planted rumors can misdirect competitors' resource allocation more effectively than secrecy.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "disinformation",
+      "strategic_deception",
+      "sacrificial_assets",
+      "misdirection"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "Knowledge of the enemy's disposition can only be obtained from people \u2014 not from supernatural agencies, historical analogies, or mathematical calculations. Human intelligence is irreplaceable because only humans can understand intention, morale, and decision-making processes.",
+    "original_quote": "What enables the wise sovereign and the good general to strike and conquer, and achieve things beyond the reach of ordinary men, is foreknowledge. Now this foreknowledge cannot be elicited from spirits; it cannot be obtained inductively from experience, nor by any deductive calculation. Knowledge of the enemy's dispositions can only be obtained from other men.",
+    "implication": "Data analytics and market research models cannot replace human intelligence networks. Algorithms can process information but cannot read intentions, assess leadership quality, or understand the psychological factors that drive strategic decisions.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "human_intelligence",
+      "strategic_forecasting",
+      "decision_psychology",
+      "analytical_limitations"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "The cost of maintaining spies is minimal compared to the cost of armies, yet spies provide the intelligence that determines whether those armies will be effective. A small investment in espionage prevents massive waste in execution.",
+    "original_quote": "Of all rewards, none are more liberal than those given to secret agents; of all services, none should be held in such secrecy as those rendered by secret agents.",
+    "implication": "Intelligence operations should receive premium budgets relative to their size because they determine the effectiveness of all other investments. Better to spend heavily on understanding the competitive landscape than to waste resources on strategies based on incomplete information.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "cost_effectiveness",
+      "resource_optimization",
+      "strategic_leverage",
+      "intelligence_ROI"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 13: Use of Spies",
+    "source_date": "-500"
+  },
+  {
+    "content": "The ultimate goal of espionage is to know the enemy's plans before they are executed, allowing you to counter them before they can cause damage. Reactive intelligence is useful, but predictive intelligence is decisive \u2014 knowing what the enemy will do, not just what they have done.",
+    "original_quote": "If you know the enemy and know yourself, you need not fear the result of a hundred battles.",
+    "implication": "Competitive intelligence should focus on understanding competitors' future strategies, not just analyzing their past actions. The companies that win consistently are those who can anticipate and counter competitive moves before they happen, not just react faster afterward.",
+    "cluster": "intelligence_espionage",
+    "topics": [
+      "predictive_intelligence",
+      "strategic_anticipation",
+      "proactive_strategy",
+      "competitive_forecasting"
+    ],
+    "confidence": 0.95,
+    "source_type": "text",
+    "source_ref": "The Art of War, Chapter 3: Attack by Stratagem",
+    "source_date": "-500"
+  }
+]

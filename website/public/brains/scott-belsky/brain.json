@@ -1,0 +1,151 @@
+{
+  "brain_name": "Scott Belsky",
+  "brain_first_name": "Scott",
+  "brain_last_name": "Belsky",
+  "brain_slug": "scott-belsky",
+  "brain_possessive": "his",
+  "brain_source_description": "\"Implications\" newsletter",
+  "brain_source_url": "implications.com",
+  "brain_source_detail": "77 editions of the Implications newsletter",
+  "brain_tagline": "a curated collection of his most strategic thinking on originality, organizational design, agentic commerce, and the future of work",
+  "brain_bio": "Scott Belsky is a legendary entrepreneur and strategic thinker who has shaped product and organizational thinking across the tech industry. His \"Implications\" newsletter is where he shares his latest thinking on originality, organizational design, AI, and the future of work.",
+  "topic_examples": "Superhumanity, originality, AI agents, organizational design, longevity, emergence, decision-making, scaling",
+  "example_topic": "emergence",
+  "edition_count": 77,
+  "date_range": "May 2014 — April 2026",
+  "quick_start_prompt": "I'm thinking about whether to focus my company on serving large enterprises or build a platform for creators. What would Scott think?",
+  "skill_examples": {
+    "advise": "Should I raise my Series A or stay bootstrapped?",
+    "teach": "Explain agentic commerce to me.",
+    "debate": "Is remote work better for innovation?",
+    "connect": "Connect originality to organizational structure.",
+    "evolve": "How does Scott's thinking on AI agents evolve?",
+    "surprise": "No input needed — just run it.",
+    "coach": "I'm deciding whether to pivot my product. What should I be asking myself?",
+    "predict": "What happens to SaaS if AI agents do most of the work?"
+  },
+  "workflow_examples": {
+    "learning": "New to originality? Teach → evolve → coach to build deep understanding.",
+    "research": "Writing about AI agents? Predict the implications → debate the forecast → advise on action."
+  },
+  "supabase": {
+    "project_id": "uzediwokyshjbsymevtp",
+    "atoms_table": "scott_belsky_atoms",
+    "connections_table": "scott_belsky_connections"
+  },
+  "clusters": {
+    "ai_agents": {"name": "AI Agents & Agentic Commerce", "description": "Scott anticipates three waves of agentic commerce and explores how AI agents will reshape consumer experience, decision-making, and autonomous commerce."},
+    "product_design": {"name": "Product Design & Strategy", "description": "Product excellence hinges on design discipline, radical simplification, and the ability to see what others miss."},
+    "leadership": {"name": "Leadership & Organizational Design", "description": "Organizations amplify or constrain leadership. Structure, clarity, decision-making norms, and culture shape whether good people can do great work."},
+    "craft_originality": {"name": "Craft, Originality & Taste", "description": "Taste is learnable. Originality comes from taste + deep attention to craft. In a world of templates and shortcuts, craft differentiates."},
+    "consumer_ai": {"name": "Consumer AI & Social", "description": "Beyond enterprise tools, how will AI reshape consumer experiences, social apps, dating, education, and daily life?"},
+    "competitive_moats": {"name": "Competitive Advantage & Moats", "description": "Sustainable competitive advantage requires defensible moats — often hidden in execution discipline, taste, brand trust, or network effects."},
+    "platform_strategy": {"name": "Platform Strategy & Network Effects", "description": "Platforms succeed when they internalize network effects and reduce friction for participants."},
+    "creator_economy": {"name": "Creator Economy & Brands", "description": "Personalization is the next frontier. As AI makes mass customization possible, creators and brands must decide: standardize for scale, or personalize for connection?"},
+    "memory_knowledge": {"name": "Memory, Learning & Knowledge", "description": "As information abundance increases, memory and context become competitive advantages."},
+    "superhumanity": {"name": "Superhumanity & Agency", "description": "Two possible futures: humans become less important (Wall-E) or more important (Superhumanity). Scott bets on humans as tastemakers, contrarians, and agents of audacious change."},
+    "future_of_work": {"name": "Future of Work & Talent", "description": "Remote work, async collaboration, and AI-augmented knowledge workers are redefining productivity, hiring, and organizational effectiveness."},
+    "commerce": {"name": "Commerce & Economic Models", "description": "Every product is ultimately a commerce play — direct transactions, attention, or data."},
+    "vibe_coding": {"name": "Vibe Coding & Software Abundance", "description": "Code generation is no longer constrained by human hours. Disposable software, bespoke solutions, and AI-native development transform what's possible."},
+    "enterprise_ai": {"name": "Enterprise AI & Internal Tools", "description": "IT becomes the most important team. Companies vibe-code tailor-made software and deploy agentic tools."},
+    "osint": {"name": "OSINT & Information Warfare", "description": "Citizen-driven intelligence, strategic data noise, and the democratization of surveillance reshape geopolitics and journalism."},
+    "longevity": {"name": "Longevity & Health", "description": "Health wearables, blood testing, preventative scans, and AI health coaches give humans materially more insight into their own biology."}
+  },
+  "cluster_order": [
+    "ai_agents", "product_design", "leadership", "craft_originality",
+    "consumer_ai", "competitive_moats", "platform_strategy", "creator_economy",
+    "memory_knowledge", "superhumanity", "future_of_work", "commerce",
+    "vibe_coding", "enterprise_ai", "osint", "longevity"
+  ],
+
+  "synthesis": {
+    "hero_tagline": "Originals, agents, and organizational design",
+    "hero_updated": "Enriched with 75 atoms from interviews (Tim Ferriss, Lenny's Podcast, First Round Review, NFX, a16z, Design Better), The Messy Middle book frameworks, investment portfolio analysis (263+ companies), and biographical timeline.",
+
+    "first_principles": [
+      {"title": "Taste is the ultimate human moat.", "desc": "In a world where AI can make anything, the scarce resource is knowing what to make. Taste has three components: Inputs (what you seek out), Filters (what you block to preserve your unique lens), and Discernment (the choices you make). Every other Belsky idea flows downstream from this."},
+      {"title": "Agency beats optimization.", "desc": "Humans win not by calculating better than machines, but by believing impossible things and acting on them anyway. The naive belief that anything is possible — often born of ignorance — has changed the world more than any algorithm. AI optimizes; humans defy."},
+      {"title": "Craft survives abundance.", "desc": "When anything becomes ubiquitous, demand shifts to scarcity, craft, and meaning. Fast food didn't kill fine dining. AI slop won't kill originality. The market always re-prices toward what's hard to replicate."},
+      {"title": "The messy middle is where everything real happens.", "desc": "The space between initial excitement and eventual outcome is nonlinear, volatile, and psychologically brutal. Most failures happen because people quit here, not because the idea was wrong. Endurance — not strategy — separates winners."},
+      {"title": "Interface controls value.", "desc": "Whoever owns the interface layer captures the market, regardless of who built the underlying technology. This applies to products, platforms, and commerce. The interface is the moat."},
+      {"title": "Small teams with AI > large teams without it.", "desc": "Revenue per employee is the new vanity metric. AI collapses the talent stack, making 10-person companies capable of what 500-person companies used to do. The future is STBB: Small Team, Big Business."},
+      {"title": "The art of business is the things that don't scale.", "desc": "Technology handles what scales. Humans should spend their liberated time on curation, taste, storytelling, and relationships — the things that resist automation and create meaning."},
+      {"title": "Personal frustration is a signal for creative opportunity.", "desc": "Behance was born from Belsky's frustration with the disorganized creative world. The best startups don't start with market analysis — they start with someone personally annoyed enough to build a solution. Frustration is the most reliable founder fuel."},
+      {"title": "Resourcefulness is muscle; resources are carbs.", "desc": "Constraint breeds lasting capability. Teams that develop resourcefulness through scarcity outperform well-funded teams that throw money at problems. The best founders build in scarcity by choice."},
+      {"title": "The first mile determines everything.", "desc": "More than 30% of product energy should be devoted to the first 30 seconds of user experience. In that window, users are lazy, vain, and selfish — they won't invest effort to understand, they care how they appear, and they want immediate personal return."},
+      {"title": "Career is itself a messy middle.", "desc": "Goldman → Behance → Adobe → Benchmark (failed) → Adobe return → A24 — demonstrates that nonlinear paths, public missteps, and course corrections are features, not bugs."}
+    ],
+
+    "thinking_patterns": [
+      {"name": "Tension pairs", "desc": "Belsky frames ideas as productive contradictions: human vs. machine, scarcity vs. abundance, craft vs. speed. He doesn't resolve these tensions — he holds them and explores both sides."},
+      {"name": "Wave models", "desc": "He structures technology adoption in sequential waves (three waves of agentic commerce, five stages of agent maturity). The opportunity is seeing which wave you're in and positioning for the next one."},
+      {"name": "Physical-world analogies", "desc": "He maps digital phenomena to physical economics: AI slop is fast food, interfaces are real estate, taste requires a 'nutritious diet' of original ideas."},
+      {"name": "Implication chains", "desc": "He reasons in cascading second-order effects: 'If AI makes code free → disposable software → deployment tools become more valuable → security surfaces expand.'"},
+      {"name": "The humanity test", "desc": "Every technology claim gets filtered through: 'Does this make humans more important or less?' Belsky consistently bets on 'more.'"},
+      {"name": "The Do-Show-Explain hierarchy", "desc": "Doing something proactively for the user beats showing them how, which beats explaining. Most products over-invest in explanation."},
+      {"name": "Conviction over consensus", "desc": "Consensus gravitates toward the lowest common denominator. Conviction-driven decisions enable bold outcomes at the cost of looking foolish initially."},
+      {"name": "The Productivity-Creativity Inversion", "desc": "Machines are now better investments for productivity gains than humans. Humanity is disproportionately rewarded for creativity."},
+      {"name": "Investment as thesis validation", "desc": "Belsky's 263+ angel investments function as a live experiment validating his published beliefs. His money follows his writing."}
+    ],
+
+    "contrarian_positions": [
+      {"title": "Intermediaries were always overvalued.", "desc": "AI will disrupt intermediation faster than most people expect because we 'overestimated value of human relationships and endured unnecessary friction and fees for a human face.'"},
+      {"title": "Flaws are a feature, not a bug.", "desc": "In a world of AI-perfect content, deliberate imperfections become signals of authenticity. Proof of humanity becomes premium."},
+      {"title": "Volatility is the feature of great startups.", "desc": "Smoothing out the wild swings between despair and euphoria often kills what makes a company special."},
+      {"title": "Your best hires are the unpopular people.", "desc": "Promote the controversial risk-takers over the safe performers. People ahead of their time get punished in promotion discussions."},
+      {"title": "Malleable memory is good, actually.", "desc": "Perfect recall would be psychologically devastating. AI-powered memory should help us curate our past, not trap us in it."},
+      {"title": "Consumer AI has so far failed consumers.", "desc": "Despite all the hype, AI has been transformative for builders but only incrementally better for consumers."},
+      {"title": "Seat-based pricing is already dead.", "desc": "The entire SaaS model breaks when AI agents do the work. The future is outcome-based pricing."},
+      {"title": "Peace is overrated in organizations.", "desc": "Avoiding conflict creates organizational debt that compounds silently until it kills execution."},
+      {"title": "Process is a symptom, not a solution.", "desc": "Process accumulates when alignment breaks down. When a team is truly aligned, less process is needed."},
+      {"title": "Don't MVP what defines you.", "desc": "Cutting corners on your core differentiator teaches the market nothing about your real conviction."},
+      {"title": "The prompt era is ending; the controls era begins.", "desc": "The next phase gives creators direct manipulation controls that feel like natural extensions of existing workflows."},
+      {"title": "The final mile is an entirely different sport.", "desc": "The skills that got you 90% of the way become liabilities in the final stretch."},
+      {"title": "You never have to burn bridges to build new ones.", "desc": "Belsky's career transitions always preserved relationships and optionality."}
+    ],
+
+    "does_not_believe": [
+      {"title": "\"AI will commoditize everything equally.\"", "desc": "He believes commoditization is uneven — it hits execution first, then data, then interfaces last. Taste and craft increase in value."},
+      {"title": "\"Bigger teams build better products.\"", "desc": "He actively argues the opposite. Revenue per employee matters more than revenue."},
+      {"title": "\"Technology adoption is purely rational.\"", "desc": "Unsaid motivations — ego, status, identity flex — drive product usage more than utility."},
+      {"title": "\"Perfect memory is always better.\"", "desc": "Malleable memory is a feature of human psychology, not a bug."},
+      {"title": "\"The model is the moat.\"", "desc": "AI models are commodities. Data, graphs, behavioral context, and interface control are the real moats."},
+      {"title": "\"Disruption comes from better technology.\"", "desc": "Disruption comes from better interfaces and eliminating friction, not from superior tech."},
+      {"title": "\"You need consensus to move forward.\"", "desc": "Avoiding conflict creates organizational debt that compounds silently."}
+    ],
+
+    "would_not_say": [
+      {"title": "\"Move fast and break things\" without caveating craft.", "desc": "He believes in speed but never at the expense of quality."},
+      {"title": "\"AI will replace human creativity.\"", "desc": "This is the opposite of everything Belsky believes. AI makes human taste more valuable, not less."},
+      {"title": "\"Scale first, figure out the business later.\"", "desc": "He warns against 'rabbit companies' — hyper-growth with no sustainable economics."},
+      {"title": "\"Data doesn't matter, just build a better model.\"", "desc": "He's emphatic that proprietary data and behavioral graphs are the real moats."},
+      {"title": "\"Optimize for engagement.\"", "desc": "Products should optimize for joyspan — the duration and depth of positive emotional experience."}
+    ],
+
+    "biography": [
+      {"date": "2002–2006", "role": "Goldman Sachs", "lesson": "Found the right role (org design) within the wrong context. Saved $18K to fund his leap."},
+      {"date": "2006–2012", "role": "Behance", "lesson": "Born from personal frustration. No paycheck for two years. Grew to 55M users. Sold to Adobe for $150M."},
+      {"date": "2012–2016", "role": "Adobe VP", "lesson": "Rare acquired founder who stayed and thrived in a large company."},
+      {"date": "2016", "role": "Benchmark", "lesson": "Public misstep. Discovered he's a builder, not an evaluator. Exited within months."},
+      {"date": "2017–2025", "role": "Adobe CPO/CSO", "lesson": "Returned to lead products. Drove Firefly, Creative Cloud evolution, AI strategy."},
+      {"date": "2025–Present", "role": "A24 Partner", "lesson": "Left enterprise software for indie filmmaking. Maintained Adobe advisory role — never burn bridges."}
+    ],
+
+    "skills": [
+      {"name": "advise", "title": "Strategic Counsel", "desc": "Get advice on decisions grounded in this brain's frameworks.", "example": "/advise \"Should I raise my Series A or stay bootstrapped?\""},
+      {"name": "teach", "title": "Learn Through Their Lens", "desc": "Explain a concept using this brain's actual vocabulary and mental models.", "example": "/teach \"Explain agentic commerce to me.\""},
+      {"name": "debate", "title": "Steel-Man Both Sides", "desc": "Present a position or pit two ideas against each other; brain argues the counterpoint.", "example": "/debate \"Is remote work better for innovation?\""},
+      {"name": "connect", "title": "Bridge Ideas", "desc": "Find unexpected connections between concepts or synthesize multiple ideas into something new.", "example": "/connect \"Connect originality to organizational structure.\""},
+      {"name": "evolve", "title": "Intellectual Evolution", "desc": "Trace how this brain's thinking on a topic developed over time.", "example": "/evolve \"How does their thinking on AI agents evolve?\""},
+      {"name": "surprise", "title": "Show Me Something Unexpected", "desc": "Random high-quality atom for daily inspiration.", "example": "/surprise"},
+      {"name": "coach", "title": "Socratic Questions", "desc": "No answers — just the questions this thinker would ask you.", "example": "/coach \"I'm deciding whether to pivot my product.\""},
+      {"name": "predict", "title": "Implication Chains", "desc": "Trace the second and third-order effects of a trend or decision.", "example": "/predict \"What happens to SaaS if AI agents do most of the work?\""}
+    ]
+  },
+  "website": {
+    "tagline": "Product intuition, creative leadership, Adobe/VC lens",
+    "bio": "Chief Strategy Officer at Adobe, founder of Behance, early investor in Uber, Pinterest, and Perplexity. Author of The Messy Middle. Writes Implications, a newsletter on product, design, and the future of creative tools.",
+    "topics": ["Product & Design", "AI & Technology", "Leadership", "Creativity", "Business Models", "Culture & Teams"],
+    "price": 29
+  }
+}

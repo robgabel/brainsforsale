@@ -2,7 +2,7 @@
   "brain": {
     "name": "Peter Attia",
     "slug": "peter-attia",
-    "source": "\"The Drive\" podcast and \"Outlive\" book (peterattiamd.com)",
+    "source": "\"The Drive\" podcast and reviews of \"Outlive\" book (peterattiamd.com)",
     "atom_count": 73,
     "connection_count": 40,
     "cluster_count": 15,
@@ -11,8 +11,8 @@
       "extends": 34,
       "related": 6
     },
-    "last_updated": "2026-04-06",
-    "coverage": "400+ episodes of The Drive podcast, Outlive (2023), and detailed blog posts",
+    "last_updated": "2026-04-07",
+    "coverage": "400+ episodes of The Drive podcast, reviews of Outlive (2023), and detailed blog posts",
     "bio": "Peter Attia is a physician and longevity expert who has reshaped how high-performers think about health across decades. His \"Outlive\" book and \"The Drive\" podcast are the primary source for evidence-based longevity strategy, blending mechanistic biochemistry with practical behavior change.",
     "possessive": "his"
   },
@@ -2904,13 +2904,13 @@
       {
         "name": "debate",
         "title": "Steel-Man Both Sides",
-        "desc": "Present a health position; brain argues against it using real counterarguments.",
+        "desc": "Present a health position or pit two ideas against each other.",
         "example": "/debate \"Is muscle or cardio more important for longevity?\""
       },
       {
         "name": "connect",
-        "title": "The Serendipity Engine",
-        "desc": "Surface non-obvious connections between your topic and this brain's thinking.",
+        "title": "Bridge Ideas",
+        "desc": "Find unexpected connections between health topics or synthesize multiple ideas.",
         "example": "/connect \"How does continuous glucose monitoring inform training strategy?\""
       },
       {
@@ -2920,34 +2920,22 @@
         "example": "/evolve \"How has Peter's thinking on statins and pharmacology evolved?\""
       },
       {
-        "name": "apply",
-        "title": "Actionable Frameworks",
-        "desc": "Turn a framework into a step-by-step plan for your situation.",
-        "example": "/apply \"How do I structure my week for Zone 2, strength, and recovery?\""
-      },
-      {
-        "name": "mashup",
-        "title": "Synthesize & Combine",
-        "desc": "Combine multiple health ideas into a genuinely new thesis.",
-        "example": "/mashup \"Zone 2 + emotional resilience + metabolic health\""
-      },
-      {
-        "name": "brainfight",
-        "title": "Ideas in Conflict",
-        "desc": "Pit two health ideas head-to-head. Find agreements, contradictions, conditional victories.",
-        "example": "/brainfight \"Longevity vs. living now \u2014 where's the balance?\""
-      },
-      {
-        "name": "deep-dive",
-        "title": "Everything They Know",
-        "desc": "Exhaustive analysis \u2014 pull ALL atoms, map connections, synthesize.",
-        "example": "/deep-dive \"Peter's complete framework for cardiovascular disease prevention\""
-      },
-      {
         "name": "surprise",
         "title": "Show Me Something Unexpected",
         "desc": "Random high-quality atom for daily inspiration.",
         "example": "/surprise"
+      },
+      {
+        "name": "coach",
+        "title": "Socratic Questions",
+        "desc": "No answers \u2014 just the questions Peter would ask you about your health.",
+        "example": "/coach \"I'm 40 and want to start optimizing for longevity.\""
+      },
+      {
+        "name": "predict",
+        "title": "Implication Chains",
+        "desc": "Trace the second and third-order effects of a health trend.",
+        "example": "/predict \"What happens to healthcare if everyone has continuous biomarker monitoring?\""
       }
     ]
   }

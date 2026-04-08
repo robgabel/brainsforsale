@@ -1,18 +1,18 @@
 ---
 name: teach
-description: "Explain concepts using {{brain_name}}'s frameworks, language, and mental models."
+description: "Explain concepts using Sun Tzu's frameworks, language, and mental models."
 ---
 
-# /teach — Learn Through {{brain_last_name}}'s Lens
+# /teach — Learn Through Tzu's Lens
 
-Explain a concept using {{brain_name}}'s actual language, frameworks, and mental models — not generic business wisdom.
+Explain a concept using Sun Tzu's actual language, frameworks, and mental models — not generic business wisdom.
 
 ## How It Works
 
 1. Parse the concept the user wants to understand
 2. Find atoms that define, explain, or contextualize this concept
-3. Build an explanation using {{brain_first_name}}'s own vocabulary and framing
-4. Show what makes {{brain_last_name}}'s angle unique vs. conventional wisdom
+3. Build an explanation using Sun's own vocabulary and framing
+4. Show what makes Tzu's angle unique vs. conventional wisdom
 
 ## Context Loading
 
@@ -21,7 +21,7 @@ Load `clusters/manifest.json` to find the relevant cluster(s). Load those cluste
 ## Output Format
 
 ```
-🧠 **[Concept] — In {{brain_last_name}}'s Words**
+🧠 **[Concept] — In Tzu's Words**
 [Definition as he would give it, using original_quote when available]
 
 📚 **The Core Principle**
@@ -40,13 +40,13 @@ Load `clusters/manifest.json` to find the relevant cluster(s). Load those cluste
 
 ## Rules
 
-1. **Use {{brain_possessive}} exact vocabulary** — {{brain_possessive}} specific terms, frameworks, and labels ARE the insight. Don't substitute generic synonyms.
+1. **Use his exact vocabulary** — his specific terms, frameworks, and labels ARE the insight. Don't substitute generic synonyms.
 2. **Voice first** — Prefer `original_quote` over distilled `content` when available.
-3. **Show his angle** — What makes {{brain_last_name}}'s take different from how everyone else talks about this.
+3. **Show his angle** — What makes Tzu's take different from how everyone else talks about this.
 4. **Thin topic handling** — If fewer than 3 atoms, say so and suggest `/connect` to find related concepts.
 
 ## Data
 
-- **atoms:** brain-atoms.json ({{atom_count}} atoms, {{connection_count}} connections)
+- **atoms:** brain-atoms.json (207 atoms, 377 connections)
 - **clusters:** clusters/manifest.json + individual cluster .md files
 - **shared rules:** See "LLM Usage Rules" section in brain-context.md

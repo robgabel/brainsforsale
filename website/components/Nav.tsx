@@ -1,24 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { createClient } from "@/lib/supabase-browser";
-import type { User } from "@supabase/supabase-js";
+import { useState } from "react";
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
-  const supabase = createClient();
-
-  useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => setUser(data.user));
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => setUser(session?.user ?? null)
-    );
-
-    return () => subscription.unsubscribe();
-  }, [supabase.auth]);
 
   return (
     <nav className="sticky top-0 z-50 border-b border-[var(--border-whisper)] bg-white/85 backdrop-blur-xl">
@@ -36,26 +22,6 @@ export function Nav() {
           <Link href="/skills" className="text-[15px] font-medium text-body hover:text-deep-ink transition-colors">
             Skills
           </Link>
-          {user ? (
-            <Link
-              href="/dashboard"
-              className="rounded-lg bg-brain-indigo px-5 py-2.5 text-[15px] font-semibold text-white shadow-brain-cta transition-all hover:bg-indigo-hover active:scale-[0.98]"
-            >
-              Dashboard
-            </Link>
-          ) : (
-            <>
-              <Link href="/login" className="text-[15px] font-medium text-body hover:text-deep-ink transition-colors">
-                Sign in
-              </Link>
-              <Link
-                href="/login"
-                className="rounded-lg bg-brain-indigo px-5 py-2.5 text-[15px] font-semibold text-white shadow-brain-cta transition-all hover:bg-indigo-hover active:scale-[0.98]"
-              >
-                Get started
-              </Link>
-            </>
-          )}
         </div>
 
         {/* Mobile toggle */}
@@ -84,28 +50,6 @@ export function Nav() {
             <Link href="/skills" className="text-[15px] font-medium text-body" onClick={() => setMobileOpen(false)}>
               Skills
             </Link>
-            {user ? (
-              <Link
-                href="/dashboard"
-                className="rounded-lg bg-brain-indigo px-5 py-2.5 text-center text-[15px] font-semibold text-white"
-                onClick={() => setMobileOpen(false)}
-              >
-                Dashboard
-              </Link>
-            ) : (
-              <>
-                <Link href="/login" className="text-[15px] font-medium text-body" onClick={() => setMobileOpen(false)}>
-                  Sign in
-                </Link>
-                <Link
-                  href="/login"
-                  className="rounded-lg bg-brain-indigo px-5 py-2.5 text-center text-[15px] font-semibold text-white"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Get started
-                </Link>
-              </>
-            )}
           </div>
         </div>
       )}
