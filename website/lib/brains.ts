@@ -85,7 +85,11 @@ function loadBrains(): Brain[] {
   });
 }
 
-export const BRAINS: Brain[] = loadBrains();
+export const BRAINS: Brain[] = loadBrains().sort((a, b) => {
+  const lastA = a.name.split(" ").pop()?.toLowerCase() ?? "";
+  const lastB = b.name.split(" ").pop()?.toLowerCase() ?? "";
+  return lastA.localeCompare(lastB);
+});
 
 export function getBrain(slug: string): Brain | undefined {
   return BRAINS.find((b) => b.slug === slug);

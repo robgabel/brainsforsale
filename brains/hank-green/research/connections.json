@@ -1,0 +1,2564 @@
+[
+  {
+    "id": "74f69293-601c-405a-a5e1-d4e889dc7b3f",
+    "atom_id_1": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "atom_id_2": "bd08e9b7-eb8f-47c7-8636-72713c559c78",
+    "relationship": "related",
+    "confidence": 0.6
+  },
+  {
+    "id": "5a9c7231-6fb1-42f9-a2d8-b497e3bab727",
+    "atom_id_1": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "atom_id_2": "5f4ed49a-010e-4781-a5e2-b6b7e64697b0",
+    "relationship": "related",
+    "confidence": 0.6
+  },
+  {
+    "id": "05804769-7e1d-4b2b-b22b-10880b21265b",
+    "atom_id_1": "1086c9eb-7d89-4eb7-a842-ded67e08612d",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "related",
+    "confidence": 0.6
+  },
+  {
+    "id": "3385924f-3fc9-49c0-b588-42950d7a2223",
+    "atom_id_1": "7d47a6d9-8f49-4e75-a90c-e8b0408f519e",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "b39bd5f8-9c92-4af7-98b3-c01fa6107857",
+    "atom_id_1": "fb23d80f-229c-4613-b548-1caca8bd7dbd",
+    "atom_id_2": "d0193862-a595-4dc1-857c-4443973008bb",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "74bcead6-1049-411a-be53-82847a36df2a",
+    "atom_id_1": "5d852306-80d1-4579-a110-de67ce9bb529",
+    "atom_id_2": "2b2e4886-5288-4712-af91-14344a765b87",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "502ccca4-25ea-4ee1-881e-9ab269fb0d85",
+    "atom_id_1": "1ceefdb8-f222-4c13-b020-14a895ccfe8f",
+    "atom_id_2": "58f2291d-1abd-428b-a54d-ae1491dc5711",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "13bfd8a6-c650-4092-b915-fed46092eb6a",
+    "atom_id_1": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "atom_id_2": "7cc53472-6055-4955-8f22-d2ba2391b1a2",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "8a77996b-32b1-4169-a773-c6152cfd0a10",
+    "atom_id_1": "0e51c445-7bc7-46f4-959f-c4402cf368ed",
+    "atom_id_2": "15511e83-7eb9-4b3b-bea3-9507a71188ca",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "f1e7c0b4-1852-4981-bfda-09f8e4fa70f5",
+    "atom_id_1": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "atom_id_2": "d19bbc7a-339d-445d-a0d2-d1032721b334",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "3b7748d4-fdb0-4e02-b5ab-3e38af5c74bd",
+    "atom_id_1": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "related",
+    "confidence": 0.33
+  },
+  {
+    "id": "4c86d0af-86f9-4b52-800f-bbcfe38c114a",
+    "atom_id_1": "f79cd4cd-8ec9-47da-a129-c062652d9b22",
+    "atom_id_2": "cbe9e5be-a961-4902-af29-ac6d824986d2",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "bfbdc304-5845-4020-8862-1676ed40a2b2",
+    "atom_id_1": "952c472c-411d-43c0-b970-2fae5dd2c8b9",
+    "atom_id_2": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "50e0a701-2791-4655-b78f-2cba802cf510",
+    "atom_id_1": "2b2e4886-5288-4712-af91-14344a765b87",
+    "atom_id_2": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "3ccf302f-9267-4cc0-98bd-75af2c962db6",
+    "atom_id_1": "aa78f63b-5e89-4966-abb8-e3759a0cc52a",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "63f00a3e-1a31-4da9-b982-257ce4f16f42",
+    "atom_id_1": "5d852306-80d1-4579-a110-de67ce9bb529",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "9e44a225-6146-46f0-92a9-9f21e3c12fdc",
+    "atom_id_1": "aa78f63b-5e89-4966-abb8-e3759a0cc52a",
+    "atom_id_2": "315e7184-f996-4249-81a8-0eb665390280",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "23bb5839-9b65-4c83-852e-de4d66c74f55",
+    "atom_id_1": "7d2f7808-f6bb-4612-98fe-a3601698fa16",
+    "atom_id_2": "ecc0f7f8-908c-4a5e-b9f7-395051a9b5fd",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "77e27555-e789-4bbe-bd24-309d3d2b46a1",
+    "atom_id_1": "fd2f2f21-ba73-432e-93e9-267a72b30b05",
+    "atom_id_2": "952c472c-411d-43c0-b970-2fae5dd2c8b9",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "9e3dae6a-b1e6-4855-afaa-ac0c1b061217",
+    "atom_id_1": "8a48594c-25a3-4b0f-a2b7-f8d43adb9bf5",
+    "atom_id_2": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "e6118240-c7db-4776-9955-34b88654dbfc",
+    "atom_id_1": "048530b0-b997-4767-8960-7bea7080660d",
+    "atom_id_2": "59a5fc00-ec90-439d-83db-e55056e8968b",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "75dd5656-a61e-4bad-90f5-08250f363d58",
+    "atom_id_1": "913769cf-579e-474c-8fa9-adaf3833c90d",
+    "atom_id_2": "9b3a83d8-386d-44ad-aa3b-e12196cc6363",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "e1b77789-6d85-44ac-a4b7-401601db32a7",
+    "atom_id_1": "74ac3e9f-2ebc-4016-a13d-bae0fc1f15f7",
+    "atom_id_2": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "9043f4b9-7ab4-4978-a2f5-46ff0e20288d",
+    "atom_id_1": "234f59c9-33ac-4447-b86c-76042d166c4a",
+    "atom_id_2": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "6767bc84-9a21-4675-b7d4-d593c7c11dde",
+    "atom_id_1": "b83a37fe-1a50-4e02-8465-6e3ef297d563",
+    "atom_id_2": "52c85688-a413-4d84-aa9e-d9a8bb81641c",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "1efa245a-820d-4535-aab8-5f6a233d5df5",
+    "atom_id_1": "5d5f058e-bb7f-4e68-8c5e-c4a0a38c3e49",
+    "atom_id_2": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "317c81bf-1e6d-4796-8d55-4ab3a0eb1805",
+    "atom_id_1": "103e4a0e-0613-4ca1-8b7a-2608786798f6",
+    "atom_id_2": "1f8cd2c2-fb83-48db-abf4-8385c5c9aee1",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "861efd64-aaff-4b47-ab11-e14bc91a89e0",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "9b89941e-68b5-47f9-8e2e-baa0f6620242",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "2124148e-84df-47cf-adc7-0fc765cd2643",
+    "atom_id_1": "8a6019e5-ba7a-4434-91d8-4bfff3741402",
+    "atom_id_2": "bcb54637-a0dc-4525-9594-0681d073064f",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "b442601a-a5e6-4fd2-8ef6-34656927c168",
+    "atom_id_1": "89d70e61-3ae4-4bf7-a1c4-e885284235e2",
+    "atom_id_2": "5949bacf-a403-49ef-8f3b-a731fe691f31",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "0b1496c7-72ed-4eb4-bfbd-df916478d68c",
+    "atom_id_1": "ccbc5ee3-7ee3-4eea-94f5-94d9a653e7eb",
+    "atom_id_2": "bcb54637-a0dc-4525-9594-0681d073064f",
+    "relationship": "contradicts",
+    "confidence": 0.95
+  },
+  {
+    "id": "492f0be5-86d2-42b8-a8a7-f2618ea1a365",
+    "atom_id_1": "f82b4dcb-001b-4232-a423-ae5f0bc2eeb0",
+    "atom_id_2": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "6b422ebf-6e8f-406a-b77c-2c100a047d66",
+    "atom_id_1": "1421d0d0-2580-460f-8af7-e091ded5f38e",
+    "atom_id_2": "89d70e61-3ae4-4bf7-a1c4-e885284235e2",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "279f5202-baf8-4c70-ac21-5cce2ed02d6a",
+    "atom_id_1": "0fdd96d4-a01b-4a50-aef2-85e4255f85fe",
+    "atom_id_2": "1f8cd2c2-fb83-48db-abf4-8385c5c9aee1",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "b5b30092-3265-4a0b-a0a1-961abcdbfcff",
+    "atom_id_1": "cec032b6-bde8-4b4d-959d-d88be1a712d2",
+    "atom_id_2": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "4f5c7faf-965a-4db7-a079-5339996ebf0b",
+    "atom_id_1": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "atom_id_2": "86b88a70-2899-46ea-b274-bf90bf1026b3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "563d6b7e-62b7-4aa7-959a-e15c7c6b503a",
+    "atom_id_1": "5d7b8af9-00f7-4e64-926e-e87dd08714d2",
+    "atom_id_2": "9c9fdee6-0747-4f32-9460-85e438b47c26",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "aa3fd7a7-86a6-4572-aae2-a92a642a1dd6",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "a13d67de-ae92-4c08-b753-dfa57301f537",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "3738a080-4e68-47cc-88ab-988157f98d23",
+    "atom_id_1": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "atom_id_2": "134dce56-d45a-4720-a7fb-7afa16a44ce3",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "e221c3a3-ce73-4260-98a0-6c0406dfe592",
+    "atom_id_1": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "atom_id_2": "62deff97-e3e9-4592-a227-70e244cb1a23",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "dd50b663-7259-40b8-91f8-e77ae3af51b2",
+    "atom_id_1": "a9a63811-a093-4289-b986-348899426303",
+    "atom_id_2": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "acb441b4-7512-44f5-87ba-0220e8f98229",
+    "atom_id_1": "70ac21fc-f5f5-4f3c-a8b3-ad95564eab4c",
+    "atom_id_2": "32d05566-48eb-45c6-81a6-4dc2667aaae1",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "d16037c6-85c3-4ae5-b8f5-9408c76a0713",
+    "atom_id_1": "eebabe87-f851-4de8-a7ff-003052ec5abb",
+    "atom_id_2": "b9bdc005-3ca2-436e-af49-feff5934d17a",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "9e2f4f5a-dc9d-4334-947a-fa0c3dc08414",
+    "atom_id_1": "414acb7c-0cc2-42cf-8c10-44ac2eec2702",
+    "atom_id_2": "01d709d1-d605-4377-aa78-e667d9a9b203",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "8d292246-65e3-4b9e-9073-6f4957b528a9",
+    "atom_id_1": "c1683c78-59cf-47f3-bb2f-a6096f494faa",
+    "atom_id_2": "58d4add8-3e7e-42c5-8dc1-294d113ed0ad",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "2859d5b3-d2b0-4751-8618-1a4771277f58",
+    "atom_id_1": "1ffef2df-0db0-4081-b81c-9c7647482e5f",
+    "atom_id_2": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "a07c5d15-d698-4a77-a45b-403b03ccf731",
+    "atom_id_1": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "atom_id_2": "d0479c20-5120-45ef-a20d-aef722ad5486",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "f981d5a8-abca-4aa3-b8b9-bfb7f27072b7",
+    "atom_id_1": "1086c9eb-7d89-4eb7-a842-ded67e08612d",
+    "atom_id_2": "e123cd5d-355f-48c8-a9e4-e8c8bb73f14d",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "9b195fb7-4d65-4caa-ad11-46089ad08fab",
+    "atom_id_1": "2f057b29-137a-4797-852b-009a134fa380",
+    "atom_id_2": "81de387a-9476-4a21-a993-dd80a8067723",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "05e4a919-4aaf-4202-bf5d-c6fdd34dfce2",
+    "atom_id_1": "b99be4ee-3d42-46e8-8128-e46e2b2df7cf",
+    "atom_id_2": "2f057b29-137a-4797-852b-009a134fa380",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "15be414c-3e5c-4c13-9bc6-afbc8403eeb2",
+    "atom_id_1": "f0772ada-79a5-42b8-afe1-1443b8d2dbc2",
+    "atom_id_2": "76d7dd3e-4551-46f1-8bfd-947900cd0141",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "5ff42ff0-839a-4c71-b769-bcce803928ed",
+    "atom_id_1": "0cc79346-a815-46a5-8ce7-f0fa5ac7386b",
+    "atom_id_2": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "23bc4692-8c50-433e-a044-df4965b1c245",
+    "atom_id_1": "9720ddbd-3de4-4c13-96e1-98426512e97f",
+    "atom_id_2": "f6d09445-d46d-43c4-92a0-d8128b67b1a3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "1d06faba-79fa-4849-8692-ca7975ae991a",
+    "atom_id_1": "32b4e6e6-66fb-4910-a083-5a693c154812",
+    "atom_id_2": "81de387a-9476-4a21-a993-dd80a8067723",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "2ec489f9-5933-436e-ba7f-af2af89eba31",
+    "atom_id_1": "2a3d77af-83e7-4d14-b147-f12b1bc04799",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "ed5cad56-e696-49cd-aa42-e856de049b71",
+    "atom_id_1": "3f39d585-0251-4b84-b01e-6e846b5a495b",
+    "atom_id_2": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "c0701ebe-821f-4c72-aa0a-c1492e6c8c91",
+    "atom_id_1": "592fb61c-9753-473e-8873-14d5d31fc045",
+    "atom_id_2": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "d7bf5579-7c9c-46ff-9868-467866a2c6db",
+    "atom_id_1": "d712e996-99b8-48c4-9bbb-ad8f546894dc",
+    "atom_id_2": "bcc8bcd4-da1c-420e-8b08-ee1734b6438f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9eea2318-12f3-47bd-b233-6d3a052557f9",
+    "atom_id_1": "fb4d757d-b53a-48aa-9c2a-5e62b6d443ce",
+    "atom_id_2": "568d4d94-4a5a-4ec7-9172-740dea6385f8",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "132363e4-44ea-439e-88e9-26dfd3a30338",
+    "atom_id_1": "5f4ed49a-010e-4781-a5e2-b6b7e64697b0",
+    "atom_id_2": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "a3d95c89-1a47-4811-b591-f9605dfecdae",
+    "atom_id_1": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "atom_id_2": "e2334b48-f701-4361-ab49-8186451c46b5",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "2b302d53-c014-496c-a023-848a6cbe7410",
+    "atom_id_1": "97fe2853-c004-4638-82f6-2f8d5db8f520",
+    "atom_id_2": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "29b358c8-6355-42df-a77e-7f6b6cd56295",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "2a3d77af-83e7-4d14-b147-f12b1bc04799",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "0ec021f0-e63b-4358-893c-bb0392ef7e1c",
+    "atom_id_1": "45b6ad18-c2fa-4cbd-a153-25e38b40d40b",
+    "atom_id_2": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "92fbc76d-917c-4ada-a00e-945cdf5ac08a",
+    "atom_id_1": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "atom_id_2": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "a0ffd345-a31c-4118-9e13-43867f6ad1ef",
+    "atom_id_1": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "atom_id_2": "7cc53472-6055-4955-8f22-d2ba2391b1a2",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "b549dec4-e0ef-4df9-9526-66730573eb83",
+    "atom_id_1": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "atom_id_2": "078b64f7-c27c-44a6-aae3-7e743ad94a1a",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "80716eb3-042e-4dbe-9fe1-6ad28ba58647",
+    "atom_id_1": "821e90c1-3a88-46dd-9513-a0868654d17f",
+    "atom_id_2": "e61cfd03-4709-4b94-b87f-65fdbcddd910",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "876d0f3d-a9e4-4a49-9e45-58156aee89a9",
+    "atom_id_1": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "atom_id_2": "4b80e24e-b556-49b5-9154-aa796cd1dd89",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "ff7888f7-5b0d-43e1-8952-6ffe4b3e9c96",
+    "atom_id_1": "9755c3be-5eda-474b-9f46-de325523ecae",
+    "atom_id_2": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "0eeda909-fe38-42a0-969d-b32ee3c935eb",
+    "atom_id_1": "753a45eb-71db-484f-aeb2-fec442da3ffb",
+    "atom_id_2": "a0c43888-0120-4b27-9393-a48606001643",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "77cb5e19-022c-466a-aa6e-3f04dd1a89a3",
+    "atom_id_1": "58874822-413b-4261-b08c-eaa3e424c401",
+    "atom_id_2": "56061ede-338d-4049-8cc7-a0da62ed39cd",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "bec3d379-facd-47e8-ac3c-00a2971e3a7d",
+    "atom_id_1": "2df7e6d1-d27e-410d-bcca-e6e5ad9022dd",
+    "atom_id_2": "078b64f7-c27c-44a6-aae3-7e743ad94a1a",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "b9089bee-0ff9-4dc8-8b75-4c280022b721",
+    "atom_id_1": "654a511e-abcc-44f2-8ba5-91be9576f816",
+    "atom_id_2": "078b64f7-c27c-44a6-aae3-7e743ad94a1a",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "1590c877-203b-4450-b346-72ffc4682005",
+    "atom_id_1": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "atom_id_2": "e2048865-02d7-4a3a-b962-0455db3d337a",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "de4daa1d-06b5-4a35-83b3-125a770a2f2d",
+    "atom_id_1": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "1510566a-13a3-401c-8f48-d51a189f27a8",
+    "atom_id_1": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "atom_id_2": "2d7c840d-796f-4439-83b2-02fb2dd10f97",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "6a2dc6e2-9186-402e-84a2-4e82e80ab8da",
+    "atom_id_1": "80d895ce-647e-47e7-9db7-b53b897db731",
+    "atom_id_2": "869da7fd-fc5a-40d3-819e-0e19a22f7300",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "70becf05-9444-4112-9bea-9dada0ebdab5",
+    "atom_id_1": "bf4e7507-fe67-4952-aebf-a5c2ad416f16",
+    "atom_id_2": "ae2e8242-4fbf-4fb0-9a3b-fe0cf7cd5039",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "5ab4ed37-c951-4154-8cfb-061a7d0c000a",
+    "atom_id_1": "a67b358c-8aad-4d00-889c-936ba4a04a88",
+    "atom_id_2": "9bddae48-6547-41e3-92cc-22ea1f95a320",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "f81ba506-940d-4c9f-ad27-da6eb5df5d88",
+    "atom_id_1": "7e831575-0e58-46bb-b8de-1c26f369c4f0",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "750706d5-cff3-4c7a-a902-129a24eeb132",
+    "atom_id_1": "9062cde3-a12f-4233-b6b7-b2766e7bc047",
+    "atom_id_2": "0e51c445-7bc7-46f4-959f-c4402cf368ed",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "e73f43fd-18e6-4a8f-9909-cb700c2331b7",
+    "atom_id_1": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "atom_id_2": "a45da841-bc21-4a96-8b5a-21b77057ae6b",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "ce722727-f359-41ed-b680-3b7b45e6872a",
+    "atom_id_1": "0719247b-0aa3-40dc-b319-376ce80df77e",
+    "atom_id_2": "6b2e89c2-03b2-4f7c-bab6-384169d0f9ef",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "a686313e-930e-4cca-8d05-06d726cdf2da",
+    "atom_id_1": "d6534715-602f-403c-a25e-fdbfabc1ca2c",
+    "atom_id_2": "389400ce-1e5d-482e-8b2c-7526e666dbf7",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "af6a643e-ac5a-48c3-b8dc-bcbd82aaf364",
+    "atom_id_1": "f2913f38-9576-4cad-a976-908011f0afce",
+    "atom_id_2": "862e05d7-439b-4908-a3dc-13c4bec9765c",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "59ad2596-d513-4b30-b3d3-4f3216a48868",
+    "atom_id_1": "d6068b9c-fabc-41e6-8903-a0d5ed9b1e02",
+    "atom_id_2": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9011ddd8-2672-490e-ad76-55e0cd2fc128",
+    "atom_id_1": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "atom_id_2": "98b2425a-a1db-4bca-b401-d37a1b5439d7",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "851ee656-76a7-447c-9467-cddae5c2243d",
+    "atom_id_1": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "atom_id_2": "94dc9ac1-5327-43e5-8f8c-31337e866e48",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "4b99de40-e2ad-4e1a-adb6-010744ffaa74",
+    "atom_id_1": "5fa1d238-d298-4644-8895-4b17218544fb",
+    "atom_id_2": "94dc9ac1-5327-43e5-8f8c-31337e866e48",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "7c9199e8-7f08-49ed-8540-4e9021b963fb",
+    "atom_id_1": "56fdd686-2c90-4372-b474-6ce6f75fa4df",
+    "atom_id_2": "bd08e9b7-eb8f-47c7-8636-72713c559c78",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "4e17f4ca-8d06-4434-99f1-b7a8f483f948",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "4c2656b1-4077-4908-a3ed-4c694480fa9c",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "beb67afd-36d1-4952-a4b3-57c5c84ae00c",
+    "atom_id_1": "47cf48da-13fd-4e28-bc75-faf79331658d",
+    "atom_id_2": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "3c972394-44f1-43c5-b019-c45251c8843e",
+    "atom_id_1": "39254341-f7ea-4e9d-8f5d-761ab7522d18",
+    "atom_id_2": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "8ab24c6d-cbc6-487a-9d49-50ac1b7cbb85",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "044e6efd-ca96-43bc-bcba-29089d8a41e2",
+    "atom_id_1": "ecc0f7f8-908c-4a5e-b9f7-395051a9b5fd",
+    "atom_id_2": "6d1c181b-211f-4372-8e7d-5ddaa6977746",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "e8bfa455-6f2c-478b-bc23-282c6317bbe1",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "f54348a1-1403-435a-8684-795cdb10f88a",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "bae1e990-32f0-4400-800c-8d973010c21c",
+    "atom_id_1": "47cf48da-13fd-4e28-bc75-faf79331658d",
+    "atom_id_2": "eebabe87-f851-4de8-a7ff-003052ec5abb",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "2b5fb625-5339-418d-ac11-86dcc8e14a31",
+    "atom_id_1": "74ac3e9f-2ebc-4016-a13d-bae0fc1f15f7",
+    "atom_id_2": "b9bdc005-3ca2-436e-af49-feff5934d17a",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "d3d2b81c-8f93-45e7-9114-3640a10fb2ba",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "2f057b29-137a-4797-852b-009a134fa380",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "f7fdda78-9e89-4ff9-8532-1a7ce65706b0",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "3a64709e-d285-4eeb-89c0-2f6c5701918b",
+    "atom_id_1": "ecc0f7f8-908c-4a5e-b9f7-395051a9b5fd",
+    "atom_id_2": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "23365e6d-0636-4cdc-bee0-b33f54f977d4",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "b560249a-58b0-487f-b585-548bc7393b30",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "58874822-413b-4261-b08c-eaa3e424c401",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "fb3df6f9-8ca1-4f89-8d65-a1342a00f946",
+    "atom_id_1": "913769cf-579e-474c-8fa9-adaf3833c90d",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "3471062d-eea4-4d04-be54-d0b0ef5ee3c5",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "b9732768-5730-461a-bda7-92e17410ff2b",
+    "atom_id_1": "913769cf-579e-474c-8fa9-adaf3833c90d",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "2a0fd519-9d68-41e7-b53f-e8af2381703a",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "07ba91f4-bcd8-40ae-b49c-6b832b6c42c9",
+    "atom_id_1": "74ac3e9f-2ebc-4016-a13d-bae0fc1f15f7",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "316c4200-13e1-4411-85b1-8df34886f069",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "2300e9df-5056-47ea-9f4a-0f3fdfeff9d8",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "884ea9bf-62ba-4f87-b7bc-f5a5c6867558",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "22134a3a-c586-4eb2-9600-2cb59d3c25ad",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "52d3316a-6fa0-44bc-930f-62a5a2e8781a",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "f2ea3e84-65ac-4760-8528-4cbb34311014",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "b5c3b270-cd68-4ae4-aeda-36b60733bd23",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "7fca8a06-67ac-42e9-9656-a8ee88cdaf4b",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "835d61d8-f6b6-4405-94eb-c09783e21457",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "a9b7ca29-2a32-474b-9f66-6778072b5c37",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "b9bdc005-3ca2-436e-af49-feff5934d17a",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "af1bcfb9-92a5-4c1b-8fea-8026b210b642",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "58d4add8-3e7e-42c5-8dc1-294d113ed0ad",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "ea04137e-378f-4523-9b84-388c90e264b7",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "581ba6b2-e14f-4f03-ae02-77cd9871b32d",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "291fec1f-19cf-4067-8746-94f4d9a89c00",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "2f057b29-137a-4797-852b-009a134fa380",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "26f28654-815d-44e2-ac6a-2060b3fd4cc0",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "3f39d585-0251-4b84-b01e-6e846b5a495b",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "478124c7-705d-4678-a475-35ba033b6fc2",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "bde0eb86-2443-4407-99be-51108da816fe",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "8cc7f23b-8d04-4d62-acc1-1596ba036e3e",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "907fd164-6f31-48a3-b52e-45193c79509a",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "2df7e6d1-d27e-410d-bcca-e6e5ad9022dd",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "b43d6069-2372-40db-b3aa-d3dd9cbf9f98",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "ed88aa3f-d19d-4366-a866-b0f6b2423ec1",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "f7727e88-88a0-4894-b67b-56be92facc5e",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "64145cf5-bbb8-42d0-80cc-bc025df64975",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "9429ab6e-70fd-4830-bec9-c03888c8b2e4",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "e00bead3-a46d-40e9-b484-7f0a3884273d",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "2fa86230-87f5-4250-bd3c-dda4034c5567",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "54f60ee3-0f00-4bce-98a3-b1672f3d2805",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "0bca0250-db9a-4f59-a7a3-6b21717bf491",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "fd588aa7-8dfb-4f56-9524-eea33e404e85",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "60b06281-c366-4d53-bb2f-e235f48b049d",
+    "atom_id_1": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "atom_id_2": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "18180046-b4a4-4c60-99ed-25b9ecf79541",
+    "atom_id_1": "d0b60416-0c07-42a2-8dda-04a3f66ed56f",
+    "atom_id_2": "8924ee5e-2bac-4320-b6ea-a9b40ca40ed7",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "1feb22ce-9123-4dba-8ae5-a93dffc4ce2d",
+    "atom_id_1": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "atom_id_2": "eebabe87-f851-4de8-a7ff-003052ec5abb",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9d392841-5ad1-452c-be53-f752569ac277",
+    "atom_id_1": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "atom_id_2": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "e3af3111-804c-47b8-b221-c25cc082b62c",
+    "atom_id_1": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "atom_id_2": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "3c62d90a-859c-494e-be66-baf522c8f5b2",
+    "atom_id_1": "a65e1ba0-20c5-4f36-9cea-cdcf26970eec",
+    "atom_id_2": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "a8407d41-125c-4ec7-8b04-45332b89d3a7",
+    "atom_id_1": "134dce56-d45a-4720-a7fb-7afa16a44ce3",
+    "atom_id_2": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "8b7291eb-bbe3-4015-8acd-f85992b0df35",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "54917980-dc7b-43ec-be30-426c894faff3",
+    "atom_id_1": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "atom_id_2": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "47d5c61d-5920-4861-8a1b-a774446c4f2d",
+    "atom_id_1": "869da7fd-fc5a-40d3-819e-0e19a22f7300",
+    "atom_id_2": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "043b1675-b19c-41b9-a7c8-61431c2e4f3e",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "0e51c445-7bc7-46f4-959f-c4402cf368ed",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "a1fa9a34-c20a-4005-b571-9995c64cf451",
+    "atom_id_1": "fafcf842-ab65-4261-9056-d3e3f7850b22",
+    "atom_id_2": "18384b6a-dc06-436d-b798-e09c12e1fc5a",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "ac73e575-8ff6-4158-b158-076a6334e18f",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "29bfc733-c116-41cc-abf8-2626309d63dc",
+    "atom_id_1": "134dce56-d45a-4720-a7fb-7afa16a44ce3",
+    "atom_id_2": "e4437d75-9d7b-4436-a6e9-902304eaba24",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "19b244ee-958d-48ed-9d66-680ac99b03ba",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "b2762662-00b6-41f1-80aa-540b537b2de3",
+    "atom_id_1": "a13d67de-ae92-4c08-b753-dfa57301f537",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "8b78be30-177c-4794-8045-308b646d9811",
+    "atom_id_1": "7fca8a06-67ac-42e9-9656-a8ee88cdaf4b",
+    "atom_id_2": "1ffef2df-0db0-4081-b81c-9c7647482e5f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "53e32770-6b0f-41a5-9319-87863d0fac23",
+    "atom_id_1": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "atom_id_2": "b9bdc005-3ca2-436e-af49-feff5934d17a",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "46171d79-85b5-45ab-bed7-ccfe4715c651",
+    "atom_id_1": "f54348a1-1403-435a-8684-795cdb10f88a",
+    "atom_id_2": "2f057b29-137a-4797-852b-009a134fa380",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "ed885b2f-b3da-406c-a83d-1c6121bb9ec6",
+    "atom_id_1": "a878fa8e-cc63-40ba-a52a-dba7e83e158b",
+    "atom_id_2": "447dd15b-8cbf-475f-ba5b-d3b558cc0b15",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "34d84523-1efe-4973-ab08-34698cc510aa",
+    "atom_id_1": "58f2291d-1abd-428b-a54d-ae1491dc5711",
+    "atom_id_2": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "f849c17d-5910-4fa2-ac22-83d2fac30483",
+    "atom_id_1": "1ceefdb8-f222-4c13-b020-14a895ccfe8f",
+    "atom_id_2": "592fb61c-9753-473e-8873-14d5d31fc045",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "b171617d-ad62-401e-bbc4-8db13dab1bbd",
+    "atom_id_1": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "atom_id_2": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "a9c25036-b7ac-41ba-a7ee-6508f2928a81",
+    "atom_id_1": "65b7ac5d-6167-4a25-ae3f-f9bfe20e98f7",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "4d38ce73-2e82-4375-986b-04c44286efcf",
+    "atom_id_1": "cc25e5f4-4b95-48bc-a8cc-23170aa503ef",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "0b7b01fc-a00a-44c8-aa8b-04310b2d8828",
+    "atom_id_1": "fc9a8bec-2745-4889-9ba5-26bb9debf61b",
+    "atom_id_2": "591bc058-7733-460e-b47d-d117c42c624c",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "746f866a-5911-4bb6-8f70-ef5aa6129fa8",
+    "atom_id_1": "27ce12b5-3172-4354-b66a-8afa78adeff8",
+    "atom_id_2": "18384b6a-dc06-436d-b798-e09c12e1fc5a",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "cd81c7bf-982e-485d-871c-0ac1e4c399ab",
+    "atom_id_1": "3566883a-1494-40b9-95b1-d00ba7fde9d4",
+    "atom_id_2": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "f7b3e77d-4fb8-4221-b79a-6d620c27c5b3",
+    "atom_id_1": "e4437d75-9d7b-4436-a6e9-902304eaba24",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "8984e23a-55ec-45aa-bcbc-2f10f5683410",
+    "atom_id_1": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "atom_id_2": "5a9bd697-45fa-4aa8-9d7b-417ded027d80",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "b8a673e6-b33b-4fc0-87d6-8b122ef623a3",
+    "atom_id_1": "d0193862-a595-4dc1-857c-4443973008bb",
+    "atom_id_2": "862e05d7-439b-4908-a3dc-13c4bec9765c",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "82b768c8-5cfe-4533-bf8d-d1ea6984279d",
+    "atom_id_1": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "atom_id_2": "eb44bd17-8d42-46d9-9a32-396de0df2503",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "6948f115-7330-43cd-a73a-7be101856761",
+    "atom_id_1": "0cbd2495-f971-484b-aef5-c2e4c6a876f1",
+    "atom_id_2": "bd08e9b7-eb8f-47c7-8636-72713c559c78",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "104efca3-2dbf-473c-aa83-7a868bea4e8a",
+    "atom_id_1": "ad14e345-1e62-4e2e-941d-17fa5907fd3f",
+    "atom_id_2": "262ba5ea-fbdc-4daa-a3b8-944f6207419c",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "10ec4bbb-face-4f38-b2cd-1f97e53a4c4d",
+    "atom_id_1": "8ac3566b-f8b9-4f25-aab3-c80f1800148f",
+    "atom_id_2": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "8bbc9679-2344-4420-b143-dc6fe87f8832",
+    "atom_id_1": "01073eb2-b1ba-46dc-b04b-a107f0c369f5",
+    "atom_id_2": "262ba5ea-fbdc-4daa-a3b8-944f6207419c",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "43fc83b8-82fa-4166-8067-8e010775f78c",
+    "atom_id_1": "913769cf-579e-474c-8fa9-adaf3833c90d",
+    "atom_id_2": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "4767e10e-b816-4ed9-a1f8-b1dac48b2724",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "558a715d-ff9f-41bb-952d-6eeeb2ea91d5",
+    "atom_id_1": "048530b0-b997-4767-8960-7bea7080660d",
+    "atom_id_2": "a13d67de-ae92-4c08-b753-dfa57301f537",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "54bb4993-e2c1-48a2-ba9a-d3a883e6ed99",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "fc2e89e4-1155-416a-89de-06717f375128",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "88de7070-1d03-4898-8f04-52786a933a42",
+    "atom_id_1": "39254341-f7ea-4e9d-8f5d-761ab7522d18",
+    "atom_id_2": "65b7ac5d-6167-4a25-ae3f-f9bfe20e98f7",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "d2f1bd8a-f195-4654-9261-6ef3324afb4e",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "58f2291d-1abd-428b-a54d-ae1491dc5711",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "5548b014-808f-401c-9bc1-20e0ef019d21",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "b6fe6ed1-b865-4bd3-a41a-41aba421af7d",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "8455d843-24b9-4ad6-baa9-cad01043b2e0",
+    "atom_id_1": "952c472c-411d-43c0-b970-2fae5dd2c8b9",
+    "atom_id_2": "5d852306-80d1-4579-a110-de67ce9bb529",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "fd5ce9cb-dfc0-4104-a82e-28c4ef3165c9",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "5aa3c9d6-faff-4840-ac2e-cb9c82ea42aa",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "2362714c-5b4b-4cd8-815c-53b98fe73f44",
+    "atom_id_1": "d3c15d30-34d1-4340-98d3-ac0aa356bb7e",
+    "atom_id_2": "1ac3a07d-4b36-4570-8b9a-d461b7405260",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "c6430762-8ed8-41a7-9d17-8ebcd40ff024",
+    "atom_id_1": "39254341-f7ea-4e9d-8f5d-761ab7522d18",
+    "atom_id_2": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "ffd73054-5934-4707-95ab-e3fbc9309f5b",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "2a3d77af-83e7-4d14-b147-f12b1bc04799",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "d695ce0b-a3fc-469d-8211-f5644c167c80",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "ad84b469-fd81-49a3-8b1c-5fbe02f3ec67",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "29054bcc-ee00-4485-8a2d-65c69c429337",
+    "atom_id_1": "74ac3e9f-2ebc-4016-a13d-bae0fc1f15f7",
+    "atom_id_2": "9bddae48-6547-41e3-92cc-22ea1f95a320",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "d7e18f7b-0d94-4c88-94a9-21de69259c61",
+    "atom_id_1": "952c472c-411d-43c0-b970-2fae5dd2c8b9",
+    "atom_id_2": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "085441f6-811b-483c-86ed-4c4208957fdc",
+    "atom_id_1": "74ac3e9f-2ebc-4016-a13d-bae0fc1f15f7",
+    "atom_id_2": "27ce12b5-3172-4354-b66a-8afa78adeff8",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "decc5096-8f38-470c-ae9f-4b96cee860a0",
+    "atom_id_1": "952c472c-411d-43c0-b970-2fae5dd2c8b9",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "b26fffc6-1a37-4c20-85ff-281a200eccc8",
+    "atom_id_1": "43c6c50c-6e04-46a5-81e1-146f38d8e725",
+    "atom_id_2": "e4437d75-9d7b-4436-a6e9-902304eaba24",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "8fe8d1c4-b592-47ba-8d09-d57346333002",
+    "atom_id_1": "315e7184-f996-4249-81a8-0eb665390280",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "bbff45e0-5dc7-42d9-9575-4f670807d5de",
+    "atom_id_1": "ad14e345-1e62-4e2e-941d-17fa5907fd3f",
+    "atom_id_2": "f79cd4cd-8ec9-47da-a129-c062652d9b22",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "76cdd786-b05e-4f19-8e9d-5ff8901a75e8",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "fcb0e046-ae33-4d9c-98b9-33756a10a817",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "89b9bfec-0be3-45c0-b219-efb1b9f15c15",
+    "atom_id_1": "38c063c7-6bc0-41f9-8274-284340a16373",
+    "atom_id_2": "65b7ac5d-6167-4a25-ae3f-f9bfe20e98f7",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "12f33939-e00a-453e-9ee1-12de82377eb0",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "70ac21fc-f5f5-4f3c-a8b3-ad95564eab4c",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "22f255ae-f917-425b-87f1-754d219ffd3a",
+    "atom_id_1": "52c85688-a413-4d84-aa9e-d9a8bb81641c",
+    "atom_id_2": "01d709d1-d605-4377-aa78-e667d9a9b203",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "4a760f2c-d1e5-4205-86e7-e0aef0c1c7d9",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "d02c0b84-47ec-484e-8ea8-65e497d98e98",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "2f057b29-137a-4797-852b-009a134fa380",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "a29da48a-9370-49b7-85f3-97cfdc181f1c",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "560436cc-0a1f-4b2c-959b-73adede8ada4",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "63058ad0-cd4f-4909-8312-162c97342777",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "fd0d836a-240f-4447-a257-80e1ee0f992a",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "7694744e-1e2f-447e-905a-a8fa3f0da14c",
+    "atom_id_1": "a53fa747-a809-4a2f-82f8-21c1c57359e0",
+    "atom_id_2": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "7f772eab-b1fc-4691-b6c2-cbe1574088f9",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "8be5adad-faca-4b98-8103-dab24206637d",
+    "atom_id_1": "f82b4dcb-001b-4232-a423-ae5f0bc2eeb0",
+    "atom_id_2": "869da7fd-fc5a-40d3-819e-0e19a22f7300",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "24b7d299-d9e0-4e73-8207-0a84ad7c4387",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "a029a0b8-e270-468e-91c1-b0fa4fae7ae9",
+    "atom_id_1": "52c85688-a413-4d84-aa9e-d9a8bb81641c",
+    "atom_id_2": "65d5afdc-8a38-4518-a154-08ff901cb00e",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "55e0b378-250d-4e22-96cd-dd7a68ae5817",
+    "atom_id_1": "6adb9cc6-800a-4e05-990d-a024377c2629",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "2804d151-3fd6-446b-8367-7161e81a4f00",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "c73fb253-4496-4eab-aa13-40dc80d02293",
+    "atom_id_1": "412e85e5-4059-40f4-96e6-b024cb189117",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "3c6dc6f2-dfd9-435d-a109-f024dac142bb",
+    "atom_id_1": "8a6019e5-ba7a-4434-91d8-4bfff3741402",
+    "atom_id_2": "8ac3566b-f8b9-4f25-aab3-c80f1800148f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "b8bc8cb5-8f44-4c19-8bc9-adb125d9abba",
+    "atom_id_1": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "atom_id_2": "1ceefdb8-f222-4c13-b020-14a895ccfe8f",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "7740cc00-16c1-44a9-98c1-698381abd030",
+    "atom_id_1": "a13d67de-ae92-4c08-b753-dfa57301f537",
+    "atom_id_2": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "64d21f31-5169-4c82-a081-d8b33d485439",
+    "atom_id_1": "65b7ac5d-6167-4a25-ae3f-f9bfe20e98f7",
+    "atom_id_2": "58f2291d-1abd-428b-a54d-ae1491dc5711",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "2eafe44f-9525-45a4-9f21-eeab8ec4a40b",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "1ffef2df-0db0-4081-b81c-9c7647482e5f",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "ab9299ba-b1f1-4c5a-8346-f699cbcfcdd4",
+    "atom_id_1": "f2ea3e84-65ac-4760-8528-4cbb34311014",
+    "atom_id_2": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "16c9444e-105e-41b3-81e7-d074e1f05e57",
+    "atom_id_1": "165ffd33-4136-4df9-aa61-39439fab43a9",
+    "atom_id_2": "a13d67de-ae92-4c08-b753-dfa57301f537",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "aaa6b431-8522-4df9-bce9-719132d14f19",
+    "atom_id_1": "f98ff5f1-791b-4331-9711-9cf661433c5c",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "07d7a71c-a1bd-48b6-a7ec-0e9fccc129aa",
+    "atom_id_1": "22134a3a-c586-4eb2-9600-2cb59d3c25ad",
+    "atom_id_2": "bf4e7507-fe67-4952-aebf-a5c2ad416f16",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "5849dbc1-dcb6-4e24-adab-387c360a4c06",
+    "atom_id_1": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "atom_id_2": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "efd5dca1-1cb2-4e8c-ad23-4dca62e95263",
+    "atom_id_1": "e2048865-02d7-4a3a-b962-0455db3d337a",
+    "atom_id_2": "ab9b2efc-358e-4dbb-a64d-b7575ae614f3",
+    "relationship": "contradicts",
+    "confidence": 0.95
+  },
+  {
+    "id": "49c656f3-3363-4641-8c55-9f3340bf4072",
+    "atom_id_1": "22134a3a-c586-4eb2-9600-2cb59d3c25ad",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "03556ca7-52a2-4f55-82c2-7b502a9250e3",
+    "atom_id_1": "3bac2af0-5dc1-4b47-8b5c-6eab856aa410",
+    "atom_id_2": "9062cde3-a12f-4233-b6b7-b2766e7bc047",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "041bc6b1-7559-46ec-90a5-0dbe55a7ff1a",
+    "atom_id_1": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "atom_id_2": "d0b60416-0c07-42a2-8dda-04a3f66ed56f",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "d73fcac1-bfa6-4b1f-b47f-04d1eadd7657",
+    "atom_id_1": "f2ea3e84-65ac-4760-8528-4cbb34311014",
+    "atom_id_2": "389400ce-1e5d-482e-8b2c-7526e666dbf7",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "a7ea2a8f-3853-447e-9fa2-23b3e2d00a41",
+    "atom_id_1": "60c41d66-150d-4864-b1a2-063c0d4ce492",
+    "atom_id_2": "0cbd2495-f971-484b-aef5-c2e4c6a876f1",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "5faabbcd-0935-469c-b95a-b0fb2947c09d",
+    "atom_id_1": "fc2e89e4-1155-416a-89de-06717f375128",
+    "atom_id_2": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "bd0a130e-f279-4ec2-bb0c-f12e87dd9ffa",
+    "atom_id_1": "134dce56-d45a-4720-a7fb-7afa16a44ce3",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "34d5a125-3bf8-4490-9de4-eb192466c9cd",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "5d852306-80d1-4579-a110-de67ce9bb529",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "c801de77-73a3-42fe-8fbb-46f995ce6f9e",
+    "atom_id_1": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "atom_id_2": "a65e1ba0-20c5-4f36-9cea-cdcf26970eec",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "cc1a9f18-1333-4db7-86a1-aed1a273a920",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "e9357550-e2a7-4db7-9c51-2a982bda0f93",
+    "atom_id_1": "f54348a1-1403-435a-8684-795cdb10f88a",
+    "atom_id_2": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "e53ee5d9-a87f-4358-9932-be678b031302",
+    "atom_id_1": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "atom_id_2": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "68a7a8ee-6341-4033-84c4-619edde29ed7",
+    "atom_id_1": "65b7ac5d-6167-4a25-ae3f-f9bfe20e98f7",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "b7db8703-299d-4f49-9f2e-6eca2ad1f36b",
+    "atom_id_1": "a878fa8e-cc63-40ba-a52a-dba7e83e158b",
+    "atom_id_2": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "1ccc0fc1-70af-4bb7-97d0-6094545bbcac",
+    "atom_id_1": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "atom_id_2": "e2048865-02d7-4a3a-b962-0455db3d337a",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "3d9e2704-be5a-4325-b81f-09e3fe6e4377",
+    "atom_id_1": "7fca8a06-67ac-42e9-9656-a8ee88cdaf4b",
+    "atom_id_2": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "30aaa1c7-2279-44f3-8ed1-dd332ba0ebc5",
+    "atom_id_1": "a878fa8e-cc63-40ba-a52a-dba7e83e158b",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "2d9946c7-25c9-463a-aaef-189d471b6dcd",
+    "atom_id_1": "7fca8a06-67ac-42e9-9656-a8ee88cdaf4b",
+    "atom_id_2": "9062cde3-a12f-4233-b6b7-b2766e7bc047",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "98743cb4-fd09-480a-b4fb-553ebdf601ba",
+    "atom_id_1": "a878fa8e-cc63-40ba-a52a-dba7e83e158b",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "0c7c2627-99e7-489c-af85-1ecb5820215a",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "031ba083-75e2-404e-9bab-b7ad48779e18",
+    "atom_id_1": "eddd5453-eee6-461b-8021-d485d5685a26",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "10d8f20d-a4de-414d-90e5-6fab4742dbde",
+    "atom_id_1": "58f2291d-1abd-428b-a54d-ae1491dc5711",
+    "atom_id_2": "56fdd686-2c90-4372-b474-6ce6f75fa4df",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "7fec2c8a-ed57-4cf7-8a4f-d38623de7e76",
+    "atom_id_1": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "atom_id_2": "262ba5ea-fbdc-4daa-a3b8-944f6207419c",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "0d2c93a5-cf8a-46c5-9def-e802c0aa8465",
+    "atom_id_1": "c1683c78-59cf-47f3-bb2f-a6096f494faa",
+    "atom_id_2": "76d7dd3e-4551-46f1-8bfd-947900cd0141",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9861e82c-bd84-4cd5-aa99-f481b38461fa",
+    "atom_id_1": "1ffef2df-0db0-4081-b81c-9c7647482e5f",
+    "atom_id_2": "b99be4ee-3d42-46e8-8128-e46e2b2df7cf",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "f9430244-ab70-421f-a565-c2ba98176713",
+    "atom_id_1": "1ffef2df-0db0-4081-b81c-9c7647482e5f",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "8feacbe0-bfa1-4059-a72a-56eb01538863",
+    "atom_id_1": "32d05566-48eb-45c6-81a6-4dc2667aaae1",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "312401a0-ccf0-4e4b-bdf7-e88a8675b140",
+    "atom_id_1": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "atom_id_2": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "cceefd6e-4695-4b5b-a625-c67bf3807067",
+    "atom_id_1": "b9bdc005-3ca2-436e-af49-feff5934d17a",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "b7b1477e-e64f-4bcf-8cb5-8e801582a967",
+    "atom_id_1": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "atom_id_2": "6142f33f-e1f5-49d0-b2d0-01229f8b864b",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "bbbd2861-7bee-4f47-9080-918f0b6e17a9",
+    "atom_id_1": "2b2e4886-5288-4712-af91-14344a765b87",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.95
+  },
+  {
+    "id": "f38d975a-7e29-4806-a445-5fba7d4c11d0",
+    "atom_id_1": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "atom_id_2": "0719247b-0aa3-40dc-b319-376ce80df77e",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "7ced1839-fd11-49d0-8694-287e62bde018",
+    "atom_id_1": "b6fe6ed1-b865-4bd3-a41a-41aba421af7d",
+    "atom_id_2": "0cbd2495-f971-484b-aef5-c2e4c6a876f1",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "84d595b3-a123-4444-a2f7-3bac75de6600",
+    "atom_id_1": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "atom_id_2": "d6068b9c-fabc-41e6-8903-a0d5ed9b1e02",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "3c9882c2-d224-451b-8e9a-07c1fb7ca021",
+    "atom_id_1": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "atom_id_2": "ad14e345-1e62-4e2e-941d-17fa5907fd3f",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "4fc8ccb3-5eba-4592-86ce-0cedd3c4e81d",
+    "atom_id_1": "b99be4ee-3d42-46e8-8128-e46e2b2df7cf",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "e9bebee2-0d40-4bad-9097-4913f77e6ff7",
+    "atom_id_1": "1ac3a07d-4b36-4570-8b9a-d461b7405260",
+    "atom_id_2": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "3d478fd9-eb7a-442c-a6a8-f5ad4d7c77ca",
+    "atom_id_1": "b99be4ee-3d42-46e8-8128-e46e2b2df7cf",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "de56c574-cc7f-4ab8-8740-f16f906d60d7",
+    "atom_id_1": "1ac3a07d-4b36-4570-8b9a-d461b7405260",
+    "atom_id_2": "9755c3be-5eda-474b-9f46-de325523ecae",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "50d80edf-ee5e-4743-b935-d3d8fc1e795a",
+    "atom_id_1": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "atom_id_2": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "98514fe5-dedb-4f3f-a586-839c888957ee",
+    "atom_id_1": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "atom_id_2": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "afd62c0f-ff0d-4382-b0c9-83f8222e3daf",
+    "atom_id_1": "581ba6b2-e14f-4f03-ae02-77cd9871b32d",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "32467268-e1af-4de8-ae2a-c7ebc81bcd2e",
+    "atom_id_1": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "78f09d05-e48c-47fe-aa14-0cc864cdf3da",
+    "atom_id_1": "76d7dd3e-4551-46f1-8bfd-947900cd0141",
+    "atom_id_2": "2fa86230-87f5-4250-bd3c-dda4034c5567",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "fde7e6a9-ff33-4a69-a15b-705fc9307eb4",
+    "atom_id_1": "1ac3a07d-4b36-4570-8b9a-d461b7405260",
+    "atom_id_2": "0cbd2495-f971-484b-aef5-c2e4c6a876f1",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "6303cfd1-46b0-4a0f-9d4a-20a46241e899",
+    "atom_id_1": "2f057b29-137a-4797-852b-009a134fa380",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "88f8fedd-ca7c-4a1d-8742-99fff8473ea8",
+    "atom_id_1": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "atom_id_2": "98b2425a-a1db-4bca-b401-d37a1b5439d7",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "0e49b59d-68e7-4636-9d6d-8e582e083054",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "58f2b005-4f5c-4602-8c40-bcf61369b717",
+    "atom_id_1": "568d4d94-4a5a-4ec7-9172-740dea6385f8",
+    "atom_id_2": "58874822-413b-4261-b08c-eaa3e424c401",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "833ce182-cad5-462d-ab39-2a3aec7930bc",
+    "atom_id_1": "27b72b42-4b36-4e47-851e-d8bfa10373af",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "0c947ec2-f6db-433f-820b-b4156e4ea1b0",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "9f6fb3f5-0f47-4289-873f-313060f28dd3",
+    "atom_id_1": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "atom_id_2": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "c8f37f02-5cb0-4ebe-8ba5-aa4f23148c8f",
+    "atom_id_1": "27b72b42-4b36-4e47-851e-d8bfa10373af",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "13d854df-8fd0-4ea1-9771-e8759478ea2b",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "bab676a7-4291-412e-a5a2-f2b392a019c8",
+    "atom_id_1": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "atom_id_2": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "adafee31-c864-474f-aa33-a7b2e1dc4025",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "contradicts",
+    "confidence": 0.8
+  },
+  {
+    "id": "aac7440e-7a68-4feb-a0e3-ca1b22921241",
+    "atom_id_1": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9705f0f1-4a9f-41b6-a4ec-f5888bec8f51",
+    "atom_id_1": "58874822-413b-4261-b08c-eaa3e424c401",
+    "atom_id_2": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "82d5e370-deb0-40ab-8235-ccdfb56415d6",
+    "atom_id_1": "e61cfd03-4709-4b94-b87f-65fdbcddd910",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "6721191f-a201-4df4-97cc-7dce0ce88d14",
+    "atom_id_1": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "af821f28-4ab0-43d1-9f38-2b4980c089f0",
+    "atom_id_1": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "atom_id_2": "0719247b-0aa3-40dc-b319-376ce80df77e",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "eda4b465-e6bf-4227-b290-019323e1f057",
+    "atom_id_1": "7cc53472-6055-4955-8f22-d2ba2391b1a2",
+    "atom_id_2": "d0193862-a595-4dc1-857c-4443973008bb",
+    "relationship": "inspired_by",
+    "confidence": 0.9
+  },
+  {
+    "id": "ce748321-9a1f-4173-a4f7-23e05fef60ae",
+    "atom_id_1": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "atom_id_2": "2fa86230-87f5-4250-bd3c-dda4034c5567",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "ed783939-147f-4815-816a-4de23f8bfa2e",
+    "atom_id_1": "2df7e6d1-d27e-410d-bcca-e6e5ad9022dd",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "fbcefdda-c895-43ae-8847-d0069a35bf5f",
+    "atom_id_1": "654a511e-abcc-44f2-8ba5-91be9576f816",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "332b71e7-7660-449f-90ee-25b8fe022e26",
+    "atom_id_1": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "41b67835-1fcc-45bc-91ff-58c49424c998",
+    "atom_id_1": "4b80e24e-b556-49b5-9154-aa796cd1dd89",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "064722e1-c731-40e8-af23-42c48ad70cb5",
+    "atom_id_1": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "atom_id_2": "fafcf842-ab65-4261-9056-d3e3f7850b22",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "cadd0243-7326-41ff-b34d-7e66f874f1e8",
+    "atom_id_1": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "atom_id_2": "64145cf5-bbb8-42d0-80cc-bc025df64975",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "426baf35-0816-450b-baee-371648f1f65e",
+    "atom_id_1": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "71a5778a-bcd9-473e-ad7e-b061aad8ce9c",
+    "atom_id_1": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "atom_id_2": "6b2e89c2-03b2-4f7c-bab6-384169d0f9ef",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "ee3b69a3-f1c9-4754-b6ec-98b5795a94f6",
+    "atom_id_1": "bf4e7507-fe67-4952-aebf-a5c2ad416f16",
+    "atom_id_2": "2fa86230-87f5-4250-bd3c-dda4034c5567",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "d88c0df0-182a-446c-b99d-60abb854beed",
+    "atom_id_1": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "atom_id_2": "0a38e4f1-13e3-45ad-81f8-b4beabd9ef8f",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "0b108507-ef4b-483e-a29c-112315cf4043",
+    "atom_id_1": "877f1efd-d22c-40f0-b818-06381d4ba683",
+    "atom_id_2": "ad14e345-1e62-4e2e-941d-17fa5907fd3f",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "f1e8848d-14a3-404d-b9d0-978df87007ed",
+    "atom_id_1": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "d9329acc-e18d-4c1b-828d-9363f530c4f7",
+    "atom_id_1": "9062cde3-a12f-4233-b6b7-b2766e7bc047",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "79379db0-7d4c-4e8e-a8db-91e5c4d5e49e",
+    "atom_id_1": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "14ca1631-5970-476a-92ca-d860aa3f2d8b",
+    "atom_id_1": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "atom_id_2": "d19bbc7a-339d-445d-a0d2-d1032721b334",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "fc000e1b-6209-4d36-abdf-0f805e63f0c8",
+    "atom_id_1": "9406b321-48a5-4e72-982a-b04a97d44989",
+    "atom_id_2": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "eb250c01-3661-4e9b-94f5-18c4232a5ff3",
+    "atom_id_1": "80f615ff-d6a5-4133-aa31-36214c422588",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "7e08c488-e8e7-4ab4-9d94-a3ea5b14a6f3",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "ac81ae4d-7872-44e9-b356-7161634cc7bd",
+    "atom_id_1": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "atom_id_2": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "b9293577-42b7-4804-b6d6-2e8d45136d5c",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "5ea472d8-07fd-45ca-9f10-a69becd7cdee",
+    "atom_id_1": "24fd0e7f-76b4-41db-8758-ddd63abb35b2",
+    "atom_id_2": "e47b4f18-a9dc-4630-a868-b8cfc8362e61",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "eb9fd338-b47f-43eb-a1e6-3c3a00464015",
+    "atom_id_1": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "8c99bbdf-7dd4-4b57-a4e0-f0d0f38e9c2b",
+    "atom_id_1": "abee1d78-6173-4cdc-a984-82ec2ab1ea3f",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "06d8056f-861e-489b-9111-7a7b99a78961",
+    "atom_id_1": "c327796b-d0ef-4d33-98d0-02997518b7e9",
+    "atom_id_2": "01073eb2-b1ba-46dc-b04b-a107f0c369f5",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "c3e56a06-1936-4730-802e-26fbb5436fcb",
+    "atom_id_1": "eebabe87-f851-4de8-a7ff-003052ec5abb",
+    "atom_id_2": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "a4bb90d8-170a-4ff4-8cee-cee1bd571e79",
+    "atom_id_1": "01d709d1-d605-4377-aa78-e667d9a9b203",
+    "atom_id_2": "86adf78f-8ac5-4e52-93ba-abc42c3e9e78",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "0ba5cbff-668f-4319-8cf8-5138abce4a3e",
+    "atom_id_1": "58d4add8-3e7e-42c5-8dc1-294d113ed0ad",
+    "atom_id_2": "f6d09445-d46d-43c4-92a0-d8128b67b1a3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "803b80fb-fb34-491e-9e5c-c321187f70b9",
+    "atom_id_1": "2b2e4886-5288-4712-af91-14344a765b87",
+    "atom_id_2": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "244db47f-934f-485f-b99e-f2f55dab0e95",
+    "atom_id_1": "f610a76a-8edc-4f05-ae1b-cda5ca304046",
+    "atom_id_2": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "404877c5-e2f6-48c1-b2f6-5ab3275a4e1e",
+    "atom_id_1": "eebabe87-f851-4de8-a7ff-003052ec5abb",
+    "atom_id_2": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "3a1cb78c-af9e-476a-98ed-b887a82cd51b",
+    "atom_id_1": "414acb7c-0cc2-42cf-8c10-44ac2eec2702",
+    "atom_id_2": "869da7fd-fc5a-40d3-819e-0e19a22f7300",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "a7e72b94-de10-4b97-b999-c17e8b4f00ea",
+    "atom_id_1": "5dca27e9-574a-477e-a6a2-5784ae33c57e",
+    "atom_id_2": "bf4e7507-fe67-4952-aebf-a5c2ad416f16",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "368b8e86-a9bc-4c4a-8e86-06cda2912433",
+    "atom_id_1": "32d05566-48eb-45c6-81a6-4dc2667aaae1",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "34350a5f-5fd4-48b9-b883-81ab90540089",
+    "atom_id_1": "32d05566-48eb-45c6-81a6-4dc2667aaae1",
+    "atom_id_2": "01073eb2-b1ba-46dc-b04b-a107f0c369f5",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "726e4a8b-bd07-4f38-9773-650caf44feab",
+    "atom_id_1": "c1683c78-59cf-47f3-bb2f-a6096f494faa",
+    "atom_id_2": "5fa1d238-d298-4644-8895-4b17218544fb",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "c39e71be-70f4-4836-8958-11e2445ce51f",
+    "atom_id_1": "5aa3c9d6-faff-4840-ac2e-cb9c82ea42aa",
+    "atom_id_2": "56fdd686-2c90-4372-b474-6ce6f75fa4df",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "8980eaab-3a23-44bb-a9a7-a6a535ed2ca2",
+    "atom_id_1": "00b7eea6-9aaf-4237-a1a7-bc5242f43433",
+    "atom_id_2": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "c8377790-3b14-40e8-b399-4c4cea4ceeff",
+    "atom_id_1": "a65e1ba0-20c5-4f36-9cea-cdcf26970eec",
+    "atom_id_2": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "d4f8fa26-045a-4780-ac58-80b6e7ac1b0b",
+    "atom_id_1": "165ffd33-4136-4df9-aa61-39439fab43a9",
+    "atom_id_2": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "34bba192-d7ce-4f72-8fc0-fe116e46aa9a",
+    "atom_id_1": "2a45a75f-2d69-411b-b667-fa39e9b9ab9b",
+    "atom_id_2": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "ad796e8a-643e-482f-a1bb-f248a0a08dfd",
+    "atom_id_1": "2f057b29-137a-4797-852b-009a134fa380",
+    "atom_id_2": "e2048865-02d7-4a3a-b962-0455db3d337a",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "0bb53e17-a232-4d0c-a915-ce868fdce191",
+    "atom_id_1": "581ba6b2-e14f-4f03-ae02-77cd9871b32d",
+    "atom_id_2": "0d7d1a8f-444c-4850-864b-38695446dbd2",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "a13deda9-2dd7-48d8-9700-d57144537aa2",
+    "atom_id_1": "f6d09445-d46d-43c4-92a0-d8128b67b1a3",
+    "atom_id_2": "18384b6a-dc06-436d-b798-e09c12e1fc5a",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "d87b381f-08a5-4e63-af59-fd8fa402f8d1",
+    "atom_id_1": "76d7dd3e-4551-46f1-8bfd-947900cd0141",
+    "atom_id_2": "fafcf842-ab65-4261-9056-d3e3f7850b22",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "9104919c-c986-4ac9-ae5e-e5fec12fce80",
+    "atom_id_1": "b99be4ee-3d42-46e8-8128-e46e2b2df7cf",
+    "atom_id_2": "0719247b-0aa3-40dc-b319-376ce80df77e",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "c7673686-ba53-413f-8177-6149379f36e6",
+    "atom_id_1": "581ba6b2-e14f-4f03-ae02-77cd9871b32d",
+    "atom_id_2": "e426e5ca-2a8c-4bbc-9989-4b70a2ea6045",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "ebb92640-35ad-4f67-b206-ef4ee892e4bf",
+    "atom_id_1": "18ae7a25-fd22-4a94-a93e-02a7e5bd95f8",
+    "atom_id_2": "01073eb2-b1ba-46dc-b04b-a107f0c369f5",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "2458b171-aaeb-42c0-9480-ffaa1cb475ad",
+    "atom_id_1": "9b7cf81f-f418-4d9d-825d-c422f1d286de",
+    "atom_id_2": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "a1cc59e8-5466-4fa2-8613-8df99de4de27",
+    "atom_id_1": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "atom_id_2": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "194b1803-8820-45a0-b142-73f104b70c31",
+    "atom_id_1": "080c1a30-a742-4d2e-94fc-313987da03b3",
+    "atom_id_2": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "463694a3-c8cc-4dde-8045-a9855379cb4e",
+    "atom_id_1": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "877d1460-3fb5-48d8-89b9-85d5f2cf27c9",
+    "atom_id_1": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "atom_id_2": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "83412147-fea2-4b9e-8c06-a18487aa63ec",
+    "atom_id_1": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "atom_id_2": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "045cea40-eab0-4893-aa05-ec9cb3e8ef12",
+    "atom_id_1": "fe5e1c9c-68cd-4885-b877-7e2536ae03bb",
+    "atom_id_2": "0e51c445-7bc7-46f4-959f-c4402cf368ed",
+    "relationship": "inspired_by",
+    "confidence": 0.8
+  },
+  {
+    "id": "51e47fb5-f6d8-4c18-aaf7-4ccfdfdad7f9",
+    "atom_id_1": "d305a9f3-8a31-4100-9646-e7d6d92e6377",
+    "atom_id_2": "f2913f38-9576-4cad-a976-908011f0afce",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "a74631fa-8717-4bc1-810f-d294bd0f3533",
+    "atom_id_1": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "atom_id_2": "9406b321-48a5-4e72-982a-b04a97d44989",
+    "relationship": "contradicts",
+    "confidence": 0.75
+  },
+  {
+    "id": "f4520d82-407c-4cbb-ab54-27d77bf84b5e",
+    "atom_id_1": "925fa57f-c01d-4ae9-b789-d25e3b58c73c",
+    "atom_id_2": "56fdd686-2c90-4372-b474-6ce6f75fa4df",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "5aa0fbc1-8df7-407e-9137-f915f29150e1",
+    "atom_id_1": "ad14e345-1e62-4e2e-941d-17fa5907fd3f",
+    "atom_id_2": "504e72bf-c556-44df-9531-e838f826ff1f",
+    "relationship": "inspired_by",
+    "confidence": 0.85
+  },
+  {
+    "id": "414e9aca-78b7-4ac1-8cbe-ca7e14632ff8",
+    "atom_id_1": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "atom_id_2": "9d120529-faa3-4ce4-b56b-5ff0cb983a7a",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "6a00a1f1-73da-4e24-ae6d-f972bcea108f",
+    "atom_id_1": "2df7e6d1-d27e-410d-bcca-e6e5ad9022dd",
+    "atom_id_2": "9bddae48-6547-41e3-92cc-22ea1f95a320",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "fb3e5d23-4acf-429d-a5fc-5626d1a5b26b",
+    "atom_id_1": "1d9e7e09-4fe7-45c0-b617-071301adb468",
+    "atom_id_2": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "e93053e4-a3d8-41e8-85b6-91418d6192ef",
+    "atom_id_1": "58874822-413b-4261-b08c-eaa3e424c401",
+    "atom_id_2": "64145cf5-bbb8-42d0-80cc-bc025df64975",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "aa351c43-6626-4c4e-bf8c-b67859481f23",
+    "atom_id_1": "f83ca910-315c-4acb-a33e-0d917de4b447",
+    "atom_id_2": "e4437d75-9d7b-4436-a6e9-902304eaba24",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "d5649862-be74-4168-aef5-f5220d4bac59",
+    "atom_id_1": "d487f1fe-9886-49f2-ab1b-8500978d0c10",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "e8a28599-b615-470a-9268-d5b1722c2118",
+    "atom_id_1": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "atom_id_2": "9406b321-48a5-4e72-982a-b04a97d44989",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "3b18d27c-5650-4c96-889d-0626ebdcbf30",
+    "atom_id_1": "e61cfd03-4709-4b94-b87f-65fdbcddd910",
+    "atom_id_2": "e4437d75-9d7b-4436-a6e9-902304eaba24",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "ee17a6d8-281d-410b-a90e-c892e91ea233",
+    "atom_id_1": "ef7640ab-bc05-4566-9ed1-e9725a71beda",
+    "atom_id_2": "d6068b9c-fabc-41e6-8903-a0d5ed9b1e02",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "d20e3588-9a4b-46e9-bc0d-ffe94c88a706",
+    "atom_id_1": "452e53cd-d973-4adf-84f2-c6e9df9d1610",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "5b504f6b-ba79-45ec-bfb0-0c9176099d99",
+    "atom_id_1": "654a511e-abcc-44f2-8ba5-91be9576f816",
+    "atom_id_2": "56fdd686-2c90-4372-b474-6ce6f75fa4df",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "a02a0883-60af-4073-b5f5-1773b2270335",
+    "atom_id_1": "52a73d34-3ad4-4e11-bebb-0cd1ae7ec466",
+    "atom_id_2": "f6281850-5e18-4a62-a58b-78cdf5631a3b",
+    "relationship": "contradicts",
+    "confidence": 0.85
+  },
+  {
+    "id": "2693a7f2-60e1-40f2-abe5-5df81e5a4b40",
+    "atom_id_1": "bf4e7507-fe67-4952-aebf-a5c2ad416f16",
+    "atom_id_2": "0b2758a1-cff4-4f1a-963c-f0fb22a969e3",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "50469167-12f3-43c6-8b80-c00e9cb68219",
+    "atom_id_1": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "atom_id_2": "9406b321-48a5-4e72-982a-b04a97d44989",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "832c6ea7-c45f-4e4f-aa9d-b386aa489ed4",
+    "atom_id_1": "3604bcab-24dd-4173-b218-8d6f1f91da17",
+    "atom_id_2": "5a9bd697-45fa-4aa8-9d7b-417ded027d80",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "3e29b671-1f16-4d9f-859a-113d6b4bf08e",
+    "atom_id_1": "877f1efd-d22c-40f0-b818-06381d4ba683",
+    "atom_id_2": "0719247b-0aa3-40dc-b319-376ce80df77e",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "ddd314f2-3c54-41b7-9c8c-ede69a520b71",
+    "atom_id_1": "e2048865-02d7-4a3a-b962-0455db3d337a",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "bb12c655-7040-489a-a8f0-33c64b82a7bf",
+    "atom_id_1": "5cba0d1b-30b2-45cc-b8df-e1b11b444269",
+    "atom_id_2": "3afb5bd3-4823-4789-b703-2decca6d57ac",
+    "relationship": "inspired_by",
+    "confidence": 0.75
+  },
+  {
+    "id": "0f3fa02b-bfc5-4b10-a3cb-d29481f6ad87",
+    "atom_id_1": "a45da841-bc21-4a96-8b5a-21b77057ae6b",
+    "atom_id_2": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "relationship": "extends",
+    "confidence": 0.85
+  },
+  {
+    "id": "cc7f07c6-c6f8-46d2-8924-7c42e7646bb1",
+    "atom_id_1": "fc9a8bec-2745-4889-9ba5-26bb9debf61b",
+    "atom_id_2": "0cbd2495-f971-484b-aef5-c2e4c6a876f1",
+    "relationship": "extends",
+    "confidence": 0.8
+  },
+  {
+    "id": "8342baa1-7f37-4cd4-9681-59cd9531c153",
+    "atom_id_1": "3566883a-1494-40b9-95b1-d00ba7fde9d4",
+    "atom_id_2": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "28faa151-e8ec-4422-9c04-26777c348647",
+    "atom_id_1": "f2913f38-9576-4cad-a976-908011f0afce",
+    "atom_id_2": "25667c55-7d3e-4e44-95ee-cf5aee7d8faf",
+    "relationship": "extends",
+    "confidence": 0.9
+  },
+  {
+    "id": "4b64c58e-f765-4b97-a782-1d1870275c97",
+    "atom_id_1": "e98e0ab0-71d8-4350-85c4-4a77c0960713",
+    "atom_id_2": "b7f3f18a-53da-4aae-b4a9-26442d39f477",
+    "relationship": "contradicts",
+    "confidence": 0.9
+  },
+  {
+    "id": "2a4b7ec0-8498-4ca3-acde-315113990005",
+    "atom_id_1": "c99ca4e4-1c84-44b6-884b-06c6fc4c6acb",
+    "atom_id_2": "d19bbc7a-339d-445d-a0d2-d1032721b334",
+    "relationship": "extends",
+    "confidence": 0.9
+  }
+]

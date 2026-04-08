@@ -1,0 +1,143 @@
+{
+  "brain_slug": "hank-green",
+  "brain_name": "Hank Green",
+  "sources": [
+    {
+      "title": "Lex Fridman Podcast #309 — Hank Green: Science, TikTok, Creator Economy",
+      "type": "interview",
+      "date": "2022-08-15",
+      "priority": "essential",
+      "description": "3+ hour deep dive covering science communication philosophy, creator economy evolution, social media dynamics, TikTok vs YouTube, internet culture, and personal philosophy.",
+      "url": "https://www.youtube.com/watch?v=F3Jd9eb2x7c",
+      "youtube_id": "F3Jd9eb2x7c",
+      "key_topics": ["science communication", "creator economy", "social media", "TikTok", "meaning"]
+    },
+    {
+      "title": "Hot Ones — Hank Green Needs Milk While Eating Spicy Wings",
+      "type": "interview",
+      "date": "2023-03-09",
+      "priority": "high",
+      "description": "Creator economy, VidCon origins, science communication philosophy, internet culture, being famous on the internet.",
+      "url": "https://www.youtube.com/watch?v=rq7VmZQvOjg",
+      "youtube_id": "rq7VmZQvOjg",
+      "key_topics": ["creator economy", "VidCon", "fame", "internet culture"]
+    },
+    {
+      "title": "TED Talk — The Rube Goldberg Machine of Internet Culture",
+      "type": "speech",
+      "date": "2014-03",
+      "priority": "high",
+      "description": "How internet culture creates unexpected connections and why the chaotic nature of online communities is a feature, not a bug.",
+      "url": "https://www.ted.com/talks/hank_green_the_rube_goldberg_machine_that_is_internet_culture",
+      "key_topics": ["internet culture", "community", "creativity", "chaos"]
+    },
+    {
+      "title": "Vlogbrothers — I Have Cancer (Hank's diagnosis video)",
+      "type": "video",
+      "date": "2023-06-06",
+      "priority": "essential",
+      "description": "Hank's public announcement of Hodgkin's lymphoma diagnosis. Raw, honest, scientifically informed. Sets the tone for his entire cancer journey documentation.",
+      "url": "https://www.youtube.com/watch?v=vwkJVIbJtS4",
+      "youtube_id": "vwkJVIbJtS4",
+      "key_topics": ["cancer", "mortality", "health", "vulnerability", "science"]
+    },
+    {
+      "title": "Vlogbrothers — I'm In Remission",
+      "type": "video",
+      "date": "2024-02-27",
+      "priority": "high",
+      "description": "Announcement of cancer remission. Reflections on gratitude, mortality, the healthcare system, and what the experience changed.",
+      "url": "https://www.youtube.com/watch?v=m8xyoX2DMqE",
+      "youtube_id": "m8xyoX2DMqE",
+      "key_topics": ["cancer", "remission", "gratitude", "healthcare", "mortality"]
+    },
+    {
+      "title": "An Absolutely Remarkable Thing — novel and interviews",
+      "type": "book",
+      "date": "2018-09-25",
+      "priority": "essential",
+      "description": "Hank's first novel exploring fame, internet celebrity, collective action, technology, and what happens when an ordinary person becomes globally famous overnight.",
+      "key_topics": ["fame", "identity", "technology", "collective action", "internet celebrity"]
+    },
+    {
+      "title": "A Beautifully Foolish Endeavor — novel and interviews",
+      "type": "book",
+      "date": "2020-07-07",
+      "priority": "high",
+      "description": "Sequel exploring the aftermath of fame, technology and power, attention economy, and whether collective human action can overcome individual ambition.",
+      "key_topics": ["technology", "power", "attention", "collective action", "building vs destroying"]
+    },
+    {
+      "title": "Wired Interview — Hank Green on TikTok, Science, and Why He's Optimistic",
+      "type": "interview",
+      "date": "2022-06",
+      "priority": "high",
+      "description": "Hank's views on TikTok as a science communication platform, short-form vs long-form, algorithmic discovery, and defending optimism.",
+      "key_topics": ["TikTok", "science communication", "optimism", "short-form content"]
+    },
+    {
+      "title": "SciShow — 600+ episodes of science communication",
+      "type": "series",
+      "date": "2012-2026",
+      "priority": "essential",
+      "description": "Hank's flagship science communication channel. Covers biology, chemistry, physics, health, environment, technology. The format itself — accessible, enthusiastic, rigorous — embodies his communication philosophy.",
+      "key_topics": ["science", "education", "communication", "curiosity"]
+    },
+    {
+      "title": "Crash Course — educational video series",
+      "type": "series",
+      "date": "2012-2026",
+      "priority": "high",
+      "description": "Full-course educational videos co-created with John. Hank hosts science courses. 17M+ subscribers. Proof that deep education works at YouTube scale.",
+      "key_topics": ["education", "learning", "science", "accessibility"]
+    },
+    {
+      "title": "Hank Green TikTok — science and culture commentary",
+      "type": "series",
+      "date": "2020-2026",
+      "priority": "essential",
+      "description": "7M+ followers. Short-form science explainers, healthcare system commentary, creator economy observations, and cultural commentary. The distilled version of Hank's worldview.",
+      "key_topics": ["science communication", "TikTok", "healthcare", "culture", "short-form"]
+    },
+    {
+      "title": "NYT Interview — Hank Green on Cancer, Mortality, and What Matters",
+      "type": "interview",
+      "date": "2023-10",
+      "priority": "high",
+      "description": "Post-diagnosis interview covering how cancer changed his perspective on work, time, relationships, and the healthcare system.",
+      "key_topics": ["cancer", "mortality", "healthcare", "priorities", "gratitude"]
+    },
+    {
+      "title": "The Verge — Interview on Creator Economy and Platform Power",
+      "type": "interview",
+      "date": "2022-04",
+      "priority": "high",
+      "description": "Deep discussion of platform dynamics, creator exploitation, VidCon's legacy, and why creators need to own their businesses.",
+      "key_topics": ["creator economy", "platforms", "power", "entrepreneurship"]
+    },
+    {
+      "title": "Dear Hank & John Podcast — selected episodes on life philosophy",
+      "type": "podcast",
+      "date": "2016-2026",
+      "priority": "high",
+      "description": "Comedy/advice podcast with John Green. Rich source of Hank's unscripted views on life, science, relationships, and the absurdity of existence.",
+      "key_topics": ["life philosophy", "humor", "relationships", "advice"]
+    },
+    {
+      "title": "VidCon Keynotes and Panels — creator economy evolution",
+      "type": "speech",
+      "date": "2010-2023",
+      "priority": "high",
+      "description": "As VidCon co-founder, Hank's keynotes trace the evolution of the creator economy from scrappy YouTube community to multi-billion dollar industry.",
+      "key_topics": ["creator economy", "VidCon", "community", "entrepreneurship", "platform evolution"]
+    },
+    {
+      "title": "Climate and Environmental Science Communication",
+      "type": "compilation",
+      "date": "2007-2026",
+      "priority": "high",
+      "description": "Hank's environmental science background informs his climate communication. SciShow climate episodes, Vlogbrothers commentary, and public advocacy for climate action through technology and policy.",
+      "key_topics": ["climate", "energy", "environment", "science policy", "technology solutions"]
+    }
+  ]
+}

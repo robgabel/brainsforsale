@@ -53,6 +53,15 @@
       "atom_count": 207,
       "connection_count": 377,
       "status": "live"
+    },
+    {
+      "slug": "hank-green",
+      "name": "Hank Green",
+      "source": "600+ SciShow episodes, 18+ years of Vlogbrothers, Crash Course series, Dear Hank & John podcast, TikTok science videos (7M+ followers), TED talks, keynotes, interviews, and two novels (An Absolutely Remarkable Thing, A Beautifully Foolish Endeavor)",
+      "pack_path": "brains/hank-green/pack/",
+      "atom_count": 222,
+      "connection_count": 366,
+      "status": "live"
     }
   ]
 }
