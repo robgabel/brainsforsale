@@ -3,10 +3,10 @@
 import { createClient } from "@/lib/supabase-browser";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState, Suspense } from "react";
+import { useState, useMemo, Suspense } from "react";
 
 function LoginForm() {
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
   const searchParams = useSearchParams();
   const redirect = searchParams.get("redirect") || "/dashboard";
   const authError = searchParams.get("error");
