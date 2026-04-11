@@ -1,36 +1,63 @@
 {
   "brains": [
     {
-      "slug": "scott-belsky",
-      "name": "Scott Belsky",
-      "source": "Implications newsletter",
-      "atom_count": 284,
-      "connection_count": 430,
+      "slug": "charlie-munger",
+      "name": "Charlie Munger",
+      "source": "Poor Charlie's Almanack, Berkshire Hathaway and Wesco annual meetings, Daily Journal meetings, and commencement speeches",
+      "atom_count": 218,
+      "connection_count": 200,
       "status": "live",
-      "pack_path": "brains/scott-belsky/pack/"
+      "pack_path": "brains/charlie-munger/pack/"
     },
     {
-      "slug": "peter-attia",
-      "name": "Peter Attia",
-      "source": "The Drive podcast + reviews of Outlive book",
-      "atom_count": 73,
-      "connection_count": 40,
+      "slug": "hank-green",
+      "name": "Hank Green",
+      "source": "SciShow, Crash Course, Vlogbrothers, TikTok videos, Dear Hank & John podcast, interviews, TED talks, and two novels",
+      "atom_count": 222,
+      "connection_count": 366,
       "status": "live",
-      "pack_path": "brains/peter-attia/pack/"
+      "pack_path": "brains/hank-green/pack/"
+    },
+    {
+      "slug": "john-green",
+      "name": "John Green",
+      "source": "\"The Anthropocene Reviewed\" podcast and book, \"Everything is Tuberculosis,\" Vlogbrothers videos, TED talks, interviews, and commencement speeches",
+      "atom_count": 205,
+      "connection_count": 385,
+      "status": "live",
+      "pack_path": "brains/john-green/pack/"
     },
     {
       "slug": "paul-graham",
       "name": "Paul Graham",
-      "source": "paulgraham.com essays (220+)",
+      "source": "essays on paulgraham.com",
       "atom_count": 213,
       "connection_count": 409,
       "status": "live",
       "pack_path": "brains/paul-graham/pack/"
     },
     {
+      "slug": "peter-attia",
+      "name": "Peter Attia",
+      "source": "\"The Drive\" podcast and reviews of \"Outlive\" book",
+      "atom_count": 73,
+      "connection_count": 40,
+      "status": "live",
+      "pack_path": "brains/peter-attia/pack/"
+    },
+    {
+      "slug": "scott-belsky",
+      "name": "Scott Belsky",
+      "source": "\"Implications\" newsletter",
+      "atom_count": 284,
+      "connection_count": 430,
+      "status": "live",
+      "pack_path": "brains/scott-belsky/pack/"
+    },
+    {
       "slug": "steve-jobs",
       "name": "Steve Jobs",
-      "source": "Speeches, interviews, keynotes & public appearances (1976\u20132011)",
+      "source": "speeches, interviews, keynotes, and public appearances",
       "atom_count": 170,
       "connection_count": 792,
       "status": "live",
@@ -39,20 +66,11 @@
     {
       "slug": "sun-tzu",
       "name": "Sun Tzu",
-      "source": "13 chapters of The Art of War, plus centuries of military and strategic commentary attributed to Sun Tzu and his school of thought",
-      "pack_path": "brains/sun-tzu/pack/",
+      "source": "\"The Art of War\" and attributed historical commentary",
       "atom_count": 207,
       "connection_count": 377,
-      "status": "live"
-    },
-    {
-      "slug": "charlie-munger",
-      "name": "Charlie Munger",
-      "source": "Poor Charlie's Almanack, 40+ years of Berkshire Hathaway and Wesco annual meetings, Daily Journal meetings, and commencement speeches (1962\u20132023)",
-      "pack_path": "brains/charlie-munger/pack/",
-      "atom_count": 218,
-      "connection_count": 200,
-      "status": "live"
+      "status": "live",
+      "pack_path": "brains/sun-tzu/pack/"
     }
   ]
 }

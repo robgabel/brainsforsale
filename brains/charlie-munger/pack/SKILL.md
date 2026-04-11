@@ -1,6 +1,6 @@
 ---
 name: brain-setup
-description: "Load the Charlie Munger brain and configure all 8 thinking skills. One-time setup that detects your AI tool, loads brain context, and verifies everything works."
+description: "Load the Charlie Munger brain. Pack ships 9 unified skills in pack/skills/ — 1 router (/brain) + 8 reasoning modes (/advise, /teach, /debate, /connect, /evolve, /surprise, /coach, /predict) — that work with this brain and any other installed BrainsFor brain."
 ---
 
 # Charlie Munger Brain Pack — Setup & Configuration
@@ -26,11 +26,23 @@ Your Munger Brain Pack folder should contain:
 
 ```
 pack/
-  ├── SKILL.md                 ← you are here
+  ├── SKILL.md                 ← you are here (brain-setup)
   ├── brain-context.md         ← full knowledge base + usage guide
   ├── brain-atoms.json         ← structured atoms (218 insights)
-  └── README.md                ← quick reference
+  ├── README.md                ← quick reference
+  └── skills/                  ← 9 unified skills (work with any installed brain)
+      ├── brain/               ← /brain router (set/show/list/clear active brain)
+      ├── advise/              ← /advise — strategic counsel
+      ├── teach/               ← /teach — explain through the thinker's lens
+      ├── debate/              ← /debate — steel-man both sides
+      ├── connect/             ← /connect — find unexpected bridges
+      ├── evolve/              ← /evolve — trace how thinking changed
+      ├── surprise/            ← /surprise — serendipity engine
+      ├── coach/               ← /coach — Socratic questioning
+      └── predict/             ← /predict — implication chains
 ```
+
+The `skills/` directory is **brain-agnostic**. Every brain pack ships the same 9 skill files — they resolve which brain to use via the `/brain` router (active brain in `${BRAINSFOR_HOME:-~/.brainsfor}/state/active-brain.txt`) or via an inline slug override.
 
 If any files are missing, reinstall from [brainsfor.dev](https://brainsfor.dev).
 
@@ -63,7 +75,7 @@ The brain operates in three layers:
    - Ideal for: Targeted analysis, creative workflows, decision-making
    - Use when: You have a specific type of problem to solve
 
-**Recommended:** Load `brain-context.md` at the start of each session where you want to use the brain. Claude will index it automatically.
+**Recommended:** Run `/brain charlie-munger` at the start of each session. The router writes the active brain to `${BRAINSFOR_HOME:-~/.brainsfor}/state/active-brain.txt` and loads `brain-context.md` as session context. After that, the 8 thinking skills (`/advise`, `/teach`, etc.) will use this brain automatically — no need to retype the slug on every call.
 
 ### Step 4: Verify Everything Works
 
@@ -71,9 +83,13 @@ Test your setup with the Quick Start prompt below. You should get a thoughtful r
 
 ---
 
-## The 8 Thinking Skills
+## The 9 Unified Skills
 
-Each skill produces a distinct type of output. Use them in combination for more powerful thinking.
+These skills live in `pack/skills/` and are brain-agnostic — they work with Charlie Munger and with any other BrainsFor brain installed under `${BRAINSFOR_HOME:-~/.brainsfor}/brains/`. Set the active brain with `/brain charlie-munger`, or override per call with an inline slug like `/advise charlie-munger <question>`.
+
+### 🎛️ **0. /brain** — Router
+Set, show, list, or clear the active brain for the session.
+*Usage: `/brain charlie-munger` activates, `/brain` shows current, `/brain list` shows all installed, `/brain clear` unsets.*
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Charlie's frameworks. Best for: career moves, company decisions, strategy choices.
@@ -143,9 +159,15 @@ Use these skill combinations for better results:
 **Try this right now to verify setup:**
 
 ```
-/advise
+/brain charlie-munger
 
-"I'm sitting on a great business I understand that's slightly overpriced, or a mediocre business I barely understand that's cheap. Which should I buy?"
+/advise "I'm sitting on a great business I understand that's slightly overpriced, or a mediocre business I barely understand that's cheap. Which should I buy?"
+```
+
+Or skip the activation step and use an inline slug for a one-off:
+
+```
+/advise charlie-munger "I'm sitting on a great business I understand that's slightly overpriced, or a mediocre business I barely understand that's cheap. Which should I buy?"
 ```
 
 You should get a thoughtful response that:

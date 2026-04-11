@@ -1,6 +1,6 @@
 ---
 name: brain-setup
-description: "Load the Peter Attia brain and configure all 8 thinking skills. One-time setup that detects your AI tool, loads brain context, and verifies everything works."
+description: "Load the Peter Attia brain. Pack ships 9 unified skills in pack/skills/ — 1 router (/brain) + 8 reasoning modes (/advise, /teach, /debate, /connect, /evolve, /surprise, /coach, /predict) — that work with this brain and any other installed BrainsFor brain."
 ---
 
 # Peter Attia Brain Pack — Setup & Configuration
@@ -26,11 +26,23 @@ Your Attia Brain Pack folder should contain:
 
 ```
 pack/
-  ├── SKILL.md                 ← you are here
+  ├── SKILL.md                 ← you are here (brain-setup)
   ├── brain-context.md         ← full knowledge base + usage guide
   ├── brain-atoms.json         ← structured atoms (73 insights)
-  └── README.md                ← quick reference
+  ├── README.md                ← quick reference
+  └── skills/                  ← 9 unified skills (work with any installed brain)
+      ├── brain/               ← /brain router (set/show/list/clear active brain)
+      ├── advise/              ← /advise — strategic counsel
+      ├── teach/               ← /teach — explain through the thinker's lens
+      ├── debate/              ← /debate — steel-man both sides
+      ├── connect/             ← /connect — find unexpected bridges
+      ├── evolve/              ← /evolve — trace how thinking changed
+      ├── surprise/            ← /surprise — serendipity engine
+      ├── coach/               ← /coach — Socratic questioning
+      └── predict/             ← /predict — implication chains
 ```
+
+The `skills/` directory is **brain-agnostic**. Every brain pack ships the same 9 skill files — they resolve which brain to use via the `/brain` router (active brain in `${BRAINSFOR_HOME:-~/.brainsfor}/state/active-brain.txt`) or via an inline slug override.
 
 If any files are missing, reinstall from [brainsfor.dev](https://brainsfor.dev).
 
@@ -63,7 +75,7 @@ The brain operates in three layers:
    - Ideal for: Targeted analysis, creative workflows, decision-making
    - Use when: You have a specific type of problem to solve
 
-**Recommended:** Load `brain-context.md` at the start of each session where you want to use the brain. Claude will index it automatically.
+**Recommended:** Run `/brain peter-attia` at the start of each session. The router writes the active brain to `${BRAINSFOR_HOME:-~/.brainsfor}/state/active-brain.txt` and loads `brain-context.md` as session context. After that, the 8 thinking skills (`/advise`, `/teach`, etc.) will use this brain automatically — no need to retype the slug on every call.
 
 ### Step 4: Verify Everything Works
 
@@ -71,29 +83,33 @@ Test your setup with the Quick Start prompt below. You should get a thoughtful r
 
 ---
 
-## The 8 Thinking Skills
+## The 9 Unified Skills
 
-Each skill produces a distinct type of output. Use them in combination for more powerful thinking.
+These skills live in `pack/skills/` and are brain-agnostic — they work with Peter Attia and with any other BrainsFor brain installed under `${BRAINSFOR_HOME:-~/.brainsfor}/brains/`. Set the active brain with `/brain peter-attia`, or override per call with an inline slug like `/advise peter-attia <question>`.
+
+### 🎛️ **0. /brain** — Router
+Set, show, list, or clear the active brain for the session.
+*Usage: `/brain peter-attia` activates, `/brain` shows current, `/brain list` shows all installed, `/brain clear` unsets.*
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Peter's frameworks. Best for: career moves, company decisions, strategy choices.
-*Example: "{{skill_examples.advise}}"*
+*Example: "I'm 55, overweight, and sedentary. What's my first move?"*
 
 ### 📚 **2. /teach** — Explain Like I'm Learning
 Get a clear explanation of a concept as Peter sees it. Best for: understanding unfamiliar ideas, building mental models.
-*Example: "{{skill_examples.teach}}"*
+*Example: "Explain the Four Horsemen and why they matter."*
 
 ### 🔥 **3. /debate** — Steel-Man Both Sides
 Present a position or pit two ideas against each other; brain argues the counterpoint. Best for: understanding tradeoffs, challenging assumptions, resolving strategic tensions.
-*Example: "{{skill_examples.debate}}"*
+*Example: "Is muscle or cardio more important for longevity?"*
 
 ### 🔗 **4. /connect** — Bridge Ideas
 Find unexpected connections between two concepts or synthesize multiple ideas into something new. Best for: synthesis, innovation, cross-domain thinking.
-*Example: "{{skill_examples.connect}}"*
+*Example: "How does continuous glucose monitoring inform training strategy?"*
 
 ### 📈 **5. /evolve** — How Ideas Build On Each Other
 Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
-*Example: "{{skill_examples.evolve}}"*
+*Example: "How has Peter's thinking on statins and pharmacology evolved?"*
 
 ### 🎨 **6. /surprise** — Unexpected Insights
 Get a random high-quality atom you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration, breaking tunnel vision.
@@ -101,11 +117,11 @@ Get a random high-quality atom you wouldn't think to ask for. Best for: creative
 
 ### 🪞 **7. /coach** — Socratic Questions
 No answers — just the questions Peter would ask you. Best for: uncovering blind spots, pressure-testing decisions, team discussions.
-*Example: "{{skill_examples.coach}}"*
+*Example: "I'm 40 and want to start optimizing for longevity. What should I be asking myself?"*
 
 ### 🔮 **8. /predict** — Implication Chains
 Trace the second and third-order effects of a trend or decision. Best for: forecasting, strategic planning, seeing around corners.
-*Example: "{{skill_examples.predict}}"*
+*Example: "What happens to healthcare if everyone has continuous biomarker monitoring?"*
 
 ---
 
@@ -121,7 +137,7 @@ Use these skill combinations for better results:
 ### 📚 Learning Workflow
 → `/teach` (understand) → `/evolve` (see how it develops) → `/coach` (test your understanding)
 
-*Example: {{workflow_examples.learning}}*
+*Example: New to longevity? Teach the Four Horsemen → evolve pharmacology → coach yourself on priorities.*
 
 ### 💡 Creative Workflow
 → `/surprise` (get inspired) → `/connect` (build bridges) → `/predict` (where does this lead?)
@@ -131,7 +147,7 @@ Use these skill combinations for better results:
 ### 🔮 Forecast Workflow
 → `/predict` (trace implications) → `/debate` (challenge the prediction) → `/advise` (act on it)
 
-*Example: {{workflow_examples.research}}*
+*Example: Planning your health stack? Predict where health tech is going → debate the tradeoffs → advise on your protocol.*
 
 ### 🌅 Daily Ritual
 → Run `/surprise` each morning for 10 seconds of strategic inspiration.
@@ -143,9 +159,15 @@ Use these skill combinations for better results:
 **Try this right now to verify setup:**
 
 ```
-/advise
+/brain peter-attia
 
-"I'm 45 and want to maximize my chances of being healthy at 85. Where do I start?"
+/advise "I'm 45 and want to maximize my chances of being healthy at 85. Where do I start?"
+```
+
+Or skip the activation step and use an inline slug for a one-off:
+
+```
+/advise peter-attia "I'm 45 and want to maximize my chances of being healthy at 85. Where do I start?"
 ```
 
 You should get a thoughtful response that:
