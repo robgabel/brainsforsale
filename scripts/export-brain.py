@@ -3,13 +3,17 @@
 Generic brain pack export pipeline.
 
 Usage:
-  python export-brain.py --brain belsky
-  python export-brain.py --brain belsky --from-files atoms.json connections.json
-  python export-brain.py --brain belsky --supabase  (requires SUPABASE_URL + SUPABASE_SERVICE_KEY)
+  python export-brain.py --brain scott-belsky
+    (default: fetches atoms + connections from Supabase using brain.json tables)
+  python export-brain.py --brain scott-belsky --from-files atoms.json connections.json
+    (offline fallback: load from local JSON dumps)
 
 Reads brain config from ../brains/{slug}/brain.json
 Reads templates from ../templates/
 Outputs to ../brains/{slug}/pack/
+
+Supabase mode requires SUPABASE_URL + SUPABASE_SERVICE_KEY in env (or ../../.env)
+and supabase + python-dotenv installed.
 """
 
 import argparse
@@ -21,6 +25,12 @@ import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).resolve().parents[2] / ".env", override=True)
+except ImportError:
+    pass
 
 
 # --- Paths ---
@@ -428,6 +438,62 @@ def export_skill_files(config: dict, atom_count: int, connection_count: int, out
                 break
 
 
+def fetch_from_supabase(config: dict) -> tuple:
+    """Fetch atoms + connections directly from Supabase using tables in brain.json.
+
+    Paginates atoms in 1000-row chunks and drops the embedding column (huge,
+    unused by the export). Returns (atoms, connections) tuple matching the
+    shape load_atoms_from_file() returns.
+    """
+    try:
+        from supabase import create_client
+    except ImportError:
+        print("ERROR: supabase package not installed.")
+        print("       Run: pip install supabase python-dotenv")
+        print("       Or use --from-files to load from local JSON dumps.")
+        sys.exit(1)
+
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not url or not key:
+        print("ERROR: SUPABASE_URL and SUPABASE_SERVICE_KEY must be set in env or ../../.env")
+        print("       Or use --from-files to load from local JSON dumps.")
+        sys.exit(1)
+
+    sb_config = config.get("supabase", {})
+    atoms_table = sb_config.get("atoms_table")
+    connections_table = sb_config.get("connections_table")
+    if not atoms_table or not connections_table:
+        print(f"ERROR: brain.json missing supabase.atoms_table or supabase.connections_table")
+        sys.exit(1)
+
+    sb = create_client(url, key)
+
+    print(f"Fetching atoms from Supabase: {atoms_table}...")
+    atoms = []
+    offset = 0
+    while True:
+        resp = sb.table(atoms_table).select("*").range(offset, offset + 999).execute()
+        if not resp.data:
+            break
+        atoms.extend(resp.data)
+        if len(resp.data) < 1000:
+            break
+        offset += 1000
+
+    # Drop embedding column — not used by export, massively inflates memory
+    for a in atoms:
+        a.pop("embedding", None)
+
+    print(f"  {len(atoms)} atoms loaded")
+
+    print(f"Fetching connections from Supabase: {connections_table}...")
+    connections = sb.table(connections_table).select("*").execute().data
+    print(f"  {len(connections)} connections loaded")
+
+    return atoms, connections
+
+
 def load_atoms_from_file(filepath: str) -> list:
     """Load atoms from a JSON file (raw array or tool-result format)."""
     with open(filepath) as f:
@@ -530,9 +596,8 @@ def main():
             connections = json.load(f)
         print(f"  {len(connections)} connections loaded")
     else:
-        print("ERROR: Provide --from-files or --atoms-file + --connections-file")
-        print("       (Supabase direct fetch requires SUPABASE_URL + SUPABASE_SERVICE_KEY — not yet implemented)")
-        sys.exit(1)
+        # Default path: fetch directly from Supabase using tables in brain.json
+        atoms, connections = fetch_from_supabase(config)
 
     # Export data files
     print("\nExporting brain-atoms.json...")

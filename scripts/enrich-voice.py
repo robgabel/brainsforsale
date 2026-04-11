@@ -177,6 +177,7 @@ def process_atoms(atoms: list, extraction_prompt: str, dry_run: bool = False) ->
             results.append({
                 "id": atom_id,
                 "content": content,
+                "source_ref": url,
                 "original_quote": None,
                 "implication": None,
                 "status": "no_source_url"
@@ -193,6 +194,7 @@ def process_atoms(atoms: list, extraction_prompt: str, dry_run: bool = False) ->
             results.append({
                 "id": atom_id,
                 "content": content,
+                "source_ref": url,
                 "original_quote": None,
                 "implication": None,
                 "status": source_text
@@ -203,6 +205,7 @@ def process_atoms(atoms: list, extraction_prompt: str, dry_run: bool = False) ->
         results.append({
             "id": atom_id,
             "content": content,
+            "source_ref": url,
             "cluster": atom.get("cluster"),
             "confidence_tier": atom.get("confidence_tier"),
             "original_quote": extraction.get("original_quote"),
