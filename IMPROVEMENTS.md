@@ -40,6 +40,7 @@ Captured from expert critique panel (April 4, 2026): Calacanis, Bartlett, Hassid
 
 ## Architecture & Distribution
 
+- [ ] **Multi-brain skill collision — README promises `/advise`, install gives `/scott-belsky-advise`** — Each pack ships with `name: advise` in SKILL.md frontmatter. README tells users "just invoke `/advise`". This works for ONE installed brain. Install 7 brains and the directories must be prefixed (`scott-belsky-advise`, `paul-graham-advise`, …) to avoid collision in `~/.claude/skills/`, breaking the documented UX. Two fixes: (a) collapse to 8 generic skills (`/advise`, `/teach`, …) that take a brain arg like `/advise scott-belsky: should I ship?` and route internally via Supabase or `brain-atoms.json`; (b) keep prefixed dirs but add a router skill that exposes `/advise --brain=scott-belsky` syntax. Option (a) matches the README and the cross-brain auto-discovery promise. README also claims "install multiple brain packs and they auto-discover each other" — that mechanism doesn't exist yet; needs to be built or removed from the README.
 - [ ] **SQLite brain format** — Portable SQLite with sqlite-vec for embeddings, connections, people. Solves "flat files can't carry a graph." (v2 roadmap item)
 - [ ] **Hosted semantic search API** — Brain stays in Supabase. Skills call edge function for vector search + graph traversal. Real-time updates + usage tracking built in.
 - [ ] **Hybrid delivery** — Flat files for offline context + API key for semantic search online. Best of both.
@@ -67,4 +68,4 @@ Captured from expert critique panel (April 4, 2026): Calacanis, Bartlett, Hassid
 
 ---
 
-*Last updated: 2026-04-04*
+*Last updated: 2026-04-11 — added multi-brain skill collision item under Architecture & Distribution*

@@ -200,44 +200,51 @@ $199/mo API is for the lazy-but-smart company that wants to offer "Ask [Expert]"
 
 ---
 
-## The Brains (v1 Launch Roster)
+## The Brains (Current Inventory — April 2026)
 
-### Tier 1 — Ship with these (highest content density + broadest appeal)
+### Live — 7 brains built, packaged, and in Supabase
+
+| Brain | Atoms | Connections | Content Sources | Why Buyers Want This |
+|-------|-------|-------------|-----------------|---------------------|
+| **Scott Belsky** | 284 | 430 | All 77 Implications newsletter editions, books, talks | Product intuition, creative leadership, Adobe/VC lens |
+| **Hank Green** | 222 | 366 | 600+ SciShow episodes, 18yr Vlogbrothers, Crash Course, Dear Hank & John, TikTok (7M+), TED talks, 2 novels | Science communication, creator business, internet culture |
+| **Paul Graham** | 213 | 409 | 220+ paulgraham.com essays | Startup wisdom, essay-form thinking, YC founder lens |
+| **Sun Tzu** | 207 | 377 | 13 chapters of The Art of War + centuries of attributed commentary | Strategy, competition, decision-making under uncertainty |
+| **John Green** | 205 | 385 | Anthropocene Reviewed (podcast + book), Everything is Tuberculosis, Vlogbrothers, TED talks | Humanist perspective, storytelling, reviewing the world |
+| **Steve Jobs** | 170 | 792 | Speeches, interviews, keynotes & public appearances (1976–2011) | Product taste, reality distortion field, design philosophy |
+| **Peter Attia** | 73 | 40 | The Drive podcast, Outlive book reviews | Longevity science, health optimization frameworks |
+| **TOTAL** | **1,374** | **2,799** | | **+ 17 cross-brain connections** |
+
+**Infrastructure stats:** 7 `brain_metadata` records in Supabase. Full export pipeline operational (`build-brain.py` → one command, 7 stages). All 7 brains have complete pack/ directories with brain-context.md, brain-atoms.json, explore.html, README.md, and 8 skill SKILL.md files. Design system (DESIGN.md) and brand guide (BRAND.md) documented and agent-readable. Landing page prototype exists (5/7 brains rendered — John Green and Hank Green not yet added). `install-brains.sh` handles local installation with symlinks. `audit-brains.py` validates structure + quality scoring.
+
+### Next Wave — High-demand candidates
 
 | Brain | Why Builders Want This | Content Sources |
 |-------|----------------------|-----------------|
-| **Scott Belsky** | Product intuition, creative leadership, Adobe/VC lens | Implications newsletter (48 editions), books, talks |
-| **Scott Galloway (Prof G)** | Business strategy frameworks, T Algorithm, brand economics, higher ed disruption | No Mercy / No Malice newsletter, Prof G Pod, NYU lectures, 5+ books |
-| **Steven Bartlett (DOAC)** | Synthesized wisdom of 500+ founder interviews, marketing psychology, scaling | Diary of a CEO podcast (500+ episodes), books, social content |
-| **Peter Attia** | Longevity science, health optimization frameworks | The Drive podcast (300+ episodes), Outlive, newsletter |
+| **Scott Galloway (Prof G)** | Business strategy frameworks, T Algorithm, brand economics | No Mercy / No Malice newsletter, Prof G Pod, NYU lectures, 5+ books |
 | **Marc Andreessen** | Tech investing thesis, "it's time to build" worldview | Blog archive, pmarca tweets, interviews, a16z content |
 | **Peter Thiel** | Contrarian thinking, Zero to One frameworks | Books, lectures, Founders Fund letters, interviews |
-| **Malcolm Gladwell** | Pattern recognition, storytelling as analysis | 7 books, Revisionist History podcast, New Yorker archive |
-| **Brené Brown** | Leadership, vulnerability research, organizational culture | 6 books, TED talks, Dare to Lead podcast, newsletter |
-| **Kara Swisher** | Tech industry BS detector, power dynamics, media criticism | Pivot + On with Kara Swisher podcasts, columns, Burn Book |
-
-### Tier 2 — Add within 30 days
-
-| Brain | Why Builders Want This | Content Sources |
-|-------|----------------------|-----------------|
 | **Mr Beast** | Creator economy playbook, viral mechanics, business scaling | Interviews, podcast appearances, public business docs |
-| **Angela Duckworth** | Grit framework, psychology of performance | Books, No Stupid Questions podcast, research papers |
-| **Jason Calacanis** | Angel investing, startup evaluation, founder networking | This Week in Startups (1500+ episodes), books, tweets. **Rob knows Jason personally. Offer 100% rev share — buy a case study and megaphone, not a customer.** |
-| **David Sacks** | SaaS metrics, political economy, VC pattern matching | All-In podcast, Craft Ventures writing, tweets |
-| **Lisa Su** | Execution playbook, semiconductor strategy, turnaround leadership | AMD earnings calls, interviews, conference keynotes |
-| **Indra Nooyi** | Corporate transformation, global strategy, stakeholder capitalism | My Life in Full memoir, speeches, interviews |
+| **Jason Calacanis** | Angel investing, startup evaluation, founder networking | This Week in Startups (1500+ episodes), books, tweets. **Rob knows Jason. Offer 100% rev share — buy a case study and megaphone.** |
+| **Brené Brown** | Leadership, vulnerability research, organizational culture | 6 books, TED talks, Dare to Lead podcast |
+| **Malcolm Gladwell** | Pattern recognition, storytelling as analysis | 7 books, Revisionist History podcast, New Yorker archive |
+| **Kara Swisher** | Tech industry BS detector, power dynamics | Pivot + On with Kara Swisher podcasts, Burn Book |
+| **Einstein** | Timeless physics intuition + philosophy of science | Public domain books, letters, papers — **free sample brain candidate** |
 
-### Tier 3 — Stretch / request-driven
+### Professional Use Cases — "Know Them Before the Room"
 
-| Brain | Why | Notes |
-|-------|-----|-------|
-| **Einstein** | Timeless physics intuition + philosophy of science | Books, letters, published papers — all public domain |
-| **Henry Kissinger** | Geopolitical frameworks, diplomacy, power analysis | 20+ books, lectures, interviews — massive corpus |
-| **Donald Trump** | Persuasion, branding, political communication | Books, rallies, social media archive — controversial but high demand |
-| **Oprah Winfrey** | Media empire building, audience psychology, brand | Books, show archives, interviews, Super Soul podcast |
-| **Issa Rae** | Creator-to-mogul playbook, media entrepreneurship | The Misadventures of Awkward Black Girl, Insecure, interviews |
-| **Whitney Wolfe Herd** | Consumer product design, startup building, going public young | Interviews, Bumble origin story, conference talks |
-| **Mellody Hobson** | Investing, board governance, financial inclusion | Speeches, interviews, TED talks |
+Beyond the builder/founder audience, brain packs have high-value professional applications where **getting inside someone's head** is worth far more than $29:
+
+**1. Customer & BD Intelligence — "Brain your whale"**
+Sales teams and BD leads chasing a major account or partnership want to understand how the decision-maker thinks — their frameworks, pet peeves, public positions, what they've said about your space. A brain pack of a target customer or BD counterpart (built from their talks, interviews, LinkedIn posts, podcast appearances) lets you `/advise "How would [CEO] evaluate our proposal?"` or `/debate` your pitch from their perspective before the meeting. This is competitive intel packaged as a thinking tool. **Pricing implication:** Enterprise teams would pay $200-500/brain for custom builds of specific executives, not $29 for a catalog pick.
+
+**2. Board Member Prep — "Know your board"**
+Founders and executives prep for board meetings by reading old decks. What if instead you could `/advise "How would [board member] react to our pivot?"` for each director? A brain of each board member — built from their public writing, investment theses, conference talks, prior board letters — gives you a simulation layer for pre-meeting strategy. **Go-to-market:** Sell as a bundle ("Board Brain Pack — up to 7 members") to VC-backed startups. The founder's EA or Chief of Staff is the buyer. **Pricing implication:** $500-1,000/board as a custom engagement. Recurring — refresh quarterly as board members publish new content.
+
+**3. Creator Intelligence — Fan brains & competitor brains**
+Two flavors here. *Fan brain:* A creator superfan who wants a thinking partner modeled on their favorite creator — `/coach` from MrBeast's perspective on their next video, `/advise` from Lex Fridman on interview technique. This is the $29 impulse buy, and it's the most natural fit for the existing catalog model. *Competitor brain:* A creator or their team builds a brain of a rival creator to understand their content strategy, positioning, recurring themes, and blind spots. `/advise "What would [competitor] do with this trend?"` is strategic intelligence. **Pricing implication:** Fan brains are catalog ($29-79). Competitor brains are custom ($200+) and probably sold via DM, not storefront.
+
+**What these three share:** The buyer isn't trying to "think better" in the abstract — they're preparing for a *specific interaction* with a specific person or entity. That's a higher-urgency, higher-WTP use case than intellectual curiosity. It also opens up a **custom brain building service** as a revenue line: "Send us a person, we build their brain in 48 hours." Could charge $500-2,000 per custom brain depending on depth.
 
 ### The "Request a Brain" pipeline
 
@@ -283,7 +290,7 @@ Take one topic — say "will brands die?" — and pull one brain's atom against 
 
 ### Channel 8: Atom-level micro-content (Gary Vee play)
 
-Every brain has 100+ atoms. Each atom is a self-contained social post. One Belsky atom = one LinkedIn carousel slide, one X post, one short-form video clip with 10 seconds of commentary. At 20 brains × 100 atoms = 2,000 micro-content pieces. You will never run out of content. And every piece sells the product with a CTA: "This is 1 of 104 atoms in the Belsky brain. Get the full brain for $29."
+Every brain has 100+ atoms. Each atom is a self-contained social post. One Belsky atom = one LinkedIn carousel slide, one X post, one short-form video clip with 10 seconds of commentary. With 7 brains today, that's already 1,374 micro-content pieces. At 20 brains × 200 atoms avg = 4,000+. You will never run out of content. And every piece sells the product with a CTA: "This is 1 of 284 atoms in the Belsky brain. Get the full brain for $29."
 
 ### Channel 9: Leaderboard as social proof
 
@@ -373,23 +380,40 @@ Free weekly newsletter / social series. Each edition spotlights one insight from
 
 ## Revenue Model
 
-### Conservative scenario (first 90 days)
+### Phase 1 — Consumer + Professional (first 90 days)
+
+**Conservative scenario:**
 
 | Revenue Stream | Assumption | Revenue |
 |---------------|-----------|---------|
 | Standard brains ($29) | 200 purchases | $5,800 |
 | Pro brains ($79) | 50 purchases | $3,950 |
+| Custom brain builds ($500-2K) | 5 builds | $5,000 |
 | API subscriptions ($199/mo) | 5 subscribers × 2 months | $1,990 |
-| **Total** | | **$11,740** |
+| **Total** | | **$16,740** |
 
-### Optimistic scenario (viral launch)
+**Optimistic scenario (viral launch):**
 
 | Revenue Stream | Assumption | Revenue |
 |---------------|-----------|---------|
 | Standard brains ($29) | 1,000 purchases | $29,000 |
 | Pro brains ($79) | 200 purchases | $15,800 |
+| Custom brain builds ($500-2K) | 20 builds | $20,000 |
 | API subscriptions ($199/mo) | 20 subscribers × 2 months | $7,960 |
-| **Total** | | **$52,760** |
+| **Total** | | **$72,760** |
+
+### Phase 2-3 — Platform Licensing (year 1-2)
+
+| Revenue Stream | Assumption | Annual Revenue |
+|---------------|-----------|---------|
+| Consumer direct (ongoing) | $5-10K/mo steady state | $60-120K |
+| Custom brain builds | $5-15K/mo | $60-180K |
+| Platform licensing (per brain) | 10 brains × 2 platforms × $25K avg | $500K |
+| Platform catalog deal | 1 platform at $200K/yr | $200K |
+| Enterprise API | 20 subscribers × $499/mo avg | $120K |
+| **Annual potential** | | **$940K-1.12M** |
+
+The consumer business funds operations. The platform licensing business is where this becomes a real company. The exclusive rights are the moat — without them, any platform can build their own brains. With them, BrainsFor is the only authorized source.
 
 ### Costs (monthly)
 
@@ -405,6 +429,51 @@ Free weekly newsletter / social series. Each edition spotlights one insight from
 | **Total fixed** | **~$75-95/mo** |
 
 **Margin: 95%+.** This is a digital goods business with near-zero COGS once the brain is built.
+
+---
+
+## The v2+ Revenue Unlock: Brain Licensing to AI Platforms
+
+### The idea
+
+BrainsFor doesn't just sell brain packs to end users. It **acquires exclusive packaging and distribution rights** from thinkers, then **licenses those structured brains to AI platforms** — OpenAI, Anthropic, Google DeepMind, Apple, and anyone else building AI assistants.
+
+### Why AI platforms want this
+
+Every major AI lab is trying to differentiate their assistant with better domain expertise. OpenAI has "GPTs," Anthropic has Projects, Google has Gems. But they're all dependent on users building the context themselves. A pre-built, verified, structured knowledge graph of Peter Attia's longevity science or Paul Graham's startup wisdom — with the thinker's endorsement and ongoing curation — is exactly the premium content these platforms want to offer.
+
+**The pitch:** "We have exclusive rights to package Scott Belsky's thinking as a structured AI brain. Your users can load it natively in ChatGPT / Claude / Gemini. We license it to you for $X/month per brain, or $Y for a catalog deal."
+
+### How the rights work
+
+1. **BrainsFor signs exclusive "brain packaging" agreements** with thinkers. The thinker grants BrainsFor the right to structure, package, and distribute their public intellectual output as AI-ready knowledge graphs.
+2. **The thinker gets:** Revenue share (50% from direct sales, negotiable % from platform licensing), editorial control (approve atoms, flag misrepresentations), verified badge, and their brain promoted across all channels.
+3. **BrainsFor gets:** Exclusive right to package and sublicense that brain to AI platforms. No other company can sell a "Paul Graham brain pack" to OpenAI.
+4. **AI platforms get:** Licensed, structured, verified brains they can offer natively — with ongoing updates as the thinker publishes new content.
+
+### Revenue model
+
+| Channel | Pricing | Notes |
+|---------|---------|-------|
+| **Direct to consumer** | $29-79/brain | Current model — skills + atoms |
+| **Custom brain builds** | $500-2,000/brain | Professional use cases (see above) |
+| **Platform licensing (per brain)** | $5K-50K/yr per brain per platform | Depends on brain demand + exclusivity |
+| **Platform catalog deal** | $100K-500K/yr | Full catalog access for a platform |
+| **Enterprise API** | $199-999/mo | Companies building products on brains |
+
+### Why this could be massive
+
+If BrainsFor locks up exclusive packaging rights to 50 notable thinkers, and 3-4 AI platforms each want access — that's a licensing business worth millions/year with near-zero marginal cost. The brain packs are already built. The pipeline already runs. The only new work is the legal agreements and platform integration.
+
+**The killer insight:** The thinkers are the supply. The AI platforms are the demand. BrainsFor is the exclusive middleman with the packaging technology and the relationships. This is the music licensing model applied to structured knowledge — ASCAP for brains.
+
+### Sequence
+
+1. **v1 (now):** Sell direct to consumers. Build the catalog. Prove demand.
+2. **v2 (claim your brain):** Sign thinkers to exclusive packaging agreements. Revenue share aligns incentives.
+3. **v3 (platform licensing):** License the catalog to AI platforms. This is where the real money is.
+
+The consumer product is the proof-of-demand that makes the platform licensing pitch credible. "50,000 people bought brain packs last year — your users want this natively in your product."
 
 ---
 
@@ -435,7 +504,7 @@ Once a thinker has claimed and curated their brain on your platform, they have:
 
 ### Claiming rollout plan
 
-1. **Soft launch:** Build 3-5 brains without permission (legal: all public content, fair use for transformative analysis)
+1. **Soft launch:** Launch with 7 brains already built (all from public content, fair use for transformative analysis)
 2. **Signal demand:** Show the brain subject that people are paying for their knowledge
 3. **Outreach:** "People are buying your brain for $29. Want to claim it, improve it, and keep 50%?"
 4. **First claimer = case study:** Get one notable person to claim. Use that as social proof for the next 10.
@@ -536,41 +605,47 @@ When new content is ingested (e.g., Belsky publishes a new Implications edition 
 
 ---
 
-## Weekend Ship Plan (The Actual Build)
+## Ship Plan (Updated April 2026 — What's Left)
 
-### Day 1 (Saturday): Build the brains + storefront
+### What's DONE ✅
 
-**Morning (3 hours):**
-- [x] Register brainsfor.dev ✅ (owned, already on Vercel)
-- [ ] Run the `blog-ingest` skill on 3 Tier 1 brains (Belsky is done — pick 2 more)
-- [ ] For each brain: extract atoms, generate embeddings, create mental model map
-- [ ] Package each brain into Standard format (markdown + JSON)
+- [x] Register brainsfor.dev (owned, on Vercel)
+- [x] Build brain pipeline (`build-brain.py` — one command, 7 stages)
+- [x] Build 7 brains: Belsky, Paul Graham, Steve Jobs, Peter Attia, Sun Tzu, John Green, Hank Green
+- [x] 1,374 atoms + 2,799 connections in Supabase
+- [x] Complete pack/ for all 7 (brain-context.md, brain-atoms.json, explore.html, 8 skills each)
+- [x] Design system (DESIGN.md) + brand guide (BRAND.md)
+- [x] Landing page prototype (5/7 brains rendered)
+- [x] `install-brains.sh` for local distribution
+- [x] `audit-brains.py` for quality validation
+- [x] Supabase tables: `brain_metadata`, `brain_requests`, `brain_request_votes`, `brain_access`
 
-**Afternoon (3 hours):**
-- [ ] Build landing page (single HTML on Vercel or simple React)
-  - Hero: "Download the world's most interesting minds"
-  - Brain catalog with previews (show 5-10 sample atoms per brain)
-  - Pricing tiers
-  - "Request a Brain" form
-  - "Claim Your Brain" teaser section
-- [ ] Set up Stripe checkout (3 products: Standard, Pro, API)
+### What's LEFT to ship v1
+
+**Storefront (1 day):**
+- [ ] Add John Green + Hank Green to landing page (or make catalog dynamic from index.json)
+- [ ] Wire Stripe checkout (3 products: Standard $29, Pro $79, API $199/mo)
 - [ ] Build delivery edge function (Stripe webhook → email download link)
+- [ ] Wire "Request a Brain" form to `brain_requests` table
 
-### Day 2 (Sunday): Launch + distribute
+**Distribution (half day):**
+- [ ] Wire `npx skills add brainsfor/{slug}` to registry (install-brains.sh is the local fallback)
+- [ ] Register brain packs in skills ecosystem
 
-**Morning (2 hours):**
-- [ ] Write launch tweet thread (the "I cloned Scott Belsky's brain" story)
+**Quality (1 day):**
+- [ ] Voice enrichment: currently 7% (20/284 Belsky atoms have original_quote). Target: 100% across all brains.
+- [ ] Reclassify Belsky's "Other & Miscellaneous" cluster (110/284 atoms = 39% in catch-all)
+- [ ] Fix atom count references in skill files (some still say "104 atoms" — actual is 284 for Belsky)
+
+**Go-to-market (1 day):**
+- [ ] Get 5 beta users (currently: ZERO — critical gap)
+- [ ] Write launch tweet thread
 - [ ] Write HN "Show HN" post
-- [ ] Draft LinkedIn post (use Rob's linkedin-post skill)
-- [ ] Set up basic analytics (Plausible or Vercel Analytics)
+- [ ] Draft LinkedIn post (use linkedin-post skill)
+- [ ] Set up analytics (Plausible or Vercel Analytics)
+- [ ] Launch on Twitter/X + AI builder communities
 
-**Afternoon (2 hours):**
-- [ ] Launch on Twitter/X
-- [ ] Post to 2-3 AI builder communities (Reddit, Discord)
-- [ ] Submit to ProductHunt (schedule for Monday morning)
-- [ ] Monitor, respond to feedback, fix any checkout issues
-
-**Total build time: ~10 hours.**
+**Total remaining: ~3.5 days of focused work.**
 
 ---
 
@@ -592,25 +667,34 @@ When new content is ingested (e.g., Belsky publishes a new Implications edition 
 
 ## Success Metrics
 
-### Week 1
-- [ ] 3+ brains live and purchasable
+### Week 1 (launch week)
+- [x] 7 brains built and packaged ✅ (done pre-launch)
+- [ ] Storefront live with checkout
 - [ ] 100+ site visitors
 - [ ] 10+ purchases (any tier)
-- [ ] 1+ brain request submitted
+- [ ] 5 beta users providing feedback
 
 ### Month 1
-- [ ] 7+ brains in catalog
-- [ ] $1,000+ in revenue
+- [ ] 10+ brains in catalog (add 3 from Next Wave list)
+- [ ] $2,000+ in revenue (consumer + first custom build)
 - [ ] 50+ email subscribers (for "This Week in Brains")
 - [ ] 1 API subscriber
 - [ ] 25+ brain requests in the queue
+- [ ] 1 exclusive packaging agreement signed (claim outreach started)
 
 ### Month 3
 - [ ] 15+ brains in catalog
 - [ ] $5,000+/month in revenue
-- [ ] 1 claimed brain (verified by the subject)
-- [ ] API generating recurring revenue
+- [ ] 1 claimed/verified brain
+- [ ] 3+ custom brain builds completed (enterprise use cases)
+- [ ] First platform licensing conversation initiated
 - [ ] Featured in 1+ AI newsletter or podcast
+
+### Month 6 (platform licensing)
+- [ ] 5+ exclusive packaging agreements signed
+- [ ] 1 platform licensing deal closed (or in final negotiation)
+- [ ] $10,000+/month blended revenue (consumer + custom + licensing)
+- [ ] "Request a Brain" pipeline driving roadmap decisions
 
 ---
 
@@ -618,9 +702,9 @@ When new content is ingested (e.g., Belsky publishes a new Implications edition 
 
 This isn't a random idea. Rob has **unfair advantages** that make this a 4-5 on his Rob's Edge scale:
 
-1. **The pipeline already exists.** The `blog-ingest` skill, the Supabase knowledge graph, the nightly embedding pipeline — this is 80% built. Most people would need 3 months just to build the infrastructure.
+1. **The pipeline already exists.** `build-brain.py` is a one-command, 7-stage pipeline (generate → merge → synthesize → YouTube → connections → export → validate). `export-brain.py`, `enrich-connections.py`, `enrich-voice.py`, `ingest-youtube.py`, `audit-brains.py` — all operational. Most people would need 3 months just to build the infrastructure.
 
-2. **Proof of concept is done.** 104 Belsky atoms with cross-references and embeddings. The first brain is already built. That's not a concept — that's inventory.
+2. **Proof of concept is done — seven times over.** 7 brains live with 1,374 atoms and 2,799 connections across Supabase. Each has a complete pack (brain-context.md, brain-atoms.json, explore.html, 8 skills). That's not a concept — that's a catalog.
 
 3. **Creator economy expertise.** Rob understands the creator-as-business model from Tubular, TubeBuddy, and Spotter. The "claim your brain" rev-share model is natural for someone who's spent a decade in creator monetization.
 
@@ -646,19 +730,21 @@ The evolution path is: **knowledge pack → interactive advisor → platform** �
 
 **What:** Brainsfor.com — installable AI skill packs built from the world's most interesting minds. `npx skills add brainsfor/belsky` gives you 8 thinking tools powered by a real knowledge graph.
 
-**Who:** Builders, founders, and AI power users who want expert-level context without hand-curating it.
+**Current state (April 2026):** 7 brains live (Belsky, Paul Graham, Steve Jobs, Peter Attia, Sun Tzu, John Green, Hank Green). 1,374 atoms, 2,799 connections. Full build pipeline, design system, brand guide, landing page prototype. Storefront and checkout not yet wired.
 
-**How much:** $29 (standard — full skill pack) / $79 (pro + embeddings + auto-updates) / $199/mo (API).
+**Who:** Three audiences: (1) Builders/founders who want expert-level context without hand-curating it ($29-79). (2) Professionals prepping for high-stakes interactions — sales teams brain-ing a target customer, founders brain-ing board members, creators studying competitors ($500-2K custom). (3) AI platforms who want premium knowledge content for their users (licensing deals).
+
+**How much:** $29 (standard) / $79 (pro) / $199/mo (API) / $500-2K (custom builds) / $5K-50K/yr (platform licensing per brain).
 
 **Product:** Not a chatbot. Not a PDF. An 8-skill thinking partner: `/advise`, `/teach`, `/debate`, `/connect`, `/evolve`, `/surprise`, `/coach`, `/predict`. Skills chain into workflows. Works with Claude Code, Cursor, Cowork, Gemini CLI, Codex CLI.
 
-**Moat:** "Claim your brain" rev-share turns subjects into distribution partners. `npx skills` ecosystem is the distribution channel. Community of curated minds that can't be copied.
+**Moat:** Exclusive brain packaging rights. "Claim your brain" rev-share turns subjects into distribution partners who grant exclusive rights. Then sublicense those brains to AI platforms. ASCAP for structured knowledge.
 
-**Why now:** Everyone's building with AI. Nobody's selling portable expertise. The skills ecosystem is nascent — first knowledge skill pack wins the category. The infrastructure exists (Rob built it). The market is wide open.
+**Why now:** Everyone's building with AI. Nobody's selling portable expertise. The skills ecosystem is nascent — first knowledge skill pack wins the category. AI platforms are desperate for premium differentiated content. The infrastructure exists (Rob built it). The market is wide open.
 
-**Why Rob:** Pipeline is built. First brain is done. Creator economy DNA. Distribution ready. Zero employees needed.
+**Why Rob:** Pipeline is built. Seven brains are done. Creator economy DNA. Distribution ready. Zero employees needed.
 
-**Next step:** Build the Belsky skill pack as the template. Pick 2 more Tier 1 brains. Run the pipeline. Ship it.
+**Next step:** Wire the storefront + checkout. Get 5 beta users. Launch. Start claiming conversations with brain subjects. Begin platform licensing outreach once consumer demand is proven.
 
 ---
 
