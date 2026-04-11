@@ -559,6 +559,9 @@ def stage_synthesis(brain_json, brain_dir, dry_run=False):
         return False
 
     brain_name = brain_json["brain_name"]
+    # Resolve subject/possessive pronouns from brain_possessive ("his"/"her"/"their")
+    possessive = brain_json.get("brain_possessive", "their").lower()
+    subject = {"his": "He", "her": "She", "their": "They"}.get(possessive, "They")
     lines = [f"# How {brain_name} Thinks\n"]
 
     # First principles
@@ -582,12 +585,29 @@ def stage_synthesis(brain_json, brain_dir, dry_run=False):
         for cp in cps:
             lines.append(f"**{cp['title']}** {cp['desc']}\n")
 
-    # What they would never say
+    # What they do not believe
+    dnbs = synthesis.get("does_not_believe", [])
+    if dnbs:
+        lines.append(f"## What {brain_name} Does Not Believe\n")
+        for dnb in dnbs:
+            lines.append(f"**{dnb['title']}** {dnb['desc']}\n")
+
+    # What they would not say
     wns = synthesis.get("would_not_say", [])
     if wns:
-        lines.append("## What He Would Never Say\n")
+        lines.append(f"## What {subject} Would Not Say\n")
         for wn in wns:
             lines.append(f"\"{wn['title']}\" — {wn['desc']}\n")
+
+    # Biographical pattern
+    bios = synthesis.get("biography", [])
+    if bios:
+        lines.append("## Biographical Pattern\n")
+        for bio in bios:
+            date = bio.get("date", "")
+            role = bio.get("role", "")
+            lesson = bio.get("lesson", "")
+            lines.append(f"**{date} — {role}.** {lesson}\n")
 
     if dry_run:
         print(f"  [DRY RUN] Would generate {len(lines)} lines")
@@ -627,6 +647,25 @@ def stage_connections(brain_json, brain_dir, model, dry_run=False):
         by_cluster[atom.get("cluster", "unknown")].append(atom)
 
     connections = []
+    seen_pairs = set()  # dedupe (atom_id_1, atom_id_2) unordered
+
+    def _add_pair(a1, a2, relationship, confidence, method, shared_topics):
+        key = tuple(sorted([a1["id"], a2["id"]]))
+        if key in seen_pairs:
+            return
+        seen_pairs.add(key)
+        connections.append({
+            "id": str(uuid.uuid4()),
+            "atom_id_1": a1["id"],
+            "atom_id_2": a2["id"],
+            "relationship": relationship,
+            "confidence": confidence,
+            "method": method,
+            "shared_topics": sorted(shared_topics),
+        })
+
+    # Within-cluster: jaccard >= 0.3
+    within_count = 0
     for cluster_key, cluster_atoms in by_cluster.items():
         for i, a1 in enumerate(cluster_atoms):
             for a2 in cluster_atoms[i + 1:]:
@@ -636,17 +675,70 @@ def stage_connections(brain_json, brain_dir, model, dry_run=False):
                     continue
                 jaccard = len(topics1 & topics2) / len(topics1 | topics2)
                 if jaccard >= 0.3:
-                    connections.append({
-                        "id": str(uuid.uuid4()),
-                        "atom_id_1": a1["id"],
-                        "atom_id_2": a2["id"],
-                        "relationship": "related",
-                        "confidence": round(min(jaccard + 0.3, 0.95), 2),
-                        "method": "topic_overlap",
-                        "shared_topics": sorted(topics1 & topics2),
-                    })
+                    before = len(connections)
+                    _add_pair(a1, a2, "related",
+                              round(min(jaccard + 0.3, 0.95), 2),
+                              "topic_overlap_within", topics1 & topics2)
+                    if len(connections) > before:
+                        within_count += 1
 
-    print(f"  Found {len(connections)} topic overlap connections")
+    # Cross-cluster: jaccard >= 0.5 (higher bar — bridges are more meaningful)
+    cross_count = 0
+    cluster_keys = list(by_cluster.keys())
+    for i, k1 in enumerate(cluster_keys):
+        for k2 in cluster_keys[i + 1:]:
+            for a1 in by_cluster[k1]:
+                for a2 in by_cluster[k2]:
+                    topics1 = set(a1.get("topics", []))
+                    topics2 = set(a2.get("topics", []))
+                    if not topics1 or not topics2:
+                        continue
+                    jaccard = len(topics1 & topics2) / len(topics1 | topics2)
+                    if jaccard >= 0.5:
+                        before = len(connections)
+                        _add_pair(a1, a2, "related",
+                                  round(min(jaccard + 0.2, 0.95), 2),
+                                  "topic_overlap_cross", topics1 & topics2)
+                        if len(connections) > before:
+                            cross_count += 1
+
+    # Orphan rescue: any atom still without a connection gets one via nearest
+    # neighbor by topic overlap (any shared topic, even a single tag)
+    connected_ids = {c["atom_id_1"] for c in connections} | {c["atom_id_2"] for c in connections}
+    orphan_count = 0
+    for atom in atoms:
+        if atom["id"] in connected_ids:
+            continue
+        topics = set(atom.get("topics", []))
+        if not topics:
+            continue
+        best = None
+        best_jaccard = 0
+        for other in atoms:
+            if other["id"] == atom["id"]:
+                continue
+            other_topics = set(other.get("topics", []))
+            if not other_topics:
+                continue
+            shared = topics & other_topics
+            if not shared:
+                continue
+            jac = len(shared) / len(topics | other_topics)
+            if jac > best_jaccard:
+                best_jaccard = jac
+                best = other
+        if best is not None:
+            before = len(connections)
+            _add_pair(atom, best, "related",
+                      round(min(best_jaccard + 0.1, 0.75), 2),
+                      "orphan_rescue", topics & set(best.get("topics", [])))
+            if len(connections) > before:
+                orphan_count += 1
+                connected_ids.add(atom["id"])
+                connected_ids.add(best["id"])
+
+    print(f"  Found {len(connections)} topic overlap connections "
+          f"(within: {within_count}, cross: {cross_count}, orphan-rescue: {orphan_count})")
 
     # LLM-assisted connections (optional)
     if HAS_ANTHROPIC and os.environ.get("ANTHROPIC_API_KEY") and not dry_run:

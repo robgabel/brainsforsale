@@ -16,6 +16,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
 from collections import defaultdict
 from datetime import datetime
@@ -27,6 +28,15 @@ SCRIPT_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPT_DIR.parent
 TEMPLATES_DIR = ROOT_DIR / "templates"
 BRAINS_DIR = ROOT_DIR / "brains"
+WEBSITE_PUBLIC_BRAINS_DIR = ROOT_DIR / "website" / "public" / "brains"
+
+# Files mirrored from pack/ → website/public/brains/{slug}/
+# These are the artifacts the Next.js site reads at runtime. Keep in lockstep with pack.
+WEBSITE_SYNC_FILES = [
+    "brain-atoms.json",
+    "brain-context.md",
+    "explore.html",
+]
 
 
 def load_brain_config(slug: str) -> dict:
@@ -445,6 +455,37 @@ def load_atoms_from_file(filepath: str) -> list:
     raise ValueError(f"Cannot parse atoms from {filepath}")
 
 
+def sync_pack_to_website(slug: str, pack_dir: Path) -> None:
+    """
+    Mirror pack artifacts into website/public/brains/{slug}/ so the Next.js
+    site serves the same files the brain pack was just built from.
+
+    Runs after the pack is written. Silent no-op if the website/ directory
+    doesn't exist (e.g. in a standalone checkout without the Next.js site).
+    """
+    if not WEBSITE_PUBLIC_BRAINS_DIR.parent.parent.exists():
+        print(f"\n  website/ not found — skipping public/brains sync")
+        return
+
+    dest_dir = WEBSITE_PUBLIC_BRAINS_DIR / slug
+    dest_dir.mkdir(parents=True, exist_ok=True)
+
+    synced = []
+    missing = []
+    for name in WEBSITE_SYNC_FILES:
+        src = pack_dir / name
+        if not src.exists():
+            missing.append(name)
+            continue
+        dest = dest_dir / name
+        shutil.copy2(src, dest)
+        synced.append(name)
+
+    print(f"\n  synced to website/public/brains/{slug}/: {', '.join(synced)}")
+    if missing:
+        print(f"  WARNING: missing from pack, not synced: {', '.join(missing)}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Export a brain pack from Supabase or local files")
     parser.add_argument("--brain", required=True, help="Brain slug (matches brains/{slug}/brain.json)")
@@ -454,6 +495,8 @@ def main():
     parser.add_argument("--connections-file", help="Path to connections JSON")
     parser.add_argument("--output-dir", help="Override output directory")
     parser.add_argument("--skip-skills", action="store_true", help="Skip rendering skill templates")
+    parser.add_argument("--no-sync-website", action="store_true",
+                        help="Skip mirroring pack artifacts into website/public/brains/{slug}/")
     args = parser.parse_args()
 
     # Load config
@@ -510,9 +553,19 @@ def main():
     # Copy explore.html template
     explore_template = TEMPLATES_DIR / "explore.html.template"
     if explore_template.exists():
-        import shutil
         shutil.copy2(explore_template, output_dir / "explore.html")
         print(f"\n  explore.html copied from template")
+
+    # Mirror pack → website/public/brains/{slug}/ so the live site serves
+    # the same artifacts that were just built. Respects --output-dir override
+    # (only syncs when writing to the canonical pack/ location).
+    is_canonical_output = not args.output_dir
+    if is_canonical_output and not args.no_sync_website:
+        sync_pack_to_website(slug, output_dir)
+    elif args.no_sync_website:
+        print(f"\n  --no-sync-website set: website/public/brains/{slug}/ NOT updated")
+    elif args.output_dir:
+        print(f"\n  custom --output-dir set: website/public/brains/{slug}/ NOT updated")
 
     print(f"\nDone! Output in: {output_dir}")
 

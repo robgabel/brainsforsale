@@ -1145,49 +1145,194 @@
     }
 
     @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
+      html { scroll-behavior: smooth; }
+
+      body {
+        overflow: auto;
       }
 
+      .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+      }
+
+      /* --- Mobile sidebar: collapsed by default --- */
       .sidebar {
         width: 100%;
         height: auto;
-        max-height: 200px;
+        max-height: none;
         border-right: none;
         border-bottom: 1px solid var(--border);
-        flex-direction: row;
-        padding: 16px;
+        flex-direction: column;
+        padding: 0;
+        overflow: visible;
       }
 
       .sidebar-header {
-        padding: 0;
-        border: none;
-        margin-right: 24px;
+        padding: 16px 20px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
       }
 
-      .search-box {
-        margin: 0;
-        flex: 1;
-      }
+      .sidebar-header .brain-name { font-size: 20px; margin-bottom: 0; }
+      .sidebar-header .stats { display: none; }
+      .sidebar-header .sidebar-label { display: none; }
 
+      .mobile-toggle { display: flex; }
+
+      .sidebar .atoms-nav,
+      .sidebar .section-nav { display: none !important; }
+
+      .sidebar.mobile-open.mode-atoms .atoms-nav { display: block !important; padding: 0 16px 16px; }
+      .sidebar.mobile-open.mode-synthesis .section-nav { display: flex !important; padding: 0 16px 16px; }
+
+      .search-box { margin: 0 0 12px 0; }
+      .cluster-label { padding: 0; margin-top: 8px; }
+      .clusters { padding: 4px 0; max-height: 200px; overflow-y: auto; }
+
+      /* --- Mobile tab bar: scrollable --- */
       .topbar {
         padding: 0 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
       }
 
-      .content {
-        padding: 20px;
-        padding-right: 20px;
+      .tab-bar { gap: 8px; min-width: max-content; }
+
+      .tab {
+        padding: 10px 14px;
+        font-size: 13px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
       }
 
-      .hero-title {
-        font-size: 32px;
+      /* --- Mobile content --- */
+      .main { overflow: visible; }
+
+      .content { padding: 16px; overflow: visible; }
+
+      .hero-title { font-size: 28px; }
+      .hero-tagline { font-size: 16px; }
+      .hero-bio { font-size: 14px; }
+      .stats-bar { gap: 16px; font-size: 13px; }
+      .section-title { font-size: 20px; margin: 32px 0 16px; }
+
+      /* --- 44px touch targets --- */
+      .cluster-item { padding: 12px; min-height: 44px; }
+      .topic-chip { padding: 8px 12px; min-height: 44px; display: inline-flex; align-items: center; }
+      .section-nav-item { padding: 12px; min-height: 44px; }
+      .connection-item { padding: 12px; min-height: 44px; }
+      .atom-expand-hint { padding: 8px 0; min-height: 44px; display: flex; align-items: center; }
+
+      /* --- Atom cards: progressive disclosure on mobile --- */
+      .atom-card .atom-quote,
+      .atom-card .atom-implication { display: none; }
+      .atom-card.expanded .atom-quote,
+      .atom-card.expanded .atom-implication { display: block; }
+      .atom-card { padding: 16px; }
+      .atom-content {
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .atom-card.expanded .atom-content {
+        -webkit-line-clamp: unset;
+        overflow: visible;
       }
 
-      .section-title {
-        font-size: 20px;
+      /* --- Mobile graph --- */
+      #graph-tab { min-height: 300px; }
+      #graph-canvas { height: 400px; }
+      .graph-controls {
+        top: 8px; right: 8px;
+        flex-wrap: wrap; gap: 4px;
+        max-width: calc(100% - 16px);
+      }
+      .graph-btn { padding: 8px 10px; font-size: 12px; min-height: 44px; }
+      .graph-legend {
+        bottom: 8px; left: 8px; right: 8px;
+        flex-wrap: wrap; gap: 8px; font-size: 11px;
+      }
+
+      /* --- Surprise --- */
+      .surprise-btn { bottom: 16px; right: 16px; padding: 14px 20px; min-height: 48px; }
+      .surprise-overlay { padding: 16px; }
+      .surprise-card { padding: 20px; max-height: 80vh; overflow-y: auto; }
+      .surprise-actions { flex-wrap: wrap; }
+      .surprise-actions button { min-height: 44px; padding: 12px; }
+
+      /* --- Skills --- */
+      .skills-grid { grid-template-columns: 1fr; gap: 16px; }
+      .skill-card { padding: 16px; }
+      .skill-example { font-size: 12px; }
+      .workflow-chain { padding: 16px; }
+    }
+
+    /* --- Reduced motion --- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
       }
     }
+
+    /* --- Mobile toggle (hidden on desktop) --- */
+    .mobile-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text);
+      margin-left: auto;
+      flex-shrink: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-toggle:active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* --- Loading skeleton --- */
+    .skeleton-container { padding: 32px; }
+
+    .skeleton-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+      animation: skeletonPulse 1.5s ease-in-out infinite;
+    }
+
+    .skeleton-line {
+      height: 14px;
+      background: var(--border);
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .skeleton-line.short { width: 40%; }
+    .skeleton-line.medium { width: 70%; }
+    .skeleton-line.long { width: 100%; }
+
+    @keyframes skeletonPulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
   </style>
+  <meta name="theme-color" content="#0a0a0f">
 </head>
 <body>
   <div class="container">
@@ -1197,6 +1342,15 @@
         <div class="sidebar-label">BrainsFor</div>
         <div class="brain-name" id="brainName"></div>
         <div class="stats" id="stats"></div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle filters">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+            <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+            <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/>
+            <line x1="17" y1="16" x2="23" y2="16"/>
+          </svg>
+        </button>
       </div>
 
       <!-- ATOMS NAV -->
@@ -1232,7 +1386,13 @@
 
       <div class="content">
         <!-- TAB 1: SYNTHESIS (rendered dynamically from brain-atoms.json) -->
-        <div class="tab-content active" id="synthesis"></div>
+        <div class="tab-content active" id="synthesis">
+          <div class="skeleton-container" id="loadingSkeleton">
+            <div class="skeleton-card"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div>
+            <div class="skeleton-card"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div>
+            <div class="skeleton-card"><div class="skeleton-line short"></div><div class="skeleton-line medium"></div></div>
+          </div>
+        </div>
 
         <!-- TAB 2: GRAPH -->
         <div class="tab-content" id="graph" style="padding: 0; height: 100%; position: relative;">
@@ -1550,6 +1710,10 @@
         const lastName = brainMeta.name.split(' ').pop();
         synthesisTab.textContent = 'How ' + lastName + ' Thinks';
       }
+
+      // Remove loading skeleton
+      const skeleton = document.getElementById('loadingSkeleton');
+      if (skeleton) skeleton.remove();
 
       renderSynthesis();
       initializeAtoms();
@@ -2364,6 +2528,59 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeSurprise();
     });
+
+    // ===== MOBILE SIDEBAR TOGGLE =====
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('mobile-open');
+    });
+
+    // ===== TOUCH SUPPORT FOR GRAPH =====
+    if (typeof window !== 'undefined') {
+      let touchStartX = 0, touchStartY = 0, touchNode = null;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const canvas = document.getElementById('graph-canvas');
+        if (!canvas) return;
+
+        canvas.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          const touch = e.touches[0];
+          const rect = canvas.getBoundingClientRect();
+          const x = touch.clientX - rect.left;
+          const y = touch.clientY - rect.top;
+          touchStartX = x;
+          touchStartY = y;
+
+          // Hit test
+          for (const node of graphNodes) {
+            const dx = x - node.x;
+            const dy = y - node.y;
+            if (dx * dx + dy * dy < (node.radius + 8) * (node.radius + 8)) {
+              touchNode = node;
+              graphDragNode = node;
+              selectedNode = node;
+              break;
+            }
+          }
+        }, { passive: false });
+
+        canvas.addEventListener('touchmove', (e) => {
+          e.preventDefault();
+          if (!graphDragNode) return;
+          const touch = e.touches[0];
+          const rect = canvas.getBoundingClientRect();
+          graphDragNode.x = touch.clientX - rect.left;
+          graphDragNode.y = touch.clientY - rect.top;
+          graphDragNode.vx = 0;
+          graphDragNode.vy = 0;
+        }, { passive: false });
+
+        canvas.addEventListener('touchend', () => {
+          graphDragNode = null;
+          touchNode = null;
+        });
+      });
+    }
 
     // ===== INIT =====
     setSidebarMode('synthesis');

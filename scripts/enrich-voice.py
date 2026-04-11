@@ -24,7 +24,7 @@ from pathlib import Path
 
 try:
     from dotenv import load_dotenv
-    load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+    load_dotenv(Path(__file__).resolve().parents[2] / ".env", override=True)
 except ImportError:
     pass
 
@@ -124,7 +124,7 @@ def fetch_source_content(url: str) -> str:
         text = re.sub(r'\s+', ' ', text).strip()
         text = text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"').replace('&#39;', "'")
 
-        return text[:15000]
+        return text[:50000]
     except Exception as e:
         return f"ERROR: Could not fetch {url}: {e}"
 
