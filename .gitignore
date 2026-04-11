@@ -26,6 +26,13 @@ brains/*/data/
 # Embeddings (too large for git, regenerate from Supabase)
 brains/*/pack/embeddings/
 
+# YouTube transcripts (ingest scratch, regenerate from ingest-youtube.py)
+brains/*/source/youtube-transcripts/
+brains/*/source/transcripts/
+
+# Stray archives
+*.zip
+
 # Node
 node_modules/
 
