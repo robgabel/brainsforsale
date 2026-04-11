@@ -1,7 +1,7 @@
 "use client";
 
 import { createClient } from "@/lib/supabase-browser";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 interface BrainRequest {
   id: string;
@@ -10,7 +10,7 @@ interface BrainRequest {
 }
 
 export function RequestBrainForm() {
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<string | null>(null);

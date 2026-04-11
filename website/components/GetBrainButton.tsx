@@ -2,10 +2,10 @@
 
 import { createClient } from "@/lib/supabase-browser";
 import { useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export function GetBrainButton({ brainSlug }: { brainSlug: string }) {
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [owned, setOwned] = useState(false);
