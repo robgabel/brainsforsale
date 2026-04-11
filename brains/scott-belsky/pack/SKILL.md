@@ -77,23 +77,23 @@ Each skill produces a distinct type of output. Use them in combination for more 
 
 ### 🧠 **1. /advise** — Strategic Counsel
 Ask for advice on decisions grounded in Scott's frameworks. Best for: career moves, company decisions, strategy choices.
-*Example: "{{skill_examples.advise}}"*
+*Example: "Should I raise my Series A or stay bootstrapped?"*
 
 ### 📚 **2. /teach** — Explain Like I'm Learning
 Get a clear explanation of a concept as Scott sees it. Best for: understanding unfamiliar ideas, building mental models.
-*Example: "{{skill_examples.teach}}"*
+*Example: "Explain agentic commerce to me."*
 
 ### 🔥 **3. /debate** — Steel-Man Both Sides
 Present a position or pit two ideas against each other; brain argues the counterpoint. Best for: understanding tradeoffs, challenging assumptions, resolving strategic tensions.
-*Example: "{{skill_examples.debate}}"*
+*Example: "Is remote work better for innovation?"*
 
 ### 🔗 **4. /connect** — Bridge Ideas
 Find unexpected connections between two concepts or synthesize multiple ideas into something new. Best for: synthesis, innovation, cross-domain thinking.
-*Example: "{{skill_examples.connect}}"*
+*Example: "Connect originality to organizational structure."*
 
 ### 📈 **5. /evolve** — How Ideas Build On Each Other
 Trace how a concept develops and changes across the brain. Best for: historical perspective, maturity models, trajectory thinking.
-*Example: "{{skill_examples.evolve}}"*
+*Example: "How does Scott's thinking on AI agents evolve?"*
 
 ### 🎨 **6. /surprise** — Unexpected Insights
 Get a random high-quality atom you wouldn't think to ask for. Best for: creative breakthroughs, morning inspiration, breaking tunnel vision.
@@ -101,11 +101,11 @@ Get a random high-quality atom you wouldn't think to ask for. Best for: creative
 
 ### 🪞 **7. /coach** — Socratic Questions
 No answers — just the questions Scott would ask you. Best for: uncovering blind spots, pressure-testing decisions, team discussions.
-*Example: "{{skill_examples.coach}}"*
+*Example: "I'm deciding whether to pivot my product. What should I be asking myself?"*
 
 ### 🔮 **8. /predict** — Implication Chains
 Trace the second and third-order effects of a trend or decision. Best for: forecasting, strategic planning, seeing around corners.
-*Example: "{{skill_examples.predict}}"*
+*Example: "What happens to SaaS if AI agents do most of the work?"*
 
 ---
 
@@ -121,7 +121,7 @@ Use these skill combinations for better results:
 ### 📚 Learning Workflow
 → `/teach` (understand) → `/evolve` (see how it develops) → `/coach` (test your understanding)
 
-*Example: {{workflow_examples.learning}}*
+*Example: New to originality? Teach → evolve → coach to build deep understanding.*
 
 ### 💡 Creative Workflow
 → `/surprise` (get inspired) → `/connect` (build bridges) → `/predict` (where does this lead?)
@@ -131,7 +131,7 @@ Use these skill combinations for better results:
 ### 🔮 Forecast Workflow
 → `/predict` (trace implications) → `/debate` (challenge the prediction) → `/advise` (act on it)
 
-*Example: {{workflow_examples.research}}*
+*Example: Writing about AI agents? Predict the implications → debate the forecast → advise on action.*
 
 ### 🌅 Daily Ritual
 → Run `/surprise` each morning for 10 seconds of strategic inspiration.

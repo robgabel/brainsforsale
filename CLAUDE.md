@@ -152,6 +152,18 @@ scripts/enrich-connections.py --brain {slug} --stats                  # Quality 
 templates/create-brain-tables.sql   # sed 's/{{SLUG}}/peter_attia/g' | psql
 ```
 
+### Skill Architecture (v4 — Unified, 2026-04-11)
+
+**Important:** The PAOS install at `~/rob-ai/skills/` uses a **unified skill architecture** — ONE set of 8 generic reasoning skills + a `/brain` router, not per-brain copies. Any skill can use any installed brain.
+
+- `~/rob-ai/skills/brain/` — router: `/brain <slug>` sets the active brain for the session (writes `~/.claude/state/active-brain.txt`). `/brain list`, `/brain` (show), `/brain clear` supported.
+- `~/rob-ai/skills/{advise,teach,debate,connect,evolve,surprise,coach,predict}/` — 8 generic thinking skills. Each resolves the brain via: (1) inline first-token slug override, (2) active brain state file, (3) error if neither.
+- Cross-brain mode: `/debate <slug-a> <slug-b> <topic>` and `/connect <slug-a> <slug-b> <topic>`.
+
+Why this design: installing 7+ brain packs naively creates 63+ prefixed skills (`scott-belsky-advise`, `paul-graham-advise`, ...) which collide with the README-documented `/advise` UX. Unified skills match the original v3 intent and README promise. See `IMPROVEMENTS.md` → Architecture & Distribution for the history.
+
+Customer deliverable (`brains/<slug>/pack/skills/`) still ships the per-brain skill files for users who install a single brain pack — those are templates for solo use. The PAOS install flattens them into one generic set because PAOS runs all 8 brains simultaneously.
+
 ### Skill Design (v3 — 8 skills, zero overlap)
 
 8 skills, each a distinct reasoning mode with a unique output type:

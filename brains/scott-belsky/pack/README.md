@@ -15,7 +15,7 @@ This isn't a chatbot or a persona. It's a **thinking partner** grounded in Scott
 2. Run any of the 8 thinking skills:
 
 ```
-/advise "{{skill_examples.advise}}"
+/advise "Should I raise my Series A or stay bootstrapped?"
 ```
 
 You should get a response that cites specific atoms, synthesizes Scott's perspective, and recommends what to do next.
